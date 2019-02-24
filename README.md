@@ -8,8 +8,8 @@ The White River Settlements has some extra gear that they've collected. They are
 
 ### Questable Items and Equipment:
 
-- Taza's Axe (Requires 200 Stone + 20 Axes)
-- Kuva's Red Armor (Requires 50 Leather + 5 Leather Poncho)
-- Leon's Modded SMG (Requires 10 Pistols)
-- Danara's Flaming Dig Tools (Requires 100 Iron + 10 Iron Shovels + 10 Iron Pickaxes)
-- Bambi's Killer Bow (Requires 400 Wood + 20 Bows)
+- Taza's Axe (Requires donation to trader of: 200 Stone + 20 Axes)
+- Kuva's Red Armor (Requires donation to trader of: 50 Leather + 5 Leather Poncho)
+- Leon's Modded SMG (Requires donation to trader of: 10 Pistols)
+- Danara's Flaming Dig Tools (Requires donation to trader of: 100 Iron + 10 Iron Shovels + 10 Iron Pickaxes)
+- Bambi's Killer Bow (Requires donation to trader of: 400 Wood + 20 Bows)
