@@ -1,6 +1,4 @@
-# XelaNull-7dtd-Modlets
-
-White River - Tools of Citizenship
+# White River - Tools of Citizenship
 
 This modlet extends the new player White Run citizenship quest line to provide some gather & craft quests to obtain famed tools and equipment. This gives new players a chance to obtain better gear through a method other than randomness. The rewards this Modlet provides was carefully considered against Vanilla gameplay.
 

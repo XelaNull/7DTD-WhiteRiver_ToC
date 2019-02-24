@@ -1,0 +1,13 @@
+<configs>
+	<append xpath="lootcontainers">
+		<!-- This section is to ensure if the player drops the sealed citizen crate on the ground and destroys it, at least some items will drop from it -->
+		<lootcontainer id="125" count="10,20" size="9,9" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
+			<item group="bicycleParts" count="3"/>
+			<item group="rareTools" count="2"/>
+			<item group="leatherArmor" count="1,2"/>
+			<item group="militaryArmor" count="1,2"/>
+			<item group="beverages"/>
+			<item group="ammo"/>
+		</lootcontainer>
+	</append>		
+</configs>	

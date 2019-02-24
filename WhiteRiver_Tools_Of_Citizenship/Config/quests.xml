@@ -1,0 +1,180 @@
+<config>
+
+  <!-- Kick off the custom Quest-line as soon as the White River Citizen initial quest completes -->
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen2" />
+	</insertAfter>
+
+<!--
+Quest for Legendary Tools:
+	Taza's Axe (200 Stone + 20 Axes)
+	Kuva's Red Armor (50 Leather + 5 Leather Poncho)
+	Leon's Modded SMG (10 Pistols)
+	Danara's Flaming Dig Tools (100 Iron + 10 Iron Shovels + 10 Iron Pickaxes)
+	Bambi's Killer Bow (400 Wood + 20 Bows)
+-->
+
+	<append xpath="/quests" >
+			<quest id="quest_whiteRiverCitizen2">
+				<property name="group_name" value="quest_WhiteRiverCitizen" />
+				<property name="offer" value="Become a White River Citizen" />
+				<property name="name" value="Declare your citizenship to White River" />
+				<property name="subtitle_key" value="Obtain Your White River Citizen Crate" />
+				<property name="description_key" value="Declare your citizenship with White River settlements by crafting a +Declaration_Of_Citizenship. In return, you will receive a crate to use in a recipe to select which citizen equipment you will pursue. Destroy the crate to end quest." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Declaration_Of_Citizenship" value="1" phase="2" />
+
+				<reward type="Item" id="+Declaration_Of_Citizenship" value="-1" />	
+				<reward type="Item" id="+Sealed_Citizen_Crate" value="1" />							
+			</quest>	
+
+
+			<quest id="+Quest_For_Leons_Modded_SMG">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="There is a crate of modded weapons at the Trader that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these weapons once you provide pistols that the Trader can hand out to other survivors." />
+				<property name="name" value="Pay-it-forward to obtain Leon's Modded SMG" />
+				<property name="subtitle_key" value="Craft the +Writ_Of_Leon" />
+				<property name="description_key" value="Collect the needed weapons and craft a +Writ_Of_Leon to receive your SMG. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+	
+				<objective type="FetchKeep" id="gunPistol" value="10" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ_Of_Leon" value="1" phase="2" />		
+				<reward type="Item" id="+Sealed_Citizen_Crate" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ_Of_Leon" value="-1" />						
+				<reward type="Item" id="gunSMG5" value="4" />
+				<reward type="Item" id="modGunForegrip" value="1" /> 				
+				<reward type="Item" id="modGunMagazineExtender" value="1" />
+				<reward type="Item" id="modGunFlashSuppressor" value="1" />	
+				<reward type="Item" id="ammo9mmBullet" value="250" />
+				<reward type="Item" id="pouredConcreteBlock" value="100" />	
+			</quest>
+
+
+			<quest id="+Quest_For_Danaras_Flaming_Dig_Tools">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="There is a crate of digging tools a woman named Danara left at the Trader some time ago and seems to have abandoned. You can have a pair of these tools once you provide the trader with iron replacements." />
+				<property name="name" value="Quest to obtain Danara's Flaming Dig Tools" />
+				<property name="subtitle_key" value="Craft the +Writ_Of_Danara" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Writ_Of_Danara and receive your set of flaming dig tools. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+	
+				<objective type="FetchKeep" id="resourceIronFragment" value="100" phase="1" />
+				<objective type="FetchKeep" id="meleeToolShovelIron" value="10" phase="1" />
+				<objective type="FetchKeep" id="meleeToolPickaxeIron" value="10" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ_Of_Danara" value="1" phase="2" />		
+				<reward type="Item" id="+Sealed_Citizen_Crate" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ_Of_Danara" value="-1" />						
+				<reward type="Item" id="meleeToolShovelSteel" value="4" />
+				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="meleeToolPickaxeSteel" value="4" />
+				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="100" />	
+			</quest>
+
+
+			<quest id="+Quest_For_Bambis_Killer_Bow">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow in exchange for your assistance." />
+				<property name="name" value="Quest to obtain Bambi Killer Compound Bow" />
+				<property name="subtitle_key" value="Craft the +Writ_Of_Bambi" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Writ_Of_Bambi and receive your compound bow. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+	
+				<objective type="FetchKeep" id="gunWoodenBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ_Of_Bambi" value="1" phase="2" />		
+				<reward type="Item" id="+Sealed_Citizen_Crate" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ_Of_Bambi" value="-1" />						
+				<reward type="Item" id="gunCompoundBow" value="4" />
+				<reward type="Item" id="modGunBowPolymerString" value="1" />
+				<reward type="Item" id="modGunMeleeTheHunter" value="1" />
+				<reward type="Item" id="modGunBowArrowRest" value="1" />
+				
+				<reward type="Item" id="ammoArrowSteelAP" value="250" />
+				<reward type="Item" id="ammoArrowFlaming" value="100" />
+				<reward type="Item" id="pouredConcreteBlock" value="50" />	
+			</quest>
+			
+
+			<quest id="+Quest_For_Kuvas_Red_Armor">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader offered you his own homemade secret recipe to create what he calls Kuvas Red Armor. But first you must prove yourself worthy." />
+				<property name="name" value="Quest to craft Legendary Kuvas Red Armor" />
+				<property name="subtitle_key" value="Craft the +Writ_Of_Kuva" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Writ_Of_Kuva and receive your armor. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+	
+				<objective type="FetchKeep" id="resourceLeather" value="50" phase="1" />
+				<objective type="FetchKeep" id="leatherPoncho" value="5" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ_Of_Kuva" value="1" phase="2" />		
+				<reward type="Item" id="+Sealed_Citizen_Crate" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ_Of_Kuva" value="-1" />						
+				<reward type="Item" id="armorLeatherChest" value="4" />
+				<reward type="Item" id="modDyeRed" value="1" />
+				<reward type="Item" id="armorLeatherPants" value="4" />
+				<reward type="Item" id="modDyeRed" value="1" />
+				<reward type="Item" id="armorLeatherBoots" value="4" />
+				<reward type="Item" id="modDyeRed" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="150" />	
+			</quest>
+	
+		
+			<quest id="+Quest_For_Tazas_Axe">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="In the wake of the event, rumors circulated about a legendary axe created by a master craftsman. The White River colonies banded together to locate this craftsman only to arrive at just the right moment to save the craftsman's life. In repayment, he provided the plans so any White River citizen can reproduce his famous axe. You too can build this axe, with a lot of effort."/>
+				<property name="name" value="Quest to build Legendary Tazas Axe" />
+				<property name="subtitle_key" value="Quest for Legendary Taza Axe" />
+				<property name="description_key" value="Collect the needed resources and craft a +Writ_Of_Taza to receive your axe. You also will receive a weapon and ammo as well as a small gift to help you take on any who would stand in your way." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+	
+				<objective type="FetchKeep" id="resourceRockSmall" value="400" phase="1" />
+				<objective type="FetchKeep" id="meleeToolStoneAxe" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ_Of_Taza" value="1" phase="2" />		
+				<reward type="Item" id="+Sealed_Citizen_Crate" value="1" />	<!-- This makes the quest repeatable -->		
+
+				<reward type="Item" id="+Writ_Of_Taza" value="-1" />		
+				<reward type="Item" id="meleeToolStoneAxeTazas" value="5" />	
+				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
+				<reward type="Item" id="modMeleeWoodSplitter" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="50" />	
+			</quest>
+						
+	</append>
+</config>
+
+
+
