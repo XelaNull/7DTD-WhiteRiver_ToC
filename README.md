@@ -27,3 +27,5 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - Kuva's Red Armor - Tier 1: 50 Leather + 5 Leather Poncho - Tier 2: 500 Leather + 20 Leather Poncho
 - Leon's Modded SMG - Tier 1: 10 Pistols - Tier 2: 20 Pistols
 - Taza's Axe - Tier 1: 200 Stone + 20 Axes - Tier 2: 4000 Stone + 20 Axes
+
+All quests are designed to be repeatable in case a player loses their equipment or wishes to try their luck at a higher quality reward.
