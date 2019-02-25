@@ -58,7 +58,7 @@
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 50 Zombies"/>
+				<property name="QuestGiven" value="+Kill 100 Zombies"/>
 				<property name="Delay" value="0"/>
 			</property>	
 		</item>		
