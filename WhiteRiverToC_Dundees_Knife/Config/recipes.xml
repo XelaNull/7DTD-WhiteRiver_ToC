@@ -16,6 +16,7 @@
 		<recipe name="+Veteran Writ Of Dundee" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="meleeBoneShiv" count="20"/>
 			<ingredient name="resourceLeather" count="150"/>
+			<ingredient name="resourceIronFragment" count="150"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>			
 	</append>

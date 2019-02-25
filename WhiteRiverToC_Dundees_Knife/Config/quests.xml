@@ -41,8 +41,9 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="meleeBoneShiv" value="20" phase="1" />
+				<objective type="FetchKeep" id="meleeBoneShiv" value="25" phase="1" />
 				<objective type="FetchKeep" id="resourceLeather" value="150" phase="1" />
+				<objective type="FetchKeep" id="resourceIronFragment" value="150" phase="1" />				
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Veteran Writ Of Dundee" value="1" phase="2" />		
 				<objective type="Goto" id="trader" value="5" phase="3" />	

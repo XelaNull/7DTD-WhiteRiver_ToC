@@ -17,8 +17,8 @@
 		</recipe>
 		<recipe name="+Veteran Writ Of Danara" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="resourceIronFragment" count="1000"/>
-			<ingredient name="meleeToolShovelIron" count="15"/>
-			<ingredient name="meleeToolPickaxeIron" count="15"/>
+			<ingredient name="meleeToolShovelSteel" count="15"/>
+			<ingredient name="meleeToolPickaxeSteel" count="15"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 	</append>

@@ -47,8 +47,8 @@
 				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="resourceIronFragment" value="1000" phase="1" />
-				<objective type="FetchKeep" id="meleeToolShovelIron" value="15" phase="1" />
-				<objective type="FetchKeep" id="meleeToolPickaxeIron" value="15" phase="1" />
+				<objective type="FetchKeep" id="meleeToolShovelSteel" value="15" phase="1" />
+				<objective type="FetchKeep" id="meleeToolPickaxeSteel" value="15" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Veteran Writ Of Danara" value="1" phase="2" />		
 				<objective type="Goto" id="trader" value="5" phase="3" />	
