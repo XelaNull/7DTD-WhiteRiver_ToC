@@ -4,6 +4,8 @@
 
 This modlet collection extends the new player White Run citizenship quest line to provide some gather & craft quests to obtain improved tools and equipment. Each item has a small back story and explanation in an attempt to blend with the Vanilla game and Trader. This gives new players a chance to obtain better gear through a method other than randomness or traditional progression. The rewards this Modlet provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a slight improvement over the items they were created from.
 
+**This mod is only XML XPath modlets and only needs to be installed on the server!**
+
 The modlet provides a multi-tier questline, first requiring the player to craft a +Declaration of Citizenship. This allows them to begin a quest to volunteer to help defend the settlement by killing 10 zombies. This earns the player a +White Run Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player can craft a new Declaration of Citizenship to start the process over of becoming a White Run citizen.
 
 --
