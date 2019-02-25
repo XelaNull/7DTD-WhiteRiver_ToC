@@ -44,7 +44,7 @@
 			<property name="Group" value="Special Items"/>
 		</item>
 		
-		<item name="+White River Veteran 50Z Challenge">
+		<item name="+White River Veteran 100Z Challenge">
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="CustomIconTint" value="80bfff"/>
 			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
