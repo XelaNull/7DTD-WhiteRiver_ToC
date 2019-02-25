@@ -17,14 +17,49 @@
 				<objective type="FetchKeep" id="leatherPoncho" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Kuva" value="1" phase="2" />		
+				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+				</objective>	
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
 				<reward type="Item" id="+Writ Of Kuva" value="-1" />						
-				<reward type="Item" id="Kuva's Red Leather Chest" value="3-5" />
-				<reward type="Item" id="Kuva's Red Leather Pants" value="3-5" />
-				<reward type="Item" id="Kuva's Red Leather Boots" value="3-5" />
-				<reward type="Item" id="pouredConcreteBlock" value="150" />	
+				<reward type="Item" id="Kuva's Red Leather Chest" value="2-4" />
+				<reward type="Item" id="Kuva's Red Leather Pants" value="2-4" />
+				<reward type="Item" id="Kuva's Red Leather Boots" value="2-4" />
+				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
 				<reward type="Exp" value="1000" />
+				<reward type="SkillPoints" value="1" />				
+			</quest>
+
+			<quest id="+Vet. Quest For Kuva's Red Armor">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader offered you his own homemade secret recipe to create what he calls Kuvas Red Armor. But first you must prove yourself worthy." />
+				<property name="name" value="Veteran Quest to craft Legendary Kuvas Red Armor" />
+				<property name="subtitle_key" value="Craft the +Veteran Writ Of Kuva" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Veteran Writ Of Kuva and receive your armor. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="resourceLeather" value="500" phase="1" />
+				<objective type="FetchKeep" id="leatherPoncho" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Veteran Writ Of Kuva" value="1" phase="2" />		
+				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+				</objective>	
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Veteran Writ Of Kuva" value="-1" />						
+				<reward type="Item" id="Kuva's Red Leather Chest" value="4-6" />
+				<reward type="Item" id="Kuva's Red Leather Pants" value="4-6" />
+				<reward type="Item" id="Kuva's Red Leather Boots" value="4-6" />
+				<reward type="Item" id="pouredConcreteBlock" value="100-200" />	
+				<reward type="Exp" value="5000" />
 				<reward type="SkillPoints" value="1" />				
 			</quest>
 						

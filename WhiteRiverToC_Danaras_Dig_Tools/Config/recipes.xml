@@ -12,5 +12,14 @@
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 
+		<recipe name="+Danara's Flaming Dig Tools Vet. Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+		</recipe>
+		<recipe name="+Veteran Writ Of Danara" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="resourceIronFragment" count="1000"/>
+			<ingredient name="meleeToolShovelIron" count="15"/>
+			<ingredient name="meleeToolPickaxeIron" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>	
 	</append>
 </configs>

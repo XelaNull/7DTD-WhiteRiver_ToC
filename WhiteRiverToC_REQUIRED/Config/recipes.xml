@@ -3,6 +3,10 @@
 		<!-- Ensure the initial declaration is super-easy to craft using items a beginner player probably has -->
 		<recipe name="+Declaration Of Citizenship" count="1" craft_time = "1" craft_exp_gain="0" >
 			<ingredient name="resourcePaper" count="1"/>
-		</recipe>		
+		</recipe>
+		<recipe name="+White River Veteran 50Z Challenge" count="1" craft_time = "120" craft_exp_gain="10000" >
+			<ingredient name="+White River Citizen Card" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>			
 	</append>
 </configs>

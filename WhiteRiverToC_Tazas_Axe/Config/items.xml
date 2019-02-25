@@ -29,5 +29,34 @@
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
+		
+		<item name="+Taza's Axe Vet. Quest"> 
+			<property name="CustomIcon" value="cntShippingCrateShamway"/>
+			<property name="CustomIconTint" value="d8006c"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
+			<property name="Material" value="MresourcePaper"/>	
+			<property name="EconomicValue" value="12000"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Vet. Quest For Taza's Axe"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="SellableToTrader" value="false"/>	
+			<property name="Group" value="Special Items"/>			
+		</item>	
+		<item name="+Veteran Writ Of Taza">
+			<property name="CustomIcon" value="resourcePaper"/> 
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mtallgrass"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+		</item>
 	</append>
 </configs>

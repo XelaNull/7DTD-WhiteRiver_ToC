@@ -16,16 +16,49 @@
 				<objective type="FetchKeep" id="meleeToolStoneAxe" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Taza" value="1" phase="2" />		
+				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+				</objective>
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
 
 				<reward type="Item" id="+Writ Of Taza" value="-1" />		
-				<reward type="Item" id="meleeToolStoneAxeTazas" value="3-6" />	
+				<reward type="Item" id="meleeToolStoneAxeTazas" value="2-4" />	
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
-				<reward type="Item" id="modMeleeWoodSplitter" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="50" />
+				<reward type="Item" id="pouredConcreteBlock" value="0-50" />
 				<reward type="Exp" value="1000" />
 				<reward type="SkillPoints" value="1" />					
 			</quest>
-						
+
+			<quest id="+Vet. Quest For Taza's Axe">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="In the wake of the event, rumors circulated about a legendary axe created by a master craftsman. The White River colonies banded together to locate this craftsman only to arrive at just the right moment to save the craftsman's life. In repayment, he provided the plans so any White River citizen can reproduce his famous axe. You too can build this axe, with a lot of effort."/>
+				<property name="name" value="Veteran Quest to build Fabled Tazas Axe" />
+				<property name="subtitle_key" value="Veteran Quest for Fabled Taza Axe" />
+				<property name="description_key" value="Collect the needed resources and craft a +Veteran Writ Of Taza to receive your axe. You also will receive a weapon and ammo as well as a small gift to help you take on any who would stand in your way." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="resourceRockSmall" value="4000" phase="1" />
+				<objective type="FetchKeep" id="meleeToolStoneAxe" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Veteran Writ Of Taza" value="1" phase="2" />	
+				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+				</objective>	
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
+
+				<reward type="Item" id="+Veteran Writ Of Taza" value="-1" />		
+				<reward type="Item" id="meleeToolStoneAxeTazas" value="4-6" />	
+				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
+				<reward type="Item" id="modMeleeWoodSplitter" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="50-150" />
+				<reward type="Exp" value="5000" />
+				<reward type="SkillPoints" value="1" />					
+			</quest>
 	</append>
 </config>

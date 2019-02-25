@@ -11,5 +11,14 @@
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		
+		<!-- The quest and goal item to craft for reward for: Taza's Axe -->
+		<recipe name="+Taza's Axe Vet. Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+		</recipe>
+		<recipe name="+Veteran Writ Of Taza" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="resourceRockSmall" count="4000"/>
+			<ingredient name="meleeToolStoneAxe" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>	
 	</append>
 </configs>
