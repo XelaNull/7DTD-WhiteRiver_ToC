@@ -1,0 +1,65 @@
+<config>
+
+  <!-- Kick off the custom Quest-line as soon as the White River Citizen initial quest completes -->
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen2" />
+	</insertAfter>
+
+<!--
+Quest for Legendary Tools:
+	Taza's Axe (200 Stone + 20 Axes)
+	Kuva's Red Armor (50 Leather + 5 Leather Poncho)
+	Leon's Modded SMG (10 Pistols)
+	Danara's Flaming Dig Tools (100 Iron + 10 Iron Shovels + 10 Iron Pickaxes)
+	Bambi's Killer Bow (400 Wood + 20 Bows)
+-->
+
+	<append xpath="/quests" >
+			<quest id="quest_whiteRiverCitizen2">
+				<property name="group_name" value="quest_WhiteRiverCitizen" />
+				<property name="offer" value="Become a White River Citizen" />
+				<property name="name" value="Declare your citizenship to White River" />
+				<property name="subtitle_key" value="Declare Your Citizenship Intent" />
+				<property name="description_key" value="Declare your citizenship with White River settlements by crafting a +Declaration Of Citizenship. You can use your +Declaration of Citizenship as an ingredient to craft crates to start White River quests." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Declaration Of Citizenship" value="1" phase="2" />
+
+				<!-- Uncomment the line below to add an additional crate as a reward with some more goodies -->
+				<!-- <reward type="Item" id="+Sealed Citizen Crate" value="1" />	-->
+				
+				<!-- <reward type="Quest" id="+QuestKill10Zombies" />	-->
+			</quest>	
+			
+			<quest id="+Kill 10 Zombies">
+				<property name="group_name" value="quest_WhiteRiverCitizen" />
+				<property name="offer" value="Become a White River Citizen by proving your worth to the settlement. The settlement, like everywhere, has a zombie problem. Help rid the area of 10 zombies." />
+				<property name="name" value="Prove your worth as a citizen" />
+				<property name="subtitle_key" value="Kill 10 Zombies" />
+				<property name="description_key" value="Prove your potential worth as a citizen by ridding the area of 10 zombies." />
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+				<objective type="ZombieKill" id="zombieWightFeral,zombieWightRadiated,zombieBoe,zombieFootballPlayer,zombieFemaleFat,zombieFemaleFatFeral,zombieFemaleFatRadiated,zombieJoe,zombieJoeFeral,zombieJoeRadiated,zombieMoe,zombieMoeFeral, zombieMoeRadiated,zombieArlene,zombieArleneFeral,zombieArleneRadiated,zombieLab,zombieLabFeral,zombieLabRadiated,legendaryZombieLab,zombieScreamer,zombieScreamerFeral,zombieScreamerRadiated,zombieDarlene,zombieDarleneFeral,zombieDarleneRadiated,zombieMarlene,zombieMarleneFeral,zombieMarleneRadiated,zombieYo,zombieYoFeral,zombieYoRadiated,zombieSteve,zombieSteveFeral,zombieSteveRadiated,zombieSteveCrawler,zombieSteveCrawlerFeral,zombieBusinessMan,zombieBusinessManFeral,legendaryZombieBusinessMan,zombieSnow,zombieSpider,zombieSpiderFeral,zombieSpiderRadiated,zombieBurnt,zombieNurse,zombieFatHawaiian,zombieFatHawaiianFeral,zombieFatCop,zombieFatCopFeral,zombieFatCopRadiated,zombieMaleHazmat,zombieUtilityWorker,zombieUtilityWorkerFeral,legendaryZombieUtilityWorker,zombieSoldier,zombieSoldierFeral,zombieSoldierRadiated,zombieSkateboarder,zombieSkateboarderFeral,zombieSkateboarderRadiated,zombieCheerleader,zombieCheerleaderFeral,zombieCheerleaderRadiated,zombieOldTimer,zombieOldTimerFeral,zombieOldTimerRadiated,zombieBiker,zombieBikerFeral,zombieBikerRadiated,zombieFarmer,zombieFarmerFeral,zombieStripper,zombieStripperFeral" value="10" phase="1" />		
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>				
+				
+				<reward type="SkillPoints" value="2" />	
+				<reward type="Item" id="+White River Citizen Card" value="1" />		
+				<reward type="Item" id="ammo9mmBullet" value="50" />			
+				<reward type="Item" id="gunPistol" value="2" />
+				</quest>
+
+	</append>
+</config>
+
+
+

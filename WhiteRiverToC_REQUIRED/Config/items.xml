@@ -1,0 +1,47 @@
+<configs>
+	<append xpath="/items">
+
+		<!--
+		Quest for White River's Tools of Citizenship:
+			Taza's Axe (Stone + Axes)
+			Kuva's Red Armor (Leather)
+			Leon's Modded SMG (Pistols) Writ_Of_Leon
+			Danara's Flaming Dig Tools (Iron + Pickaxes) Writ_Of_Danara
+			Bambi's Killer Bow (Wood + Bows) Writ_Of_Bambi
+		-->
+
+		<!-- This is crafted freely by the player to kick off the 10-Zombie Challenge -->
+		<item name="+Declaration Of Citizenship">
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="80bfff"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Kill 10 Zombies"/>
+				<property name="Delay" value="0"/>
+			</property>	
+		</item>		
+		
+		<item name="+White River Citizen Card">
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="25ff07"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+		</item>
+	</append>
+</configs>

@@ -1,0 +1,108 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="+Bambi's Killer Bow Quest"> 
+			<property name="CustomIcon" value="cntShippingCrateShamway"/>
+			<property name="CustomIconTint" value="d8006c"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
+			<property name="Material" value="MresourcePaper"/>	
+			<property name="EconomicValue" value="12000"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Quest For Bambi's Killer Bow"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="SellableToTrader" value="false"/>	
+			<property name="Group" value="Special Items"/>			
+		</item>	
+		<item name="+Writ Of Bambi">
+			<property name="CustomIcon" value="resourcePaper"/> 
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mtallgrass"/>
+			<property name="HoldType" value="45"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+		</item>			
+		
+		<item name="Bambi's Killer Compound Bow">
+			<property name="CustomIcon" value="gunCompoundBow"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Tags" value="weapon,ranged,bowDrawPenalty,archery,bow,perkArchery"/>
+			<property name="DisplayType" value="rangedBow"/>
+			<property name="HoldType" value="53"/>
+			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/CompoundBow/CompoundBowPrefab"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="RepairTools" value="resourceRepairKit"/> <property name="Weight" value="12"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="false"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="1800"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="ActionSkillGroup" value="Archery"/>
+			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property class="Action0">
+				<property name="Class" value="Catapult"/>
+				<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
+				<property name="Hitmask_override" value="Arrow"/>
+				<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Magazine_items" value="ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming"/>
+				<!-- <property name="Reload_time" value=".9"/> -->
+				<property name="Sound_start" value="bow_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="weapon_empty"/>
+				<property name="Sound_reload" value="bow_reload"/>
+				<property name="Sound_draw" value="bow_draw"/>
+				<property name="Sound_cancel" value="bow_fire_cancel"/>
+				<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+				<property name="Max_strain_time" value="0.43"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="40"/>
+				<property name="Zoom_max_in" value="40"/>
+			</property>
+			<effect_group name="Base Effects"> <!-- gunCompoundBow -->
+				<passive_effect name="ProjectileVelocity" operation="perc_add" value="0.3"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="45"/>
+				<passive_effect name="MaxRange" operation="base_set" value="120"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		
+				<passive_effect name="EntityDamage" operation="base_add" value="6"/>
+		
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.67"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.67"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
+		
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".9"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.9"/> <!-- crosshair reset speed -->
+		
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="85"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="KickDegreesVertical" operation="base_set" value="2"/>
+				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-1,1"/>
+				<display_value name="dRecoil" value="20" />
+				<passive_effect name="DegradationMax" operation="base_set" value="800,4000" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3,5" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0.15" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+			</effect_group>
+		</item>
+	</append>
+</configs>

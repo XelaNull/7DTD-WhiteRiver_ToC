@@ -1,0 +1,36 @@
+<config>
+	<append xpath="/quests" >
+	
+			<quest id="+Quest For Bambi's Killer Bow">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow in exchange for your assistance." />
+				<property name="name" value="Quest to obtain Bambi's Killer Compound Bow" />
+				<property name="subtitle_key" value="Obtain Bambi's Killer Compound Bow" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Writ_Of_Bambi and receive your compound bow. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="gunWoodenBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ Of Bambi" value="1" phase="2" />		
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ Of Bambi" value="-1" />						
+				<reward type="Item" id="Bambi's Killer Compound Bow" value="3-5" />
+				<reward type="Item" id="modGunBowPolymerString" value="1" />
+				<reward type="Item" id="modGunMeleeTheHunter" value="1" />
+				<reward type="Item" id="modGunBowArrowRest" value="1" />
+				
+				<reward type="Item" id="ammoArrowSteelAP" value="150" />
+				<reward type="Item" id="ammoArrowFlaming" value="100" />
+				<reward type="Item" id="pouredConcreteBlock" value="50" />	
+				<reward type="Exp" value="1000" />
+				<reward type="SkillPoints" value="1" />
+			</quest>
+			
+	</append>
+</config>

@@ -1,0 +1,32 @@
+<config>
+	<append xpath="/quests" >
+
+			<quest id="+Quest For Kuva's Red Armor">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader offered you his own homemade secret recipe to create what he calls Kuvas Red Armor. But first you must prove yourself worthy." />
+				<property name="name" value="Quest to craft Legendary Kuvas Red Armor" />
+				<property name="subtitle_key" value="Craft the +Writ Of Kuva" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Writ Of Kuva and receive your armor. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="resourceLeather" value="50" phase="1" />
+				<objective type="FetchKeep" id="leatherPoncho" value="5" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ Of Kuva" value="1" phase="2" />		
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ Of Kuva" value="-1" />						
+				<reward type="Item" id="Kuva's Red Leather Chest" value="3-5" />
+				<reward type="Item" id="Kuva's Red Leather Pants" value="3-5" />
+				<reward type="Item" id="Kuva's Red Leather Boots" value="3-5" />
+				<reward type="Item" id="pouredConcreteBlock" value="150" />	
+				<reward type="Exp" value="1000" />
+				<reward type="SkillPoints" value="1" />				
+			</quest>
+						
+	</append>
+</config>
