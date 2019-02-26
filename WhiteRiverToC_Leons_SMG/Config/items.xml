@@ -33,6 +33,15 @@
 				<property name="Delay" value="0"/>
 			</property>	
 		</item>	
+		<item name="+Writ Of Repaired Leon">
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ccccff"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Special Items"/>
+			<property name="SellableToTrader" value="false"/>	
+		</item>	
 
 		
 		<item name="+Leon's Modded SMG Vet. Quest"> 

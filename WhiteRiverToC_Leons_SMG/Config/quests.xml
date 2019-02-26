@@ -19,12 +19,10 @@
 				<objective type="InteractWithNPC">
 					<property name="phase" value="4" />
 				</objective>
-<!--				<reward type="Item" id="+White River Citizen Card" value="1" />	-->						
-
+				<reward type="Item" id="+White River Citizen Card" value="1" />
 				<reward type="Item" id="+Writ Of Leon" value="-1" />						
 				<reward type="Item" id="Leon's Degraded SMG" value="2-4" />
 				<reward type="Item" id="+Repair Leon's SMG Quest" />
-<!--				<reward type="Quest" id="+Quest To Repair Leon's SMG" stage="aftercomplete"/> -->
 				<reward type="Item" id="modGunForegrip" value="1" /> 				
 
 				<reward type="Item" id="ammo9mmBullet" value="50-150" />
@@ -49,18 +47,16 @@
 				<objective type="FetchKeep" id="resourceMetalPipe" value="1" phase="1" />
 				<objective type="FetchKeep" id="resourceMechanicalParts" value="2" phase="1" />
 				<objective type="FetchKeep" id="resourceSpring" value="1" phase="1" />
+				<objective type="Craft" id="+Writ Of Repaired Leon" value="1" phase="2" />		
 				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>
-				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-
-				<reward type="Item" id="Leon's Degraded SMG" value="-1" />
-				<reward type="Item" id="Leon's SMG" value="2-3" />
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- Thi makes the quest repeatable -->						
+				<reward type="Item" id="+Writ Of Repaired Leon" value="-1" />						
+				<reward type="Item" id="Leon's SMG" value="3" />
 				<reward type="Item" id="modGunFlashSuppressor" value="1" />
-
-				<reward type="Item" id="ammo9mmBullet" value="50-150" />
+				<reward type="Item" id="ammo9mmBullet" value="50-100" />
 				<reward type="Exp" value="1500" />
 				<reward type="SkillPoints" value="1" />				
 			</quest>
@@ -87,7 +83,6 @@
 					<property name="phase" value="4" />
 				</objective>	
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-
 				<reward type="Item" id="+Veteran Writ Of Leon" value="-1" />						
 				<reward type="Item" id="Leon's SMG" value="4-6" />
 				<reward type="Item" id="+Sealed Leon's Veteran Crate" value="1" />
