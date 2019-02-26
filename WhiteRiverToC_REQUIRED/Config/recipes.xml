@@ -1,6 +1,5 @@
 <configs>
 	<append xpath="/recipes">
-		<!-- Ensure the initial declaration is super-easy to craft using items a beginner player probably has -->
 		<recipe name="+Declaration Of Citizenship" count="1" craft_time = "1" craft_exp_gain="0" >
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>
