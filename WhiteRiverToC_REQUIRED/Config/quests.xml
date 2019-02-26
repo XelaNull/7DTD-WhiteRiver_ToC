@@ -29,10 +29,10 @@
 			<quest id="quest_whiteRiverCitizen3">
 				<property name="group_name_key" value="quest_WhiteRiverCitizen" />
 				<property name="name_key" value="Prove your worth" />
-				<property name="offer" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully, as your citizen card is held from you while you work you complete your quest. Your citizen card is returned to you on successful completion of your quest. You can craft a new +Declaration of Citizenship at any time." />
+				<property name="offer" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully, as your citizen card is held from you while you work to complete your quest. Your citizen card is returned to you on successful completion of your quest. You can craft a new +Declaration of Citizenship at any time." />
 				<property name="name" value="Put 10 fallen citizens to rest" />
 				<property name="subtitle_key" value="Put 10 fallen citizens to rest" />
-				<property name="description_key" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully, as your citizen card is held from you while you work you complete your quest. Your citizen card is returned to you on successful completion of your quest. You can craft a new +Declaration of Citizenship at any time." />
+				<property name="description_key" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully, as your citizen card is held from you while you work to complete your quest. Your citizen card is returned to you on successful completion of your quest. You can craft a new +Declaration of Citizenship at any time." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
