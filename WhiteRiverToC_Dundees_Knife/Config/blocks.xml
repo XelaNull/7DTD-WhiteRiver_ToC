@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/blocks">
+		<!-- Create the blocks for the Sealed Citizen Crate & Citizen Crate items -->
+		<block name="+Sealed Dundee's Veteran Crate">
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="ffffb3"/>
+			<property name="DowngradeBlock" value="+Dundee's Veteran Crate"/>
+			<property name="FilterTags" value="floot"/>
+		</block>	
+		<block name="+Dundee's Veteran Crate">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="333333"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="126"/>
+		</block>	
+	</append>	
+</configs>	
+	

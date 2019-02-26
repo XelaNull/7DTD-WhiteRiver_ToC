@@ -5,27 +5,19 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="d8006c"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bambi's Killer Bow"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Writ Of Bambi">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ccccff"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
@@ -34,27 +26,19 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="d8006c"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Bambi's Killer Bow"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Veteran Writ Of Bambi">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ffd700"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
@@ -62,24 +46,10 @@
 		<item name="Bambi's Killer Compound Bow">
 			<property name="CustomIcon" value="gunCompoundBow"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Tags" value="weapon,ranged,bowDrawPenalty,archery,bow,perkArchery"/>
-			<property name="DisplayType" value="rangedBow"/>
-			<property name="HoldType" value="53"/>
-			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/CompoundBow/CompoundBowPrefab"/>
-			<property name="Material" value="Mplastics"/>
-			<property name="RepairTools" value="resourceRepairKit"/> <property name="Weight" value="12"/>
+			<property name="Extends" value="gunCompoundBow"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="SoundJammed" value="ItemNeedsRepair"/>
-			<property name="SoundDestroy" value="wooddestroy1"/>
-			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-			<property name="CrosshairUpAfterShot" value="false"/>
-			<property name="EconomicBundleSize" value="1"/>
 			<property name="EconomicValue" value="1800"/>
-			<property name="Group" value="Ammo/Weapons"/>
-			<property name="ActionSkillGroup" value="Archery"/>
-			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
-			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 			<property class="Action0">
 				<property name="Class" value="Catapult"/>
 				<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->

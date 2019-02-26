@@ -16,7 +16,8 @@
 		</recipe>
 		<recipe name="+Veteran Writ Of Kuva" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="resourceLeather" count="500"/>
-			<ingredient name="leatherPoncho" count="20"/>
+			<ingredient name="resourceIronFragment" count="150"/>
+			<ingredient name="armorLeatherChest" count="20"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>			
 		

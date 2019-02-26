@@ -16,7 +16,8 @@
 			<ingredient name="+White River Veteran Citizen Card" count="1"/>
 		</recipe>
 		<recipe name="+Veteran Writ Of Danara" count="1" craft_time = "300" craft_exp_gain="20000" >
-			<ingredient name="resourceIronFragment" count="1000"/>
+			<ingredient name="resourceForgedIron" count="500"/>
+			<ingredient name="resourceAnimalFat" count="50"/>
 			<ingredient name="meleeToolShovelSteel" count="15"/>
 			<ingredient name="meleeToolPickaxeSteel" count="15"/>
 			<ingredient name="resourcePaper" count="1"/>

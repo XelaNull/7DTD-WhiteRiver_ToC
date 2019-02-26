@@ -5,27 +5,19 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="ff0080"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Kuva's Red Armor"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Writ Of Kuva">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ccccff"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
@@ -34,27 +26,19 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="ff0080"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Kuva's Red Armor"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Veteran Writ Of Kuva">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ffd700"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
@@ -62,9 +46,7 @@
 		<item name="Kuva's Red Leather Chest">
 			<property name="CustomIcon" value="armorLeatherChest"/> 
 			<property name="CustomIconTint" value="cc3300"/>			
-			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightarmor"/>
-			<property name="EquipSlot" value="Chest"/>
+			<property name="Extends" value="armorLeatherChest"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
@@ -78,47 +60,12 @@
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.08" />
 				<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_chest"/>
-				<property name="Overlay0" value="armor_leather_chest"/>
-				<property name="Layer" value="2"/>
-				<property name="UISlot" value="ChestArmor"/>
-			</property>
 		</item>
 		
 		<item name="Kuva's Red Leather Pants">
 			<property name="CustomIcon" value="armorLeatherPants"/> 
 			<property name="CustomIconTint" value="cc3300"/>			
-			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightarmor"/>
-			<property name="EquipSlot" value="Legs"/>
-				<effect_group>
-				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
-		
-				<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
-		
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.08" />
-				<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
-			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_pants"/>
-				<property name="Overlay0" value="armor_leather_pants"/>
-				<property name="Layer" value="3"/>
-				<property name="UISlot" value="LegArmor"/>
-			</property>
-		</item>
-		
-		<item name="Kuva's Red Leather Boots">
-			<property name="CustomIcon" value="armorLeatherBoots"/> 
-			<property name="CustomIconTint" value="cc3300"/>			
-			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightarmor"/>
-			<property name="EquipSlot" value="Feet"/>
+			<property name="Extends" value="armorLeatherPants"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
@@ -132,13 +79,25 @@
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.08" />
 				<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_feet"/>
-				<property name="Overlay0" value="armor_leather_boots"/>
-				<property name="Layer" value="0"/>
-				<property name="UISlot" value="Footwear"/>
-			</property>
 		</item>
 		
+		<item name="Kuva's Red Leather Boots">
+			<property name="CustomIcon" value="armorLeatherBoots"/> 
+			<property name="CustomIconTint" value="cc3300"/>			
+			<property name="Extends" value="armorLeatherBoots"/>
+			<effect_group>
+				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
+		
+				<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
+		
+				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.562"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.08" />
+				<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
+			</effect_group>
+		</item>
 	</append>
 </configs>

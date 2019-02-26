@@ -46,7 +46,8 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="resourceIronFragment" value="1000" phase="1" />
+				<objective type="FetchKeep" id="resourceForgedIron" value="500" phase="1" />
+				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
 				<objective type="FetchKeep" id="meleeToolShovelSteel" value="15" phase="1" />
 				<objective type="FetchKeep" id="meleeToolPickaxeSteel" value="15" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
@@ -57,11 +58,10 @@
 				</objective>	
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
-				<reward type="Item" id="+Writ Of Danara" value="-1" />						
-				<reward type="Item" id="Danara's Steel Shovel" value="4-6" />
-				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
-				<reward type="Item" id="Danara's Steel Pickaxe" value="4-6" />
-				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="+Veteran Writ Of Danara" value="-1" />						
+				<reward type="Item" id="Danara's Steel Shovel" value="3-6" />
+				<reward type="Item" id="Danara's Steel Pickaxe" value="3-6" />
+				<reward type="Item" id="+Sealed Danara's Veteran Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
 				<reward type="Exp" value="5000" />
 				<reward type="SkillPoints" value="1" />				

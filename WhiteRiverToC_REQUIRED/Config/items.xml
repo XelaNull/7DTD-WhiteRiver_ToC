@@ -12,49 +12,33 @@
 
 		<!-- This is crafted freely by the player to kick off the 10-Zombie Challenge -->
 		<item name="+Declaration Of Citizenship">
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="80bfff"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="MresourcePaper"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="a4ff84"/>
+			<property name="Extends" value="questMaster"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
-			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 10 Zombies"/>
+				<property name="QuestGiven" value="quest_whiteRiverCitizen3"/>
 				<property name="Delay" value="0"/>
 			</property>	
 		</item>		
 		
 		<item name="+White River Citizen Card">
 			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="25ff07"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="CustomIconTint" value="42ff00"/>
+			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
-			<property name="HoldType" value="45"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
-			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>
 		
 		<item name="+White River Veteran 100Z Challenge">
 			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="80bfff"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="CustomIconTint" value="7fa6ff"/>
+			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
-			<property name="HoldType" value="45"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
-			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -65,15 +49,10 @@
 		
 		<item name="+White River Veteran Citizen Card">
 			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="19CE00"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="CustomIconTint" value="004dff"/>
+			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
-			<property name="HoldType" value="45"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
-			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>
 	</append>

@@ -21,11 +21,12 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 ### Questable Equipment & Tiered Requirements:
 
-- Bambi's Killer Bow - Tier 1: 400 Wood + 20 Bows - Tier 2: 4000 Wood + 30 Bows
-- Danara's Flaming Dig Tools - Tier 1: 100 Iron + 10 Iron Shovels + 10 Iron Pickaxes - Tier 2: 1000 Iron + 15 Steel Shovels + 15 Steel Pickaxes
-- Dundee's Hunting Knife - Tier 1: 10 Bone Shivs - Tier 2: 25 Bone Shivs + 150 Leather + 150 Iron
-- Kuva's Red Armor - Tier 1: 50 Leather + 5 Leather Poncho - Tier 2: 500 Leather + 20 Leather Poncho
-- Leon's Modded SMG - Tier 1: 10 Pistols - Tier 2: 20 Pistols
-- Taza's Axe - Tier 1: 200 Stone + 20 Axes - Tier 2: 4000 Stone + 20 Axes
+- Bambi's Killer Bow - Compound Bow slightly better stats than Vanilla
+- Danara's Flaming Dig Tools - Steel Pickaxe & Shovel with flaming mods and slightly better stats than Vanilla
+- Dundee's Hunting Knife - Hunting Knife with slightly better stats than Vanilla
+- Gupta's Bandages - Tier 1 Only: 24 Aloe Leaves + 40 Cotton = 2-3 First Aid Bandages
+- Kuva's Red Armor - Red Leather Armor with slightly better stats and environmental mods
+- Leon's Modded SMG - 9mm SMG weapon with slightly better stats than Vanilla
+- Taza's Axe - The famed Taza's Axe, already awesome.
 
 All quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward.

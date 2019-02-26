@@ -2,12 +2,13 @@
 
   <!-- Kick off the custom Quest-line as soon as the White River Citizen initial quest completes -->
 	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
-		<reward type="Quest" id="quest_whiteRiverCitizen2" />
+		<reward type="Quest" id="quest_whiteRiverCitizen2" stage="aftercomplete"/>
 	</insertAfter>
 
 	<append xpath="/quests" >
 			<quest id="quest_whiteRiverCitizen2">
-				<property name="group_name" value="quest_WhiteRiverCitizen" />
+				<property name="group_name_key" value="quest_WhiteRiverCitizen" />
+				<property name="name_key" value="Become a White River Citizen" />
 				<property name="offer" value="Become a White River Citizen" />
 				<property name="name" value="Declare your citizenship to White River" />
 				<property name="subtitle_key" value="Declare Your Citizenship Intent" />
@@ -25,29 +26,32 @@
 				<!-- <reward type="Item" id="+Sealed Citizen Crate" value="1" />	-->
 			</quest>	
 			
-			<quest id="+Kill 10 Zombies">
-				<property name="group_name" value="quest_WhiteRiverCitizen" />
-				<property name="offer" value="Become a White River Citizen by proving your worth to the settlement. The settlement, like everywhere, has a zombie problem. Help rid the area of 10 zombies." />
-				<property name="name" value="Prove your worth as a citizen" />
-				<property name="subtitle_key" value="Kill 10 Zombies" />
-				<property name="description_key" value="Prove your potential worth as a citizen by ridding the area of 10 zombies." />
-				<property name="icon" value="ui_game_symbol_zombie" />
+			<quest id="quest_whiteRiverCitizen3">
+				<property name="group_name_key" value="quest_WhiteRiverCitizen" />
+				<property name="name_key" value="Prove your worth to White Run" />
+				<property name="offer" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully as your citizen card is held from you when you accept the quest and will only be returned to you after you complete the quest. You can craft a new +Declaration of Citizenship at any time." />
+				<property name="name" value="Put 10 fallen citizens to rest" />
+				<property name="subtitle_key" value="Put 10 fallen citizens to rest" />
+				<property name="description_key" value="Declare your citizenship with White River settlements by traveling to the local army base and laying our citizens to rest." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
-				<property name="difficulty" value="medium" />
+				<property name="difficulty" value="easy" />
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
-				<objective type="ZombieKill" id="zombieWightFeral,zombieWightRadiated,zombieBoe,zombieFootballPlayer,zombieFemaleFat,zombieFemaleFatFeral,zombieFemaleFatRadiated,zombieJoe,zombieJoeFeral,zombieJoeRadiated,zombieMoe,zombieMoeFeral, zombieMoeRadiated,zombieArlene,zombieArleneFeral,zombieArleneRadiated,zombieLab,zombieLabFeral,zombieLabRadiated,legendaryZombieLab,zombieScreamer,zombieScreamerFeral,zombieScreamerRadiated,zombieDarlene,zombieDarleneFeral,zombieDarleneRadiated,zombieMarlene,zombieMarleneFeral,zombieMarleneRadiated,zombieYo,zombieYoFeral,zombieYoRadiated,zombieSteve,zombieSteveFeral,zombieSteveRadiated,zombieSteveCrawler,zombieSteveCrawlerFeral,zombieBusinessMan,zombieBusinessManFeral,legendaryZombieBusinessMan,zombieSnow,zombieSpider,zombieSpiderFeral,zombieSpiderRadiated,zombieBurnt,zombieNurse,zombieFatHawaiian,zombieFatHawaiianFeral,zombieFatCop,zombieFatCopFeral,zombieFatCopRadiated,zombieMaleHazmat,zombieUtilityWorker,zombieUtilityWorkerFeral,legendaryZombieUtilityWorker,zombieSoldier,zombieSoldierFeral,zombieSoldierRadiated,zombieSkateboarder,zombieSkateboarderFeral,zombieSkateboarderRadiated,zombieCheerleader,zombieCheerleaderFeral,zombieCheerleaderRadiated,zombieOldTimer,zombieOldTimerFeral,zombieOldTimerRadiated,zombieBiker,zombieBikerFeral,zombieBikerRadiated,zombieFarmer,zombieFarmerFeral,zombieStripper,zombieStripperFeral" value="1" phase="1" />		
+				<property name="repeatable" value="false" />
+
+				<objective type="ZombieKill" id="zombieWightFeral,zombieWightRadiated,zombieBoe,zombieFootballPlayer,zombieFemaleFat,zombieFemaleFatFeral,zombieFemaleFatRadiated,zombieJoe,zombieJoeFeral,zombieJoeRadiated,zombieMoe,zombieMoeFeral, zombieMoeRadiated,zombieArlene,zombieArleneFeral,zombieArleneRadiated,zombieLab,zombieLabFeral,zombieLabRadiated,legendaryZombieLab,zombieScreamer,zombieScreamerFeral,zombieScreamerRadiated,zombieDarlene,zombieDarleneFeral,zombieDarleneRadiated,zombieMarlene,zombieMarleneFeral,zombieMarleneRadiated,zombieYo,zombieYoFeral,zombieYoRadiated,zombieSteve,zombieSteveFeral,zombieSteveRadiated,zombieSteveCrawler,zombieSteveCrawlerFeral,zombieBusinessMan,zombieBusinessManFeral,legendaryZombieBusinessMan,zombieSnow,zombieSpider,zombieSpiderFeral,zombieSpiderRadiated,zombieBurnt,zombieNurse,zombieFatHawaiian,zombieFatHawaiianFeral,zombieFatCop,zombieFatCopFeral,zombieFatCopRadiated,zombieMaleHazmat,zombieUtilityWorker,zombieUtilityWorkerFeral,legendaryZombieUtilityWorker,zombieSoldier,zombieSoldierFeral,zombieSoldierRadiated,zombieSkateboarder,zombieSkateboarderFeral,zombieSkateboarderRadiated,zombieCheerleader,zombieCheerleaderFeral,zombieCheerleaderRadiated,zombieOldTimer,zombieOldTimerFeral,zombieOldTimerRadiated,zombieBiker,zombieBikerFeral,zombieBikerRadiated,zombieFarmer,zombieFarmerFeral,zombieStripper,zombieStripperFeral" value="10" phase="1" />		
+			
 				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
-				</objective>				
+				</objective>	
 				
 				<reward type="SkillPoints" value="1" />	
 				<reward type="Item" id="+White River Citizen Card" value="1" />		
 				<reward type="Item" id="ammo9mmBullet" value="50" />			
 				<reward type="Item" id="gunPistol" value="2" />
 			</quest>
-			
+						
 			<quest id="+Kill 100 Zombies">
 				<property name="group_name" value="quest_WhiteRiverCitizen" />
 				<property name="offer" value="Become a White River Veteran Citizen by proving your worth to the settlement. The settlement, like everywhere, has a zombie problem. Help rid the area of 100 zombies." />

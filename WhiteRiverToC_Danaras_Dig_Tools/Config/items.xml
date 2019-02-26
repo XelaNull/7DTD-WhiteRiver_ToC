@@ -5,27 +5,19 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="d8006c"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Danara's Flaming Dig Tools"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Writ Of Danara">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ccccff"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
@@ -34,41 +26,28 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="d8006c"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Danara's Flaming Dig Tools"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Veteran Writ Of Danara">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ffd700"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
 
 
 		<item name="Danara's Steel Shovel">
-			<property name="CustomIcon" value="meleeToolShovelSteel"/> 
+			<property name="CustomIcon" value="meleeToolShovelIron"/> 
 			<property name="CustomIconTint" value="cc3300"/>			
-			<property name="Tags" value="melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
-			<property name="Extends" value="meleeToolShovelIron"/>
-			<property name="Meshfile" value="Items/Tools/shovel_steelPrefab"/>
-			<property name="CustomIcon" value="meleeToolShovelIron"/>
-			<property name="CustomIconTint" value="a0a0ff"/>
-			<property name="RepairTools" value="resourceForgedSteel"/>
+			<property name="Extends" value="meleeToolShovelSteel"/>
 			<property name="EconomicValue" value="912"/>
 		
 			<effect_group name="Base Effects">
@@ -98,16 +77,8 @@
 		<item name="Danara's Steel Pickaxe">
 			<property name="CustomIcon" value="meleeToolPickaxeSteel"/> 
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Extends" value="meleeToolPickaxeIron"/>
-			<property name="DisplayType" value="melee"/>
-			<property name="HoldType" value="4"/>
-			<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab"/>
-			<property name="RepairTools" value="resourceForgedSteel"/>
+			<property name="Extends" value="meleeToolPickaxeSteel"/>
 			<property name="EconomicValue" value="912"/>
-			<property class="Action1">
-				<property name="UsePowerAttackAnimation" value="true"/>
-			</property>
-			<property name="Group" value="Tools/Traps"/>
 			<effect_group name="Base Effects">
 				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
@@ -139,9 +110,6 @@
 					<requirement name="IsMale" target="self" invert="true"/>
 				</triggered_effect>
 			</effect_group>
-		
 		</item>
-
-
 	</append>
 </configs>

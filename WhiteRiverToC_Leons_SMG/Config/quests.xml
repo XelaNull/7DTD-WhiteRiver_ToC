@@ -2,7 +2,7 @@
 	<append xpath="/quests" >
 			<quest id="+Quest For Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="There is a crate of modded weapons at the Trader that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these weapons once you provide pistols that the Trader can hand out to other survivors." />
+				<property name="offer" value="There is a crate of modded weapons at the Trader that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these weapons if you can help the settlement restock its inventory of pistols. Some pistols for a modded SMG? Seems like a good deal." />
 				<property name="name" value="Pay-it-forward to obtain Leon's Modded SMG" />
 				<property name="subtitle_key" value="Craft the +Writ Of Leon" />
 				<property name="description_key" value="Collect the needed weapons and craft a +Writ Of Leon to receive your SMG. You also will receive a small gift to help you re-establish your homestead." />
@@ -24,12 +24,15 @@
 				<reward type="Item" id="+Writ Of Leon" value="-1" />						
 				<reward type="Item" id="Leon's SMG" value="2-4" />
 				<reward type="Item" id="modGunForegrip" value="1" /> 				
-				<reward type="Item" id="modGunFlashSuppressor" value="1" />	
+				<reward type="Item" id="modGunFlashSuppressor" value="1" />
+
 				<reward type="Item" id="ammo9mmBullet" value="50-150" />
 				<reward type="Item" id="pouredConcreteBlock" value="0-50" />	
 				<reward type="Exp" value="1000" />
 				<reward type="SkillPoints" value="1" />				
 			</quest>
+			
+
 			
 			<quest id="+Vet. Quest For Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
@@ -43,7 +46,9 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="gunPistol" value="20" phase="1" />
+	
+				<objective type="FetchKeep" id="gunPistol" value="10" phase="1" />
+				<objective type="FetchKeep" id="gunSMG5" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Veteran Writ Of Leon" value="1" phase="2" />	
 				<objective type="Goto" id="trader" value="5" phase="3" />	
@@ -53,11 +58,8 @@
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
 				<reward type="Item" id="+Veteran Writ Of Leon" value="-1" />						
-				<reward type="Item" id="Leon's SMG" value="4-6" />
-				<reward type="Item" id="modGunForegrip" value="1" /> 				
-				<reward type="Item" id="modGunMagazineExtender" value="1" />
-				<reward type="Item" id="modGunFlashSuppressor" value="1" />	
-				<reward type="Item" id="ammo9mmBullet" value="100-250" />
+				<reward type="Item" id="Leon's SMG" value="3-6" />
+				<reward type="Item" id="+Sealed Leon's Veteran Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-150" />	
 				<reward type="Exp" value="5000" />
 				<reward type="SkillPoints" value="1" />				

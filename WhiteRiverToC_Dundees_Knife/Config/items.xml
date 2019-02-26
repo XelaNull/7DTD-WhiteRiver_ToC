@@ -5,27 +5,19 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="ff0080"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Dundee's Knife"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Writ Of Dundee">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ccccff"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
@@ -34,27 +26,19 @@
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="ff0080"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>	
-			<property name="Material" value="MresourcePaper"/>	
-			<property name="EconomicValue" value="12000"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Dundee's Knife"/>
 				<property name="Delay" value="0"/>
 			</property>			
-			<property name="SellableToTrader" value="false"/>	
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Veteran Writ Of Dundee">
-			<property name="CustomIcon" value="resourcePaper"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="Material" value="Mtallgrass"/>
-			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="ffd700"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="10"/>
-			<property name="EconomicValue" value="0"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
@@ -62,19 +46,9 @@
 		
 		<item name="Dundee's Hunting Knife">
 			<property name="CustomIcon" value="meleeToolHuntingKnife"/> 
-			<property name="CustomIconTint" value="cc3300"/>			
-			<property name="Tags" value="knife,melee,light,weapon,meleeWeapon,perkDeepCuts,perkTheHuntsman"/>
-			<property name="DisplayType" value="melee"/>
-			<property name="HoldType" value="36"/>
-			<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
-			<property name="Material" value="Mmetal"/>
-			<property name="RepairTools" value="resourceForgedIron"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="meleeToolHuntingKnife"/>			
 			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="FuelValue" value="100"/>
-			<property name="EconomicValue" value="300"/>
-			<property name="SoundJammed" value="ItemNeedsRepair"/>
-			<property name="SoundDestroy" value="wooddestroy1"/>
-		
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Damage_type" value="Slashing"/>
@@ -113,24 +87,6 @@
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 			</effect_group>
-			<effect_group name="Power Attack">
-				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_subtract" value="0" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="19" tags="secondary"/>
-				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
-					<requirement name="IsMale" target="self"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
-					<requirement name="IsMale" target="self" invert="true"/>
-				</triggered_effect>
-			</effect_group>
-			<property name="Group" value="Ammo/Weapons"/>
-			<property name="ActionSkillGroup" value="Blade Weapons"/>
-			<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
 
 		
