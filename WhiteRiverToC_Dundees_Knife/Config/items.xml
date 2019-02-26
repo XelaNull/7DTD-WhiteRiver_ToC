@@ -21,34 +21,12 @@
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>	
-
-		<item name="+Dundee's Knife Vet. Quest"> 
-			<property name="CustomIcon" value="cntShippingCrateShamway"/>
-			<property name="CustomIconTint" value="ff0080"/>
-			<property name="Extends" value="questMaster"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Vet. Quest For Dundee's Knife"/>
-				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
-		<item name="+Veteran Writ Of Dundee">
-			<property name="CustomIcon" value="questMaster"/> 
-			<property name="CustomIconTint" value="ffd700"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Special Items"/>
-		</item>	
-		
 		
 		<item name="Dundee's Hunting Knife">
 			<property name="CustomIcon" value="meleeToolHuntingKnife"/> 
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Extends" value="meleeToolHuntingKnife"/>			
-			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="DegradationBreaksAfter" value="true"/>
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Damage_type" value="Slashing"/>

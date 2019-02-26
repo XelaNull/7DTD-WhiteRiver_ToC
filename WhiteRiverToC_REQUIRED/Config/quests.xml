@@ -12,7 +12,7 @@
 				<property name="offer" value="Become a White River Citizen" />
 				<property name="name" value="Declare your citizenship to White River" />
 				<property name="subtitle_key" value="Declare Your Citizenship Intent" />
-				<property name="description_key" value="Declare your citizenship with White River settlements by crafting a +Declaration Of Citizenship. You can use your +Declaration of Citizenship as an ingredient to craft crates to start White River quests." />
+				<property name="description_key" value="Declare your citizenship with White River settlements by crafting a +Declaration Of Citizenship. You can use your +Declaration of Citizenship to start the quest to obtain your +White River Citizen Card. This citizen's card can be used as an ingredient to craft quest-starter items for White River citizen quests." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="veryeasy" />
@@ -28,11 +28,11 @@
 			
 			<quest id="quest_whiteRiverCitizen3">
 				<property name="group_name_key" value="quest_WhiteRiverCitizen" />
-				<property name="name_key" value="Prove your worth to White Run" />
-				<property name="offer" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully as your citizen card is held from you when you accept the quest and will only be returned to you after you complete the quest. You can craft a new +Declaration of Citizenship at any time." />
+				<property name="name_key" value="Prove your worth" />
+				<property name="offer" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully, as your citizen card is held from you while you work you complete your quest. Your citizen card is returned to you on successful completion of your quest. You can craft a new +Declaration of Citizenship at any time." />
 				<property name="name" value="Put 10 fallen citizens to rest" />
 				<property name="subtitle_key" value="Put 10 fallen citizens to rest" />
-				<property name="description_key" value="Declare your citizenship with White River settlements by traveling to the local army base and laying our citizens to rest." />
+				<property name="description_key" value="Become a White River Citizen by helping lay to rest 10 of our old residents. This will grant you a +White River Citizen Card which can be used as an ingredient to craft quest starting items. Choose carefully, as your citizen card is held from you while you work you complete your quest. Your citizen card is returned to you on successful completion of your quest. You can craft a new +Declaration of Citizenship at any time." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -54,10 +54,10 @@
 						
 			<quest id="+Kill 100 Zombies">
 				<property name="group_name" value="quest_WhiteRiverCitizen" />
-				<property name="offer" value="Become a White River Veteran Citizen by proving your worth to the settlement. The settlement, like everywhere, has a zombie problem. Help rid the area of 100 zombies." />
+				<property name="offer" value="White River settlements has a few veteran citizens cards left, to those with an extra qualification. Help rid the area of 100 zombies and you can earn one of these highly sought after veterans cards." />
 				<property name="name" value="Prove your worth as a veteran citizen" />
 				<property name="subtitle_key" value="Kill 100 Zombies" />
-				<property name="description_key" value="Prove your potential worth as a citizen by ridding the area of 100 zombies." />
+				<property name="description_key" value="White River settlements has a few veteran citizens cards left, to those with an extra qualification. Help rid the area of 100 zombies and you can earn one of these highly sought after veterans cards." />
 				<property name="icon" value="ui_game_symbol_zombie" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
@@ -71,7 +71,7 @@
 				</objective>				
 				
 				<reward type="Exp" value="10000" />
-				<reward type="SkillPoints" value="1" />	
+				<reward type="SkillPoints" value="2" />	
 				<reward type="Item" id="+White River Veteran Citizen Card" value="1" />		
 				<reward type="Item" id="ammo9mmBullet" value="100-200" />
 				<reward type="Item" id="ammo9mmBulletSteel" value="0-100" />

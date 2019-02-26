@@ -47,6 +47,7 @@
 			<property name="CustomIcon" value="armorLeatherChest"/> 
 			<property name="CustomIconTint" value="cc3300"/>			
 			<property name="Extends" value="armorLeatherChest"/>
+			<property name="DegradationBreaksAfter" value="true"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
@@ -66,6 +67,7 @@
 			<property name="CustomIcon" value="armorLeatherPants"/> 
 			<property name="CustomIconTint" value="cc3300"/>			
 			<property name="Extends" value="armorLeatherPants"/>
+			<property name="DegradationBreaksAfter" value="true"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
@@ -85,6 +87,7 @@
 			<property name="CustomIcon" value="armorLeatherBoots"/> 
 			<property name="CustomIconTint" value="cc3300"/>			
 			<property name="Extends" value="armorLeatherBoots"/>
+			<property name="DegradationBreaksAfter" value="true"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>

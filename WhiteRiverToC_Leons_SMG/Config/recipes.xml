@@ -11,6 +11,7 @@
 
 		<recipe name="+Leon's Modded SMG Vet. Quest" count="1" craft_time = "1" craft_exp_gain="0" >
 			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+			<ingredient name="Leon's Degraded SMG" count="1"/>
 		</recipe>
 		<recipe name="+Veteran Writ Of Leon" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="gunPistol" count="10"/>

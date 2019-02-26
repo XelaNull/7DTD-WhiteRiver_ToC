@@ -21,6 +21,20 @@
 			<property name="SellableToTrader" value="false"/>	
 		</item>	
 		
+		<item name="+Repair Leon's SMG Quest">
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="d8006c"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Quest To Repair Leon's SMG"/>
+				<property name="Delay" value="0"/>
+			</property>	
+		</item>	
+
+		
 		<item name="+Leon's Modded SMG Vet. Quest"> 
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="d8006c"/>
@@ -42,6 +56,45 @@
 		<property name="SellableToTrader" value="false"/>	
 		</item>
 		
+		<item name="Leon's Degraded SMG">
+			<property name="CustomIcon" value="gunSMG5"/> 
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="gunSMG5"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="EconomicValue" value="1400"/>		
+			<effect_group name="Base Effects"> <!-- MP5 -->
+				<passive_effect name="MaxRange" operation="base_set" value="35"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
+				<passive_effect name="EntityDamage" operation="base_subtract" value="3"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
+				
+				<passive_effect name="DegradationMax" operation="base_set" value="7000,9000" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="18"/>
+		
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="250"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="500"/>
+		
+				<passive_effect name="MagazineSize" operation="base_set" value="20"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,3" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
+		
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.35"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.35"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
+		
+				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.6,1.2"/>
+				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.4,0.4"/>
+				<display_value name="dRecoil" value="7" />
+		
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.35"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
+			</effect_group>
+		</item>		
 	
 		<item name="Leon's SMG">
 			<property name="CustomIcon" value="gunSMG5"/> 
@@ -49,15 +102,12 @@
 			<property name="Extends" value="gunSMG5"/>
 			<property name="TintColor" value="255,255,255"/>
 			<property name="EconomicValue" value="1400"/>		
+			<property name="DegradationBreaksAfter" value="true"/>
 			<effect_group name="Base Effects"> <!-- MP5 -->
 				<passive_effect name="MaxRange" operation="base_set" value="70"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="35"/>
 				<passive_effect name="EntityDamage" operation="base_subtract" value="6"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
-				
-				<passive_effect name="ModSlots" operation="base_set" value="3,6" tier="1,6"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="7000,18000" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="18"/>
 		
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="500"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
@@ -75,7 +125,7 @@
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
 		
-				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.5,1"/>
+				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.4,0.8"/>
 				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.3,0.3"/>
 				<display_value name="dRecoil" value="7" />
 		

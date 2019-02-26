@@ -1,0 +1,70 @@
+<config>
+	<append xpath="/quests" >
+	
+			<quest id="+Quest For Ivanka's Flaming Dig Tools">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="There is a crate of digging tools a woman named Ivanka left at the Trader some time ago and seems to have abandoned. The tools have been donated to White Run settlement to provide to citizens. You can have a pair of these tools once you provide the trader with iron replacements. Gather 100 Iron, Craft 10 Iron Shovels + 10 Iron Pickaxes" />
+				<property name="name" value="Quest to obtain Ivanka's Flaming Dig Tools" />
+				<property name="subtitle_key" value="Craft the +Writ Of Ivanka" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Writ Of Ivanka and receive your set of flaming dig tools. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="resourceIronFragment" value="100" phase="1" />
+				<objective type="FetchKeep" id="meleeToolShovelIron" value="10" phase="1" />
+				<objective type="FetchKeep" id="meleeToolPickaxeIron" value="10" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ Of Ivanka" value="1" phase="2" />		
+				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+				</objective>	
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ Of Ivanka" value="-1" />						
+				<reward type="Item" id="Ivanka's Steel Shovel" value="2-3" />
+				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="Ivanka's Steel Pickaxe" value="2-4" />
+				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="0-50" />	
+				<reward type="Exp" value="1500" />
+				<reward type="SkillPoints" value="1" />				
+			</quest>
+
+			<quest id="+Vet. Quest For Ivanka's Flaming Dig Tools">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="There is a crate of digging tools a woman named Ivanka left at the Trader some time ago and seems to have abandoned. You can have a pair of these tools once you provide the trader with iron replacements. Gather 500 Forged Iron + 50 Animal Fat, Craft 15 Steel Shovels + 15 Steel Pickaxes." />
+				<property name="name" value="Veteran Quest to obtain Ivanka's Flaming Dig Tools" />
+				<property name="subtitle_key" value="Craft the +Veteran Writ Of Ivanka" />
+				<property name="description_key" value="Collect the needed items and resources to craft a +Veteran Writ Of Ivanka and receive your set of flaming dig tools. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="resourceForgedIron" value="500" phase="1" />
+				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
+				<objective type="FetchKeep" id="meleeToolShovelSteel" value="15" phase="1" />
+				<objective type="FetchKeep" id="meleeToolPickaxeSteel" value="15" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Veteran Writ Of Ivanka" value="1" phase="2" />		
+				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+				</objective>	
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Veteran Writ Of Ivanka" value="-1" />						
+				<reward type="Item" id="Ivanka's Steel Shovel" value="4-6" />
+				<reward type="Item" id="Ivanka's Steel Pickaxe" value="4-6" />
+				<reward type="Item" id="+Sealed Ivanka's Veteran Crate" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
+				<reward type="Exp" value="5000" />
+				<reward type="SkillPoints" value="1" />				
+			</quest>
+	</append>
+</config>

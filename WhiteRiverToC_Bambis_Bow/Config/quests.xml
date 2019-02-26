@@ -3,7 +3,7 @@
 	
 			<quest id="+Quest For Bambi's Killer Bow">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow..or maybe a replica..in exchange for your assistance." />
+				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow..or maybe a replica..in exchange for your assistance. Gather 400 Wood, Craft 20 Wooden Bows" />
 				<property name="name" value="Quest to obtain Bambi's Killer Compound Bow" />
 				<property name="subtitle_key" value="Obtain Bambi's Killer Compound Bow" />
 				<property name="description_key" value="Collect the needed items and resources to craft a +Writ_Of_Bambi and receive your compound bow. You also will receive a small gift to help you re-establish your homestead." />
@@ -37,7 +37,7 @@
 	
 			<quest id="+Vet. Quest For Bambi's Killer Bow">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is still really having problems outfitting survivors with bows. If you can provide a substantial boost to the inventory of bows and wood for their bow-making class, they will give you the REAL *Cough* famed Bambi Killer compound bow(From behind the counter) in exchange for your assistance." />
+				<property name="offer" value="The Trader is still really having problems outfitting survivors with bows. If you can provide a substantial boost to the inventory of bows and wood for their bow-making class, they will give you the REAL *Cough* famed Bambi Killer compound bow(From behind the counter) in exchange for your assistance. Gather 4000 Wood + 50 Animal Fat, Craft 20 Compound Bows" />
 				<property name="name" value="Veteran Quest to obtain Bambi's Killer Compound Bow" />
 				<property name="subtitle_key" value="Obtain Bambi's Killer Compound Bow" />
 				<property name="description_key" value="Collect the needed items and resources to craft a +Veteran Writ Of Bambi and receive your compound bow. You also will receive a small gift to help you re-establish your homestead." />

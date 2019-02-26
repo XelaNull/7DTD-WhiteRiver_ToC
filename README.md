@@ -2,11 +2,11 @@
 
 ## White River - Tools of Citizenship
 
-This modlet collection extends the new player White Run citizenship quest line to provide some gather & craft quests to obtain improved tools and equipment. Each item has a small back story and explanation in an attempt to blend with the Vanilla game and Trader. This gives new players a chance to obtain better gear through a method other than randomness or traditional progression. The rewards this Modlet provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a slight improvement over the items they were created from.
+This modlet collection extends the new player White Run citizenship quest line to provide some gather & craft quests to obtain improved tools and equipment. Each item has a small back story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better gear through a method other than randomness or traditional progression. The rewards this Modlet provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a slight improvement over the items they were created from.
 
 **This mod is only XML XPath modlets and only needs to be installed on the server!**
 
-The modlet collection provides a multi-tier quest line, first requiring the player to craft a +Declaration of Citizenship. This allows them to begin a quest to volunteer to help defend the settlement by killing 10 zombies. This earns the player a +White Run Citizenship Card which they can then use to select which equipment quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player can craft a new +Declaration of Citizenship to start the process over of becoming a White Run citizen.
+The modlet collection provides a multi-tier quest line, first requiring the player to craft a +Declaration of Citizenship. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White Run Citizenship Card which they can then use to select which equipment quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player can craft a new +Declaration of Citizenship to start the process over of becoming a White Run citizen.
 
 --
 
@@ -21,7 +21,7 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 ### Questable Equipment:
 
-- Bambi's Killer Bow - Compound Bow slightly better stats than Vanilla
+- Bambi's Killer Bow - Compound Bow with slightly better stats than Vanilla
 - Danara's Flaming Dig Tools - Steel Pickaxe & Shovel with flaming mods and slightly better stats than Vanilla
 - Dundee's Hunting Knife - Hunting Knife with slightly better stats than Vanilla
 - Gupta's Bandages - Tier 1 Only: 24 Aloe Leaves + 40 Cotton = 2-3 First Aid Bandages
@@ -31,5 +31,9 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 All quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward.
 
+#### Possible future ideas:
+
 - Carefully look over the quest wording with an eye to telling the story better.
 - If possible, spell out the requirement before someone accepts a quest
+- Maybe set up a third tier?
+- Could convert some of them to require trading in the previous lower quality version of the item as part of quest
