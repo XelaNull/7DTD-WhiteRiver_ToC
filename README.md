@@ -33,7 +33,4 @@ All quests are designed to be repeatable in case of loss of equipment or to try 
 
 #### Possible future ideas:
 
-- Carefully look over the quest wording with an eye to telling the story better.
-- If possible, spell out the requirement before someone accepts a quest
 - Maybe set up a third tier?
-- Could convert some of them to require trading in the previous lower quality version of the item as part of quest
