@@ -4,6 +4,7 @@
 		<block name="+Sealed Dundee's Veteran Crate">
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
 			<property name="DowngradeBlock" value="+Dundee's Veteran Crate"/>
 			<property name="FilterTags" value="floot"/>
 		</block>	
@@ -11,7 +12,7 @@
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="126"/>
+			<property name="LootList" value="129"/>
 		</block>	
 	</append>	
 </configs>	
