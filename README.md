@@ -10,7 +10,7 @@ The modlet collection provides a multi-tier quest line, first requiring the play
 
 --
 
-The White River Settlements is looking for new citizens and has some extra gear that they've collected. They are offering this extra equipment to provide a select few survivors access to higher quality equipment, through volunteering with the settlement to provide items and materials for training classes being held there. These items are only available to those who gain citizenry with White River settlements through killing zombies in the area. In addition to the reward, the player is also offered a small stack (50-150) of wet concrete blocks, from the last of the Trader's community inventory.
+The White River Settlements is looking for new citizens to give extra tools and equipment that they've collected. They are offering to provide a select few survivors access to higher quality equipment in exchange for volunteering to complete various tasks for the settlement. There is a limited supply and these items are only available to those who gain citizenry with White River settlements. In addition to the reward, the player is also offered a small stack of wet concrete blocks, from the last of the Trader's community inventory to assist in re-establishing a homestead.
 
 ### Citizenship is offered in two-tiers:
 
@@ -19,7 +19,7 @@ The White River Settlements is looking for new citizens and has some extra gear 
 
 Once the player obtains their citizenship card, they can use this to craft quest starter items for the equipment quests below. Tier 2 offer better quality, more items, and greater quantity of each multi-quantity item. However, after each "Veteran" quest is complete, only a basic citizenship card is returned. The player must successfully complete the Tier 2 citizenship quest again in order to pursue another Veteran equipment quest below.
 
-### Questable Equipment & Tiered Requirements:
+### Questable Equipment:
 
 - Bambi's Killer Bow - Compound Bow slightly better stats than Vanilla
 - Danara's Flaming Dig Tools - Steel Pickaxe & Shovel with flaming mods and slightly better stats than Vanilla
