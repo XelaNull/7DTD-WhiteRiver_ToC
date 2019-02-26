@@ -17,7 +17,7 @@ The White River Settlements is looking for new citizens to give extra tools and 
 - Tier 1 : Kill 10 Zombies. This is the Basic level of citizenship. Reward: +White Run Citizenship Card
 - Tier 2 : Kill 100 Zombies. This is the Veteran level of citizenship. Reward: +White Run Veteran Citizenship Card
 
-Once the player obtains their citizenship card, they can use this to craft quest starter items for the equipment quests below. Tier 2 offer better quality, more items, and greater quantity of each multi-quantity item. However, after each "Veteran" quest is complete, only a basic citizenship card is returned. The player must successfully complete the Tier 2 citizenship quest again in order to pursue another Veteran equipment quest below.
+Once the player obtains their citizenship card, they can use this to craft quest starter items for the equipment quests below. Tier 2 offer a sealed crate containing better quality, more items, and greater quantity of each multi-quantity item. However, after each "Veteran" quest is complete, only a basic citizenship card is returned. The player must successfully complete the Tier 2 citizenship quest again in order to pursue another Veteran equipment quest below.
 
 ### Questable Equipment:
 
@@ -30,3 +30,6 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - Taza's Axe - The famed Taza's Axe, already awesome.
 
 All quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward.
+
+- Carefully look over the quest wording with an eye to telling the story better.
+- If possible, spell out the requirement before someone accepts a quest
