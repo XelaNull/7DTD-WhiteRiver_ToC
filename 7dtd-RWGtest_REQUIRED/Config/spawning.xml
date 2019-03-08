@@ -1,0 +1,15 @@
+<configs>
+<!-- zombie spawning mods -->
+<append xpath = "/spawning">
+	<biome name="great_plains">
+		<spawn maxcount="2" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="EnemyAnimalsPrairie"    spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="FriendlyAnimalsPrairie" spawnDeadChance="0" />
+	</biome>
+	<biome name="alpine_forest">
+		<spawn maxcount="2" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="EnemyAnimalsPrairie"    spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="FriendlyAnimalsAlpine" spawnDeadChance="0" />
+	</biome>
+</append>
+</configs>

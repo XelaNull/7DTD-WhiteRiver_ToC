@@ -1,0 +1,290 @@
+<!-- texture notes 
+Texture value="1" is mountain rocks
+        2 looks like dirt
+	185 is orangy desert sand
+	195 is forest ground
+	288 is burnt ground
+	308 is "sod" (invalid in A17)
+	396 is plains ground (invalid in A17)
+-->
+<configs>
+<append xpath="/blocks">
+<block name="terrPrarieGround">
+	<property name="Material" value="MforestGround"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="195"/> <!-- is there any way to tint this a little brown? -->
+		
+	<property name="LPHardnessScale" value="2"/>
+	<property name="Map.Color" value="65,80,35"/>
+	<!--property class="Map"> <property name="Color" value="44,48,26"/> <property name="Color2" value="44,60,25"/> <property name="ElevMinMax" value="50,80"/> </property-->
+	<property name="ImposterExclude" value="true"/>
+	<property name="PlaceAltBlockValue" value="terrForestFromDirt,terrForestWGrass1"/>
+	<property class="RepairItems"> <property name="resourceClayLump" value="14"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="terrFertileFarmland"/>
+		<property name="Item" value="meleeToolHoeIron"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Harvest" name="resourceClayLump" count="20" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceYuccaFibers" count="2"/>
+	<drop event="Fall" name="terrPrarieGround" count="1" prob="0.25" stick_chance="1"/>
+	<drop event="Fall" name="resourceClayLump" count="40" prob="0.187" stick_chance="0"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0k0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrainFertile" />
+</block>
+
+<block name="terrGravelCoalTrace">
+	<property name="Material" value="MforestGround"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="288,570,570,570,570,570"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Map.Color" value="55,55,50"/>
+	<property name="PlaceAltBlockValue" value="terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestFromDirt,terrBurntForestWGrass1"/>
+	<property class="RepairItems"> <property name="resourceClayLump" value="14"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="terrFertileFarmland"/>
+		<property name="Item" value="meleeToolHoeIron"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<drop event="Harvest" name="resourceClayLump" count="12" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="3" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="resourceCoal" count="1"/>
+	<drop event="Fall" name="terrBurntForestGround" count="1" prob="0.25" stick_chance="1"/>
+	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0k0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrainFertile" />
+</block>
+
+<block name="treeBirch10m">
+	<property name="Extends" value="treeMaster" />
+	<property name="Model" value="Entities/Trees/Birch35Prefab" />
+	<property name="ModelOffset" value="0,-0.3,0" />
+	<property name="MultiBlockDim" value="1,7,1" />
+	<property name="BigDecorationRadius" value="2" />
+	<property name="ParticleOnDeath" value="treeGib_birch_small" />
+	<drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
+    <drop event="Destroy" name="resourceWood" count="1,5"/>
+	</block>
+
+<block name="treeBirch12m">
+	<property name="Extends" value="treeMaster" />
+	<property name="Material" value="MtreeWoodMedium"/>
+	<property name="Model" value="Entities/Trees/Birch50Prefab" />
+	<property name="ModelOffset" value="0,-0.3,0" />
+	<property name="MultiBlockDim" value="1,4,1" />
+	<property name="BigDecorationRadius" value="3" />
+	<property name="ParticleOnDeath" value="treeGib_birch_small" />
+	<drop event="Harvest" name="resourceWood" count="60" tag="oreWoodHarvest"/>
+    <drop event="Destroy" name="resourceWood" count="1,10"/>
+</block>
+
+<block name="treeBirch15m">
+	<property name="Extends" value="treeMaster" />
+	<property name="Material" value="MtreeWoodLarge"/>
+	<property name="Model" value="Entities/Trees/Birch55Prefab" />
+	<property name="ModelOffset" value="0,-0.3,0" />
+	<property name="MultiBlockDim" value="1,13,1" />
+	<property name="BigDecorationRadius" value="4" />
+	<property name="ParticleOnDeath" value="treeGib_birch" />
+	<drop event="Harvest" name="resourceWood" count="130" tag="oreWoodHarvest"/>
+    <drop event="Destroy" name="resourceWood" count="1,15"/>
+</block>
+
+<block name="ironrockResource"> <!-- biome decoration -->
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="Mboulder"/>
+	<!--property name="StabilitySupport" value="false" NOT SUPPORTED FOR MULTIBLOCKS! /-->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsDistantDecoration" value="false"/>
+	<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
+	<!-- none of these worked 
+	<property name="CustomIconTint" value="ff8080"/> 
+	<property name="TintColor" value="255,0,0"/>
+	<property name="TintMaterial0" value="255,0,0"/> 
+	<property name="TintMaterial1" value="255,0,0"/>
+	<property name="TintMaterial2" value="255,0,0"/>
+	<property name="TintMaterial3" value="255,0,0"/> 
+	<property name="Overlay0Tint" value="255,0,0" /> -->
+	<property name="ModelOffset" value="0,-0.5,0"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="MultiBlockDim" value="3,2,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceRockSmall" count="8" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceIronFragment" count="20" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="ironrockResourceBroke1"/>
+	<property name="Map.Color" value="160,120,120"/>
+	<property name="FilterTags" value="foutdoor"/>
+</block>
+
+<block name="ironrockResourceBroke1">
+	<property name="Extends" value="ironrockResource"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke1Prefab"/>
+	<property name="DowngradeBlock" value="ironrockResourceBroke2"/>
+</block>
+
+<block name="ironrockResourceBroke2">
+	<property name="Extends" value="ironrockResource" param1="DowngradeBlock"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab"/>
+</block>
+
+
+<block name="leadrockResource"> <!-- biome decoration -->
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="Mboulder"/>
+	<!--property name="StabilitySupport" value="false" NOT SUPPORTED FOR MULTIBLOCKS! /-->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsDistantDecoration" value="false"/>
+	<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
+	<property name="ModelOffset" value="0,-0.5,0"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="MultiBlockDim" value="3,2,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourceRockSmall" count="8" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="20" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceIronFragment" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="leadrockResourceBroke1"/>
+	<property name="Map.Color" value="120,120,160"/>
+	<property name="FilterTags" value="foutdoor"/>
+</block>
+
+<block name="leadrockResourceBroke1">
+	<property name="Extends" value="leadrockResource"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke1Prefab"/>
+	<property name="DowngradeBlock" value="leadrockResourceBroke2"/>
+</block>
+
+<block name="leadrockResourceBroke2">
+	<property name="Extends" value="leadrockResource" param1="DowngradeBlock"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab"/>
+</block>
+
+
+<block name="nitraterockResource"> <!-- biome decoration -->
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="Mboulder"/>
+	<!--property name="StabilitySupport" value="false" NOT SUPPORTED FOR MULTIBLOCKS! /-->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsDistantDecoration" value="false"/>
+	<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
+	<property name="ModelOffset" value="0,-0.5,0"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="MultiBlockDim" value="3,2,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="20" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="8" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceIronFragment" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="nitraterockResourceBroke1"/>
+	<property name="Map.Color" value="160,160,120"/>
+	<property name="FilterTags" value="foutdoor"/>
+</block>
+
+<block name="nitraterockResourceBroke1">
+	<property name="Extends" value="nitraterockResource"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke1Prefab"/>
+	<property name="DowngradeBlock" value="nitraterockResourceBroke2"/>
+</block>
+
+<block name="nitraterockResourceBroke2">
+	<property name="Extends" value="nitraterockResource" param1="DowngradeBlock"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab"/>
+</block>
+
+
+<block name="coalrockResource"> <!-- biome decoration -->
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="Mboulder"/>
+	<!--property name="StabilitySupport" value="false" NOT SUPPORTED FOR MULTIBLOCKS! /-->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsDistantDecoration" value="false"/>
+	<property name="Model" value="Entities/Resources/rock_resourcePrefab"/>
+	<property name="ModelOffset" value="0,-0.5,0"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="MultiBlockDim" value="3,2,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="8" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceIronFragment" count="7" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="20" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="nitraterockResourceBroke1"/>
+	<property name="Map.Color" value="160,160,120"/>
+	<property name="FilterTags" value="foutdoor"/>
+</block>
+
+<block name="coalrockResourceBroke1">
+	<property name="Extends" value="nitraterockResource"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke1Prefab"/>
+	<property name="DowngradeBlock" value="coalrockResourceBroke2"/>
+</block>
+
+<block name="coalrockResourceBroke2">
+	<property name="Extends" value="coalrockResource" param1="DowngradeBlock"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Entities/Resources/rock_resource_broke2Prefab"/>
+</block>
+
+</append>
+
+<!-- fix offset of azalea so it isn't hovering -->
+<append xpath="/blocks/block[@name='treeAzalea']">
+	<property name="ModelOffset" value="0,-0.3,0"/>
+</append>
+
+
+</configs>

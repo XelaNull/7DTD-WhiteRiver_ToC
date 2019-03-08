@@ -1,0 +1,33 @@
+<configs> 
+  <append xpath = "/entitygroups">
+    <entitygroup name="EnemyAnimalsPrairie">
+		<entity name="invisibleAnimalEnemy" prob="5"   />
+		<entity name="animalWolf"           prob="0.5" />
+		<entity name="animalDireWolf"       prob="0.05"/>
+        <entity name="animalZombieVulture"  prob="0.35" />
+		<entity name="animalSnake"          prob="0.45" />
+	</entitygroup>
+
+	<entitygroup name="FriendlyAnimalsPrairie">
+		<entity name="invisibleAnimal" prob="1"/>
+		<entity name="animalRabbit"    prob="0.5" />
+		<entity name="animalBoar"      prob="1"/>
+		<entity name="animalDoe"       prob="0.2"/>
+		<entity name="animalChicken"   prob="1" />
+	</entitygroup>
+
+	<entitygroup name="FriendlyAnimalsAlpine">
+		<entity name="invisibleAnimal" prob="1"/>
+		<entity name="animalRabbit"    prob="0.1" />
+		<entity name="animalBoar"      prob="1"/>
+		<entity name="animalStag"      prob="0.5"/>
+		<entity name="animalDoe"       prob="1"/>
+	</entitygroup>
+</append>
+
+ <!-- more animals in the forest -->
+<set xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']/entity[@name='invisibleAnimal']/@prob">2</set>
+ 
+
+</configs>
+

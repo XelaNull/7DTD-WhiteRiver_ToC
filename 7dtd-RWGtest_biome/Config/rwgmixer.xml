@@ -1,0 +1,128 @@
+<configs>
+
+<!-- replace the biome generators with new ones -->
+<remove xpath="/rwgmixer/biome_generators"/> 
+<!-- I Think we can probably get rid of the line above -->
+
+<append xpath="/rwgmixer">
+	<biome_generators>
+		<biome_generator name="TWL8K">
+			
+			 <!-- create a circular border layer -->
+			<!-- to create a single wasteland biome that is near the edge of the map, we want the frequency parameter to be about f = 0.6 / world_size -->
+			<!-- if the frequency is too high then you will get concentric rings of wasteland separating otherwise habitable biomes -->
+			<module name="circle8k"  type="Cylinders" >	<property name="frequency" value="0.000064"/> 	</module>
+			<!-- for maps 8192x8192 -->
+			<module name="fn1_8k" type="TranslateInput" >				
+			  <property name="sourceModule" value="circle8k"/>
+				<property name="x" value="-4096"/>
+				<property name="y" value="0.0"/>
+				<property name="z" value="-4096"/>							
+			</module>
+				
+			<module name="const_edge" type="Constant">
+				<property name="constant" value=".005"/> <!-- Default: 1 -->
+			</module>
+
+			<module name="const_0" type="Constant">
+				<property name="constant" value="0.0"/>
+			</module>
+
+			<module name="floorzero" type="LargerOutput">
+			    <property name="sourceModule1" value="const_0"/> 
+				<property name="sourceModule2" value="fn1_8k"/>  
+			</module>							
+			
+			<!-- convert the ring layer into a mask by pruning all values above the constant threshold set above -->
+			<module name="mask" type="SmallerOutput">
+			    <property name="sourceModule1" value="const_edge"/>
+				<property name="sourceModule2" value="floorzero"/>
+			</module>
+										
+			<module name="maskLayer" type="ScaleBiasOutput">
+				<property name="sourceModule" value="mask"/>
+				<property name="scale" value="1000"/>
+				<property name="bias" value="0"/>
+			</module>
+			
+			<!-- ================== -->
+			<!-- 8K START OF SECTION 2 -->
+			<!-- ================== -->
+			<!-- second layer is the biome distribution that will be within the masked area (inside the circle) -->
+    		<module name="fn5" type="Voronoi">			
+			    <property name="frequency"    value="0.002"/> 						
+				<property name="displacement" value=".5"/> 
+			</module>
+			
+			<!-- scale the voronoi sections to be larger -->
+			<module name="fn5b" type="ScaleInput">	
+				<property name="sourceModule" value="fn5"/>	
+				<property name="x" value=".15"/>			
+				<property name="z" value=".25"/>							
+			</module>
+
+			<!-- mix well -->
+      <module name="fn6" type="Turbulence">	
+				<property name="sourceModule" value="fn5b"/>	
+				<property name="frequency"    value=".04"/>	
+				<property name="power"        value="4"/> <!-- Default: 4 -->	
+				<property name="roughness"    value="1"/>
+			</module>
+			
+			<module name="fn7" type="ScaleBiasOutput">
+				<property name="sourceModule" value="fn6"/>
+				<property name="scale" value="1"/>
+				<property name="bias" value=".51"/>
+			</module>
+	
+			<!-- ================== -->
+			<!-- 8K COMBINE SECTION 1 AND SECTION 2 INTO FINAL BIOME MAP -->
+			<!-- ================== -->
+	    <module name="biomelayer" type="SmallerOutput">
+        <property name="sourceModule1" value="maskLayer"/>
+				<property name="sourceModule2" value="fn7"/>
+			</module>
+			
+			<!-- add additional turbulence so that the wasteland border is not so abrupt -->
+			<module name="fn6b" type="FastTurbulence">	
+				<property name="sourceModule" value="biomelayer"/>	
+				<property name="frequency" value=".02"/>	
+				<property name="power" value="30"/>		
+				<property name="roughness" value="1"/>			
+			</module>
+
+      <module name="fn6c" type="FastTurbulence">	
+				<property name="sourceModule" value="fn6b"/>	
+				<property name="frequency" value=".002"/>	
+				<property name="power" value="50"/>		
+				<property name="roughness" value="10"/>			
+			</module>
+					
+      <!-- use BiomeStyle? -->
+      <!-- <set xpath="/rwgmixer/biome_generators/biome_generator[@name='vanillaMedium']/module[@name='voronoi']/property[@name='frequency']/@value">.01</set> -->
+      <!-- biomes:                              | 0 = forest,    | 1 = snow,    | 2 = wasteland, | 3 = burnt forest, | 4 = desert  -->
+      <!-- original (A17 B240) biome weighting: | 0 = (.25,.50), | 1 = (0,.25), | 2 = (.5,.65),  | 3 = (.65,.75),    | 4 = (.75,1) -->
+      <!--                                      |    25%         | 25%          | 15%            | 10%               | 25%         -->        
+          
+			<!-- ================== -->
+			<!-- 8K FINAL STEP IS TO MAP THE Y VALUES OF THE OUTPUT FUNCTION TO BIOMES -->
+			<!-- ================== -->
+			<module name="biomeOutput" type="BiomeIDMapper">
+				<property name="sourceModule" value="fn6c"/>				
+				<property name="biomemap1.Name" value="wasteland"/>     <property name="biomemap1.Range" value="-1,0.02"/>				
+				<property name="biomemap4.Name" value="burnt_forest"/>	<property name="biomemap4.Range" value="0.02,0.08"/>				
+				<property name="biomemap0.Name" value="great_plains"/>	<property name="biomemap0.Range" value="0.08,0.09"/>								
+				<property name="biomemap3.Name" value="desert"/>      	<property name="biomemap3.Range" value="0.09,0.25"/>
+				<property name="biomemap2.Name" value="snow"/>  		<property name="biomemap2.Range" value="0.25,0.35"/>				
+				<property name="biomemap5.Name" value="pine_forest"/>	<property name="biomemap5.Range" value="0.35,0.65"/>
+				<property name="biomemap6.Name" value="alpine_forest"/>	<property name="biomemap6.Range" value="0.65,1"/>
+				<property name="biomemap7.Name" value="wasteland"/>     <property name="biomemap7.Range" value="1,2"/>				
+			</module>		
+			
+			<output module="biomeOutput"/>			 
+		</biome_generator>
+	</biome_generators>
+</append>
+
+</configs>
+

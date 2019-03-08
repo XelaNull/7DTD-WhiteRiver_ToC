@@ -1,0 +1,17 @@
+<configs>
+<!-- not for A17.2 -->
+
+<remove xpath="/rwgmixer/world"/>
+<remove xpath="/rwgmixer/rulesets"/>
+
+<insertBefore xpath="/rwgmixer/cell_rules"> 
+	<world ruleset="TWLMedium"/>	
+	<rulesets>
+		<ruleset name="TWLMedium" world_size="8192" terrain_generator="vanilla" biome_generator="TWL8K">
+	  	<cell_rule name="default" prob="0.2"/>
+			<cell_rule name="compopack_cities_big" prob="0.6"/>
+			<cell_rule name="compopack_cities_small" prob="0.2"/> 
+		</ruleset>
+	</rulesets>
+</insertBefore>
+</configs>
