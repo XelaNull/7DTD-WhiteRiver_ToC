@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RWG_terrain Refiner" />
+		<Description value="Refine the RWG quantities and probabilities" />
+		<Author value="Dr. Xela Null" />
+		<Version value="A17.1_1.0" />	
+		<Website value="https://github.com/XelaNull/XelaNull-7dtd-Modlets" />		
+	</ModInfo>
+</xml>

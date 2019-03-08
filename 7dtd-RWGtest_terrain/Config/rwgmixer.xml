@@ -1,0 +1,404 @@
+<configs>
+<!-- not for 17.2 -->
+<!--
+	GENERATOR MODULE TYPES
+	    AbsoluteOutput,    Add,                BiasOutput,          Blend,
+        ClampOutput        CurveOutput         DisplaceInput        ExponentialOutput
+        InvertInput        InvertOutput        LargerOutput         Multiply
+        Power              RotateInput         ScaleBiasOutput      ScaleInput
+        ScaleOutput        Select              SmallerOutput        Terrace
+        TranslateInput     Billow              Checkerboard         Constant
+        FastBillow         FastNoise           FastNoiseBasis       FastRidgedMultifractal
+        FastTurbulence     GradientNoiseBasis  RidgedMultifractal   Turbulence
+        Voronoi            Cylinders
+-->
+
+
+<!-- enable the following line to replace the terrain generator -->
+<!-- <remove xpath="/rwgmixer/terrain_generators"/> -->
+
+<append xpath="/rwgmixer" >
+	<terrain_generators>	
+		<terrain_generator name="TWL8Kterrain" base_height="32" water_level="40">
+			<!-- Total Module Count [62] -->
+			<!--  Module Block: Main Land  [12] modules -->
+			<module name="lnd_Fn" type="FastNoise" seed_additive="1024">
+				<property name="frequency" value="0.00625"/>
+				<property name="persistence" value="0.5"/>
+				<property name="octave" value="1"/>
+			</module>
+			<module name="lnd_Fn1" type="FastNoise" seed_additive="1024">
+				<property name="frequency" value="0.00625"/>
+				<property name="persistence" value="0.25"/>
+				<property name="octave" value="1"/>
+			</module>
+			<module name="lnd_Cu" type="CurveOutput">
+				<property name="sourceModule" value="lnd_Fn"/>
+				<property name="source_module1" value="lnd_Fn1"/>
+				<property name="controlPoints" value="-4.0,0.05; -3.0,-0.05; -2.00,-0.1; -1.00,0.05; -0.1,-0.05; 1.00,0.05; 2.00,-0.05; 3.0,0.0; 4.0,0.05"/>				
+			</module>
+			<module name="lnd_Cu1" type="CurveOutput">
+				<property name="sourceModule" value="lnd_Fn"/>
+				<property name="source_module1" value="lnd_Fn1"/>
+				<property name="controlPoints" value="-4.01,0.05; -3.01,-0.05; -2.01,-0.1; -1.01,0.05; -0.11,-0.05; 1.01,0.05; 2.01,-0.05; 3.01,0.0; 4.01,0.05"/>				
+			</module>
+			<module name="lnd_Se0" type="Select">
+				<property name="controlModule" value="lnd_Fn"/>
+				<property name="sourceModule1" value="lnd_Cu"/>
+				<property name="sourceModule2" value="lnd_Cu1"/>
+				<property name="bounds" value="0,1"/>
+				<property name="edgeFalloff" value="0.6125"/>
+			</module>
+			<module name="lnd_Sb0" type="ScaleBiasOutput">
+				<property name="sourceModule" value="lnd_Se0"/>
+				<property name="scale" value="0.55"/>
+				<property name="bias" value="-0.1"/>
+			</module>
+			<module name="lnd_Fr1" type="Spheres" seed_additive="2">
+				<property name="frequency" value="0.0000175"/> 
+				<property name="persistence" value="0.5"/>
+				<property name="octave" value="8"/>
+			</module>
+			
+			<module name="lnd_Sb1" type="ScaleBiasOutput">
+				<property name="sourceModule" value="lnd_Fr1"/>
+				<property name="scale" value="0.375"/>
+				<property name="bias" value="0.625"/>
+			</module>
+			<module name="test_Ex" type="ExponentialOutput">
+				<property name="sourceModule" value="lnd_Sb1"/>
+				<property name="exponent" value="1.35"/> 
+			</module>
+			<module name="lnd_Sm" type="SmallerOutput">
+				<property name="sourceModule1" value="test_Ex"/>
+				<property name="sourceModule2" value="lnd_Sb0"/>
+			</module>
+			<module name="lnd_Cl" type="ClampOutput">
+				<property name="sourceModule" value="lnd_Sm"/>
+				<property name="bounds" value="-1,1"/>
+			</module>
+			<module name="lnd_Tu0" type="FastTurbulence" seed_additive="1024">
+				<property name="sourceModule" value="lnd_Cl"/>
+				<property name="frequency" value="5.75"/>
+				<property name="power" value="5"/>
+				<property name="roughness" value="13"/>
+			</module>
+			<module name="terra_Te" type="Terrace">
+				<property name="sourceModule" value="lnd_Tu0"/>
+				<property name="source_module1" value="lnd_Tu0"/>
+				<property name="controlPoints" value="-1,-0.01,-0.05,0.05,0.01,1"/>
+			</module>
+			<module name="lnd_Se" type="Select">
+				<property name="controlModule" value="terra_Te"/>
+				<property name="sourceModule1" value="lnd_Cl"/>
+				<property name="sourceModule2" value="lnd_Tu0"/>
+				<property name="bounds" value="-0.3,1024"/>
+				<property name="edgeFalloff" value="0.6125"/>
+			</module>
+			<module name="lnd_Refiner" type="ScaleBiasOutput">
+				<property name="sourceModule" value="lnd_Se"/>
+				<property name="scale" value="0.75"/> 
+				<property name="bias" value="0.0"/> 
+			</module>
+			
+			<!--  Module Block: Mountains (Positions/ High/ Low/ Terra) [21] modules -->
+			
+			<!-- Mountain High (4) modules -->
+			<module name="mntHigh_Fr0" type="FastRidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.00027"/>
+				<property name="octave" value="8"/>
+			</module>
+			<module name="mntHigh_Fr1" type="RidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.00025"/>
+				<property name="octave" value="8"/>
+			</module>
+			<module name="mntHigh_Lo" type="LargerOutput">
+				<property name="sourceModule1" value="mntHigh_Fr0"/>
+				<property name="sourceModule2" value="mntHigh_Fr1"/>
+			</module>
+			<module name="mntHigh_Tu0" type="FastTurbulence" seed_additive="0">
+				<property name="sourceModule" value="mntHigh_Lo"/>
+				<property name="frequency" value="0.00141"/>
+				<property name="power" value="5"/>
+				<property name="roughness" value="5"/>
+			</module>
+			<!-- Mountain Low (3) modules-->
+			<module name="mntLow_Fr0" type="FastRidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.00027"/>
+				<property name="octave" value="4"/>
+			</module>
+			<module name="mntLow_Fr1" type="RidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.000125"/>
+				<property name="octave" value="4"/>
+			</module>
+			<module name="mntLow_Mu" type="Multiply">
+				<property name="sourceModule1" value="mntLow_Fr0"/>
+				<property name="sourceModule2" value="mntLow_Fr1"/>
+			</module>
+			<!-- Mountain Terra (6) modules -->
+			<module name="mnt_Si0" type="ScaleInput">
+				<property name="sourceModule" value="mntHigh_Tu0"/>
+				<property name="x" value="4"/>
+				<property name="z" value="4"/>
+			</module>
+			<module name="mntTerra_Sb0" type="ScaleBiasOutput">
+				<property name="sourceModule" value="mnt_Si0"/>
+				<property name="scale" value="0.35"/>
+				<property name="bias" value="0.25"/>
+			</module>
+			<module name="mnt_Si1" type="ScaleInput">
+				<property name="sourceModule" value="mntLow_Mu"/>
+				<property name="x" value="4"/>
+				<property name="z" value="4"/>
+			</module>
+			<module name="mntTerra_Sb1" type="ScaleBiasOutput">
+				<property name="sourceModule" value="mnt_Si1"/>
+				<property name="scale" value="0.4125"/>
+				<property name="bias" value="-0.1"/>
+			</module>
+			<module name="mntTerra_Se" type="Select">
+				<property name="sourceModule1" value="mntTerra_Sb0"/>
+				<property name="sourceModule2" value="mntTerra_Sb1"/>
+				<property name="controlModule" value="mntHigh_Fr0"/>
+				<property name="bounds" value="0,1"/>
+				<property name="edgeFalloff" value="0.65"/>
+			</module>
+			<module name="mntTerra_Sb2" type="ScaleBiasOutput">
+				<property name="sourceModule" value="mntTerra_Se"/>
+				<property name="scale" value="0.95"/>
+				<property name="bias" value="0.25"/> 
+			</module>
+			<module name="mntTerra_Ex" type="ExponentialOutput">
+				<property name="sourceModule" value="mntTerra_Sb2"/>
+				<property name="exponent" value="1.35"/> 
+			</module>
+			
+			<module name="mntTerra_Cl" type="ClampOutput">
+				<property name="sourceModule" value="mntTerra_Ex"/>
+				<property name="bounds" value="-0.25,1.5"/>
+			</module>
+			<module name="mnt_Tu0" type="FastTurbulence" seed_additive="1024">
+				<property name="sourceModule" value="mntTerra_Cl"/>
+				<property name="frequency" value="1.75"/>
+				<property name="power" value="2.5"/>
+				<property name="roughness" value="13"/>
+			</module>
+			<module name="mnt_Refiner" type="BiasOutput">
+				<property name="sourceModule" value="mnt_Tu0"/>
+				<property name="scale" value="10"/> <!-- Set scale at "1" to output 100% defined in the Moudule block -->
+				<property name="bias" value="0.1"/> 
+			</module>
+
+			<!-- Module Block: Plains (Smooth/ Rough/ Terra)[16] Modules-->
+			<!-- Plaines Smooth (5) modules -->
+			<module name="plns_Fr" type="FastRidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.00025"/>
+				<property name="persistence" value="0.5"/>
+				<property name="octave" value="18"/>
+			</module>
+			<module name="plns_Sb0" type="ScaleBiasOutput">
+				<property name="sourceModule" value="plns_Fr"/>
+				<property name="scale" value="0.875"/>
+				<property name="bias" value="0.0"/>
+			</module>
+			<module name="plns_Vo" type="Voronoi" seed_additive="0">
+				<property name="frequency" value="0.000025"/>
+				<property name="displacement" value="0.5"/>
+				<property name="enableDistance" value="True"/>
+				<property name="persistence" value="0.5"/>
+			</module>
+			<module name="plns_Sb1" type="ScaleBiasOutput">
+				<property name="sourceModule" value="plns_Vo"/>
+				<property name="scale" value="0.75"/>
+				<property name="bias" value="0.25"/>
+			</module>
+			<module name="plns_Ad" type="Add">
+				<property name="sourceModule1" value="plns_Sb0"/>
+				<property name="sourceModule2" value="plns_Sb1"/>
+			</module>
+			
+			<!-- Plains Rough (6) modules -->
+			<module name="cliffEdges_Fn" type="FastNoise" seed_additive="0">
+				<property name="frequency" value="0.000125"/>
+				<property name="persistence" value="0.75"/>
+				<property name="octave" value="6"/>
+			</module>
+			<module name="cliffEdges_Cu" type="CurveOutput">
+				<property name="sourceModule" value="cliffEdges_Fn"/>
+				<property name="source_module1" value="cliffEdges_Fn"/>
+				<property name="controlPoints" value="-4.0,0.05; -3.0,-0.05; -2.00,-0.1; -1.00,0.05; -0.1,-0.05; 1.00,0.05; 2.00,-0.05; 3.0,0.0; 4.0,0.05"/>
+			</module>
+			<module name="cliffEdges_Cl" type="ClampOutput">
+				<property name="sourceModule" value="cliffEdges_Cu"/>
+				<property name="bounds" value="-1,1"/>
+			</module>
+			<module name="cliffEdges_Te" type="Terrace">
+				<property name="sourceModule" value="cliffEdges_Cl"/>
+				<property name="source_module1" value="cliffEdges_Cl"/>
+				<property name="controlPoints" value="-1,-0.935,-0.875,-0.75,-0.5,-0.125,0,0.125,0.25,0.33,0.5,0.75,0.875,0.991,1"/>
+			</module>
+			<module name="cliffEdges_Tu0" type="FastTurbulence" seed_additive="0">
+				<property name="sourceModule" value="cliffEdges_Te"/>
+				<property name="frequency" value="0.00175"/>
+				<property name="power" value="1"/>
+				<property name="roughness" value="13"/>
+			</module>
+			<module name="cliffEdges_Tu1" type="FastTurbulence" seed_additive="0">
+				<property name="sourceModule" value="cliffEdges_Tu0"/>
+				<property name="frequency" value="0.00175"/>
+				<property name="power" value="1"/>
+				<property name="roughness" value="13"/>
+			</module>
+			
+			<!-- Plains Terra (5) modules -->
+			<module name="cliffPlnsTerra_Sb" type="ScaleBiasOutput">
+				<property name="sourceModule" value="plns_Ad"/>
+				<property name="scale" value="0.25"/>
+				<property name="bias" value="-0.5"/>
+			</module>
+			<module name="cliffPlnsTerra_Lo" type="LargerOutput">
+				<property name="sourceModule1" value="cliffEdges_Tu1"/>
+				<property name="sourceModule2" value="cliffPlnsTerra_Sb"/>
+			</module>
+			<module name="cliffPlnsTerra_Cl" type="ClampOutput">
+				<property name="sourceModule" value="cliffPlnsTerra_Lo"/>
+				<property name="bounds" value="-1,1"/>
+			</module>
+			<module name="cliffPlnsTerra_Se" type="Select">
+				<property name="controlModule" value="cliffEdges_Te"/> 
+				<property name="sourceModule1" value="mnt_Refiner"/>
+				<property name="sourceModule2" value="cliffPlnsTerra_Cl"/>
+				<property name="bounds" value="0,1"/> 
+				<property name="edgeFalloff" value="0.06"/>
+			</module>
+			<module name="cliffPlns_Tu0" type="FastTurbulence" seed_additive="1024">
+				<property name="sourceModule" value="cliffPlnsTerra_Se"/>
+				<property name="frequency" value="2.75"/>
+				<property name="power" value="2.5"/>
+				<property name="roughness" value="13"/>
+			</module>
+			<module name="cliffPlns_Refiner" type="ScaleBiasOutput">
+				<property name="sourceModule" value="cliffPlns_Tu0"/>
+				<property name="scale" value="0.94"/> <!-- Set scale at "1" to output 100% defined in the Moudule block -->
+				<property name="bias" value="0.0"/> 
+			</module>
+			
+			<module name="lndPlns_Sm" type="SmallerOutput">
+				<property name="sourceModule1" value="lnd_Refiner"/>
+				<property name="sourceModule2" value="cliffPlns_Refiner"/>
+			</module>
+			
+			<!-- Module Block: Water Bodies(9) Modules-->
+			<module name="wtrPos_Fr0" type="FastRidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.0039"/>
+				<property name="persistence" value="0.25"/>
+				<property name="octave" value="1"/>
+			</module>
+			<module name="wtrPos_Cu0" type="CurveOutput">
+				<property name="sourceModule" value="wtrPos_Fr0"/>
+				<property name="source_module1" value="wtrPos_Fr0"/>
+				<property name="controlPoints" value="-2.0,1.0; -1.0,1.0; -0.125,0.875; 0.0,-0.0; 1.0,-1.0; 2.0,-2.0"/>
+			</module>
+			<module name="wtrPos_Fr1" type="RidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.004"/>
+				<property name="persistence" value="0.25"/>
+				<property name="octave" value="1"/>
+			</module>
+			<module name="wtrPos_Cu1" type="CurveOutput">
+				<property name="sourceModule" value="wtrPos_Fr1"/>
+				<property name="source_module1" value="wtrPos_Fr1"/>
+				<property name="controlPoints" value="-2.01,1.0; -1.01,1; -0.125,1; 0.01,0.5; 1.01,0.25; 2.01,0.0"/>
+			</module>
+			<module name="wtrPos_Sm" type="SmallerOutput">
+				<property name="sourceModule1" value="wtrPos_Cu0"/>
+				<property name="sourceModule2" value="wtrPos_Cu1"/>
+			</module>
+			<module name="wtrPos_Tu0" type="FastTurbulence" seed_additive="0">
+				<property name="sourceModule" value="wtrPos_Sm"/>
+				<property name="frequency" value="0.01411"/>
+				<property name="power" value="3"/>
+				<property name="roughness" value="6"/>
+			</module>
+			<module name="wtrTerra_Sb2" type="ScaleBiasOutput">
+				<property name="sourceModule" value="wtrPos_Tu0"/>
+				<property name="scale" value="-0.275"/> 
+				<property name="bias" value="-0.2"/>
+			</module>
+			<module name="wtrTerra_Cl" type="ClampOutput">
+				<property name="sourceModule" value="wtrTerra_Sb2"/>
+				<property name="bounds" value="-0.25,-0.1"/>
+			</module>
+			
+			<module name="wtr_Cntrl" type="RidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.00175"/> 
+				<property name="persistence" value="0.75"/>
+				<property name="octave" value="14"/>
+			</module>
+			<module name="wtrTerra_Se" type="Select" seed_additive="0">
+				<property name="sourceModule1" value="cliffPlns_Refiner"/>
+				<property name="sourceModule2" value="wtrTerra_Cl"/>
+				<property name="controlModule" value="wtr_Cntrl"/> 
+				<property name="bounds" value="0,0.5"/> 
+				<property name="edgeFalloff" value="0.33"/>
+			</module>
+			<module name="wtr_Tu1" type="FastTurbulence" seed_additive="1024">
+				<property name="sourceModule" value="wtrTerra_Se"/>
+				<property name="frequency" value="3.75"/>
+				<property name="power" value="5"/>
+				<property name="roughness" value="13"/>
+			</module>
+			<module name="wtr_Refiner" type="ScaleBiasOutput">
+				<property name="sourceModule" value="wtr_Tu1"/>
+				<property name="scale" value="1"/> <!-- Set scale at "1" to output 100% defined in the Moudule block -->
+				<property name="bias" value="0.0"/> 
+			</module>
+			<module name="wtrPlns_Sm" type="SmallerOutput">
+				<property name="sourceModule1" value="wtr_Refiner"/>
+				<property name="sourceModule2" value="cliffPlns_Refiner"/>
+			</module>
+			
+			<!-- Module Block: Select  Modules (2)-->
+			<module name="wrld_Cntrl" type="FastRidgedMultifractal" seed_additive="0">
+				<property name="frequency" value="0.00175"/> 	
+			</module>
+			<module name="wrld_Se0" type="Select">
+				<property name="controlModule" value="wrld_Cntrl"/> 
+				<property name="sourceModule1" value="lndPlns_Sm"/>
+				<property name="sourceModule2" value="wtrPlns_Sm"/>
+				<property name="bounds" value="0.885,1000"/>
+				<property name="edgeFalloff" value="0.60"/>
+			</module>
+			
+			<module name="wrld_Refiner0" type="ScaleBiasOutput">
+				<property name="sourceModule" value="wrld_Se0"/>
+				<property name="scale" value="176"/>
+				<property name="bias" value="0.04"/> 
+			</module>
+			<module name="wrld_Refiner1" type="ScaleBiasOutput">
+				<property name="sourceModule" value="wrld_Se0"/>
+				<property name="scale" value="168"/>
+				<property name="bias" value="0.04"/> 
+			</module>
+			
+			<module name="wrld_Se1" type="Select">
+				<property name="controlModule" value="wrld_Cntrl"/> 
+				<property name="sourceModule1" value="wrld_Refiner0"/>
+				<property name="sourceModule2" value="wrld_Refiner1"/>
+				<property name="bounds" value="0,4096"/>
+				<property name="edgeFalloff" value="0.60"/>
+			</module>
+			
+			<!-- Master Output Modules (2) -->
+			<module name="MasterScaleBias" type="ScaleBiasOutput">
+				<property name="sourceModule" value="wrld_Se1"/>
+				<property name="scale" value="1"/> 
+				<property name="bias" value="30.75"/> 
+			</module>
+			<output module="MasterScaleBias"/>
+		</terrain_generator>
+
+	</terrain_generators>
+</append>
+
+</configs>
+
