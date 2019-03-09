@@ -1,6 +1,5 @@
 <configs>
 	<append xpath="/items">
-
 		<item name="+Bambi's Killer Bow Quest"> 
 			<property name="CustomIcon" value="cntShippingCrateShamway"/>
 			<property name="CustomIconTint" value="d8006c"/>
@@ -54,7 +53,7 @@
 				<property name="Class" value="Catapult"/>
 				<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
 				<property name="Hitmask_override" value="Arrow"/>
-				<property name="Delay" value="1"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Delay" value="0.8"/> <!-- obsolete if rounds per minute exists -->
 				<property name="Magazine_items" value="ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming"/>
 				<!-- <property name="Reload_time" value=".9"/> -->
 				<property name="Sound_start" value="bow_fire"/>
