@@ -23,6 +23,7 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 - Bambi's Killer Bow - Earn the famed deer killer, "Bambi's Killer" Compound Bow with slightly better stats than Vanilla.
 - Dundee's Hunting Knife - Take on everything with Dundee's famous Hunting Knife with slightly better stats than Vanilla.
+- Everdeen's Arrows & Bolts - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
 - Gupta's Bandages - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages.
 - Ivanka's Flaming Dig Tools - From the biggest digger herself, steel Pickaxe & Shovel with flaming mods and slightly better stats than Vanilla.
 - Kuva's Red Armor - Discover the secret ingredient in Kuva's Red Armor with slightly better stats and environmental mods.
@@ -31,6 +32,6 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 All quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward.
 
-#### Possible future ideas:
+#### Installation
 
-- Maybe set up a third tier?
+Download the ZIP file and extract. Open the ONE folder and you will find NINE folders inside. Copy the NINE folders to your 7 Days to Die Mods folder.
