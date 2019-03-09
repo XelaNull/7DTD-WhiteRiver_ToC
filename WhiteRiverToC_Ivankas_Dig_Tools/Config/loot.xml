@@ -1,14 +1,12 @@
 <configs>
 	<append xpath="lootcontainers">
 		<lootcontainer id="128" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
-			<item group="modMeleeT1" count="1"/>
-			<item group="modMeleeT2" count="0,2"/>
-			<item group="modMeleeT3" count="0,1"/>
-			<item group="commonBooks" count="1,2" prob="0.4"/>
-			<item group="rareBooks" count="1,2" prob="0.3"/>
-			<item group="ammo" count="5,15"/>
-			<item group="ammoSteel" count="2,8"/>
-			<item group="treasureMaps" count="0,2"/>
+			<item group="modMeleeT2" count="0,1" prob="0.2"/>
+			<item group="commonBooks" count="0,1" prob="0.4"/>
+			<item group="rareBooks" count="0,1" prob="0.2"/>
+			<item group="ammo" count="2"/>
+			<item group="ammoSteel" count="1"/>
+			<item group="treasureMaps" count="0,1" prob="0.05"/>	
 		</lootcontainer>
 	</append>		
 </configs>	
