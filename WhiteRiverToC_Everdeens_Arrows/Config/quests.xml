@@ -20,7 +20,7 @@
 				<property name="phase" value="3" />
 			</objective>	
 			<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="Everdeen's Arrows" value="50-100"/>
+			<reward type="Item" id="Arrows of Everdeen" value="50-100"/>
 			<reward type="Item" id="foodVegetableStew" value="1-2" />
 			<reward type="Exp" value="1500" />
 			<reward type="SkillPoints" value="1" />				
@@ -46,7 +46,7 @@
 				<property name="phase" value="3" />
 			</objective>	
 			<reward type="Item" id="+White River Veteran Citizen Card" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="Everdeen's Bolts" value="50-100"/>
+			<reward type="Item" id="Bolts of Everdeen" value="50-100"/>
 			<reward type="Item" id="foodVegetableStew" value="1-2" />
 			<reward type="Exp" value="5000" />
 			<reward type="SkillPoints" value="2" />				
