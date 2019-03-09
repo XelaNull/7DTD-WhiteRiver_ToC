@@ -69,23 +69,23 @@
 			<property name="CustomIcon" value="gunSMG5"/> 
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Extends" value="gunSMG5"/>
-			<property name="TintColor" value="255,255,255"/>
+			<property name="TintColor" value="155,0,0"/>
 			<property name="EconomicValue" value="1400"/>		
 			<effect_group name="Base Effects"> <!-- MP5 -->
-				<passive_effect name="MaxRange" operation="base_set" value="35"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
+				<passive_effect name="MaxRange" operation="base_set" value="20"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="15"/>
 				<passive_effect name="EntityDamage" operation="base_subtract" value="3"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
 				
-				<passive_effect name="DegradationMax" operation="base_set" value="7000,9000" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="18"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3000,5000" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="48"/>
 		
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="250"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="500"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="150"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="300"/>
 		
 				<passive_effect name="MagazineSize" operation="base_set" value="20"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
-				<passive_effect name="ModSlots" operation="base_set" value="1,3" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,2" tier="1,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
 		
@@ -96,8 +96,8 @@
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
 		
-				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.6,1.2"/>
-				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.4,0.4"/>
+				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.6,2.2"/>
+				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.8,0.8"/>
 				<display_value name="dRecoil" value="7" />
 		
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.35"/>
@@ -109,7 +109,7 @@
 			<property name="CustomIcon" value="gunSMG5"/> 
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Extends" value="gunSMG5"/>
-			<property name="TintColor" value="255,255,255"/>
+			<property name="TintColor" value="91,0,0"/>
 			<property name="EconomicValue" value="1400"/>		
 			<property name="DegradationBreaksAfter" value="true"/>
 			<effect_group name="Base Effects"> <!-- MP5 -->
