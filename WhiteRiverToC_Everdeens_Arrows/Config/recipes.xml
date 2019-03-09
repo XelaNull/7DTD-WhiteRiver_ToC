@@ -1,0 +1,11 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="+Everdeen's Arrows Quest" count="1" craft_time="1" craft_exp_gain="0" >
+			<ingredient name="+White River Citizen Card" count="1"/>
+		</recipe>		
+
+		<recipe name="+Everdeen's Bolts Quest" count="1" craft_time="1" craft_exp_gain="0" >
+			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+		</recipe>			
+	</append>
+</configs>
