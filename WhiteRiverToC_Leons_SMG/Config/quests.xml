@@ -20,7 +20,7 @@
 					<property name="phase" value="4" />
 				</objective>
 				<reward type="Item" id="+White River Citizen Card" value="1" />
-				<reward type="Item" id="+Writ Of Leon" value="-1" />						
+				<reward type="Item" id="+Writ Of Leon" value="-1" />
 				<reward type="Item" id="Leon's Degraded SMG" value="2-4" />
 				<reward type="Item" id="+Repair Leon's SMG Quest" />
 				<reward type="Item" id="modGunForegrip" value="1" /> 				
@@ -33,7 +33,7 @@
 			
 			<quest id="+Quest To Repair Leon's SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Leon's SMG is quite the fixer-uper. It looks like you could repair this hunk of junk but you are going to need some parts. Gather 1 Iron Pipe + 2 Mechanical Parts + 1 Spring" />
+				<property name="offer" value="Leon's SMG is quite the fixer-uper. It looks like you could repair this hunk of junk but you are going to need some parts. Gather 2 Mechanical Parts + 2 Spring" />
 				<property name="name" value="Fix up Leon's Degraded SMG" />
 				<property name="subtitle_key" value="Collects Parts to Fix SMG" />
 				<property name="description_key" value="Leon's SMG is quite the fixer-uper. It looks like you could repair this hunk of junk but you are going to need some parts." />
@@ -44,16 +44,17 @@
 				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="Leon's Degraded SMG" value="1" phase="1" />
-				<objective type="FetchKeep" id="resourceMetalPipe" value="1" phase="1" />
 				<objective type="FetchKeep" id="resourceMechanicalParts" value="2" phase="1" />
-				<objective type="FetchKeep" id="resourceSpring" value="1" phase="1" />
+				<objective type="FetchKeep" id="resourceSpring" value="2" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+
 				<objective type="Craft" id="+Writ Of Repaired Leon" value="1" phase="2" />		
 				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- Thi makes the quest repeatable -->						
-				<reward type="Item" id="+Writ Of Repaired Leon" value="-1" />						
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="+Writ Of Repaired Leon" value="-1" />	
 				<reward type="Item" id="Leon's SMG" value="3" />
 				<reward type="Item" id="modGunFlashSuppressor" value="1" />
 				<reward type="Item" id="ammo9mmBullet" value="50-100" />
@@ -73,7 +74,6 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-	
 				<objective type="FetchKeep" id="gunPistol" value="10" phase="1" />
 				<objective type="FetchKeep" id="gunSMG5" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
@@ -83,7 +83,7 @@
 					<property name="phase" value="4" />
 				</objective>	
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="+Veteran Writ Of Leon" value="-1" />						
+				<reward type="Item" id="+Veteran Writ Of Leon" value="-1" />
 				<reward type="Item" id="Leon's SMG" value="4-6" />
 				<reward type="Item" id="+Sealed Leon's Veteran Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
