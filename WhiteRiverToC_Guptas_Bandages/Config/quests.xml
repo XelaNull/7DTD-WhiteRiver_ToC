@@ -13,8 +13,8 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="resourceCropAloeLeaf" value="24" phase="1" />
-				<objective type="FetchKeep" id="resourceCropCottonPlant" value="40" phase="1" />
+				<objective type="Fetch" id="resourceCropAloeLeaf" value="24" phase="1" />
+				<objective type="Fetch" id="resourceCropCottonPlant" value="40" phase="1" />
 				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
