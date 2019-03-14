@@ -26,6 +26,7 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - Everdeen's Arrows & Bolts - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
 - Gupta's Bandages - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages.
 - Ivanka's Flaming Dig Tools - From the biggest digger herself, steel Pickaxe & Shovel with flaming mods and slightly better stats than Vanilla.
+- Jason's Machete - A replicate machete used by the infamous serial killer himself. (Big Thanks to wyldwitchykat for this contribution)
 - Kuva's Red Armor - Discover the secret ingredient in Kuva's Red Armor with slightly better stats and environmental mods.
 - Leon's Modded SMG - Help Leon finish his DIY gun project, resulting in a 9mm SMG weapon with slightly better stats than Vanilla.
 - Taza's Axe - The famed Taza's Axe, already awesome.
