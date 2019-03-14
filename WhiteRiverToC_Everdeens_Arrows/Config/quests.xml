@@ -2,10 +2,10 @@
 	<append xpath="/quests">
 		<quest id="+Quest For Everdeen's Arrows">
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Everdeen's Arrows in exchange for your help. These arrows are famed to travel faster and more true. Gather 6 Corn + 6 Potatoes + 3 Mushrooms" />
+			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Arrows of Everdeen in exchange for your help. These arrows are famed to travel faster and more true. Gather 6 Corn + 6 Potatoes + 3 Mushrooms" />
 			<property name="name" value="Collect Raw Food for a Settlement Feast" />
 			<property name="subtitle_key" value="Collect Food for Everdeen's Arrows" />
-			<property name="description_key" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Everdeen's Arrows in exchange for your help. These arrows are famed to travel faster and more true." />
+			<property name="description_key" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Arrows of Everdeen in exchange for your help. These arrows are famed to travel faster and more true." />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
