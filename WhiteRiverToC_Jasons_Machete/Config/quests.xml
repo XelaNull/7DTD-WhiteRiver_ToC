@@ -1,0 +1,35 @@
+<config>
+	<append xpath="/quests" >
+
+			<quest id="+Quest For Jason's Machete">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader mentioned he has a genuine replica of Jason's machete. This is the machete that was once used by an infamous serial killer. Before the trader will part with this machete, your help is needed to gather hunting knives for the Trader to hand out to those in need. Craft 5 Hunting Knives" />
+				<property name="name" value="Quest to craft Jason's Machete" />
+				<property name="subtitle_key" value="Craft the +Writ Of Jason" />
+				<property name="description_key" value="Collect the needed items to craft a +Writ Of Jason and receive your machete. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="meleeToolHuntingKnife" value="5" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ Of Jason" value="1" phase="2" />		
+				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="4" />
+				</objective>	
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="+Writ Of Jason" value="-1" />						
+				<reward type="Item" id="Jason's Machete" value="3-6" />
+				<reward type="Item" id="+Sealed Jason's Crate" value="1" />
+
+				<reward type="Item" id="pouredConcreteBlock" value="0-100" />	
+				<reward type="Exp" value="1500" />
+				<reward type="SkillPoints" value="1" />				
+			</quest>
+				
+	</append>
+</config>
