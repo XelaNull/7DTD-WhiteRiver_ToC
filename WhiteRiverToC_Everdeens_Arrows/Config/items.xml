@@ -79,5 +79,56 @@
 				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
 			</effect_group>
 		</item>
+		
+		
+		<!-- LEGACY CODE -->
+		<!-- LEAVE IN UNTIL AFTER JUNE 2019 -->
+		<item name="Everdeen's Arrows">
+			<property name="Extends" value="ammoArrowIron"/>
+			<property name="CustomIcon" value="ammoArrowSteelAP"/>
+			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
+			<property name="StickyMeshFile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Damage_type" value="Piercing"/>
+			<property name="StickyOffset" value="0.4"/>
+			<property class="Attributes">
+				<property name="GetQualityFromWeapon" value="true"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="42"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="65"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+			</effect_group>
+		</item>
+		
+		<item name="Everdeen's Bolts">
+			<property name="Extends" value="ammoCrossbowBoltIron"/>
+			<property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
+			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value="0.03"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Damage_type" value="Piercing"/>
+			<property class="Attributes">
+				<property name="GetQualityFromWeapon" value="true"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="50"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value="0.2" tags="wood"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="92.5"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+			</effect_group>
+		</item>
+		<!-- END LEGACY CODE -->
 	</append>
 </configs>
