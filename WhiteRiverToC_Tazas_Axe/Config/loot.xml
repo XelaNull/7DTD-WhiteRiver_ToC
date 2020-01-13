@@ -6,7 +6,7 @@
 			<item group="rareBooks" count="0,1" prob="0.2"/>
 			<item group="groupAmmoRegular" count="2"/>
 			<item group="groupAmmoAdvanced" count="1"/>
-			<item group="treasureMaps" count="0,1" prob="0.05"/>
+			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
 		</lootcontainer>
 	</append>		
 </configs>	
