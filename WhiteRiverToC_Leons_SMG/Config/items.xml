@@ -1,9 +1,10 @@
 <configs>
 	<append xpath="/items">
 		<item name="+Leon's Modded SMG Quest"> 
-			<property name="CustomIcon" value="cntShippingCrateShamway"/>
-			<property name="CustomIconTint" value="d8006c"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Leon's Modded SMG"/>
@@ -12,19 +13,26 @@
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Writ Of Leon">
-			<property name="CustomIcon" value="questMaster"/> 
-			<property name="CustomIconTint" value="ccccff"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>	
-		</item>	
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Reward of Leon's Degraded SMG"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>	
+		</item>		
 		
 		<item name="+Repair Leon's SMG Quest">
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d8006c"/>
 			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
@@ -34,20 +42,27 @@
 			</property>	
 		</item>	
 		<item name="+Writ Of Repaired Leon">
-			<property name="CustomIcon" value="questMaster"/> 
-			<property name="CustomIconTint" value="ccccff"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>	
-		</item>	
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Reward of Leon's Modded SMG"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>	
+		</item>		
 
 		
 		<item name="+Leon's Modded SMG Vet. Quest"> 
-			<property name="CustomIcon" value="cntShippingCrateShamway"/>
-			<property name="CustomIconTint" value="d8006c"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Leon's Modded SMG"/>
@@ -55,14 +70,20 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Veteran Writ Of Leon">		
-		<property name="CustomIcon" value="questMaster"/> 
-		<property name="CustomIconTint" value="ffd700"/>
-		<property name="Extends" value="resourcePaper"/>
-		<property name="Material" value="MresourcePaper"/>
-		<property name="Stacknumber" value="1"/>
-		<property name="Group" value="Special Items"/>
-		<property name="SellableToTrader" value="false"/>	
+		<item name="+Veteran Writ Of Leon">
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="d4af37"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Special Items"/>
+			<property name="SellableToTrader" value="false"/>	
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Veteran Reward of Leon's Modded SMG"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>	
 		</item>
 		
 		<item name="Leon's Degraded SMG">
@@ -76,30 +97,24 @@
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15"/>
 				<passive_effect name="EntityDamage" operation="base_subtract" value="3"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
-				
 				<passive_effect name="DegradationMax" operation="base_set" value="3000,5000" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="48"/>
-		
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="150"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="300"/>
-		
 				<passive_effect name="MagazineSize" operation="base_set" value="20"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
 				<passive_effect name="ModSlots" operation="base_set" value="1,2" tier="1,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
-		
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.35"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.35"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-		
 				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.6,2.2"/>
 				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.8,0.8"/>
 				<display_value name="dRecoil" value="7" />
-		
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.35"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
 			</effect_group>
@@ -117,30 +132,24 @@
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="35"/>
 				<passive_effect name="EntityDamage" operation="base_subtract" value="6"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
-		
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="500"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
-		
 				<passive_effect name="MagazineSize" operation="base_set" value="30"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
 				<passive_effect name="ModSlots" operation="base_set" value="3,5" tier="1,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value="0.1" tags="EntityDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
-		
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.35"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.35"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-		
 				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.4,0.8"/>
 				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.3,0.3"/>
 				<display_value name="dRecoil" value="7" />
-		
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.35"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
-		
 				<passive_effect name="DegradationMax" operation="base_set" value="7000,18000" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="18"/>
 			</effect_group>

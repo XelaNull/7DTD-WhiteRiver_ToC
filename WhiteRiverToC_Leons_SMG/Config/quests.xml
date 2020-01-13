@@ -14,26 +14,39 @@
 	
 				<objective type="FetchKeep" id="gunPistol" value="10" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Writ Of Leon" value="1" phase="2" />		
-				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="Craft" id="+Writ Of Leon" value="1" phase="2" />			
+				<reward type="Exp" value="500" />		
+			</quest>
+			<quest id="+Reward of Leon's Degraded SMG">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Reward of Leon's Degraded SMG" />
+				<property name="subtitle_key" value="Reward of Leon's Degraded SMG" />
+				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+
+				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
+					<property name="phase" value="3" />
 				</objective>
+				
 				<reward type="Item" id="+White River Citizen Card" value="1" />
-				<reward type="Item" id="+Writ Of Leon" value="-1" />
 				<reward type="Item" id="Leon's Degraded SMG" value="2-4" />
 				<reward type="Item" id="+Repair Leon's SMG Quest" />
 				<reward type="Item" id="modGunForegrip" value="1" /> 				
-
 				<reward type="Item" id="ammo9mmBullet" value="50-150" />
 				<reward type="Item" id="pouredConcreteBlock" value="0-50" />	
 				<reward type="Exp" value="1000" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="SkillPoints" value="1" />					
 			</quest>
 			
 			<quest id="+Quest To Repair Leon's SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Leon's SMG is quite the fixer-uper. It looks like you could repair this hunk of junk but you are going to need some parts. Gather 2 Mechanical Parts + 2 Spring" />
+				<property name="offer" value="Leon's SMG is quite the fixer-upper. It looks like you could repair this hunk of junk but you are going to need some parts. Gather 2 Mechanical Parts + 2 Spring" />
 				<property name="name" value="Fix up Leon's Degraded SMG" />
 				<property name="subtitle_key" value="Collects Parts to Fix SMG" />
 				<property name="description_key" value="Leon's SMG is quite the fixer-uper. It looks like you could repair this hunk of junk but you are going to need some parts." />
@@ -47,20 +60,32 @@
 				<objective type="FetchKeep" id="resourceMechanicalParts" value="2" phase="1" />
 				<objective type="FetchKeep" id="resourceSpring" value="2" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-
 				<objective type="Craft" id="+Writ Of Repaired Leon" value="1" phase="2" />		
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Reward of Leon's Modded SMG">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Reward of Fabled Taza's Axe" />
+				<property name="subtitle_key" value="Reward of Fabled Taza's Axe" />
+				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
 				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="+Writ Of Repaired Leon" value="-1" />	
 				<reward type="Item" id="Leon's SMG" value="3" />
 				<reward type="Item" id="modGunFlashSuppressor" value="1" />
 				<reward type="Item" id="ammo9mmBullet" value="50-100" />
 				<reward type="Exp" value="1500" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="SkillPoints" value="1" />						
 			</quest>
+			
 			
 			<quest id="+Vet. Quest For Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
@@ -77,18 +102,30 @@
 				<objective type="FetchKeep" id="gunPistol" value="10" phase="1" />
 				<objective type="FetchKeep" id="gunSMG5" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Veteran Writ Of Leon" value="1" phase="2" />	
-				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<objective type="Craft" id="+Veteran Writ Of Leon" value="1" phase="2" />		
+				<reward type="Exp" value="500" />
+			</quest>
+			<quest id="+Veteran Reward of Leon's Modded SMG">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Veteran Reward of Leon's Modded SMG" />
+				<property name="subtitle_key" value="Veteran Reward of Leon's Modded SMG" />
+				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-				</objective>	
+					<property name="phase" value="3" />
+				</objective>
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="+Veteran Writ Of Leon" value="-1" />
 				<reward type="Item" id="Leon's SMG" value="4-6" />
 				<reward type="Item" id="+Sealed Leon's Veteran Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
 				<reward type="Exp" value="5000" />
-				<reward type="SkillPoints" value="2" />				
+				<reward type="SkillPoints" value="2" />						
 			</quest>
 	</append>
 </config>

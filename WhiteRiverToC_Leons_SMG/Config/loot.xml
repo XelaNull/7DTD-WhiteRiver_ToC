@@ -4,9 +4,8 @@
 			<item group="modGunT2" count="0,1" prob="0.2"/>
 			<item group="commonBooks" count="0,1" prob="0.4"/>
 			<item group="rareBooks" count="0,1" prob="0.2"/>
-			<item group="ammo" count="2"/>
-			<item group="ammoSteel" count="1"/>
-			<item group="treasureMaps" count="0,1" prob="0.05"/>
+			<item group="groupQuestAmmo" count="2"/>
+			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
 		</lootcontainer>
 	</append>		
 </configs>	
