@@ -4,10 +4,10 @@
 		<!-- This section won't be used unless a line is uncommented in quests.xml -->
 		<lootcontainer id="125" count="4,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
 			<item group="bicycleParts" count="0,3"/>
-			<item group="leatherArmor" count="0,2"/>
-			<item group="militaryArmor" count="0,2"/>
+			<item group="armorLeatherChest" count="0,2"/>
+			<item group="armorMilitaryVest" count="0,2"/>
 			<item group="beverages"/>
-			<item group="ammo"/>
+			<item group="groupAmmoRegular"/>
 		</lootcontainer>
 	</append>		
 </configs>	
