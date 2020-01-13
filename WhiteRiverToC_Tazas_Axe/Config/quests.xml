@@ -15,14 +15,14 @@
 				<objective type="FetchKeep" id="resourceRockSmall" value="400" phase="1" />
 				<objective type="FetchKeep" id="meleeToolStoneAxe" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Writ Of Taza" value="1" phase="2" />		
-				<objective type="Goto" id="trader" value="5" phase="3" />	
+				<!--<objective type="Craft" id="+Writ Of Taza" value="1" phase="2" />	-->	
+				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
+					<property name="phase" value="3" />
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
-				<reward type="Item" id="+Writ Of Taza" value="-1" />		
+				<!--<reward type="Item" id="+Writ Of Taza" value="-1" />		-->
 				<reward type="Item" id="meleeToolStoneAxeTazas" value="2-4" />	
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="0-50" />
