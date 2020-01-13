@@ -147,8 +147,10 @@
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-				<passive_effect name="KickDegreesVertical" operation="base_set" value="0.4,0.8"/>
-				<passive_effect name="KickDegreesHorizontal" operation="base_set" value="-0.3,0.3"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0.4"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="0.8"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-0.3"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0.3"/>
 				<display_value name="dRecoil" value="7" />
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.35"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
