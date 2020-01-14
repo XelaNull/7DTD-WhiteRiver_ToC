@@ -66,8 +66,8 @@
 			<quest id="+Reward of Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Collect your reward from the Trader"/>
-				<property name="name" value="Reward of Fabled Taza's Axe" />
-				<property name="subtitle_key" value="Reward of Fabled Taza's Axe" />
+				<property name="name" value="Reward of Leon's Modded SMG" />
+				<property name="subtitle_key" value="Reward of Leon's Modded SMG" />
 				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
