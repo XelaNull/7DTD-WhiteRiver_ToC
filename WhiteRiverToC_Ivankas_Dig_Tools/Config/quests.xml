@@ -39,7 +39,7 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Ivanka's Steel Shovel" value="1-4" />
+				<reward type="Item" id="Ivanka's Iron Shovel" value="1-4" />
 				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
 				<reward type="Item" id="Ivanka's Icon Pickaxe" value="1-4" />
 				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />

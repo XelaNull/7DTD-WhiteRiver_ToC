@@ -55,7 +55,7 @@
 				<property name="Delay" value="0"/>
 			</property>		
 		</item>
-<!--
+
 		<item name="Ivanka's Iron Shovel"> 
 			<property name="Extends" value="meleeToolShovelIron"/>
 			<property name="CustomIcon" value="meleeToolShovelIron"/> 
@@ -79,7 +79,7 @@
 				<passive_effect name="BlockRange" operation="base_set" value="4"/>
 		
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".1w" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".1" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="600" tags="EconomicValue"/>
 		
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.12,.12"/> 
@@ -102,7 +102,7 @@
 			</effect_group>
 			<property name="Group" value="Tools/Traps"/>
 		</item>
-	-->
+	
 
 		<item name="Ivanka's Steel Shovel"> <!-- T3 Tools -->
 			<property name="Extends" value="meleeToolShovelIron"/>
