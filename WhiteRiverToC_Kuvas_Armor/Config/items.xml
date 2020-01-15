@@ -41,7 +41,7 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Veteran Writ Of Taza">
+		<item name="+Veteran Writ Of Kuva">
 			<property name="CustomIcon" value="questMaster"/> 
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
