@@ -152,7 +152,6 @@
 			</effect_group>
 		</item>
 		
-		<!--
 		<item name="Ivanka's Iron Pickaxe"> 
 			<property name="Tags" value="melee,grunting,medium,tool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
@@ -228,7 +227,7 @@
 			<property name="PickupJournalEntry" value="miningTip"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
-	-->
+	
 	
 		<item name="Ivanka's Steel Pickaxe"> <!-- T3 Tools -->
 			<property name="Extends" value="meleeToolPickaxeSteel"/>
