@@ -13,7 +13,7 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Taza">
+		<item name="+Writ Of Kuva">
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
