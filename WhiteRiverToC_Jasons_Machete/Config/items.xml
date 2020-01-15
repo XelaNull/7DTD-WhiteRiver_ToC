@@ -2,8 +2,8 @@
 	<append xpath="/items">
 
 		<item name="+Jason's Machete Quest"> 
-			<property name="CustomIcon" value="cntShippingCrateShamway"/>
-			<property name="CustomIconTint" value="ff0080"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -13,15 +13,21 @@
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		<item name="+Writ Of Jason">
-			<property name="CustomIcon" value="questMaster"/> 
-			<property name="CustomIconTint" value="ccccff"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
+			<property name="SellableToTrader" value="false"/>	
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Reward of Jason's Machete"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>	
 		</item>	
-		
+	<!--			
 		<item name="Jason's Machete">
 			<property name="CustomIcon" value="meleeToolMachete"/> 
 			<property name="CustomIconTint" value="cc3300"/>
@@ -30,17 +36,16 @@
 			<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Slashing"/>
-		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sphere" value="0.15"/>   
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Butcher" value="0" param1="4"/>
-			<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
-			Also, param1  is the damage multiplier for corpse harvesting. -->
+
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Slashing"/>
-		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+		<property name="Sphere" value="0.15"/>  
 		<property name="Sound_start" value="swoosh"/>
 		<property name="ToolCategory.Butcher" value="0" param1="4"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic"/>
@@ -50,13 +55,13 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="25"/> <!-- meleeToolMachete -->
+		<passive_effect name="EntityDamage" operation="base_set" value="25"/> 
 		<passive_effect name="BlockDamage" operation="base_set" value="23"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.2 -->
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> 
 		<passive_effect name="HarvestCount" operation="base_set" value=".5" tags="butcherHarvest"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="15.8" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="300,800" tier="1,6"/>
@@ -80,7 +85,101 @@
 	</effect_group>
 	
 		</item>
-
+	-->
+		
+		<item name="Jason's Machete"> <!-- T3 Blades -->
+			<property name="Tags" value="machete,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
+			<property name="DisplayType" value="meleeKnife"/>
+			<property name="CustomIcon" value="meleeToolKnifeMachete"/> 
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="HoldType" value="47"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab"/>
+			<property name="Material" value="MmeleeToolKnifeMachete"/> <property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="1200"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="RepairExpMultiplier" value="6.5"/>
+<!--			<property name="UnlockedBy" value="meleeToolKnifeMacheteSchematic"/>-->
+			<property name="ShowQuality" value="true"/>
+		
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="machete_swinglight"/>
+				<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+					<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
+					Also, param1  is the damage multiplier for corpse harvesting. -->
+				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+		
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".28"/>
+				<property name="GrazeEnd" value=".4"/>
+				<property name="SwingDegrees" value="80"/>
+				<property name="SwingAngle" value="130"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalslashorganic"/>
+				</property>
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Damage_type" value="Slashing"/>
+				<property name="Sphere" value=".15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
+				<property name="Sound_start" value="machete_swingheavy"/>
+				<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
+				<property name="UsePowerAttackAnimation" value="true"/>
+		
+				<property name="UseGrazingHits" value="true"/>
+				<property name="IsHorizontalSwing" value="true"/>
+				<property name="GrazeStart" value=".3"/>
+				<property name="GrazeEnd" value=".4"/>
+				<property name="SwingDegrees" value="-80"/>
+				<property name="SwingAngle" value="-60"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="metalslashorganic"/>
+				</property>
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			<effect_group name="meleeToolKnifeMachete">
+				<passive_effect name="EntityDamage" operation="base_set" value="25"/> <!-- meleeToolKnifeMachete -->
+				<passive_effect name="BlockDamage" operation="base_set" value="23"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,900" tier="1,6" tags="perkDeepCuts"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
+				<passive_effect name="BlockRange" operation="base_set" value="4"/>
+		
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.2"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
+		
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.4" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.6" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="metal"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+				<display_value name="dBleeding" value="1"/> <!-- the bleeding proc is run by the perk -->
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="18.8" tags="secondary"/>
+			</effect_group>
+		</item>
 		
 	</append>
 </configs>

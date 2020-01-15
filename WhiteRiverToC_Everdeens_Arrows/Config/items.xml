@@ -1,16 +1,20 @@
 <configs>
 	<!-- Implement the new Arrows and Bolts into Vanilla Compound Bow & Wooden Bow -->
 	<!-- Thanks to wyldwitchykat for the append code below -->
-	<append xpath="/items/item[@name='gunWoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
-	<append xpath="/items/item[@name='gunCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	<append xpath="/items/item[@name='gunCompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
+	<append xpath="/items/item[@name='gunBowWooden']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
+	<append xpath="/items/item[@name='gunBowPrimitive']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
+	<append xpath="/items/item[@name='gunBowCompound']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
+	
+	<append xpath="/items/item[@name='gunCrossbowIron']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
+	<append xpath="/items/item[@name='gunCrossbowCompound']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
+
 	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
 	<append xpath="/items/item[@name='Bambis Killer Compound Bow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append> 
 
 	<append xpath="/items">
 		<item name="+Everdeen's Arrows Quest"> 
-			<property name="CustomIcon" value="cntShippingCrateShamway"/>
-			<property name="CustomIconTint" value="ff0080"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -21,8 +25,8 @@
 		</item>	
 		
 		<item name="+Everdeen's Bolts Quest"> 
-			<property name="CustomIcon" value="cntShippingCrateShamway"/>
-			<property name="CustomIconTint" value="ff0080"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -32,7 +36,7 @@
 			<property name="Group" value="Special Items"/>			
 		</item>			
 		
-		
+<!--		
 		<item name="Arrows of Everdeen">
 			<property name="Extends" value="ammoArrowIron"/>
 			<property name="CustomIcon" value="ammoArrowSteelAP"/>
@@ -45,90 +49,105 @@
 			<property class="Attributes">
 				<property name="GetQualityFromWeapon" value="true"/>
 			</property>
-			<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowSteelAP -->
+			<effect_group name="Base Effects" tiered="false"> 
 				<passive_effect name="EntityDamage" operation="base_set" value="42"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="65"/>
 				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+			</effect_group>
+		</item>
+-->
+		<item name="Arrows of Everdeen">
+			<property name="Extends" value="ammoArrowIron"/>
+			<property name="CustomIcon" value="ammoArrowSteelAP"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="EconomicValue" value="65"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="StickyOffset" value=".4"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<effect_group name="ammoArrowSteelAP" tiered="false"> <!-- ammoArrowSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="42"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="65"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				</triggered_effect>
+				<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
 			</effect_group>
 		</item>
 		
 		<item name="Bolts of Everdeen">
 			<property name="Extends" value="ammoCrossbowBoltIron"/>
 			<property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
-			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
-			<property name="IsSticky" value="true"/>
-			<property name="StickyOffset" value="0.03"/>
-			<property name="HoldType" value="45"/>
-			<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="EconomicValue" value="100"/>
-			<property name="EconomicBundleSize" value="5"/>
-			<property name="Damage_type" value="Piercing"/>
-			<property class="Attributes">
-				<property name="GetQualityFromWeapon" value="true"/>
-			</property>
-			<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
-				<passive_effect name="EntityDamage" operation="base_set" value="50"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
-				<passive_effect name="BlockDamage" operation="perc_set" value="0.2" tags="wood"/>
-				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
-				<passive_effect name="ProjectileVelocity" operation="base_set" value="92.5"/>
-				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-			</effect_group>
-		</item>
-		
-		
-		<!-- LEGACY CODE -->
-		<!-- LEAVE IN UNTIL AFTER JUNE 2019 -->
-		<item name="Everdeen's Arrows">
-			<property name="Extends" value="ammoArrowIron"/>
-			<property name="CustomIcon" value="ammoArrowSteelAP"/>
-			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
-			<property name="StickyMeshFile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab.prefab"/>
 			<property name="EconomicValue" value="80"/>
+			<!--<property name="UnlockedBy" value="perkRangersAPAmmo"/>-->
 			<property name="EconomicBundleSize" value="5"/>
-			<property name="Damage_type" value="Piercing"/>
-			<property name="StickyOffset" value="0.4"/>
-			<property class="Attributes">
-				<property name="GetQualityFromWeapon" value="true"/>
-			</property>
-			<effect_group name="Base Effects" tiered="false"> <!-- ammoArrowSteelAP -->
-				<passive_effect name="EntityDamage" operation="base_set" value="42"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-				<passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
-				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
-				<passive_effect name="ProjectileVelocity" operation="base_set" value="65"/>
-				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-			</effect_group>
-		</item>
-		
-		<item name="Everdeen's Bolts">
-			<property name="Extends" value="ammoCrossbowBoltIron"/>
-			<property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
-			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
 			<property name="IsSticky" value="true"/>
-			<property name="StickyOffset" value="0.03"/>
-			<property name="HoldType" value="45"/>
-			<property name="HandMeshfile" value="Items/Misc/sackPrefab"/>
-			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-			<property name="EconomicValue" value="100"/>
-			<property name="EconomicBundleSize" value="5"/>
-			<property name="Damage_type" value="Piercing"/>
-			<property class="Attributes">
-				<property name="GetQualityFromWeapon" value="true"/>
-			</property>
-			<effect_group name="Base Effects" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
-				<passive_effect name="EntityDamage" operation="base_set" value="50"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
-				<passive_effect name="BlockDamage" operation="perc_set" value="0.2" tags="wood"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<effect_group name="ammoCrossbowBoltSteelAP" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="55"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="8"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3"/>
+				<display_value name="dTargetArmor" value="-.3"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
 				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="92.5"/>
-				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<!-- perkRangersCripplingShot, Shots to the leg with arrows slow your opponent -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryCrippled01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersCripplingShot" operation="Equals" value="1"/>
+					<requirement name="HitLocation" body_parts="LeftUpperLeg,RightUpperLeg,LeftLowerLeg,RightLowerLeg"/>
+				</triggered_effect>
+				<!-- perkRangersKnockdown, Successful sneak attacks with arrows have a 20% greater chance of knocking down the target -->
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+					<requirement name="ProgressionLevel" progression_name="perkRangersKnockdown" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1" target="other"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.35">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="GTE" value="4"/></passive_effect>
 			</effect_group>
 		</item>
-		<!-- END LEGACY CODE -->
 	</append>
 </configs>

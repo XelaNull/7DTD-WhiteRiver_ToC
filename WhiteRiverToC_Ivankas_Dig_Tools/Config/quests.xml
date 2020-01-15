@@ -18,21 +18,36 @@
 				<objective type="FetchKeep" id="meleeToolPickaxeIron" value="10" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Ivanka" value="1" phase="2" />		
-				<objective type="Goto" id="trader" value="5" phase="3" />	
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-				</objective>	
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
-				<reward type="Item" id="+Writ Of Ivanka" value="-1" />						
-				<reward type="Item" id="Ivanka's Steel Shovel" value="2-3" />
+				<reward type="Exp" value="1500" />
+			</quest>
+			<quest id="+Reward of Ivanka's Flaming Dig Tools">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Reward of Ivanka's Flaming Dig Tools" />
+				<property name="subtitle_key" value="Reward of Ivanka's Flaming Dig Tools" />
+				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="Ivanka's Iron Shovel" value="1-4" />
 				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
-				<reward type="Item" id="Ivanka's Steel Pickaxe" value="2-4" />
+				<reward type="Item" id="Ivanka's Iron Pickaxe" value="1-4" />
 				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="0-50" />	
-				<reward type="Exp" value="1500" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="Exp" value="3000" />
+				<reward type="SkillPoints" value="1" />			
 			</quest>
+
 
 			<quest id="+Vet. Quest For Ivanka's Flaming Dig Tools">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
@@ -52,19 +67,35 @@
 				<objective type="FetchKeep" id="meleeToolPickaxeSteel" value="15" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Veteran Writ Of Ivanka" value="1" phase="2" />		
-				<objective type="Goto" id="trader" value="5" phase="3" />	
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-				</objective>	
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
-				<reward type="Item" id="+Veteran Writ Of Ivanka" value="-1" />						
-				<reward type="Item" id="Ivanka's Steel Shovel" value="4-6" />
-				<reward type="Item" id="Ivanka's Steel Pickaxe" value="4-6" />
+				<reward type="Exp" value="2500" />
+			</quest>
+			<quest id="+Veteran Reward of Ivanka's Flaming Dig Tools">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Veteran Reward of Ivanka's Flaming Dig Tools" />
+				<property name="subtitle_key" value="Veteran Reward of Ivanka's Flaming Dig Tools" />
+				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="Ivanka's Steel Shovel" value="5-6" />
+				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="Ivanka's Steel Pickaxe" value="5-6" />
+				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
 				<reward type="Item" id="+Sealed Ivanka's Veteran Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
 				<reward type="Exp" value="5000" />
-				<reward type="SkillPoints" value="1" />				
-			</quest>
+				<reward type="SkillPoints" value="1" />					
+			</quest>			
 	</append>
 </config>

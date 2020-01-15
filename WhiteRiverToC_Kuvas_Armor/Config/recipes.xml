@@ -7,7 +7,7 @@
 		</recipe>
 		<recipe name="+Writ Of Kuva" count="1" craft_time = "90" craft_exp_gain="10000" >
 			<ingredient name="resourceLeather" count="50"/>
-			<ingredient name="leatherPoncho" count="5"/>
+			<ingredient name="leatherPoncho" count="10"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		

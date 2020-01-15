@@ -16,20 +16,32 @@
 				<objective type="FetchKeep" id="meleeToolHuntingKnife" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Jason" value="1" phase="2" />		
-				<objective type="Goto" id="trader" value="5" phase="3" />	
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-				</objective>	
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
-				<reward type="Item" id="+Writ Of Jason" value="-1" />						
+				<reward type="Exp" value="1500" />
+			</quest>
+			<quest id="+Reward of Jason's Machete">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Reward of Jason's Machete" />
+				<property name="subtitle_key" value="Reward of Jason's Machete" />
+				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="Jason's Machete" value="3-6" />
 				<reward type="Item" id="+Sealed Jason's Crate" value="1" />
-
 				<reward type="Item" id="pouredConcreteBlock" value="0-100" />	
-				<reward type="Exp" value="1500" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="Exp" value="3000" />
+				<reward type="SkillPoints" value="1" />					
 			</quest>
-				
 	</append>
 </config>

@@ -2,8 +2,8 @@
 	<append xpath="/items">
 
 		<item name="+Gupta's Bandages Quest"> 
-			<property name="CustomIcon" value="cntShippingCrateShamway"/>
-			<property name="CustomIconTint" value="ff0080"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
