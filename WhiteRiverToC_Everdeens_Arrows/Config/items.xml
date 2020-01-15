@@ -5,12 +5,12 @@
 	<append xpath="/items/item[@name='gunBowPrimitive']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
 	<append xpath="/items/item[@name='gunBowCompound']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
 	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
-	<!--<append xpath="/items/item[@name='Bambi's Killer Compound Bow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append> -->
+	<append xpath="/items/item[@name="Bambi's Killer Compound Bow"]/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
 
 	<append xpath="/items/item[@name='gunCrossbowIron']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
 	<append xpath="/items/item[@name='gunCrossbowCompound']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
 	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
-	<append xpath="/items/item[@name='Bambi's Killer Compound Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append> 
+	<append xpath="/items/item[@name="Bambi's Killer Compound Crossbow"]/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
 
 
 	<append xpath="/items">

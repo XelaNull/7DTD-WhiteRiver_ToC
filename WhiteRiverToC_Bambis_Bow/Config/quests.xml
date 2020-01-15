@@ -62,7 +62,7 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="gunCompoundBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="gunBowCompound" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="4000" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />

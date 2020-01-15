@@ -15,7 +15,7 @@
 			<ingredient name="+White River Veteran Citizen Card" count="1"/>
 		</recipe>
 		<recipe name="+Veteran Writ Of Bambi" count="1" craft_time = "300" craft_exp_gain="20000" >
-			<ingredient name="gunCompoundBow" count="20"/>
+			<ingredient name="gunBowCompound" count="20"/>
 			<ingredient name="resourceWood" count="4000"/>
 			<ingredient name="resourceAnimalFat" count="50"/>
 			<ingredient name="resourcePaper" count="1"/>
