@@ -13,7 +13,7 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="meleeToolHuntingKnife" value="5" phase="1" />
+				<objective type="FetchKeep" id="meleeToolKnifeIron" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Jason" value="1" phase="2" />		
 
