@@ -2,7 +2,7 @@
 	<append xpath="/items">
 
 		<item name="+Kuva's Red Armor Quest"> 
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -30,7 +30,7 @@
 		</item>		
 
 		<item name="+Kuva's Red Armor Vet. Quest"> 
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>

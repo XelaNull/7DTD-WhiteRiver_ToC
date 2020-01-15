@@ -2,7 +2,7 @@
 	<append xpath="/items">
 
 		<item name="+Jason's Machete Quest"> 
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>

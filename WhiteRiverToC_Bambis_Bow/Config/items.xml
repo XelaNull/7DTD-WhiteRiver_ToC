@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/items">
 		<item name="+Bambi's Killer Bow Quest"> 
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -29,7 +29,7 @@
 		</item>			
 				
 		<item name="+Bambi's Killer Bow Vet. Quest"> 
-			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property class="Action0">
