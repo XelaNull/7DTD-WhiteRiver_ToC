@@ -39,7 +39,7 @@
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
-				<reward type="Item" id="Bambi's Killer Compound Bow" value="2-4" />
+				<reward type="Item" id="Bambis Killer Compound Bow" value="2-4" />
 				<reward type="Item" id="modGunBowPolymerString" value="1" />
 				<reward type="Item" id="modGunMeleeTheHunter" value="1" />
 		
@@ -88,7 +88,7 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Bambi's Killer Compound Crossbow" value="3-6" />
+				<reward type="Item" id="Bambis Killer Compound Crossbow" value="3-6" />
 				<reward type="Item" id="+Sealed Bambi's Veteran Crate" value="1" />
 				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="50-150" />
 				<reward type="Item" id="ammoCrossbowBoltFlaming" value="50-100" />
