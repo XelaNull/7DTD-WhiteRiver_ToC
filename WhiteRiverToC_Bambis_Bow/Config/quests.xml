@@ -13,7 +13,7 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="gunWoodenBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="gunBowWooden" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Bambi" value="1" phase="2" />		
