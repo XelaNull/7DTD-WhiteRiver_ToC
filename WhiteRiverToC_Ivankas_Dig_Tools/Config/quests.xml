@@ -49,7 +49,7 @@
 			</quest>
 
 
-			<quest id="+Vet. Quest For Ivanka's Flaming Dig Tools">
+			<quest id="+Vet. Quest For Ivanka's Flaming Tools">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="There is a crate of digging tools a woman named Ivanka left at the Trader some time ago and seems to have abandoned. You can have a pair of these tools once you provide the trader with iron replacements. Gather 500 Forged Iron + 50 Animal Fat, Craft 15 Steel Shovels + 15 Steel Pickaxes." />
 				<property name="name" value="Veteran Quest to obtain Ivanka's Flaming Dig Tools" />
@@ -70,11 +70,11 @@
 
 				<reward type="Exp" value="2500" />
 			</quest>
-			<quest id="+Veteran Reward of Ivanka's Flaming Dig Tools">
+			<quest id="+Vet. Reward of Ivanka's Flaming Tools">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Collect your reward from the Trader"/>
-				<property name="name" value="Veteran Reward of Ivanka's Flaming Dig Tools" />
-				<property name="subtitle_key" value="Veteran Reward of Ivanka's Flaming Dig Tools" />
+				<property name="name" value="Vet. Reward of Ivanka's Flaming Tools" />
+				<property name="subtitle_key" value="Vet. Reward of Ivanka's Flaming Tools" />
 				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />

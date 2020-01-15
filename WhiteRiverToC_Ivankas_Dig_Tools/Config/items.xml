@@ -36,7 +36,7 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Vet. Quest For Ivanka's Flaming Dig Tools"/>
+				<property name="QuestGiven" value="+Vet. Quest For Ivanka's Flaming Tools"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
@@ -51,7 +51,7 @@
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Veteran Reward of Ivanka's Flaming Dig Tools"/>
+				<property name="QuestGiven" value="+Vet. Reward of Ivanka's Flaming Tools"/>
 				<property name="Delay" value="0"/>
 			</property>		
 		</item>
@@ -105,37 +105,6 @@
 		</item>
 		
 
-<!--
-		<item name="Ivanka's Steel Shovel">
-			<property name="CustomIcon" value="meleeToolShovelIron"/> 
-			<property name="CustomIconTint" value="cc3300"/>			
-			<property name="Extends" value="meleeToolShovelSteel"/>
-			<property name="EconomicValue" value="912"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<effect_group name="Base Effects">
-				<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-				<passive_effect name="BlockRange" operation="base_set" value="4"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="16"/> 
-				<passive_effect name="BlockDamage" operation="base_set" value="80"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="18.8" tags="primary"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
-			</effect_group>
-			<effect_group name="Power Attack">
-				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="33" tags="secondary"/>
-			</effect_group>
-		</item>
-	-->
 		<item name="Ivanka's Steel Shovel"> <!-- T3 Tools -->
 			<property name="Extends" value="meleeToolShovelIron"/>
 			<property name="CustomIcon" value="meleeToolShovelSteel"/> 
@@ -261,46 +230,6 @@
 			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
 	
-	<!--	
-		<item name="Ivanka's Steel Pickaxe">
-			<property name="CustomIcon" value="meleeToolPickaxeSteel"/> 
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Extends" value="meleeToolPickaxeSteel"/>
-			<property name="EconomicValue" value="912"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<effect_group name="Base Effects">
-				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
-				<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="22"/> 
-				<passive_effect name="BlockDamage" operation="base_set" value="80"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="47"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="20" tags="primary"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
-			</effect_group>
-		
-			<effect_group name="Power Attack">
-				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="35" tags="secondary"/>
-				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
-					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
-					<requirement name="IsMale" target="self"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
-					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="70"/>
-					<requirement name="IsMale" target="self" invert="true"/>
-				</triggered_effect>
-			</effect_group>
-		</item>
-	-->
 		<item name="Ivanka's Steel Pickaxe"> <!-- T3 Tools -->
 			<property name="Extends" value="meleeToolPickaxeSteel"/>
 			<property name="CustomIcon" value="meleeToolPickaxeSteel"/> 
