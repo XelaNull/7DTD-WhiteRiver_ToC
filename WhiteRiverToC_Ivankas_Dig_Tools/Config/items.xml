@@ -55,8 +55,8 @@
 				<property name="Delay" value="0"/>
 			</property>		
 		</item>
-
-		<item name="Ivanka's Iron Shovel"> <!-- T2 Tools -->
+<!--
+		<item name="Ivanka's Iron Shovel"> 
 			<property name="Extends" value="meleeToolShovelIron"/>
 			<property name="CustomIcon" value="meleeToolShovelIron"/> 
 			<property name="CustomIconTint" value="cc3300"/>	
@@ -68,9 +68,8 @@
 			<property name="FuelValue" value="250"/>
 			<property name="EconomicValue" value="500"/>
 			<property name="SellableToTrader" value="true"/>
-			<!--<property name="UnlockedBy" value="perkMiner69r,meleeToolIronSetSchematic"/>-->
 			<effect_group name="meleeToolShovelIron">
-				<passive_effect name="EntityDamage" operation="base_set" value="13.6"/> <!-- meleeToolShovelIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="13.6"/> 
 				<passive_effect name="BlockDamage" operation="base_set" value="56"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="55"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="13.8" tags="primary"/>
@@ -83,13 +82,13 @@
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".1w" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="600" tags="EconomicValue"/>
 		
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.12,.12"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.6" tier="2,6"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.65" tier="2,6"/> <!-- tier bonus -->
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.12,.12" tags="perkMiner69r"/> <!-- random DegMax -->
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.04,.08"/> <!-- random APM -->
-				<passive_effect name="StaminaLoss" operation="perc_add" value="-.04,.04"/> <!-- random StamLoss -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.12,.12"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.6" tier="2,6"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.65" tier="2,6"/> 
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.12,.12" tags="perkMiner69r"/> 
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.04,.08"/> 
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.04,.04"/> 
 		
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
@@ -103,7 +102,7 @@
 			</effect_group>
 			<property name="Group" value="Tools/Traps"/>
 		</item>
-		
+	-->
 
 		<item name="Ivanka's Steel Shovel"> <!-- T3 Tools -->
 			<property name="Extends" value="meleeToolShovelIron"/>
@@ -153,7 +152,8 @@
 			</effect_group>
 		</item>
 		
-		<item name="Ivanka's Iron Pickaxe"> <!-- T2 Tools -->
+		<!--
+		<item name="Ivanka's Iron Pickaxe"> 
 			<property name="Tags" value="melee,grunting,medium,tool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="CustomIcon" value="meleeToolPickaxeIron"/> 
@@ -167,7 +167,6 @@
 			<property name="SoundDestroy" value="metaldestroy1"/>
 			<property name="FuelValue" value="250"/>
 			<property name="EconomicValue" value="500"/>
-			<!--<property name="UnlockedBy" value="perkMiner69r,meleeToolIronSetSchematic"/>-->
 			<property name="ShowQuality" value="true"/>
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
@@ -196,9 +195,9 @@
 			</property>
 			<property name="Group" value="Tools/Traps"/>
 			<effect_group name="meleeToolPickaxeIron">
-				<passive_effect name="EntityDamage" operation="base_set" value="15.2"/> <!-- meleeToolPickaxeIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="15.2"/> 
 				<passive_effect name="BlockDamage" operation="base_set" value="45"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/><!-- Gazz change 55 to 65 -->
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="11.9" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
@@ -209,13 +208,13 @@
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
 		
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.1"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.7" tier="2,6"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.25"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.9" tier="2,6"/> <!-- tier bonus -->
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> <!-- random DegMax -->
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.1,.1"/> <!-- random APM -->
-				<passive_effect name="StaminaLoss" operation="perc_add" value="-.04,.04"/> <!-- random StamLoss -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.1"/> 
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.7" tier="2,6"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.25"/> 
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.9" tier="2,6"/>
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> 
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.1,.1"/> 
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.04,.04"/> 
 		
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
@@ -229,6 +228,7 @@
 			<property name="PickupJournalEntry" value="miningTip"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
+	-->
 	
 		<item name="Ivanka's Steel Pickaxe"> <!-- T3 Tools -->
 			<property name="Extends" value="meleeToolPickaxeSteel"/>
