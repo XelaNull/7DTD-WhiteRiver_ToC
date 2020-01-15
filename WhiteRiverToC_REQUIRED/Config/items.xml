@@ -28,9 +28,9 @@
 		</item>		
 		
 		<item name="+White River Citizen Card">
-			<property name="CustomIcon" value="blankNoteMaster"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="2eb200"/>
-			<property name="Extends" value="blankNoteMaster"/>
+			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
 		</item>
