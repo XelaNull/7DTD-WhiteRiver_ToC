@@ -6,9 +6,11 @@
 			Taza's Axe (Stone + Axes)
 			Kuva's Red Armor (Leather)
 			Leon's Modded SMG (Pistols)
-			Danara's Flaming Dig Tools (Iron + Pickaxes)
+			Ivanka's Flaming Dig Tools (Iron + Pickaxes)
 			Bambi's Killer Bow (Wood + Bows)
 			Everdeen's Arrows and Bolts (Food for Ammo)
+			Dundee's Knife (Bone Shiv)
+			Jason's Machete (Knives)
 		-->
 
 		<!-- This is crafted freely by the player to kick off the 10-Zombie Challenge -->
@@ -16,6 +18,7 @@
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="a4ff84"/>
 			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
@@ -27,7 +30,7 @@
 		
 		<item name="+White River Citizen Card">
 			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="42ff00"/>
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
@@ -36,7 +39,7 @@
 		
 		<item name="+White River Veteran 100Z Challenge">
 			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="7fa6ff"/>
+			<property name="CustomIconTint" value="660000"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
@@ -50,7 +53,7 @@
 		
 		<item name="+White River Veteran Citizen Card">
 			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="004dff"/>
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>

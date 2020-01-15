@@ -18,6 +18,7 @@
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Everdeen's Arrows"/>
@@ -30,6 +31,7 @@
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Everdeen's Bolts"/>
@@ -37,30 +39,7 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>			
-		
-<!--		
-		<item name="Arrows of Everdeen">
-			<property name="Extends" value="ammoArrowIron"/>
-			<property name="CustomIcon" value="ammoArrowSteelAP"/>
-			<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
-			<property name="StickyMeshFile" value="Items/Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab"/>
-			<property name="EconomicValue" value="80"/>
-			<property name="EconomicBundleSize" value="5"/>
-			<property name="Damage_type" value="Piercing"/>
-			<property name="StickyOffset" value="0.4"/>
-			<property class="Attributes">
-				<property name="GetQualityFromWeapon" value="true"/>
-			</property>
-			<effect_group name="Base Effects" tiered="false"> 
-				<passive_effect name="EntityDamage" operation="base_set" value="42"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-				<passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
-				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
-				<passive_effect name="ProjectileVelocity" operation="base_set" value="65"/>
-				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0" tags="glass"/>
-			</effect_group>
-		</item>
--->
+
 		<item name="Arrows of Everdeen">
 			<property name="Extends" value="ammoArrowIron"/>
 			<property name="CustomIcon" value="ammoArrowSteelAP"/>

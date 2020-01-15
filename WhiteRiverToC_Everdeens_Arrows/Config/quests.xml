@@ -45,8 +45,8 @@
 			<objective type="InteractWithNPC">
 				<property name="phase" value="3" />
 			</objective>	
-			<reward type="Item" id="+White River Veteran Citizen Card" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="Bolts of Everdeen" value="100-150"/>
+			<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->
+			<reward type="Item" id="Bolts of Everdeen" value="200-250"/>
 			<reward type="Item" id="foodVegetableStew" value="2-4" />
 			<reward type="Exp" value="5000" />
 			<reward type="SkillPoints" value="2" />				
