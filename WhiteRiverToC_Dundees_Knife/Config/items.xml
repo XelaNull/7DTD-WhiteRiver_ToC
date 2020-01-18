@@ -32,6 +32,7 @@
 		<item name="Dundee's Hunting Knife"> <!-- T2 Blades -->
 			<property name="Tags" value="knife,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
+			<property name="CustomIcon" value="meleeKnife"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="HoldType" value="36"/>
