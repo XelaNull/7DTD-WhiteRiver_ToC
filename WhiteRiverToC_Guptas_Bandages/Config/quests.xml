@@ -13,15 +13,18 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="Fetch" id="resourceCropAloeLeaf" value="20" phase="1" />
-				<objective type="Fetch" id="resourceCropCottonPlant" value="40" phase="1" />
+				<objective type="Fetch" id="resourceCropAloeLeaf" value="10" phase="1" />
+				<objective type="Fetch" id="resourceCloth" value="10" phase="1" />
+				<objective type="Fetch" id="medicalBandage" value="10" phase="1" />
+
+				
 				<objective type="Goto" id="trader" value="5" phase="2" />	
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>	
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="medicalBandage" value="2-3" />
-				<reward type="Exp" value="1500" />
+				<reward type="Item" id="medicalFirstAidBandage" value="2-5" />
+				<reward type="Exp" value="750" />
 				<reward type="SkillPoints" value="1" />				
 			</quest>
 					

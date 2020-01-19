@@ -13,7 +13,7 @@
 			<property name="repeatable" value="true" />
 
 			<objective type="Fetch" id="foodCropCorn" value="6" phase="1" />
-			<objective type="Fetch" id="foodCropPotato" value="6" phase="1" />
+			<objective type="Fetch" id="resourceCropSnowberryPlant" value="6" phase="1" />
 			<objective type="Goto" id="trader" value="5" phase="2" />	
 			<objective type="InteractWithNPC">
 				<property name="phase" value="3" />
