@@ -6,7 +6,7 @@
 			<ingredient name="+White River Citizen Card" count="1"/>
 		</recipe>
 		<recipe name="+Writ Of Bambi" count="1" craft_time = "90" craft_exp_gain="10000" >
-			<ingredient name="MBowCrossbowParts" count="2"/>
+			<ingredient name="gunBowWoodenParts" count="2"/>
 			<ingredient name="gunBowPrimitive" count="20"/>			
 			<ingredient name="resourceWood" count="400"/>
 			<ingredient name="resourcePaper" count="1"/>
