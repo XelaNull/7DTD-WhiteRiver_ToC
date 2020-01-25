@@ -3,7 +3,7 @@
 	
 			<quest id="+Quest For Bambi's Killer Bow">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow..or maybe a replica..in exchange for your assistance. Gather 400 Wood, Craft 20 Wooden Bows" />
+				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow..or maybe a replica..in exchange for your assistance. Gather 400 Wood, 2 Bow Parts, Craft 20 Primitive Bows" />
 				<property name="name" value="Quest to obtain Bambi's Killer Compound Bow" />
 				<property name="subtitle_key" value="Obtain Bambi's Killer Compound Bow" />
 				<property name="description_key" value="Collect the needed items and resources to craft a +Writ_Of_Bambi and receive your compound bow. You also will receive a small gift to help you re-establish your homestead." />
@@ -13,7 +13,7 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="gunBowWooden" value="1" phase="1" />
+				<objective type="FetchKeep" id="MBowCrossbowParts" value="2" phase="1" />
 				<objective type="FetchKeep" id="gunBowPrimitive" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />

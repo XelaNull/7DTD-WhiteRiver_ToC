@@ -47,7 +47,7 @@
 
 			<quest id="+Vet. Quest For Taza's Axe">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Recently, whispers on the wind have been saying there is a stash of Axe crafted by Taza the Master Craftsman herself. She will provide one of these to any who demonstrates exceptional donations to their local community. Gather 4000 Small Stone + 400 Plant Fibers + 20 Stone Axes"/>
+				<property name="offer" value="Recently, whispers on the wind have been saying there is a stash of Axe crafted by Taza the Master Craftsman herself. She will provide one of these to any who demonstrates exceptional donations to their local community. Gather 4000 Small Stone + 200 Plant Fibers + 20 Stone Axes"/>
 				<property name="name" value="Veteran Quest to build Fabled Tazas Axe" />
 				<property name="subtitle_key" value="Veteran Quest for Fabled Taza Axe" />
 				<property name="description_key" value="Collect the needed resources and craft a +Veteran Writ Of Taza to receive your axe. You also will receive a weapon and ammo as well as a small gift to help you take on any who would stand in your way." />
@@ -58,7 +58,7 @@
 				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="resourceRockSmall" value="4000" phase="1" />
-				<objective type="FetchKeep" id="resourceYuccaFibers" value="400" phase="1" />
+				<objective type="FetchKeep" id="resourceYuccaFibers" value="200" phase="1" />
 				<objective type="FetchKeep" id="meleeToolStoneAxe" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Veteran Writ Of Taza" value="1" phase="2" />	

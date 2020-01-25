@@ -3,7 +3,7 @@
 
 			<quest id="+Quest For Dundee's Knife">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader mentioned he has a few extra mass-produced Dundee's famous hunting knives. This is the knife that was once used by a famous crocodile hunter. Before the trader will part with this knife, your help is needed to gather bone shivs for the Trader to hand out to those in need. Craft 10 Bone Shivs" />
+				<property name="offer" value="The Trader mentioned he has a few extra mass-produced Dundee's famous hunting knives. This is the knife that was once used by a famous crocodile hunter. Before the trader will part with this knife, your help is needed to gather bone shivs for the Trader to hand out to those in need. Craft 10 Bone Knives" />
 				<property name="name" value="Quest to craft Dundee's Hunting Knife" />
 				<property name="subtitle_key" value="Craft the +Writ Of Dundee" />
 				<property name="description_key" value="Collect the needed items to craft a +Writ Of Dundee and receive your knife. You also will receive a small gift to help you re-establish your homestead." />

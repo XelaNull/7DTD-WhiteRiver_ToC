@@ -3,7 +3,7 @@
 
 			<quest id="+Quest For Gupta's Bandages">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader mentioned a settlement Doctor in need of the ingredients for first aid bandages but she is so busy treating the injured she doesn't have time to collect them herself. She is willing to offer you first aid bandages in exchange for your assistance. Gather 24 Aloe Leaves + 40 Cotton" />
+				<property name="offer" value="The Trader mentioned a settlement Doctor in need of the ingredients for first aid bandages but she is so busy treating the injured she doesn't have time to collect them herself. She is willing to offer you first aid bandages in exchange for your assistance. Gather 10 Aloe Leaves + 10 Cloth Fragments + 10 Bandages" />
 				<property name="name" value="Collect Aloe for Gupta's Bandages" />
 				<property name="subtitle_key" value="Collect Aloe for Gupta's Bandages" />
 				<property name="description_key" value="Collect the aloe leaves and cotton for Dr. Gupta to craft first aid bandages. You will be given first aid bandages in return for your effort. " />
