@@ -89,9 +89,9 @@
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="Ivanka's Steel Shovel" value="5-6" />
-				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="modMeleeGraveDiggerSchematic" value="1" />
 				<reward type="Item" id="Ivanka's Steel Pickaxe" value="5-6" />
-				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
+				<reward type="Item" id="modMeleeBunkerBusterSchematic" value="1" />
 				<reward type="Item" id="+Sealed Ivanka's Veteran Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
 				<reward type="Exp" value="5000" />

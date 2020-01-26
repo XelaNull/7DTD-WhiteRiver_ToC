@@ -39,7 +39,8 @@
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="Jason's Machete" value="3-6" />
 				<reward type="Item" id="+Sealed Jason's Crate" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="0-100" />	
+				<reward type="Item" id="plantedGraceCorn1Schematic" value="2-5" />
+				<reward type="Item" id="pouredConcreteBlock" value="10-100" />	
 				<reward type="Exp" value="3000" />
 				<reward type="SkillPoints" value="1" />					
 			</quest>

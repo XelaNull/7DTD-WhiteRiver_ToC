@@ -14,7 +14,7 @@
 				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="resourceLeather" value="50" phase="1" />
-				<objective type="FetchKeep" id="apparelCoatLeatherPoncho" value="5" phase="1" />
+				<objective type="FetchKeep" id="apparelCoatLeatherPoncho" value="2" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Kuva" value="1" phase="2" />			
 	

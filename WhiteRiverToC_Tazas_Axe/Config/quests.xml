@@ -40,6 +40,7 @@
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
 				<reward type="Item" id="meleeToolStoneAxeTazas" value="2-4" />	
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
+				<reward type="Item" id="modMeleeWoodSplitterSchematic" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="0-50" />
 				<reward type="Exp" value="1500" />
 				<reward type="SkillPoints" value="1" />					

@@ -39,7 +39,7 @@
 				<reward type="Item" id="+Repair Leon's SMG Quest" />
 				<reward type="Item" id="modGunForegrip" value="1" /> 				
 				<reward type="Item" id="ammo9mmBullet" value="50-150" />
-				<reward type="Item" id="pouredConcreteBlock" value="0-50" />	
+				<reward type="Item" id="pouredConcreteBlock" value="10-80" />	
 				<reward type="Exp" value="1000" />
 				<reward type="SkillPoints" value="1" />					
 			</quest>
