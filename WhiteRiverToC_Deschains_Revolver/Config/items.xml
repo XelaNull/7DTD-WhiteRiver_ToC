@@ -32,6 +32,9 @@
 		<item name="Deschains Revolver"> <!-- T3 pistols -->
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedGun"/>
+			<property name="CustomIcon" value="gun44Magnum"/>
+			<property name="CustomIconTint" value="b30000"/>
+
 			<property name="TintColor" value="179,0,0"/>
 			<property name="HoldType" value="44"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Magnums/44MagnumPrefab.prefab"/>
@@ -129,11 +132,12 @@
 				<!-- <triggered_effect trigger="onSelfEquipStart" action="CVarLogValue" cvar="onSelfEquipStartMagnum"/> -->
 			</effect_group>
 		</item>
-		
+	
 		<item name="45LC_Silver_Bullet_of_Gilead">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
-			<property name="TintColor" value="192,192,192"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="EconomicValue" value="75"/>
 			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
 <!--			<property name="UnlockedBy" value="perkEnforcerHPAmmo"/> -->
@@ -151,8 +155,8 @@
 		<item name="45LC_Gold_Bullet_of_Gilead">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
-			<property name="TintColor" value="204,172,0"/>
-
+			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
+			<property name="CustomIconTint" value="203172"/>
 			<property name="EconomicValue" value="100"/>
 			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
 <!--			<property name="UnlockedBy" value="perkEnforcerAPAmmo"/> -->
