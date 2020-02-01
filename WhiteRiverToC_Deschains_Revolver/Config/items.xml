@@ -56,7 +56,7 @@
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value=".1"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="45LC Silver Bullet of Gilead,45LC Gold Bullet of Gilead"/>
+				<property name="Magazine_items" value="45LC_Silver_Bullet_of_Gilead,45LC_Gold_Bullet_of_Gilead"/>
 				<property name="Reload_time" value="1.5"/>
 				<property name="Sound_start" value="44magnum_fire"/>
 				<property name="Sound_repeat" value=""/>
@@ -130,8 +130,7 @@
 			</effect_group>
 		</item>
 		
-		
-		<item name="45LC Silver Bullet of Gilead">
+		<item name="45LC_Silver_Bullet_of_Gilead">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
 			<property name="TintColor" value="192,192,192"/>
@@ -149,7 +148,7 @@
 			</effect_group>
 		</item>
 		
-		<item name="45LC Gold Bullet of Gilead">
+		<item name="45LC_Gold_Bullet_of_Gilead">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="TintColor" value="204,172,0"/>

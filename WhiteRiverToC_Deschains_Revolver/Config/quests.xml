@@ -4,8 +4,8 @@
 			<quest id="+Quest For Deschain's Revolver">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Hile, Gunslinger. We seek aid and succor. Find the eight Dark Tower books and craft doors for the nineteen levels of the Tower. Give these to the Trader and he will bequeth you the Revolver of Roland Deschain." />
-				<property name="name" value="Quest to craft Dundee's Hunting Knife" />
-				<property name="subtitle_key" value="Craft the +Writ Of Dundee" />
+				<property name="name" value="Quest for Roland Deschain's Revolver" />
+				<property name="subtitle_key" value="Craft the +Writ Of Deschain" />
 				<property name="description_key" value="Hile, Gunslinger. We seek aid and succor. Find the eight Dark Tower books and craft doors for the nineteen levels of the Tower. Give these to the Trader and he will bequeth you the Revolver of Roland Deschain. Description" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
@@ -50,8 +50,8 @@
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="Deschains Revoler" value="1" />
-				<reward type="Item" id="45LC Silver Bullet of Gilead" value="24-96" />
-				<reward type="Item" id="45LC Gold Bullet of Gilead" value="6-48" />
+				<reward type="Item" id="45LC_Silver_Bullet_of_Gilead" value="24-96" />
+				<reward type="Item" id="45LC_Gold_Bullet_of_Gilead" value="6-48" />
 				<reward type="Item" id="+Sealed Deschain's Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
 				<reward type="Item" id="apparelCowboyHat" value="1" />

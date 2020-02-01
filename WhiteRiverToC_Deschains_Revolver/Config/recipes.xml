@@ -11,18 +11,17 @@
 		</recipe>	
 		
 		
-		<recipe name="45LC Silver Bullet of Gilead" count="6" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<recipe name="45LC_Silver_Bullet_of_Gilead" count="6" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="6"/>
 			<ingredient name="resourceGunPowder" count="60"/>
 			<ingredient name="resourceBulletCasing" count="6"/>
 			<ingredient name="resourceSilverNugget" count="1"/>
 		</recipe>
-		<recipe name="45LC Gold Bullet of Gilead" count="3" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<recipe name="45LC_Gold_Bullet_of_Gilead" count="3" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="3"/>
 			<ingredient name="resourceGunPowder" count="30"/>
 			<ingredient name="resourceBulletCasing" count="3"/>
 			<ingredient name="resourceGoldNugget" count="1"/>
-
 		</recipe>
 
 	</append>
