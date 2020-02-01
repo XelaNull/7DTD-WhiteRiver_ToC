@@ -39,7 +39,7 @@
 			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab"/>
 			<property name="Material" value="MmeleeToolKnifeMachete"/> <property name="Weight" value="5"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="EconomicValue" value="1200"/>
+			<property name="SellableToTrader" value="false"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="Group" value="Ammo/Weapons"/>

@@ -91,7 +91,7 @@
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Extends" value="gunSMG5"/>
 			<property name="TintColor" value="155,0,0"/>
-			<property name="EconomicValue" value="1400"/>		
+			<property name="EconomicValue" value="1100"/>		
 			<effect_group name="Base Effects"> <!-- MP5 -->
 				<passive_effect name="MaxRange" operation="base_set" value="20"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15"/>

@@ -39,6 +39,7 @@
 			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knives/hunting_knifePrefab.prefab"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="SellableToTrader" value="false"/>
 			<property name="FuelValue" value="100"/>
 			<property name="EconomicValue" value="500"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>

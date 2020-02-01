@@ -21,9 +21,6 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Declaration Of Citizenship" value="1" phase="2" />
 
-				<!-- Uncomment the line below to add an additional crate as a reward with some more goodies -->
-				<!-- You can customize what is provided in this crate by editing loot.xml -->
-				<!-- <reward type="Item" id="+Sealed Citizen Crate" value="1" />	-->
 			</quest>	
 			
 			<quest id="quest_whiteRiverCitizen3">
@@ -48,9 +45,11 @@
 				</objective>	
 				
 				<reward type="SkillPoints" value="1" />	
+				<reward type="Exp" value="2000" />
 				<reward type="Item" id="+White River Citizen Card" value="1" />		
 				<reward type="Item" id="ammo9mmBullet" value="50" />			
 				<reward type="Item" id="gunPistol" value="2" />
+				<reward type="Item" id="+Sealed Citizen Crate" value="1" />
 			</quest>
 						
 			<quest id="+Kill 100 Zombies">
@@ -76,8 +75,8 @@
 				<reward type="Item" id="+White River Veteran Citizen Card" value="1" />		
 				<reward type="Item" id="ammo9mmBullet" value="100-200" />
 				<reward type="Item" id="ammo9mmBulletSteel" value="0-100" />
-
 				<reward type="Item" id="gunPistol" value="3-5" />
+				<reward type="Item" id="+Sealed Citizen Crate" value="1-2" />
 			</quest>
 	</append>
 </config>

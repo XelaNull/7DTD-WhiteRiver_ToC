@@ -106,7 +106,7 @@
 
 		<item name="Ivanka's Steel Shovel"> <!-- T3 Tools -->
 			<property name="Extends" value="meleeToolShovelIron"/>
-			<property name="CustomIcon" value="meleeToolShovelSteel"/> 
+			<property name="CustomIcon" value="meleeToolShovelIron"/> 
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 

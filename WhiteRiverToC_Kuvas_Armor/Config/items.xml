@@ -75,7 +75,7 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".05"/><display_value name="dNoiseMultiplier" value=".05"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03"/><display_value name="dNoiseMultiplier" value=".03"/>
 				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
@@ -87,27 +87,7 @@
 				<property name="Mask1" value="Head" param1="outer"/>
 			</property>
 		</item>
-<!--		
-		<item name="Kuva's Red Leather Chest">
-			<property name="CustomIcon" value="armorLeatherChest"/> 
-			<property name="CustomIconTint" value="661900"/>			
-			<property name="Extends" value="armorLeatherChest"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<effect_group>
-				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
-		
-				<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
-		
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.08" />
-				<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
-			</effect_group>
-		</item>
-	-->
+
 		<item name="Kuva's Red Leather Chest">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="armorLeatherChest"/> 
@@ -127,7 +107,7 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".05"/><display_value name="dNoiseMultiplier" value=".05"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03"/><display_value name="dNoiseMultiplier" value=".03"/>
 				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
@@ -168,27 +148,6 @@
 			</property>
 		</item>
 
-<!--		
-		<item name="Kuva's Red Leather Pants">
-			<property name="CustomIcon" value="armorLeatherPants"/> 
-			<property name="CustomIconTint" value="661900"/>			
-			<property name="Extends" value="armorLeatherPants"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<effect_group>
-				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
-		
-				<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
-		
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.08" />
-				<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
-			</effect_group>
-		</item>
-	-->
 		<item name="Kuva's Red Leather Pants">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="armorLeatherPants"/> 
@@ -208,7 +167,7 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".05"/><display_value name="dNoiseMultiplier" value=".05"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03"/><display_value name="dNoiseMultiplier" value=".03"/>
 				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
@@ -218,28 +177,7 @@
 				<property name="UISlot" value="LegArmor"/>
 			</property>
 		</item>
-
-<!--		
-		<item name="Kuva's Red Leather Boots">
-			<property name="CustomIcon" value="armorLeatherBoots"/> 
-			<property name="CustomIconTint" value="661900"/>			
-			<property name="Extends" value="armorLeatherBoots"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<effect_group>
-				<passive_effect name="ModSlots" operation="base_set" value="2,5" tier="1,6"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
-		
-				<passive_effect name="Mobility" operation="perc_subtract" value="0.04"/>
-		
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0281" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value="0.0562" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value="0.08" />
-				<passive_effect name="BuffResistance" operation="base_add" value="0.04" tags="buffIllInfection0,buffInjuryBleeding,buffInjuryStunned1"/>
-			</effect_group>
-		</item>
--->		
+	
 		<item name="Kuva's Red Leather Boots">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="armorLeatherBoots"/> 
@@ -260,7 +198,7 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0562" tags="running"/>
 		
 				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".05"/><display_value name="dNoiseMultiplier" value=".05"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03"/><display_value name="dNoiseMultiplier" value=".03"/>
 				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
 			</effect_group>
 			<property class="UMA">
