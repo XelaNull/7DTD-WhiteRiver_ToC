@@ -22,9 +22,9 @@
 				<objective type="FetchKeep" id="Dark_Tower-Song_of_Suzannah" value="1" phase="1" />
 				<objective type="FetchKeep" id="Dark_Tower-The_Dark_Tower" value="1" phase="1" />
 
-				<objective type="Craft" id="secureDoorWooden" value="9" phase="2" />
-				<objective type="Craft" id="ironDoor1_v1" value="9" phase="2" />
-				<objective type="Craft" id="vaultDoor01" value="1" phase="2" />
+				<objective type="FetchKeep" id="secureDoorWooden" value="9" phase="2" />
+				<objective type="FetchKeep" id="ironDoor1_v1" value="9" phase="2" />
+				<objective type="FetchKeep" id="vaultDoor01" value="1" phase="2" />
 
 				<objective type="Craft" id="+Writ Of Deschain" value="1" phase="3" />		
 	

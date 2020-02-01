@@ -186,48 +186,59 @@
 		
 		<item name="Dark_Tower-The_Gunslinger">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+
+		<!--	gunPistolSchematic-->
+			
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="Dark_Tower-The_Drawing_of_the_3">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="Dark_Tower-The_Wastelands">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="Dark_Tower-Wizard_in_Glass">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="Dark_Tower-Wind_Through_the_Keyhole">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="Dark_Tower-Wolves_of_the_Kalla">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="Dark_Tower-Song_of_Suzannah">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
 		<item name="Dark_Tower-The_Dark_Tower">
 			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
