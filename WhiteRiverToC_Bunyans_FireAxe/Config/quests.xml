@@ -1,0 +1,48 @@
+<config>
+	<append xpath="/quests" >	
+			<quest id="+Quest For Bunyan's Axe">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader needs your help stocking up on water. Gather 50 Boiled Waters and the Trader will give you an extra Paul Bunyan branded FireAxe."/>
+				<property name="name" value="Quest for Bunyan's FireAxe" />
+				<property name="subtitle_key" value="Quest for Bunyan's FireAxe" />
+				<property name="description_key" value="The Trader needs your help stocking up on water. Gather 50 Boiled Waters and the Trader will give you an extra Paul Bunyan branded FireAxe." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="FetchKeep" id="drinkJarBoiledWater" value="50" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ Of Bunyan" value="1" phase="2" />
+				
+				<reward type="Exp" value="1000" />
+			</quest>
+			
+			<quest id="+Reward of Bunyan's FireAxe">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Reward of Bunyan's FireAxe" />
+				<property name="subtitle_key" value="Reward of Bunyan's FireAxe" />
+				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
+				<reward type="Item" id="meleeToolBunyansFireaxe" value="2-4" />	
+				<reward type="Item" id="modMeleeWoodSplitterSchematic" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="5-20" />
+				<reward type="Exp" value="2000" />
+				<reward type="SkillPoints" value="1" />					
+			</quest>
+
+	</append>
+</config>
