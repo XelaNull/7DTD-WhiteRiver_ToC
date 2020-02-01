@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="lootcontainers">
+		<lootcontainer id="141" count="2,5" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="questTierFlexibleTemplate" destroy_on_close="true">
+			<item group="modMeleeT2" count="0,1" prob="0.2"/>
+			<item Name="Deschains Revoler" count="1" quality="6"/>
+			<item Name="ammo45GileadBulletSilver" count="12,96"/>
+			<item Name="ammo45GileadBulletGold" count="6,48"/>
+
+			<item group="commonBooks" count="0,1" prob="0.7"/>
+			<item group="rareBooks" count="0,1" prob="0.5"/>
+			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
+		</lootcontainer>
+	</append>		
+</configs>	

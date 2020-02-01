@@ -1,0 +1,29 @@
+<configs>
+	<append xpath="/recipes">
+			<recipe name="+Deschain's Revolver Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="+White River Citizen Card" count="1"/>
+		</recipe>
+		<recipe name="+Writ Of Deschain" count="1" craft_time = "300" craft_exp_gain="10000" >
+			<ingredient name="secureDoorWooden" count="9"/>
+			<ingredient name="ironDoor1_v1" count="9"/>
+			<ingredient name="vaultDoor01" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>	
+		
+		
+		<recipe name="45LC Silver Bullet of Gilead" count="6" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="6"/>
+			<ingredient name="resourceGunPowder" count="60"/>
+			<ingredient name="resourceBulletCasing" count="6"/>
+			<ingredient name="resourceSilverNugget" count="1"/>
+		</recipe>
+		<recipe name="45LC Gold Bullet of Gilead" count="3" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="3"/>
+			<ingredient name="resourceGunPowder" count="30"/>
+			<ingredient name="resourceBulletCasing" count="3"/>
+			<ingredient name="resourceGoldNugget" count="1"/>
+
+		</recipe>
+
+	</append>
+</configs>

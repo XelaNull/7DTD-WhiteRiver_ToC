@@ -1,0 +1,61 @@
+<config>
+	<append xpath="/quests" >
+
+			<quest id="+Quest For Deschain's Revolver">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Hile, Gunslinger. We seek aid and succor. Find the eight Dark Tower books and craft doors for the nineteen levels of the Tower. Give these to the Trader and he will bequeth you the Revolver of Roland Deschain." />
+				<property name="name" value="Quest to craft Dundee's Hunting Knife" />
+				<property name="subtitle_key" value="Craft the +Writ Of Dundee" />
+				<property name="description_key" value="Hile, Gunslinger. We seek aid and succor. Find the eight Dark Tower books and craft doors for the nineteen levels of the Tower. Give these to the Trader and he will bequeth you the Revolver of Roland Deschain. Description" />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+	
+				<objective type="FetchKeep" id="Dark Tower-The Gunslinger" value="1" phase="1" />
+				<objective type="FetchKeep" id="Dark Tower-The Drawing of the 3" value="1" phase="1" />
+				<objective type="FetchKeep" id="Dark Tower-The Wastelands" value="1" phase="1" />
+				<objective type="FetchKeep" id="Dark Tower-Wizard in Glass" value="1" phase="1" />
+				<objective type="FetchKeep" id="Dark Tower-Wind Through the Keyhole" value="1" phase="1" />
+				<objective type="FetchKeep" id="Dark Tower-Wolves of the Kalla" value="1" phase="1" />
+				<objective type="FetchKeep" id="Dark Tower-Song of Suzannah" value="1" phase="1" />
+				<objective type="FetchKeep" id="Dark Tower-The Dark Tower" value="1" phase="1" />
+
+				<objective type="Craft" id="secureDoorWooden" value="9" phase="2" />
+				<objective type="Craft" id="ironDoor1_v1" value="9" phase="2" />
+				<objective type="Craft" id="vaultDoor01" value="1" phase="2" />
+
+				<objective type="Craft" id="+Writ Of Deschain" value="1" phase="3" />		
+	
+				<reward type="Exp" value="2500" />
+			</quest>
+			
+			<quest id="+Reward of Deschain's Revoler">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="name" value="Reward of Deschain's Revolver" />
+				<property name="subtitle_key" value="Reward of Deschain's Reolver" />
+				<property name="description_key" value="I do not kill with my gun; He who kills with his gun has forgotten the face of his father. I kill with my heart. Return to the trader to take up the gun of Eld." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="Deschains Revoler" value="1" />
+				<reward type="Item" id="+Sealed Deschain's Crate" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
+				<reward type="Item" id="apparelCowboyHat" value="1" />
+				
+				<reward type="Exp" value="5000" />
+				<reward type="SkillPoints" value="2" />					
+			</quest>
+	</append>
+</config>
