@@ -58,7 +58,7 @@
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
 				<property name="Magazine_items" value="45LC_Silver_Bullet_of_Gilead,45LC_Gold_Bullet_of_Gilead"/>
-				<property name="Reload_time" value=".1"/>
+				<property name="Reload_time" value="-1"/>
 				<property name="Sound_start" value="44magnum_fire"/>
 				<property name="Sound_repeat" value=""/>
 				<property name="Sound_end" value=""/>
@@ -88,7 +88,8 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 		
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="300"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="1000"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1200"/>
 		
 				<passive_effect name="MagazineSize" operation="base_set" value="6"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/> <!-- 4s -->
@@ -116,13 +117,13 @@
 		
 				<!-- Lower the Vertical Kick -->
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".5"/>
 		
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.3"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".15"/>
 		
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="3.2"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".6"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".9"/>
 		
 				<!-- Set it to be super reliable.. it is crafted from Excalibur, afterall.. -->
 				<passive_effect name="DegradationMax" operation="base_set" value="10000,20000" tier="1,6"/>
