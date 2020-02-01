@@ -34,7 +34,7 @@
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="CustomIcon" value="gun44Magnum"/>
 			<property name="CustomIconTint" value="b30000"/>
-			<property name="HoldType" value="44"/>
+			<property name="HoldType" value="1"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Magnums/44MagnumPrefab.prefab"/>
 			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="1"/>
 			<property name="RepairTools" value="resourceRepairKitDeschain"/>
