@@ -50,6 +50,8 @@
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="Deschains Revoler" value="1" />
+				<reward type="Item" id="45LC Silver Bullet of Gilead" value="24-96" />
+				<reward type="Item" id="45LC Gold Bullet of Gilead" value="6-48" />
 				<reward type="Item" id="+Sealed Deschain's Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
 				<reward type="Item" id="apparelCowboyHat" value="1" />
