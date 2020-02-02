@@ -57,7 +57,7 @@
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="45LC_Silver_Bullet_of_Gilead,45LC_Gold_Bullet_of_Gilead"/>
+				<property name="Magazine_items" value="45LC Silver Bullet of Gilead,45LC Gold Bullet of Gilead"/>
 				<property name="Reload_time" value="-1"/>
 				<property name="Sound_start" value="44magnum_fire"/>
 				<property name="Sound_repeat" value=""/>
@@ -132,7 +132,7 @@
 			</effect_group>
 		</item>
 	
-		<item name="45LC_Silver_Bullet_of_Gilead">
+		<item name="45LC Silver Bullet of Gilead">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
@@ -151,7 +151,7 @@
 			</effect_group>
 		</item>
 		
-		<item name="45LC_Gold_Bullet_of_Gilead">
+		<item name="45LC Gold Bullet of Gilead">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
@@ -184,7 +184,7 @@
 			<property name="Group" value="Resources"/>
 		</item>
 		
-		<item name="Dark_Tower-The_Gunslinger">
+		<item name="Dark Tower The Gunslinger">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 
@@ -194,49 +194,49 @@
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark_Tower-The_Drawing_of_the_3">
+		<item name="Dark Tower The Drawing of the 3">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark_Tower-The_Wastelands">
+		<item name="Dark Tower The Wastelands">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark_Tower-Wizard_in_Glass">
+		<item name="Dark Tower Wizard in Glass">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark_Tower-Wind_Through_the_Keyhole">
+		<item name="Dark Tower Wind Through the Keyhole">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark_Tower-Wolves_of_the_Kalla">
+		<item name="Dark Tower Wolves of the Kalla">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark_Tower-Song_of_Suzannah">
+		<item name="Dark Tower Song of Suzannah">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark_Tower-The_Dark_Tower">
+		<item name="Dark Tower The Dark Tower">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
