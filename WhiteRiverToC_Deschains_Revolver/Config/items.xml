@@ -136,10 +136,9 @@
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
-			<property name="CustomIconTint" value="c0c0c0"/>
+			<property name="CustomIconTint" value="c4cace"/>
 			<property name="EconomicValue" value="75"/>
 			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
-<!--			<property name="UnlockedBy" value="perkEnforcerHPAmmo"/> -->
 			<effect_group name="45LC Silver Bullet of Gilead" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="100"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
@@ -150,34 +149,15 @@
 				</passive_effect>
 			</effect_group>
 		</item>
-		<item name="45LC_Silver_Bullet_of_Gilead">
-			<property name="Extends" value="ammo44MagnumBulletBall"/>
-			<property name="DisplayType" value="ammoBulletHP"/>
-			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
-			<property name="CustomIconTint" value="c0c0c0"/>
-			<property name="EconomicValue" value="75"/>
-			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
-<!--			<property name="UnlockedBy" value="perkEnforcerHPAmmo"/> -->
-			<effect_group name="45LC_Silver_Bullet_of_Gilead" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="100"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
-				<display_value name="dTargetArmor" value="1"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1">
-					<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
-				</passive_effect>
-			</effect_group>
-		</item>
-		
+
 		
 		<item name="45LC Gold Bullet of Gilead">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
-			<property name="CustomIconTint" value="203172"/>
+			<property name="CustomIconTint" value="d4af37"/>
 			<property name="EconomicValue" value="100"/>
 			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
-<!--			<property name="UnlockedBy" value="perkEnforcerAPAmmo"/> -->
 			<effect_group name="45LC Gold Bullet of Gilead" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="150"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="14"/>
@@ -189,26 +169,7 @@
 				<display_value name="dDegradationPerUse" value=".3"/>
 			</effect_group>
 		</item>
-		
-		<item name="45LC_Gold_Bullet_of_Gilead">
-			<property name="Extends" value="ammo44MagnumBulletBall"/>
-			<property name="DisplayType" value="ammoBulletAP"/>
-			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
-			<property name="CustomIconTint" value="203172"/>
-			<property name="EconomicValue" value="100"/>
-			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
-<!--			<property name="UnlockedBy" value="perkEnforcerAPAmmo"/> -->
-			<effect_group name="45LC_Gold_Bullet_of_Gilead" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="150"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="14"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.3"/>
-				<display_value name="dTargetArmor" value="-.2"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
-				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger"/>
-				<display_value name="dDegradationPerUse" value=".3"/>
-			</effect_group>
-		</item>
+
 		
 		<item name="resourceRepairKitDeschain">
 			<property name="HoldType" value="45"/>
@@ -281,63 +242,5 @@
 		</item>
 		
 		
-<!--		
-		<item name="Dark_Tower-The_Gunslinger">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>			
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-		<item name="Dark_Tower-The_Drawing_of_the_3">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-		<item name="Dark_Tower-The_Wastelands">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-		<item name="Dark_Tower-Wizard_in_Glass">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-		<item name="Dark_Tower-Wind_Through_the_Keyhole">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-		<item name="Dark_Tower-Wolves_of_the_Kalla">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-		<item name="Dark_Tower-Song_of_Suzannah">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-		<item name="Dark_Tower-The_Dark_Tower">
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-			</property>
-		</item>
-	-->
 	</append>
 </configs>
