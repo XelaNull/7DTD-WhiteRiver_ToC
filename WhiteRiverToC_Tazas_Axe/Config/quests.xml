@@ -49,7 +49,7 @@
 			<quest id="+Vet. Quest For Taza's Axe">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Recently, whispers on the wind have been saying there is a stash of Taza Axes crafted by Taza the Master Craftswoman herself. The Trader will provide one of these to any who demonstrates exceptional donations to their local community. Collect 4000 Small Stone + 200 Plant Fibers + 20 Stone Axes and craft a +Veteran Writ Of Taza to redeem for your Axe. You also will receive a weapon and ammo as well as a small gift to help you take on any who would stand in your way."/>
-				<property name="name" value="Veteran Quest to build Fabled Tazas Axe" />
+				<property name="name" value="Veteran Quest to obtain Fabled Tazas Axe" />
 				<property name="subtitle_key" value="Veteran Quest for Fabled Taza Axe" />
 				<property name="description_key" value="questVetTazasAxe" />
 				<property name="icon" value="ui_game_symbol_map_trader" />

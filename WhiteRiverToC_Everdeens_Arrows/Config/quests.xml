@@ -50,7 +50,7 @@
 			<property name="description_key" value="questEverdeensBolts" />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="difficulty" value="medium" />
 			<property name="shareable" value="false" />
 			<property name="repeatable" value="true" />
 

@@ -59,7 +59,7 @@
 				<property name="description_key" value="questBambisCrossbow" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
-				<property name="difficulty" value="medium" />
+				<property name="difficulty" value="hard" />
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	

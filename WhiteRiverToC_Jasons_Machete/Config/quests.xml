@@ -21,8 +21,8 @@
 			</quest>
 			<quest id="+Reward of Jason's Machete">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value=""/>
-				<property name="name" value="Honor the Trader's mother with the Mums you've collected. Obtain your used machete from the Trader." />
+				<property name="offer" value="Honor the Trader's mother with the Mums you've collected. Obtain your used machete from the Trader."/>
+				<property name="name" value="Collect your used Machete from the Trader" />
 				<property name="subtitle_key" value="Reward of Jason's Machete" />
 				<property name="description_key" value="questRewardJasonsMachete" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
