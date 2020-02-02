@@ -13,7 +13,7 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="resourceIronFragment" value="600" phase="1" />
+				<objective type="FetchKeep" id="resourceScrapIron" value="600" phase="1" />
 				<objective type="FetchKeep" id="meleeToolShovelIron" value="1" phase="1" />
 				<objective type="FetchKeep" id="meleeToolPickaxeIron" value="1" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />

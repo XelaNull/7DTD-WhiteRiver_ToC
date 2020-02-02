@@ -6,7 +6,7 @@
 			<ingredient name="+White River Citizen Card" count="1"/>
 		</recipe>
 		<recipe name="+Writ Of Ivanka" count="1" craft_time = "90" craft_exp_gain="10000" >
-			<ingredient name="resourceIronFragment" count="600"/>
+			<ingredient name="resourceScrapIron" count="600"/>
 			<ingredient name="meleeToolShovelIron" count="1"/>
 			<ingredient name="meleeToolPickaxeIron" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
