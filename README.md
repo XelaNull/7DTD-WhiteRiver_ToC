@@ -2,6 +2,8 @@
 
 ## 7 Days to Die : White River - Tools of Citizenship
 
+Tested with A18.3
+
 This modlet collection extends the new player White Run citizenship quest line to provide some gather & craft quests to obtain improved tools and equipment. Each item has a small back story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better gear through a method other than randomness or traditional progression. The rewards this Modlet provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a slight improvement over the items they were created from.
 
 **This mod is only XML XPath modlets and only needs to be installed on the server!**
