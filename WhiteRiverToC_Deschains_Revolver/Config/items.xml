@@ -249,7 +249,7 @@
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark Tower: Wizard in Glass">
+		<item name="Dark Tower: Wizard and Glass">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">

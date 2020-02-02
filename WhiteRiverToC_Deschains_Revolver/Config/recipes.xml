@@ -5,13 +5,13 @@
 		</recipe>
 
 		
-		<recipe name="+The Dark Tower Series Books 1-4" count="1" craft_time = "300" craft_exp_gain="10000" >
+		<recipe name="+The Dark Tower Series Books 1-4" count="1" craft_time = "60" craft_exp_gain="5000" >
 			<ingredient name="Dark Tower: The Gunslinger" count="1"/>
 			<ingredient name="Dark Tower: The Drawing of the 3" count="1"/>
 			<ingredient name="Dark Tower: The Waste Lands" count="1"/>
-			<ingredient name="Dark Tower: Wizard in Glass" count="1"/>
+			<ingredient name="Dark Tower: Wizard and Glass" count="1"/>
 		</recipe>	
-		<recipe name="+The Dark Tower Series Books 5-8" count="1" craft_time = "300" craft_exp_gain="10000" >
+		<recipe name="+The Dark Tower Series Books 5-8" count="1" craft_time = "60" craft_exp_gain="5000" >
 			<ingredient name="Dark Tower: Wind Through the Keyhole" count="1"/>
 			<ingredient name="Dark Tower: Wolves of the Calla" count="1"/>
 			<ingredient name="Dark Tower: Song of Suzannah" count="1"/>

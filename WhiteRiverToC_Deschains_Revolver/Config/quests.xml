@@ -46,7 +46,7 @@
 				<reward type="Item" id="Deschains Revoler" value="1" />
 				<reward type="Item" id="+Sealed Deschain's Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
-				<reward type="Item" id="apparelCowboyHat" value="1" />
+				<reward type="Item" id="Deschain's Cowboy Hat" value="1" />
 				
 				<reward type="Exp" value="5000" />
 				<reward type="SkillPoints" value="2" />					
