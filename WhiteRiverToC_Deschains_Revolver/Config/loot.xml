@@ -10,7 +10,9 @@
 			<item group="rareBooks" count="0,1" prob="0.6"/>
 			<item group="groupTreasureMaps" count="0,1" prob="0.1"/>
 		</lootcontainer>
-		
+	</append>
+	
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
 		<lootgroup name="groupBooksDarkTower">
 			<item name="Dark Tower: The Gunslinger"/>
 			<item name="Dark Tower: The Drawing of the 3"/>
@@ -21,7 +23,8 @@
 			<item name="Dark Tower: Song of Suzannah"/>
 			<item name="The Dark Tower"/>
 		</lootgroup>
-	</append>		
+	</insertAfter>
+			
 	<append xpath="/lootcontainers/lootgroup[@name='booksNoFiller']">
 		<item group="groupBooksDarkTower" prob="100" count="1"/>
 	</append>
