@@ -1,7 +1,6 @@
 <configs>
 	<append xpath="lootcontainers">
 		<lootcontainer id="148" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="questTierFlexibleTemplate" destroy_on_close="true">
-			<item name="ammo9mmBulletHP" count="50-150" />
 			<item group="modMeleeT2" count="0,1" prob="0.2"/>
 			<item group="books" count="0,1" prob="0.4"/>
 			<item group="rareBooks" count="0,1" prob="0.2"/>
