@@ -1,6 +1,6 @@
 <config>
 	<append xpath="/quests" >	
-			<quest id="+Quest For Bunyan's Axe">
+			<quest id="+Quest For Bunyan's FireAxe">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="The Trader needs your help stocking up on water. Gather 50 Boiled Waters and the Trader will give you an extra Paul Bunyan branded FireAxe."/>
 				<property name="name" value="Quest for Bunyan's FireAxe" />
