@@ -24,6 +24,9 @@
 		<append xpath="/lootcontainers/lootgroup[@name='booksNoFiller']">
 			<item group="groupBooksDarkTower" prob="1" count="1"/>
 		</append>
+		<append xpath="/lootcontainers/lootgroup[@name='books']">
+			<item group="groupBooksDarkTower" prob="1" count="1"/>
+		</append>
 
 	</append>		
 </configs>	
