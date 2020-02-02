@@ -2,10 +2,10 @@
 	<append xpath="/quests" >
 			<quest id="+Quest For Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="There is a crate of modded weapons at the Trader that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these weapons if you can help the settlement restock its inventory of pistols. Some pistols for a modded SMG? Seems like a good deal. Gather 5 Pistols" />
+				<property name="offer" value="There is a crate of modded 9mm weapons at the Trader that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these weapons if you can help the settlement restock its inventory of pistols. Some pistols for a modded SMG? Seems like a good deal. Gather 5 Pistols" />
 				<property name="name" value="Pay-it-forward to obtain Leon's Modded SMG" />
 				<property name="subtitle_key" value="Craft the +Writ Of Leon" />
-				<property name="description_key" value="Collect the needed weapons and craft a +Writ Of Leon to receive your SMG. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="description_key" value="questLeonsDegradedSMG" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -19,10 +19,10 @@
 			</quest>
 			<quest id="+Reward of Leon's Degraded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="Obtain one of Leon's SMGs from the Trader in exchange for your pistols."/>
 				<property name="name" value="Reward of Leon's Degraded SMG" />
 				<property name="subtitle_key" value="Reward of Leon's Degraded SMG" />
-				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="description_key" value="questRewardDegradedSMG" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -35,7 +35,7 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />
-				<reward type="Item" id="Leon's Degraded SMG" value="2-4" />
+				<reward type="Item" id="Leon's Degraded SMG" value="1-3" />
 				<reward type="Item" id="+Repair Leon's SMG Quest" />
 				<reward type="Item" id="modGunForegrip" value="1" /> 				
 				<reward type="Item" id="ammo9mmBullet" value="50-150" />
@@ -46,10 +46,10 @@
 			
 			<quest id="+Quest To Repair Leon's SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Leon's SMG is quite the fixer-upper. It looks like you could repair this hunk of junk but you are going to need some parts. Gather 10 Mechanical Parts + 5 Spring" />
+				<property name="offer" value="Leon's SMG is quite the fixer-upper. The Trader offered to help you repair this hunk of junk, but first you are going to need some spare parts. Gather 10 Mechanical Parts + 5 Spring" />
 				<property name="name" value="Fix up Leon's Degraded SMG" />
 				<property name="subtitle_key" value="Collects Parts to Fix SMG" />
-				<property name="description_key" value="Leon's SMG is quite the fixer-uper. It looks like you could repair this hunk of junk but you are going to need some parts." />
+				<property name="description_key" value="questRepairLeonsSMG" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -65,10 +65,10 @@
 			</quest>
 			<quest id="+Reward of Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="Return top the Trader with the spare parts for assistance repairing your Leon's Degraded SMG."/>
 				<property name="name" value="Reward of Leon's Modded SMG" />
 				<property name="subtitle_key" value="Reward of Leon's Modded SMG" />
-				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="description_key" value="questLeonsSMG" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -78,9 +78,10 @@
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>
-				<reward type="Item" id="Leon's SMG" value="3" />
+				<reward type="Item" id="Leon's SMG" value="3-4" />
 				<reward type="Item" id="modGunFlashSuppressor" value="1" />
 				<reward type="Item" id="ammo9mmBullet" value="50-100" />
+				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
 				<reward type="Exp" value="1500" />
 				<reward type="SkillPoints" value="1" />						
 			</quest>
@@ -88,10 +89,10 @@
 			
 			<quest id="+Vet. Quest For Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="There is a special crate of modded weapons, that were set aside as especially high quality. These are from the same batch that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these better quality weapons once you provide some pistols and SMGs that the Trader can hand out to other survivors. Gather 10 Pistols + 5 SMGs" />
+				<property name="offer" value="There is a special crate of modded weapons, that were set aside and marked as high quality. These are from the same batch that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these better quality weapons if you can provide some additional pistols and SMGs to help the settlement stock up. Gather 10 Pistols + 5 SMGs" />
 				<property name="name" value="Pay-it-forward to obtain Leon's Modded SMG" />
 				<property name="subtitle_key" value="Craft the +Veteran Writ Of Leon" />
-				<property name="description_key" value="Collect the needed weapons and craft a +Veteran Writ Of Leon to receive your SMG. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="description_key" value="questVetLeonsSMG" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
@@ -106,10 +107,10 @@
 			</quest>
 			<quest id="+Veteran Reward of Leon's Modded SMG">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="That was tough, collecting all those spare weapons! Return them to the Trader and receive one of the high quality Leon's Modded SMGs from the special crate."/>
 				<property name="name" value="Veteran Reward of Leon's Modded SMG" />
 				<property name="subtitle_key" value="Veteran Reward of Leon's Modded SMG" />
-				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="description_key" value="questVetRewardLeonsSMG" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -122,7 +123,7 @@
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="Leon's SMG" value="4-6" />
 				<reward type="Item" id="+Sealed Leon's Veteran Crate" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
+				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
 				<reward type="Exp" value="5000" />
 				<reward type="SkillPoints" value="2" />						
 			</quest>

@@ -3,10 +3,10 @@
 	
 			<quest id="+Quest For Ivanka's Flaming Dig Tools">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="There is a crate of digging tools a woman named Ivanka left at the Trader some time ago and seems to have abandoned. The tools have been donated to White Run settlement to provide to citizens. You can have a pair of these tools once you provide the trader with iron replacements. Gather 600 Iron, Craft 1 Iron Shovels + 1 Iron Pickaxes" />
+				<property name="offer" value="There is a crate of digging tools a woman named Ivanka left at the Trader some time ago and seems to have abandoned. The tools are being given to White Run citizens in exchange for gathered Iron to build this shoddy wall. We intend to make the zombies pay for it! You can have a pair of these tools once you provide the trader with 600 Iron + 1 Iron Shovel + 1 Iron Pickaxe" />
 				<property name="name" value="Quest to obtain Ivanka's Flaming Dig Tools" />
 				<property name="subtitle_key" value="Craft the +Writ Of Ivanka" />
-				<property name="description_key" value="Collect the needed items and resources to craft a +Writ Of Ivanka and receive your set of flaming dig tools. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="description_key" value="questIvankasDigTools" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -23,10 +23,10 @@
 			</quest>
 			<quest id="+Reward of Ivanka's Flaming Dig Tools">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="These tools are the best tools. These tools are great. If you need to dig, these are the tools. Collect your tools from the Trader."/>
 				<property name="name" value="Reward of Ivanka's Flaming Dig Tools" />
 				<property name="subtitle_key" value="Reward of Ivanka's Flaming Dig Tools" />
-				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="description_key" value="questRewardIvankasDigTools" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -39,9 +39,9 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Ivanka's Iron Shovel" value="1-4" />
+				<reward type="Item" id="Ivanka's Iron Shovel" value="2-4" />
 				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
-				<reward type="Item" id="Ivanka's Iron Pickaxe" value="1-4" />
+				<reward type="Item" id="Ivanka's Iron Pickaxe" value="2-4" />
 				<reward type="Item" id="modMeleeClubBurningShaft" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="20-70" />	
 				<reward type="Exp" value="3000" />
@@ -51,17 +51,17 @@
 
 			<quest id="+Vet. Quest For Ivanka's Flaming Tools">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="There is a crate of digging tools a woman named Ivanka left at the Trader some time ago and seems to have abandoned. You can have a pair of these tools once you provide the trader with iron replacements. Gather 2000 Forged Iron + 50 Animal Fat, Craft 5 Steel Shovels + 5 Steel Pickaxes." />
+				<property name="offer" value="The shoddy wall has fallen down on the zombie side again. Help the settlement to repair it by gathering 1000 Forged Iron + 50 Animal Fat + 5 Steel Shovels + 5 Steel Pickaxes." />
 				<property name="name" value="Veteran Quest to obtain Ivanka's Flaming Dig Tools" />
 				<property name="subtitle_key" value="Craft the +Veteran Writ Of Ivanka" />
-				<property name="description_key" value="Collect the needed items and resources to craft a +Veteran Writ Of Ivanka and receive your set of flaming dig tools. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="description_key" value="questVetIvanksDigTools" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="resourceForgedIron" value="2000" phase="1" />
+				<objective type="FetchKeep" id="resourceForgedIron" value="1000" phase="1" />
 				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
 				<objective type="FetchKeep" id="meleeToolShovelSteel" value="5" phase="1" />
 				<objective type="FetchKeep" id="meleeToolPickaxeSteel" value="5" phase="1" />
@@ -72,10 +72,10 @@
 			</quest>
 			<quest id="+Vet. Reward of Ivanka's Flaming Tools">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="Thanks for your help building the wall. THIS time, it will stay up, promise! Collect your reward from the Trader."/>
 				<property name="name" value="Vet. Reward of Ivanka's Flaming Tools" />
 				<property name="subtitle_key" value="Vet. Reward of Ivanka's Flaming Tools" />
-				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="description_key" value="questVetRewardIvankasDigTools" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />

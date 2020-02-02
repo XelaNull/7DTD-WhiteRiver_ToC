@@ -3,10 +3,10 @@
 
 			<quest id="+Quest For Dundee's Knife">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader mentioned he has a few extra mass-produced Dundee's famous hunting knives. This is the knife that was once used by a famous crocodile hunter. Before the trader will part with this knife, your help is needed to gather bone shivs for the Trader to hand out to those in need. Craft 10 Bone Knives" />
+				<property name="offer" value="G'Eye, mate. That's not a knoife. THIS is a knoife! The Trader mentioned he has a few extra Dundee's famous hunting knives. This is the knife that was once used by a famous crocodile hunter. Before the trader will part with this knife, your help is needed to gather bone shivs for the Trader to hand out to those in need. Craft 10 Bone Knives" />
 				<property name="name" value="Quest to craft Dundee's Hunting Knife" />
 				<property name="subtitle_key" value="Craft the +Writ Of Dundee" />
-				<property name="description_key" value="Collect the needed items to craft a +Writ Of Dundee and receive your knife. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="description_key" value="questDundeesKnife" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="veryeasy" />
@@ -16,15 +16,14 @@
 				<objective type="FetchKeep" id="meleeToolKnifeBone" value="10" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Dundee" value="1" phase="2" />		
-	
 				<reward type="Exp" value="1500" />
 			</quest>
 			<quest id="+Reward of Dundee's Knife">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="Get on the right side of the road you pelican! Get your arse to the Trader to collect your reward."/>
 				<property name="name" value="Reward of Dundee's Knife" />
 				<property name="subtitle_key" value="Reward of Dundee's Knife" />
-				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="description_key" value="questRewardDundeesKnife" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -37,7 +36,7 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Dundee's Hunting Knife" value="2-5" />
+				<reward type="Item" id="Dundee's Hunting Knife" value="2-6" />
 				<reward type="Item" id="+Sealed Dundee's Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="20-100" />	
 				<reward type="Exp" value="1500" />

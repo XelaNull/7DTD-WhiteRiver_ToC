@@ -6,7 +6,7 @@
 				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow..or maybe a replica..in exchange for your assistance. Gather 400 Wood, 2 Bow Parts, Craft 20 Primitive Bows" />
 				<property name="name" value="Quest to obtain Bambi's Killer Compound Bow" />
 				<property name="subtitle_key" value="Obtain Bambi's Killer Compound Bow" />
-				<property name="description_key" value="Collect the needed items and resources to craft a +Writ_Of_Bambi and receive your compound bow. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="description_key" value="questBambisCompoundBow" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -23,10 +23,10 @@
 			</quest>
 			<quest id="+Reward of Bambi's Killer Bow">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="Tahnk you for your support of the bow-making class. Collect your reward from the Trader."/>
 				<property name="name" value="Reward of Bambi's Killer Bow" />
 				<property name="subtitle_key" value="Reward of Bambi's Killer Bow" />
-				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="description_key" value="questRewardBambisBow" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -40,13 +40,13 @@
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 
-				<reward type="Item" id="Bambis Killer Compound Bow" value="2-4" />
+				<reward type="Item" id="Bambis Killer Compound Bow" value="2-5" />
 				<reward type="Item" id="modGunBowPolymerString" value="1" />
 				<reward type="Item" id="modGunMeleeTheHunter" value="1" />
 		
 				<reward type="Item" id="ammoArrowSteelAP" value="50-150" />
 				<reward type="Item" id="ammoArrowFlaming" value="50-100" />
-				<reward type="Item" id="pouredConcreteBlock" value="0-50" />	
+				<reward type="Item" id="pouredConcreteBlock" value="10-50" />	
 				<reward type="Exp" value="1000" />
 				<reward type="SkillPoints" value="1" />				
 			</quest>
@@ -56,7 +56,7 @@
 				<property name="offer" value="The Trader is still really having problems outfitting survivors with bows. If you can provide a substantial boost to the inventory of bows and wood for their bow-making class, they will give you the REAL *Cough* Famed Bambi Killer Compound Crossbow(From behind the counter) in exchange for your assistance. Gather 4000 Wood + 50 Animal Fat, Craft 20 Compound Bows" />
 				<property name="name" value="Veteran Quest to obtain Bambi's Killer Compound Bow" />
 				<property name="subtitle_key" value="Obtain Bambi's Killer Compound Bow" />
-				<property name="description_key" value="Collect the needed items and resources to craft a +Veteran Writ Of Bambi and receive your compound bow. You also will receive a small gift to help you re-establish your homestead." />
+				<property name="description_key" value="questBambisCrossbow" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -73,7 +73,7 @@
 			</quest>		
 			<quest id="+Veteran Reward of Bambi's Killer Compound Crossbow">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Collect your reward from the Trader"/>
+				<property name="offer" value="Your help with the bow-making class is truly appreciated. Collect your fancy Crossbow from the Trader."/>
 				<property name="name" value="Veteran Reward of Bambi's Killer Compound Crossbow" />
 				<property name="subtitle_key" value="Veteran Reward of Bambi's Killer Compound Crossbow" />
 				<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />

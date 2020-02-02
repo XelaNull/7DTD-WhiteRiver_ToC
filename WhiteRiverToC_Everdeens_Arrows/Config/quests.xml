@@ -2,28 +2,28 @@
 	<append xpath="/quests">
 		<quest id="+Quest For Everdeen's Arrows">
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Arrows of Everdeen in exchange for your help. These arrows are famed to travel faster and more true. Gather 6 Corn + 6 Snowberry" />
+			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Arrows of Everdeen in exchange for your help. These arrows are famed to travel fast and true. Gather 3 Corn + 3 Snowberry" />
 			<property name="name" value="Collect Raw Food for a Settlement Feast" />
 			<property name="subtitle_key" value="Collect Food for Everdeen's Arrows" />
-			<property name="description_key" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Arrows of Everdeen in exchange for your help. These arrows are famed to travel faster and more true." />
+			<property name="description_key" value="questEverdeensArrows" />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
 			<property name="shareable" value="false" />
 			<property name="repeatable" value="true" />
 
-			<objective type="Fetch" id="foodCropCorn" value="3" phase="1" />
-			<objective type="Fetch" id="resourceCropSnowberryPlant" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodCropCorn" value="3" phase="1" />
+			<objective type="FetchKeep" id="resourceCropSnowberryPlant" value="3" phase="1" />
 			<objective type="Craft" id="+Writ Of Everdeen's Arrows" value="1" phase="2" />	
 
 			<reward type="Exp" value="1500" />
 		</quest>
 		<quest id="+Reward of Everdeen's Arrows">
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="Collect your reward from the Trader"/>
+			<property name="offer" value="Thanks for your help! Collect your stew and arrows from the Trader."/>
 			<property name="name" value="Reward of Everdeen's Arrows" />
 			<property name="subtitle_key" value="Reward of Everdeen's Arrows" />
-			<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+			<property name="description_key" value="questRewardEverdeensArrows" />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
@@ -44,28 +44,27 @@
 						
 		<quest id="+Quest For Everdeen's Bolts">
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Everdeen's Bolts in exchange for your help. These arrows are famed to travel faster and more true. Gather 12 Corn + 12 Potatoes + 6 Mushrooms" />
+			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Everdeen's Bolts in exchange for your help. These arrows are famed to travel fast and true. Gather 3 Potatoes + 3 Mushrooms" />
 			<property name="name" value="Collect Lots of Food for a Settlement Feast" />
 			<property name="subtitle_key" value="Collect Food for Everdeen's Bolts" />
-			<property name="description_key" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Everdeen's Bolts in exchange for your help. These bolts are famed to travel faster and more true." />
+			<property name="description_key" value="questEverdeensBolts" />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
 			<property name="shareable" value="false" />
 			<property name="repeatable" value="true" />
 
-			<objective type="Fetch" id="foodCropPotato" value="3" phase="1" />
-			<objective type="Fetch" id="foodCropMushrooms" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodCropPotato" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodCropMushrooms" value="3" phase="1" />
 			<objective type="Craft" id="+Writ Of Everdeen's Bolts" value="1" phase="2" />	
-
 			<reward type="Exp" value="1500" />
 		</quest>		
 		<quest id="+Reward of Everdeen's Bolts">
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="Collect your reward from the Trader"/>
+			<property name="offer" value="Thanks for your help! Collect your stew and bolts from the Trader."/>
 			<property name="name" value="Reward of Everdeen's Bolts" />
 			<property name="subtitle_key" value="Reward of Everdeen's Bolts" />
-			<property name="description_key" value="Now that you have collected the needed items, return the trader to collect your reward." />
+			<property name="description_key" value="questRewardEverdeensBolts" />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />

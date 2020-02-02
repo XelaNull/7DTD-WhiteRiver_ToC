@@ -154,7 +154,7 @@
 				<display_value name="dRecoil" value="7" />
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.35"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="0.8"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="7000,18000" tier="1,6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="7000,18000" tier="3,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="18"/>
 			</effect_group>
 		</item>
