@@ -22,7 +22,7 @@
 			<item name="The Dark Tower"/>
 		</lootgroup>
 		<append xpath="/lootcontainers/lootgroup[@name='booksNoFiller']">
-			<item group="groupBooksDarkTower" prob="0.33"/>
+			<item group="groupBooksDarkTower" prob="1" count="1"/>
 		</append>
 
 	</append>		
