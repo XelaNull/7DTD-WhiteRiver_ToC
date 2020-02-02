@@ -22,6 +22,8 @@ Once the player obtains their citizenship card, they can use this to craft quest
 ### Questable Equipment:
 
 - Bambi's Killer Bow - Earn the famed deer killer, "Bambi's Killer" Compound Bow with slightly better stats than Vanilla.
+- Bunyan's FireAxe - Help the Trader with some potable water and receive a Paul Bunyan branded FireAxe.
+- Deschain's Revolver - Earn a legendary revolver, crafted from Excalibur, that was used by the famed Roland Deschain.
 - Dundee's Hunting Knife - Take on everything with Dundee's famous Hunting Knife with slightly better stats than Vanilla.
 - Everdeen's Arrows & Bolts - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
 - Gupta's Bandages - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages.
