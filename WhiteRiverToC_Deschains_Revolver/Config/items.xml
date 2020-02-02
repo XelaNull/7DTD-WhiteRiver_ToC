@@ -225,10 +225,7 @@
 		
 		<item name="Dark Tower The Gunslinger">
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-
-		<!--	gunPistolSchematic-->
-			
+			<property name="CustomIcon" value="schematicMaster"/>			
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
@@ -284,13 +281,10 @@
 		</item>
 		
 		
-		
+<!--		
 		<item name="Dark_Tower-The_Gunslinger">
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>
-
-		<!--	gunPistolSchematic-->
-			
+			<property name="CustomIcon" value="schematicMaster"/>			
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
@@ -344,5 +338,6 @@
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
+	-->
 	</append>
 </configs>

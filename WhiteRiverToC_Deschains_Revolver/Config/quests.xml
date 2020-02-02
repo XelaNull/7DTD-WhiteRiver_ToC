@@ -31,7 +31,7 @@
 				<reward type="Exp" value="2500" />
 			</quest>
 			
-			<quest id="+Reward of Deschain's Revoler">
+			<quest id="+Reward of Deschain's Revolver">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Collect your reward from the Trader"/>
 				<property name="name" value="Reward of Deschain's Revolver" />

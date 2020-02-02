@@ -8,8 +8,16 @@
 			<ingredient name="ironDoor1_v1" count="9"/>
 			<ingredient name="vaultDoor01" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="Dark Tower The Gunslinger" count="1"/>
+			<ingredient name="Dark Tower The Drawing of the 3" count="1"/>
+			<ingredient name="Dark Tower The Wastelands" count="1"/>
+			<ingredient name="Dark Tower Wizard in Glass" count="1"/>
+			<ingredient name="Dark Tower Wind Through the Keyhole" count="1"/>
+			<ingredient name="Dark Tower Wolves of the Kalla" count="1"/>
+			<ingredient name="Dark Tower Song of Suzannah" count="1"/>
+			<ingredient name="Dark Tower The Dark Tower" count="1"/>
+
 		</recipe>	
-		
 		
 		<recipe name="45LC Silver Bullet of Gilead" count="6" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="6"/>
