@@ -184,6 +184,46 @@
 			<property name="Group" value="Resources"/>
 		</item>
 		
+		<item name="Deschain's Cowboy Hat"> <!-- item name directly referenced in the code -->
+			<property name="Tags" value="head,clothing,canHaveCosmetic"/>
+			<property name="CustomIcon" value="apparelCowboyHat"/>
+			<property name="CustomIconTint" value="624a2e"/>
+			<property name="DisplayType" value="armor"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Waterproof" value=".55"/>
+			<property name="Encumbrance" value=".01"/>
+			<property name="Material" value="Mleather"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="Weight" value="1"/> <!-- weight because loot only -->
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="420"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="EquipSlot" value="Head"/>
+			<property name="DescriptionKey" value="apparelCowboyHatGroupDesc"/>
+			<property name="Group" value="Clothing"/>
+			<property class="UMA">
+				<property name="Mesh" value="gear_cowboyhat"/>
+				<property name="Overlay0" value="gear_cowboyhat"/>
+				<property name="Layer" value="2"/>
+				<property name="UISlot" value="Headgear"/>
+				<property name="Mask0" value="Head" param1="outer"/>
+				<property name="ShowAltHair" value="true"/>
+			</property>
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="2"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="10.5,14.3"/>
+		
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="6.6,9"/>
+				<display_value name="dStaminaChangeOT" value="0"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-2"/><display_value name="dNoiseMultiplier" value="-2"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".2,.4" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".1" tags="buffInjuryBleeding"/>
+			</effect_group>
+		</item>
+		
 		<item name="Dark Tower The Gunslinger">
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>			

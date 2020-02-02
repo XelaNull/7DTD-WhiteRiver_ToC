@@ -13,20 +13,14 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="false" />
 	
-				<objective type="FetchKeep" id="Dark Tower The Gunslinger" value="1" phase="1" />
-				<objective type="FetchKeep" id="Dark Tower The Drawing of the 3" value="1" phase="1" />
-				<objective type="FetchKeep" id="Dark Tower The Wastelands" value="1" phase="1" />
-				<objective type="FetchKeep" id="Dark Tower Wizard in Glass" value="1" phase="1" />
-				<objective type="FetchKeep" id="Dark Tower Wind Through the Keyhole" value="1" phase="1" />
-				<objective type="FetchKeep" id="Dark Tower Wolves of the Kalla" value="1" phase="1" />
-				<objective type="FetchKeep" id="Dark Tower Song of Suzannah" value="1" phase="1" />
-				<objective type="FetchKeep" id="Dark Tower The Dark Tower" value="1" phase="1" />
+				<objective type="Craft" id="+The Dark Tower Series Books 1-4" value="1" phase="1" />
+				<objective type="Craft" id="+The Dark Tower Series Books 5-8" value="1" phase="2" />
 
-				<objective type="FetchKeep" id="secureDoorWooden" value="9" phase="2" />
-				<objective type="FetchKeep" id="ironDoor1_v1" value="9" phase="2" />
-				<objective type="FetchKeep" id="vaultDoor01" value="1" phase="2" />
+				<objective type="FetchKeep" id="secureDoorWooden" value="9" phase="3" />
+				<objective type="FetchKeep" id="ironDoor1_v1" value="9" phase="3" />
+				<objective type="FetchKeep" id="vaultDoor01" value="1" phase="3" />
 
-				<objective type="Craft" id="+Writ Of Deschain" value="1" phase="3" />		
+				<objective type="Craft" id="+Writ Of Deschain" value="1" phase="4" />		
 	
 				<reward type="Exp" value="2500" />
 			</quest>
@@ -50,8 +44,6 @@
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="Deschains Revoler" value="1" />
-				<reward type="Item" id="45LC Silver Bullet of Gilead" value="24-96" />
-				<reward type="Item" id="45LC Gold Bullet of Gilead" value="6-48" />
 				<reward type="Item" id="+Sealed Deschain's Crate" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
 				<reward type="Item" id="apparelCowboyHat" value="1" />
