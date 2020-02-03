@@ -3,7 +3,7 @@
 
 			<quest id="+Quest For Gupta's Bandages">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader mentioned a settlement Doctor in need of ingredients to make first aid bandages, but he is so busy treating the injured he doesn't have time to collect them himself. He is willing to offer you first aid bandages in exchange for your assistance gathering supples for the Doctor. In addition, he'll give you some spare seeds he has laying around for your help. Gather 10 Aloe Leaves + 10 Cloth Fragments + 10 Bandages" />
+				<property name="offer" value="The Trader mentioned a settlement Doctor in need of ingredients to make first aid bandages, but he is so busy treating the injured he doesn't have time to collect them himself. He is willing to offer you first aid bandages in exchange for your assistance gathering supples for the Doctor. Gather 10 Aloe Leaves + 10 Cloth Fragments + 10 Bandages" />
 				<property name="name" value="Collect Aloe for Gupta's Bandages" />
 				<property name="subtitle_key" value="Collect Aloe for Gupta's Bandages" />
 				<property name="description_key" value="questGuptasBandages" />
@@ -23,8 +23,6 @@
 				</objective>	
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="medicalFirstAidBandage" value="2-5" />
-				<reward type="Item" id="plantedCorn1Schematic" value="2-5" />
-				<reward type="Item" id="plantedBlueberry1Schematic" value="2-5" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-40" />	
 				<reward type="Exp" value="2000" />
 				<reward type="SkillPoints" value="1" />				
