@@ -6,6 +6,6 @@ darkTowerWizardAndGlass,items,Item,,,Dark Tower: Wizard and Glass,,,,,,,,,,,,,,
 darkTowerWindThroughTheKeyhole,items,Item,,,Dark Tower: Wind Through the Keyhole,,,,,,,,,,,,,,
 darkTowerWolvesOfTheCalla,items,Item,,,Dark Tower: Wolves of the Calla,,,,,,,,,,,,,,
 darkTowerSongOfSuzannah,items,Item,,,Dark Tower: Song of Suzannah,,,,,,,,,,,,,,
-darkTowerTheGunslinger,items,Item,,,Dark Tower: The Gunslinger,,,,,,,,,,,,,,
+darkTowerTheDarkTower,items,Item,,,The Dark Tower,,,,,,,,,,,,,,
 
 
