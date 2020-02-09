@@ -14,25 +14,18 @@
 	
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
 		<lootgroup name="groupBooksDarkTower">
-			<item name="Dark Tower: The Gunslinger"/>
+			<item name="Dark Tower: The Gunslinger" prob=".2"/>
 			<item name="Dark Tower: The Drawing of the 3"/>
 			<item name="Dark Tower: The Waste Lands"/>
 			<item name="Dark Tower: Wizard and Glass"/>
 			<item name="Dark Tower: Wind Through the Keyhole"/>
 			<item name="Dark Tower: Wolves of the Calla"/>
 			<item name="Dark Tower: Song of Suzannah"/>
-			<item name="The Dark Tower"/>
+			<item name="The Dark Tower" prob=".1" />
 		</lootgroup>
 	</insertAfter>
 			
 	<append xpath="/lootcontainers/lootgroup[@name='booksNoFiller']">
-		<item group="groupBooksDarkTower" count="1"/>
+		<item group="groupBooksDarkTower" count="1" prob="0.2"/>
 	</append>
-	<!--
-	<append xpath="/lootcontainers/lootgroup[@name='books']">
-		<item group="groupBooksDarkTower" prob="100" count="1"/>
-	</append>
-	<append xpath="/lootcontainers/lootgroup[@name='commonBooks']">
-		<item group="groupBooksDarkTower" prob="100"/>
-	</append>-->
 </configs>	
