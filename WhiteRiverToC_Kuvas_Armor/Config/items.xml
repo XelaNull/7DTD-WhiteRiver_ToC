@@ -298,7 +298,7 @@
     
     
     <item name="Kuva's Blue Leather Hood">
-      <property name="Extends" value="armorLeatherHood " param1="CustomIcon"/>
+      <property name="Extends" value="armorLeatherHood" param1="CustomIcon"/>
       <property name="CustomIcon" value="armorLeatherHood"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="TintColor" value="92,92,255"/>
