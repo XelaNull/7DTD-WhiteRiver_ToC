@@ -22,7 +22,6 @@
   	<property name="RootMotion" value="true"/>
   	<property name="HasDeathAnim" value="true"/>
   
-  	<!-- Gameplay -->
   	<property name="HandItem" value="meleeHandZombie01"/>
   	<property name="JumpMaxDistance" value="1.5, 1.7"/>
   	<property name="TintMaterial2" value="32,24,20"/>
