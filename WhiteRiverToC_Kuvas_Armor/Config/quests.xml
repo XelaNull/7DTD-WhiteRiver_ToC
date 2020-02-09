@@ -1,32 +1,33 @@
 <config>
 	<append xpath="/quests" >
 
+      <!-- Quest & Write for Kuva's Red Armor -->
 			<quest id="+Quest For Kuva's Red Armor">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader offered you their own homemade secret recipe to create what is called Kuva's Red Armor. It is rumored that Kuva's Red Armor renders the wearer's movements near silent, has an additional mod slot, and comes paired with improved insulation. But first you must prove yourself worthy. Gather 50 Leather + Craft 2 Leather Ponchos" />
-				<property name="name" value="Quest to craft Kuva's Red Armor" />
-				<property name="subtitle_key" value="Craft the +Writ Of Kuva" />
-				<property name="description_key" value="questKuvasRedArmor" />
+				<property name="group_name" value="quest_KuvasRedArmor" />
+        <property name="name" value="Quest to Obtain Kuva's Red Armor" />
+        <property name="subtitle" value="Craft the +Writ Of Kuva's Red Armor" />
+				<property name="offer" value="The Trader boasts of knowing the secret recipe to create the legendary Kuva's Red Armor. They tell you it is rumored that Kuva's Red Armor renders the wearer's movements near silent, has an additional mod slot, and comes paired with improved insulation. They offer to craft you a set, for the materials to make it, and extra materials for their stores. Gather 50 Leather + Gather Red Dye + Craft or Gather 2 Leather Ponchos" />
+			  <property name="description" value="questKuvasRedArmor" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
+				<property name="difficulty" value="medium" />
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="resourceLeather" value="50" phase="1" />
 				<objective type="FetchKeep" id="apparelCoatLeatherPoncho" value="2" phase="1" />
+        <objective type="FetchKeep" id="modDyeRed" value="1" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Writ Of Kuva" value="1" phase="2" />			
+				<objective type="Craft" id="+Writ Of Kuva's Red Armor" value="1" phase="2" />			
 	
-				<reward type="Exp" value="2500" />
+				<reward type="Exp" value="1000" />
 			</quest>
-			
 			<quest id="+Reward of Kuva's Red Armor">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Turn in your leather and ponchos to the Trader in exchange for a set of Kuva's Red Armor."/>
-				<property name="name" value="Reward of Kuva's Red Armor" />
-				<property name="subtitle_key" value="Reward of Kuva's Red Armor" />
-				<property name="description_key" value="questRewardKuvsasArmor" />
+				<property name="group_name" value="quest_KuvasRedArmor" />
+        <property name="name" value="Reward of Kuva's Red Armor" />
+        <property name="subtitle" value="Receive your reward of Kuva's Red Armor" />
+				<property name="offer" value="Turn in your leather, dye, and ponchos to the Trader in exchange for a set of Trader-crafted Kuva's Red Armor."/>
+        <property name="description" value="questKuvasRedArmor" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -39,64 +40,124 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Kuva's Red Leather Hood" value="2-4" />
-				<reward type="Item" id="Kuva's Red Leather Chest" value="2-4" />
-				<reward type="Item" id="Kuva's Red Leather Gloves" value="2-4" />
-				<reward type="Item" id="Kuva's Red Leather Pants" value="2-4" />
-				<reward type="Item" id="Kuva's Red Leather Boots" value="2-4" />
-				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
-				<reward type="Exp" value="2500" />
-				<reward type="SkillPoints" value="1" />						
+				<reward type="Item" id="Kuva's Red Leather Chest" value="1-2" />
+				<reward type="Item" id="Kuva's Red Leather Pants" value="1-2" />
+				<reward type="Item" id="pouredConcreteBlock" value="10-50" />	
+				<reward type="Exp" value="1500" />
+				<reward type="SkillPoints" value="1" />				
+        <reward type="Quest" id="+Discover Kuva's Red Armor"/>		
 			</quest>
-
-			<quest id="+Vet. Quest For Kuva's Red Armor">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader accidentally let slip the secret to crafting Kuva's Red Armor with much higher quality. The Trader offered to craft you one of these, if you agree to keep his secret quiet. Gather 200 Leather + 150 Iron + 10 Leather Chests" />
-				<property name="name" value="Veteran Quest to craft Legendary Kuva's Red Armor" />
-				<property name="subtitle_key" value="Craft the +Veteran Writ Of Kuva" />
-				<property name="description_key" value="questVetKuvasRedArmor" />
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
-	
-				<objective type="FetchKeep" id="resourceLeather" value="200" phase="1" />
-				<objective type="FetchKeep" id="resourceIronFragment" value="150" phase="1" />
-				<objective type="FetchKeep" id="armorLeatherChest" value="10" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Veteran Writ Of Kuva" value="1" phase="2" />		
-				<reward type="Exp" value="5000" />
-			</quest>
-			
-			<quest id="+Veteran Reward of Kuva's Red Armor">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Your secrecacy is appreciated. In exchange for your silence, the Trader will accept your supplies and create you a set of Kuva's Red Armor."/>
-				<property name="name" value="Veteran Reward of Kuva's Red Armor" />
-				<property name="subtitle_key" value="Veteran Reward of Kuva's Red Armor" />
-				<property name="description_key" value="questRewardVetKuvasRedArmor" />
+      
+      <!-- +Discover Kuva's Red Armor -->
+      <quest id="+Discover Kuva's Red Armor">
+				<property name="group_name" value="quest_KuvasRedArmor" />
+				<property name="offer" value="You inspect the new armor and the craftsmanship seems shoddy. You are skeptical of the Trader's claim. Try on your new armor and discover its true nature."/>
+				<property name="name" value="Discover Kuva's Red Armor" />
+				<property name="subtitle_key" value="Inspect the armor's silent treatment and insulation" />
+        <property name="description" value="questKuvasRedArmor" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 
-				<objective type="Goto" id="trader" value="5" phase="2" />	
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-				</objective>
-				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Kuva's Red Leather Hood" value="4-6" />
-				<reward type="Item" id="Kuva's Red Leather Chest" value="5-6" />
-				<reward type="Item" id="Kuva's Red Leather Gloves" value="4-6" />
-				<reward type="Item" id="Kuva's Red Leather Pants" value="5-6" />
-				<reward type="Item" id="Kuva's Red Leather Boots" value="4-6" />
-				<reward type="Item" id="+Sealed Kuva's Veteran Crate" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="100-200" />	
-				<reward type="Exp" value="5000" />
-				<reward type="SkillPoints" value="2" />					
-			</quest>
-						
-	</append>
-</config>
+        <objective type="Wear" id="Kuva's Red Leather Chest"/>
+        <objective type="Wear" id="Kuva's Red Leather Pants"/>
+        
+        <reward type="Item" id="+The Truth of Kuva's Red Armor" value="1" />		
+				<reward type="Exp" value="500" />
+			</quest>      
+      <!-- Discover the Truth behind Kuva's Red Armor -->
+      <quest id="+Kuva's Red Armor Secret">
+        <property name="group_name" value="quest_KuvasRedArmor" />
+        <property name="name" value="Kuva's Red Armor Secret" />
+        <property name="subtitle_key" value="Calling the Trader's bluff" />
+        <property name="offer" value="Now that you've tried on the armor and had a chance to inspect it, you realize the Trader's claims were false. These are nothing more than regular leather armor dyed red, with plastic parts instead of metal. The trader finally admits that they had only heard of the legendary armor, and didn't know the true original schematic."/>
+        <property name="description" value="questKuvasRedArmor" />
+        <property name="icon" value="ui_game_symbol_map_trader" />
+        <property name="category_key" value="quest" />
+        <property name="difficulty" value="easy" />
+        <property name="shareable" value="false" />
+        <property name="repeatable" value="true" />
+        
+        <reward type="SkillPoints" value="1" />				
+        <reward type="Exp" value="500" />
+      </quest>
+      
+      
+      <!-- VETERAN QUESTLINE -->
+      <quest id="+Vet. Quest For Kuva's Red Armor">
+        <property name="group_name" value="quest_VetKuvasRedArmor" />
+        <property name="name" value="Veteran Quest to Obtain Kuva's Red Armor" />
+        <property name="subtitle" value="Craft the +Writ Of Veteran Kuva's Red Armor" />
+        <property name="offer" value="The Trader admits to you that their receipe for Kuva's Red Armor was a ploy to earn some extra coin. They tell you they recently stumbled across a treasure map claiming the be the source where the real recipe is buried. In exchange for your significant contribution to the settlement, they offer you this treasure map." />
+        <property name="description" value="questKuvasRedArmor" />
+        <property name="icon" value="ui_game_symbol_map_trader" />
+        <property name="category_key" value="quest" />
+        <property name="difficulty" value="hard" />
+        <property name="shareable" value="false" />
+        <property name="repeatable" value="true" />
+  
+        <reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+        <reward type="Item" id="Kuva's Red Armor Treasure map" value="1" />
+        <reward type="Exp" value="1000" />
+      </quest>
+      <quest id="treasure_kuva">
+    		<property name="name" value="Dig up Kuva's Treasure"/>
+    		<property name="subtitle" value="Locate the rumored Kuva's Treasurechest"/>
+        <property name="offer" value="Follow the pointers to dig up the treasure chest that Kuva supposedly buried containing the real recipe to craft Kuva's Red Armor."/>        
+        <property name="description" value="questKuvasRedArmor" />
+    		<property name="icon" value="ui_game_symbol_map"/>
+    		<property name="repeatable" value="true"/>
+    		<property name="category_key" value="treasure"/>
+    		<property name="difficulty" value="hard"/>
+    		<property name="shareable" value="false"/>
+    
+    		<objective type="TreasureChest">
+    			<property name="block" value="treasureKuvaChest"/>
+    			<property name="distance" value="2500-3750"/>
+    		</objective>
+        <reward type="Quest" id="+Kuva's Secret Recipe Challenge"/>	
+    	</quest>     
+      
+      <quest id="+Kuva's Secret Recipe Challenge">
+        <property name="name" value="Fend of the Zombie Assistants"/>
+        <property name="subtitle" value="Protect Kuva's Secret Recipe from the Zombie Assistants"/>
+        <property name="offer" value="Uh oh! It looks like the Zombie Assistants want the Secret Recipe you've uncovered!"/>        
+        <property name="description" value="questKuvasBlueArmor" />
+        <property name="icon" value="ui_game_symbol_zombie"/>
+        <property name="repeatable" value="true"/>
+        <property name="category_key" value="challenge"/>
+        <property name="difficulty" value="insane"/>
+    
+        <action type="SpawnEnemy" id="zombieKuvaAssistant" value="4" phase="1"/>
+        <objective type="ZombieKill" id="zombieScreamer" value="2" phase="1"/>
+				<action type="SpawnEnemy" id="zombieKuvaAssistant" value="4" phase="2"/>
+        <objective type="ZombieKill" id="zombieScreamer" value="2" phase="2"/>    
+		
+        <reward type="Exp" value="2000"/>
+        <!--
+        <reward type="Item" id="Kuva’s Blue Tallow Schematic" value="1"/>
+        <reward type="Item" id="Kuva’s Silent Liner Schematic" value="1"/>
+        <reward type="Item" id="Kuva’s Blue Twine Schematic" value="1"/>
+        <reward type="Item" id="Kuva’s Silent Soles Schematic" value="1"/>
+        -->
+        <reward type="Item" id="+Kuva’s Blue Armor" value="1"/>        
+      </quest> 
+      
+      <quest id="+Kuva's Blue Armor Explained">
+        <property name="name" value="Discover the Truth of Kuva's Blue Armor"/>
+        <property name="subtitle" value="Understand the truth behind Kuva's Legendary Armor"/>
+        <property name="offer" value="The truth is revealed by Kuva's Assistants. The legendary armor is BLUE, not RED as the Trader had claimed. You've discovered the legendary secret recipes for the ingredients needed to craft your own Kuva's Blue armor set."/>        
+        <property name="description" value="questKuvasBlueArmor" />
+        <property name="icon" value="ui_game_symbol_map_trader" />
+        <property name="category_key" value="quest" />
+        <property name="difficulty" value="easy" />
+        <property name="shareable" value="false" />
+        <property name="repeatable" value="true" />
+        <reward type="Exp" value="5000" />    
+        <reward type="SkillPoints" value="2  " />				  
+      </quest> 
+      
+    </append>
+  </config>

@@ -1,19 +1,21 @@
 <configs>
 	<append xpath="/blocks">
-		<!-- Create the blocks for the Sealed Citizen Crate & Citizen Crate items -->
-		<block name="+Sealed Kuva's Veteran Crate">
-			<property name="CustomIcon" value="cntShippingCrateHero"/>
-			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="+Kuva's Veteran Crate"/>
-			<property name="FilterTags" value="floot"/>
-		</block>	
-		<block name="+Kuva's Veteran Crate">
-			<property name="CustomIcon" value="cntCardboardBox"/>
-			<property name="CustomIconTint" value="333333"/>
-			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="145"/>
-		</block>	
-	</append>	
-</configs>	
-	
+
+    <block name="treasureKuvaChest"> <!-- do not rename, used for treasure_taylor etc -->
+    	<property name="Class" value="Loot"/>
+    	<property name="CustomIcon" value="cntChest01"/>
+    	<property name="Material" value="MwoodReinforced"/>
+    	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+    	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+    	<property name="Mesh" value="models"/>
+    	<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
+    	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+    	<property name="IsTerrainDecoration" value="true"/>
+    	<property name="LootList" value="145"/>
+    	<property name="CreativeMode" value="None"/>
+    	<drop event="Destroy" name="resourceWood" count="1,3"/>
+    	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    	<property name="FilterTags" value="floot"/>
+    </block>
+  </append>
+</configs>

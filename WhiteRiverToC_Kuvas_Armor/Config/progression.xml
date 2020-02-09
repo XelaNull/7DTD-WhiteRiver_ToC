@@ -1,0 +1,33 @@
+<configs>
+<!-- Add the Kuva Armor so it unlocks with the perk -->
+  <append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,Kuva's Blue Leather Hood,Kuva's Blue Leather Chest,Kuva's Blue Leather Gloves,Kuva's Blue Leather Pants,Kuva's Blue Leather Boots</append>
+<!--
+
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Hood" operation="set" value="1"/>
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Chest" operation="set" value="1"/>
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Gloves" operation="set" value="1"/>
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Pants" operation="set" value="1"/>
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Boots" operation="set" value="1"/>		
+
+<perk name="perkLightArmor" parent="skillAthletics" name_key="perkLightArmorName" desc_key="perkLightArmorDesc" icon="ui_game_symbol_light_armor2">
+  <level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="1" desc_key="reqAgilityLevel01"/></level_requirements>
+  <level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="3" desc_key="reqAgilityLevel03"/></level_requirements>
+  <level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/></level_requirements>
+  <level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="7" desc_key="reqAgilityLevel07"/></level_requirements>
+  <level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="10" desc_key="reqAgilityLevel10"/></level_requirements>
+  <effect_group>
+    <passive_effect name="CraftingTier" operation="base_add" level="1,2,3,4,5" value="1,2,3,4,4" tags="perkLightArmor"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots"/>
+
+    <passive_effect name="DegradationPerUse" operation="perc_add" level="0,5" value="0,-.5" tags="lightArmorDeg"/>
+
+    <effect_description level="1" desc_key="perkLightArmorRank1Desc" long_desc_key="perkLightArmorRank1LongDesc"/>
+    <effect_description level="2" desc_key="perkLightArmorRank2Desc" long_desc_key="perkLightArmorRank2LongDesc"/>
+    <effect_description level="3" desc_key="perkLightArmorRank3Desc" long_desc_key="perkLightArmorRank3LongDesc"/>
+    <effect_description level="4" desc_key="perkLightArmorRank4Desc" long_desc_key="perkLightArmorRank4LongDesc"/>
+    <effect_description level="5" desc_key="perkLightArmorRank5Desc" long_desc_key="perkLightArmorRank5LongDesc"/>
+  </effect_group>
+</perk>
+-->
+
+</configs>

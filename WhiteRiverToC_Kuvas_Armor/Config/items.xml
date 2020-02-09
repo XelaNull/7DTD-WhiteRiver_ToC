@@ -1,6 +1,7 @@
 <configs>
 	<append xpath="/items">
 
+    <!-- Quest & Writ for Kuva's Red Armor -->
 		<item name="+Kuva's Red Armor Quest"> 
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
@@ -13,7 +14,7 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Kuva">
+		<item name="+Writ Of Kuva's Red Armor">
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -27,36 +28,66 @@
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>	
-		</item>		
-
-		<item name="+Kuva's Red Armor Vet. Quest"> 
-			<property name="CustomIcon" value="challengeQuestMaster"/>
-			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Vet. Quest For Kuva's Red Armor"/>
-				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
-		<item name="+Veteran Writ Of Kuva">
-			<property name="CustomIcon" value="questMaster"/> 
-			<property name="CustomIconTint" value="d4af37"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="SellableToTrader" value="false"/>
-			<property name="Group" value="Special Items"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Veteran Reward of Kuva's Red Armor"/>
-				<property name="Delay" value="0"/>
-			</property>		
+		</item>	    
+    <!-- The Two Pieces of Kuva's Red Armor -->
+		<item name="Kuva's Red Leather Chest">
+			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="armorLeatherChest"/> 
+			<property name="CustomIconTint" value="661900"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="EquipSlot" value="Chest"/>
+			<effect_group>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,3" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="125,450" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="Mobility" operation="perc_add" value="-.03"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.562"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".05"/><display_value name="dNoiseMultiplier" value=".05"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+			</effect_group>
+			<property class="UMA">
+				<property name="Mesh" value="armor_leather_chest"/>
+				<property name="Overlay0" value="armor_leather_chest"/>
+				<property name="Layer" value="2"/>
+				<property name="UISlot" value="ChestArmor"/>
+			</property>
 		</item>
-
-		<item name="Kuva's Red Leather Hood">
+    <item name="Kuva's Red Leather Pants">
+			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="armorLeatherPants"/> 
+			<property name="CustomIconTint" value="661900"/>		
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="EquipSlot" value="Legs"/>
+				<effect_group>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,3" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="125,450" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+		
+				<passive_effect name="Mobility" operation="perc_add" value="-.03"/>
+		
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+				<display_value name="dStaminaChangeOT" value="-.562"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".05"/><display_value name="dNoiseMultiplier" value=".05"/>
+				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+			</effect_group>
+			<property class="UMA">
+				<property name="Mesh" value="armor_leather_pants"/>
+				<property name="Overlay0" value="armor_leather_pants"/>
+				<property name="Layer" value="3"/>
+				<property name="UISlot" value="LegArmor"/>
+			</property>
+		</item>      
+    <!-- Items for Quest Backwards Compatibility Remove After August 2020 -->
+    <item name="Kuva's Red Leather Hood">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="armorLeatherHood"/> 
 			<property name="CustomIconTint" value="661900"/>
@@ -87,38 +118,7 @@
 				<property name="Mask1" value="Head" param1="outer"/>
 			</property>
 		</item>
-
-		<item name="Kuva's Red Leather Chest">
-			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="CustomIcon" value="armorLeatherChest"/> 
-			<property name="CustomIconTint" value="661900"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
-			<property name="EquipSlot" value="Chest"/>
-			<effect_group>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
-		
-				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-		
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03"/><display_value name="dNoiseMultiplier" value=".03"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
-			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_chest"/>
-				<property name="Overlay0" value="armor_leather_chest"/>
-				<property name="Layer" value="2"/>
-				<property name="UISlot" value="ChestArmor"/>
-			</property>
-		</item>
-
-		<item name="Kuva's Red Leather Gloves"> <!-- item name directly referenced in the code -->
+    <item name="Kuva's Red Leather Gloves"> <!-- item name directly referenced in the code -->
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="armorLeatherGloves"/> 
 			<property name="CustomIconTint" value="661900"/>		
@@ -147,38 +147,7 @@
 				<property name="UISlot" value="Gloves"/>
 			</property>
 		</item>
-
-		<item name="Kuva's Red Leather Pants">
-			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-			<property name="CustomIcon" value="armorLeatherPants"/> 
-			<property name="CustomIconTint" value="661900"/>		
-			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
-			<property name="EquipSlot" value="Legs"/>
-				<effect_group>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
-		
-				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-		
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.562"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03"/><display_value name="dNoiseMultiplier" value=".03"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
-			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_pants"/>
-				<property name="Overlay0" value="armor_leather_pants"/>
-				<property name="Layer" value="3"/>
-				<property name="UISlot" value="LegArmor"/>
-			</property>
-		</item>
-	
-		<item name="Kuva's Red Leather Boots">
+    <item name="Kuva's Red Leather Boots">
 			<property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="armorLeatherBoots"/> 
 			<property name="CustomIconTint" value="661900"/>			
@@ -191,12 +160,10 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
-		
 				<passive_effect name="Mobility" operation="perc_add" value=".04"/>
-		
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0281" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0562" tags="running"/>
-		
+
 				<display_value name="dStaminaChangeOT" value="-.562"/>
 				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".03"/><display_value name="dNoiseMultiplier" value=".03"/>
 				<passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
@@ -207,6 +174,279 @@
 				<property name="Layer" value="0"/>
 				<property name="UISlot" value="Footwear"/>
 			</property>
-		</item>
+		</item>        
+    <!-- Discover the REAL Truth about the Kuva's Red Armor -->
+    <item name="+The Truth of Kuva's Red Armor"> 
+      <property name="CustomIcon" value="challengeQuestMaster"/>
+      <property name="CustomIconTint" value="cc3300"/>
+      <property name="Extends" value="questMaster"/>
+      <property name="Material" value="MresourcePaper"/>
+      <property class="Action0">
+        <property name="Class" value="Quest"/>
+        <property name="QuestGiven" value="+Kuva's Red Armor Secret"/>
+        <property name="Delay" value="0"/>
+      </property>			
+      <property name="Group" value="Special Items"/>			
+    </item>	 
+        
+        
+    <!-- VETERAN QUESTLINE ITEMS -->
+    <item name="+Kuva's Red Armor Vet. Quest"> 
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Vet. Quest For Kuva's Red Armor"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>			
+		</item>	
+    <item name="Kuva's Red Armor Treasure map">
+    	<property name="Extends" value="treasureQuestMaster"/>
+    	<property class="Action0">
+    		<property name="QuestGiven" value="treasure_kuva"/>
+    	</property>
+    </item>
+    <item name="+Kuva’s Blue Armor"> 
+      <property name="CustomIcon" value="challengeQuestMaster"/>
+      <property name="CustomIconTint" value="ddccbe"/>
+      <property name="Extends" value="questMaster"/>
+      <property name="Material" value="MresourcePaper"/>
+      <property class="Action0">
+        <property name="Class" value="Quest"/>
+        <property name="QuestGiven" value="+Kuva's Blue Armor Explained"/>
+        <property name="Delay" value="0"/>
+      </property>			
+      <property name="Group" value="Special Items"/>			
+    </item>	
+    
+    <!-- SPECIAL INGREDIENTS -->
+    <item name="Kuva’s Blue Tallow Schematic">
+    	<property name="Extends" value="schematicMaster"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CustomIcon" value="resourceAnimalFat"/>
+      <property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+    	<property name="Unlocks" value="blueTallow"/>
+    	<effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="blueTallow" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+    	</effect_group>
+    </item>
+    <item name="blueTallow">
+      <property name="Extends" value="resourceAnimalFat" />
+      <property name="CustomIcon" value="resourceAnimalFat"/>
+			<property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+      <property name="UnlockedBy" value="Kuva’s Blue Tallow Schematic"/>
+    </item>
+    
+    <item name="Kuva’s Silent Liner Schematic">
+    	<property name="Extends" value="schematicMaster"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CustomIcon" value="modArmorInsulatedLiner"/>
+      <property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+    	<property name="Unlocks" value="kuvaSilentLiner"/>
+    	<effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="kuvaSilentLiner" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+    	</effect_group>
+    </item>
+    <item name="kuvaSilentLiner">
+      <property name="Extends" value="resourceAnimalFat" />
+      <property name="CustomIcon" value="modArmorInsulatedLiner"/>
+			<property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+      <property name="UnlockedBy" value="Kuva’s Silent Liner Schematic"/>
+    </item>    
+    
+    <item name="Kuva’s Blue Twine Schematic">
+    	<property name="Extends" value="schematicMaster"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CustomIcon" value="modGunBowPolymerString"/>
+      <property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+    	<property name="Unlocks" value="kuvaBlueTwine"/>
+    	<effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="kuvaBlueTwine" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+    	</effect_group>
+    </item>
+    <item name="kuvaBlueTwine">
+      <property name="Extends" value="resourceAnimalFat" />
+      <property name="CustomIcon" value="modGunBowPolymerString"/>
+			<property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+      <property name="UnlockedBy" value="Kuva’s Blue Twine Schematic"/>
+    </item>    
+    
+    <item name="Kuva’s Silent Soles Schematic">
+    	<property name="Extends" value="schematicMaster"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CustomIcon" value="apparelSuitDressShoes"/>
+      <property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+    	<property name="Unlocks" value="kuvaSilentSoles"/>
+    	<effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="kuvaSilentSoles" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+    	</effect_group>
+    </item>
+    <item name="kuvaSilentSoles">
+      <property name="Extends" value="schematicMaster" />
+      <property name="CustomIcon" value="apparelSuitDressShoes"/>
+			<property name="CustomIconTint" value="5C5CFF"/> <!-- Dark Blue -->
+      <property name="UnlockedBy" value="Kuva’s Silent Soles Schematic"/>
+    </item>    
+    
+    
+    
+    <item name="Kuva's Blue Leather Hood">
+      <property name="Extends" value="armorLeatherHood " param1="CustomIcon"/>
+      <property name="CustomIcon" value="armorLeatherHood"/> 
+      <property name="CustomIconTint" value="5C5CFF"/>		
+      <property name="TintColor" value="92,92,255"/>
+      <property name="DegradationBreaksAfter" value="true"/>
+      <effect_group>
+        <passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+        
+        <passive_effect name="Mobility" operation="perc_add" value="-.01"/>
+        
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+        <display_value name="dStaminaChangeOT" value="-.562"/>
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".003"/><display_value name="dNoiseMultiplier" value=".03"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+      </effect_group>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="92,92,255"/> 
+			</property>		
+    </item>
+
+    <item name="Kuva's Blue Leather Chest">
+      <property name="Extends" value="armorLeatherChest" param1="CustomIcon"/>
+      <property name="CustomIcon" value="armorLeatherChest"/> 
+      <property name="CustomIconTint" value="5C5CFF"/>		
+      <property name="TintColor" value="92,92,255"/>
+      <property name="DegradationBreaksAfter" value="true"/>
+      <effect_group>
+        <passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="1400" tags="EconomicValue"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+    
+        <passive_effect name="Mobility" operation="perc_add" value="-.01"/>
+    
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+        <display_value name="dStaminaChangeOT" value="-.562"/>
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".003"/><display_value name="dNoiseMultiplier" value=".03"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+      </effect_group>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="92,92,255"/> 
+			</property>			
+    </item>
+
+    <item name="Kuva's Blue Leather Gloves"> <!-- item name directly referenced in the code -->
+      <property name="Extends" value="armorLeatherGloves" param1="CustomIcon"/>
+      <property name="CustomIcon" value="armorLeatherGloves"/> 
+      <property name="CustomIconTint" value="5C5CFF"/>		
+      <property name="TintColor" value="92,92,255"/>
+      <property name="DegradationBreaksAfter" value="true"/>
+      <effect_group>
+        <passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="1400" tags="EconomicValue"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+    
+        <passive_effect name="Mobility" operation="perc_add" value="-.01"/>
+    
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+        <display_value name="dStaminaChangeOT" value="-.562"/>
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".003"/><display_value name="dNoiseMultiplier" value=".05"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+      </effect_group>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="92,92,255"/> 
+			</property>				
+    </item>
+
+    <item name="Kuva's Blue Leather Pants">
+      <property name="Extends" value="armorLeatherPants" param1="CustomIcon"/>
+      <property name="CustomIcon" value="armorLeatherPants"/> 
+      <property name="CustomIconTint" value="5C5CFF"/>		
+      <property name="TintColor" value="92,92,255"/>
+      <property name="DegradationBreaksAfter" value="true"/>
+      <effect_group>
+        <passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="1400" tags="EconomicValue"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+    
+        <passive_effect name="Mobility" operation="perc_add" value="-.01"/>
+    
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.014" tags="walking"/>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-.028" tags="running"/>
+        <display_value name="dStaminaChangeOT" value="-.562"/>
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".003"/><display_value name="dNoiseMultiplier" value=".03"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+      </effect_group>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="92,92,255"/> 
+			</property>		
+    </item>
+  
+    <item name="Kuva's Blue Leather Boots">
+      <property name="Extends" value="armorLeatherBoots" param1="CustomIcon"/>
+      <property name="CustomIcon" value="armorLeatherBoots"/> 
+      <property name="CustomIconTint" value="5C5CFF"/>	
+      <property name="TintColor" value="92,92,255"/>
+		
+      <property name="DegradationBreaksAfter" value="true"/>
+      <effect_group>
+        <passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="1400" tags="EconomicValue"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="9.1,13"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="225,650" tier="1,6"/>
+        <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+    
+        <passive_effect name="Mobility" operation="perc_add" value=".04"/>
+    
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value=".0281" tags="walking"/>
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value=".0562" tags="running"/>
+    
+        <display_value name="dStaminaChangeOT" value="-.562"/>
+        <passive_effect name="NoiseMultiplier" operation="perc_add" value=".003"/><display_value name="dNoiseMultiplier" value=".03"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".13,.16" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".06" tags="buffInfectionCatch"/>
+        <passive_effect name="BuffResistance" operation="base_add" value=".02" tags="buffInjuryBleeding"/>
+      </effect_group>
+			<property class="UMA">
+				<property name="Overlay0Tint" value="92,92,255"/> 
+			</property>
+    </item>
 	</append>
+    
+	<!-- Set the gear so that when you unlock armorLeather from schematic that it also unlocks the Kuva Blue Armor Set -->
+ 	<append xpath="/items/item[@name='armorLeatherSetSchematic']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Hood" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Chest" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Gloves" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Pants" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Boots" operation="set" value="1"/>		
+	</append>  
+    
 </configs>

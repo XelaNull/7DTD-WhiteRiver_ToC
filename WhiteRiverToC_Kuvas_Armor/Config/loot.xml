@@ -1,11 +1,11 @@
 <configs>
 	<append xpath="lootcontainers">
-		<lootcontainer id="145" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="questTierFlexibleTemplate" destroy_on_close="true">
-			<item group="modGunT2" count="0,1" prob="0.2"/>
-			<item group="books" count="0,1" prob="0.4"/>
-			<item group="rareBooks" count="0,1" prob="0.2"/>
-			<item group="groupQuestAmmo" count="2"/>
-			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
+		<lootcontainer id="145" count="1,1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="questTierFlexibleTemplate" destroy_on_close="true">
+      <item name="casinoCoin" value="500-1000"/>
+      <item name="Kuva’s Blue Tallow Schematic" value="1"/>
+      <item name="Kuva’s Silent Liner Schematic" value="1"/>
+      <item name="Kuva’s Blue Twine Schematic" value="1"/>
+      <item name="Kuva’s Silent Soles Schematic" value="1"/>
 		</lootcontainer>
 	</append>		
 </configs>	

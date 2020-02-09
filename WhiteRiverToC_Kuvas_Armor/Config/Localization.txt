@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+blueTallow,items,Item,,,Kuva's Blue Tallow,,,,,,,,,,,,,,
+kuvaSilentLiner,items,Item,,,Kuva's Silent Liner,,,,,,,,,,,,,,
+kuvaBlueTwine,items,Item,,,Kuva's Blue Twine,,,,,,,,,,,,,,
+kuvaSilentSoles,items,Item,,,Kuva's Silent Soles,,,,,,,,,,,,,,
+zombieKuvaAssistant,entityclasses,Entity,,,Kuva's Blue Assistant,,,,,,,,,,,,,,
