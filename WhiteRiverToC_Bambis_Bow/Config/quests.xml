@@ -23,7 +23,7 @@
 			</quest>
 			<quest id="+Reward of Bambi's Killer Bow">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Tahnk you for your support of the bow-making class. Collect your reward from the Trader."/>
+				<property name="offer" value="Thank you for your support of the bow-making class. Collect your reward from the Trader."/>
 				<property name="name" value="Reward of Bambi's Killer Bow" />
 				<property name="subtitle_key" value="Reward of Bambi's Killer Bow" />
 				<property name="description_key" value="questRewardBambisBow" />
