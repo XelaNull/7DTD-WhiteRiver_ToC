@@ -29,7 +29,7 @@
 			<property name="Group" value="Special Items"/>	
 		</item>			
 		
-		<item name="meleeToolBunyansFireaxe"> <!-- T2 Tools -->
+		<item name="Bunyans Fireaxe"> <!-- T2 Tools -->
 			<property name="Tags" value="axe,melee,grunting,medium,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="CustomIcon" value="meleeToolFireaxeIron"/>
