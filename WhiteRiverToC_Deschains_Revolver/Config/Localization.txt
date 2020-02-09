@@ -1,0 +1,11 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+darkTowerTheGunslinger,items,Item,,,Dark Tower: The Gunslinger,,,,,,,,,,,,,,
+darkTowerTheDrawingOfTheThree,items,Item,,,Dark Tower: The Drawing of the 3,,,,,,,,,,,,,,
+darkTowerTheWasteLands,items,Item,,,Dark Tower: The Waste Lands,,,,,,,,,,,,,,
+darkTowerWizardAndGlass,items,Item,,,Dark Tower: Wizard and Glass,,,,,,,,,,,,,,
+darkTowerWindThroughTheKeyhole,items,Item,,,Dark Tower: Wind Through the Keyhole,,,,,,,,,,,,,,
+darkTowerWolvesOfTheCalla,items,Item,,,Dark Tower: Wolves of the Calla,,,,,,,,,,,,,,
+darkTowerSongOfSuzannah,items,Item,,,Dark Tower: Song of Suzannah,,,,,,,,,,,,,,
+darkTowerTheGunslinger,items,Item,,,Dark Tower: The Gunslinger,,,,,,,,,,,,,,
+
+
