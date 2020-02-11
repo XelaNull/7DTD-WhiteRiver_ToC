@@ -6,15 +6,6 @@
 			<item name="kuvaBlueTwineSchematic" />
 			<item name="kuvaSilentSolesSchematic" />
 		</lootgroup>
-		<lootgroup name="kuvaItemsSilentLiner">
-			<item name="kuvaSilentLiner" />
-		</lootgroup>
-		<lootgroup name="kuvaItemsBlueTwine" count="1">
-			<item name="kuvaBlueTwine" count="1"/>
-		</lootgroup>
-		<lootgroup name="kuvaItemsSometimes" count="1">
-			<item name="blueTallow" count="1"/>
-		</lootgroup>
 		<lootcontainer id="145" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="questTierFlexibleTemplate" destroy_on_close="true">
 			<item group="kuvaSchematics" count="1" />
 		</lootcontainer>
