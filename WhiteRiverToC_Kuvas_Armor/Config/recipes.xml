@@ -2,7 +2,7 @@
 	<append xpath="/recipes">
 	
 		<!-- The quest and goal item to craft for reward for: Kuva's Red Armor -->
-		<recipe name="+Kuva's Red Armor Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="kuvaRedArmorQuest" count="1" craft_time = "1" craft_exp_gain="0" >
 			<ingredient name="+White River Citizen Card" count="1"/>
 		</recipe>
 		<recipe name="+Writ Of Kuva's Red Armor" count="1" craft_time = "90" craft_exp_gain="10000" >
@@ -18,72 +18,89 @@
       <ingredient name="+White River Veteran Citizen Card" count="1"/>
     </recipe>
     
-		<recipe name="blueTallow" count="1" tags="learnable">
-	    <ingredient name="resourceCropSnowberryPlant" count="1"/>
+		<!-- SECRET INGREDIENTS -->
+		<recipe name="blueTallow" count="1" craft_area="chemistryStation" tags="learnable">
+	    <ingredient name="resourceCropSnowberryPlant" count="5"/>
       <ingredient name="foodCropYuccaFruit" count="1"/>
       <ingredient name="drugPainkillers" count="1"/>
       <ingredient name="drinkCanMegaCrush" count="1"/>
-      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="resourceAnimalFat" count="3"/>
     </recipe>
     
     <recipe name="kuvaSilentLiner" count="1" tags="learnable">
       <ingredient name="blueTallow" count="1"/>
-      <ingredient name="resourceCropCottonPlant" count="1"/>
+      <ingredient name="resourceCropCottonPlant" count="3"/>
       <ingredient name="resourceMilitaryFiber" count="1"/>
     </recipe>
     
     <recipe name="kuvaBlueTwine" count="1" tags="learnable">
       <ingredient name="modGunBowPolymerString" count="1"/>
-      <ingredient name="foodCropBlueberries" count="1"/>
-      <ingredient name="resourceOil" count="1"/>
+      <ingredient name="foodCropBlueberries" count="4"/>
+      <ingredient name="resourceOil" count="2"/>
       <ingredient name="drugHerbalAntibiotics" count="1"/>
     </recipe>    
     
-    <recipe name="kuvaSilentSoles" count="1" tags="learnable">
-      <ingredient name="vehicleWheels" count="1"/>
-      <ingredient name="resourceFeather" count="1"/>
-      <ingredient name="resourceScrapPolymers" count="1"/>
-      <ingredient name="resourceGlue" count="1"/>
+    <recipe name="kuvaSilentSoles" count="1" craft_area="workbench" tags="learnable">
+      <ingredient name="vehicleWheels" count="2"/>
+      <ingredient name="resourceFeather" count="20"/>
+      <ingredient name="resourceScrapPolymers" count="4"/>
+      <ingredient name="resourceGlue" count="2"/>
       <ingredient name="armorMilitaryBoots" count="1"/>
     </recipe>
     
-    <recipe name="Kuva's Blue Leather Hood" count="1" tags="learnable">
+		<!-- THE BLUE ARMOR ITSELF -->
+    <recipe name="kuvaBlueLeatherHood" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
       <ingredient name="kuvaSilentLiner" count="1"/>
       <ingredient name="kuvaBlueTwine" count="1"/>
-      <ingredient name="resourceLeather" count="1"/>
-      <ingredient name="resourceGlue" count="1"/>
+      <ingredient name="resourceLeather" count="2"/>
+      <ingredient name="resourceGlue" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue"/>
+			</effect_group>
     </recipe>
 
-    <recipe name="Kuva's Blue Leather Chest" count="1" tags="learnable">
-      <ingredient name="kuvaSilentLiner" count="1"/>
+    <recipe name="kuvaBlueLeatherChest" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+      <ingredient name="kuvaSilentLiner" count="3"/>
       <ingredient name="kuvaBlueTwine" count="1"/>
-      <ingredient name="resourceLeather" count="1"/>
-      <ingredient name="resourceGlue" count="1"/>
-      <ingredient name="resourceScrapPolymers" count="1"/>
+      <ingredient name="resourceLeather" count="4"/>
+      <ingredient name="resourceGlue" count="2"/>
+      <ingredient name="resourceScrapPolymers" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue,resourceScrapPolymers"/>
+			</effect_group>
     </recipe>    
     
-    <recipe name="Kuva's Blue Leather Gloves" count="1" tags="learnable">
+    <recipe name="kuvaBlueLeatherGloves" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
       <ingredient name="kuvaSilentLiner" count="1"/>
       <ingredient name="kuvaBlueTwine" count="1"/>
       <ingredient name="resourceGlue" count="1"/>
       <ingredient name="armorLeatherGloves" count="1"/>
       <ingredient name="meleeKnucklesSteelParts" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceGlue"/>
+			</effect_group>
     </recipe>    
 
-    <recipe name="Kuva's Blue Leather Pants" count="1" tags="learnable">
-      <ingredient name="kuvaSilentLiner" count="1"/>
+    <recipe name="kuvaBlueLeatherPants" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+      <ingredient name="kuvaSilentLiner" count="2"/>
       <ingredient name="kuvaBlueTwine" count="1"/>
-      <ingredient name="resourceGlue" count="1"/>
-      <ingredient name="resourceLeather" count="1"/>      
-      <ingredient name="resourceScrapPolymers" count="1"/>
+      <ingredient name="resourceGlue" count="2"/>
+      <ingredient name="resourceLeather" count="2"/>      
+      <ingredient name="resourceScrapPolymers" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue,resourceScrapPolymers"/>
+			</effect_group>
     </recipe>    
   
-    <recipe name="Kuva's Blue Leather Boots" count="1" tags="learnable">
+    <recipe name="kuvaBlueLeatherBoots" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
       <ingredient name="kuvaSilentLiner" count="1"/>
-      <ingredient name="kuvaBlueTwine" count="1"/>
+      <ingredient name="kuvaBlueTwine" count="2"/>
       <ingredient name="kuvaSilentSoles" count="1"/>
       <ingredient name="resourceGlue" count="1"/>
       <ingredient name="resourceLeather" count="1"/>      
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceLeather,resourceGlue"/>
+			</effect_group>		
     </recipe>          
   </append>
 </configs>

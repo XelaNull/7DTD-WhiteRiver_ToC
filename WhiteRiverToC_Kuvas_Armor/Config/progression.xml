@@ -1,6 +1,6 @@
 <configs>
 <!-- Add the Kuva Armor so it unlocks with the perk -->
-  <append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,Kuva's Blue Leather Hood,Kuva's Blue Leather Chest,Kuva's Blue Leather Gloves,Kuva's Blue Leather Pants,Kuva's Blue Leather Boots</append>
+  <append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,kuvaBlueLeatherHood,kuvaBlueLeatherChest,kuvaBlueLeatherGloves,kuvaBlueLeatherPants,kuvaBlueLeatherBoots</append>
 <!--
 
 <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Leather Hood" operation="set" value="1"/>
