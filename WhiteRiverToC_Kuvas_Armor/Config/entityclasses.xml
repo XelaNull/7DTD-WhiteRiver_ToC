@@ -1,8 +1,5 @@
 <configs>
 
-
-<!-- <entity_class name="zombieTemplateMale"> -->
-
   <insertAfter xpath="/entity_classes/entity_class[@name='zombieDarlene']">
     <entity_class name="zombieKuvaAssistant" extends="zombieDarlene">
       <property name="TintMaterial0" value="92,92,255"/>
@@ -10,30 +7,4 @@
       <property name="TintMaterial2" value="92,92,255"/>
     </entity_class>
   </insertAfter>  
-  <!--
-  <entity_class name="zombieDarlene" extends="zombieTemplateMale">
-  	<property name="Tags" value="entity,zombie,walker"/>
-  	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll"/>
-  	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
-  	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
-  	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
-  	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain"/>
-  	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death"/>
-  	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense"/>
-  	<property name="AvatarController" value="AvatarZombie01Controller"/>
-  	<property name="ModelType" value="Standard"/>
-  	<property name="WalkType" value="3"/>
-  	<property name="RootMotion" value="true"/>
-  	<property name="HasDeathAnim" value="true"/>
-  
-  	<property name="HandItem" value="meleeHandZombie01"/>
-  	<property name="JumpMaxDistance" value="1.5, 1.7"/>
-  	<property name="TintMaterial2" value="32,24,20"/>
-  	<effect_group name="Base Effects">
-  		<passive_effect name="HealthMax" operation="base_set" value="125"/>
-  		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-  	</effect_group>
-  </entity_class>
-  -->
-  
 </configs>

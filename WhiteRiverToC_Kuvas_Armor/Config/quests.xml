@@ -113,9 +113,7 @@
     
     		<objective type="TreasureChest">
     			<property name="block" value="treasureKuvaChest"/>
-<!--    			<property name="distance" value="2500-3750"/>-->
-					<property name="distance" value="50"/>
-
+    			<property name="distance" value="2500-3750"/>
     		</objective>
         <reward type="Quest" id="+Kuva's Secret Recipe Challenge"/>	
 				<reward type="Item" id="kuvaSilentLiner" value="1-3" />
