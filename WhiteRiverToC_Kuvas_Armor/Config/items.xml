@@ -304,9 +304,9 @@
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,electrical"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value=".5,1.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value=".5,1.5"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
@@ -338,9 +338,9 @@
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,electrical"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value=".5,1.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value=".5,1.5"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
 		
@@ -371,9 +371,9 @@
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,electrical"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value=".5,1.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value=".5,1.5"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
 			  <passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
 		
@@ -404,9 +404,9 @@
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,electrical"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value=".5,1.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value=".5,1.5"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,coldelectrical"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
 		
@@ -437,9 +437,9 @@
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="10.1,13"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,electrical"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value=".5,1.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value=".5,1.5"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="2,4" tags="head,heat,cold,electrical"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="450,900" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
 		
