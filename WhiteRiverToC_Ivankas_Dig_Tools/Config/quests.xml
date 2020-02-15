@@ -26,7 +26,7 @@
 				<property name="offer" value="These tools are the best tools. These tools are great. If you need to dig, these are the tools. Collect your tools from the Trader."/>
 				<property name="name" value="Reward of Ivanka's Flaming Dig Tools" />
 				<property name="subtitle" value="Reward of Ivanka's Flaming Dig Tools" />
-				<property name="description" value="Return to the Trader to receive your Ivanka's Iron Shoven & Pickaxe" />
+				<property name="description" value="Return to the Trader to receive your Ivanka's Iron Shoven and Pickaxe" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
