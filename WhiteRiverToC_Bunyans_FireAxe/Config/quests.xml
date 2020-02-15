@@ -4,8 +4,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="The Trader needs your help stocking up on water. Gather 50 Boiled Waters and the Trader will give you an extra Paul Bunyan branded FireAxe."/>
 				<property name="name" value="Quest for Bunyan's FireAxe" />
-				<property name="subtitle_key" value="Quest for Bunyan's FireAxe" />
-				<property name="description_key" value="questBunyansFireAxe" />
+				<property name="subtitle" value="Quest for Bunyan's FireAxe" />
+				<property name="description" value="Gather 50 Boiled Waters to obtain a Paul Bunyan FireAxe." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -23,8 +23,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Now we'll never die of thirst, *again*. Collect your reward from the Trader."/>
 				<property name="name" value="Reward of Bunyan's FireAxe" />
-				<property name="subtitle_key" value="Reward of Bunyan's FireAxe" />
-				<property name="description_key" value="questRewardBunyansFireAxe" />
+				<property name="subtitle" value="Reward of Bunyan's FireAxe" />
+				<property name="description" value="Return to the Trader to collect your Paul Bunyan FireAxe." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />

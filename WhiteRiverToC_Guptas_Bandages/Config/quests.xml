@@ -5,8 +5,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="The Trader mentioned a settlement Doctor in need of ingredients to make first aid bandages, but he is so busy treating the injured he doesn't have time to collect them himself. He is willing to offer you first aid bandages in exchange for your assistance gathering supples for the Doctor. Gather 10 Aloe Leaves + 10 Cloth Fragments + 10 Bandages" />
 				<property name="name" value="Collect Aloe for Gupta's Bandages" />
-				<property name="subtitle_key" value="Collect Aloe for Gupta's Bandages" />
-				<property name="description_key" value="questGuptasBandages" />
+				<property name="subtitle" value="Collect Aloe for Gupta's Bandages" />
+				<property name="description" value="Gather 10 Aloe Leaves + 10 Cloth Fragments + 10 Bandages to receive a stack of medical bandages." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="veryeasy" />

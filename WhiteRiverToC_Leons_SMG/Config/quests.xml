@@ -4,8 +4,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="There is a crate of modded 9mm weapons at the Trader that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these weapons if you can help the settlement restock its inventory of pistols. Some pistols for a modded SMG? Seems like a good deal. Gather 5 Pistols" />
 				<property name="name" value="Pay-it-forward to obtain Leon's Modded SMG" />
-				<property name="subtitle_key" value="Craft the +Writ Of Leon" />
-				<property name="description_key" value="questLeonsDegradedSMG" />
+				<property name="subtitle" value="Craft the +Writ Of Leon" />
+				<property name="description" value="Gather 5 Pistols to receive one of Leon's SMGs." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -21,8 +21,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Obtain one of Leon's SMGs from the Trader in exchange for your pistols."/>
 				<property name="name" value="Reward of Leon's Degraded SMG" />
-				<property name="subtitle_key" value="Reward of Leon's Degraded SMG" />
-				<property name="description_key" value="questRewardDegradedSMG" />
+				<property name="subtitle" value="Reward of Leon's Degraded SMG" />
+				<property name="description" value="Return to the Trader to receive one of Leon's SMGs." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -48,8 +48,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Leon's SMG is quite the fixer-upper. The Trader offered to help you repair this hunk of junk, but first you are going to need some spare parts. Gather 10 Mechanical Parts + 5 Spring" />
 				<property name="name" value="Fix up Leon's Degraded SMG" />
-				<property name="subtitle_key" value="Collects Parts to Fix SMG" />
-				<property name="description_key" value="questRepairLeonsSMG" />
+				<property name="subtitle" value="Collects Parts to Fix SMG" />
+				<property name="description" value="Gather 10 Mechanical Parts + 5 Spring to fix Leon's SMG." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -67,8 +67,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Return top the Trader with the spare parts for assistance repairing your Leon's Degraded SMG."/>
 				<property name="name" value="Reward of Leon's Modded SMG" />
-				<property name="subtitle_key" value="Reward of Leon's Modded SMG" />
-				<property name="description_key" value="questLeonsSMG" />
+				<property name="subtitle" value="Reward of Leon's Modded SMG" />
+				<property name="description" value="Return to the Trader for assistance in fixing Leon's degraded SMG." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
@@ -91,8 +91,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="There is a special crate of modded weapons, that were set aside and marked as high quality. These are from the same batch that a guy named Leon left behind and hasn't come back for in a long time. You can have one of these better quality weapons if you can provide some additional pistols and SMGs to help the settlement stock up. Gather 10 Pistols + 5 SMGs" />
 				<property name="name" value="Pay-it-forward to obtain Leon's Modded SMG" />
-				<property name="subtitle_key" value="Craft the +Veteran Writ Of Leon" />
-				<property name="description_key" value="questVetLeonsSMG" />
+				<property name="subtitle" value="Craft the +Veteran Writ Of Leon" />
+				<property name="description" value="Gather 10 Pistols + 5 SMGs to obtain a high-quality Leon's SMG." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
@@ -109,8 +109,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="That was tough, collecting all those spare weapons! Return them to the Trader and receive one of the high quality Leon's Modded SMGs from the special crate."/>
 				<property name="name" value="Veteran Reward of Leon's Modded SMG" />
-				<property name="subtitle_key" value="Veteran Reward of Leon's Modded SMG" />
-				<property name="description_key" value="questVetRewardLeonsSMG" />
+				<property name="subtitle" value="Veteran Reward of Leon's Modded SMG" />
+				<property name="description" value="Return to the Trader to obtain one of the Leon's SMGs marked as high-quality." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />

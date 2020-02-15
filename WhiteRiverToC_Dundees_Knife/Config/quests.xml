@@ -5,8 +5,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="G'Eye, mate. That's not a knoife. THIS is a knoife! The Trader mentioned he has a few extra Dundee's famous hunting knives. This is the knife that was once used by a famous crocodile hunter. Before the trader will part with this knife, your help is needed to gather bone shivs for the Trader to hand out to those in need. Craft 10 Bone Knives" />
 				<property name="name" value="Quest to craft Dundee's Hunting Knife" />
-				<property name="subtitle_key" value="Craft the +Writ Of Dundee" />
-				<property name="description_key" value="questDundeesKnife" />
+				<property name="subtitle" value="Craft the +Writ Of Dundee" />
+				<property name="description" value="Craft 10 Bone Knives to obtain your Dundee Knife." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="veryeasy" />
@@ -22,8 +22,8 @@
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="Get on the right side of the road you pelican! Get your arse to the Trader to collect your reward."/>
 				<property name="name" value="Reward of Dundee's Knife" />
-				<property name="subtitle_key" value="Reward of Dundee's Knife" />
-				<property name="description_key" value="questRewardDundeesKnife" />
+				<property name="subtitle" value="Reward of Dundee's Knife" />
+				<property name="description" value="Return to the Trader to collect your Dundee Knife." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />

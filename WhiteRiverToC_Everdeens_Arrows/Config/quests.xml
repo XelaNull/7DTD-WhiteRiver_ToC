@@ -4,8 +4,8 @@
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
 			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Arrows of Everdeen in exchange for your help. These arrows are famed to travel fast and true. Gather 3 Corn + 3 Snowberry" />
 			<property name="name" value="Collect Raw Food for a Settlement Feast" />
-			<property name="subtitle_key" value="Collect Food for Everdeen's Arrows" />
-			<property name="description_key" value="questEverdeensArrows" />
+			<property name="subtitle" value="Collect Food for Everdeen's Arrows" />
+			<property name="description" value="Gather 3 Corn + 3 Snowberry to obtain a bundle of Everdeen's Arrows." />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
@@ -22,8 +22,8 @@
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
 			<property name="offer" value="Thanks for your help! Collect your stew and arrows from the Trader."/>
 			<property name="name" value="Reward of Everdeen's Arrows" />
-			<property name="subtitle_key" value="Reward of Everdeen's Arrows" />
-			<property name="description_key" value="questRewardEverdeensArrows" />
+			<property name="subtitle" value="Reward of Everdeen's Arrows" />
+			<property name="description" value="Return to the Trader to collect your bundle of Everdeen's Arrows, and some community stew!" />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
@@ -46,8 +46,8 @@
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
 			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Everdeen's Bolts in exchange for your help. These arrows are famed to travel fast and true. Gather 3 Potatoes + 3 Mushrooms" />
 			<property name="name" value="Collect Lots of Food for a Settlement Feast" />
-			<property name="subtitle_key" value="Collect Food for Everdeen's Bolts" />
-			<property name="description_key" value="questEverdeensBolts" />
+			<property name="subtitle" value="Collect Food for Everdeen's Bolts" />
+			<property name="description" value="Gather 3 Potatoes + 3 Mushrooms to obtain a bundle of Everdeen's Bolts." />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
@@ -63,8 +63,8 @@
 			<property name="group_name" value="quest_ToolsOfCitizenship" />
 			<property name="offer" value="Thanks for your help! Collect your stew and bolts from the Trader."/>
 			<property name="name" value="Reward of Everdeen's Bolts" />
-			<property name="subtitle_key" value="Reward of Everdeen's Bolts" />
-			<property name="description_key" value="questRewardEverdeensBolts" />
+			<property name="subtitle" value="Reward of Everdeen's Bolts" />
+			<property name="description" value="Return to the Trader to collect your bundle of Everdeen's Bolts and some stew!" />
 			<property name="icon" value="ui_game_symbol_map_trader" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
