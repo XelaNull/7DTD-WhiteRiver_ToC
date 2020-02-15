@@ -6,7 +6,7 @@
 			<property name="Extends" value="cntShippingCrateHero"/>
 			<property name="DowngradeBlock" value="+Deschain's Crate"/>
 			<property name="DisplayInfo" value="A sealed crate offered to you along with Roland Deschain's revolver"/>
-			<property name="Description" value="A sealed crate offered to you along with Roland Deschain's revolver2"/>
+			<!--<property name="Description" value="A sealed crate offered to you along with Roland Deschain's revolver2"/>--></property>
 			<property name="FilterTags" value="floot"/>
 		</block>	
 		<block name="+Deschain's Crate">
