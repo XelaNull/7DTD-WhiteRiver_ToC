@@ -116,9 +116,9 @@
     			<property name="distance" value="2500-3750"/>
     		</objective>
         <reward type="Quest" id="+Kuva's Secret Recipe Challenge"/>	
-				<reward type="Item" id="kuvaSilentLiner" value="1-3" />
-				<reward type="Item" id="kuvaBlueTwine" value="1"/>
-				<reward type="Item" id="blueTallow" value="0-1"/>
+				<reward type="Item" id="Kuva's Blue Silent Liner" value="1-3" />
+				<reward type="Item" id="Kuva's Blue Twine" value="1"/>
+				<reward type="Item" id="Kuva's Blue Tallow" value="0-1"/>
 				<reward type="Exp" value="2000"/>
     	</quest>     
       

@@ -196,6 +196,7 @@
 		</item>	
     <item name="Kuva's Red Armor Treasure map">
     	<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Stacknumber" value="1"/>
     	<property class="Action0">
     		<property name="QuestGiven" value="treasure_kuva"/>
     	</property>
