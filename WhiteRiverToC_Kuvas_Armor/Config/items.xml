@@ -2,14 +2,12 @@
 	<append xpath="/items">
 
     <!-- Quest & Writ for Kuva's Red Armor -->
-		<item name="kuvaRedArmorQuest"> 
+		<item name="Kuva's Red Armor Quest"> 
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>
-			<property name="Weight" value="0"/>			
-			<property name="Stacknumber" value="1"/>			
-			<property name="DescriptionKey" value="kuvaRedArmorQuestDesc"/>
+			<property name="Stacknumber" value="1"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Kuva's Red Armor"/>
@@ -17,12 +15,11 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="writToC_KuvaRedArmor">
+		<item name="+Writ Of Kuva's Red Armor">
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
-			<property name="DescriptionKey" value="writToC_KuvaRedArmorDesc"/>
 			<property name="Weight" value="0"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
@@ -35,12 +32,11 @@
 			<property name="Group" value="Special Items"/>	
 		</item>	    
     <!-- The Two Pieces of Kuva's Red Armor -->
-		<item name="itemToC_KuvaRedChest">
+		<item name="Kuva's Red Leather Chest">
 			<property name="Extends" value="armorLeatherChest"/>
 			<property name="CustomIcon" value="armorLeatherChest"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group>
@@ -62,12 +58,11 @@
 				<property name="Overlay0Tint" value="100,0,0"/> 
 			</property>
 		</item>
-    <item name="itemToc_KuvaRedPants">
+    <item name="Kuva's Red Leather Pants">
 			<property name="Extends" value="armorLeatherPants"/>
 			<property name="CustomIcon" value="armorLeatherPants"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Legs"/>
 				<effect_group>
@@ -95,7 +90,6 @@
 			<property name="CustomIcon" value="armorLeatherHood"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group>
@@ -120,7 +114,6 @@
 			<property name="CustomIcon" value="armorLeatherGloves"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>			
 			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Hands"/>
 				<effect_group>
@@ -147,7 +140,6 @@
 			<property name="CustomIcon" value="armorLeatherBoots"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group>
@@ -171,14 +163,13 @@
 			</property>
 		</item>        
     <!-- Discover the REAL Truth about the Kuva's Red Armor -->
-    <item name="itemquestToC_KuvaTruth"> 
+    <item name="+The Truth of Kuva's Red Armor"> 
       <property name="CustomIcon" value="challengeQuestMaster"/>
       <property name="CustomIconTint" value="cc3300"/>
       <property name="Extends" value="questMaster"/>
       <property name="Material" value="MresourcePaper"/>
-			<property name="DescriptionKey" value="itemquestToC_KuvaTruthDesc"/>
 			<property name="Weight" value="0"/>
-			<property name="Stacknumber" value="1"/>		
+			<property name="Stacknumber" value="1"/>
       <property class="Action0">
         <property name="Class" value="Quest"/>
         <property name="QuestGiven" value="+Kuva's Red Armor Secret"/>
@@ -189,38 +180,33 @@
         
         
     <!-- VETERAN QUESTLINE ITEMS -->
-    <item name="itemquestToC_KuvaVet"> 
+    <item name="+Kuva's Red Armor Vet. Quest"> 
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>
-			<property name="DescriptionKey" value="itemquestToC_KuvaVetDesc"/>
-			<property name="Weight" value="0"/>			
-			<property name="Stacknumber" value="1"/>		
+			<property name="Weight" value="0"/>
+			<property name="Stacknumber" value="1"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="questToC_KuvaVet"/>
+				<property name="QuestGiven" value="+Vet. Quest For Kuva's Red Armor"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-    <item name="itemToC_KuvaMap">
+    <item name="Kuva's Red Armor Treasure map">
     	<property name="Extends" value="treasureQuestMaster"/>
-			<property name="DescriptionKey" value="itemToC_KuvaMapDesc"/>
-			<property name="Weight" value="0"/>
-			<property name="Stacknumber" value="1"/>
     	<property class="Action0">
     		<property name="QuestGiven" value="treasure_kuva"/>
     	</property>
     </item>
-    <item name="itemquestToC_KuvaBlue"> 
+    <item name="+Kuva’s Blue Armor"> 
       <property name="CustomIcon" value="challengeQuestMaster"/>
       <property name="CustomIconTint" value="5C5CFF"/>
       <property name="Extends" value="questMaster"/>
       <property name="Material" value="MresourcePaper"/>
 			<property name="Weight" value="0"/>
-			<property name="Stacknumber" value="1"/>		
-			<property name="DescriptionKey" value="itemquestToC_KuvaBlueDesc"/>
+			<property name="Stacknumber" value="1"/>
       <property class="Action0">
         <property name="Class" value="Quest"/>
         <property name="QuestGiven" value="+Kuva's Blue Armor Explained"/>
@@ -230,90 +216,84 @@
     </item>	
     
     <!-- SPECIAL INGREDIENTS -->
-    <item name="blueTallowSchematic">
+    <item name="Kuva's Blue Tallow Schematic">
     	<property name="Extends" value="schematicMaster"/>
     	<property name="CreativeMode" value="Player"/>
     	<property name="CustomIcon" value="resourceAnimalFat"/>
       <property name="CustomIconTint" value="5C5CFF"/> 
-    	<property name="Unlocks" value="blueTallow"/>
+    	<property name="Unlocks" value="Kuva's Blue Tallow"/>
     	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="blueTallow" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Tallow" operation="set" value="1"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
     	</effect_group>
     </item>
-    <item name="blueTallow">
+    <item name="Kuva's Blue Tallow">
       <property name="Extends" value="resourceAnimalFat" />
       <property name="CustomIcon" value="resourceAnimalFat"/>
 			<property name="CustomIconTint" value="5C5CFF"/> 
-      <property name="UnlockedBy" value="blueTallowSchematic"/>
-			<property name="DescriptionKey" value="kuvaBlueArmorIngredientDesc"/>
+      <property name="UnlockedBy" value="Kuva's Blue Tallow Schematic"/>
     </item>
     
-    <item name="kuvaSilentLinerSchematic">
+    <item name="Kuva's Blue Silent Liner Schematic">
     	<property name="Extends" value="schematicMaster"/>
     	<property name="CreativeMode" value="Player"/>
     	<property name="CustomIcon" value="modArmorInsulatedLiner"/>
       <property name="CustomIconTint" value="5C5CFF"/> 
-    	<property name="Unlocks" value="kuvaSilentLiner"/>
+    	<property name="Unlocks" value="Kuva's Blue Silent Liner"/>
     	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="kuvaSilentLiner" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Silent Liner" operation="set" value="1"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
     	</effect_group>
     </item>
-    <item name="kuvaSilentLiner">
+    <item name="Kuva's Blue Silent Liner">
       <property name="Extends" value="resourceLeather" />
       <property name="CustomIcon" value="modArmorInsulatedLiner"/>
 			<property name="CustomIconTint" value="5C5CFF"/> 
-      <property name="UnlockedBy" value="kuvaSilentLinerSchematic"/>
-			<property name="DescriptionKey" value="kuvaBlueArmorIngredientDesc"/>
+      <property name="UnlockedBy" value="Kuva's Blue Silent Liner Schematic"/>
     </item>    
     
-    <item name="kuvaBlueTwineSchematic">
+    <item name="Kuva's Blue Twine Schematic">
     	<property name="Extends" value="schematicMaster"/>
     	<property name="CreativeMode" value="Player"/>
     	<property name="CustomIcon" value="modGunBowPolymerString"/>
       <property name="CustomIconTint" value="5C5CFF"/> 
-    	<property name="Unlocks" value="kuvaBlueTwine"/>
+    	<property name="Unlocks" value="Kuva's Blue Twine"/>
     	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="kuvaBlueTwine" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Blue Twine" operation="set" value="1"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
     	</effect_group>
     </item>
-    <item name="kuvaBlueTwine">
+    <item name="Kuva's Blue Twine">
       <property name="Extends" value="resourceLeather" />
       <property name="CustomIcon" value="modGunBowPolymerString"/>
 			<property name="CustomIconTint" value="5C5CFF"/> 
-      <property name="UnlockedBy" value="kuvaBlueTwineSchematic"/>
-			<property name="DescriptionKey" value="kuvaBlueArmorIngredientDesc"/>
+      <property name="UnlockedBy" value="Kuva's Blue Twine Schematic"/>
     </item>    
     
-    <item name="kuvaSilentSolesSchematic">
+    <item name="Kuva's Silent Soles Schematic">
     	<property name="Extends" value="schematicMaster"/>
     	<property name="CreativeMode" value="Player"/>
     	<property name="CustomIcon" value="apparelSuitDressShoes"/>
       <property name="CustomIconTint" value="5C5CFF"/> 
-    	<property name="Unlocks" value="kuvaSilentSoles"/>
+    	<property name="Unlocks" value="Kuva's Silent Soles"/>
     	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="kuvaSilentSoles" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kuva's Silent Soles" operation="set" value="1"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
     	</effect_group>
     </item>
-    <item name="kuvaSilentSoles">
+    <item name="Kuva's Silent Soles">
       <property name="Extends" value="resourceLeather" />
       <property name="CustomIcon" value="apparelSuitDressShoes"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
-      <property name="UnlockedBy" value="kuvaSilentSolesSchematic"/>
-			<property name="DescriptionKey" value="kuvaBlueArmorIngredientDesc"/>
+      <property name="UnlockedBy" value="Kuva's Silent Soles Schematic"/>
     </item>    
     
 
-		<item name="kuvaBlueLeatherHood">
+		<item name="Kuva's Blue Leather Hood">
       <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
       <property name="CustomIcon" value="armorLeatherHood"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
-			<property name="EconomicValue" value="500,1000"/>						
 			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group>
@@ -343,13 +323,11 @@
 			</property>	
     </item>    
 
-		<item name="kuvaBlueLeatherChest">
+		<item name="Kuva's Blue Leather Chest">
       <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
       <property name="CustomIcon" value="armorLeatherChest"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
-			<property name="EconomicValue" value="500,1000"/>						
 			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group>
@@ -378,13 +356,11 @@
 			</property>		
     </item>
 		
-		<item name="kuvaBlueLeatherGloves"> <!-- item name directly referenced in the code -->
+		<item name="Kuva's Blue Leather Gloves"> <!-- item name directly referenced in the code -->
       <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
       <property name="CustomIcon" value="armorLeatherGloves"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
-			<property name="EconomicValue" value="500,1000"/>						
 			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group>
@@ -413,13 +389,11 @@
 			</property>			
     </item>
 
-		<item name="kuvaBlueLeatherPants">
+		<item name="Kuva's Blue Leather Pants">
       <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
       <property name="CustomIcon" value="armorLeatherPants"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
-			<property name="EconomicValue" value="500,1000"/>			
 			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group>
@@ -448,14 +422,12 @@
 			</property>	
     </item>
 
-		<item name="kuvaBlueLeatherBoots">
+		<item name="Kuva's Blue Leather Boots">
       <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
       <property name="CustomIcon" value="armorLeatherBoots"/> 
       <property name="CustomIconTint" value="5C5CFF"/>	
       <property name="DegradationBreaksAfter" value="true"/>
-			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
 			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
-			<property name="EconomicValue" value="500,1000"/>			
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
