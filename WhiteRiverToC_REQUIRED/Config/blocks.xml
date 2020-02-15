@@ -4,9 +4,9 @@
 		<block name="+Sealed Citizen Crate">
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="DescriptionKey" value="blockToC_sealedCitizenCrateDesc"/>
 			<property name="Extends" value="cntShippingCrateHero"/>
 			<property name="DowngradeBlock" value="+Citizen Crate"/>
+			<property name="DescriptionKey" value="cntLootCrateHeroDesc"/>			
 			<property name="FilterTags" value="floot"/>
 		</block>	
 		<block name="+Citizen Crate">

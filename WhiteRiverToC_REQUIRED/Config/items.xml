@@ -19,8 +19,9 @@
 			<property name="CustomIconTint" value="a4ff84"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="DescriptionKey" value="itemToC_DeclarationDesc"/>
+			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
+			<property name="Description" value="White River Tools of Citizenship\n\nDeclaration of Citizenship\n\nUsed to begin the quest to obtain your own Citizen's Card from killing 10 Zombies."/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="quest_whiteRiverCitizen3"/>
@@ -33,9 +34,9 @@
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>
-			<property name="DescriptionKey" value="itemToC_CitizenDesc"/>
+			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
+			<property name="Description" value="White River Citizen's Card\n\nUsed to prove your membership into the settlement and obtain settlement quests."/>
 		</item>
 		
 		<item name="+White River Veteran 100Z Challenge">
@@ -43,9 +44,9 @@
 			<property name="CustomIconTint" value="660000"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>
-			<property name="DescriptionKey" value="itemToC_Citizen100Desc"/>
+			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
+			<property name="Description" value="A quest to kill 100 zombies in exchange for a White River settlement Veterans Citizen card."/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Kill 100 Zombies"/>
@@ -58,9 +59,9 @@
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>
-			<property name="DescriptionKey" value="itemToC_VeteranDesc"/>			
+			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
+			<property name="Description" value="White River Veteran Vitizen's Card\n\nUsed to prove your veteran membership into the settlement and obtain settlement veteran quests."/>
 		</item>
 	</append>
 </configs>
