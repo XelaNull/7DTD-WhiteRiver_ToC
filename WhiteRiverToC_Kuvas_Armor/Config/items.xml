@@ -7,6 +7,8 @@
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>
+			<property name="Weight" value="0"/>			
+			<property name="Stacknumber" value="1"/>			
 			<property name="DescriptionKey" value="kuvaRedArmorQuestDesc"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -15,11 +17,12 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Kuva's Red Armor">
+		<item name="writToC_KuvaRedArmor">
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
+			<property name="DescriptionKey" value="writToC_KuvaRedArmorDesc"/>
 			<property name="Weight" value="0"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
@@ -32,11 +35,12 @@
 			<property name="Group" value="Special Items"/>	
 		</item>	    
     <!-- The Two Pieces of Kuva's Red Armor -->
-		<item name="Kuva's Red Leather Chest">
+		<item name="itemToC_KuvaRedChest">
 			<property name="Extends" value="armorLeatherChest"/>
 			<property name="CustomIcon" value="armorLeatherChest"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group>
@@ -58,11 +62,12 @@
 				<property name="Overlay0Tint" value="100,0,0"/> 
 			</property>
 		</item>
-    <item name="Kuva's Red Leather Pants">
+    <item name="itemToc_KuvaRedPants">
 			<property name="Extends" value="armorLeatherPants"/>
 			<property name="CustomIcon" value="armorLeatherPants"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Legs"/>
 				<effect_group>
@@ -90,6 +95,7 @@
 			<property name="CustomIcon" value="armorLeatherHood"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group>
@@ -114,6 +120,7 @@
 			<property name="CustomIcon" value="armorLeatherGloves"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>			
 			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Hands"/>
 				<effect_group>
@@ -140,6 +147,7 @@
 			<property name="CustomIcon" value="armorLeatherBoots"/> 
 			<property name="CustomIconTint" value="ff0000"/>			
 			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="itemToC_KuvaRedDesc"/>
 			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group>
@@ -163,12 +171,14 @@
 			</property>
 		</item>        
     <!-- Discover the REAL Truth about the Kuva's Red Armor -->
-    <item name="+The Truth of Kuva's Red Armor"> 
+    <item name="itemquestToC_KuvaTruth"> 
       <property name="CustomIcon" value="challengeQuestMaster"/>
       <property name="CustomIconTint" value="cc3300"/>
       <property name="Extends" value="questMaster"/>
       <property name="Material" value="MresourcePaper"/>
+			<property name="DescriptionKey" value="itemquestToC_KuvaTruthDesc"/>
 			<property name="Weight" value="0"/>
+			<property name="Stacknumber" value="1"/>		
       <property class="Action0">
         <property name="Class" value="Quest"/>
         <property name="QuestGiven" value="+Kuva's Red Armor Secret"/>
@@ -179,34 +189,38 @@
         
         
     <!-- VETERAN QUESTLINE ITEMS -->
-    <item name="+Kuva's Red Armor Vet. Quest"> 
+    <item name="itemquestToC_KuvaVet"> 
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Material" value="MresourcePaper"/>
-			<property name="DescriptionKey" value="kuvaRedArmorQuestDesc"/>
-			<property name="Weight" value="0"/>
+			<property name="DescriptionKey" value="itemquestToC_KuvaVetDesc"/>
+			<property name="Weight" value="0"/>			
+			<property name="Stacknumber" value="1"/>		
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Vet. Quest For Kuva's Red Armor"/>
+				<property name="QuestGiven" value="questToC_KuvaVet"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-    <item name="Kuva's Red Armor Treasure map">
+    <item name="itemToC_KuvaMap">
     	<property name="Extends" value="treasureQuestMaster"/>
-			<property name="DescriptionKey" value="kuvaRedArmorMapDesc"/>
+			<property name="DescriptionKey" value="itemToC_KuvaMapDesc"/>
+			<property name="Weight" value="0"/>
+			<property name="Stacknumber" value="1"/>
     	<property class="Action0">
     		<property name="QuestGiven" value="treasure_kuva"/>
     	</property>
     </item>
-    <item name="+Kuva’s Blue Armor"> 
+    <item name="itemquestToC_KuvaBlue"> 
       <property name="CustomIcon" value="challengeQuestMaster"/>
       <property name="CustomIconTint" value="5C5CFF"/>
       <property name="Extends" value="questMaster"/>
       <property name="Material" value="MresourcePaper"/>
 			<property name="Weight" value="0"/>
-			<property name="DescriptionKey" value="kuvaBlueArmorDesc"/>
+			<property name="Stacknumber" value="1"/>		
+			<property name="DescriptionKey" value="itemquestToC_KuvaBlueDesc"/>
       <property class="Action0">
         <property name="Class" value="Quest"/>
         <property name="QuestGiven" value="+Kuva's Blue Armor Explained"/>
@@ -298,6 +312,8 @@
       <property name="CustomIcon" value="armorLeatherHood"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
+			<property name="EconomicValue" value="500,1000"/>						
 			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group>
@@ -332,6 +348,8 @@
       <property name="CustomIcon" value="armorLeatherChest"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
+			<property name="EconomicValue" value="500,1000"/>						
 			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group>
@@ -365,6 +383,8 @@
       <property name="CustomIcon" value="armorLeatherGloves"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
+			<property name="EconomicValue" value="500,1000"/>						
 			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group>
@@ -398,6 +418,8 @@
       <property name="CustomIcon" value="armorLeatherPants"/> 
       <property name="CustomIconTint" value="5C5CFF"/>		
       <property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
+			<property name="EconomicValue" value="500,1000"/>			
 			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group>
@@ -431,7 +453,9 @@
       <property name="CustomIcon" value="armorLeatherBoots"/> 
       <property name="CustomIconTint" value="5C5CFF"/>	
       <property name="DegradationBreaksAfter" value="true"/>
+			<property name="DescriptionKey" value="kuvaBlueLeatherDesc"/>
 			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="EconomicValue" value="500,1000"/>			
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>

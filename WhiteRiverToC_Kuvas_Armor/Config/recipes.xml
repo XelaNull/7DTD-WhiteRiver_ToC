@@ -5,7 +5,7 @@
 		<recipe name="kuvaRedArmorQuest" count="1" craft_time = "1" craft_exp_gain="0" >
 			<ingredient name="+White River Citizen Card" count="1"/>
 		</recipe>
-		<recipe name="+Writ Of Kuva's Red Armor" count="1" craft_time = "90" craft_exp_gain="10000" >
+		<recipe name="writToC_KuvaRedArmor" count="1" craft_time = "90" craft_exp_gain="10000" >
 			<ingredient name="resourceLeather" count="50"/>
 			<ingredient name="apparelCoatLeatherPoncho" count="2"/>
       <ingredient name="modDyeRed" count="1"/>
@@ -14,7 +14,7 @@
     
     
     <!-- VETERAN QUESTLINE -->
-    <recipe name="+Kuva's Red Armor Vet. Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+    <recipe name="itemquestToC_KuvaVet" count="1" craft_time = "1" craft_exp_gain="0" >
       <ingredient name="+White River Veteran Citizen Card" count="1"/>
     </recipe>
     
