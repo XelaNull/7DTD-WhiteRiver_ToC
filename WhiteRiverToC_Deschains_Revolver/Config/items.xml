@@ -229,7 +229,8 @@
 	
 		<item name="+The Dark Tower Series Books 1-4">
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>			
+			<property name="CustomIcon" value="schematicMaster"/>		
+			<property name="CustomIconTint" value="cc3300"/>	
 		</item>	
 		<item name="Dark Tower: The Gunslinger">
 			<property name="Extends" value="challengeQuestMaster"/>
@@ -261,7 +262,8 @@
 		</item>
 		<item name="+The Dark Tower Series Books 5-8">
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="CustomIcon" value="schematicMaster"/>			
+			<property name="CustomIcon" value="schematicMaster"/>		
+			<property name="CustomIconTint" value="cc3300"/>	
 		</item>	
 		<item name="Dark Tower: Wind Through The Keyhole">
 			<property name="Extends" value="challengeQuestMaster"/>
