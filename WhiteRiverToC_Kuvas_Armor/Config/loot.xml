@@ -1,10 +1,10 @@
 <configs>
 	<append xpath="lootcontainers">
 		<lootgroup name="kuvaSchematics" count="all">
-			<item name="blueTallowSchematic" />	
-			<item name="kuvaSilentLinerSchematic" />
-			<item name="kuvaBlueTwineSchematic" />
-			<item name="kuvaSilentSolesSchematic" />
+			<item name="Kuva's Blue Tallow Schematic" />	
+			<item name="Kuva's Blue Silent Liner Schematic" />
+			<item name="Kuva's Blue Twine Schematic" />
+			<item name="Kuva's Silent Soles Schematic" />
 		</lootgroup>
 		<lootcontainer id="145" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="questTierFlexibleTemplate" destroy_on_close="true">
 			<item group="kuvaSchematics" count="1" />
