@@ -21,7 +21,7 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
-			<property name="Description" value="White River Tools of Citizenship\n\nDeclaration of Citizenship\n\nUsed to begin the quest to obtain your own Citizen's Card from killing 10 Zombies."/>
+			<property name="description" value="White River Tools of Citizenship\n\nDeclaration of Citizenship\n\nUsed to begin the quest to obtain your own Citizen's Card from killing 10 Zombies."/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="quest_whiteRiverCitizen3"/>
