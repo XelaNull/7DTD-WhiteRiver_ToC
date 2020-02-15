@@ -19,6 +19,7 @@
 			<property name="CustomIconTint" value="a4ff84"/>
 			<property name="Extends" value="questMaster"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="DescriptionKey" value="whiteriverToC_DeclarationDesc"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -33,6 +34,7 @@
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Weight" value="0"/>
+			<property name="DescriptionKey" value="whiteriverToC_CitizenDesc"/>
 			<property name="Group" value="Special Items"/>
 		</item>
 		
@@ -42,6 +44,7 @@
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Weight" value="0"/>
+			<property name="DescriptionKey" value="whiteriverToC_Citizen100Desc"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -56,6 +59,7 @@
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Weight" value="0"/>
+			<property name="DescriptionKey" value="whiteriverToC_VeteranDesc"/>			
 			<property name="Group" value="Special Items"/>
 		</item>
 	</append>

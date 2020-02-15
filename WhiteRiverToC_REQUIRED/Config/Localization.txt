@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+whiteriverToC_DeclarationDesc,items,Item,,,"White River Tools of Citizenship\n\nDeclaration of Citizenship\n\nUsed to begin the quest to obtain your own Citizen's Card from killing 10 Zombies.",,,,,,,,,,,,,,
+whiteriverToC_CitizenDesc,items,Item,,,"White River Citizen's Card\n\nUsed to prove your membership into the settlement and obtain settlement quests.",,,,,,,,,,,,,,
+whiteriverToC_Citizen100Desc,items,Item,,,"A quest to kill 100 zombies in exchange for a White River settlement Veterans Citizen card.",,,,,,,,,,,,,,
+whiteriverToC_VeteranDesc,items,Item,,,"White River Veteran Vitizen's Card\n\nUsed to prove your veteran membership into the settlement and obtain settlement veteran quests.",,,,,,,,,,,,,,
+quest_whiteRiverCitizen2,Quest,Quest Info,,,"Declare your intention to join the White River settlement by crafting a +Declaration of Citizenship",,,,,,,,,,,,,,
+quest_whiteRiverCitizen3,Quest,Quest Info,,,"Prove your worth to the White River settlement by laying to rest 10 zombies.",,,,,,,,,,,,,,
+quest_WhiteRiverKill100Z,Quest,Quest Info,,,"Prove your worth as a veteran citizen, by helping to clear the settlement land of 100 zombies.",,,,,,,,,,,,,,
+blockToC_sealedCitizenCrateDesc,blocks,Block,,,"A sealed crate of goods reserved for the citizens of White River.",,,,,,,,,,,,,,
