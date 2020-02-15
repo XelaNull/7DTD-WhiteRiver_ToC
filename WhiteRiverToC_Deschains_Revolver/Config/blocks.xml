@@ -1,41 +1,20 @@
 <configs>
 	<append xpath="/blocks">
-		<block name="blockToC_sealedDeschainsCrate">
-			<property name="CustomIcon" value="cntShippingCrateHero"/>
-			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="DescriptionKey" value="blockToC_sealedDeschainsCrateDesc"/>
-			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="blockToC_DeschainsCrate"/>
-			<property name="FilterTags" value="floot"/>
-		</block>	
-		<block name="blockToC_DeschainsCrate">
-			<property name="CustomIcon" value="cntCardboardBox"/>
-			<property name="CustomIconTint" value="333333"/>
-			<property name="DescriptionKey" value="blockToC_DeschainsCrateDesc"/>
-			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="141"/>
-		</block>
-		
-		
-		<!-- BACKWARDS COMPATIBILITY -->
-		<!-- REMOVE AFTER JUNE 2020 -->
 		<block name="+Sealed Deschain's Crate">
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
-			<property name="DescriptionKey" value="blockToC_sealedDeschainsCrateDesc"/>
 			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="blockToC_DeschainsCrate"/>
+			<property name="DowngradeBlock" value="+Deschain's Crate"/>
+			<property name="DisplayInfo" value"A sealed crate offered to you along with Roland Deschain's revolver"/>
+			<property name="Description" value"A sealed crate offered to you along with Roland Deschain's revolver2"/>
 			<property name="FilterTags" value="floot"/>
 		</block>	
-		
 		<block name="+Deschain's Crate">
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
-			<property name="DescriptionKey" value="blockToC_DeschainsCrateDesc"/>
 			<property name="Extends" value="cntGarageStorage"/>
 			<property name="LootList" value="141"/>
-		</block>
-			
+		</block>	
 	</append>	
 </configs>	
 	
