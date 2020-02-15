@@ -6,7 +6,7 @@
 				<property name="offer" value="There is a crate of digging tools a woman named Ivanka left at the Trader some time ago and seems to have abandoned. The tools are being given to White Run citizens in exchange for gathered Iron to build this shoddy wall. We intend to make the zombies pay for it! You can have a pair of these tools once you provide the trader with 600 Iron + 1 Iron Shovel + 1 Iron Pickaxe" />
 				<property name="name" value="Quest to obtain Ivanka's Flaming Dig Tools" />
 				<property name="subtitle" value="Craft the +Writ Of Ivanka" />
-				<property name="description" value="Gather 600 Iron + 1 Iron Shovel + 1 Iron Pickaxe to receive Ivanka's Iron Shovel & Pickaxe." />
+				<property name="description" value="Gather 600 Iron + 1 Iron Shovel + 1 Iron Pickaxe to receive Ivanka's Iron Shovel and Pickaxe." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
@@ -54,7 +54,7 @@
 				<property name="offer" value="The shoddy wall has fallen down on the zombie side again. Help the settlement to repair it by gathering 1000 Forged Iron + 50 Animal Fat + 5 Steel Shovels + 5 Steel Pickaxes." />
 				<property name="name" value="Veteran Quest to obtain Ivanka's Flaming Dig Tools" />
 				<property name="subtitle" value="Craft the +Veteran Writ Of Ivanka" />
-				<property name="description" value="Gather 1000 Forged Iron + 50 Animal Fat + 5 Steel Shovels + 5 Steel Pickaxes to obtain your Ivanka's Steel Shovel & Pickaxe" />
+				<property name="description" value="Gather 1000 Forged Iron + 50 Animal Fat + 5 Steel Shovels + 5 Steel Pickaxes to obtain your Ivanka's Steel Shovel and Pickaxe" />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
@@ -75,7 +75,7 @@
 				<property name="offer" value="Thanks for your help building the wall. THIS time, it will stay up, promise! Collect your reward from the Trader."/>
 				<property name="name" value="Vet. Reward of Ivanka's Flaming Tools" />
 				<property name="subtitle" value="Vet. Reward of Ivanka's Flaming Tools" />
-				<property name="description" value="Return to the Trader to obtain your Ivanka's Steel Shovel & Pickaxe." />
+				<property name="description" value="Return to the Trader to obtain your Ivanka's Steel Shovel and Pickaxe." />
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
