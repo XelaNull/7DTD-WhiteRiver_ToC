@@ -2,7 +2,7 @@
 	<append xpath="/items">
 
     <!-- Quest & Writ for Kuva's Red Armor -->
-		<item name="Kuva's Red Armor Quest"> 
+		<item name="+Kuva's Red Armor Quest"> 
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
