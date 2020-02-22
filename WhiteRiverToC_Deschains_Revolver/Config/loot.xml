@@ -14,14 +14,14 @@
 	
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
 		<lootgroup name="groupBooksDarkTower">
-			<item name="Dark Tower: The Gunslinger" prob=".2"/>
+			<item name="Dark Tower: The Gunslinger" prob=".05"/>
 			<item name="Dark Tower: The Drawing Of The Three"/>
-			<item name="Dark Tower: The Drawing Of The Three"/>
+			<item name="Dark Tower: The Waste Lands"/>
 			<item name="Dark Tower: The Wizard And Glass"/>
 			<item name="Dark Tower: Wind Through The Keyhole"/>
 			<item name="Dark Tower: Wolves Of The Calla"/>
 			<item name="Dark Tower: Song Of Suzannah"/>
-			<item name="The Dark Tower" prob=".1" />
+			<item name="The Dark Tower" prob=".05" />
 		</lootgroup>
 	</insertAfter>
 			
