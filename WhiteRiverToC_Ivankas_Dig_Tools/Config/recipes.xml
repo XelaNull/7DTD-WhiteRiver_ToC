@@ -18,8 +18,8 @@
 		<recipe name="+Veteran Writ Of Ivanka" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="resourceForgedIron" count="1000"/>
 			<ingredient name="resourceAnimalFat" count="50"/>
-			<ingredient name="meleeToolShovelSteel" count="5"/>
-			<ingredient name="meleeToolPickaxeSteel" count="5"/>
+			<ingredient name="meleeToolShovelSteel" count="2"/>
+			<ingredient name="meleeToolPickaxeSteel" count="2"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 	</append>
