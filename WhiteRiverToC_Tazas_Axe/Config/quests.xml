@@ -13,7 +13,7 @@
 				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="resourceRockSmall" value="400" phase="1" />
-				<objective type="FetchKeep" id="meleeToolStoneAxe" value="20" phase="1" />
+				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Taza" value="1" phase="2" />
 				
@@ -38,7 +38,7 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
-				<reward type="Item" id="meleeToolStoneAxeTazas" value="2-4" />	
+				<reward type="Item" id="meleeToolRepairT0TazasStoneAxe" value="2-4" />	
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
 				<reward type="Item" id="modMeleeWoodSplitterSchematic" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-60" />
@@ -60,7 +60,7 @@
 	
 				<objective type="FetchKeep" id="resourceRockSmall" value="4000" phase="1" />
 				<objective type="FetchKeep" id="resourceYuccaFibers" value="200" phase="1" />
-				<objective type="FetchKeep" id="meleeToolStoneAxe" value="20" phase="1" />
+				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Veteran Writ Of Taza" value="1" phase="2" />	
 				
@@ -85,7 +85,7 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
-				<reward type="Item" id="meleeToolStoneAxeTazas" value="4-6" />	
+				<reward type="Item" id="meleeToolRepairT0TazasStoneAxe" value="4-6" />	
 				<reward type="Item" id="ammo9mmBulletHP" value="50-150" />
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
 				<reward type="Item" id="gunSMG5" value="3-5" />
