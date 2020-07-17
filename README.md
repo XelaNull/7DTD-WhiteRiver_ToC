@@ -40,3 +40,8 @@ All quests are designed to be repeatable in case of loss of equipment or to try 
 #### Installation
 
 Download the ZIP file and extract. Open the ONE folder and you will find NINE folders inside. Copy the NINE folders to your 7 Days to Die Mods folder.
+
+### ACKNOWLEDGEMENTS:
+
+- Wyldwitchyka :: For the addition of the Jason's machete quest
+- morggin :: For the name and lore behind BlackBart, for the Bambi Terminator Crossbow, and for the idea of an Elite level set of quests
