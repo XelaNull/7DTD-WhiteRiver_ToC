@@ -63,5 +63,30 @@
 			<property name="Group" value="Special Items"/>
 			<property name="Description" value="White River Veteran Vitizen's Card\n\nUsed to prove your veteran membership into the settlement and obtain settlement veteran quests."/>
 		</item>
+		
+		<item name="+White River Elite 1000Z Challenge">
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="660000"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+			<property name="Description" value="A quest to kill 1000 zombies in exchange for a White River settlement Elite Citizen card."/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Kill 1000 Zombies"/>
+				<property name="Delay" value="0"/>
+			</property>	
+		</item>
+		
+		<item name="+White River Elite Citizen Card">
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="CustomIconTint" value="5f40c4"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+			<property name="Description" value="White River Elite Citizen's Card\n\nUsed to prove your elite membership into the settlement and obtain settlement elite quests."/>
+		</item>
 	</append>
 </configs>

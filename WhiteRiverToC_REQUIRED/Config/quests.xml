@@ -52,7 +52,7 @@
 						
 			<quest id="+Kill 100 Zombies">
 				<property name="group_name" value="Become a White River Veteran Citizen" />
-				<property name="offer" value="White River settlements has a few veteran citizens cards left, to those with an extra qualification. Help to make the settlement safer through ridding the area of 100 zombies, and you can earn one of these highly sought-after veterans cards. This opens the door to allow you to pursue higher quality tools and equipment with the settlement." />
+				<property name="offer" value="White River settlements has some veteran citizens cards left, to those with an extra qualification. Help to make the settlement safer through ridding the area of 100 zombies, and you can earn one of these highly sought-after veterans cards. This opens the door to allow you to pursue higher quality tools and equipment with the settlement." />
 				<property name="name" value="Prove your worth as a veteran citizen" />
 				<property name="subtitle" value="Prove your worth as a veteran citizen" />
 				<property name="description" value="Prove your worth to the White River settlement by helping to clear the land of 100 zombies." />
@@ -72,6 +72,30 @@
 				<reward type="SkillPoints" value="2" />	
 				<reward type="Item" id="+White River Veteran Citizen Card" value="1" />		
 				<reward type="Item" id="+Sealed Citizen Crate" value="2" />
+			</quest>
+			
+			<quest id="+Kill 1000 Zombies">
+				<property name="group_name" value="Become a White River Elite Citizen" />
+				<property name="offer" value="White River settlements has few elite citizens cards left. They are being given only to those with outstanding qualifications. Continue your efforts to help to make the settlement safer through exterminating 1000 zombies, and you can earn one of these legendary elite cards. The elite citizen card provides you opportunity to pursue only the best quality tools and equipment with the settlement." />
+				<property name="name" value="Prove your worth as an elite citizen" />
+				<property name="subtitle" value="Prove your worth as a elite citizen" />
+				<property name="description" value="Prove your elite status with the White River settlement by exterminating 1000 zombies." />
+				<property name="icon" value="ui_game_symbol_zombie" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+				
+				<objective type="ZombieKill" value="1000" phase="1" />
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>				
+				
+				<reward type="Exp" value="12000" />
+				<reward type="SkillPoints" value="3" />	
+				<reward type="Item" id="+White River Elite Citizen Card" value="1" />		
+				<reward type="Item" id="+Sealed Elite Citizen Crate" value="3" />
 			</quest>
 	</append>
 </config>

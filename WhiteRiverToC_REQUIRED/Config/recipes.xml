@@ -6,6 +6,10 @@
 		<recipe name="+White River Veteran 100Z Challenge" count="1" craft_time = "120" craft_exp_gain="10000" >
 			<ingredient name="+White River Citizen Card" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
-		</recipe>			
+		</recipe>	
+		<recipe name="+White River Elite 1000Z Challenge" count="1" craft_time="240" craft_exp_gain="12000" >
+			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>		
 	</append>
 </configs>
