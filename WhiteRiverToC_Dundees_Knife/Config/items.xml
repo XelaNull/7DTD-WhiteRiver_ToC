@@ -32,7 +32,7 @@
 		<item name="Dundee's Hunting Knife"> <!-- T2 Blades -->
 			<property name="Tags" value="knife,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
-			<property name="CustomIcon" value="meleeToolKnifeIron"/>
+			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="HoldType" value="36"/>
@@ -44,7 +44,7 @@
 			<property name="EconomicValue" value="500"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
 			<property name="SoundDestroy" value="wooddestroy1"/>
-			<property name="UnlockedBy" value="perkDeepCuts,meleeToolKnifeIronSchematic"/>
+			<property name="UnlockedBy" value="perkDeepCuts,meleeWpnBladeT1HuntingKnifeSchematic"/>
 			<property name="ShowQuality" value="true"/>
 		
 			<property class="Action0">
@@ -91,8 +91,8 @@
 				</property>
 			</property>
 		
-			<effect_group name="meleeToolKnifeIron">
-				<passive_effect name="EntityDamage" operation="base_set" value="13"/> <!-- meleeToolKnifeIron -->
+			<effect_group name="meleeWpnBladeT1HuntingKnife">
+				<passive_effect name="EntityDamage" operation="base_set" value="13"/> <!-- meleeWpnBladeT1HuntingKnife -->
 				<passive_effect name="BlockDamage" operation="base_set" value="9"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="150"/><!-- Gazz change 60 to 120 power attacks are fine as is -->
 				<passive_effect name="StaminaLoss" operation="base_set" value="4" tags="primary"/>

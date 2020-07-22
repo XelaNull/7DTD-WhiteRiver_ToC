@@ -1,10 +1,10 @@
 <configs>
 	<append xpath="lootcontainers">
-		<lootcontainer id="142" count="2,5" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="questTierFlexibleTemplate" destroy_on_close="true">
+		<lootcontainer id="154" count="2,5" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="modMeleeT2" count="0,1" prob="0.2"/>
-			<item group="books" count="0,1" prob="0.4"/>
-			<item group="rareBooks" count="0,1" prob="0.2"/>
-			<item group="groupQuestAmmo" count="2"/>
+			<item group="perkBooks" count="0,1" prob="0.2"/>
+			<item group="groupAmmoRegular" count="2"/>
+			<item group="groupAmmoAdvanced" count="1"/>
 			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
 		</lootcontainer>
 	</append>		
