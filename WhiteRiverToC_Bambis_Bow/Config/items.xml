@@ -57,7 +57,7 @@
 		<item name="Bambis Killer Compound Bow"> <!-- T3 bows -->
 			<property name="Tags" value="weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedBow"/>
-			<property name="CustomIcon" value="gunBowCompound"/>
+			<property name="CustomIcon" value="gunBowT3CompoundBow"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 
 			<property name="CustomIconTint" value="cc3300"/>
@@ -146,7 +146,7 @@
 		<item name="Bambis Killer Compound Crossbow"> <!-- T3 bows -->
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedBow"/>
-			<property name="CustomIcon" value="gunCrossbowCompound"/>
+			<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="DescriptionKey" value="gunCrossbowIronDesc"/>
 			<property name="HoldType" value="69"/>
@@ -256,7 +256,7 @@
 		<item name="Bambis Terminator Crossbow"> <!-- T3 bows -->
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedBow"/>
-			<property name="CustomIcon" value="gunCrossbowCompound"/>
+			<property name="CustomIcon" value="gunBowT3CompoundBow"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="DescriptionKey" value="gunCrossbowIronDesc"/>
 			<property name="HoldType" value="69"/>
