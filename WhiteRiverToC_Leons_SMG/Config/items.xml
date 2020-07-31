@@ -87,9 +87,9 @@
 		</item>
 		
 		<item name="Leon's Degraded SMG">
-			<property name="CustomIcon" value="gunSMG5"/> 
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/> 
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Extends" value="gunSMG5"/>
+			<property name="Extends" value="gunHandgunT3SMG5"/>
 			<property name="TintColor" value="155,0,0"/>
 			<property name="EconomicValue" value="1100"/>		
 			<effect_group name="Base Effects"> <!-- MP5 -->
@@ -123,9 +123,9 @@
 		</item>		
 	
 		<item name="Leon's SMG">
-			<property name="CustomIcon" value="gunSMG5"/> 
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/> 
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Extends" value="gunSMG5"/>
+			<property name="Extends" value="gunHandgunT3SMG5"/>
 			<property name="TintColor" value="91,0,0"/>
 			<property name="EconomicValue" value="1400"/>		
 			<property name="DegradationBreaksAfter" value="true"/>
