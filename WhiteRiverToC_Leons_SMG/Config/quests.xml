@@ -12,7 +12,7 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="gunPistol" value="5" phase="1" />
+				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Writ Of Leon" value="1" phase="2" />			
 				<reward type="Exp" value="500" />		
@@ -99,7 +99,7 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 	
-				<objective type="FetchKeep" id="gunPistol" value="10" phase="1" />
+				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="10" phase="1" />
 				<objective type="FetchKeep" id="gunHandgunT3SMG5" value="5" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="+Veteran Writ Of Leon" value="1" phase="2" />		

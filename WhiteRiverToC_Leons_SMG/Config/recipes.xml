@@ -5,7 +5,7 @@
 			<ingredient name="+White River Citizen Card" count="1"/>
 		</recipe>
 		<recipe name="+Writ Of Leon" count="1" craft_time = "90" craft_exp_gain="10000" >
-			<ingredient name="gunPistol" count="5"/>
+			<ingredient name="gunHandgunT1Pistol" count="5"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		<recipe name="+Writ Of Repaired Leon" count="1" craft_time = "90" craft_exp_gain="10000" >
@@ -20,7 +20,7 @@
 			<ingredient name="Leon's Degraded SMG" count="1"/>
 		</recipe>
 		<recipe name="+Veteran Writ Of Leon" count="1" craft_time = "300" craft_exp_gain="20000" >
-			<ingredient name="gunPistol" count="10"/>
+			<ingredient name="gunHandgunT1Pistol" count="10"/>
 			<ingredient name="gunHandgunT3SMG5" count="5"/>		
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>
