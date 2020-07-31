@@ -21,7 +21,7 @@
 		</recipe>
 		<recipe name="+Veteran Writ Of Leon" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="gunPistol" count="10"/>
-			<ingredient name="gunSMG5" count="5"/>		
+			<ingredient name="gunHandgunT3SMG5" count="5"/>		
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>
 	</append>

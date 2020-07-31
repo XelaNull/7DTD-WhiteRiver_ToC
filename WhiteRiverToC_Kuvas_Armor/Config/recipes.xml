@@ -75,7 +75,7 @@
       <ingredient name="Kuva's Blue Twine" count="1"/>
       <ingredient name="resourceGlue" count="1"/>
       <ingredient name="armorLeatherGloves" count="1"/>
-      <ingredient name="meleeKnucklesSteelParts" count="1"/>
+      <ingredient name="meleeWpnKnucklesT3SteelKnuckles" count="1"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceGlue"/>
 			</effect_group>
