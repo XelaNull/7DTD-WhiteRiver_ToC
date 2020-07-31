@@ -6,8 +6,7 @@
 			<item name="45LC Silver Bullet of Gilead" count="12,96"/>
 			<item name="45LC Gold Bullet of Gilead" count="6,48"/>
 
-			<item group="books" count="1,2" prob="0.8"/>
-			<item group="rareBooks" count="0,1" prob="0.6"/>
+			<item group="rareBooks" count="1,2" prob="0.7"/>
 			<item group="groupTreasureMaps" count="0,1" prob="0.1"/>
 		</lootcontainer>
 	</append>
