@@ -24,7 +24,7 @@
 		</lootgroup>
 	</insertAfter>
 			
-	<append xpath="/lootcontainers/lootgroup[@name='booksNoFiller']">
-		<item group="groupBooksDarkTower" count="1" prob="0.15"/>
+	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
+		<item group="groupBooksDarkTower" count="1" prob="15"/>
 	</append>
 </configs>	
