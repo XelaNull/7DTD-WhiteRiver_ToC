@@ -114,6 +114,12 @@
     		<objective type="TreasureChest">
     			<property name="block" value="treasureKuvaChest"/>
     			<property name="distance" value="2500-3750"/>
+					<property name="default_radius" value="9"/>
+					<property name="nav_object" value="treasure" />
+					<property name="direct_nav_object" value="treasure_direct" />
+					<property name="blocks_per_reduction" value="10" />
+						<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+					<property name="radius_reduction_sound" value="ui_radius_shrink" />
     		</objective>
         <reward type="Quest" id="+Kuva's Secret Recipe Challenge"/>	
 				<reward type="Item" id="Kuva's Blue Silent Liner" value="1-3" />
