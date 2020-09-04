@@ -19,6 +19,7 @@
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>	
 			<property class="Action0">
@@ -37,8 +38,8 @@
 			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="HoldType" value="17"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/fireaxePrefab.prefab"/>
-			<property name="Material" value="Mmetal"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+			<property name="Material" value="MmeleeToolAllSteel"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>

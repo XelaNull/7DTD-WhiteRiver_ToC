@@ -19,6 +19,7 @@
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>	
 			<property class="Action0">
@@ -47,6 +48,7 @@
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">

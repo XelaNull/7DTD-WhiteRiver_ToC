@@ -22,6 +22,7 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Weight" value="0"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>	
 			<property class="Action0">
