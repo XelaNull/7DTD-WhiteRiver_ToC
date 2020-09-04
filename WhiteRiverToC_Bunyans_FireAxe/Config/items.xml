@@ -38,7 +38,7 @@
 			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="HoldType" value="17"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/fireaxe_ironPrefab.prefab"/>
 			<property name="Material" value="MmeleeToolAllSteel"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="DegradationBreaksAfter" value="false"/>
