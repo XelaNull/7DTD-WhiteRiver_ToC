@@ -1,0 +1,159 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="+Black Bart's Flaming Dig Tools Quest"> 
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Quest For Black Bart's Flaming Dig Tools"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>			
+		</item>	
+		
+			
+		<item name="+Writ Of Black Bart">
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Group" value="Special Items"/>
+			<property name="SellableToTrader" value="false"/>	
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Reward of Black Bart's Treasure Map"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>	
+		</item>	
+		
+		<item name="Black Bart's Treasure Map">
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="map_Black_Bart"/>
+			</property>
+		</item>		
+
+
+		<item name="Black Bart's Steel Shovel"> <!-- T3 Tools -->
+			<property name="Extends" value="meleeToolShovelT1IronShovel"/>
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/> 
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+
+			<property name="Tags" value="melee,grunting,medium,tool,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="1200"/>
+			<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
+		<!--	<property name="UnlockedBy" value="meleeToolSteelSetSchematic"/>-->
+		
+			<effect_group name="Black Bart's Steel Shovel">
+				<passive_effect name="EntityDamage" operation="base_set" value="19"/> <!-- meleeToolShovelSteel -->
+				<passive_effect name="BlockDamage" operation="base_set" value="80"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="4"/>
+		
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
+		
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.25"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> <!-- random DegMax -->
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.03,.1"/> <!-- random APM -->
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.03,.03"/> <!-- random StamLoss -->
+		
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.2" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="25" tags="secondary"/>
+			</effect_group>
+		</item>
+			
+		<item name="Black Bart's Steel Pickaxe"> <!-- T3 Tools -->
+			<property name="Extends" value="meleeToolPickT1IronPickaxe"/>
+			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/> 
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="4"/>
+			<property name="Meshfile" value="#Other/Items?Tools/pickaxe_steelPrefab.prefab"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="900"/>
+			<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
+			<!--<property name="UnlockedBy" value="meleeToolSteelSetSchematic"/>-->
+			<property class="Action0">
+				<property name="GrazeStart" value=".5"/>
+				<property name="GrazeEnd" value=".6"/>
+				<property name="SwingDegrees" value="65"/>
+				<property name="SwingAngle" value="180"/>
+				<property name="UseGrazingHits" value="true"/>
+			</property>
+			<property class="Action1">
+				<property name="UsePowerAttackAnimation" value="true"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".4"/>
+				<property name="GrazeEnd" value=".48"/>
+				<property name="SwingDegrees" value="110"/>
+				<property name="SwingAngle" value="90"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>
+			<effect_group name="Black Bart's Steel Pickaxe">
+				<passive_effect name="EntityDamage" operation="base_set" value="28"/> <!-- meleeToolPickaxeSteel -->
+				<passive_effect name="BlockDamage" operation="base_set" value="80"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/><!-- Gazz change 47 to 55 -->
+				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.9"/>
+		
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
+		
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.10,.22"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.05" tags="Harvesting"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.10,.25"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.9" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> <!-- random DegMax -->
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.02,.1"/> <!-- random APM -->
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.02,.1"/> <!-- random StamLoss -->
+		
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+			</effect_group>
+		
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.35" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.35" tags="secondary"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.2" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="24.1" tags="secondary"/>
+			</effect_group>
+		</item>
+
+
+	</append>
+</configs>

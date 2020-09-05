@@ -1,0 +1,194 @@
+<config>
+	<append xpath="/quests">
+    <!-- Quest 1: Turn in 5 Marksman Rifles and obtain Trigger Group -->
+    <!-- Quest 1 Reward: Pavlichenkos Trigger Group -->
+    <!-- Quest 1 Reward: Pavlichenkos Barrel Quest -->
+		<quest id="+Vet Quest For Pavlichenko Rifle">
+			<property name="group_name" value="quest_ToolsOfCitizenship" />
+			<property name="offer" value="The Trader has a stock of some parts to a Pavlichenko marksman rifle, but does not have all of the pieces. The Trader can point you in the direction, but it is you who must walk the path. Turn in 5 Marksman Rifles and receive a Pavlichenko Trigger Group." />
+			<property name="name" value="Quest to obtain Pavlichenko Trigger Group" />
+			<property name="subtitle" value="Obtain Pavlichenko Trigger Group" />
+			<property name="description" value="Gather 5 Marksman Rifles to obtain a Pavlichenko Trigger Group." />
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+			<property name="repeatable" value="true" />
+
+			<objective type="FetchKeep" id="gunRifleT2MarksmanRifle" value="5" phase="1" />
+			<objective type="Craft" id="+Writ Of Pavlichenko Trigger Group" value="1" phase="2" />		
+
+			<reward type="Exp" value="1000" />
+		</quest>
+      
+    <quest id="+Reward of Pavlichenko Trigger Group">
+      <property name="group_name" value="quest_ToolsOfCitizenship" />
+      <property name="offer" value="Return to the Trader to collect your reward of a Pavlichenko Trigger Group."/>
+      <property name="name" value="Reward of a Pavlichenko Trigger Group" />
+      <property name="subtitle" value="Reward of a Pavlichenko Trigger Group" />
+      <property name="description" value="Return to the Trader to collect the trigger group for you Pavlichenko Marksman rifle." />
+      <property name="icon" value="ui_game_symbol_map_trader" />
+      <property name="category_key" value="quest" />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+      <property name="repeatable" value="true" />
+
+      <objective type="Goto" id="trader" value="5" phase="2" />	
+      <objective type="InteractWithNPC">
+        <property name="phase" value="3" />
+      </objective>
+      
+      <reward type="Item" id="Pavlichenko Trigger Group" value="1" />
+      <reward type="Item" id="+Pavlichenko Barrel Quest" value="1" />
+      <reward type="Exp" value="1000" />
+      <reward type="SkillPoints" value="1" />				
+    </quest>
+      
+      
+
+    <!-- Quest 2: Dig up map_Pavlichenko_Barrel -->
+    <!-- Quest 2 Reward: Pavlichenkos Barrel -->
+    <!-- Quest 2 Reward: Pavlichenkos Stock Quest -->
+    <quest id="+Quest For Pavlichenko Barrel">
+      <property name="group_name" value="quest_ToolsOfCitizenship" />
+      <property name="offer" value="It is rumored that there is a cache of Pavlichenko rifle barrels buried in a chest. You are given a treasure map with a spot marked on it. Go dig it up, and see what you can find!" />
+      <property name="name" value="Quest to obtain a Pavlichenko Barrel" />
+      <property name="subtitle" value="Obtain a Pavlichenko Barrel" />
+      <property name="description" value="Go dig up the chest at the spot marked on the map, in hopes of finding a Pavlichenko marksman barrel." />
+      <property name="icon" value="ui_game_symbol_map_trader" />
+      <property name="category_key" value="quest" />
+      <property name="difficulty" value="easy" />
+      <property name="shareable" value="false" />
+      <property name="repeatable" value="true" />
+
+      <reward type="Item" id="Pavlichenko Barrel Treasure map" value="1" />
+      <reward type="Exp" value="1000" />
+    </quest>
+
+		<quest id="map_Pavlichenko_Barrel">
+			<property name="name" value="Dig up Pavlichenko Barrel"/>
+			<property name="subtitle" value="Locate Pavlichenko Barrel"/>
+			<property name="offer" value="Follow the pointers to dig up a treasure chest containing Pavlichenko marksman barrel."/>        
+			<property name="description" value="A map leading to a marksman quality barrel by Pavlichenko." />
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+	
+			<objective type="TreasureChest">
+				<property name="block" value="Pavlichenko_treasure1"/>
+				<property name="distance" value="1500-3750"/>
+				<property name="default_radius" value="9"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="10" />
+					<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+
+			<reward type="Item" id="Pavlichenko Barrel" value="1"/>
+			<reward type="Item" id="+Pavlichenko Stock Quest" value="1"/>
+			<reward type="Exp" value="2000"/>
+		</quest>  
+
+
+
+		<!-- Quest 3: Dig up Treasure of Pavlichenkos_Stock -->
+		<!-- Quest 3 Reward: Pavlichenko Stock -->
+		<!-- Quest 3 Reward: Assemble Pavlichenkos Rifle Quest -->
+		<quest id="+Quest For Pavlichenko Stock">
+			<property name="group_name" value="quest_ToolsOfCitizenship" />
+			<property name="offer" value="It is rumored that there is a cache of Pavlichenko stocks buried in a chest. You are given a treasure map with a spot marked on it. Go dig it up, and see what you can find!" />
+			<property name="name" value="Quest to obtain a Pavlichenko Stock" />
+			<property name="subtitle" value="Obtain a Pavlichenko Stock" />
+			<property name="description" value="Go dig up the chest at the spot marked on the map, in hopes of finding a Pavlichenko stock." />
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+			<property name="repeatable" value="true" />
+
+			<reward type="Item" id="Pavlichenko Stock Treasure map" value="1" />
+			<reward type="Exp" value="1000" />
+		</quest>
+
+		<quest id="map_Pavlichenko_Stock">
+			<property name="name" value="Dig up Pavlichenko Stock"/>
+			<property name="subtitle" value="Locate Pavlichenko Stock"/>
+			<property name="offer" value="Follow the pointers to dig up a treasure chest containing a Pavlichenko stock."/>        
+			<property name="description" value="A map leading to a Pavlichenko rifle stock." />
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+
+			<objective type="TreasureChest">
+				<property name="block" value="Pavlichenko_treasure2"/>
+				<property name="distance" value="1500-3750"/>
+				<property name="default_radius" value="9"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="10" />
+					<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+
+			<reward type="Item" id="Pavlichenko Stock" value="1"/>
+			<reward type="Item" id="+Assemble Pavlichenko Marksman Rifle Quest" value="1"/>
+			<reward type="Exp" value="2000"/>
+		</quest> 
+		
+
+		<!-- Quest 4: Assemble Pavlichenkos_Rifle -->
+		<!-- Quest 4 Reward: Pavlichenkos Rifle -->
+		<!-- Quest 4 Reward: Pavlichenkos_4x_Scope_Quest -->
+		<!-- Quest 4 Reward: Pavlichenkos_4x_Scope_Quest -->
+		<quest id="+Quest For Assembling Pavlichenko Rifle">
+			<property name="group_name" value="quest_ToolsOfCitizenship" />
+			<property name="offer" value="Assemble the pieces of your Pavlichenko Marksman Rifle." />
+			<property name="name" value="Quest to assemble your Pavlichenko Rifle" />
+			<property name="subtitle" value="Assemble your Pavlichenko Rifle" />
+			<property name="description" value="Assemble the pieces you've collected to create your own Pavlichenko Marksman Rifle." />
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+			<property name="repeatable" value="true" />
+
+			<objective type="FetchKeep" id="Pavlichenko Trigger Group" value="1" phase="1" />
+			<objective type="FetchKeep" id="Pavlichenko Stock" value="1" phase="1" />
+			<objective type="FetchKeep" id="Pavlichenko Barrel" value="1" phase="1" />
+			<objective type="FetchKeep" id="gunRifleT1HuntingRifleParts" value="20" phase="1" />
+			
+			<objective type="Craft" id="+Writ Of Pavlichenko Marksman Rifle" value="1" phase="2" />	
+
+			<reward type="Exp" value="3000" />
+		</quest>
+		<quest id="+Reward of Pavlichenko Marksman Rifle">
+			<property name="group_name" value="quest_ToolsOfCitizenship" />
+			<property name="offer" value="Return to the Trader to collect your reward of a Pavlichenko Marksman Rifle."/>
+			<property name="name" value="Reward of a Pavlichenko Marksman Rifle" />
+			<property name="subtitle" value="Reward of a Pavlichenko Marksman Rifle" />
+			<property name="description" value="Return to the Trader to collect your Pavlichenko Marksman rifle." />
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="shareable" value="false" />
+			<property name="repeatable" value="true" />
+
+			<objective type="Goto" id="trader" value="5" phase="1" />	
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2" />
+			</objective>
+			
+			<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
+			<reward type="Item" id="Pavlichenko Marksman Rifle" value="5-6" />
+
+			<reward type="Exp" value="20000" />
+			<reward type="SkillPoints" value="3" />				
+		</quest>
+		
+  </append>
+</config>

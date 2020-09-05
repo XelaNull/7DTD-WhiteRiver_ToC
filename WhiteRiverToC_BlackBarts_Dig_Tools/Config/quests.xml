@@ -1,0 +1,96 @@
+<config>
+	<append xpath="/quests">
+
+			<quest id="+Quest For Black Bart's Flaming Dig Tools">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader has an old weathered parchment tube that is claimed to be a map to the last great haul of the infamous stage-coach robber, Black Bart. It is offered to you in exchange for some resources and common digging tools to help the community procure more resources. Provide the trader with 600 Iron + 1 Iron Shovel + 1 Iron Pickaxe." />
+				<property name="name" value="Quest to obtain Black Bart's Treasure Map" />
+				<property name="subtitle" value="Craft the +Writ Of Black Bart" />
+				<property name="description" value="Gather 600 Iron + 1 Iron Shovel + 1 Iron Pickaxe to receive a treasure map." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+	
+				<objective type="FetchKeep" id="resourceScrapIron" value="600" phase="1" />
+				<objective type="FetchKeep" id="meleeToolShovelT1IronShovel" value="1" phase="1" />
+				<objective type="FetchKeep" id="meleeToolPickT1IronPickaxe" value="1" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="+Writ Of Black Bart" value="1" phase="2" />		
+
+				<reward type="Exp" value="5000" />
+			</quest>
+
+			<quest id="+Reward of Black Bart's Treasure Map">
+				<property name="offer" value="Travel to the Trader and collect Black Bart's Treasure Map."/>
+				<property name="name" value="Reward of Black Bart's Treasure Map" />
+				<property name="subtitle" value="Reward of Black Bart's Treasure Map" />
+				<property name="description" value="Return to the Trader to receive your Treasure Map Signed by Black Bart himself." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="false" />
+
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>
+				
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="Black Bart's Treasure Map" value="1" />
+				<reward type="Item" id="pouredConcreteBlock" value="20-70" />	
+				<reward type="Exp" value="3000" />
+				<reward type="SkillPoints" value="1" />			
+			</quest>
+			
+			<quest id="map_Black_Bart">
+				<property name="name" value="Dig up Black Bart's Treasure"/>
+				<property name="subtitle" value="Dig up Black Bart's Treasure"/>
+				<property name="description" value="A map leading to Black Bart's buried treasure." />
+				<property name="icon" value="ui_game_symbol_map"/>
+				<property name="repeatable" value="true"/>
+				<property name="category_key" value="treasure"/>
+				<property name="offer" value="The Trader hands you an old dusty scroll, which you unravel to see is a treasure map with a poem enscribed: There comes a quest if you’ve the spine; And will not piss your britches. Matchless tools are yours to find, The means to reach such riches. Listen well for whispered clues; And seek with all your wit. Forgotten treasure go exhume, The means for more lie with it. Wall and rock stand not so mighty; Gold and jewels lie not so far. Do your labors swift and nightly, Till your pockets shine like stars. Be not fools and use these tools for honor and for riches. Use them well or go to hell, you fine-haired sons of bitches."/>        
+				<property name="difficulty" value="hard"/>
+				<property name="shareable" value="false"/>
+		
+				<objective type="TreasureChest">
+					<property name="block" value="Black_Barts_Coffin"/>
+					<property name="distance" value="50-100"/>
+					<property name="default_radius" value="9"/>
+	        <property name="nav_object" value="treasure" />
+	        <property name="direct_nav_object" value="treasure_direct" />
+	        <property name="blocks_per_reduction" value="10" />
+	          <!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+	        <property name="radius_reduction_sound" value="ui_radius_shrink" />
+				</objective>
+
+				<reward type="Quest" id="+Black Bart's Tool Challenge"/>	
+				<reward type="Exp" value="5000"/>
+			</quest> 
+			
+			<quest id="+Black Bart's Tool Challenge">
+				<property name="name" value="Kill the Zombie Embodiement of Black Bart"/>
+				<property name="subtitle" value="Kill the Zombie Embodiement of Black Bart"/>
+				<property name="offer" value="Uh oh! It appears the reanimated corpse of Black Bart has to reclaim his treasure!"/>        
+				<property name="description" value="Kill Black Bart" />
+				<property name="icon" value="ui_game_symbol_zombie"/>
+				<property name="repeatable" value="true"/>
+				<property name="category_key" value="challenge"/>
+				<property name="difficulty" value="hard"/>
+		
+				<action type="SpawnEnemy" id="zombieOldTimerRadiated" value="1" phase="1"/>
+				<objective type="ZombieKill" id="zombieOldTimerRadiated" value="1" phase="1"/>
+
+				<reward type="Exp" value="10000"/>
+				<reward type="Item" id="Black Bart's Steel Shovel" value="5-6" count="1"/>
+				<reward type="Item" id="Black Bart's Steel Pickaxe" value="5-6" count="1"/>
+				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+				<reward type="SkillPoints" value="1" />      
+			</quest> 
+					
+	</append>
+</config>
