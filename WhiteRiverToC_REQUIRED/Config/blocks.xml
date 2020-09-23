@@ -13,7 +13,7 @@
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="147"/>
+			<property name="LootList" value="165"/>
 		</block>	
 		<block name="+Sealed Elite Citizen Crate">
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
@@ -27,7 +27,7 @@
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="148"/>
+			<property name="LootList" value="166"/>
 		</block>	
 	</append>	
 </configs>	

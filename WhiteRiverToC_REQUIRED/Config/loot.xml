@@ -2,7 +2,7 @@
 	<append xpath="lootcontainers">
 		<!-- This section is to ensure if the player drops the sealed citizen crate on the ground and destroys it, at least some items will drop from it -->
 		<!-- This section won't be used unless a line is uncommented in quests.xml -->
-		<lootcontainer id="147" count="5,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="165" count="5,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
 			<item group="bicycleParts" count="1,2"/>
 			<item group="groupArmorT0" count="0,2"/>
@@ -11,7 +11,7 @@
 			<item group="groupAmmoRegular"/>
 		</lootcontainer>
 		
-		<lootcontainer id="148" count="8,10" size="6,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="166" count="8,10" size="6,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
 			<item group="bicycleParts" count="1,3"/>
 			<item group="groupArmorT2" count="0,2"/>

@@ -85,7 +85,7 @@
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
-				<reward type="Item" id="meleeToolRepairT0TazasStoneAxe" value="4-6" />	
+				<reward type="Item" id="meleeToolRepairT0TazasStoneAxe" value="5-6" />	
 				<reward type="Item" id="ammo9mmBulletHP" value="50-150" />
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
 				<reward type="Item" id="gunSMG5" value="3-5" />
