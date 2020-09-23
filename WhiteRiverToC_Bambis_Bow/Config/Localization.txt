@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+q_ForestPrinceDesc,items,Quest - Note,,,A quest that leads you deep into the forest to obtain the famed compound bow of the Forest Prince.,,,,,,,,,,,,,,,
+q_ForestPrinceWritDesc,items,Quest - Note,,,Proof that you've earned your right to the famed Forest Prince's compound bow.,,,,,,,,,,,,,,,

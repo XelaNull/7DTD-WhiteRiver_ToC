@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="White River Tools of Citizenship - Taza's Axe" />
-		<Description value="Gather tons of stone and craft a bunch of Stone Axes to obtain a Taza's Axe." />
+		<Name value="White River Tools of Citizenship - Pavlichenko's Rifle" />
+		<Description value="Gather the pieces to the famed Pavlichenko Rifle." />
 		<Author value="Loosely derived from Royal Deluxe Vanilla+ Quests Modlet by ShoudenKalferas" />
-		<Version value="A18.3_1.7c" />	
+		<Version value="A19.1_1.0" />	
 		<Website value="https://7daystodie.com/forums/showthread.php?111233-White-River-Tools-Of-Citizenship" />		
 	</ModInfo>
 </xml>

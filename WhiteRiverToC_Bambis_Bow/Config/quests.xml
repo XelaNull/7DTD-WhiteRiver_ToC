@@ -98,7 +98,7 @@
 			</quest>
 			
 			
-			<quest id="+Elite Quest For Forest Prince Compound Bow">
+			<quest id="+Forest Prince Bow Elite Quest">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
 				<property name="offer" value="The Trader is offering a rare opportunity. If you can provide a boost to the inventory for their bow-making class, they will give you the Legndary Bambi's Terminator Crossbow(From the Giftshronk) in exchange for your assistance. Gather 12000 Wood + 100 Animal Fat, Craft 30 Compound Bows" />
 				<property name="name" value="Elite Quest to obtain the Forest Prince Compound Bow" />

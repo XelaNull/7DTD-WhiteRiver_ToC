@@ -22,11 +22,11 @@
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>			
 		
-		<recipe name="+Bambi's Terminator Bow Elite Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="+Forest Prince Bow Elite Quest" count="1" craft_time = "1" craft_exp_gain="0" >
 			<ingredient name="+White River Elite Citizen Card" count="1"/>
 		</recipe>
 		
-		<recipe name="+Elite Writ Of Bambi's Bow" count="1" craft_time = "500" craft_exp_gain="30000" >
+		<recipe name="+Elite Writ Of Forest Prince Compound Bow" count="1" craft_time = "500" craft_exp_gain="30000" >
 			<ingredient name="gunBowT3CompoundBow" count="30"/>
 			<ingredient name="resourceWood" count="12000"/>
 			<ingredient name="resourceAnimalFat" count="100"/>

@@ -86,8 +86,11 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
 				
-				<objective type="ZombieKill" value="1000" phase="1" />
-				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="ZombieKill" value="250" phase="1" />
+				<objective type="ZombieKill" value="250" phase="2" />
+				<objective type="ZombieKill" value="250" phase="3" />
+				<objective type="ZombieKill" value="250" phase="4" />
+				<objective type="Goto" id="trader" value="5" phase="5" />	
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>				
