@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="+White River Brass Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="+White River Citizen Card" count="1"/>
+		</recipe>		
+		
+	</append>
+</configs>

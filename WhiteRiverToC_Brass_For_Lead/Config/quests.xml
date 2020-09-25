@@ -1,0 +1,30 @@
+<config>
+	<append xpath="/quests" >
+
+			<quest id="+Quest For White River Brass">
+				<property name="group_name" value="quest_ToolsOfCitizenship" />
+				<property name="offer" value="The Trader mentioned the community has recently come unto the possession of an immense quantity of brass but they are severely limited in lead. They need quantities of both in order to make more bullets to fend off the zombie horde. The community is willing to part with some of its brass supply if you can provide some lead in exchange. Gather 2500 Lead" />
+				<property name="name" value="Collect 2500 Lead for 500 Brass" />
+				<property name="subtitle" value="Collect Brass for the White River community" />
+				<property name="description" value="Gather 2500 Lead to receive 500 Brass." />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="Fetch" id="unit_lead" value="2500" phase="1" />
+				
+				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+				</objective>	
+				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="unit_brass" value="500" />
+				<reward type="Item" id="pouredConcreteBlock" value="10-40" />	
+				<reward type="Exp" value="2000" />
+				<reward type="SkillPoints" value="1" />				
+			</quest>
+					
+	</append>
+</config>
