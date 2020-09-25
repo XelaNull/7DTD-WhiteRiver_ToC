@@ -5,6 +5,7 @@
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
+			<property name="DescriptionKey" value="qWhiteRiverToC_Brass"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
