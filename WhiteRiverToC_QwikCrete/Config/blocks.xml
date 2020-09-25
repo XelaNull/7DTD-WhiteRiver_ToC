@@ -1,0 +1,304 @@
+<configs>
+	<append xpath="/blocks">    
+
+    
+    <block name="+QwikCrete Variant Block">
+      <property name="Extends" value="pouredConcreteBlockVariantHelper"/>
+			<property name="UnlockedBy" value="Kwik-Crete Schematic"/>
+      <property name="PlaceAltBlockValue" value="qwikcreteConcreteBlock,qwikcreteConcreteRamp,qwikcreteConcreteArch,qwikcreteConcreteArrowSlitHalf,qwikcreteConcreteCNRFull,qwikcreteConcreteCNRInside,qwikcreteConcreteCNRRamp,qwikcreteConcreteCNRRampFiller,qwikcreteConcreteCNRRound,qwikcreteConcreteCNRRoundTop,qwikcreteConcreteCTRPlate,qwikcreteConcreteCTRpole,qwikcreteConcreteEighth,qwikcreteConcreteGableInvertedHalf,qwikcreteConcreteGableInvertedQuarter,qwikcreteConcreteGableInvertedSteep,qwikcreteConcreteGableQuarter,qwikcreteConcreteHalf,qwikcreteConcretePillar100,qwikcreteConcretePillar100Cap,qwikcreteConcretePillar50,qwikcreteConcretePlate,qwikcreteConcretePole,qwikcreteConcretePyramid,qwikcreteConcreteQuarter,qwikcreteConcreteQuarterCNR,qwikcreteConcreteQuarterCNR3Way,qwikcreteConcreteQuarterSCtr,qwikcreteConcreteQuarterTeeSCtr,qwikcreteConcreteStairs25,qwikcreteConcreteStairs50,qwikcreteConcreteStairs25CornerCNR,qwikcreteConcreteStairsFilledRailingLeft,qwikcreteConcreteStairsFilledRailingRight,qwikcreteConcreteSupport,qwikcreteConcreteWedge,qwikcreteConcreteWedgeCNRInsideBottom,qwikcreteConcreteWedgeCNRInsideSteepBase,qwikcreteConcreteWedgeCNRInsideSteepTop,qwikcreteConcreteWedgeCNRInsideTop,qwikcreteConcreteWedgeCNRSteepBase,qwikcreteConcreteWedgeCNRSteepTop,qwikcreteConcreteWedgeIncline,qwikcreteConcreteWedgeStairs,qwikcreteConcreteWedgeTip,qwikcreteConcreteWedgeTipCNRFullBottom,qwikcreteConcreteWedgeTipCNRFullTop,qwikcreteConcreteWedgeTipStairs"/>
+    </block>
+    
+    <block name="qwikcreteConcreteBlock">
+      <property name="CustomIcon" value="pouredConcreteBlock"/>
+      <property name="Extends" value="pouredConcreteBlock"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteRamp">
+      <property name="CustomIcon" value="pouredConcreteRamp"/>
+      <property name="Extends" value="pouredConcreteRamp"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteArch">
+      <property name="CustomIcon" value="pouredConcreteArch"/>
+      <property name="Extends" value="pouredConcreteArch"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteArrowSlitHalf">
+      <property name="CustomIcon" value="pouredConcreteArrowSlitHalf"/>
+      <property name="Extends" value="pouredConcreteArrowSlitHalf"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCNRFull">
+      <property name="CustomIcon" value="pouredConcreteCNRFull"/>
+      <property name="Extends" value="pouredConcreteCNRFull"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCNRInside">
+      <property name="CustomIcon" value="pouredConcreteCNRInside"/>
+      <property name="Extends" value="pouredConcreteCNRInside"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCNRRamp">
+      <property name="CustomIcon" value="pouredConcreteCNRRamp"/>
+      <property name="Extends" value="pouredConcreteCNRRamp"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCNRRampFiller">
+      <property name="CustomIcon" value="pouredConcreteCNRRampFiller"/>
+      <property name="Extends" value="pouredConcreteCNRRampFiller"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCNRRound">
+      <property name="CustomIcon" value="pouredConcreteCNRRound"/>
+      <property name="Extends" value="pouredConcreteCNRRound"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCNRRoundTop">
+      <property name="CustomIcon" value="pouredConcreteCNRRoundTop"/>
+      <property name="Extends" value="pouredConcreteCNRRoundTop"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCTRPlate">
+      <property name="CustomIcon" value="pouredConcreteCTRPlate"/>
+      <property name="Extends" value="pouredConcreteCTRPlate"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteCTRpole">
+      <property name="CustomIcon" value="pouredConcreteCTRpole"/>
+      <property name="Extends" value="pouredConcreteCTRpole"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteEighth">
+      <property name="CustomIcon" value="pouredConcreteEighth"/>
+      <property name="Extends" value="pouredConcreteEighth"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteGableInvertedHalf">
+      <property name="CustomIcon" value="pouredConcreteGableInvertedHalf"/>
+      <property name="Extends" value="pouredConcreteGableInvertedHalf"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteGableInvertedQuarter">
+      <property name="CustomIcon" value="pouredConcreteGableInvertedQuarter"/>
+      <property name="Extends" value="pouredConcreteGableInvertedQuarter"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteGableInvertedSteep">
+      <property name="CustomIcon" value="pouredConcreteGableInvertedSteep"/>
+      <property name="Extends" value="pouredConcreteGableInvertedSteep"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteGableQuarter">
+      <property name="CustomIcon" value="pouredConcreteGableQuarter"/>
+      <property name="Extends" value="pouredConcreteGableQuarter"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteHalf">
+      <property name="CustomIcon" value="pouredConcreteHalf"/>
+      <property name="Extends" value="pouredConcreteHalf"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcretePillar100">
+      <property name="CustomIcon" value="pouredConcretePillar100"/>
+      <property name="Extends" value="pouredConcretePillar100"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcretePillar100Cap">
+      <property name="CustomIcon" value="pouredConcretePillar100Cap"/>
+      <property name="Extends" value="pouredConcretePillar100Cap"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcretePillar50">
+      <property name="CustomIcon" value="pouredConcretePillar50"/>
+      <property name="Extends" value="pouredConcretePillar50"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcretePlate">
+      <property name="CustomIcon" value="pouredConcretePlate"/>
+      <property name="Extends" value="pouredConcretePlate"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcretePole">
+      <property name="CustomIcon" value="pouredConcretePole"/>
+      <property name="Extends" value="pouredConcretePole"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcretePyramid">
+      <property name="CustomIcon" value="pouredConcretePyramid"/>
+      <property name="Extends" value="pouredConcretePyramid"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteQuarter">
+      <property name="CustomIcon" value="pouredConcreteQuarter"/>
+      <property name="Extends" value="pouredConcreteQuarter"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteQuarterCNR">
+      <property name="CustomIcon" value="pouredConcreteQuarterCNR"/>
+      <property name="Extends" value="pouredConcreteQuarterCNR"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteQuarterCNR3Way">
+      <property name="CustomIcon" value="pouredConcreteQuarterCNR3Way"/>
+      <property name="Extends" value="pouredConcreteQuarterCNR3Way"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteQuarterSCtr">
+      <property name="CustomIcon" value="pouredConcreteQuarterSCtr"/>
+      <property name="Extends" value="pouredConcreteQuarterSCtr"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteQuarterTeeSCtr">
+      <property name="CustomIcon" value="pouredConcreteQuarterTeeSCtr"/>
+      <property name="Extends" value="pouredConcreteQuarterTeeSCtr"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteStairs25">
+      <property name="CustomIcon" value="pouredConcreteStairs25"/>
+      <property name="Extends" value="pouredConcreteStairs25"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteStairs50">
+      <property name="CustomIcon" value="pouredConcreteStairs50"/>
+      <property name="Extends" value="pouredConcreteStairs50"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteStairs25CornerCNR">
+      <property name="CustomIcon" value="pouredConcreteStairs25CornerCNR"/>
+      <property name="Extends" value="pouredConcreteStairs25CornerCNR"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteStairsFilledRailingLeft">
+      <property name="CustomIcon" value="pouredConcreteStairsFilledRailingLeft"/>
+      <property name="Extends" value="pouredConcreteStairsFilledRailingLeft"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteStairsFilledRailingRight">
+      <property name="CustomIcon" value="pouredConcreteStairsFilledRailingRight"/>
+      <property name="Extends" value="pouredConcreteStairsFilledRailingRight"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteSupport">
+      <property name="CustomIcon" value="pouredConcreteSupport"/>
+      <property name="Extends" value="pouredConcreteSupport"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedge">
+      <property name="CustomIcon" value="pouredConcreteWedge"/>
+      <property name="Extends" value="pouredConcreteWedge"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeCNRInsideBottom">
+      <property name="CustomIcon" value="pouredConcreteWedgeCNRInsideBottom"/>
+      <property name="Extends" value="pouredConcreteWedgeCNRInsideBottom"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeCNRInsideSteepBase">
+      <property name="CustomIcon" value="pouredConcreteWedgeCNRInsideSteepBase"/>
+      <property name="Extends" value="pouredConcreteWedgeCNRInsideSteepBase"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeCNRInsideSteepTop">
+      <property name="CustomIcon" value="pouredConcreteWedgeCNRInsideSteepTop"/>
+      <property name="Extends" value="pouredConcreteWedgeCNRInsideSteepTop"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeCNRInsideTop">
+      <property name="CustomIcon" value="pouredConcreteWedgeCNRInsideTop"/>
+      <property name="Extends" value="pouredConcreteWedgeCNRInsideTop"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeCNRSteepBase">
+      <property name="CustomIcon" value="pouredConcreteWedgeCNRSteepBase"/>
+      <property name="Extends" value="pouredConcreteWedgeCNRSteepBase"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeCNRSteepTop">
+      <property name="CustomIcon" value="pouredConcreteWedgeCNRSteepTop"/>
+      <property name="Extends" value="pouredConcreteWedgeCNRSteepTop"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeIncline">
+      <property name="CustomIcon" value="pouredConcreteWedgeIncline"/>
+      <property name="Extends" value="pouredConcreteWedgeIncline"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeStairs">
+      <property name="CustomIcon" value="pouredConcreteWedgeStairs"/>
+      <property name="Extends" value="pouredConcreteWedgeStairs"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeTip">
+      <property name="CustomIcon" value="pouredConcreteWedgeTip"/>
+      <property name="Extends" value="pouredConcreteWedgeTip"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeTipCNRFullBottom">
+      <property name="CustomIcon" value="pouredConcreteWedgeTipCNRFullBottom"/>
+      <property name="Extends" value="pouredConcreteWedgeTipCNRFullBottom"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeTipCNRFullTop">
+      <property name="CustomIcon" value="pouredConcreteWedgeTipCNRFullTop"/>
+      <property name="Extends" value="pouredConcreteWedgeTipCNRFullTop"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    <block name="qwikcreteConcreteWedgeTipStairs">
+      <property name="CustomIcon" value="pouredConcreteWedgeTipStairs"/>
+      <property name="Extends" value="pouredConcreteWedgeTipStairs"/>
+      <property name="MaxDamage" value="600"/>
+      <property name="UpgradeRated.Rate" value="2"/>
+    </block>
+    
+    
+    
+    
+  </append>
+</configs>

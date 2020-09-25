@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+q_qwikcrete_Recipe,items,Quest - Note,,,An elite quest to assist the White River community with wet concrete blocks in order to receive a recipe for Kwik-Crete.,,,,,,,,,,,,,,,
+kwikcreate_Schematic,items,Quest - Note,,,This schematic shows that you can craft Kwik-Crete blocks at a cement mixer with cement mix and bone.,,,,,,,,,,,,,,,
+q_qwikcrete_Blocks,items,Quest - Note,,,A veteran quest to assist the White River community with bones in exchange for some spare Kwik-Create blocks.,,,,,,,,,,,,,,,
+q_qwikcrete_writ,items,Quest - Note,,,This writ is evidence of your astounding level of support of your community in collecting bones.,,,,,,,,,,,,,,,
