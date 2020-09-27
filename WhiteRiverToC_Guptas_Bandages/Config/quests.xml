@@ -16,10 +16,16 @@
 				<objective type="Fetch" id="resourceCropAloeLeaf" value="10" phase="1" />
 				<objective type="Fetch" id="resourceCloth" value="10" phase="1" />
 				<objective type="Fetch" id="medicalBandage" value="10" phase="1" />
-				
-				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<property name="completiontype" value="TurnIn" />
+	
+				<objective type="Goto" value="5" phase="2" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
 				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />										
 				</objective>	
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="medicalFirstAidBandage" value="2-5" />

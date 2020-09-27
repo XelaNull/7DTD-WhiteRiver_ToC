@@ -30,11 +30,17 @@
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
-
-				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<property name="completiontype" value="TurnIn"/>
+	
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+					<property name="use_closest" value="true" />
 				</objective>
 				
 				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
@@ -78,8 +84,13 @@
 				<property name="difficulty" value="easy" />
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
-
-				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<property name="completiontype" value="TurnIn"/>
+	
+				<objective type="Goto" value="5" phase="1"/>
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>

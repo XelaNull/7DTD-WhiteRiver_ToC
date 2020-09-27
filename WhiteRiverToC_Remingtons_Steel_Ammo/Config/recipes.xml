@@ -1,0 +1,39 @@
+<configs>
+	<append xpath="/recipes">
+		
+		<recipe name="+Remington's Steel Ammo Elite Quest" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="+White River Elite Citizen Card" count="1"/>
+		</recipe>
+		<recipe name="+Elite Writ Of Remington" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="ammo762mmBulletBall" count="1000"/>
+			<ingredient name="ammo44MagnumBulletBall" count="1000"/>
+			<ingredient name="ammo9mmBulletBall" count="1000"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>		
+		
+		
+		
+		<recipe name="resourceBulletCasingSteel" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="2"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe> 
+		<recipe name="ammo9mmBulletSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+			<ingredient name="resourceBulletCasingSteel" count="1"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasingSteel" count="1"/>
+		</recipe>
+		<recipe name="ammo762mmBulletFMJSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasingSteel" count="1"/>
+		</recipe>	
+	</append>
+</configs>

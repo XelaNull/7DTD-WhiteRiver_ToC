@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/items">
 
-		<item name="+Veteran Quest for Quik-Crete Blocks"> 
+		<item name="+QwikCrete Blocks Vet. Quest"> 
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -9,13 +9,13 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Veteran Quest For Qwik-Crete Blocks"/>
+				<property name="QuestGiven" value="+Veteran Quest For QwikCrete Recipe"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		
-		<item name="+Veteran Writ Of Qwik-Crete Blocks">
+		<item name="+Veteran Writ Of QwikCrete Blocks">
 			<property name="CustomIcon" value="questMaster"/> 
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -27,12 +27,14 @@
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Veteran Reward of Qwik-Crete Blocks"/>
+				<property name="QuestGiven" value="+Veteran Reward of QwikCrete Blocks"/>
 				<property name="Delay" value="0"/>
 			</property>		
 		</item>	
+		
+		<!-- ELITE -->
 
-		<item name="+Elite Quest for Quik-Crete Recipe"> 
+		<item name="+QwikCrete Recipe Elite Quest"> 
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -40,17 +42,34 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Elite Quest For Qwik-Crete Recipe"/>
+				<property name="QuestGiven" value="+Elite Quest For QwikCrete Recipe"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		
-		<item name="Kwik-Crete Schematic">
+		<item name="+Elite Writ Of QwikCrete Recipe">
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="d4af37"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="DescriptionKey" value="q_qwikcrete_Elitewrit"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Elite Reward of QwikCrete Recipe"/>
+				<property name="Delay" value="0"/>
+			</property>		
+		</item>	
+		
+		<item name="QwikCrete Schematic">
 			<property name="Extends" value="schematicMaster"/>
 			<property name="DescriptionKey" value="kwikcreate_Schematic"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="resourceAnimalFat"/>
+			<property name="CustomIcon" value="pouredConcreteBlock"/>
 			<property name="CustomIconTint" value="5C5CFF"/> 
 			<property name="Unlocks" value="+QwikCrete Variant Block"/>
 			<effect_group tiered="false">

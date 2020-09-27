@@ -34,14 +34,17 @@
 				<property name="shareable" value="false" />
 				<property name="repeatable" value="false" />
 
-				<objective type="Goto" id="trader" value="5" phase="1"/>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="2" />
+				<objective type="ZombieKill" value="10" phase="1" />
+				<property name="completiontype" value="TurnIn" />
+	
+				<objective type="Goto" value="5" phase="2" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="3"/>
+					<property name="nav_object" value="return_to_trader" />
 				</objective>	
-				<objective type="ZombieKill" value="10" phase="3" />
-				<objective type="Goto" id="trader" value="5" phase="4"/>	
 				<objective type="InteractWithNPC">
-					<property name="phase" value="5" />
+					<property name="phase" value="4" />
+					<property name="nav_object" value="return_to_trader" />										
 				</objective>	
 				
 				<reward type="SkillPoints" value="1" />	
@@ -63,9 +66,10 @@
 				<property name="repeatable" value="true" />
 				
 				<objective type="ZombieKill" value="100" phase="1" />
-				<objective type="Goto" id="trader" value="5" phase="2" />	
+				<!--<objective type="Goto" id="trader" value="5" phase="2" />	-->
 				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
+					<property name="phase" value="2" />
+					<property name="nav_object" value="return_to_trader" />										
 				</objective>				
 				
 				<reward type="Exp" value="10000" />
@@ -90,9 +94,10 @@
 				<objective type="ZombieKill" value="250" phase="2" />
 				<objective type="ZombieKill" value="250" phase="3" />
 				<objective type="ZombieKill" value="250" phase="4" />
-				<objective type="Goto" id="trader" value="5" phase="5" />	
+				<!--<objective type="Goto" id="trader" value="5" phase="5" />	-->
 				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
+					<property name="phase" value="5" />
+					<property name="nav_object" value="return_to_trader" />										
 				</objective>				
 				
 				<reward type="Exp" value="12000" />
