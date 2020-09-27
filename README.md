@@ -2,6 +2,8 @@
 
 ## 7 Days to Die : White River - Tools of Citizenship
 
+<https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a191/>
+
 Tested with A19.1 (b8)
 
 This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this Modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from.
