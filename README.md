@@ -24,29 +24,29 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 ### Questable Equipment:
 
-- Bambi's Killer Compound Bow - Earn the famed deer killer, "Bambi's Killer" Compound Bow with slightly better stats than Vanilla.
-- Black Bart's Flaming Dig Tools - Uncover the long-buried stash from the most famous stagecoach robber in the western U.S., providing a steel Pickaxe & Shovel with flaming mods and better stats than Vanilla. Stamina trait sure to keep you digging and digging and digging.
-- Brass For Lead - Help the community restock its Lead supply and in exchange receive some brass.
-- Bunyan's FireAxe - Help the Trader with some potable water and receive a Paul Bunyan branded FireAxe.
-- Daryl's Crossbow - Obtain a replica copy of Daryl's Zombiekiller Crossbow.
-- Deschain's Revolver - Earn a legendary revolver, crafted from Excalibur, that was used by the famed Roland Deschain.
-- Dundee's Hunting Knife - Take on everything with Dundee's famous Hunting Knife with slightly better stats than Vanilla.
-- Everdeen's Arrows & Bolts - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
-- Gupta's Bandages - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages.
-- Jason's Machete - A replicate machete used by the infamous serial killer himself. (Big Thanks to wyldwitchykat for this contribution)
-- Kuva's Red Armor - Discover the secret ingredient in Kuva's Red Armor with slightly better stats and environmental mods.
-- Leon's Modded SMG - Help Leon finish his DIY gun project, resulting in a 9mm SMG weapon with slightly better stats than Vanilla.
-- Pavlichenko's Rifle - Locate and assemble a branded Marksman rifle from the famed marksman, Pavlichenko.
-- QwikCrete - Learn the secret to making quick-drying concrete blocks!
-- Remington's Steel Ammo - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement.
-- Rick Danger's Auger - Obtain two higher tier Augers, the latter of which will turn even the largest mountain to butter.
-- Taza's Axe - The famed Taza's Axe, already awesome.
+- **Bambi's Killer Compound Bow** - Earn the famed deer killer, "Bambi's Killer" Compound Bow with slightly better stats than Vanilla.
+- **Black Bart's Flaming Dig Tools** - Uncover the long-buried stash from the most famous stagecoach robber in the western U.S., providing a steel Pickaxe & Shovel with flaming mods and better stats than Vanilla. Stamina trait sure to keep you digging and digging and digging.
+- **Brass For Lead** - Help the community restock its Lead supply and in exchange receive some brass.
+- **Bunyan's FireAxe** - Help the Trader with some potable water and receive a Paul Bunyan branded FireAxe.
+- **Daryl's Crossbow** - Obtain a replica copy of Daryl's Zombiekiller Crossbow.
+- **Deschain's Revolver** - Earn a legendary revolver, crafted from Excalibur, that was used by the famed Roland Deschain.
+- **Dundee's Hunting Knife** - Take on everything with Dundee's famous Hunting Knife with slightly better stats than Vanilla.
+- **Everdeen's Arrows & Bolts** - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
+- **Gupta's Bandages** - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages.
+- **Jason's Machete** - A replicate machete used by the infamous serial killer himself. (Big Thanks to wyldwitchykat for this contribution)
+- **Kuva's Red Armor** - Discover the secret ingredient in Kuva's Red Armor with slightly better stats and environmental mods.
+- **Leon's Modded SMG** - Help Leon finish his DIY gun project, resulting in a 9mm SMG weapon with slightly better stats than Vanilla.
+- **Pavlichenko's Rifle** - Locate and assemble a branded Marksman rifle from the famed marksman, Pavlichenko.
+- **QwikCrete** - Learn the secret to making quick-drying concrete blocks!
+- **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement.
+- **Rick Danger's Auger** - Obtain two higher tier Augers, the latter of which will turn even the largest mountain to butter.
+- **Taza's Axe** - The famed Taza's Axe, already awesome.
 
 Nearly all quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward. Black Bart's dig tools are unique and the quest is designed NOT to be repeatable!
 
 #### Installation
 
-Download the ZIP file and extract. Open the ONE folder and you will find NINE folders inside. Copy the NINE folders to your 7 Days to Die Mods folder.
+Download the ZIP file and extract. Open the ONE folder and you will find EIGHTEEN folders inside. Copy the EIGHTEEN folders to your 7 Days to Die "Mods" folder. The default location for a Steam-based Windows 10 install is: C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Data\Mods
 
 ### ACKNOWLEDGEMENTS:
 
