@@ -47,7 +47,7 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 - **Kuva's Red Armor** - Discover the secret ingredient in Kuva's Red Armor with slightly better stats and environmental mods.
 
-RESOURCES:
+**RESOURCES:**
 
 - **Brass For Lead** - Help the community restock its Lead supply and in exchange receive some brass.
 - **Everdeen's Arrows & Bolts** - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
