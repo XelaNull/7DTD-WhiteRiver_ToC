@@ -7,20 +7,19 @@
 	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
 	<append xpath="/items/item[@name='Bambis Killer Compound Bow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
 	<append xpath="/items/item[@name='Forest Prince Compound Bow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
-
+	
+	
 	<append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
 	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	
+	<!-- Entries for the Daryls Crossbow mod. If it isn't installed, this line will generate a warning -->
+	<append xpath="/items/item[@name='Daryls Zombiekiller Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
+	<append xpath="/items/item[@name='Daryls Zombiekiller Compound Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
 	<!-- BACKWARDS COMPATIBILITY -->
 	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
 	<append xpath="/items/item[@name='Bambis Killer Compound Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
 	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
 	<append xpath="/items/item[@name='Bambis Terminator Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
 	<!-- END BACKWARDS COMPATIBILITY -->
-	<!-- Replacements for the two lines above -->
-	<append xpath="/items/item[@name='Daryls Zombiekiller Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	<append xpath="/items/item[@name='Daryls Zombiekiller Compound Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-
 
 
 	<append xpath="/items">
