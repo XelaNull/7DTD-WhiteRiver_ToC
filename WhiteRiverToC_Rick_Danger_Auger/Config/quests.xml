@@ -3,7 +3,7 @@
 	
 			<quest id="+Veteran Quest For Rick Danger Auger">
 				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="One of the most famous community members, Rick Danger, recent was killed during a zombie horde night. He left a stash of experimental augers he was working on for the Trader to give out to worthy community members who contribute. Gather 2000 Nitrate, 2000 Oil Shale, and 25 Motor Tool Parts to aide the community." />
+				<property name="offer" value="One of the most famous community members, Rick Danger, was recently killed during a zombie horde night. He left a stash of experimental augers he was working on for the Trader to give out to worthy community members who contribute. Gather 2000 Nitrate, 2000 Oil Shale, and 25 Motor Tool Parts to aide the community." />
 				<property name="name" value="Vet. Quest to obtain a Rick Danger Auger" />
 				<property name="subtitle" value="Obtain a Rick Danger Auger" />
 				<property name="description" value="Gather 2000 Nitrate, 2000 Oil Shale, 25 Motor Tool Parts to a Rick Danger Auger." />
