@@ -49,7 +49,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self"  particle="p_nozzlesmoke_m136" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_nozzlesmoke_m136" />
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_rocketLauncherFire" />
-				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="buffJuggernautSpeed"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="buffJuggernaut"/>
 			</effect_group>
 		</buff>
 		
