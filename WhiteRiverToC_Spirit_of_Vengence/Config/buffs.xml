@@ -97,7 +97,8 @@
 				<requirement name="EntityTagCompare" tags="player"/>
 				<passive_effect name="WalkSpeed" operation="base_set" value="2.5"/>
 				<passive_effect name="RunSpeed" operation="base_set" value="4.5"/>
-				<passive_effect name="JumpStrength" operation="base_set" value="20"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="4.2"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.75" tags="jumping"/>
 			</effect_group>
 			
 		</buff>
