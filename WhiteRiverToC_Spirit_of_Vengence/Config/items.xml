@@ -72,9 +72,9 @@
 			<property name="CreativeMode" value="None"/>
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
-				<property name="DamageEntity" value="125"/>
-				<property name="DamageBlock" value="1000"/>
-				<property name="Explosion.ParticleIndex" value="4"/>
+				<property name="DamageEntity" value="25"/>
+				<property name="DamageBlock" value="500"/>
+				<property name="Explosion.ParticleIndex" value="3"/>
 				<!-- which Prefab/particle is used -->
 				<property name="Explosion.RadiusBlocks" value="5"/>
 				<!-- damage radius for blocks -->
