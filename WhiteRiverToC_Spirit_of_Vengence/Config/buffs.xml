@@ -49,15 +49,16 @@
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self"  particle="p_nozzlesmoke_m136" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_nozzlesmoke_m136" />
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_rocketLauncherFire" />
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" target="self" buff="buffJuggernautSpeed"/>
 			</effect_group>
 		</buff>
 		
 		<buff name="buffJuggernaut" hidden="true">
 			<update_rate value="12"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="50" buff="buffJuggernautSpeedDelay"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="50" buff="buffJuggernautSpeedDelay"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffJuggernautSpeedDelay"/>
+				<!--<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffJuggernautSpeedDelay"/>-->
 				<!--
 				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="bansheebuff0" play_in_head="true">
 					<requirement name="EntityTagCompare" tags="player"/>
