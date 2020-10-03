@@ -66,7 +66,7 @@
 			<stack_type value="replace"/>
 			<duration value="5"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="12" shake_amplitude="80" shake_time="5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="18" shake_amplitude="60" shake_time="1.5"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="-1"/>
 				<!--
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
@@ -93,8 +93,8 @@
 			</effect_group>
 			
 			<effect_group>
-				<passive_effect name="WalkSpeed" operation="base_set" value="10"/>
-				<passive_effect name="RunSpeed" operation="base_set" value="10"/>
+				<passive_effect name="WalkSpeed" operation="base_set" value="3"/>
+				<passive_effect name="RunSpeed" operation="base_set" value="5"/>
 				<passive_effect name="JumpStrength" operation="base_set" value="60"/>
 			</effect_group>
 			
