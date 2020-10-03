@@ -52,10 +52,10 @@
 			</effect_group>
 		</buff>
 		
-		<buff name="buffJuggernaut" hidden="true">
+		<buff name="buffJuggernaut" hidden="false">
 			<update_rate value="12"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="50" buff="buffJuggernautSpeedDelay"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="50" buff="buffJuggernautSpeedDelay"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffJuggernautSpeedDelay"/>
 				
@@ -68,7 +68,7 @@
 			
 			</effect_group>
 		</buff>
-		<buff name="buffJuggernautSpeedDelay" hidden="true">
+		<buff name="buffJuggernautSpeedDelay" hidden="false">
 			<duration value=".5"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffJuggernautSpeed"/>

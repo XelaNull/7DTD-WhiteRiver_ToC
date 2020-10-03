@@ -113,7 +113,7 @@
 				<passive_effect name="HealthMax" operation="base_set" value="3999"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="JuggernautDeco"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffJuggernaut"/>
-				<!--<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="bufftest01"/>-->
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffJuggernautSpeedDelay"/>
 
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
