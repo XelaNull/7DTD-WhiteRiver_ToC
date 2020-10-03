@@ -53,6 +53,13 @@
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_rocketLauncherFire" />
 			</effect_group>
 		</buff>
+		<buff name="buffBansheeScream" hidden="true">
+			<update_rate value="12"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="12" buff="buffBanshee"/>
+			</effect_group>
+		</buff>
 	</append>
 
 </configs>
