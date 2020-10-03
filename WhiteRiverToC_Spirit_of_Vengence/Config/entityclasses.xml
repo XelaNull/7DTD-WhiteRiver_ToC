@@ -110,11 +110,11 @@
 			<property name="MoveSpeed" value="0.5"/>
 			<property name="MoveSpeedAggro" value="0.75, 1.2"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
+				<passive_effect name="HealthMax" operation="base_set" value="4000"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="JuggernautDeco"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBansheeScream"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>
 		</entity_class>
