@@ -75,6 +75,7 @@
 			</effect_group>
 		</buff>
 		<buff name="buffJuggernautSpeed" hidden="false">
+			<display_value_key value="Pegasus"/><display_value value="xxx"/> <stack_type value="ignore"/><duration value="5"/>
 			<stack_type value="replace"/>
 			<duration value="5"/>
 			<effect_group>
@@ -84,8 +85,8 @@
 			<effect_group>
 				<requirement name="EntityTagCompare" tags="player"/>
 				<passive_effect name="WalkSpeed" operation="perc_add" value="1.2"/>
-				<passive_effect name="RunSpeed" operation="perc_add" value="1.2"/>
-				<passive_effect name="JumpStrength" operation="perc_add" value="3.2"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="1.6"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="2.6"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.5" tags="jumping"/>
 			</effect_group>
 		</buff>
