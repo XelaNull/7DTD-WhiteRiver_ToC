@@ -61,29 +61,20 @@
 			</effect_group>
 		</buff>
 		<buff name="buffBanshee" hidden="false">
-			<!--<display_value_key value="Test 1"/> -->
-			<display_value value="xxx"/> <stack_type value="ignore"/><duration value="5"/>
+			<display_value_key value="Test 42"/><display_value value="xxx"/> <stack_type value="ignore"/><duration value="5"/>
 
 			<stack_type value="replace"/>
 			<duration value="5"/>
 			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_add" value="5,10" duration="5"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="5,10" duration="5"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="5,10" duration="5"/>
 				
 				
-				<passive_effect name="RunSpeed" operation="perc_add" value="5,10" duration="5,20">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_add" value="5,10" duration="5,20">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</passive_effect>
-				<passive_effect name="JumpStrength" operation="perc_add" value="5,10" duration="5,20">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</passive_effect>
-				
-				
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" shake_speed="0.5" shake_amplitude="180" shake_time="4" effect_name="ShakeCamera"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" shake_speed="0" shake_amplitude="0" shake_time="0" effect_name="ShakeCamera"/>
-				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" shake_speed="0" shake_amplitude="0" shake_time="0" effect_name="ShakeCamera"/>
-
+				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="0.75" shake_amplitude="40" shake_time="5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="-1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
 				
 				<!--
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
