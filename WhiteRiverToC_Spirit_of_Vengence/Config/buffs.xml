@@ -77,7 +77,7 @@
 		<buff name="buffJuggernautSpeed" hidden="false">
 			<display_value_key value="buffJuggernautShort"/><display_value value="xxx"/> <stack_type value="ignore"/><duration value="5"/>
 			<stack_type value="replace"/>
-			<duration value="5"/>
+			<duration value="7"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="30" shake_amplitude="60" shake_time=".5"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="-1"/>
