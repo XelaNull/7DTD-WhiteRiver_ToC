@@ -32,7 +32,7 @@
 			<property name="Degradation" value="99999" param1="true"/>
 			<property class="Action0">
 				<property name="Range" value="1.75"/>
-				<property name="DamageEntity" value="20"/>
+				<property name="DamageEntity" value="30"/>
 				<property name="DamageBlock" value="500"/>
 				<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>
 				<property name="Sound_start" value="Auger_Fire_Start"/>
@@ -72,7 +72,7 @@
 			<property name="CreativeMode" value="None"/>
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
-				<property name="DamageEntity" value="20"/>
+				<property name="DamageEntity" value="25"/>
 				<property name="DamageBlock" value="500"/>
 				<property name="Explosion.ParticleIndex" value="2"/>
 				<!-- which Prefab/particle is used -->
