@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+buffJuggernautShort,buffs,Buff,,x,Demon Fright,,,,,,,,,,,,,,
+buffJuggernautTooltip,buffs,Buff,,x,Your feel adrenalin surge through your veins giving you demon fright.,,,,,,,,,,,,,,

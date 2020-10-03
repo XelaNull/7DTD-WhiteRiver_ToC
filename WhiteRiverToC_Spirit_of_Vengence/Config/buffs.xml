@@ -75,7 +75,7 @@
 			</effect_group>
 		</buff>
 		<buff name="buffJuggernautSpeed" hidden="false">
-			<display_value_key value="Pegasus"/><display_value value="xxx"/> <stack_type value="ignore"/><duration value="5"/>
+			<display_value_key value="buffJuggernautShort"/><display_value value="xxx"/> <stack_type value="ignore"/><duration value="5"/>
 			<stack_type value="replace"/>
 			<duration value="5"/>
 			<effect_group>
