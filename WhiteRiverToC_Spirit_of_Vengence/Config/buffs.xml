@@ -57,29 +57,33 @@
 			<update_rate value="12"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="12" buff="buffBanshee"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="30" buff="buffBanshee"/>
 			</effect_group>
 		</buff>
-		<buff name="buffBanshee" hidden="true">
-			<display_value_key value="Test 1"/> <display_value value="xxx"/> <stack_type value="ignore"/><duration value="20"/>
+		<buff name="buffBanshee" hidden="false">
+			<!--<display_value_key value="Test 1"/> -->
+			<display_value value="xxx"/> <stack_type value="ignore"/><duration value="5"/>
 
 			<stack_type value="replace"/>
-			<duration value="3"/>
+			<duration value="5"/>
 			<effect_group>
 				
 				
-				<passive_effect name="RunSpeed" operation="perc_add" value="0.8,2" duration="5,20">
+				<passive_effect name="RunSpeed" operation="perc_add" value="1,2" duration="5,20">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_add" value="0.8,2" duration="5,20">
+				<passive_effect name="WalkSpeed" operation="perc_add" value="1,2" duration="5,20">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</passive_effect>
 				<passive_effect name="JumpStrength" operation="perc_add" value="0.8,2" duration="5,20">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</passive_effect>
 				
-				<triggered_effect trigger="onSelfBuffUpdate" action="ShakeCamera" shake_speed="0.152" shake_amplitude="80" shake_time="4"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="0"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" shake_speed="0.152" shake_amplitude="80" shake_time="4" effect_name="ShakeCamera"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" shake_speed="0" shake_amplitude="0" shake_time="0" effect_name="ShakeCamera"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" shake_speed="0" shake_amplitude="0" shake_time="0" effect_name="ShakeCamera"/>
+
 				
 				<!--
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
