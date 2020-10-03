@@ -12,14 +12,12 @@
 			<duration value="500"/>
 			<update_rate value=".1"/>
 			<effect_group>
-			
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="HellBeastBikeCheck">
 					<requirement name="EntityTagCompare" target="other" tags="hellbeast"/>
 					<requirement name="NotHasBuff" target="other" buff="HellBeastBikeCheck"/>
 				</triggered_effect>
 			</effect_group>
 		</buff>
-
 
 		<buff name="HellBeastBikeCheck" hidden="true">	
 			<stack_type value="ignore"/>			
@@ -60,12 +58,14 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="50" buff="buffJuggernautSpeedDelay"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffJuggernautSpeedDelay"/>
+				<!--
 				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="bansheebuff0" play_in_head="true">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="bansheebuff1" play_in_head="true">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</triggered_effect>
+			-->
 			</effect_group>
 		</buff>
 		<buff name="buffJuggernautSpeedDelay" hidden="true">
