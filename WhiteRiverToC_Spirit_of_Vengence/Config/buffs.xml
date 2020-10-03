@@ -61,21 +61,27 @@
 			</effect_group>
 		</buff>
 		<buff name="buffBanshee" hidden="true">
+			<display_value_key value="Test 1"/> <display_value value="xxx"/> <stack_type value="ignore"/><duration value="20"/>
+
 			<stack_type value="replace"/>
 			<duration value="3"/>
 			<effect_group>
-				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4">
+				
+				
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.8,2" duration="5,20">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4">
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.8,2" duration="5,20">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</passive_effect>
-				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.8,.2" duration="0,4">
+				<passive_effect name="JumpStrength" operation="perc_add" value="0.8,2" duration="5,20">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</passive_effect>
-				<passive_effect name="JumpStrength" operation="perc_subtract" value="0.8,.2" duration="0,4">
-					<requirement name="EntityTagCompare" tags="player"/>
-				</passive_effect>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShakeCamera" shake_speed="0.152" shake_amplitude="80" shake_time="4"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="0"/>
+				
+				<!--
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".5" fade="1" effect_name="Radiation" />
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" effect_name="Drunk" fade="1"/>
@@ -85,6 +91,7 @@
 				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
 				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation" />
 				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" effect_name="Drunk" fade="1"/>
+				-->
 				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="bansheebuff0" play_in_head="true">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</triggered_effect>
