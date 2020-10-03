@@ -1,0 +1,10 @@
+<configs>
+<append xpath="/lootcontainers">
+	<lootcontainer id="950" count="0" size="10,10" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+	</lootcontainer>
+	<lootcontainer id="951" count="0" size="9,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+	</lootcontainer>
+	<lootcontainer id="952" count="0" size="1,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+	</lootcontainer>
+</append> 
+</configs>

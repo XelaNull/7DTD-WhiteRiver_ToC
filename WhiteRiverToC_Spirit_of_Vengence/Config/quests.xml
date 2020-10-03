@@ -1,0 +1,40 @@
+<configs>
+	<insertAfter xpath="/quests/quest[@id='quest_tier6complete']" >
+		<quest id="killjuggernaut">
+			<property name="name" value="Kill a Juggernaut" />
+			<property name="description_key" value="Kill a Juggernaut" />
+			<property name="subtitle_key" value="Kill a Juggernaut" />
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="true" />
+			<property name="category_key" value="quest"/>
+			<property name="offer" value="You have the chance to kill this special zombie. Don't go alone." />
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<objective type="RandomGoto" value="50-100" phase="1">
+				<property name="completion_distance" value="50"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			<action type="SpawnEnemy" id="ZombieJuggernaut" value="1" phase="3"/>
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBikerFeral" value="3" phase="3"/>
+			<action type="SpawnEnemy" id="zombieSoldierFeral" value="3" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBoeFeral" value="6" phase="3"/>
+			<objective type="ZombieKill" id="ZombieJuggernaut" value="1" phase="3"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="Item" id="casinoCoin" value="10000"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+		</quest>
+	</insertAfter>
+</configs>
