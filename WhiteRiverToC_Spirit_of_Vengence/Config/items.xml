@@ -1,31 +1,54 @@
 <configs>
 	<append xpath="/items">
-		<item name="HellBeast">
+		<!-- ELITE QUEST -->		
+		<item name="questitem_spirit_vengeance_name"> 
+			<property name="DescriptionKey" value="questitem_spirit_vengeance_description"/>						
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Elite Quest For Spirit of Vengeance Hell Beast"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>			
+		</item>	
+		<item name="questwrit_spirit_vengeance_name">
+			<property name="DescriptionKey" value="questwrit_spirit_vengeance_description"/>						
+			<property name="CustomIcon" value="questMaster"/> 
+			<property name="CustomIconTint" value="d4af37"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Elite Reward of Spirit of Vengeance Hell Beast"/>
+				<property name="Delay" value="0"/>
+			</property>		
+		</item>
+		
+		<item name="vehicle_hell_beast">
+			<property name="DescriptionKey" value="vehicle_hell_beast_description"/>						
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
 			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
 			<property name="CustomIconTint" value="255,0,0"/>
-			<property name="UnlockedBy" value="perkGreaseMonkey"/>
 			<property name="Tags" value="hellbeast"/>
 			<property name="Meshfile" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 			<property name="EconomicValue" value="10000"/>
 			<property class="Action1">
-				<property name="Vehicle" value="HellBeast"/>
+				<property name="Vehicle" value="vehicle_hell_beast"/>
 				<property name="VehicleSize" value="1.3, 1.9, 3"/>
 			</property>
-			<effect_group name="HellBeast" tiered="false">
+			<effect_group name="vehicle_hell_beast" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="4"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
-		<item name="qc_killjuggernaut">
-			<property name="name" value="Kill a Juggernaut" />
-			<property name="Extends" value="challengeQuestMaster"/>
-			<property class="Action0">
-				<property name="UseAnimation" value="false"/>
-				<property name="QuestGiven" value="killjuggernaut"/></property>
-		</item>
-		
+
 		<item name="meleeHandJuggernaut">
 			<property name="Extends" value="meleeHandMaster"/>
 			<property name="CreativeMode" value="None"/>
@@ -33,7 +56,7 @@
 			<property class="Action0">
 				<property name="Range" value="1.75"/>
 				<property name="DamageEntity" value="30"/>
-				<property name="DamageBlock" value="500"/>
+				<property name="DamageBlock" value="750"/>
 				<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>
 				<property name="Sound_start" value="Auger_Fire_Start"/>
 				<property class="HitSounds">
@@ -73,7 +96,7 @@
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
 				<property name="DamageEntity" value="25"/>
-				<property name="DamageBlock" value="500"/>
+				<property name="DamageBlock" value="750"/>
 				<property name="Explosion.ParticleIndex" value="2"/>
 				<!-- which Prefab/particle is used -->
 				<property name="Explosion.RadiusBlocks" value="5"/>
