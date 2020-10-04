@@ -2,7 +2,7 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
 quest_spirit_vengeance_name,Quest,Quest Info,,,Elite Quest to obtain the Spirit of Vengeance Hell Beast,,,,,,,,,,,,,,
 quest_spirit_vengeance_subtitle,Quest,Quest Info,,,Kill an evil demon,,,,,,,,,,,,,,
 quest_spirit_vengeance_description,Quest,Quest Info,,,Help Johnny Blaze defeat an evil demon and obtain the Spirit of Vengeance's Hell Beast.,,,,,,,,,,,,,,
-quest_spirit_vengeance_offer,Quest,Quest Info,,,The Trader's friend Johnny Blaze needs some community help to defeat a Juggernaut demon. Help Mr. Blaze defeat the evil demon and in return obtain the Spirit of Vengeance's Hell Beast for your eternal enjoyment. The Trader suggests it may be a good idea to bring a friend with some extra first aid kits and lots of ammo.,,,,,,,,,,,,,,
+quest_spirit_vengeance_offer,Quest,Quest Info,,,"The Trader's friend Johnny Blaze needs some community help to defeat a Juggernaut demon. Help Mr. Blaze defeat the evil demon, and in return, obtain the Spirit of Vengeance's Hell Beast for your eternal enjoyment. The Trader suggests it may be a good idea to bring a friend with some extra first aid kits, and lots of ammo.",,,,,,,,,,,,,,
 quest_spirit_vengeance_statement,Quest,Quest Info,,,Kill the evil demon,,,,,,,,,,,,,,
 quest_spirit_vengeance_group,Quest,Quest Info,,,Spirit of Vengeance Hell Beast,,,,,,,,,,,,,,
 questreward_spirit_vengeance_name,Quest,Quest Info,,,Elite Reward of a Hell Beast,,,,,,,,,,,,,,
