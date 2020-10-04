@@ -12,7 +12,7 @@ questreward_spirit_vengeance_offer,Quest,Quest Info,,,It's said that the West wa
 questreward_spirit_vengeance_statement,Quest,Quest Info,,,Kill the evil demon,,,,,,,,,,,,,,
 questreward_spirit_vengeance_group,Quest,Quest Info,,,Spirit of Vengeance Hell Beast,,,,,,,,,,,,,,
 questitem_spirit_vengeance_name,items,Quest - Note,,,+Spirit of Vengeance Hell Beast Elite Quest,,,,,,,,,,,,,,
-questitem_spirit_vengeance_description,items,Quest - Note,,,Help Johnny Blaze kill an extremely tough demon to obtain a Hell Beast vehicle.,,,,,,,,,,,,,,
+questitem_spirit_vengeance_description,items,Quest - Note,,,"Help Johnny Blaze kill an extremely tough demon to obtain a Hell Beast vehicle.\n\nYou get the distinct feeling you should bring lots of first aid kits, ammo, and a friend.",,,,,,,,,,,,,,
 questwrit_spirit_vengeance_name,items,Quest - Note,,,+Elite Writ of Spirit of Vengeance,,,,,,,,,,,,,,
 questwrit_spirit_vengeance_description,items,Quest - Note,,,Evidence that you've bested the evil demon and deserve to be rewarded with a Hall Beast vehicle.,,,,,,,,,,,,,,
 vehicle_hell_beast,vehicles,item,,,Hell Beast Motorcycle,,,,,,,,,,,,,,
