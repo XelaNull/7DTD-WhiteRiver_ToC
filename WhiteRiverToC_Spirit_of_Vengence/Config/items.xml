@@ -42,7 +42,7 @@
 				<property name="Vehicle" value="vehicle_hell_beast"/>
 				<property name="VehicleSize" value="1.3, 1.9, 3"/>
 			</property>
-			<effect_group name="vehicle_hell_beast" tiered="false">
+			<effect_group name="item_hell_beast" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="4"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
