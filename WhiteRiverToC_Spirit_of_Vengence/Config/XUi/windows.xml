@@ -1,4 +1,0 @@
-<configs>
-    <set xpath="/windows/window[@name='windowVehicleStorage']/grid[@name='inventory']/@rows">10</set>
-    <set xpath="/windows/window[@name='windowVehicleStorage']/grid[@name='inventory']/@cols">10</set>
-</configs>
