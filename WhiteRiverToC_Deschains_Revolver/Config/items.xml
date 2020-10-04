@@ -35,7 +35,7 @@
 		<item name="Deschains Revolver"> <!-- T3 pistols -->
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedGun"/>
-			<property name="CustomIcon" value="gun44Magnum"/>
+			<property name="CustomIcon" value="gunHandgunT2Magnum44"/>
 			<property name="CustomIconTint" value="b30000"/>
 			<property name="HoldType" value="44"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Magnums/44MagnumPrefab.prefab"/>
