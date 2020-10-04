@@ -1,8 +1,8 @@
 <configs>
 	<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,motorcycle</append>
 	<append xpath="/entity_classes">
-		<entity_class name="HellBeast">
-			<property name="Tags" value="vehicle, hellbeast"/>
+		<entity_class name="vehicle_hell_beast">
+			<property name="Tags" value="vehicle, vehicle_hell_beast"/>
 			<property name="Class" value="EntityMotorcycle"/>
 			<property name="Parent" value="Cars"/>
 			<property name="Prefab" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>

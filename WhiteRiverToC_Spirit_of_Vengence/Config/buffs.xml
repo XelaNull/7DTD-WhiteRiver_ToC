@@ -12,7 +12,7 @@
 			<update_rate value=".1"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="HellBeastBikeCheck">
-					<requirement name="EntityTagCompare" target="other" tags="hellbeast"/>
+					<requirement name="EntityTagCompare" target="other" tags="vehicle_hell_beast"/>
 					<requirement name="NotHasBuff" target="other" buff="HellBeastBikeCheck"/>
 				</triggered_effect>
 			</effect_group>

@@ -63,7 +63,7 @@
 			</objective>
 			
 			<reward type="Item" id="+White River Citizen Card" value="1" />				
-			<reward type="Item" id="item_hell_beast" value="5-6" />
+			<reward type="Item" id="vehicle_hell_beast" value="5-6" />
 			<reward type="Exp" value="10000" />
 			<reward type="SkillPoints" value="3" />				
 		</quest>
