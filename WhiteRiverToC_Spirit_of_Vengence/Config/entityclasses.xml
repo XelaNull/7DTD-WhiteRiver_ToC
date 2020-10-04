@@ -110,7 +110,7 @@
 			<property name="MoveSpeed" value="0.5"/>
 			<property name="MoveSpeedAggro" value="0.75, 1.2"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="3999"/>
+				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="JuggernautDeco"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffJuggernaut"/>
 				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffJuggernautSpeedDelay"/>

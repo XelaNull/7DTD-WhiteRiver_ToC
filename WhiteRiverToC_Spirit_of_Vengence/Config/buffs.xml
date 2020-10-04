@@ -72,7 +72,7 @@
 		<buff name="buffJuggernautSpeed" icon="ui_game_symbol_agility" icon_color="132,0,155">
 			<display_value_key value="Demon Fright"/> <display_value value="xxx"/>
 			<stack_type value="ignore"/>
-			<duration value="7"/>
+			<duration value="6"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="30" shake_amplitude="60" shake_time=".5"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="-1"/>
