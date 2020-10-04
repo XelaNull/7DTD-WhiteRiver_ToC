@@ -15,5 +15,5 @@ questitem_spirit_vengeance_name,items,Quest - Note,,,+Spirit of Vengeance Hell B
 questitem_spirit_vengeance_description,items,Quest - Note,,,"Help Johnny Blaze kill an extremely tough demon to obtain a Hell Beast vehicle.\n\nYou get the distinct feeling you should bring lots of first aid kits, ammo, and a friend.",,,,,,,,,,,,,,
 questwrit_spirit_vengeance_name,items,Quest - Note,,,+Elite Writ of Spirit of Vengeance,,,,,,,,,,,,,,
 questwrit_spirit_vengeance_description,items,Quest - Note,,,Evidence that you've bested the evil demon and deserve to be rewarded with a Hall Beast vehicle.,,,,,,,,,,,,,,
-vehicle_hell_beast,vehicles,item,,,Hell Beast Motorcycle,,,,,,,,,,,,,,
+item_hell_beast,vehicles,item,,,Hell Beast Motorcycle,,,,,,,,,,,,,,
 vehicle_hell_beast_description,vehicles,item,,,A Hell Beast motorcycle you were rewarded for freeing Johnny Blaze from the Spirit of Vengeance.,,,,,,,,,,,,,,

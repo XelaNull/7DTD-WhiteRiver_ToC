@@ -30,12 +30,12 @@
 			</property>		
 		</item>
 		
-		<item name="vehicle_hell_beast">
+		<item name="item_hell_beast">
 			<property name="DescriptionKey" value="vehicle_hell_beast_description"/>						
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
 			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
 			<property name="CustomIconTint" value="255,0,0"/>
-			<property name="Tags" value="hellbeast"/>
+			<property name="Tags" value="vehicle_hell_beast"/>
 			<property name="Meshfile" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 			<property name="EconomicValue" value="10000"/>
 			<property class="Action1">
