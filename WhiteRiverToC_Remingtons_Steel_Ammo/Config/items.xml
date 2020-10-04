@@ -72,7 +72,7 @@
 			<property name="Material" value="Msteel"/>
 			<property name="EconomicValue" value="8"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
-			<property name="UnlockedBy" value="Remington's Steel 9mm Bullet"/>
+			<property name="UnlockedBy" value="Remington's Steel 9mm Bullet Schematic"/>
 			<effect_group name="Base Effects" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="29"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
@@ -100,7 +100,7 @@
 			<property name="Material" value="Msteel"/>
 			<property name="EconomicValue" value="9"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
-			<property name="UnlockedBy" value="Remington's Steel 44Magnum Bullet"/>
+			<property name="UnlockedBy" value="Remington's Steel 44Magnum Bullet Schematic"/>
 			<effect_group name="Base Effects" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="76"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
@@ -126,7 +126,7 @@
 			<property name="Material" value="Msteel"/>
 			<property name="EconomicValue" value="10"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
-			<property name="UnlockedBy" value="Remington's Steel 44Magnum Bullet"/>
+			<property name="UnlockedBy" value="Remington's Steel 762mm Bullet Schematic"/>
 			<effect_group name="Base Effects" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="46"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
