@@ -48,7 +48,7 @@
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 
-			<property name="Tags" value="melee,grunting,medium,tool,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
+			<property name="Tags" value="melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
 			<property name="Meshfile" value="#Other/Items?Tools/shovel_steelPrefab.prefab"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="EconomicValue" value="1200"/>
@@ -91,6 +91,7 @@
 		</item>
 			
 		<item name="Black Bart's Steel Pickaxe"> <!-- T3 Tools -->
+			<property name="Tags" value="melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>			
 			<property name="Extends" value="meleeToolPickT1IronPickaxe"/>
 			<property name="CustomIcon" value="meleeToolPickT2SteelPickaxe"/> 
 			<property name="CustomIconTint" value="cc3300"/>
