@@ -1,0 +1,58 @@
+<configs>
+
+  <remove xpath="/buffs/buff[@name='buffBurningFlamingArrow']" />
+	<append xpath="/buffs">
+		<buff name="buffBurningFlamingArrow" hidden="true">
+			<damage_type value="heat"/>
+			<stack_type value="replace"/><duration value="0"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningMolotov"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="0"/>
+			</effect_group>
+	
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$buffBurningFlamingArrowDuration" operation="LT" value="14"/>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14"/>
+					<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningMolotov"/>
+			</effect_group>
+	
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBurningFlamingArrow">
+					<requirement name="CVarCompare" cvar="$buffBurningFlamingArrowDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="0"/>
+			</effect_group>
+	
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffIsOnFire"/>
+	
+				<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="4,12.3,15">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+	
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value="1.5"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="35"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="-15"/>
+			</effect_group>
+	
+			<effect_group>
+				<requirement name="!EntityTagCompare" tags="player"/>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="8,26.9,30">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="6,18.4,22.5">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="4,12.3,15">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="3.32,10.2,12.5">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="2.64,8.1,9.9">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+					<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,12,16" value="2,6.1,7.5">
+						<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect>
+			</effect_group>
+		</buff>
+	</append>
+
+</configs>
