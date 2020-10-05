@@ -7,7 +7,7 @@
 			<stack_type value="replace"/><duration value="0"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="add" value="-1"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningMolotov"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningFlamingArrow"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="0"/>
 			</effect_group>
 	
@@ -15,7 +15,7 @@
 				<requirement name="CVarCompare" cvar="$buffBurningFlamingArrowDuration" operation="LT" value="14"/>
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14"/>
 					<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14"/>
-					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningMolotov"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningFlamingArrow"/>
 			</effect_group>
 	
 			<effect_group>
