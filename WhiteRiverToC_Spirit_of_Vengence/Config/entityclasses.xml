@@ -1,8 +1,8 @@
 <configs>
 	<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,motorcycle</append>
 	<append xpath="/entity_classes">
-		<entity_class name="vehicle_hell_beast">
-			<property name="Tags" value="vehicle, vehicle_hell_beast"/>
+		<entity_class name="vehicle_spirit_hell_beast">
+			<property name="Tags" value="vehicle, vehicle_spirit_hell_beast"/>
 			<property name="Class" value="EntityMotorcycle"/>
 			<property name="Parent" value="Cars"/>
 			<property name="Prefab" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
@@ -28,7 +28,7 @@
 				<requirement name="NotHasBuff" target="self" buff="buffInjuryKnockdown01Cooldown"/>
 				<requirement name="EntityTagCompare" target="other" tags="undertaker"/>
 			</triggered_effect>
-			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" stat="Stamina" operation="subtract" value="20">
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" stat="Stamina" operation="subtract" value="22">
 				<requirement name="EntityTagCompare" target="other" tags="wendigo"/>
 			</triggered_effect>
 		</effect_group>
@@ -39,7 +39,7 @@
 	
 	
 	<append xpath="/entity_classes">
-		<entity_class name="Zombie_Template" extends="zombieTemplateMale">
+		<entity_class name="Spirit_Zombie_Template" extends="zombieTemplateMale">
 			<property name="EntityType" value="Zombie" />
 			<!--property name="Mesh" value="Zombies/zombie01Ragdoll" /-->
 			<property name="Prefab" value="NPC" />
@@ -55,7 +55,7 @@
 			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 			<property name="PainResistPerHit" value=".5"/><!-- Radiated -->
 			<property name="AttackTimeoutDay" value="1.5" />
-			<property name="AttackTimeoutNight" value="1.1" />
+			<property name="AttackTimeoutNight" value=".9" />
 			<property name="WalkType" value="7" />
 			<property name="ModelType" value="ZombieUMA" />
 			<property name="RootMotion" value="true" />
@@ -63,15 +63,15 @@
 			<!--property name="AvatarController" value="AvatarZombieUMAController" /-->
 			<property name="PhysicsBody" value="zombieUMA" />
 			<property name="HasDeathAnim" value="false" />
-			<property name="TimeStayAfterDeath" value="30" />
+			<property name="TimeStayAfterDeath" value="90" />
 		</entity_class>
 		
 		
-		<entity_class name="ZombieJuggernaut" extends="Zombie_Template">
-			<property name="Archetype" value="Juggernaut" />
+		<entity_class name="ZombieSpiritJuggernaut" extends="Spirit_Zombie_Template">
+			<property name="Archetype" value="SpiritJuggernaut" />
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="Tags" value="entity,zombie,walker,boss,umazombie,juggernaut" />
-			<property name="HandItem" value="meleeHandJuggernaut"/>
+			<property name="Tags" value="entity,zombie,walker,boss,umazombie,SpiritJuggernaut" />
+			<property name="HandItem" value="meleeHandSpiritJuggernaut"/>
 			<property name="RightHandJointName" value="LeftShoulder"/>
 			<property name="LootDropProb" value="1"/>
 			<property name="ExperienceGain" value="50000"/>
@@ -96,27 +96,27 @@
 			<property name="DismemberMultiplierLegs" value="0"/>
 			<property name="LegCrippleScale" value="0"/>
 			<property name="LegCrawlerThreshold" value="0"/>
-			<property name="KnockdownProneDamageThreshold" value="1"/>
+			<property name="KnockdownProneDamageThreshold" value="10"/>
 			<property name="KnockdownProneStunDuration" value="0"/>
-			<property name="KnockdownProneRefillRate" value="1"/>
-			<property name="KnockdownKneelDamageThreshold" value="1"/>
+			<property name="KnockdownProneRefillRate" value="10"/>
+			<property name="KnockdownKneelDamageThreshold" value="10"/>
 			<property name="KnockdownKneelStunDuration" value="0"/>
-			<property name="KnockdownKneelRefillRate" value="1"/>
+			<property name="KnockdownKneelRefillRate" value="10"/>
 			<property name="LegsExplosionDamageMultiplier" value="0"/>
 			<property name="ArmsExplosionDamageMultiplier" value="0"/>
 			<property name="HeadExplosionDamageMultiplier" value="0"/>
 			<property name="ChestExplosionDamageMultiplier" value="0"/>
-			<property name="PainResistPerHit" value="1"/>
-			<property name="MoveSpeed" value="0.5"/>
-			<property name="MoveSpeedAggro" value="0.75, 1.2"/>
+			<property name="PainResistPerHit" value="2"/>
+			<property name="MoveSpeed" value="0.6"/>
+			<property name="MoveSpeedAggro" value="0.85, 1.5"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="5000"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="JuggernautDeco"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffJuggernaut"/>
-				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffJuggernautSpeedDelay"/>
+				<passive_effect name="HealthMax" operation="base_set" value="8000"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SpiritJuggernautDeco"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffSpiritJuggernaut"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffSpiritJuggernautSpeedDelay"/>
 
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>
 		</entity_class>

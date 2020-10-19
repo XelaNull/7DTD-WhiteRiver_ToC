@@ -1,12 +1,12 @@
 <configs>
 	<append xpath="/blocks">
 		<!-- Create the blocks for the Sealed Citizen Crate & Citizen Crate items -->
-		<block name="+Sealed Citizen Crate">
+		<block name="questblock_toc_citizencrate_name">
+			<property name="DescriptionKey" value="questblock_toc_citizencrate_desc"/>			
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
 			<property name="Extends" value="cntShippingCrateHero"/>
 			<property name="DowngradeBlock" value="+Citizen Crate"/>
-			<property name="DescriptionKey" value="cntLootCrateHeroDesc"/>			
 			<property name="FilterTags" value="floot"/>
 		</block>	
 		<block name="+Citizen Crate">
@@ -15,12 +15,12 @@
 			<property name="Extends" value="cntGarageStorage"/>
 			<property name="LootList" value="165"/>
 		</block>	
-		<block name="+Sealed Elite Citizen Crate">
+		<block name="questblock_toc_elitecrate_name">
+			<property name="DescriptionKey" value="questblock_toc_elitecrate_desc"/>			
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
 			<property name="Extends" value="cntShippingCrateHero"/>
 			<property name="DowngradeBlock" value="+Elite Citizen Crate"/>
-			<property name="DescriptionKey" value="cntLootCrateHeroDesc"/>			
 			<property name="FilterTags" value="floot"/>
 		</block>	
 		<block name="+Elite Citizen Crate">
@@ -28,6 +28,22 @@
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
 			<property name="LootList" value="166"/>
+		</block>	
+		
+		
+		<block name="questblock_toc_randomcrate_name">
+			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>			
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="ffffb3"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
+			<property name="DowngradeBlock" value="+Random Elite Citizen Crate"/>
+			<property name="FilterTags" value="floot"/>
+		</block>	
+		<block name="+Random Elite Citizen Crate">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="333333"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="190"/>
 		</block>	
 	</append>	
 </configs>	

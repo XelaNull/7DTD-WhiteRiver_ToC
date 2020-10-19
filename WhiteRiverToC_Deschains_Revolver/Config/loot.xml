@@ -3,8 +3,8 @@
 		<lootcontainer id="158" count="3,5" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="modMeleeT2" count="0,1" prob="0.5"/>
 			
-			<item name="45LC Silver Bullet of Gilead" count="12,96"/>
-			<item name="45LC Gold Bullet of Gilead" count="6,48"/>
+			<item name="crafteditem_toc_45lcsilver_schem_name" count="12,96"/>
+			<item name="crafteditem_toc_45lcgold_schem_name" count="6,48"/>
 
 			<item group="perkBooks" count="1,2" prob="0.7"/>
 			<item group="groupTreasureMaps" count="0,1" prob="0.1"/>
@@ -13,14 +13,14 @@
 	
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
 		<lootgroup name="groupBooksDarkTower">
-			<item name="Dark Tower: The Gunslinger"/>
-			<item name="Dark Tower: The Drawing Of The Three" prob=".2"/>
-			<item name="Dark Tower: The Waste Lands" prob=".2"/>
-			<item name="Dark Tower: The Wizard And Glass" prob=".2"/>
-			<item name="Dark Tower: Wind Through The Keyhole" prob=".2"/>
-			<item name="Dark Tower: Wolves Of The Calla" prob=".2"/>
-			<item name="Dark Tower: Song Of Suzannah" prob=".2"/>
-			<item name="The Dark Tower" prob=".05" />
+			<item name="item_toc_desc_book1_name"/>
+			<item name="item_toc_desc_book2_name" prob=".3"/>
+			<item name="item_toc_desc_book3_name" prob=".3"/>
+			<item name="item_toc_desc_book4_name" prob=".3"/>
+			<item name="item_toc_desc_book5_name" prob=".3"/>
+			<item name="item_toc_desc_book6_name" prob=".3"/>
+			<item name="item_toc_desc_book7_name" prob=".3"/>
+			<item name="item_toc_desc_book8_name" prob=".15" />
 		</lootgroup>
 	</insertAfter>
 			

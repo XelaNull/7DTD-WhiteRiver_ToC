@@ -8,7 +8,7 @@
 			<property name="Extends" value="questMaster"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Elite Quest For Spirit of Vengeance Hell Beast"/>
+				<property name="QuestGiven" value="+Elite Quest Hell Beast Starter"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
@@ -30,33 +30,33 @@
 			</property>		
 		</item>
 		
-		<item name="vehicle_hell_beast">
-			<property name="DescriptionKey" value="vehicle_hell_beast_description"/>						
+		<item name="vehicle_spirit_hell_beast">
+			<property name="DescriptionKey" value="vehicle_spirit_hell_beast_description"/>						
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
 			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
 			<property name="CustomIconTint" value="255,0,0"/>
-			<property name="Tags" value="vehicle_hell_beast"/>
+			<property name="Tags" value="vehicle_spirit_hell_beast"/>
 			<property name="Meshfile" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 			<property name="EconomicValue" value="10000"/>
 			<property class="Action1">
-				<property name="Vehicle" value="vehicle_hell_beast"/>
+				<property name="Vehicle" value="vehicle_spirit_hell_beast"/>
 				<property name="VehicleSize" value="1.3, 1.9, 3"/>
 			</property>
-			<effect_group name="vehicle_hell_beast" tiered="false">
+			<effect_group name="vehicle_spirit_hell_beast" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="4"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
 
-		<item name="meleeHandJuggernaut">
+		<item name="meleeHandSpiritJuggernaut">
 			<property name="Extends" value="meleeHandMaster"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Degradation" value="99999" param1="true"/>
 			<property class="Action0">
 				<property name="Range" value="1.75"/>
-				<property name="DamageEntity" value="30"/>
-				<property name="DamageBlock" value="750"/>
+				<property name="DamageEntity" value="100"/>
+				<property name="DamageBlock" value="3500"/>
 				<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>
 				<property name="Sound_start" value="Auger_Fire_Start"/>
 				<property class="HitSounds">
@@ -67,18 +67,18 @@
 				<property name="Delay" value=".3"/>
 				<property name="Range" value="500"/>
 				<property name="Infinite_ammo" value="true"/>
-				<property name="Magazine_items" value="JuggernautProjectile"/>
+				<property name="Magazine_items" value="SpiritJuggernautProjectile"/>
 				<property name="Sound_warning" value="demolitionzexplodewarning"/>
 				<property name="Sound_start" value="m136_fire"/>
 				<property name="Sound_repeat" value=""/>
 				<property name="Sound_end" value=""/>
 				<property name="Sound_empty" value=""/>
 				<property name="Sound_reload" value=""/></property>
-			<effect_group name="meleeHandJuggernaut" tiered="false">
+			<effect_group name="meleeHandSpiritJuggernaut" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="0"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
 				<passive_effect name="MaxRange" operation="base_set" value="100"/>
-				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="2"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3"/>
@@ -89,31 +89,122 @@
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="30"/>
 			</effect_group>
 		</item>
-		<item name="JuggernautProjectile">
+		<item name="SpiritJuggernautProjectile">
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="CreativeMode" value="None"/>
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
-				<property name="DamageEntity" value="25"/>
-				<property name="DamageBlock" value="750"/>
+				<property name="DamageEntity" value="75"/>
+				<property name="DamageBlock" value="7000"/>
 				<property name="Explosion.ParticleIndex" value="2"/>
 				<!-- which Prefab/particle is used -->
-				<property name="Explosion.RadiusBlocks" value="5"/>
+				<property name="Explosion.RadiusBlocks" value="6"/>
 				<!-- damage radius for blocks -->
-				<property name="Explosion.RadiusEntities" value="4"/>
+				<property name="Explosion.RadiusEntities" value="5"/>
 				<!-- damage radius for entities -->
 				<property name="Explosion.DamageBonus.water" value="0"/>
-				<property name="Velocity" value="18"/>
+				<property name="Velocity" value="22"/>
 				<property name="FlyTime" value="2"/>
 				<property name="LifeTime" value="4"/>
 				<property name="CollisionRadius" value="0.75"/>
 				<property name="DamageBonus.earth" value="0"/></property>
-			<effect_group name="JuggernautProjectile" tiered="false">
+			<effect_group name="SpiritJuggernautProjectile" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="0"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0.5" tags="stone"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
+			</effect_group>
+		</item>
+		
+		
+		<item name="medicalVengeanceFirstAidKit">
+			<property name="DescriptionKey" value="medicalVengeanceFirstAidKitDesc"/>	
+			<property name="CustomIcon" value="medicalFirstAidKit"/>					
+			<property name="CustomIconTint" value="00ff00"/>
+			<property name="Extends" value="medicalBandage" />
+			<property name="DisplayType" value="medicalFirstAidKit"/>
+			<property name="Group" value="Science,Medical"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Stacknumber" value="1"/>
+		
+			<property class="Action0">
+				<!-- <requirement name="StatCompare" stat="health" operation="lte" value="50"/> -->
+				<property name="Sound_start" value="player_firstAidKit"/>
+			</property>
+			<property class="Action1">
+				<property name="Sound_start" value="player_firstAidKit"/>
+			</property>
+		
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="5"/> <!-- X -->
+				<display_value name="dhealAbrasionMult" value="4"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInjuryAbrasionTreated">
+					<requirement name="HasBuff" buff="buffInjuryAbrasion"/>
+				</triggered_effect>
+		
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="140"/> <!-- X -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="14"/>
+				<display_value name="foodHealthAmount" value="180"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/><display_value name="dStopsBleeding" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLaceration"/><display_value name="dStopsLaceration" value="1"/>
+		
+				<!-- used on other -->
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healAbrasionMult" operation="set" value="5"/> <!-- X -->
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medicalRegHealthAmount" operation="add" value="200"/> <!-- X -->
+		
+				<!-- used on other, regular health per tick based on perkPhysician -->
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="12.2">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="0"/></triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="12.5">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/></triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="12.8">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/></triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="13.1">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/></triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="13.5">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/></triggered_effect>
+		
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffInjuryBleeding"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffLaceration"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="2000"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffInjuryAbrasionTreated">
+					<requirement name="HasBuff" buff="buffInjuryAbrasion"/></triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+				<!-- medical XP gains -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/>
+				</triggered_effect>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="600">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/>
+				</triggered_effect>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="800">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
+				</triggered_effect>
+			</effect_group>
+		
+			<effect_group tiered="false">
+				<!-- medical XP secondary action gains -->
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="2000"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="500">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/>
+				</triggered_effect>
+						<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="500">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="600">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/>
+				</triggered_effect>
+						<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="800">
+					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
 	</append>

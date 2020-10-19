@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="/items">
 
-		<item name="+Jason's Machete Quest"> 
+		<item name="questitem_toc_jason_name"> 
+			<property name="DescriptionKey" value="questitem_toc_jason_description"/>									
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -13,7 +14,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Jason">
+		<item name="questwrit_toc_jason_name">
+			<property name="DescriptionKey" value="questwrit_toc_jason_description"/>												
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -30,7 +32,8 @@
 			<property name="Group" value="Special Items"/>	
 		</item>	
 		
-		<item name="Jason's Machete"> <!-- T3 Blades -->
+		<item name="item_toc_jason_name"> <!-- T3 Blades -->
+			<property name="DescriptionKey" value="item_toc_jason_description"/>															
 			<property name="Tags" value="machete,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/> 
@@ -92,7 +95,7 @@
 					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 				</property>
 			</property>
-			<effect_group name="meleeToolKnifeMachete">
+			<effect_group name="item_toc_jason_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="25"/> <!-- meleeToolKnifeMachete -->
 				<passive_effect name="BlockDamage" operation="base_set" value="23"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>

@@ -2,31 +2,31 @@
 	<append xpath="/recipes">
 	
 		<!-- The quest and goal item to craft for reward for: Bambi's Killer Bow -->
-		<recipe name="+Bambi's Killer Bow Quest" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="+White River Citizen Card" count="1"/>
+		<recipe name="questitem_toc_bambi_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
-		<recipe name="+Writ Of Bambi" count="1" craft_time = "90" craft_exp_gain="10000" >
+		<recipe name="questwrit_toc_bambi_name" count="1" craft_time = "90" craft_exp_gain="10000" >
 			<ingredient name="gunBowT1WoodenBowParts" count="2"/>
 			<ingredient name="gunBowT0PrimitiveBow" count="20"/>			
 			<ingredient name="resourceWood" count="400"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		
-		<recipe name="+Bambi's Killer Bow Vet. Quest" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+		<recipe name="vetquestitem_toc_bambi_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
-		<recipe name="+Veteran Writ Of Bambi" count="1" craft_time = "300" craft_exp_gain="20000" >
+		<recipe name="vetquestwrit_toc_bambi_name" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="gunBowT3CompoundBow" count="20"/>
 			<ingredient name="resourceWood" count="4000"/>
 			<ingredient name="resourceAnimalFat" count="50"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>			
 		
-		<recipe name="+Forest Prince Bow Elite Quest" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="+White River Elite Citizen Card" count="1"/>
+		<recipe name="elitequestitem_toc_bambi_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
 		</recipe>
 		
-		<recipe name="+Elite Writ Of Forest Prince Compound Bow" count="1" craft_time = "500" craft_exp_gain="30000" >
+		<recipe name="elitequestwrit_toc_bambi_name" count="1" craft_time = "500" craft_exp_gain="30000" >
 			<ingredient name="gunBowT3CompoundBow" count="30"/>
 			<ingredient name="resourceWood" count="12000"/>
 			<ingredient name="resourceAnimalFat" count="100"/>

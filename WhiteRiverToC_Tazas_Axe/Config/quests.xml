@@ -1,35 +1,40 @@
 <config>
 	<append xpath="/quests" >	
 			<quest id="+Quest For Taza's Axe">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="In the wake of the event, rumors circulated about a fabled axe created by a Master Craftswoman named Taza. The citizens of White River banded together to locate this Craftswoman only to arrive at just the right moment to save the her life. In repayment, she provided the plans so any White River citizen can reproduce this famous axe. You too can own a copy of this special axe, with a lot of effort. Gather 400 Small Stone + Craft 20 Stone Axes."/>
-				<property name="name" value="Quest for Fabled Taza's Axe" />
-				<property name="subtitle" value="Quest for Fabled Taza's Axe" />
-				<property name="description" value="Gather 400 Small Stone + Craft 20 Stone Axes to receive one of the fabled Taza's Axes." />
+				<property name="name_key" value="quest_toc_taza_name"/>
+				<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
+				<property name="description_key" value="quest_toc_taza_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_taza_offer"/>
+				<property name="statement_key" value="quest_toc_taza_statement"/>
+				<property name="response_key" value="questdialog_toc_taza"/>				
+				<property name="group_name_key" value="quest_toc_taza_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="resourceRockSmall" value="400" phase="1" />
 				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Writ Of Taza" value="1" phase="2" />
+				<objective type="Craft" id="questwrit_toc_taza_name" value="1" phase="2" />
 				
 				<reward type="Exp" value="1500" />
 			</quest>
 			
 			<quest id="+Reward of Taza's Axe">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Now that you have collected the needed items, return the trader to collect your reward."/>
-				<property name="name" value="Reward of Fabled Taza's Axe" />
-				<property name="subtitle" value="Collect your reward of the Fabled Taza's Axe" />
-				<property name="description" value="Return to the Trader to obtain of the Fabled Taza's Axes." />
+				<property name="name_key" value="questreward_toc_taza_name"/>
+				<property name="subtitle_key" value="questreward_toc_taza_subtitle"/>
+				<property name="description_key" value="questreward_toc_taza_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
+				<property name="offer_key" value="questreward_toc_taza_offer"/>
+				<property name="statement_key" value="questreward_toc_taza_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_taza"/>				
+				<property name="group_name_key" value="quest_toc_taza_group"/>
+				<property name="shareable" value="false" />				
 				<property name="completiontype" value="TurnIn"/>
 	
 				<objective type="Goto" value="5" phase="1"/>
@@ -43,7 +48,7 @@
 					<property name="use_closest" value="true" />
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->		
 				<reward type="Item" id="meleeToolRepairT0TazasStoneAxe" value="2-4" />	
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
 				<reward type="Item" id="modMeleeWoodSplitterSchematic" value="1" />
@@ -53,37 +58,41 @@
 			</quest>
 
 			<quest id="+Vet. Quest For Taza's Axe">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Recently, whispers on the wind have been saying there is a stash of Taza Axes crafted by Taza the Master Craftswoman herself. The Trader will provide one of these to any who demonstrates exceptional donations to their local community. Collect 4000 Small Stone + 200 Plant Fibers + 20 Stone Axes and craft a +Veteran Writ Of Taza to redeem for your Axe. You also will receive a weapon and ammo as well as a small gift to help you take on any who would stand in your way."/>
-				<property name="name" value="Veteran Quest to obtain Fabled Tazas Axe" />
-				<property name="subtitle" value="Veteran Quest for Fabled Taza Axe" />
-				<property name="description" value="Collect 4000 Small Stone + 200 Plant Fibers + 20 Stone Axes to obtain a high-quality Taza's Axe." />
+				<property name="name_key" value="vetquest_toc_taza_name"/>
+				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
+				<property name="description_key" value="vetquest_toc_taza_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="vetquest_toc_taza_offer"/>
+				<property name="statement_key" value="vetquest_toc_taza_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_taza"/>				
+				<property name="group_name_key" value="vetquest_toc_taza_group"/>
+				<property name="shareable" value="false" />						
 	
 				<objective type="FetchKeep" id="resourceRockSmall" value="4000" phase="1" />
 				<objective type="FetchKeep" id="resourceYuccaFibers" value="200" phase="1" />
 				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Veteran Writ Of Taza" value="1" phase="2" />	
+				<objective type="Craft" id="vetquestwrit_toc_taza_name" value="1" phase="2" />	
 				
 				<reward type="Exp" value="5000" />
 			</quest>
 			
 			<quest id="+Veteran Reward of Taza's Axe">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Bless your charitable heart! Now that you have collected the needed items, return the trader to collect your reward."/>
-				<property name="name" value="Veteran Reward of Fabled Taza's Axe" />
-				<property name="subtitle" value="Collect your Veteran Reward of the Fabled Taza's Axe" />
-				<property name="description" value="Return to the Trader to obtain your high-quality Taza's Axe." />
+				<property name="name_key" value="vetquest_toc_taza_name"/>
+				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
+				<property name="description_key" value="vetquest_toc_taza_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
+				<property name="offer_key" value="vetquest_toc_taza_offer"/>
+				<property name="statement_key" value="vetquest_toc_taza_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_taza"/>				
+				<property name="group_name_key" value="vetquest_toc_taza_group"/>
+				<property name="shareable" value="false" />	
 				<property name="completiontype" value="TurnIn"/>
 	
 				<objective type="Goto" value="5" phase="1"/>
@@ -95,12 +104,12 @@
 					<property name="phase" value="3" />
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->		
 				<reward type="Item" id="meleeToolRepairT0TazasStoneAxe" value="5-6" />	
 				<reward type="Item" id="ammo9mmBulletHP" value="50-150" />
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
 				<reward type="Item" id="gunSMG5" value="3-5" />
-				<reward type="Item" id="+Sealed Taza's Veteran Crate" value="1" />
+				<reward type="Item" id="questblock_toc_tazacrate_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />
 				<reward type="Exp" value="1500" />
 				<reward type="SkillPoints" value="1" />					

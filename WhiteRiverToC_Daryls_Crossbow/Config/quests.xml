@@ -1,37 +1,40 @@
 <config>
 	<append xpath="/quests" >
-	
 			<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will provide you with a replica of Daryl's famous Zombiekiller Crossbow in exchange for your assistance. Gather 400 Wood, 2 Bow Parts, Craft 20 Primitive Bows" />
-				<property name="name" value="Vet. Quest to obtain Daryl's Zombiekiller Crossbow" />
-				<property name="subtitle" value="Obtain Daryl's Zombiekiller Crossbow" />
-				<property name="description" value="Gather 400 Wood, 2 Bow Parts, Craft 20 Primitive Bows to obtain Daryl's Zombiekiller Crossbow." />
+				<property name="name_key" value="vetquest_toc_daryl_name"/>
+				<property name="subtitle_key" value="vetquest_toc_daryl_subtitle"/>
+				<property name="description_key" value="vetquest_toc_daryl_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
+				<property name="offer_key" value="vetquest_toc_daryl_offer"/>
+				<property name="statement_key" value="vetquest_toc_daryl_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_daryl"/>				
+				<property name="group_name_key" value="vetquest_toc_daryl_group"/>
+				<property name="shareable" value="false" />				
 	
 				<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1" />
 				<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Veteran Writ Of Daryl" value="1" phase="2" />		
+				<objective type="Craft" id="vetwrititem_toc_daryl_name" value="1" phase="2" />		
 	
 				<reward type="Exp" value="1000" />
 			</quest>
 			<quest id="+Veteran Reward of Daryl's Zombiekiller Crossbow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Thank you for your support of the bow-making class. Collect your reward from the Trader."/>
-				<property name="name" value="Vet. Reward of Daryl's Zombiekiller Crossbow" />
-				<property name="subtitle" value="Vet. Reward of Daryl's Zombiekiller Crossbow" />
-				<property name="description" value="Return to the Trader to collect your Daryl's Zombiekiller Crossbow." />
+				<property name="name_key" value="vetquestreward_toc_daryl_name"/>
+				<property name="subtitle_key" value="vetquestreward_toc_daryl_subtitle"/>
+				<property name="description_key" value="vetquestreward_toc_daryl_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
+				<property name="offer_key" value="vetquestreward_toc_daryl_offer"/>
+				<property name="statement_key" value="vetquestreward_toc_daryl_statement"/>
+				<property name="response_key" value="vetquestrewarddialog_toc_daryl"/>				
+				<property name="group_name_key" value="vetquest_toc_daryl_group"/>
+				<property name="shareable" value="false" />						
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -44,15 +47,15 @@
 					<property name="nav_object" value="return_to_trader" />										
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Daryls Zombiekiller Crossbow" value="2-5" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="vetitem_toc_daryl_name" value="3-4" />
 				<reward type="Item" id="modGunBowPolymerString" value="1" />
 				<reward type="Item" id="modGunMeleeTheHunter" value="1" />
 				<reward type="Item" id="plantedCorn1Schematic" value="1" />
 				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="100-250" />
 				<reward type="Item" id="ammoCrossbowBoltFlaming" value="100-250" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-50" />	
-				<reward type="Item" id="+Sealed Daryl's Crate" value="1" />
+				<reward type="Item" id="questblock_toc_darylcrate_name" value="1" />
 				<reward type="Exp" value="1000" />
 				<reward type="SkillPoints" value="1" />				
 			</quest>
@@ -60,37 +63,42 @@
 	
 			<!-- ELITE QUEST -->
 			<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is still really having problems outfitting survivors with bows. If you can provide a substantial boost to the inventory of bows and wood for their bow-making class, they will give you the REAL *Cough* Famed Daryl's Zombiekiller Compound Crossbow(From behind the counter) in exchange for your assistance. Gather 4000 Wood + 50 Animal Fat, Craft 20 Compound Bows" />
-				<property name="name" value="Elite Quest to obtain Daryl's Zombiekiller Compound Crossbow" />
-				<property name="subtitle" value="Obtain Daryl's Zombiekiller Compound Crossbow" />
-				<property name="description" value="Gather 4000 Wood + 50 Animal Fat, Craft 20 Compound Bows to obtain a high-quality Daryl's Zombiekiller Compound Crossbow" />
+				<property name="name_key" value="elitequest_toc_daryl_name"/>
+				<property name="subtitle_key" value="elitequest_toc_daryl_subtitle"/>
+				<property name="description_key" value="elitequest_toc_daryl_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
-				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
+				<property name="offer_key" value="elitequest_toc_daryl_offer"/>
+				<property name="statement_key" value="elitequest_toc_daryl_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_daryl"/>				
+				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+				<property name="shareable" value="false" />		
 	
 				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="4000" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Elite Writ Of Daryl" value="1" phase="2" />		
+				<objective type="Craft" id="elitewrititem_toc_daryl_name" value="1" phase="2" />		
 
 				<reward type="Exp" value="5000" />
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	<!-- This makes the quest repeatable -->						
 			</quest>		
 			
 			<quest id="+Elite Reward of Daryl's Zombiekiller Compound Crossbow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Your help with the bow-making class is truly appreciated. Collect your fancy Compound Crossbow from the Trader."/>
-				<property name="name" value="Elite Reward of Daryl's Zombiekiller Compound Crossbow" />
-				<property name="subtitle" value="Elite Reward of Daryl's Zombiekiller Compound Crossbow" />
-				<property name="description" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="name_key" value="elitequestreward_toc_daryl_name"/>
+				<property name="subtitle_key" value="elitequestreward_toc_daryl_subtitle"/>
+				<property name="description_key" value="elitequestreward_toc_daryl_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
+				<property name="offer_key" value="elitequestreward_toc_daryl_offer"/>
+				<property name="statement_key" value="elitequestreward_toc_daryl_statement"/>
+				<property name="response_key" value="elitequestrewarddialog_toc_daryl"/>				
+				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+				<property name="shareable" value="false" />		
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -103,9 +111,9 @@
 					<property name="nav_object" value="return_to_trader" />										
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Daryls Zombiekiller Compound Crossbow" value="3-6" />
-				<reward type="Item" id="+Sealed Daryl's Crate" value="2" />
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="eliteitem_toc_daryl_name" value="5-6" />
+				<reward type="Item" id="questblock_toc_darylcrate_name" value="2" />
 				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="100-250" />
 				<reward type="Item" id="ammoCrossbowBoltFlaming" value="100-250" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	

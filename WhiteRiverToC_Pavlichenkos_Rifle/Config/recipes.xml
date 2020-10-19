@@ -1,19 +1,19 @@
 <configs>
 	<append xpath="/recipes">
 		
-		<recipe name="+Pavlichenko Rifle Vet. Quest" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+		<recipe name="vetquestitem_toc_pav_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
 		
-		<recipe name="+Writ Of Pavlichenko Trigger Group" count="1" craft_time = "90" craft_exp_gain="5000" >
+		<recipe name="vetquestwrit_toc_pav_name" count="1" craft_time = "90" craft_exp_gain="5000" >
 			<ingredient name="gunRifleT2MarksmanRifle" count="5"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		
-		<recipe name="+Writ Of Pavlichenko Marksman Rifle" count="1" craft_time = "300" craft_exp_gain="10000" >
-			<ingredient name="Pavlichenko Trigger Group" count="1"/>
-			<ingredient name="Pavlichenko Barrel" count="1"/>
-			<ingredient name="Pavlichenko Stock" count="1"/>
+		<recipe name="vetquestwrit_toc_pav_rifle_name" count="1" craft_time = "300" craft_exp_gain="10000" >
+			<ingredient name="questitem_toc_pav_trigger_name" count="1"/>
+			<ingredient name="questitem_toc_pav_barrel_name" count="1"/>
+			<ingredient name="questitem_toc_pav_stock_name" count="1"/>
 			<ingredient name="gunRifleT1HuntingRifleParts" count="20"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>			

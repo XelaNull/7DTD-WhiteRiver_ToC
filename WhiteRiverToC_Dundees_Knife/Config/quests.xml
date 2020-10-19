@@ -2,33 +2,37 @@
 	<append xpath="/quests" >
 
 			<quest id="+Quest For Dundee's Knife">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="G'Eye, mate. That's not a knoife. THIS is a knoife! The Trader mentioned he has a few extra Dundee's famous hunting knives. This is the knife that was once used by a famous crocodile hunter. Before the trader will part with this knife, your help is needed to gather bone shivs for the Trader to hand out to those in need. Craft 10 Bone Knives" />
-				<property name="name" value="Quest to craft Dundee's Hunting Knife" />
-				<property name="subtitle" value="Craft the +Writ Of Dundee" />
-				<property name="description" value="Craft 10 Bone Knives to obtain your Dundee Knife." />
+				<property name="name_key" value="quest_toc_dundee_name"/>
+				<property name="subtitle_key" value="quest_toc_dundee_subtitle"/>
+				<property name="description_key" value="quest_toc_dundee_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="veryeasy" />
+				<property name="offer_key" value="quest_toc_dundee_offer"/>
+				<property name="statement_key" value="quest_toc_dundee_statement"/>
+				<property name="response_key" value="questdialog_toc_dundee"/>				
+				<property name="group_name_key" value="quest_toc_dundee_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="meleeWpnBladeT0BoneKnife" value="10" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Writ Of Dundee" value="1" phase="2" />		
+				<objective type="Craft" id="questwrit_toc_dundee_name" value="1" phase="2" />		
 				<reward type="Exp" value="1500" />
 			</quest>
 			<quest id="+Reward of Dundee's Knife">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Get on the right side of the road you pelican! Get your arse to the Trader to collect your reward."/>
-				<property name="name" value="Reward of Dundee's Knife" />
-				<property name="subtitle" value="Reward of Dundee's Knife" />
-				<property name="description" value="Return to the Trader to collect your Dundee Knife." />
+				<property name="name_key" value="questreward_toc_dundee_name"/>
+				<property name="subtitle_key" value="questreward_toc_dundee_subtitle"/>
+				<property name="description_key" value="questreward_toc_dundee_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="veryeasy" />
+				<property name="offer_key" value="questreward_toc_dundee_offer"/>
+				<property name="statement_key" value="questreward_toc_dundee_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_dundee"/>				
+				<property name="group_name_key" value="quest_toc_dundee_group"/>				
+				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -41,10 +45,10 @@
 					<property name="nav_object" value="return_to_trader" />										
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Dundee's Hunting Knife" value="2-6" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="item_toc_dundeeknife_name" value="2-6" />
 				<reward type="Item" id="plantedBlueberry1Schematic" value="1" />
-				<reward type="Item" id="+Sealed Dundee's Crate" value="1" />
+				<reward type="Item" id="questblock_toc_dundeecrate_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="20-100" />	
 				<reward type="Exp" value="1500" />
 				<reward type="SkillPoints" value="1" />					

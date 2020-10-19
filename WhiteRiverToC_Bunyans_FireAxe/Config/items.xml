@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="/items">
 
-		<item name="+Bunyan's FireAxe Quest"> 
+		<item name="questitem_toc_bunyan_name"> 
+			<property name="DescriptionKey" value="questitem_toc_bunyan_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -13,7 +14,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Bunyan">
+		<item name="questwrit_toc_bunyan_name">
+			<property name="DescriptionKey" value="questwrit_toc_bunyan_description"/>									
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -32,7 +34,8 @@
 		
 
 		
-		<item name="Bunyans Fireaxe"> <!-- T2 Tools -->
+		<item name="item_toc_bunyanaxe_name"> <!-- T2 Tools -->
+			<property name="DescriptionKey" value="item_toc_bunyanaxe_desc"/>									
 			<property name="Tags" value="axe,melee,grunting,medium,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
@@ -75,7 +78,7 @@
 				<property name="UseGrazingHits" value="true"/>
 				<property name="SwingAngle" value="135"/>
 			</property>
-			<effect_group name="meleeToolAxeT1IronFireaxe">
+			<effect_group name="item_toc_bunyanaxe_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="20.1"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="65.0"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="80"/> <!-- Gazz change 47 to 60 -->

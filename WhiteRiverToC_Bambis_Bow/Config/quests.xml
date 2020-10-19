@@ -2,36 +2,40 @@
 	<append xpath="/quests" >
 	
 			<quest id="+Quest For Bambi's Killer Bow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is having problems outfitting survivors with bows. If you can provide bows and enough wood for their bow-making class, they will give you the famed Bambi Killer compound bow..or maybe a replica..in exchange for your assistance. Gather 400 Wood, 2 Bow Parts, Craft 20 Primitive Bows" />
-				<property name="name" value="Quest to obtain Bambi's Killer Compound Bow" />
-				<property name="subtitle" value="Obtain Bambi's Killer Compound Bow" />
-				<property name="description" value="Gather 400 Wood, 2 Bow Parts, Craft 20 Primitive Bows to obtain Bambi's Killer Compound Bow." />
+				<property name="name_key" value="quest_toc_bambi_name"/>
+				<property name="subtitle_key" value="quest_toc_bambi_subtitle"/>
+				<property name="description_key" value="quest_toc_bambi_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_bambi_offer"/>
+				<property name="statement_key" value="quest_toc_bambi_statement"/>
+				<property name="response_key" value="questdialog_toc_bambi"/>				
+				<property name="group_name_key" value="quest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1" />
 				<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Writ Of Bambi" value="1" phase="2" />		
+				<objective type="Craft" id="questwrit_toc_bambi_name" value="1" phase="2" />		
 	
 				<reward type="Exp" value="1000" />
 			</quest>
 			<quest id="+Reward of Bambi's Killer Bow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Thank you for your support of the bow-making class. Collect your reward from the Trader."/>
-				<property name="name" value="Reward of Bambi's Killer Bow" />
-				<property name="subtitle" value="Reward of Bambi's Killer Bow" />
-				<property name="description" value="Return to the Trader to collect your Bambi's Killer Compound Bow." />
+				<property name="name_key" value="questreward_toc_bambi_name"/>
+				<property name="subtitle_key" value="questreward_toc_bambi_subtitle"/>
+				<property name="description_key" value="questreward_toc_bambi_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_bambi_offer"/>
+				<property name="statement_key" value="questreward_toc_bambi_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_bambi"/>				
+				<property name="group_name_key" value="quest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -44,8 +48,8 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Bambis Killer Compound Bow" value="1-3" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="item_toc_bambi_name" value="1-3" />
 				<reward type="Item" id="modGunBowPolymerString" value="1" />
 				<reward type="Item" id="modGunMeleeTheHunter" value="1" />
 				<reward type="Item" id="plantedCorn1Schematic" value="1" />
@@ -56,37 +60,42 @@
 				<reward type="SkillPoints" value="1" />				
 			</quest>
 	
+	
 			<quest id="+Vet. Quest For Bambi's Killer Compound Bow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is still really having problems outfitting survivors with bows. If you can provide a substantial boost to the inventory of bows and wood for their bow-making class, they will give you the REAL *Cough* Famed Bambi Killer Compound Crossbow(From behind the counter) in exchange for your assistance. Gather 4000 Wood + 50 Animal Fat, Craft 20 Compound Bows" />
-				<property name="name" value="Veteran Quest to obtain Bambi's Killer Compound Bow" />
-				<property name="subtitle" value="Obtain Bambi's Killer Compound Crossbow" />
-				<property name="description" value="Gather 4000 Wood + 50 Animal Fat, Craft 20 Compound Bows to obtain a high-quality Bambi's Killer Compound Bow" />
+				<property name="name_key" value="vetquest_toc_bambi_name"/>
+				<property name="subtitle_key" value="vetquest_toc_bambi_subtitle"/>
+				<property name="description_key" value="vetquest_toc_bambi_desc"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquest_toc_bambi_offer"/>
+				<property name="statement_key" value="vetquest_toc_bambi_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_bambi"/>				
+				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="4000" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Veteran Writ Of Bambi" value="1" phase="2" />		
+				<objective type="Craft" id="vetquestwrit_toc_bambi_name" value="1" phase="2" />		
 
 				<reward type="Exp" value="5000" />
 			</quest>		
 			<quest id="+Veteran Reward of Bambi's Killer Compound Bow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Your help with the bow-making class is truly appreciated. Collect your fancy Compound Bow from the Trader."/>
-				<property name="name" value="Veteran Reward of Bambi's Killer Compound Bow" />
-				<property name="subtitle" value="Veteran Reward of Bambi's Killer Compound Bow" />
-				<property name="description" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="name_key" value="vetquestreward_toc_bambi_name"/>
+				<property name="subtitle_key" value="vetquestreward_toc_bambi_subtitle"/>
+				<property name="description_key" value="vetquestreward_toc_bambi_desc"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="vetquestreward_toc_bambi_offer"/>
+				<property name="statement_key" value="vetquestreward_toc_bambi_statement"/>
+				<property name="response_key" value="vetquestrewarddialog_toc_bambi"/>				
+				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -99,9 +108,9 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Bambis Killer Compound Bow" value="4-5" />
-				<reward type="Item" id="+Sealed Bambi's Veteran Crate" value="1" />
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="item_toc_bambi_name" value="4-5" />
+				<reward type="Item" id="questblock_toc_bambicrate_name" value="1" />
 				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="100-200" />
 				<reward type="Item" id="ammoCrossbowBoltFlaming" value="100-150" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
@@ -111,37 +120,42 @@
 			
 			
 			<quest id="+Forest Prince Bow Elite Quest">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader is offering a rare opportunity. If you can provide a boost to the inventory for their bow-making class, they will give you the Legndary Forest Prince Compound Bow in exchange for your assistance. Gather 12000 Wood + 100 Animal Fat, Craft 30 Compound Bows" />
-				<property name="name" value="Elite Quest to obtain the Forest Prince Compound Bow" />
-				<property name="subtitle" value="Obtain Forest Prince Compound Bow" />
-				<property name="description" value="Gather 12000 Wood + 100 Animal Fat, Craft 30 Compound Bows to obtain a high-quality Forest Prince Compound Bow" />
+				<property name="name_key" value="elitequest_toc_bambi_name"/>
+				<property name="subtitle_key" value="elitequest_toc_bambi_subtitle"/>
+				<property name="description_key" value="elitequest_toc_bambi_desc"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_bambi_offer"/>
+				<property name="statement_key" value="elitequest_toc_bambi_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_bambi"/>				
+				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="30" phase="1" />
 				<objective type="FetchKeep" id="resourceAnimalFat" value="100" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="12000" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Elite Writ Of Forest Prince Compound Bow" value="1" phase="2" />		
+				<objective type="Craft" id="elitequestwrit_toc_bambi_name" value="1" phase="2" />		
 
 				<reward type="Exp" value="12000" />
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	<!-- This makes the quest repeatable -->						
 			</quest>	
 			
 			<quest id="+Elite Reward of Forest Prince Compound Bow">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Your help with the bow-making class is truly appreciated. Collect your legendary Forest Prince Compound Bow from the Trader."/>
-				<property name="name" value="Elite Reward of Forest Prince Compound Bow" />
-				<property name="subtitle" value="Elite Reward of Forest Prince Compound Bow" />
-				<property name="description" value="Now that you have collected the needed items, return the trader to collect your reward." />
+				<property name="name_key" value="elitequestreward_toc_bambi_name"/>
+				<property name="subtitle_key" value="elitequestreward_toc_bambi_subtitle"/>
+				<property name="description_key" value="elitequestreward_toc_bambi_desc"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="shareable" value="false" />
 				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequestreward_toc_bambi_offer"/>
+				<property name="statement_key" value="elitequestreward_toc_bambi_statement"/>
+				<property name="response_key" value="elitequestrewarddialog_toc_bambi"/>				
+				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -154,9 +168,9 @@
 					<property name="nav_object" value="return_to_trader" />					
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Forest Prince Compound Bow" value="6" />
-				<reward type="Item" id="+Sealed Forest Prince Elite Crate" value="5" />
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="eliteitem_toc_bambi_name" value="6" />
+				<reward type="Item" id="questblock_toc_bambielitecrate_name" value="5" />
 				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="150-450" />
 				<reward type="Item" id="ammoCrossbowBoltFlaming" value="150-400" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-250" />	

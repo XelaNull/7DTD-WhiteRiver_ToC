@@ -1,2 +1,10 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-qWhiteRiverToC_Brass,items,Quest - Note,,,A quest to help your community obtain lead in exchange for some spare brass.,,,,,,,,,,,,,,,
+quest_toc_brass_name,Quest,Quest Info,,,Collect 2500 Lead for 500 Brass,,,,,,,,,,,,,,
+quest_toc_brass_subtitle,Quest,Quest Info,,,Collect Brass for the White River community,,,,,,,,,,,,,,
+quest_toc_brass_description,Quest,Quest Info,,,"Gather 2500 Lead to receive 500 Brass.",,,,,,,,,,,,,,
+quest_toc_brass_offer,Quest,Quest Info,,,"The Trader mentioned the community has recently come unto the possession of an immense quantity of brass but they are severely limited in lead. They need quantities of both in order to make more bullets to fend off the zombie horde. The community is willing to part with some of its brass supply if you can provide some lead in exchange. Gather 2500 Lead",,,,,,,,,,,,,,
+quest_toc_brass_statement,Quest,Quest Info,,,Help your community and receive some first aid bandages as a thank you.,,,,,,,,,,,,,,
+quest_toc_brass_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Quest for Gupta's Bandages",,,,,,,,,,,,,,
+questdialog_toc_brass,Quest,Dialogs,,,"Help the community with its lead shortage and receive brass in exchange.",,,,,,,,,,,,,,
+questitem_toc_brass_name,items,Item,,,+White River Brass Quest,,,,,,,,,,,,,,
+questitem_toc_brass_desc,items,Item,,,"A quest to help the community with its lead shortage and receive brass in exchange.",,,,,,,,,,,,,,

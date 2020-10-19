@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="/items">
 
-		<item name="+Taza's Axe Quest"> 
+		<item name="questitem_toc_taza_name"> 
+			<property name="DescriptionKey" value="questitem_toc_taza_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -13,7 +14,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Taza">
+		<item name="questwrit_toc_taza_name">
+			<property name="DescriptionKey" value="questwrit_toc_taza_description"/>						
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -30,7 +32,8 @@
 			<property name="Group" value="Special Items"/>	
 		</item>			
 		
-		<item name="+Taza's Axe Vet. Quest"> 
+		<item name="vetquestitem_toc_taza_name"> 
+			<property name="DescriptionKey" value="vetquestitem_toc_taza_description"/>									
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -42,7 +45,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Veteran Writ Of Taza">
+		<item name="vetquestwrit_toc_taza_name">
+			<property name="DescriptionKey" value="vetquestwrit_toc_taza_description"/>									
 			<property name="CustomIcon" value="questMaster"/> 
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>

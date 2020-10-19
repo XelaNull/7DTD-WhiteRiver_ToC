@@ -1,28 +1,27 @@
 <configs>
 
-  <remove xpath="/buffs/buff[@name='buffBurningFlamingArrow']" />
 	<append xpath="/buffs">
-		<buff name="buffBurningFlamingArrow" hidden="true">
+		<buff name="buffGreekFlamingArrow" hidden="false" description_key="buffGreekFlamingArrowDesc" tooltip_key="buffGreekFlamingArrowTooltip">
 			<damage_type value="heat"/>
 			<stack_type value="replace"/><duration value="0"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="add" value="-1"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningFlamingArrow"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="2" buff="buffBurningMolotov"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="0"/>
 			</effect_group>
 	
 			<effect_group>
-				<requirement name="CVarCompare" cvar="$buffBurningFlamingArrowDuration" operation="LT" value="14"/>
-					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14"/>
-					<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14"/>
-					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffBurningFlamingArrow"/>
+				<requirement name="CVarCompare" cvar="$buffGreekFlamingArrowDuration" operation="LT" value="14"/>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="14"/>
+					<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="14"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="1" buff="buffGreekFlamingArrow"/>
 			</effect_group>
 	
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBurningFlamingArrow">
-					<requirement name="CVarCompare" cvar="$buffBurningFlamingArrowDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffGreekFlamingArrow">
+					<requirement name="CVarCompare" cvar="$buffGreekFlamingArrowDuration" operation="LTE" value="0"/>
 				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffBurningFlamingArrowDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffGreekFlamingArrowDuration" operation="set" value="0"/>
 			</effect_group>
 	
 			<effect_group>

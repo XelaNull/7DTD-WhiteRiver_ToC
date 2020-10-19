@@ -2,23 +2,23 @@
 	<append xpath="/recipes">
 	
 		<!-- The quest and goal item to craft for reward for: Bambi's Killer Bow -->
-		<recipe name="+Rick Danger Auger Veteran Quest" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="+White River Veteran Citizen Card" count="1"/>
+		<recipe name="vetquestitem_toc_rickdanger_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
-		<recipe name="+Veteran Writ Of Rick Danger" count="1" craft_time = "90" craft_exp_gain="10000" >
+		<recipe name="vetquestwrit_toc_rickdanger_name" count="1" craft_time = "90" craft_exp_gain="10000" >
 			<ingredient name="resourcePotassiumNitratePowder" count="2000"/>
 			<ingredient name="resourceOilShale" count="2000"/>
 			<ingredient name="meleeToolAxeT3ChainsawParts" count="25"/>			
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		
-		<recipe name="+Rick Danger Improved Auger Elite Quest" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="+White River Elite Citizen Card" count="1"/>
+		<recipe name="elitequestitem_toc_rickdanger_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
 		</recipe>
-		<recipe name="+Elite Writ Of Rick Danger" count="1" craft_time = "300" craft_exp_gain="20000" >
-			<ingredient name="Rick Danger Auger" count="2"/>
-			<ingredient name="resourcePotassiumNitratePowder" count="6000"/>
-			<ingredient name="resourceOilShale" count="6000"/>
+		<recipe name="elitequestwrit_toc_rickdanger_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+			<ingredient name="vetitemreward_toc_rickdanger_name" count="2"/>
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="25"/>
+			<ingredient name="meleeToolAllSteelParts" count="25"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>			
 	</append>

@@ -1,9 +1,9 @@
 <configs>
 	<append xpath="/recipes">
-			<recipe name="+Dundee's Knife Quest" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="+White River Citizen Card" count="1"/>
+		<recipe name="questitem_toc_dundee_name" count="1" craft_time = "1" craft_exp_gain="0" >
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
-		<recipe name="+Writ Of Dundee" count="1" craft_time = "90" craft_exp_gain="10000" >
+		<recipe name="questwrit_toc_dundee_name" count="1" craft_time = "90" craft_exp_gain="10000" >
 			<ingredient name="meleeWpnBladeT0BoneKnife" count="10"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	

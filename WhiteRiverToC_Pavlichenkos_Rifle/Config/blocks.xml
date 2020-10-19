@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="/blocks">
 
-    <block name="Pavlichenko_treasure1"> <!-- do not rename, used for treasure_taylor etc -->
+    <block name="vetquestmap_toc_pav_map1_name"> 
+			<property name="DescriptionKey" value="vetquestmap_toc_pav_map1_desc"/>			
     	<property name="Class" value="Loot"/>
     	<property name="CustomIcon" value="cntChest01"/>
     	<property name="Material" value="MwoodReinforced"/>
@@ -18,7 +19,8 @@
     	<property name="FilterTags" value="floot"/>
     </block>
     
-    <block name="Pavlichenko_treasure2"> <!-- do not rename, used for treasure_taylor etc -->
+    <block name="vetquestmap_toc_pav_map2_name">
+			<property name="DescriptionKey" value="vetquestmap_toc_pav_map2_desc"/>			
       <property name="Class" value="Loot"/>
       <property name="CustomIcon" value="cntChest01"/>
       <property name="Material" value="MwoodReinforced"/>

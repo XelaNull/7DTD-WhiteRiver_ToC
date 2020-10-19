@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="/blocks">
 		<!-- Create the blocks for the Sealed Citizen Crate & Citizen Crate items -->
-		<block name="+Sealed Bambi's Veteran Crate">
+		<block name="questblock_toc_bambicrate_name">
+			<property name="DescriptionKey" value="questblock_toc_bambicrate_desc"/>						
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
 			<property name="Extends" value="cntShippingCrateHero"/>
@@ -14,7 +15,8 @@
 			<property name="Extends" value="cntGarageStorage"/>
 			<property name="LootList" value="155"/>
 		</block>	
-		<block name="+Sealed Forest Prince Elite Crate">
+		<block name="questblock_toc_bambielitecrate_name">
+			<property name="DescriptionKey" value="questblock_toc_bambielitecrate_desc"/>						
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
 			<property name="Extends" value="cntShippingCrateHero"/>

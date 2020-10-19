@@ -1,12 +1,12 @@
 <configs>
-	<append xpath="lootcontainers">
+	<append xpath="/lootcontainers">
 
 		<lootcontainer id="163" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item name="Pavlichenko Barrel" count="1" />
+			<item name="questitem_toc_pav_barrel_name" count="1" />
 		</lootcontainer>
     
     <lootcontainer id="164" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-      <item name="Pavlichenko Stock" count="1" />
+      <item name="questitem_toc_pav_stock_name" count="1" />
     </lootcontainer>
 	
 	</append>		

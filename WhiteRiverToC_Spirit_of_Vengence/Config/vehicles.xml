@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/vehicles">
 		
-		<vehicle name="vehicle_hell_beast">
+		<vehicle name="vehicle_spirit_hell_beast">
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="6000"/>

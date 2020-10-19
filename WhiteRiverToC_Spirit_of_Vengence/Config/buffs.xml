@@ -1,23 +1,23 @@
 <configs>
 
 	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
-		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="VehicleChecker">
-			<requirement name="NotHasBuff" buff="VehicleChecker"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="SpiritVehicleChecker">
+			<requirement name="NotHasBuff" buff="SpiritVehicleChecker"/>
 		</triggered_effect>
 	</append>
 	<append xpath="/buffs">
-		<buff name="VehicleChecker" hidden="true">
+		<buff name="SpiritVehicleChecker" hidden="true">
 			<stack_type value="replace"/>
 			<duration value="500"/>
 			<update_rate value=".1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="HellBeastBikeCheck">
-					<requirement name="EntityTagCompare" target="other" tags="vehicle_hell_beast"/>
-					<requirement name="NotHasBuff" target="other" buff="HellBeastBikeCheck"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="SpiritHellBeastBikeCheck">
+					<requirement name="EntityTagCompare" target="other" tags="vehicle_spirit_hell_beast"/>
+					<requirement name="NotHasBuff" target="other" buff="SpiritHellBeastBikeCheck"/>
 				</triggered_effect>
 			</effect_group>
 		</buff>
-		<buff name="HellBeastBikeCheck" hidden="true">	
+		<buff name="SpiritHellBeastBikeCheck" hidden="true">	
 			<stack_type value="ignore"/>			
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true"  transform_path="headlight"/>
@@ -31,16 +31,16 @@
 			</effect_group>
 		</buff>
 		
-		<buff name="JuggernautDeco" hidden="true">
+		<buff name="SpiritJuggernautDeco" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Tools/augerPrefab.prefab" local_offset="-.1,0,0" local_rotation="0,-90,0" parent_transform="RightHand"/>
-				<triggered_effect trigger="onSelfRangedBurstShot" action="AddBuff" target="self" buff="JuggernautMuzzle"/>
+				<triggered_effect trigger="onSelfRangedBurstShot" action="AddBuff" target="self" buff="SpiritJuggernautMuzzle"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffInjuryKnockdown01Cooldown"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="Auger_Idle" />
 			</effect_group>
 		</buff>
-		<buff name="JuggernautMuzzle" hidden="true">
+		<buff name="SpiritJuggernautMuzzle" hidden="true">
 			<duration value="1"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" target="self" particle="p_rocketLauncherFire" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
@@ -49,12 +49,12 @@
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_rocketLauncherFire" />
 			</effect_group>
 		</buff>
-		<buff name="buffJuggernaut" hidden="false">
+		<buff name="buffSpiritJuggernaut" hidden="false">
 			<update_rate value="12"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="50" buff="buffJuggernautSpeedDelay"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="60" buff="buffSpiritJuggernautSpeedDelay"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="bansheebuff0"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffJuggernautSpeedDelay"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffSpiritJuggernautSpeedDelay"/>
 				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="bansheebuff0" play_in_head="true">
 					<requirement name="EntityTagCompare" tags="player"/>
 				</triggered_effect>
@@ -63,25 +63,25 @@
 				</triggered_effect>
 			</effect_group>
 		</buff>
-		<buff name="buffJuggernautSpeedDelay" hidden="false">
-			<duration value=".5"/>
+		<buff name="buffSpiritJuggernautSpeedDelay" hidden="false">
+			<duration value=".4"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffJuggernautSpeed"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffSpiritJuggernautSpeed"/>
 			</effect_group>
 		</buff>
-		<buff name="buffJuggernautSpeed" icon="ui_game_symbol_agility" icon_color="132,0,155">
+		<buff name="buffSpiritJuggernautSpeed" icon="ui_game_symbol_agility" icon_color="132,0,155">
 			<display_value_key value="Demon Fright"/> <display_value value="xxx"/>
 			<stack_type value="ignore"/>
-			<duration value="6"/>
+			<duration value="2.5"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="30" shake_amplitude="60" shake_time=".5"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ShakeCamera" shake_speed="40" shake_amplitude="60" shake_time=".4"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ShakeCamera" shake_speed="0" shake_amplitude="0" shake_time="-1"/>
 			</effect_group>
 			<effect_group>
 				<requirement name="EntityTagCompare" tags="player"/>
-				<passive_effect name="WalkSpeed" operation="perc_add" value="1.2"/>
-				<passive_effect name="RunSpeed" operation="perc_add" value="1.6"/>
-				<passive_effect name="JumpStrength" operation="perc_add" value="2.6"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="1.1"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="1.5"/>
+				<passive_effect name="JumpStrength" operation="perc_add" value="2.2"/>
 				<passive_effect name="StaminaLoss" operation="perc_add" value="-.5" tags="jumping"/>
 			</effect_group>
 		</buff>

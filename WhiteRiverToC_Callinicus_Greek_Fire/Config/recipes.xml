@@ -1,0 +1,9 @@
+<configs>
+	<append xpath="/recipes">
+    <recipe name="ammoArrowGreekFire" count="10" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+    	<ingredient name="ammoArrowFlaming" count="10"/>
+    	<ingredient name="resourceOil" count="20"/>
+    	<ingredient name="resourcePotassiumNitratePowder" count="100"/>
+    </recipe>
+  </append>
+</configs>

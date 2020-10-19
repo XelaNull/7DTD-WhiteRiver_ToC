@@ -1,20 +1,9 @@
 <configs>
 	<append xpath="/items">
 
-		<!--
-		Quest for White River's Tools of Citizenship:
-			Taza's Axe (Stone + Axes)
-			Kuva's Red Armor (Leather)
-			Leon's Modded SMG (Pistols)
-			Ivanka's Flaming Dig Tools (Iron + Pickaxes)
-			Bambi's Killer Bow (Wood + Bows)
-			Everdeen's Arrows and Bolts (Food for Ammo)
-			Dundee's Knife (Bone Shiv)
-			Jason's Machete (Knives)
-		-->
-
 		<!-- This is crafted freely by the player to kick off the 10-Zombie Challenge -->
-		<item name="+Declaration Of Citizenship">
+		<item name="questitem_toc_declaration_name">
+			<property name="DescriptionKey" value="questitem_toc_declaration_description"/>						
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="a4ff84"/>
 			<property name="Extends" value="questMaster"/>
@@ -22,7 +11,6 @@
 			<property name="NoScrapping" value="true"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
-			<property name="description" value="White River Tools of Citizenship\n\nDeclaration of Citizenship\n\nUsed to begin the quest to obtain your own Citizen's Card from killing 10 Zombies."/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="quest_whiteRiverCitizen3"/>
@@ -30,7 +18,8 @@
 			</property>	
 		</item>		
 		
-		<item name="+White River Citizen Card">
+		<item name="questitem_toc_citizencard_name">
+			<property name="DescriptionKey" value="questitem_toc_citizencard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -38,17 +27,16 @@
 			<property name="NoScrapping" value="true"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
-			<property name="Description" value="White River Citizen's Card\n\nUsed to prove your membership into the settlement and obtain settlement quests."/>
 		</item>
 		
-		<item name="+White River Veteran 100Z Challenge">
+		<item name="questitem_toc_veteranquest_name">
+			<property name="DescriptionKey" value="questitem_toc_veteranquest_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="CustomIconTint" value="660000"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
-			<property name="Description" value="A quest to kill 100 zombies in exchange for a White River settlement Veterans Citizen card."/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Kill 100 Zombies"/>
@@ -56,7 +44,8 @@
 			</property>	
 		</item>		
 		
-		<item name="+White River Veteran Citizen Card">
+		<item name="questitem_toc_veterancard_name">
+			<property name="DescriptionKey" value="questitem_toc_veterancard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -64,17 +53,17 @@
 			<property name="NoScrapping" value="true"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
-			<property name="Description" value="White River Veteran Vitizen's Card\n\nUsed to prove your veteran membership into the settlement and obtain settlement veteran quests."/>
 		</item>
 		
-		<item name="+White River Elite 1000Z Challenge">
+		<item name="questitem_toc_elitequest_name">
+			<property name="DescriptionKey" value="questitem_toc_elitequest_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="CustomIconTint" value="660000"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
-			<property name="Description" value="A quest to kill 1000 zombies in exchange for a White River settlement Elite Citizen card."/>
+			<property name="Description" value=""/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Kill 1000 Zombies"/>
@@ -82,7 +71,8 @@
 			</property>	
 		</item>
 		
-		<item name="+White River Elite Citizen Card">
+		<item name="questitem_toc_elitecard_name">
+			<property name="DescriptionKey" value="questitem_toc_elitecard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -90,7 +80,21 @@
 			<property name="NoScrapping" value="true"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
-			<property name="Description" value="White River Elite Citizen's Card\n\nUsed to prove your elite membership into the settlement and obtain settlement elite quests."/>
+		</item>
+		
+		<item name="questitem_toc_randomelite_name">
+			<property name="DescriptionKey" value="questitem_toc_randomelite_desc"/>						
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="660000"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>			
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Obtain a Random Elite Quest"/>
+				<property name="Delay" value="0"/>
+			</property>	
 		</item>
 	</append>
 </configs>

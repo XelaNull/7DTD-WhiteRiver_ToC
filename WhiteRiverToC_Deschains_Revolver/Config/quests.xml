@@ -2,37 +2,42 @@
 	<append xpath="/quests" >
 
 			<quest id="+Quest For Deschain's Revolver">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Hile, Gunslinger. We seek aid and succor. Find the eight Dark Tower books and craft doors for the nineteen levels of the Tower. Give these to the Trader and he will bequeth you the Revolver of Roland Deschain." />
-				<property name="name" value="Quest for Roland Deschain's Revolver" />
-				<property name="subtitle" value="Craft the +Writ Of Deschain" />
-				<property name="description" value="Craft a Writ of Deschain by collecting all eight books of the Dark Tower Series, then craft 18 wooden doors, and 1 vault door." />
+				<property name="name_key" value="quest_toc_desch_name"/>
+				<property name="subtitle_key" value="quest_toc_desch_subtitle"/>
+				<property name="description_key" value="quest_toc_desch_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="quest_toc_desch_offer"/>
+				<property name="statement_key" value="quest_toc_desch_statement"/>
+				<property name="response_key" value="questdialog_toc_desch"/>				
+				<property name="group_name_key" value="quest_toc_desch_group"/>				
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="false" />
 	
-				<objective type="Craft" id="+The Dark Tower Series Books 1-4" value="1" phase="1" />
-				<objective type="Craft" id="+The Dark Tower Series Books 5-8" value="1" phase="1" />
+				<objective type="Craft" id="item_toc_desc_book14_name" value="1" phase="1" />
+				<objective type="Craft" id="item_toc_desc_book58_name" value="1" phase="1" />
 				<objective type="FetchKeep" id="secureDoorWooden" value="18" phase="2" />
 				<objective type="FetchKeep" id="vaultDoor01" value="1" phase="2" />
-				<objective type="Craft" id="+Writ Of Deschain" value="1" phase="3" />		
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="2" />
+				<objective type="Craft" id="questwrit_toc_desch_name" value="1" phase="3" />		
 				
 				<reward type="Exp" value="2500" />
 			</quest>
 			
 			<quest id="+Reward of Deschain's Revolver">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="I do not kill with my gun; He who kills with his gun has forgotten the face of his father. I kill with my heart. Return to the Trader to take up the gun of Eld."/>
-				<property name="name" value="Reward of Deschain's Revolver" />
-				<property name="subtitle" value="Reward of Deschain's Revolver" />
-				<property name="description" value="Return to the trader to collect your legendary revolver." />
+				<property name="name_key" value="questreward_toc_desch_name"/>
+				<property name="subtitle_key" value="questreward_toc_desch_subtitle"/>
+				<property name="description_key" value="questreward_toc_desch_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="shareable" value="false" />
 				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_desch_offer"/>
+				<property name="statement_key" value="questreward_toc_desch_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_desch"/>				
+				<property name="group_name_key" value="quest_toc_desch_group"/>	
+				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -45,11 +50,12 @@
 					<property name="nav_object" value="return_to_trader" />										
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-				<reward type="Item" id="Deschains Revolver" value="2-6" />
-				<reward type="Item" id="+Sealed Deschain's Crate" value="1" />
+				<reward type="Item" id="itemreward_toc_desch_name" value="2-6" />
+				<reward type="Item" id="questblock_toc_deschcrate_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
-				<reward type="Item" id="Deschain's Cowboy Hat" value="2-6" />
+				<reward type="Item" id="itemreward_toc_deschhat_schem_name" value="1" />
+				<reward type="Item" id="questitem_spirit_vengeance_name" value="1-2" />
+				
 				<reward type="Exp" value="5000" />
 				<reward type="SkillPoints" value="2" />					
 			</quest>

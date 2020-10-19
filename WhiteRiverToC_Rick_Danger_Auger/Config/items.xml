@@ -1,6 +1,7 @@
 <configs>
 	<append xpath="/items">
-		<item name="+Rick Danger Auger Veteran Quest"> 
+		<item name="vetquestitem_toc_rickdanger_name"> 
+			<property name="DescriptionKey" value="vetquestitem_toc_rickdanger_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -12,7 +13,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Veteran Writ Of Rick Danger">
+		<item name="vetquestwrit_toc_rickdanger_name">
+			<property name="DescriptionKey" value="vetquestwrit_toc_rickdanger_description"/>						
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -30,7 +32,8 @@
 		</item>			
 				
 		
-		<item name="Rick Danger Auger"> 
+		<item name="vetitemreward_toc_rickdanger_name"> 
+			<property name="DescriptionKey" value="vetitemreward_toc_rickdanger_desc"/>									
 			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Tags" value="melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
@@ -66,10 +69,10 @@
 				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 			</property>
 		
-			<effect_group name="meleeToolPickT3Auger">
+			<effect_group name="vetitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="24.7" tags="perkMiner69r,miningTool"/>
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="275" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.35" tags="perkMiner69r"/>
@@ -116,7 +119,8 @@
 		</item>				
 				
 		<!-- ELITE QUEST -->		
-		<item name="+Rick Danger Improved Auger Elite Quest"> 
+		<item name="elitequestitem_toc_rickdanger_name"> 
+			<property name="DescriptionKey" value="elitequestitem_toc_rickdanger_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -127,7 +131,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Elite Writ Of Rick Danger">
+		<item name="elitequestwrit_toc_rickdanger_name">
+			<property name="DescriptionKey" value="elitequestwrit_toc_rickdanger_description"/>						
 			<property name="CustomIcon" value="questMaster"/> 
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -144,7 +149,8 @@
 		</item>	
 	
 		
-		<item name="Rick Danger Improved Auger"> 
+		<item name="eliteitemreward_toc_rickdanger_name"> 
+			<property name="DescriptionKey" value="eliteitemreward_toc_rickdanger_desc"/>									
 			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Tags" value="melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
@@ -180,10 +186,10 @@
 				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 			</property>
 
-			<effect_group name="Rick Danger Improved Auger">
+			<effect_group name="eliteitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="25.7"/>
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="400"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="325"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value=".8" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.35"/>

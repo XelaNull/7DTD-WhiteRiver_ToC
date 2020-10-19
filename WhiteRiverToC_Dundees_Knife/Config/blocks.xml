@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="/blocks">
 		<!-- Create the blocks for the Sealed Citizen Crate & Citizen Crate items -->
-		<block name="+Sealed Dundee's Crate">
+		<block name="questblock_toc_dundeecrate_name">
+			<property name="DescriptionKey" value="questblock_toc_dundeecrate_desc"/>			
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
 			<property name="Extends" value="cntShippingCrateHero"/>

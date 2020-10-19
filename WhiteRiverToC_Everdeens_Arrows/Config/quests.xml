@@ -1,34 +1,39 @@
 <config>
 	<append xpath="/quests">
 		<quest id="+Quest For Everdeen's Arrows">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Arrows of Everdeen in exchange for your help. These arrows are famed to travel fast and true. Gather 3 Corn + 3 Snowberry" />
-			<property name="name" value="Collect Raw Food for a Settlement Feast" />
-			<property name="subtitle" value="Collect Food for Everdeen's Arrows" />
-			<property name="description" value="Gather 3 Corn + 3 Snowberry to obtain a bundle of Everdeen's Arrows." />
+			<property name="name_key" value="quest_toc_earrows_name"/>
+			<property name="subtitle_key" value="quest_toc_earrows_subtitle"/>
+			<property name="description_key" value="quest_toc_earrows_desc"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_earrows_offer"/>
+			<property name="statement_key" value="quest_toc_earrows_statement"/>
+			<property name="response_key" value="questdialog_toc_earrows"/>				
+			<property name="group_name_key" value="quest_toc_earrows_group"/>
 			<property name="shareable" value="false" />
-			<property name="repeatable" value="true" />
 
 			<objective type="FetchKeep" id="foodCropCorn" value="3" phase="1" />
 			<objective type="FetchKeep" id="resourceCropSnowberryPlant" value="3" phase="1" />
-			<objective type="Craft" id="+Writ Of Everdeen's Arrows" value="1" phase="2" />	
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="writitem_toc_earrows_name" value="1" phase="2" />	
 
 			<reward type="Exp" value="1500" />
 		</quest>
 		<quest id="+Reward of Everdeen's Arrows">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="Thanks for your help! Collect your stew and arrows from the Trader."/>
-			<property name="name" value="Reward of Everdeen's Arrows" />
-			<property name="subtitle" value="Reward of Everdeen's Arrows" />
-			<property name="description" value="Return to the Trader to collect your bundle of Everdeen's Arrows, and some community stew!" />
+			<property name="name_key" value="questreward_toc_earrows_name"/>
+			<property name="subtitle_key" value="questreward_toc_earrows_subtitle"/>
+			<property name="description_key" value="questreward_toc_earrows_desc"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="questreward_toc_earrows_offer"/>
+			<property name="statement_key" value="questreward_toc_earrows_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_earrows"/>				
+			<property name="group_name_key" value="quest_toc_earrows_group"/>
 			<property name="shareable" value="false" />
-			<property name="repeatable" value="true" />
 			<property name="completiontype" value="TurnIn" />
 
 			<objective type="Goto" value="5" phase="1" />
@@ -41,41 +46,46 @@
 				<property name="nav_object" value="return_to_trader" />									
 			</objective>
 			
-			<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="Arrows of Everdeen" value="50-150"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
+			<reward type="Item" id="item_toc_earrows_name" value="50-150"/>
 			<reward type="Item" id="foodVegetableStew" value="2-3" />
 			<reward type="Exp" value="3000" />
 			<reward type="SkillPoints" value="2" />			
 		</quest>
 						
 		<quest id="+Quest For Everdeen's Bolts">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="The settlement is trying to put together enough raw food to hold a feast for everyone to enjoy. They are willing to offer you a pack of Everdeen's Bolts in exchange for your help. These arrows are famed to travel fast and true. Gather 3 Potatoes + 3 Mushrooms" />
-			<property name="name" value="Collect Lots of Food for a Settlement Feast" />
-			<property name="subtitle" value="Collect Food for Everdeen's Bolts" />
-			<property name="description" value="Gather 3 Potatoes + 3 Mushrooms to obtain a bundle of Everdeen's Bolts." />
+			<property name="name_key" value="quest_toc_ebolts_name"/>
+			<property name="subtitle_key" value="quest_toc_ebolts_subtitle"/>
+			<property name="description_key" value="quest_toc_ebolts_desc"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="quest_toc_ebolts_offer"/>
+			<property name="statement_key" value="quest_toc_ebolts_statement"/>
+			<property name="response_key" value="questdialog_toc_ebolts"/>				
+			<property name="group_name_key" value="quest_toc_ebolts_group"/>
 			<property name="shareable" value="false" />
-			<property name="repeatable" value="true" />
 
 			<objective type="FetchKeep" id="foodCropPotato" value="3" phase="1" />
 			<objective type="FetchKeep" id="foodCropMushrooms" value="3" phase="1" />
-			<objective type="Craft" id="+Writ Of Everdeen's Bolts" value="1" phase="2" />	
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="writitem_toc_ebolts_name" value="1" phase="2" />	
 			<reward type="Exp" value="1500" />
 		</quest>		
 		<quest id="+Reward of Everdeen's Bolts">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="Thanks for your help! Collect your stew and bolts from the Trader."/>
-			<property name="name" value="Reward of Everdeen's Bolts" />
-			<property name="subtitle" value="Reward of Everdeen's Bolts" />
-			<property name="description" value="Return to the Trader to collect your bundle of Everdeen's Bolts and some stew!" />
+			<property name="name_key" value="questreward_toc_ebolts_name"/>
+			<property name="subtitle_key" value="questreward_toc_ebolts_subtitle"/>
+			<property name="description_key" value="questreward_toc_ebolts_desc"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="questreward_toc_ebolts_offer"/>
+			<property name="statement_key" value="questreward_toc_ebolts_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_ebolts"/>				
+			<property name="group_name_key" value="quest_toc_ebolts_group"/>
 			<property name="shareable" value="false" />
-			<property name="repeatable" value="true" />
 			<property name="completiontype" value="TurnIn" />
 
 			<objective type="Goto" value="5" phase="1" />
@@ -88,8 +98,8 @@
 				<property name="nav_object" value="return_to_trader" />									
 			</objective>
 			
-			<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="Bolts of Everdeen" value="100-200"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
+			<reward type="Item" id="item_toc_ebolts_name" value="100-200"/>
 			<reward type="Item" id="foodVegetableStew" value="2-4" />
 			<reward type="Exp" value="5000" />
 			<reward type="SkillPoints" value="2" />			

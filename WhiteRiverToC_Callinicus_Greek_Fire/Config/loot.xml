@@ -1,0 +1,13 @@
+<configs>
+
+
+  <insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
+    <lootgroup name="groupBooksGreekFire">
+      <item name="item_toc_greekfire_name"/>
+    </lootgroup>
+  </insertAfter>
+      
+  <append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
+    <item group="groupBooksGreekFire" count="1" prob="15"/>
+  </append>
+</configs>

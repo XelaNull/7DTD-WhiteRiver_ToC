@@ -1,6 +1,6 @@
 <configs>
 	<append xpath="/blocks">	
-		<block name="Black_Barts_Coffin">
+		<block name="questblock_toc_blackb_coffin">
 			<property name="Class" value="Loot"/>		
 			<property name="CustomIcon" value="cntChest01"/>
 			<property name="Material" value="MwoodReinforced"/>

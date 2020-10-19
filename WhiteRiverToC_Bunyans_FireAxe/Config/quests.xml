@@ -1,35 +1,39 @@
 <config>
 	<append xpath="/quests" >	
 			<quest id="+Quest For Bunyan's FireAxe">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="The Trader needs your help stocking up on water. Gather 50 Boiled Waters and the Trader will give you an extra Paul Bunyan branded FireAxe."/>
-				<property name="name" value="Quest for Bunyan's FireAxe" />
-				<property name="subtitle" value="Quest for Bunyan's FireAxe" />
-				<property name="description" value="Gather 50 Boiled Waters to obtain a Paul Bunyan FireAxe." />
+				<property name="name_key" value="quest_toc_bunyan_name"/>
+				<property name="subtitle_key" value="quest_toc_bunyan_subtitle"/>
+				<property name="description_key" value="quest_toc_bunyan_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="quest_toc_bunyan_offer"/>
+				<property name="statement_key" value="quest_toc_bunyan_statement"/>
+				<property name="response_key" value="questdialog_toc_bunyan"/>				
+				<property name="group_name_key" value="quest_toc_bunyan_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 	
 				<objective type="FetchKeep" id="drinkJarBoiledWater" value="50" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="+Writ Of Bunyan" value="1" phase="2" />
+				<objective type="Craft" id="questwrit_toc_bunyan_name" value="1" phase="2" />
 				
 				<reward type="Exp" value="1000" />
 			</quest>
 			
 			<quest id="+Reward of Bunyan's FireAxe">
-				<property name="group_name" value="quest_ToolsOfCitizenship" />
-				<property name="offer" value="Now we'll never die of thirst, *again*. Collect your reward from the Trader."/>
-				<property name="name" value="Reward of Bunyan's FireAxe" />
-				<property name="subtitle" value="Reward of Bunyan's FireAxe" />
-				<property name="description" value="Return to the Trader to collect your Paul Bunyan FireAxe." />
+				<property name="name_key" value="questreward_toc_bunyan_name"/>
+				<property name="subtitle_key" value="questreward_toc_bunyan_subtitle"/>
+				<property name="description_key" value="questreward_toc_bunyan_description"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="questreward_toc_bunyan_offer"/>
+				<property name="statement_key" value="questreward_toc_bunyan_statement"/>
+				<property name="response_key" value="questrewarddialog_toc_bunyan"/>				
+				<property name="group_name_key" value="quest_toc_taza_group"/>
 				<property name="shareable" value="false" />
-				<property name="repeatable" value="true" />
 				<property name="completiontype" value="TurnIn" />
 	
 				<objective type="Goto" value="5" phase="1" />
@@ -42,8 +46,8 @@
 					<property name="nav_object" value="return_to_trader" />										
 				</objective>
 				
-				<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->		
-				<reward type="Item" id="Bunyans Fireaxe" value="2-6" />	
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->		
+				<reward type="Item" id="item_toc_bunyanaxe_name" value="2-6" />	
 				<reward type="Item" id="modMeleeWoodSplitterSchematic" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="5-20" />
 				<reward type="Exp" value="2000" />

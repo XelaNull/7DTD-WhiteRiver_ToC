@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="/items">
 
-		<item name="+Deschain's Revolver Quest"> 
+		<item name="questitem_toc_desch_name"> 
+			<property name="DescriptionKey" value="questitem_toc_desch_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -14,7 +15,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Deschain">
+		<item name="questwrit_toc_desch_name">
+			<property name="DescriptionKey" value="questwrit_toc_desch_description"/>						
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -32,7 +34,8 @@
 			<property name="Group" value="Special Items"/>	
 		</item>	
 
-		<item name="Deschains Revolver"> <!-- T3 pistols -->
+		<item name="itemreward_toc_desch_name"> <!-- T3 pistols -->
+			<property name="DescriptionKey" value="itemreward_toc_desch_description"/>						
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="CustomIcon" value="gunHandgunT2Magnum44"/>
@@ -60,7 +63,7 @@
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="45LC Silver Bullet of Gilead,45LC Gold Bullet of Gilead"/>
+				<property name="Magazine_items" value="crafteditem_toc_45lcsilver_schem_name,crafteditem_toc_45lcgold_schem_name"/>
 				<property name="Reload_time" value="-1"/>
 				<property name="Sound_start" value="44magnum_fire"/>
 				<property name="Sound_repeat" value=""/>
@@ -81,7 +84,7 @@
 				<property name="Zoom_max_in" value="55"/>
 			</property>
 		
-			<effect_group name="Deschains Revolver">
+			<effect_group name="itemreward_toc_desch_name">
 				<passive_effect name="MaxRange" operation="base_set" value="80"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="40"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
@@ -135,7 +138,8 @@
 			</effect_group>
 		</item>
 	
-		<item name="45LC Silver Bullet of Gilead">
+		<item name="crafteditem_toc_45lcsilver_schem_name">
+			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>									
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
@@ -154,7 +158,8 @@
 		</item>
 
 		
-		<item name="45LC Gold Bullet of Gilead">
+		<item name="crafteditem_toc_45lcgold_schem_name">
+			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>									
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
@@ -188,7 +193,8 @@
 			<!--<property name="Group" value="Resources"/>-->
 		</item>
 		
-		<item name="Deschain's Cowboy Hat"> <!-- item name directly referenced in the code -->
+		<item name="itemreward_toc_deschhat_schem_name"> <!-- item name directly referenced in the code -->
+			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>									
 			<property name="Tags" value="head,clothing,canHaveCosmetic"/>
 			<property name="CustomIcon" value="apparelCowboyHat"/>
 			<property name="CustomIconTint" value="624a2e"/>
@@ -228,66 +234,76 @@
 			</effect_group>
 		</item>
 	
-		<item name="+The Dark Tower Series Books 1-4">
+		<item name="item_toc_desc_book14_name">
+			<property name="DescriptionKey" value="item_toc_desc_book14_desc"/>									
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>		
 			<property name="CustomIconTint" value="cc3300"/>	
 		</item>	
-		<item name="Dark Tower: The Gunslinger">
+		<item name="item_toc_desc_book1_name">
+			<property name="DescriptionKey" value="item_toc_desc_book1_desc"/>									
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>			
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark Tower: The Drawing Of The Three">
+		<item name="item_toc_desc_book2_name">
+			<property name="DescriptionKey" value="item_toc_desc_book2_desc"/>												
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark Tower: The Waste Lands">
+		<item name="item_toc_desc_book3_name">
+			<property name="DescriptionKey" value="item_toc_desc_book3_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark Tower: The Wizard And Glass">
+		<item name="item_toc_desc_book4_name">
+			<property name="DescriptionKey" value="item_toc_desc_book4_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="+The Dark Tower Series Books 5-8">
+		<item name="item_toc_desc_book58_name">
+			<property name="DescriptionKey" value="item_toc_desc_book58_desc"/>									
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>		
 			<property name="CustomIconTint" value="cc3300"/>	
 		</item>	
-		<item name="Dark Tower: Wind Through The Keyhole">
+		<item name="item_toc_desc_book5_name">
+			<property name="DescriptionKey" value="item_toc_desc_book5_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark Tower: Wolves Of The Calla">
+		<item name="item_toc_desc_book6_name">
+			<property name="DescriptionKey" value="item_toc_desc_book6_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="Dark Tower: Song Of Suzannah">
+		<item name="item_toc_desc_book7_name">
+			<property name="DescriptionKey" value="item_toc_desc_book7_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-		<item name="The Dark Tower">
+		<item name="item_toc_desc_book8_name">
+			<property name="DescriptionKey" value="item_toc_desc_book8_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>
 			<property class="Action0">

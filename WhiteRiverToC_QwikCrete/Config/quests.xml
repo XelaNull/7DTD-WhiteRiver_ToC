@@ -2,34 +2,40 @@
 	<append xpath="/quests" >
 
 		<quest id="+Veteran Quest For QwikCrete Recipe">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="The White River community is in desparate need for bone. Help provide to your community and in return receive a stack of QwikCrete blocks. Gather 100 bones." />
-			<property name="name" value="Collect Bones for White River" />
-			<property name="subtitle" value="Collect bones for QwikCrete Blocks" />
-			<property name="description" value="Gather 100 bones to receive a stack of QwikCrete cement blocks." />
+			<property name="name_key" value="vetquest_toc_qwikcrete_name"/>
+			<property name="subtitle_key" value="vetquest_toc_qwikcrete_subtitle"/>
+			<property name="description_key" value="vetquest_toc_qwikcrete_description"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
-			<property name="difficulty" value="hard" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_qwikcrete_offer"/>
+			<property name="statement_key" value="vetquest_toc_qwikcrete_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_qwikcrete"/>				
+			<property name="group_name_key" value="vetquest_toc_qwikcrete_group"/>
 			<property name="shareable" value="false" />
-			<property name="repeatable" value="false" />
 
 			<objective type="Fetch" id="resourceBone" value="100" phase="1" />
-			<objective type="Craft" id="+Veteran Writ Of QwikCrete Blocks" value="1" phase="2" />			
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="vetquestwrit_toc_qwikcrete_name" value="1" phase="2" />			
 
 			<reward type="Exp" value="2500" />
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
 			<reward type="SkillPoints" value="1" />				
 		</quest>
 		<quest id="+Veteran Reward of QwikCrete Blocks">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="You've really made a name for yourself with your continued support of your community. Return to the trader to collect your reward of a stack of QwikCrete blocks."/>
-			<property name="name" value="Veteran Reward of QwikCrete Blocks" />
-			<property name="subtitle" value="Veteran Reward of QwikCrete Blocks" />
-			<property name="description" value="Now that you have collected the needed items, return the trader to collect your reward." />
+			<property name="name_key" value="vetquestreward_toc_qwikcrete_name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_qwikcrete_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_qwikcrete_description"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
-			<property name="shareable" value="false" />
 			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquestreward_toc_qwikcrete_offer"/>
+			<property name="statement_key" value="vetquestreward_toc_qwikcrete_statement"/>
+			<property name="response_key" value="vetquestrewarddialog_toc_qwikcrete"/>				
+			<property name="group_name_key" value="vetquest_toc_qwikcrete_group"/>
+			<property name="shareable" value="false" />
 			<property name="completiontype" value="TurnIn"/>
 
 			<objective type="Goto" value="5" phase="1"/>
@@ -43,44 +49,49 @@
 				<property name="use_closest" value="true" />				
 			</objective>
 			
-			<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-			<reward type="Item" id="+QwikCrete Variant Block" value="100-200" />
-
+			<reward type="Item" id="questblock_toc_qwikcrete_name" value="100-200" />
 			<reward type="Exp" value="5000" />
 			<reward type="SkillPoints" value="2" />				
 		</quest>		
 		
 
 		<quest id="+Elite Quest For QwikCrete Recipe">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="After handing out so many wet cement blocks the White River community is in desparate need of more wet cement blocks to give to newer community members and volunteers. Help the community by providing 500 wet cement blocks and in return the Trader will offer you their new fast-drying cement. Gather 500 wet cement blocks." />
-			<property name="name" value="Collect Cement Blocks for White River" />
-			<property name="subtitle" value="Collect wet Cement Blocks for QwikCrete Recipe" />
-			<property name="description" value="Gather 500 wet cement blocks to receive a recipe for QwikCrete cement blocks." />
+			<property name="name_key" value="elitequest_toc_qwikcrete_name"/>
+			<property name="subtitle_key" value="elitequest_toc_qwikcrete_subtitle"/>
+			<property name="description_key" value="elitequest_toc_qwikcrete_description"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="elitequest_toc_qwikcrete_offer"/>
+			<property name="statement_key" value="elitequest_toc_qwikcrete_statement"/>
+			<property name="response_key" value="elitequestdialog_toc_qwikcrete"/>				
+			<property name="group_name_key" value="elitequest_toc_qwikcrete_group"/>
 			<property name="shareable" value="false" />
-			<property name="repeatable" value="false" />
 
 			<objective type="Fetch" id="pouredConcreteBlock" value="500" phase="1" />
-			<objective type="Craft" id="+Elite Writ Of QwikCrete Recipe" value="1" phase="2" />			
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="elitequestwrit_toc_qwikcrete_name" value="1" phase="2" />			
 			
 			<reward type="Exp" value="5000" />
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	<!-- This makes the quest repeatable -->						
 			<reward type="SkillPoints" value="1" />				
 		</quest>
 					
 		<quest id="+Elite Reward of QwikCrete Recipe">
-			<property name="group_name" value="quest_ToolsOfCitizenship" />
-			<property name="offer" value="You've really made a name for yourself with your continued support of your community. Return to the trader and learn how to craft your own QwikCrete blocks."/>
-			<property name="name" value="Elite Reward of QwikCrete Blocks" />
-			<property name="subtitle" value="Elite Reward of QwikCrete Blocks" />
-			<property name="description" value="Return the trader to learn how to craft your own QwikCreate blocks." />
+			<property name="name_key" value="elitequestreward_toc_qwikcrete_name"/>
+			<property name="subtitle_key" value="elitequestreward_toc_qwikcrete_subtitle"/>
+			<property name="description_key" value="elitequestreward_toc_qwikcrete_description"/>
 			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="elitequestreward_toc_qwikcrete_offer"/>
+			<property name="statement_key" value="elitequestreward_toc_qwikcrete_statement"/>
+			<property name="response_key" value="elitequestrewarddialog_toc_qwikcrete"/>				
+			<property name="group_name_key" value="elitequest_toc_qwikcrete_group"/>
 			<property name="shareable" value="false" />
-			<property name="repeatable" value="true" />
+			<property name="completiontype" value="TurnIn"/>
 
 			<objective type="ReturnToNPC">
 				<property name="phase" value="1"/>
@@ -92,13 +103,11 @@
 				<property name="use_closest" value="true" />				
 			</objective>
 			
-			<reward type="Item" id="+White River Citizen Card" value="1" />	<!-- This makes the quest repeatable -->						
-			<reward type="Item" id="+QwikCrete Variant Block" value="100-200" />
-			<reward type="Item" id="QwikCrete Schematic" value="1" />
-
-			<reward type="Exp" value="10000" />
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->						
+			<reward type="Item" id="questblock_toc_qwikcrete_name" value="100-200" />
+			<reward type="Item" id="eliteitemreward_toc_qwikcrete_schem_name" value="1" />
+			<reward type="Exp" value="5000" />
 			<reward type="SkillPoints" value="2" />				
 		</quest>			
-					
 	</append>
 </config>

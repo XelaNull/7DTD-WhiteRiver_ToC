@@ -1,29 +1,22 @@
 <configs>
 	<!-- Implement the new Arrows and Bolts into Vanilla Compound Bow & Wooden Bow -->
 	<!-- Thanks to wyldwitchykat for the append code below -->
-	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
-	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
-	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
+	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_earrows_name</append>
+	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_earrows_name</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_earrows_name</append>
 	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
-	<append xpath="/items/item[@name='Bambis Killer Compound Bow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
-	<append xpath="/items/item[@name='Forest Prince Compound Bow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Arrows of Everdeen</append>
+	<append xpath="/items/item[@name='item_toc_bambi_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_earrows_name</append>
+	<append xpath="/items/item[@name='eliteitem_toc_bambi_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_earrows_name</append>
 	
-	
-	<append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
+	<append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_ebolts_name</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_ebolts_name</append>
 	<!-- Entries for the Daryls Crossbow mod. If it isn't installed, this line will generate a warning -->
-	<append xpath="/items/item[@name='Daryls Zombiekiller Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	<append xpath="/items/item[@name='Daryls Zombiekiller Compound Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	<!-- BACKWARDS COMPATIBILITY -->
-	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
-	<append xpath="/items/item[@name='Bambis Killer Compound Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	<!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
-	<append xpath="/items/item[@name='Bambis Terminator Crossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,Bolts of Everdeen</append>
-	<!-- END BACKWARDS COMPATIBILITY -->
-
+	<append xpath="/items/item[@name='vetitem_toc_daryl_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_ebolts_name</append>
+	<append xpath="/items/item[@name='eliteitem_toc_daryl_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_ebolts_name</append>
 
 	<append xpath="/items">
-		<item name="+Everdeen's Arrows Quest"> 
+		<item name="questitem_toc_earrows_name"> 
+			<property name="DescriptionKey" value="questitem_toc_earrows_desc"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -35,7 +28,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Writ Of Everdeen's Arrows">
+		<item name="writitem_toc_earrows_name">
+			<property name="DescriptionKey" value="writitem_toc_earrows_desc"/>						
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -52,7 +46,8 @@
 			<property name="Group" value="Special Items"/>	
 		</item>	
 				
-		<item name="+Everdeen's Bolts Quest"> 
+		<item name="questitem_toc_ebolts_name"> 
+			<property name="DescriptionKey" value="questitem_toc_ebolts_desc"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -64,7 +59,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>			
-		<item name="+Writ Of Everdeen's Bolts">
+		<item name="writitem_toc_ebolts_name">
+			<property name="DescriptionKey" value="writitem_toc_ebolts_desc"/>						
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -81,7 +77,8 @@
 			<property name="Group" value="Special Items"/>	
 		</item>	
 		
-		<item name="Arrows of Everdeen">
+		<item name="item_toc_earrows_name">
+			<property name="DescriptionKey" value="item_toc_earrows_desc"/>						
 			<property name="Extends" value="ammoArrowIron"/>
 			<property name="CustomIcon" value="ammoArrowSteelAP"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
@@ -90,7 +87,7 @@
 			<property name="EconomicBundleSize" value="5"/>
 			<property name="StickyOffset" value=".4"/>
 			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
-			<effect_group name="ammoArrowSteelAP" tiered="false"> <!-- ammoArrowSteelAP -->
+			<effect_group name="item_toc_earrows_name" tiered="false"> <!-- ammoArrowSteelAP -->
 				<passive_effect name="EntityDamage" operation="base_set" value="42"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
@@ -125,7 +122,8 @@
 			</effect_group>
 		</item>
 		
-		<item name="Bolts of Everdeen">
+		<item name="item_toc_ebolts_name">
+			<property name="DescriptionKey" value="item_toc_ebolts_desc"/>						
 			<property name="Extends" value="ammoCrossbowBoltIron"/>
 			<property name="CustomIcon" value="ammoCrossbowBoltSteelAP"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab.prefab"/>
@@ -137,7 +135,7 @@
 			<property name="StickyColliderUp" value="2"/>
 			<property name="StickyColliderRadius" value=".05"/>
 			<property name="StickyColliderLength" value=".75"/>
-			<effect_group name="ammoCrossbowBoltSteelAP" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
+			<effect_group name="item_toc_ebolts_name" tiered="false"> <!-- ammoCrossbowBoltSteelAP -->
 				<passive_effect name="EntityDamage" operation="base_set" value="55"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="8"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.3"/>

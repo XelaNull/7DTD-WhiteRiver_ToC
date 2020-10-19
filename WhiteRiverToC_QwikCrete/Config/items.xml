@@ -1,11 +1,11 @@
 <configs>
 	<append xpath="/items">
 
-		<item name="+QwikCrete Blocks Vet. Quest"> 
+		<item name="vetquestitem_toc_qwikcrete_name"> 
+			<property name="DescriptionKey" value="vetquestitem_toc_qwikcrete_description"/>												
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="DescriptionKey" value="q_qwikcrete_Blocks"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -15,11 +15,11 @@
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		
-		<item name="+Veteran Writ Of QwikCrete Blocks">
+		<item name="vetquestwrit_toc_qwikcrete_name">
+			<property name="DescriptionKey" value="vetquestwrit_toc_qwikcrete_description"/>									
 			<property name="CustomIcon" value="questMaster"/> 
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="DescriptionKey" value="q_qwikcrete_writ"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
@@ -33,12 +33,11 @@
 		</item>	
 		
 		<!-- ELITE -->
-
-		<item name="+QwikCrete Recipe Elite Quest"> 
+		<item name="elitequestitem_toc_qwikcrete_name"> 
+			<property name="DescriptionKey" value="elitequestitem_toc_qwikcrete_description"/>									
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
-			<property name="DescriptionKey" value="q_qwikcrete_Recipe"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
@@ -48,11 +47,11 @@
 			<property name="Group" value="Special Items"/>			
 		</item>	
 		
-		<item name="+Elite Writ Of QwikCrete Recipe">
+		<item name="elitequestwrit_toc_qwikcrete_name">
+			<property name="DescriptionKey" value="elitequestwrit_toc_qwikcrete_description"/>						
 			<property name="CustomIcon" value="questMaster"/> 
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="DescriptionKey" value="q_qwikcrete_Elitewrit"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
@@ -65,15 +64,15 @@
 			</property>		
 		</item>	
 		
-		<item name="QwikCrete Schematic">
+		<item name="eliteitemreward_toc_qwikcrete_schem_name">
+			<property name="DescriptionKey" value="eliteitemreward_toc_qwikcrete_description"/>						
 			<property name="Extends" value="schematicMaster"/>
-			<property name="DescriptionKey" value="kwikcreate_Schematic"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pouredConcreteBlock"/>
 			<property name="CustomIconTint" value="5C5CFF"/> 
-			<property name="Unlocks" value="+QwikCrete Variant Block"/>
+			<property name="Unlocks" value="questblock_toc_qwikcrete_name"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="+QwikCrete Variant Block" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="questblock_toc_qwikcrete_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>

@@ -1,6 +1,27 @@
 <config>
 	<append xpath="/quests" >
 		<!-- ELITE QUEST -->
+		
+		<quest id="+Elite Quest Hell Beast Starter">
+			<property name="name_key" value="quest_spiritstart_name"/>
+			<property name="subtitle_key" value="quest_spiritstart_subtitle"/>
+			<property name="description_key" value="quest_spiritstart_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="insane" />
+			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
+			<property name="statement_key" value="quest_spiritstart_statement"/>
+			<property name="response_key" value="quest_fetch_response"/>
+			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
+			<property name="shareable" value="false" />
+
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3" />		
+			<reward type="Quest" id="+Elite Quest For Spirit of Vengeance Hell Beast"/>			
+		</quest>		
+
+		
 		<quest id="+Elite Quest For Spirit of Vengeance Hell Beast">
 			<property name="name_key" value="quest_spirit_vengeance_name"/>
 			<property name="subtitle_key" value="quest_spirit_vengeance_subtitle"/>
@@ -9,11 +30,10 @@
 			<property name="repeatable" value="true" />
 			<property name="category_key" value="challenge" />
 			<property name="difficulty" value="insane" />
-			<property name="difficulty_tier" value="6"/>
 			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
 			<property name="statement_key" value="quest_spirit_vengeance_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
-			<property name="login_rally_reset" value="true"/>
+			<property name="login_rally_reset" value="false"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
 			<property name="shareable" value="false" />
 
@@ -26,9 +46,9 @@
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally" />
 			</objective>
-			<action type="SpawnEnemy" id="ZombieJuggernaut" value="1" phase="3"/>
+			<action type="SpawnEnemy" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
 			<action type="SpawnEnemy" id="zombieScreamer" value="2-4" phase="3"/>
-			<objective type="ZombieKill" id="ZombieJuggernaut" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
 			
 			<reward type="Item" id="questwrit_spirit_vengeance_name" value="1" />
 			<reward type="Exp" value="15000" />
@@ -59,8 +79,8 @@
 				<property name="phase" value="3" />
 			</objective>
 			
-			<reward type="Item" id="+White River Citizen Card" value="1" />				
-			<reward type="Item" id="vehicle_hell_beast" value="1" />
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />				
+			<reward type="Item" id="vehicle_spirit_hell_beast" value="1" />
 			<reward type="Exp" value="10000" />
 			<reward type="SkillPoints" value="3" />				
 		</quest>

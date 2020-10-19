@@ -1,6 +1,7 @@
 <configs>
 	<append xpath="/items">
-		<item name="+Daryl's Zombiekiller Crossbow Veteran Quest"> 
+		<item name="vetquestitem_toc_daryl_name"> 
+			<property name="DescriptionKey" value="vetquestitem_toc_daryl_desc"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -12,7 +13,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Veteran Writ Of Daryl">
+		<item name="vetwrititem_toc_daryl_name">
+			<property name="DescriptionKey" value="vetwrititem_toc_daryl_desc"/>						
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -30,7 +32,8 @@
 		</item>			
 				
 		
-		<item name="Daryls Zombiekiller Crossbow"> 
+		<item name="vetitem_toc_daryl_name"> 
+			<property name="DescriptionKey" value="vetitem_toc_daryl_desc"/>						
 			<property name="CustomIcon" value="gunBowT1IronCrossbow"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic"/>
@@ -70,42 +73,34 @@
 				<property name="Zoom_max_out" value="55"/>
 				<property name="Zoom_max_in" value="55"/>
 			</property>
-			<effect_group name="Daryls Zombiekiller Crossbow">
+			<effect_group name="vetitem_toc_daryl_name">
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
 				<passive_effect name="MaxRange" operation="base_set" value="100"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/> <!-- 3.4s -->
 				<passive_effect name="ProjectileVelocity" operation="perc_add" value="-.1"/>
-		
 				<passive_effect name="EntityDamage" operation="base_add" value="-6"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
-		
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkArchery"/> <!-- random DegMax -->
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
-		
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3.35"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".10"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-		
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".5"/> <!-- crosshair reset speed -->
-		
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="75"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2"/>
-		
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1"/>
-		
 				<passive_effect name="DegradationMax" operation="base_set" value="100,200" tier="1,6" tags="perkArchery"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
@@ -115,7 +110,8 @@
 		</item>				
 				
 		<!-- ELITE QUEST -->		
-		<item name="+Daryl's Zombiekiller Compound Crossbow Elite Quest"> 
+		<item name="elitequestitem_toc_daryl_name"> 
+			<property name="DescriptionKey" value="elitequestitem_toc_daryl_desc"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -126,7 +122,8 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
-		<item name="+Elite Writ Of Daryl">
+		<item name="elitewrititem_toc_daryl_name">
+			<property name="DescriptionKey" value="elitewrititem_toc_daryl_desc"/>						
 			<property name="CustomIcon" value="questMaster"/> 
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -143,7 +140,8 @@
 		</item>	
 	
 		
-		<item name="Daryls Zombiekiller Compound Crossbow"> 
+		<item name="eliteitem_toc_daryl_name"> 
+			<property name="DescriptionKey" value="eliteitem_toc_daryl_desc"/>						
 			<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic"/>
@@ -186,40 +184,32 @@
 				<property name="Zoom_max_out" value="55"/>
 				<property name="Zoom_max_in" value="55"/>
 			</property>
-			<effect_group name="Daryls Zombiekiller Compound Crossbow">
+			<effect_group name="eliteitem_toc_daryl_name">
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
 				<passive_effect name="MaxRange" operation="base_set" value="100"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/> <!-- 3.4s -->
-		
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
-		
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkArchery"/> <!-- random DegMax -->
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
-		
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3.35"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".10"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-		
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".5"/> <!-- crosshair reset speed -->
-		
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="75"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-		
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2"/>
-		
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1"/>
-		
 				<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6" tags="perkArchery"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
@@ -227,6 +217,5 @@
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 			</effect_group>
 		</item>
-
 	</append>
 </configs>

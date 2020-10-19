@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/archetypes">
 	
-		<archetype name="Juggernaut" male="true" hair_color="10,10,10" eye_color="40,30,24" skin_color="64,48,45" type="Player" stance="Like" voice_set="trader">
+		<archetype name="SpiritJuggernaut" male="true" hair_color="10,10,10" eye_color="40,30,24" skin_color="64,48,45" type="Player" stance="Like" voice_set="trader">
 			<base_mesh_parts>
 				<part slot="head" layer="base" mesh="male_base_face">
 					<texture name="male_head_zombie" color="skin"/>

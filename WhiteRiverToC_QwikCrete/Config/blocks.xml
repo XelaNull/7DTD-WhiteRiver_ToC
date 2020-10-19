@@ -2,9 +2,10 @@
 	<append xpath="/blocks">    
 
     
-    <block name="+QwikCrete Variant Block">
+    <block name="questblock_toc_qwikcrete_name">
+			<property name="DescriptionKey" value="questblock_toc_qwikcrete_desc"/>			
       <property name="Extends" value="pouredConcreteBlockVariantHelper"/>
-			<property name="UnlockedBy" value="QwikCrete Schematic"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_qwikcrete_schem_name"/>
       <property name="PlaceAltBlockValue" value="qwikcreteConcreteBlock,qwikcreteConcreteRamp,qwikcreteConcreteArch,qwikcreteConcreteArrowSlitHalf,qwikcreteConcreteCNRFull,qwikcreteConcreteCNRInside,qwikcreteConcreteCNRRamp,qwikcreteConcreteCNRRampFiller,qwikcreteConcreteCNRRound,qwikcreteConcreteCNRRoundTop,qwikcreteConcreteCTRPlate,qwikcreteConcreteCTRpole,qwikcreteConcreteEighth,qwikcreteConcreteGableInvertedHalf,qwikcreteConcreteGableInvertedQuarter,qwikcreteConcreteGableInvertedSteep,qwikcreteConcreteGableQuarter,qwikcreteConcreteHalf,qwikcreteConcretePillar100,qwikcreteConcretePillar100Cap,qwikcreteConcretePillar50,qwikcreteConcretePlate,qwikcreteConcretePole,qwikcreteConcretePyramid,qwikcreteConcreteQuarter,qwikcreteConcreteQuarterCNR,qwikcreteConcreteQuarterCNR3Way,qwikcreteConcreteQuarterSCtr,qwikcreteConcreteQuarterTeeSCtr,qwikcreteConcreteStairs25,qwikcreteConcreteStairs50,qwikcreteConcreteStairs25CornerCNR,qwikcreteConcreteStairsFilledRailingLeft,qwikcreteConcreteStairsFilledRailingRight,qwikcreteConcreteSupport,qwikcreteConcreteWedge,qwikcreteConcreteWedgeCNRInsideBottom,qwikcreteConcreteWedgeCNRInsideSteepBase,qwikcreteConcreteWedgeCNRInsideSteepTop,qwikcreteConcreteWedgeCNRInsideTop,qwikcreteConcreteWedgeCNRSteepBase,qwikcreteConcreteWedgeCNRSteepTop,qwikcreteConcreteWedgeIncline,qwikcreteConcreteWedgeStairs,qwikcreteConcreteWedgeTip,qwikcreteConcreteWedgeTipCNRFullBottom,qwikcreteConcreteWedgeTipCNRFullTop,qwikcreteConcreteWedgeTipStairs"/>
     </block>
     
@@ -296,9 +297,6 @@
       <property name="MaxDamage" value="600"/>
       <property name="UpgradeRated.Rate" value="2"/>
     </block>
-    
-    
-    
-    
+      
   </append>
 </configs>
