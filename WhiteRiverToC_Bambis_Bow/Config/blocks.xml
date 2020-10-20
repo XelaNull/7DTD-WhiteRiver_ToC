@@ -13,7 +13,7 @@
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="155"/>
+			<property name="LootList" value="355"/>
 		</block>	
 		<block name="questblock_toc_bambielitecrate_name">
 			<property name="DescriptionKey" value="questblock_toc_bambielitecrate_desc"/>						
@@ -27,7 +27,7 @@
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="155"/>
+			<property name="LootList" value="355"/>
 		</block>
 	</append>	
 </configs>	

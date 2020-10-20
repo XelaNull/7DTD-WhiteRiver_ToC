@@ -1,11 +1,11 @@
 <configs>
 	<append xpath="/lootcontainers">
 
-		<lootcontainer id="163" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="363" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item name="questitem_toc_pav_barrel_name" count="1" />
 		</lootcontainer>
     
-    <lootcontainer id="164" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+    <lootcontainer id="364" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
       <item name="questitem_toc_pav_stock_name" count="1" />
     </lootcontainer>
 	

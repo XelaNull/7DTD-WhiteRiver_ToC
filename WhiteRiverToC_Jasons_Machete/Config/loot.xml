@@ -1,6 +1,6 @@
 <configs>
 	<append xpath="lootcontainers">
-		<lootcontainer id="160" count="3,6" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="360" count="3,6" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="modGunT2" count="0,1" prob="0.2"/>
 			<item group="perkBooks" count="0,1" prob="0.4"/>
 			<item group="groupAmmoRegular" count="2"/>

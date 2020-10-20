@@ -3,7 +3,7 @@
 		<item name="elitequestitem_toc_bambi_name" count="1"/>
 	</append>
 	<append xpath="lootcontainers">
-		<lootcontainer id="155" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="355" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="modGunT2" count="0,1" prob="0.2"/>
 			<item group="perkBooks" count="0,1" prob="0.2"/>
 			<item group="groupAmmoRegular" count="2"/>

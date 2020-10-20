@@ -13,7 +13,7 @@
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="159"/>
+			<property name="LootList" value="359"/>
 		</block>	
 	</append>	
 </configs>	
