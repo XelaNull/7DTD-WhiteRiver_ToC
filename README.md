@@ -57,6 +57,48 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 Nearly all quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward. Black Bart's dig tools are unique and the quest is designed NOT to be repeatable!
 
+#### Quest Listing by Tier
+
+##### White River Citizen Card (10 Zombies)
+
+- Taza's Axe
+- Leon's SMG
+- Kuva's Armor
+- Jason's Machete
+- Everdeen's Arrows & Bolts
+- Dundee's Knife
+- Deschain's Revolver
+- Bunyan's FireAxe
+- Brass For Lead
+- Bambi's Compound Bow
+
+##### White River Veteran Citizen Card (100 Zombies)
+
+- Taza's Axe
+- Rick Danger Auger
+- Qwik-Crete Blocks
+- Pavlichenko's Rifle
+- Leon's SMG
+- Kuva's Armor
+- Gupta's Bandages
+- Daryl's Compound Crossbow
+- BlackBart's Dig Tools
+- Bambi's Compound Bow
+- Amelia Earhart's Gyrocopter (Wendigo)
+
+##### White River Elite Citizen Card (1000 Zombies)
+
+- Spirit of Vengeance (Juggernaut)
+- Rick Danger Auger
+- Remington's Steel Ammo
+- Qwik-Crete Recipe
+- Daryl's Crossbow
+- Bambi's Compound Bow
+
+##### Quests Not Requiring Citizen Card
+
+- Callinicus's Greek Fire Arrows
+
 #### Installation
 
 Download the ZIP file and extract. Open the ONE folder and you will find EIGHTEEN folders inside. Copy the EIGHTEEN folders to your 7 Days to Die "Mods" folder. The default location for a Steam-based Windows 10 install is: C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Data\Mods
