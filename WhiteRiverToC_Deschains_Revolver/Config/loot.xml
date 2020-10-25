@@ -3,8 +3,8 @@
 		<lootcontainer id="358" count="3,5" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="modMeleeT2" count="0,1" prob="0.5"/>
 			
-			<item name="crafteditem_toc_45lcsilver_schem_name" count="12,96"/>
-			<item name="crafteditem_toc_45lcgold_schem_name" count="6,48"/>
+			<item name="crafteditem_toc_45lcsilver_name" count="12,96"/>
+			<item name="crafteditem_toc_45lcgold_name" count="6,48"/>
 
 			<item group="perkBooks" count="1,2" prob="0.7"/>
 			<item group="groupTreasureMaps" count="0,1" prob="0.1"/>

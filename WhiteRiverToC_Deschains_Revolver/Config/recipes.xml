@@ -24,13 +24,13 @@
 			<ingredient name="item_toc_desc_book58_name" count="1"/>
 		</recipe>	
 			
-		<recipe name="crafteditem_toc_45lcsilver_schem_name" count="6" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<recipe name="crafteditem_toc_45lcsilver_name" count="6" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="6"/>
 			<ingredient name="resourceGunPowder" count="60"/>
 			<ingredient name="resourceBulletCasing" count="6"/>
 			<ingredient name="resourceSilverNugget" count="1"/>
 		</recipe>
-		<recipe name="crafteditem_toc_45lcgold_schem_name" count="3" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<recipe name="crafteditem_toc_45lcgold_name" count="3" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="3"/>
 			<ingredient name="resourceGunPowder" count="30"/>
 			<ingredient name="resourceBulletCasing" count="3"/>

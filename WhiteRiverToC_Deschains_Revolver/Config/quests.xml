@@ -53,7 +53,7 @@
 				<reward type="Item" id="itemreward_toc_desch_name" value="2-6" />
 				<reward type="Item" id="questblock_toc_deschcrate_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
-				<reward type="Item" id="itemreward_toc_deschhat_schem_name" value="1" />
+				<reward type="Item" id="itemreward_toc_deschhat_name" value="1" />
 				<reward type="Item" id="questitem_spirit_vengeance_name" value="1-2" />
 				
 				<reward type="Exp" value="5000" />

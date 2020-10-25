@@ -138,7 +138,7 @@
 			</effect_group>
 		</item>
 	
-		<item name="crafteditem_toc_45lcsilver_schem_name">
+		<item name="crafteditem_toc_45lcsilver_name">
 			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>									
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletHP"/>
@@ -147,8 +147,8 @@
 			<property name="EconomicValue" value="75"/>
 			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
 			<effect_group name="45LC Silver Bullet of Gilead" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="100"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="100" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
 				<display_value name="dTargetArmor" value="1"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1">
@@ -158,7 +158,7 @@
 		</item>
 
 		
-		<item name="crafteditem_toc_45lcgold_schem_name">
+		<item name="crafteditem_toc_45lcgold_name">
 			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>									
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="DisplayType" value="ammoBulletAP"/>
@@ -167,8 +167,8 @@
 			<property name="EconomicValue" value="100"/>
 			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
 			<effect_group name="45LC Gold Bullet of Gilead" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="150"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="14"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="14" tags="perkGunslinger"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.3"/>
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
@@ -193,7 +193,7 @@
 			<!--<property name="Group" value="Resources"/>-->
 		</item>
 		
-		<item name="itemreward_toc_deschhat_schem_name"> <!-- item name directly referenced in the code -->
+		<item name="itemreward_toc_deschhat_name"> <!-- item name directly referenced in the code -->
 			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>									
 			<property name="Tags" value="head,clothing,canHaveCosmetic"/>
 			<property name="CustomIcon" value="apparelCowboyHat"/>
