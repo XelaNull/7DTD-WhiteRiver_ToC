@@ -36,7 +36,7 @@
 		
 		<item name="item_toc_bunyanaxe_name"> <!-- T2 Tools -->
 			<property name="DescriptionKey" value="item_toc_bunyanaxe_desc"/>									
-			<property name="Tags" value="axe,melee,grunting,medium,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
+			<property name="Tags" value="axe,melee,grunting,medium,longShaft,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
 			<property name="CustomIconTint" value="cc3300"/>

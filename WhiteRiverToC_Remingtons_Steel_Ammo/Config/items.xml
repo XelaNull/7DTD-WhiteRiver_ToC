@@ -86,10 +86,15 @@
 			<property name="EconomicValue" value="8"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="29"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+			<effect_group name="Base Effects" tiered="false">			
+				<passive_effect name="EntityDamage" operation="base_set" value="39"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="9.5"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger,9mmGun"/>
+				<display_value name="dDegradationPerUse" value="1.2"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
@@ -104,10 +109,15 @@
 			<property name="EconomicValue" value="9"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
-			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="76"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+			<effect_group name="Base Effects" tiered="false">			
+				<passive_effect name="EntityDamage" operation="base_set" value="86"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="12"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger"/>
+				<display_value name="dDegradationPerUse" value="1.2"/>
 			</effect_group>
 		</item>
 
@@ -121,9 +131,14 @@
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 			<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="46"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="7"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="60"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dDegradationPerUse" value="1.2"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>

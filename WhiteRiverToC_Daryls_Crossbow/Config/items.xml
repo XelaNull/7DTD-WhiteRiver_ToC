@@ -74,38 +74,45 @@
 				<property name="Zoom_max_in" value="55"/>
 			</property>
 			<effect_group name="vetitem_toc_daryl_name">
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
-				<passive_effect name="MaxRange" operation="base_set" value="100"/>
-				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/> <!-- 3.4s -->
-				<passive_effect name="ProjectileVelocity" operation="perc_add" value="-.1"/>
-				<passive_effect name="EntityDamage" operation="base_add" value="-6"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="25" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkArchery"/> <!-- random effective rng -->
+				<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5" tags="perkArchery"/> <!-- 3.4s -->
+				<passive_effect name="ProjectileVelocity" operation="perc_add" value="-.1" tags="perkArchery"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="-6" tags="perkArchery"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkArchery"/> <!-- random DegMax -->
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3.35"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".10"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".5"/> <!-- crosshair reset speed -->
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="75"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1"/>
-				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkArchery"/> <!-- random WeaponHandling -->
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35" tags="perkArchery"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3.35" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".10" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".5" tags="perkArchery"/> <!-- crosshair reset speed -->
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkArchery"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="100,200" tier="1,6" tags="perkArchery"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			</effect_group>
+			<effect_group name="sneak damage bonus">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+					<passive_effect name="DamageBonus" operation="base_add" value="2.5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="2.5" tags="perkArchery"/>
+					<display_value name="dEntityDamageSneak" value="2.5"/>
 			</effect_group>
 		</item>				
 				
@@ -144,7 +151,7 @@
 			<property name="DescriptionKey" value="eliteitem_toc_daryl_desc"/>						
 			<property name="CustomIcon" value="gunBowT3CompoundCrossbow"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,attAgility,perkArchery,canHaveCosmetic,longShaft"/>
 			<property name="DisplayType" value="rangedBow"/>
 			<property name="DescriptionKey" value="gunCrossbowIronDesc"/>
 			<property name="HoldType" value="69"/>
@@ -185,36 +192,43 @@
 				<property name="Zoom_max_in" value="55"/>
 			</property>
 			<effect_group name="eliteitem_toc_daryl_name">
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="25"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2"/> <!-- random effective rng -->
-				<passive_effect name="MaxRange" operation="base_set" value="100"/>
-				<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5"/> <!-- 3.4s -->
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="25" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkArchery"/> <!-- random effective rng -->
+				<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5" tags="perkArchery"/> <!-- 3.4s -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkArchery"/> <!-- random DegMax -->
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08"/> <!-- random WeaponHandling -->
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3.35"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".10"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2"/>
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".5"/> <!-- crosshair reset speed -->
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="75"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1"/>
-				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkArchery"/> <!-- random WeaponHandling -->
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="3.35" tags="perkArchery"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="3.35" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".10" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".5" tags="perkArchery"/> <!-- crosshair reset speed -->
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkArchery"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6" tags="perkArchery"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			</effect_group>
+			<effect_group name="sneak damage bonus">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+					<passive_effect name="DamageBonus" operation="base_add" value="3"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="3" tags="perkArchery"/>
+					<display_value name="dEntityDamageSneak" value="3"/>
 			</effect_group>
 		</item>
 	</append>

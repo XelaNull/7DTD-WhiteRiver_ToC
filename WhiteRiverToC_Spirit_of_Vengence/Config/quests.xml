@@ -48,6 +48,10 @@
 			</objective>
 			<action type="SpawnEnemy" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
 			<action type="SpawnEnemy" id="zombieScreamer" value="2-4" phase="3"/>
+			<action type="SpawnEnemy" id="zombieSpiderFeral" value="2-4" phase="3"/>
+			<action type="SpawnEnemy" id="zombieDemolition" value="1-3" phase="3"/>
+			<action type="SpawnEnemy" id="animalWolf" value="4" phase="3"/>
+
 			<objective type="ZombieKill" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
 			
 			<reward type="Item" id="questwrit_spirit_vengeance_name" value="1" />

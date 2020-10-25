@@ -14,17 +14,17 @@
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
 		<lootgroup name="groupBooksDarkTower">
 			<item name="item_toc_desc_book1_name"/>
-			<item name="item_toc_desc_book2_name" prob=".3"/>
-			<item name="item_toc_desc_book3_name" prob=".3"/>
-			<item name="item_toc_desc_book4_name" prob=".3"/>
-			<item name="item_toc_desc_book5_name" prob=".3"/>
-			<item name="item_toc_desc_book6_name" prob=".3"/>
-			<item name="item_toc_desc_book7_name" prob=".3"/>
-			<item name="item_toc_desc_book8_name" prob=".15" />
+			<item name="item_toc_desc_book2_name" prob=".25"/>
+			<item name="item_toc_desc_book3_name" prob=".25"/>
+			<item name="item_toc_desc_book4_name" prob=".25"/>
+			<item name="item_toc_desc_book5_name" prob=".25"/>
+			<item name="item_toc_desc_book6_name" prob=".25"/>
+			<item name="item_toc_desc_book7_name" prob=".25"/>
+			<item name="item_toc_desc_book8_name" prob=".1" />
 		</lootgroup>
 	</insertAfter>
 			
 	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
-		<item group="groupBooksDarkTower" count="1" prob="15"/>
+		<item group="groupBooksDarkTower" count="1" prob="12"/>
 	</append>
 </configs>	

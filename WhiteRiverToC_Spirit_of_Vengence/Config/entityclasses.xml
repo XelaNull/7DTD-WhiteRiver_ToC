@@ -96,27 +96,28 @@
 			<property name="DismemberMultiplierLegs" value="0"/>
 			<property name="LegCrippleScale" value="0"/>
 			<property name="LegCrawlerThreshold" value="0"/>
-			<property name="KnockdownProneDamageThreshold" value="10"/>
+			<property name="KnockdownProneDamageThreshold" value="1"/>
 			<property name="KnockdownProneStunDuration" value="0"/>
-			<property name="KnockdownProneRefillRate" value="10"/>
-			<property name="KnockdownKneelDamageThreshold" value="10"/>
+			<property name="KnockdownProneRefillRate" value="1"/>
+			<property name="KnockdownKneelDamageThreshold" value="1"/>
 			<property name="KnockdownKneelStunDuration" value="0"/>
-			<property name="KnockdownKneelRefillRate" value="10"/>
+			<property name="KnockdownKneelRefillRate" value="1"/>
 			<property name="LegsExplosionDamageMultiplier" value="0"/>
 			<property name="ArmsExplosionDamageMultiplier" value="0"/>
 			<property name="HeadExplosionDamageMultiplier" value="0"/>
 			<property name="ChestExplosionDamageMultiplier" value="0"/>
-			<property name="PainResistPerHit" value="2"/>
-			<property name="MoveSpeed" value="0.6"/>
-			<property name="MoveSpeedAggro" value="0.85, 1.5"/>
+			<property name="PainResistPerHit" value="3"/>
+			<property name="MoveSpeed" value="0.7"/>
+			<property name="MoveSpeedAggro" value="0.9, 1.55"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="8000"/>
+				<passive_effect name="HealthMax" operation="base_set" value="10000"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SpiritJuggernautDeco"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffSpiritJuggernaut"/>
 				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffSpiritJuggernautSpeedDelay"/>
 
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>
 		</entity_class>
