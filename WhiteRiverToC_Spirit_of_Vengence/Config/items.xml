@@ -56,7 +56,7 @@
 			<property class="Action0">
 				<property name="Range" value="1.75"/>
 				<property name="DamageEntity" value="100"/>
-				<property name="DamageBlock" value="3500"/>
+				<property name="DamageBlock" value="5000"/>
 				<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>
 				<property name="Sound_start" value="Auger_Fire_Start"/>
 				<property class="HitSounds">
@@ -96,16 +96,16 @@
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
 				<property name="DamageEntity" value="75"/>
-				<property name="DamageBlock" value="7000"/>
+				<property name="DamageBlock" value="12000"/>
 				<property name="Explosion.ParticleIndex" value="2"/>
 				<!-- which Prefab/particle is used -->
-				<property name="Explosion.RadiusBlocks" value="6"/>
+				<property name="Explosion.RadiusBlocks" value="9"/>
 				<!-- damage radius for blocks -->
-				<property name="Explosion.RadiusEntities" value="5"/>
+				<property name="Explosion.RadiusEntities" value="6"/>
 				<!-- damage radius for entities -->
 				<property name="Explosion.DamageBonus.water" value="0"/>
-				<property name="Velocity" value="22"/>
-				<property name="FlyTime" value="2"/>
+				<property name="Velocity" value="25"/>
+				<property name="FlyTime" value="1.6"/>
 				<property name="LifeTime" value="4"/>
 				<property name="CollisionRadius" value="0.75"/>
 				<property name="DamageBonus.earth" value="0"/></property>

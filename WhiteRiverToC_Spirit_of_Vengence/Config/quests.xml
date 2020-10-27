@@ -33,7 +33,7 @@
 			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
 			<property name="statement_key" value="quest_spirit_vengeance_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
-			<property name="login_rally_reset" value="false"/>
+			<property name="login_rally_reset" value="true"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
 			<property name="shareable" value="false" />
 

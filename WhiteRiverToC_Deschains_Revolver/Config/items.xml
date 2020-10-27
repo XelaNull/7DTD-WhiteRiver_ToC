@@ -63,7 +63,7 @@
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="crafteditem_toc_45lcsilver_schem_name,crafteditem_toc_45lcgold_schem_name"/>
+				<property name="Magazine_items" value="crafteditem_toc_45lcsilver_name,crafteditem_toc_45lcgold_name"/>
 				<property name="Reload_time" value="-1"/>
 				<property name="Sound_start" value="44magnum_fire"/>
 				<property name="Sound_repeat" value=""/>
@@ -239,7 +239,11 @@
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>		
 			<property name="CustomIconTint" value="cc3300"/>	
+			<property class="Action0">
+				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
+			</property>
 		</item>	
+		
 		<item name="item_toc_desc_book1_name">
 			<property name="DescriptionKey" value="item_toc_desc_book1_desc"/>									
 			<property name="Extends" value="challengeQuestMaster"/>
@@ -277,6 +281,9 @@
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="CustomIcon" value="schematicMaster"/>		
 			<property name="CustomIconTint" value="cc3300"/>	
+			<property class="Action0">
+				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
+			</property>
 		</item>	
 		<item name="item_toc_desc_book5_name">
 			<property name="DescriptionKey" value="item_toc_desc_book5_desc"/>
