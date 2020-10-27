@@ -1,0 +1,13 @@
+<configs>
+
+
+  <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
+    <item_property_overrides name="vetitem_toc_claws_name">
+      <property name="FlameEffect" value="ParticleEffects/p_torch_wall"/>
+    </item_property_overrides>
+    <item_property_overrides name="eliteitem_toc_claws_name">
+      <property name="FlameEffect" value="ParticleEffects/p_torch_wall"/>
+    </item_property_overrides>
+  </append>
+
+</configs>

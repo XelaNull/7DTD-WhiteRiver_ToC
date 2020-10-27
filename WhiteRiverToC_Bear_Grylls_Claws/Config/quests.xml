@@ -1,0 +1,84 @@
+<config>
+	<append xpath="/quests">
+	
+		<quest id="+Quest For Bear Grylls Iron Knuckles">
+			<property name="name_key" value="quest_toc_claws_name"/>
+			<property name="subtitle_key" value="quest_toc_claws_subtitle"/>
+			<property name="description_key" value="quest_toc_claws_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_claws_offer"/>
+			<property name="statement_key" value="quest_toc_claws_statement"/>
+			<property name="response_key" value="questdialog_toc_claws"/>				
+			<property name="group_name_key" value="quest_toc_claws_group"/>
+			<property name="shareable" value="false" />
+
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+      <objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1" />
+
+      <objective type="RandomGoto" value="500-1000" phase="2">
+				<property name="completion_distance" value="50"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+
+			<action type="SpawnEnemy" id="animalBear" value="3" phase="4"/>
+			<objective type="AnimalKill" id="animalBear" value="3" phase="4"/>
+			<requirement type="Holding" id="meleeWpnKnucklesT1IronKnuckles" phase="4"/>
+
+	
+			<reward type="Item" id="item_toc_claws_name" value="3-4" />
+      <reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
+      <reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+      <reward type="Exp" value="1000" />
+      <reward type="SkillPoints" value="1" />				
+		</quest>
+    
+    
+    <quest id="+Quest For Bear Grylls Steel Knuckles">
+      <property name="name_key" value="vetquest_toc_claws_name"/>
+      <property name="subtitle_key" value="vetquest_toc_claws_subtitle"/>
+      <property name="description_key" value="vetquest_toc_claws_description"/>
+      <property name="icon" value="ui_game_symbol_zombie" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="difficulty" value="easy" />
+      <property name="offer_key" value="vetquest_toc_claws_offer"/>
+      <property name="statement_key" value="vetquest_toc_claws_statement"/>
+      <property name="response_key" value="vetquestdialog_toc_claws"/>				
+      <property name="group_name_key" value="vetquest_toc_claws_group"/>
+      <property name="shareable" value="false" />
+
+      <objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+      <objective type="FetchKeep" id="forgedSteel" value="100" phase="1" />
+
+
+      <objective type="RandomGoto" value="500-1000" phase="2">
+        <property name="completion_distance" value="50"/>
+        <property name="nav_object" value="quest" />
+      </objective>
+      <objective type="RallyPoint">
+        <property name="start_mode" value="Create"/>
+        <property name="phase" value="3"/>
+        <property name="nav_object" value="rally" />
+      </objective>
+
+      <action type="SpawnEnemy" id="zombieBear" value="1" phase="4"/>
+      <objective type="ZombieKill" id="zombieBear" value="1" phase="4"/>
+			<requirement type="Holding" id="meleeWpnKnucklesT3SteelKnuckles" phase="4"/>
+     
+      <reward type="Item" id="vetitem_toc_claws_name" value="3-4" />
+      <reward type="Item" id="questitem_toc_citizencard_name" value="1" />					
+      <reward type="Item" id="modMeleeClubBurningShaft" count="1"/>      
+      <reward type="Exp" value="1000" />
+      <reward type="SkillPoints" value="1" />				
+    </quest>
+	
+  </append>
+</config>
