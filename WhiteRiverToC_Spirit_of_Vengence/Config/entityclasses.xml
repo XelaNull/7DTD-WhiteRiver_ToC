@@ -73,12 +73,14 @@
 			<property name="Tags" value="entity,zombie,walker,boss,umazombie,SpiritJuggernaut" />
 			<property name="HandItem" value="meleeHandSpiritJuggernaut"/>
 			<property name="RightHandJointName" value="LeftShoulder"/>
+			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="RootMotion" value="true"/>
 			<property name="LootDropProb" value="1"/>
 			<property name="ExperienceGain" value="50000"/>
 			<property name="WalkType" value="2"/>
 			<property name="AITask-1" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=4;minRange=3;maxRange=300"/>
-			<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer"/>
-			<property name="AITask-3" value="Leap"/>
+			<property name="AITask-2" value="Leap"/>
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer"/>
 			<property name="AITask-4" value="BreakBlock"/>
 			<property name="AITask-5" value="ApproachSpot"/>
 			<property name="AITask-6" value="Look"/>
