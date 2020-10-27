@@ -1,7 +1,7 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 item_toc_claws_name,items,Item,,,Iron Bear Claws,,,,,,,,,,,,,,
 item_toc_claws_description,items,Item,,,"A set of iron knuckles made from the claws of a bear.",,,,,,,,,,,,,,
-questitem_toc_claws_name,items,Quest - Note,,,+Bear Grylls's Iron Claws Quest,,,,,,,,,,,,,,
+questitem_toc_claws_name,items,Quest - Note,,,+Bear Grylls's Flaming Iron Claws Quest,,,,,,,,,,,,,,
 questitem_toc_claws_desc,items,Quest - Note,,,"A quest to craft yourself a set of Bear Grylls's Iron Knuckles from the Claws of Three Bears.",,,,,,,,,,,,,,
 quest_toc_claws_name,Quest,Quest Info,,,"Quest to obtain Bear Grylls's Iron Claws",,,,,,,,,,,,,,
 quest_toc_claws_subtitle,Quest,Quest Info,,,"Kill Three Bears using Iron Knuckles",,,,,,,,,,,,,,
@@ -12,7 +12,7 @@ quest_toc_claws_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Qu
 questdialog_toc_claws,Quest,Dialogs,,,"Craft yourself a pair of Bear Grylls's Iron Claws by Killing Three Bears",,,,,,,,,,,,,
 vetitem_toc_claws_name,items,Item,,,Steel Bear Claws,,,,,,,,,,,,,,
 vetitem_toc_claws_description,items,Item,,,"A set of steel knuckles made from the claws of a bear.",,,,,,,,,,,,,,
-vetquestitem_toc_claws_name,items,Quest - Note,,,+Bear Grylls's Iron Claws Quest,,,,,,,,,,,,,,
+vetquestitem_toc_claws_name,items,Quest - Note,,,+Bear Grylls's Flaming Steel Claws Quest,,,,,,,,,,,,,,
 vetquestitem_toc_claws_desc,items,Quest - Note,,,"A quest to craft yourself a set of Bear Grylls's Iron Knuckles from the Claws of Three Bears.",,,,,,,,,,,,,,
 vetquest_toc_claws_name,Quest,Quest Info,,,"Quest to obtain Bear Grylls's Steel Claws",,,,,,,,,,,,,,
 vetquest_toc_claws_subtitle,Quest,Quest Info,,,"Kill a Zombie Bear using Steel Knuckles",,,,,,,,,,,,,,
