@@ -50,6 +50,6 @@ quest_toc_randomelite_statement,Quest,Quest Info,,,"Complete a random Elite ques
 quest_toc_randomelite_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Random Elite Quest",,,,,,,,,,,,,,
 questdialog_toc_randomelite,Quest,Dialogs,,,"Gamble on your community citizenry to complete an Elite quest.",,,,,,,,,,,,,,
 questitem_toc_randomelite_name,items,Quest - Note,,,+White River Random Elite Crate,,,,,,,,,,,,,,
-questitem_toc_randomelite_desc,items,Quest - Note,,,"A quest starter that gives you a sealed crate with a random elite quest in it, in exchange for three veteran citizen cards.",,,,,,,,,,,,,,
+questitem_toc_randomelite_desc,items,Quest - Note,,,"A quest starter that gives you a sealed crate with a random elite quest in it, in exchange for four veteran citizen cards. However, when you start your elite quest, you will receive one veteran card back.",,,,,,,,,,,,,,
 questblock_toc_randomcrate_name,blocks,Container,,,+Sealed Random Elite Quest Crate,,,,,,,,,,,,,,
 questblock_toc_randomcrate_desc,blocks,Container,,,"A sealed crate containing a random elite quest for White River settlements..",,,,,,,,,,,,,,
