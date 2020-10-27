@@ -8,6 +8,6 @@
   </insertAfter>
       
   <append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
-    <item group="groupBooksGreekFire" count="1" prob="15"/>
+    <item group="groupBooksGreekFire" count="1" prob="12"/>
   </append>
 </configs>
