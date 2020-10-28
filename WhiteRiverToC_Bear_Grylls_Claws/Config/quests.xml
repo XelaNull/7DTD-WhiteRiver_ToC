@@ -33,7 +33,7 @@
 			<requirement type="Holding" id="meleeWpnKnucklesT1IronKnuckles" phase="4"/>
 
 	
-			<reward type="Item" id="item_toc_claws_name" value="3-4" />
+			<reward type="Item" id="schemitem_toc_claws_name" value="1" />
       <reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
       <reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
       <reward type="Exp" value="1000" />
@@ -56,7 +56,7 @@
       <property name="shareable" value="false" />
 
       <objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-      <objective type="FetchKeep" id="forgedSteel" value="100" phase="1" />
+      <objective type="FetchKeep" id="resourceForgedSteel" value="100" phase="1" />
 
 
       <objective type="RandomGoto" value="500-1000" phase="2">
@@ -69,11 +69,11 @@
         <property name="nav_object" value="rally" />
       </objective>
 
-      <action type="SpawnEnemy" id="zombieBear" value="1" phase="4"/>
-      <objective type="ZombieKill" id="zombieBear" value="1" phase="4"/>
+      <action type="SpawnEnemy" id="animalZombieBear" value="1" phase="4"/>
+      <objective type="AnimalKill" id="animalZombieBear" value="1" phase="4"/>
 			<requirement type="Holding" id="meleeWpnKnucklesT3SteelKnuckles" phase="4"/>
      
-      <reward type="Item" id="vetitem_toc_claws_name" value="3-4" />
+      <reward type="Item" id="vetschemitem_toc_claws_name" value="1" />
       <reward type="Item" id="questitem_toc_citizencard_name" value="1" />					
       <reward type="Item" id="modMeleeClubBurningShaft" count="1"/>      
       <reward type="Exp" value="1000" />

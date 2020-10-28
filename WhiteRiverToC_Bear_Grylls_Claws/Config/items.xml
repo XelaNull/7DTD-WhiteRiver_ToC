@@ -19,7 +19,7 @@
     	<!-- <property name="FuelValue" value="0"/> -->
     	<property name="Group" value="Ammo/Weapons"/>
     	<property name="EconomicValue" value="350"/>
-    	<property name="UnlockedBy" value="perkBrawler,meleeWpnKnucklesT1IronKnucklesSchematic"/>
+    	<property name="UnlockedBy" value="schemitem_toc_claws_name"/>
     	<property name="ShowQuality" value="true"/>
     	<property class="Action0">
     		<property name="Class" value="DynamicMelee"/>
@@ -114,6 +114,18 @@
 			<property name="Group" value="Special Items"/>			
 		</item>	
 
+		<item name="schemitem_toc_claws_name">
+			<property name="DescriptionKey" value="schemitem_toc_claws_description"/>						
+    	<property name="Extends" value="schematicMaster"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
+      <property name="CustomIconTint" value="cc3300"/> 
+    	<property name="Unlocks" value="item_toc_claws_name"/>
+    	<effect_group tiered="false">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_claws_name" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+    	</effect_group>
+    </item>
 
 
 
@@ -129,7 +141,7 @@
     	<property name="Material" value="MmeleeWpnKnucklesParts"/>
     	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedRight_Prefab.prefab"/>
     	<property name="HoldType" value="79"/>
-    	<property name="UnlockedBy" value="meleeWpnKnucklesT3SteelKnucklesSchematic"/>
+    	<property name="UnlockedBy" value="vetschemitem_toc_claws_name"/>
 
     	<property class="Action0">
     		<property name="ToolCategory.Butcher" value="5" param1="1.5"/>
@@ -204,6 +216,19 @@
 			</property>			
 			<property name="Group" value="Special Items"/>			
 		</item>	
+		
+		<item name="vetschemitem_toc_claws_name">
+			<property name="DescriptionKey" value="vetschemitem_toc_claws_desc"/>						
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
+			<property name="CustomIconTint" value="5C5CFF"/> 
+			<property name="Unlocks" value="vetitem_toc_claws_name"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vetitem_toc_claws_name" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
 	
   </append>
 </configs>    
