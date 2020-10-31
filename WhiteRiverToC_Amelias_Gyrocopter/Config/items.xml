@@ -1,0 +1,172 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="item_toc_amelia_schem_name">
+			<property name="DescriptionKey" value="item_toc_amelia_schem_desc"/>						
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>
+			<property name="CustomIconTint" value="cc3300"/> 
+			<property name="Unlocks" value="resourceRefinedLead"/>
+			<property name="Unlocks" value="carAmeliaBattery"/>
+			<property name="Unlocks" value="vehicleAmeliaGyroCopterChassis"/>
+			<property name="Unlocks" value="vehicleAmeliaGyroCopterAccessories"/>
+			<property name="Unlocks" value="vehicleAmeliaGyrocopterPlaceable"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="carAmeliaBattery" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceRefinedLead" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAmeliaGyroCopterChassis" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAmeliaGyroCopterAccessories" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAmeliaGyrocopterPlaceable" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+
+		<item name="resourceRefinedLead">
+			<property name="CustomIcon" value="resourceScrapLead"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="resourceScrapLead"/>
+			<property name="UnlockedBy" value="item_toc_amelia_schem_name"/>
+		</item>
+
+		<item name="carAmeliaBattery">
+			<property name="CustomIcon" value="carBattery"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="UnlockedBy" value="item_toc_amelia_schem_name"/>
+
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadLarge"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="160"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="Group" value="Resources,Chemicals"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="ShowQuality" value="true"/>
+			<property class="Attributes">
+				<property name="DegradationMax" value="1000,6000"/> <!-- needed for electrical calculations -->
+				<property name="BatteryMaxLoadInVolts" value="24, 36"/>
+				<property name="BatteryDischargeTimeInMinutes" value="30,90"/>
+			</property>
+			<effect_group>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="5000,10000" tier="1,6"/>
+			</effect_group>
+		</item>
+
+		<item name="smallAmeliaEngine">
+			<property name="CustomIcon" value="smallEngine"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="smallEngine"/>
+		</item>
+
+		<item name="vehicleAmeliaGyroCopterChassis">
+			<property name="CustomIcon" value="vehicleGyroCopterChassis"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="vehicleGyroCopterChassis"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="UnlockedBy" value="item_toc_amelia_schem_name"/>
+		</item>
+		
+		<item name="vehicleAmeliaGyroCopterAccessories">
+			<property name="CustomIcon" value="vehicleGyroCopterAccessories"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="vehicleGyroCopterAccessories"/>
+			<property name="EconomicValue" value="15000"/>
+			<property name="UnlockedBy" value="item_toc_amelia_schem_name"/>
+		</item>
+
+    <item name="vehicleAmeliaGyrocopterPlaceable">
+      <property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>
+      <property name="CustomIconTint" value="cc3300"/>			
+    	<property name="Extends" value="vehicleMinibikePlaceable"/>
+    	<property name="Meshfile" value="#Entities/Vehicles?gyrocopter_Prefab.prefab"/>
+    	<property name="EconomicValue" value="70000"/>
+			<property name="UnlockedBy" value="item_toc_amelia_schem_name"/>
+    	<property class="Action1">
+    		<property name="Vehicle" value="vehicleAmeliaGyrocopter"/>
+    		<property name="VehicleSize" value="2.5, 2.5, 5.5"/>
+    	</property>
+    	<effect_group name="vehicleAmeliaGyrocopterPlaceable" tiered="false">
+    		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+    		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    		<passive_effect name="DegradationMax" operation="base_set" value="2000"/>
+    	</effect_group>
+    </item>
+		
+		
+		<item name="meleeHandWendigo">
+			<property name="Extends" value="meleeHandMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Degradation" value="99999" param1="true"/>
+			<property name="Material" value="Morganic"/>
+			<property class="Action0">
+				<property name="Range" value="3"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="DamageEntity" value="95"/>
+				<property name="DamageBlock" value="500"/></property>
+			<effect_group name="meleeHandWendigo" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".75" tags="buffInjuryBleedingZombie"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".7" tags="buffInfectionCatch"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".9" tags="buffInjuryStunned01"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="75"/>
+			</effect_group>
+		</item>
+		
+		
+		<!-- Quest Items -->
+		
+		<item name="questitem_toc_amelia1_name"> 
+			<property name="DescriptionKey" value="questitem_toc_amelia1_desc"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Quest For Amelia Earhart's Gyrocopter"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>			
+		</item>	
+		<item name="writitem_toc_amelia1_name">
+			<property name="DescriptionKey" value="writitem_toc_amelia1_desc"/>			
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Group" value="Special Items"/>
+			<property name="SellableToTrader" value="false"/>	
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Reward of Amelia's Map"/>
+				<property name="Delay" value="0"/>
+			</property>			
+			<property name="Group" value="Special Items"/>	
+		</item>	
+		<item name="questitem_toc_amelia1map_name">
+			<property name="DescriptionKey" value="questitem_toc_amelia1map_desc"/>
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="+Quest to find Amelia Earhart's Coffin"/>
+			</property>
+		</item>	
+		
+		<item name="questitem_toc_amelia_journal_name">
+			<property name="DescriptionKey" value="questitem_toc_amelia_journal_desc"/>									
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>			
+			<property class="Action0">
+				<property name="QuestGiven" value="+Quest For Amelia's Lost Plans"/>
+			</property>
+		</item>
+		
+  </append>
+</configs>

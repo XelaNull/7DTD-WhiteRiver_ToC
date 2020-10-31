@@ -1,0 +1,201 @@
+<config>
+	<append xpath="/quests">
+		
+		<!--
+		"The Trader says that another survivor sold them a map that supposedly has the location where 
+		Amelia Earhart was buried. You scoff at this suggestion as common belief is her plane went 
+		down over water, but then you recall that there was one conspiracy theory that suggested she 
+		may have landed on an island. The Trader says they will sell you the map for 5,000 Dukes."		
+		-->
+		
+		<!-- Collect 5,000 Dukes -->
+		<quest id="+Quest For Amelia Earhart's Gyrocopter"> <!-- Obtain 5,000 dukes and then craft the writ to prove you've paid -->
+			<property name="name_key" value="quest_toc_amelia1_name"/> 
+			<property name="subtitle_key" value="quest_toc_amelia1_subtitle"/> 
+			<property name="description_key" value="quest_toc_amelia1_description"/> 
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_amelia1_offer"/> 
+			<property name="statement_key" value="quest_toc_amelia1_statement"/> 
+			<property name="response_key" value="questdialog_toc_amelia1"/>	
+			<property name="group_name_key" value="quest_toc_amelia_group"/> 
+			<property name="shareable" value="false" />
+			
+			<objective type="FetchKeep" id="casinoCoin" value="5000" phase="1" />
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+			<objective type="Craft" id="writitem_toc_amelia1_name" value="1" phase="2" />		
+			
+			<reward type="Exp" value="1500" />
+		</quest>
+		<quest id="+Reward of Amelia's Map"> <!-- Writ starts this quest to go obtain the actual map -->
+			<property name="name_key" value="questreward_toc_amelia1_name"/>
+			<property name="subtitle_key" value="questreward_toc_amelia1_subtitle"/>
+			<property name="description_key" value="questreward_toc_amelia1_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="questreward_toc_amelia1_offer"/>
+			<property name="statement_key" value="questreward_toc_amelia1_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_amelia1"/>				
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+
+			<objective type="Goto" value="5" phase="1" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<reward type="Item" id="questitem_toc_amelia1map_name" value="1" />
+			<reward type="Exp" value="1000" />
+			<reward type="SkillPoints" value="1" />				
+		</quest>
+		
+		<!--
+		*player "buys" map from Trader* (Quest that requires 5,000 Dukes to craft the Writ to)
+		*Player turns in Writ Quest, and receives the treasure map as a reward.*		
+		-->
+		
+		<quest id="+Quest to find Amelia Earhart's Coffin">
+			<property name="name_key" value="quest_toc_amelia2_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia2_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia2_description"/>
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_amelia2_offer"/>
+			<property name="statement_key" value="quest_toc_amelia2_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia2"/>				
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			
+			<objective type="TreasureChest">
+				<property name="block" value="questblock_toc_amelia_coffin"/>
+				<property name="distance" value="1500-1800"/>
+				<property name="default_radius" value="20"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="20" />
+					<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+			<action type="SpawnEnemy" id="animalMountainLion" value="1" phase="2"/>
+
+
+			<reward type="Item" id="casinoCoin" value="1000,5000" />
+
+			<reward type="Exp" value="2500" />
+		</quest>
+		
+		
+		<!--
+		*Player travels a long distance to the location marked on the treasure map*
+		*Player digs up treasure map and finds coffin, inside it is another quest starter item*	
+		
+		"You find a desiccated corpse in the coffin wearing what appears to be a flight jacket with the
+		name Earhart written on it. In the pocket of the flight jacket is a journal that explains that
+		Amelia crashed and in a desolate place seemingly far from society. She explains that she spent
+		her dying days designing a custom flying machine, but the blueprints were stolen by some sort
+		of white-haired monster. Her dying wish is that her plans be reclaimed and built so that her name
+		may live on, attached to the ingenious machine she envisioned."
+		-->
+		
+		<quest id="+Quest For Amelia's Lost Plans">
+			<property name="name_key" value="quest_toc_amelia3_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia3_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia3_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="quest_toc_amelia3_offer"/>
+			<property name="statement_key" value="quest_toc_amelia3_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia3"/>				
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+
+			<objective type="RandomGoto" value="1100-2500" phase="1">
+			  <property name="completion_distance" value="5"/>
+			  <property name="nav_object" value="quest" />
+			</objective>
+			
+			<reward type="Quest" id="+Completion of Amelia Step 4"/>
+		</quest>
+		
+		
+		<quest id="+Completion of Amelia Step 4">
+			<property name="name_key" value="quest_toc_amelia3_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia3_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia3_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="hard" />
+			<property name="statement_key" value="quest_toc_amelia3_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia3"/>				
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			
+			<action type="ShowTip" value="quest_toc_amelia3_description">
+				<property name="delay" value="1"/>
+			</action>
+
+			<objective type="RandomGoto" value="1-5" phase="1">
+			  <property name="completion_distance" value="5"/>
+			  <property name="nav_object" value="quest" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+
+			<objective type="BlockPlace" id="woodFrameBlock" value="150" phase="3"/>
+
+			<objective type="BlockUpgrade" id="woodFrameBlock" value="100" phase="4"/>
+			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="5"/>
+			<action type="SpawnEnemy" id="animalMountainLion" value="4" phase="5"/>
+			<objective type="ZombieKill" id="zombieToCWendigo" value="1" phase="5"/>
+			
+			<reward type="Quest" id="+Reward of Amelia Earhart's Schematics"/>
+			<reward type="Exp" value="1500" />
+		</quest>
+		
+		<!--
+		The final reward quest should say some crap about how the Wendigo was carrying a pouch that had a
+		blueprint in it for "Amelia Earhart's Gyrocopter". Provide the schematic to the player.
+		-->
+		
+		<quest id="+Reward of Amelia Earhart's Schematics">
+			<property name="name_key" value="quest_toc_amelia4_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia4_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia4_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<property name="offer_key" value="quest_toc_amelia4_offer"/>
+			<property name="statement_key" value="quest_toc_amelia4_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia4"/>				
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="shareable" value="false" />
+			
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+			<reward type="Item" id="item_toc_amelia_schem_name" value="1" />
+			
+			<reward type="Exp" value="1500" />
+		</quest>
+		
+		
+		
+  </append>
+</config>

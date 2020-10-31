@@ -1,0 +1,70 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+vehicleAmeliaGyrocopterPlaceable,vehicles,item,,,"Amelia Earhart's Gyrocopter",,,,,,,,,,,,,,
+item_toc_amelia_schem_name,items,Item,,,"Amelia Earhart Gyrocopter Schematic",,,,,,,,,,,,,,
+item_toc_amelia_schem_desc,items,Item,,,"A hand-drawn schematic describing the creation of a gyrocopter using a super-charged engine and a refined lead acid battery.",,,,,,,,,,,,,,
+resourceRefinedLead,items,Item,,,"Refined Lead",,,,,,,,,,,,,,
+resourceRefinedLeadDesc,items,Item,,,"An ingredient in creating a Refined Lead Acid Battery for an Amelia Earhart Gyrocopter.",,,,,,,,,,,,,,
+carAmeliaBattery,items,Item,,,"Refined Lead Acid Battery",,,,,,,,,,,,,,
+carAmeliaBatteryDesc,items,Item,,,"A Lead Acid Battery built using highly refined Lead. A potent mixture.",,,,,,,,,,,,,,
+smallAmeliaEngine,items,Item,,,"Super-Charged Engine",,,,,,,,,,,,,,
+smallAmeliaEngineDesc,items,Item,,,"An ingredient in creating an Amelia Earhart Gyrocopter.",,,,,,,,,,,,,,
+vehicleAmeliaGyroCopterChassis,items,Item,,,"Amelia Earhart Gyrocopter Chassis",,,,,,,,,,,,,,
+vehicleAmeliaGyroCopterChassisDesc,items,Item,,,"An ingredient in building an Amelia Earhart Gyrocopter.",,,,,,,,,,,,,,
+vehicleAmeliaGyroCopterAccessories,items,Item,,,"Amelia Earhart Gyrocopter Accessories",,,,,,,,,,,,,,
+vehicleAmeliaGyroCopterAccessoriesDesc,items,Item,,,"An ingredient in building an Amelia Earhart Gyrocopter.",,,,,,,,,,,,,,
+
+quest_toc_amelia_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Quest for Amelia Earhart's Gyrocopter",,,,,,,,,,,,,,
+
+questitem_toc_amelia1_name,items,Quest - Note,,,+Amelia's Gyrocopter,,,,,,,,,,,,,,
+questitem_toc_amelia1_desc,items,Quest - Note,,,"This note contains a rumor that the local trader has a map to Amelia Earhart’s grave. Follow the clues to uncover the truth of what happened to Amelia and learn how to help complete her life's secret work.",,,,,,,,,,,,,,
+quest_toc_amelia1_name,Quest,Quest Info,,,"The Map to Amelia's Coffin",,,,,,,,,,,,,,
+quest_toc_amelia1_subtitle,Quest,Quest Info,,,"Collect 5,000 Dukes",,,,,,,,,,,,,,
+quest_toc_amelia1_description,Quest,Quest Info,,,"Collect 5,000 Dukes, then go to the Trader and purchase the map to lead you to the location Amelia Earhart is buried.",,,,,,,,,,,,,,
+quest_toc_amelia1_offer,Quest,Quest Info,,,"The Trader previously mentioned to you that another survivor sold them a map that supposedly has the location where Amelia Earhart was buried. At the time, you had scoffed at this suggestion as the common belief is her plane went down over water. But then you had recalled that there was one theory that suggested she may have landed on an island. The Trader mentioned to you that they would sell you the map for 5,000 Dukes. \n\nCollect 5,000 Dukes and return to the Trader.",,,,,,,,,,,,,,
+quest_toc_amelia1_statement,Quest,Quest Info,,,"Purchase the map to discover the truth of Amelia Earhart's coffin location.",,,,,,,,,,,,,,
+questdialog_toc_amelia1,Quest,Dialogs,,,"Collect 5,000 Dukes, then return to the Trader to purchase the map to Amelia Earhart's location.",,,,,,,,,,,,,,
+writitem_toc_amelia1_name,items,Quest - Note,,,+Writ of Amelia's Map,,,,,,,,,,,,,,
+writitem_toc_amelia1_desc,items,Quest - Note,,,"This writ is evidence that you have paid your dues to obtain the map titled 'Amelia Earhart'.",,,,,,,,,,,,,,
+questreward_toc_amelia1_name,Quest,Quest Info,,,"Obtain The Map titled 'Amelia Earhart'",,,,,,,,,,,,,,
+questreward_toc_amelia1_subtitle,Quest,Quest Info,,,"Return to the Trader",,,,,,,,,,,,,,
+questreward_toc_amelia1_description,Quest,Quest Info,,,"Return to the Trader to obtain the map to lead you to the location Amelia Earhart is buried.",,,,,,,,,,,,,,
+questreward_toc_amelia1_offer,Quest,Quest Info,,,"Now that you've collected your 5,000 Dukes, return to the Trader with your writ to obtain the map titled Amelia Earhart.",,,,,,,,,,,,,,
+questreward_toc_amelia1_statement,Quest,Quest Info,,,"Purchase the map to discover the truth of Amelia Earhart's coffin location.",,,,,,,,,,,,,,
+questrewarddialog_toc_amelia1,Quest,Dialogs,,,"Return to the Trader to obtain the map to Amelia Earhart's coffin location.",,,,,,,,,,,,,,
+
+questitem_toc_amelia1map_name,items,Quest - Note,,,"+Map to Amelia Earhart's Coffin",,,,,,,,,,,,,,
+questitem_toc_amelia1map_desc,items,Quest - Note,,,"This map is purported to reveal the secret location where Amelia Earhart's body is buried. It shows the local region with which you are familiar, with a long squiggly line leading into uncharted territory.",,,,,,,,,,,,,,
+questitem_toc_amelia_journal_name,items,Quest - Note,,,"Amelia Earhart's Journal",,,,,,,,,,,,,,
+questitem_toc_amelia_journal_desc,items,Quest - Note,,,"This is the long-lost journal of Amelia Earhart. Contained within these pages are stories of her final days, and rough sketches of some type of flying contraption.",,,,,,,,,,,,,,
+
+quest_toc_amelia2_name,Quest,Quest Info,,,"Quest to Discover Amelia Earhart's Past",,,,,,,,,,,,,,
+quest_toc_amelia2_subtitle,Quest,Quest Info,,,"Discover the truth of Amelia's Final Days",,,,,,,,,,,,,,
+quest_toc_amelia2_description,Quest,Quest Info,,,"Dig up the location on the map to locate Amelia Earhart's coffin.",,,,,,,,,,,,,,
+quest_toc_amelia2_offer,Quest,Quest Info,,,"As you examine it, you see that next to the X on the map is the written word 'Amelia'. In the bottom corner, there is scrawled a small note:\n\n'In case I don't make it, please find her and finish her dream.\n\n- Fred N.'",,,,,,,,,,,,,,
+quest_toc_amelia2_statement,Quest,Quest Info,,,"Find Amelia Earhart's coffin to discover the truth of her final days.",,,,,,,,,,,,,,
+questdialog_toc_amelia2,Quest,Dialogs,,,"Follow the map, Dig up Amelia's Coffin, Discover the Truth",,,,,,,,,,,,,,
+
+quest_toc_amelia3_name,Quest,Quest Info,,,"Build a defensible structure.",,,,,,,,,,,,,,
+quest_toc_amelia3_subtitle,Quest,Quest Info,,,"Find the monster that stole Amelia's plans",,,,,,,,,,,,,,
+quest_toc_amelia3_description_title,Quest,Quest Info,,,"You get a weird feeling..",,,,,,,,,,,,,,
+quest_toc_amelia3_description,Quest,Quest Info,,,"You suddenly remember Fred's note that suggested you should build a defensible position to protect yourself from the monster.",,,,,,,,,,,,,,
+quest_toc_amelia3_offer,Quest,Quest Info,,,"You find a desiccated corpse in the coffin, wearing what appears to be a flight jacket with the name Earhart written on it. In the pocket of the flight jacket is a journal. There are some pages missing, seemingly ripped out. The last remaining page reads:\n\n‘I know I won’t make it back. That thing, the howler, has done for me. I feel myself changing every night, as the sun sets a bit sooner and the dark gets a bit colder. My mind is going. I look at Fred, and I imagine what his meat and blood taste like. I’ll eat a bullet sooner than eat my copilot. I’ll do it before I lose the last of my wits. Whoever finds this, please take my schematics to someone who can make use of them. If Fred doesn’t make it, all hope is lost.\nHe’ll never know how much I love him.’\n\nTucked in the pages of the journal is another map with a tear-stained, sloppily-jotted note on the back:\n\n‘Wendigo took my bag when it tried to take me. The schematics were in it. I know where it lives. I have to try to get them back. Amelia is dead, I have nothing left to live for, save those precious papers. In case I don’t survive, I made this map to its lair. You’ll need walls to hold it at bay. You can’t hope to kill it face-to-face. \nI know we were both married to other people, but she and I were closer than any married couple I know. We skimmed the clouds together. She was my heaven. I’ll always be her copilot.’\n\nFollow the map to the Wendigo's lair.",,,,,,,,,,,,,,
+quest_toc_amelia3_statement,Quest,Quest Info,,,"Locate and Kill the monster. Recover Amelia's Lost Blueprints.",,,,,,,,,,,,,,
+questdialog_toc_amelia3,Quest,Dialogs,,,"Obtain Amelia's lost blueprints by killing the white haired monster.",,,,,,,,,,,,,,
+
+questblock_toc_amelia_coffin,blocks,Container,,,"Amelia's Coffin",,,,,,,,,,,,,,
+
+quest_toc_amelia4_name,Quest,Quest Info,,,"Amelia Earhart's Gyrocopter Schematics",,,,,,,,,,,,,,
+quest_toc_amelia4_subtitle,Quest,Quest Info,,,"You learn the secret",,,,,,,,,,,,,,
+quest_toc_amelia4_description,Quest,Quest Info,,,"You find a pouch on the Wendigo that contains the blueprints to Amelia Earhart's Gyrocopter.",,,,,,,,,,,,,,
+quest_toc_amelia4_offer,Quest,Quest Info,,,"Now that you've bested the Wendigo, you find a pouch attached to its body filled with schematics. You remember the last page from Amelia's journal. She wished that her name live on through the creation of her ingenious flying machine.\n\nRead the schematics to learn how to craft Amelia's Gyrocopter.",,,,,,,,,,,,,,
+quest_toc_amelia4_statement,Quest,Quest Info,,,"Read the schematics to learn how to craft Amelia's Gyrocopter.",,,,,,,,,,,,,,
+questdialog_toc_amelia4,Quest,Dialogs,,,"Open the pouch, read the schematics, and learn to craft Amelia Earhart's Gyrocopter.",,,,,,,,,,,,,,
+
+questitem_toc_amelia4_name,items,Quest - Note,,,+Amelia Earhart's Gyrocopter Schematics,,,,,,,,,,,,,,
+questitem_toc_amelia4_desc,items,Quest - Note,,,"This set of schematics teaches you how to craft Amelia Earhart's namesake, the improved Gyrocopter.",,,,,,,,,,,,,,
+
+zombieToCWendigo,entityclasses,Entity,,,White-Haired Wendigo,,,,,,,,,,,,,,
+
+
+
