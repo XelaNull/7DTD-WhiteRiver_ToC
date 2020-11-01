@@ -5,7 +5,7 @@
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
     
-		<recipe name="item_toc_claws_name" count="1" craft_area="workbench" tags="learnable">
+		<recipe name="item_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
 			<ingredient name="resourceForgedIron" count="12"/>
 			<ingredient name="resourceMechanicalParts" count="4"/>
 			<ingredient name="resourceLeather" count="2"/>
@@ -19,7 +19,7 @@
       <ingredient name="questitem_toc_veterancard_name" count="1"/>
     </recipe>
 	
-		<recipe name="vetitem_toc_claws_name" count="1" craft_area="workbench" tags="learnable">
+		<recipe name="vetitem_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
 			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="5"/>
 			<ingredient name="resourceForgedSteel" count="10"/>
 			<ingredient name="resourceLeather" count="3"/>
