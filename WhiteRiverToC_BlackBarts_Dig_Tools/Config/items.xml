@@ -57,25 +57,25 @@
 			<property name="Material" value="MmeleeToolAllSteel"/> <property name="Weight" value="6"/>
 		
 			<effect_group name="questitem_toc_shovel_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="19"/> <!-- meleeToolShovelSteel -->
-				<passive_effect name="BlockDamage" operation="base_set" value="80"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="60"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="19" tags="perkMiner69r"/> <!-- meleeToolShovelSteel -->
+				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkMiner69r"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkMiner69r"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
-				<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-				<passive_effect name="BlockRange" operation="base_set" value="4"/>
+				<passive_effect name="MaxRange" operation="base_set" value="3.4" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkMiner69r"/>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="1200" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkMiner69r"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
 				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.25"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.25" tags="perkMiner69r"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> <!-- random DegMax -->
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.03,.1"/> <!-- random APM -->
-				<passive_effect name="StaminaLoss" operation="perc_add" value="-.03,.03"/> <!-- random StamLoss -->
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.03,.1" tags="perkMiner69r"/> <!-- random APM -->
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.03,.03" tags="perkMiner69r"/> <!-- random StamLoss -->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
@@ -118,25 +118,25 @@
 			</property>
 			<property name="Group" value="Tools/Traps"/>
 			<effect_group name="questitem_toc_pickaxe_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="28"/> <!-- meleeToolPickaxeSteel -->
-				<passive_effect name="BlockDamage" operation="base_set" value="80"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/><!-- Gazz change 47 to 55 -->
-				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="28" tags="perkMiner69r"/> <!-- meleeToolPickaxeSteel -->
+				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkMiner69r"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkMiner69r"/><!-- Gazz change 47 to 55 -->
+				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
-				<passive_effect name="MaxRange" operation="base_set" value="2.9"/>
-				<passive_effect name="BlockRange" operation="base_set" value="3.9"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.9" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.9" tags="perkMiner69r"/>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.10,.22"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.10,.22" tags="perkMiner69r"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.8" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
 				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.05" tags="Harvesting"/>
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.10,.25"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.10,.25" tags="perkMiner69r"/> <!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.9" tier="2,6"/> <!-- tier bonus -->
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/> <!-- random DegMax -->
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.02,.1"/> <!-- random APM -->
-				<passive_effect name="StaminaLoss" operation="perc_add" value="-.02,.1"/> <!-- random StamLoss -->
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.02,.1" tags="perkMiner69r"/> <!-- random APM -->
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.02,.1" tags="perkMiner69r"/> <!-- random StamLoss -->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
