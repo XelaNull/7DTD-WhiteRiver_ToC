@@ -20,7 +20,7 @@
 			<property name="upForce" value=".3"/>
 
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 25"/>
+			<property name="velocityMax" value="15, 24"/>
 			<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
@@ -107,7 +107,7 @@
 				<property name="trigger" value="motor0"/>
 				<property name="type" value="relative"/>
 				<property name="force" value="0, .18, 0"/>
-				<property name="ceiling" value="150, 250"/>
+				<property name="ceiling" value="150, 240"/>
 			</property>
 
 			<property class="force1">

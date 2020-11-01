@@ -1,5 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 vehicleAmeliaGyrocopterPlaceable,vehicles,item,,,"Amelia Earhart's Gyrocopter",,,,,,,,,,,,,,
+vehicleAmeliaGyrocopter,vehicles,item,,,"Amelia Earhart's Gyrocopter",,,,,,,,,,,,,,
 item_toc_amelia_schem_name,items,Item,,,"Amelia Earhart Gyrocopter Schematic",,,,,,,,,,,,,,
 item_toc_amelia_schem_desc,items,Item,,,"A hand-drawn schematic describing the creation of a gyrocopter using a super-charged engine and a refined lead acid battery.",,,,,,,,,,,,,,
 resourceRefinedLead,items,Item,,,"Refined Lead",,,,,,,,,,,,,,
