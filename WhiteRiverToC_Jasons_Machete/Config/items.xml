@@ -96,23 +96,23 @@
 				</property>
 			</property>
 			<effect_group name="item_toc_jason_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="25"/> <!-- meleeToolKnifeMachete -->
-				<passive_effect name="BlockDamage" operation="base_set" value="23"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="25" tags="perkDeepCuts"/> <!-- meleeToolKnifeMachete -->
+				<passive_effect name="BlockDamage" operation="base_set" value="23" tags="perkDeepCuts"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkDeepCuts"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="300,900" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
-				<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
-				<passive_effect name="BlockRange" operation="base_set" value="4"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
+				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkDeepCuts"/>
 		
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
 		
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.2"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6"/> <!-- tier bonus -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/> <!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
 		
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.4" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.6" tags="stone"/>
