@@ -1,6 +1,6 @@
 <config>
 	<append xpath="/archetypes">
-		<archetype name="ToCWendigo" male="false" hair_color="4,2,2" eye_color="34,17,7" skin_color="177,251,242" type="Player" stance="Like" voice_set="trader">
+		<archetype name="ToCWendigo" male="false" hair_color="4,2,2" eye_color="34,17,7" skin_color="177,251,242" type="Zombie" stance="Like" voice_set="trader">
 			<base_mesh_parts>
 				<part slot="head" layer="base" mesh="female_base_face">
 					<texture name="female_head_zombie" color="166,252,251,255"/>
