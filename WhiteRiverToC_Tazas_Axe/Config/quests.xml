@@ -108,7 +108,7 @@
 				<reward type="Item" id="meleeToolRepairT0TazasStoneAxe" value="5-6" />	
 				<reward type="Item" id="ammo9mmBulletHP" value="50-150" />
 				<reward type="Item" id="modMeleeBunkerBuster" value="1" />
-				<reward type="Item" id="gunSMG5" value="3-5" />
+				<reward type="Item" id="gunHandgunT3SMG5" value="3-5" />
 				<reward type="Item" id="questblock_toc_tazacrate_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />
 				<reward type="Exp" value="1500" />
