@@ -1,12 +1,64 @@
 <configs>
+	
+	
 	<append xpath="/lootcontainers">
+		<lootgroup name="ToCgroupArmorT0" loot_quality_template="QLTemplateT0">
+			<item name="armorClothPants"/>
+			<item name="armorClothJacket"/>
+			<item name="armorClothBoots"/>
+			<item name="armorClothGloves"/>
+			<item name="armorClothHat"/>
+			<item name="armorScrapHelmet"/>
+			<item name="armorScrapChest"/>
+			<item name="armorScrapGloves"/>
+			<item name="armorScrapLegs"/>
+			<item name="armorScrapBoots"/>
+		</lootgroup>
+		
+		<lootgroup name="ToCgroupWeaponsT2_Ranged">
+			<item group="groupWeaponsT2_DeadEye"/>
+			<item group="groupWeaponsT2_Demolitionist"/>
+			<item group="groupWeaponsT2_Boomstick"/>
+			<item group="groupWeaponsT2_Machinegunner"/>
+			<item group="groupWeaponsT3_Archery"/>
+			<item group="groupWeaponsT2_Gunslinger"/>
+			<item group="groupWeaponsT2_TurretsSyndrome"/>
+		</lootgroup>
+		
+		<lootgroup name="ToCgroupArmorT1" loot_quality_template="QLTemplateT1">
+			<item name="armorLeatherBoots"/>
+			<item name="armorLeatherPants"/>
+			<item name="armorLeatherChest"/>
+			<item name="armorLeatherGloves"/>
+			<item name="armorLeatherHood"/>
+			<item name="armorIronGloves"/>
+			<item name="armorIronHelmet"/>
+			<item name="armorIronBoots"/>
+			<item name="armorIronLegs"/>
+			<item name="armorIronChest"/>
+		</lootgroup>
+		
+		<lootgroup name="ToCgroupArmorT2" loot_quality_template="QLTemplateT2">
+			<item name="armorMilitaryGloves"/>
+			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
+			<item name="armorMilitaryBoots"/>
+			<item name="armorMilitaryLegs"/>
+			<item name="armorMilitaryVest"/>
+			<item name="armorSteelBoots"/>
+			<item name="armorSteelLegs"/>
+			<item name="armorSteelChest"/>
+			<item name="armorSteelGloves"/>
+			<item name="armorSteelHelmet"/>
+			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+		</lootgroup>
+		
 		<!-- This section is to ensure if the player drops the sealed citizen crate on the ground and destroys it, at least some items will drop from it -->
 		<!-- This section won't be used unless a line is uncommented in quests.xml -->
 		<lootcontainer id="365" count="5,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
 			<item group="bicycleParts" count="1,2"/>
-			<item group="groupArmorT0" count="0,2"/>
-			<item group="groupArmorT1" count="0,2"/>
+			<item group="ToCgroupArmorT0" count="0,2"/>
+			<item group="ToCgroupArmorT1" count="0,2"/>
 			<item group="beverages"/>
 			<item group="groupAmmoRegular"/>
 		</lootcontainer>
@@ -14,8 +66,8 @@
 		<lootcontainer id="366" count="8,10" size="6,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
 			<item group="bicycleParts" count="1,3"/>
-			<item group="groupArmorT2" count="0,2"/>
-			<item group="groupWeaponsT2_Ranged" count="0,2"/>
+			<item group="ToCgroupArmorT2" count="0,2"/>
+			<item group="ToCgroupWeaponsT2_Ranged" count="0,2"/>
 			<item group="beverages"/>
 			<item group="groupAmmoRegular"/>
 		</lootcontainer>
