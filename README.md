@@ -4,7 +4,7 @@
 
 <https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a191/>
 
-Tested with A19.2
+Tested with A19.3
 
 This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this Modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from.
 
@@ -110,3 +110,4 @@ Download the ZIP file and extract. Open the ONE folder and you will find EIGHTEE
 - RichardPaul :: For the poem used in the Black Bart quest line.
 - Aeyvi-Daro :: For quest text and testing assistance on all quests.
 - mr.devolver :: Big thanks for the help fixing the GoTo Trader, improving the quest integration with the trader, and helping seek out a path to add the quests to the Trader dialog!
+- SteamM0nkey :: Big thanks to helping dive into the cause of imbalances in items, missing stats, and for the idea of the Bear Claws quest.
