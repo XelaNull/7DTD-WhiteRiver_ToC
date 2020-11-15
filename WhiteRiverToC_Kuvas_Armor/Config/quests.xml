@@ -133,7 +133,7 @@
     
     		<objective type="TreasureChest">
     			<property name="block" value="treasureKuvaChest"/>
-    			<property name="distance" value="2500-3750"/>
+    			<property name="distance" value="1500-2500"/>
 					<property name="default_radius" value="9"/>
 					<property name="nav_object" value="treasure" />
 					<property name="direct_nav_object" value="treasure_direct" />
