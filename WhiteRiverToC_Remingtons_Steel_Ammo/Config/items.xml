@@ -38,19 +38,19 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="resourceBulletCasing"/>
 			<property name="CustomIconTint" value="5C5CFF"/> 
-			<property name="Unlocks" value="resourceBulletCasingSteel"/>
-			<property name="Unlocks" value="ammo9mmBulletSteel"/>
-			<property name="Unlocks" value="ammo44MagnumBulletSteel"/>
-			<property name="Unlocks" value="ammo762mmBulletFMJSteel"/>
+			<property name="Unlocks" value="resourceBulletCasingSteelRemington"/>
+			<property name="Unlocks" value="ammo9mmBulletSteelRemington"/>
+			<property name="Unlocks" value="ammo44MagnumBulletSteelRemington"/>
+			<property name="Unlocks" value="ammo762mmBulletFMJSteelRemington"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteel" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteel" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletSteel" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteel" operation="set" value="1"/>				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteelRemington" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteelRemington" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletSteelRemington" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteelRemington" operation="set" value="1"/>				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
-		<!-- BACKWARDS COMPATIBILITY -->
+		<!-- BACKWARDS COMPATIBILITY until Jan 2021 -->
 		<item name="Remington's Steel 9mm Bullet Schematic">
 			<property name="Extends" value="eliteitemreward_toc_remington_schem_name"/>
 		</item>
@@ -60,8 +60,6 @@
 		<item name="Remington's Steel 762mm Bullet Schematic">
 			<property name="Extends" value="eliteitemreward_toc_remington_schem_name"/>
 		</item>
-		<!-- BACKWARDS COMPATIBILITY -->
-		
 		
 		<item name="resourceBulletCasingSteel">
 			<property name="Extends" value="resourceBulletCasing"/>
@@ -142,17 +140,104 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
+		</item>		
+		<!-- BACKWARDS COMPATIBILITY -->
+		
+		
+		<item name="resourceBulletCasingSteelRemington">
+			<property name="Extends" value="resourceBulletCasing"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DescriptionKey" value="resourceBulletCasingSteelDesc"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Ammo/Weapons"/>
+			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
+		</item>
+		
+		<item name="ammo9mmBulletSteelRemington">
+			<property name="Extends" value="ammo9mmBulletBall"/>
+			<property name="CustomIcon" value="ammo9mmBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="8"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
+			<effect_group name="Base Effects" tiered="false">			
+				<passive_effect name="EntityDamage" operation="base_set" value="39"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="9.5"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger,9mmGun"/>
+				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+
+		<item name="ammo44MagnumBulletSteelRemington">
+			<property name="Extends" value="ammo44MagnumBulletBall"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
+			<effect_group name="Base Effects" tiered="false">			
+				<passive_effect name="EntityDamage" operation="base_set" value="86"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="12"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger"/>
+				<display_value name="dDegradationPerUse" value="1.2"/>
+			</effect_group>
+		</item>
+
+		<item name="ammo762mmBulletFMJSteelRemington">
+			<property name="Extends" value="ammo762mmBulletBall"/>
+			<property name="CustomIcon" value="ammo762mmBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="60"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
 		</item>
 	</append>
 
-	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
-	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
-	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel</append>
-	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel</append>
-	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-	<append xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>
-	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>	
-	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteel</append>	
+	<append xpath="/items/item[@name='questitem_toc_leondegsmg_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
+	<append xpath="/items/item[@name='questitem_toc_leonsmg_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
+	<append xpath="/items/item[@name='questitem_toc_pav_rifle_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
+
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteelRemington</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteelRemington</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
+	<append xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
+	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
+	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>	
+	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>	
 </configs>
