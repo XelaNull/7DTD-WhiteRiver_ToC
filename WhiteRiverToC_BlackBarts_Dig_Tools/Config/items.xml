@@ -60,7 +60,7 @@
 				<passive_effect name="EntityDamage" operation="base_set" value="19" tags="perkMiner69r"/> <!-- meleeToolShovelSteel -->
 				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkMiner69r"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkMiner69r"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary" tags="perkMiner69r"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="3.4" tags="perkMiner69r"/>
@@ -121,7 +121,7 @@
 				<passive_effect name="EntityDamage" operation="base_set" value="28" tags="perkMiner69r"/> <!-- meleeToolPickaxeSteel -->
 				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkMiner69r"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkMiner69r"/><!-- Gazz change 47 to 55 -->
-				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary" tags="perkMiner69r"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1800" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.9" tags="perkMiner69r"/>
