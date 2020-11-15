@@ -82,7 +82,7 @@
 				<passive_effect name="EntityDamage" operation="base_set" value="20.1" tags="perkMiner69r"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="65.0" tags="perkMiner69r"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r"/> <!-- Gazz change 47 to 60 -->
-				<passive_effect name="StaminaLoss" operation="base_set" value="10.6" tags="primary" tags="perkMiner69r"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="10.6" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="388,941" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="3.4" tags="perkMiner69r"/>
