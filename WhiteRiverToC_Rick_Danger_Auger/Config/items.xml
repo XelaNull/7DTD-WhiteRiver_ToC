@@ -97,7 +97,7 @@
 				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkMiner69r"/> <!-- random MagazineSize -->
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.08" tags="perkMiner69r"/> <!-- random WeaponHandling -->
 
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood" tags="perkMiner69r"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkMiner69r"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="400" tags="perkMiner69r"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkMiner69r"/> <!-- 3.5s -->
