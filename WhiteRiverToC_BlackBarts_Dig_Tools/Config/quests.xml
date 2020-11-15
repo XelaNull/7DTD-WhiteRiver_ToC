@@ -72,11 +72,11 @@
 		
 				<objective type="TreasureChest">
 					<property name="block" value="questblock_toc_blackb_coffin"/>
-					<property name="distance" value="50-100"/>
-					<property name="default_radius" value="9"/>
+					<property name="distance" value="500-1200"/>
+					<property name="default_radius" value="12"/>
 	        <property name="nav_object" value="treasure" />
 	        <property name="direct_nav_object" value="treasure_direct" />
-	        <property name="blocks_per_reduction" value="10" />
+	        <property name="blocks_per_reduction" value="12" />
 	          <!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
 	        <property name="radius_reduction_sound" value="ui_radius_shrink" />
 				</objective>
