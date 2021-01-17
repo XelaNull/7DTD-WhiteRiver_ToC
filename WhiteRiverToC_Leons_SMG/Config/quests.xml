@@ -14,7 +14,7 @@
 				<property name="group_name_key" value="quest_toc_leon_group"/>
 				<property name="shareable" value="false" />
 	
-				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="5" phase="1" />
+				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="2" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="questwrit_toc_leon_name" value="1" phase="2" />			
 				<reward type="Exp" value="500" />		
