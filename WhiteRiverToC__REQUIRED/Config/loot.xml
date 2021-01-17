@@ -75,13 +75,17 @@
 		
 		<lootgroup name="randomEliteQuests">
 		</lootgroup>
-		<lootgroup name="ToCBooks">
-		</lootgroup>
+
 		
 		<lootcontainer id="390" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="randomEliteQuests" count="1" />
 		</lootcontainer>
 	</append>		
+	
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
+		<lootgroup name="ToCBooks">
+		</lootgroup>
+	</insertBefore>
 	
 	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
 		<item group="ToCBooks"/>
