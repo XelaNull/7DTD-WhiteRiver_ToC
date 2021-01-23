@@ -193,7 +193,7 @@
 				<passive_effect name="MaxRange" operation="base_set" value="2.55" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.9" tags="perkMiner69r"/>
 
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 
