@@ -5,7 +5,7 @@
 		</recipe>
 		
 		<recipe name="carAmeliaBattery" count="1" craft_area="chemistryStation" tags="learnable,perkGreaseMonkey,chemStationCrafting">
-			<ingredient name="resourceRefinedLead" count="1000"/>
+			<ingredient name="resourceRefinedLead" count="70"/>
 			<ingredient name="resourceAcid" count="15"/>
 			<ingredient name="resourceScrapPolymers" count="40"/>
 		</recipe>
