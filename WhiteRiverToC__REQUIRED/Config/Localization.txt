@@ -25,6 +25,7 @@ quest_toc_1000z_description,Quest,Quest Info,,,Prove your elite status with the 
 quest_toc_1000z_offer,Quest,Quest Info,,,"White River settlements has few elite citizens cards left. They are being given only to those with outstanding qualifications. Continue your efforts to help to make the settlement safer through exterminating 1000 zombies, and you can earn one of these legendary elite cards. The elite citizen card provides you opportunity to pursue only the best quality tools and equipment with the settlement.",,,,,,,,,,,,,,
 quest_toc_1000z_statement,Quest,Quest Info,,,Stand above the rest as an elite citizen by laying to rest 1000 zombies.,,,,,,,,,,,,,,
 quest_toc_1000z_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Become an Elite Citizen",,,,,,,,,,,,,,
+quest_toc_1000zreward_subtitle,Quest,Quest Info,,,Obtain your Elite Citizenship Card,,,,,,,,,,,,,,
 questdialog_toc_1000z,Quest,Dialogs,,,"1,000 Zombies? No problem..",,,,,,,,,,,,,,
 questitem_toc_declaration_name,items,Quest - Note,,,+Declaration Of Citizenship,,,,,,,,,,,,,,
 questitem_toc_declaration_description,items,Quest - Note,,,"White River Tools of Citizenship\n\nDeclaration of Citizenship\n\nUsed to begin the quest to obtain your own Citizen's Card from killing 10 Zombies.",,,,,,,,,,,,,,
