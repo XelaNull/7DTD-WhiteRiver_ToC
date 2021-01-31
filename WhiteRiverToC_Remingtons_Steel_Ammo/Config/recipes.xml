@@ -25,6 +25,11 @@
 			<ingredient name="resourceGunPowder" count="1"/>
 			<ingredient name="resourceBulletCasingSteelRemington" count="1"/>
 		</recipe>
+		<recipe name="ammoBundle9mmBulletSteelRemington" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="80"/>
+			<ingredient name="resourceBulletCasing" count="80"/>
+		</recipe>
 		<recipe name="ammo44MagnumBulletSteelRemington" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="1"/>
 			<ingredient name="resourceGunPowder" count="3"/>

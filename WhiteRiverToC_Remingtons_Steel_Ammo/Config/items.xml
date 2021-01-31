@@ -45,6 +45,7 @@
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteelRemington" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteelRemington" operation="set" value="1"/>				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
@@ -96,6 +97,18 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
+		</item>
+		
+		<item name="ammoBundle9mmBulletSteelRemington">
+			<property name="Extends" value="ammoBundleMaster"/>
+			<property name="CustomIcon" value="ammo9mmBulletSteel"/>
+			<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+			<property name="EconomicValue" value="900"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
+			<property class="Action0">
+				<property name="Create_item" value="ammo9mmBulletBall"/>
+			</property>
 		</item>
 
 		<item name="ammo44MagnumBulletSteel">
