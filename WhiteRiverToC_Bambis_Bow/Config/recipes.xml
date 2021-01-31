@@ -16,7 +16,7 @@
 			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
 		<recipe name="vetquestwrit_toc_bambi_name" count="1" craft_time = "300" craft_exp_gain="20000" >
-			<ingredient name="gunBowT3CompoundBow" count="20"/>
+			<ingredient name="gunBowT3CompoundBow" count="15"/>
 			<ingredient name="resourceWood" count="4000"/>
 			<ingredient name="resourceAnimalFat" count="50"/>
 			<ingredient name="resourcePaper" count="1"/>
@@ -27,7 +27,7 @@
 		</recipe>
 		
 		<recipe name="elitequestwrit_toc_bambi_name" count="1" craft_time = "500" craft_exp_gain="30000" >
-			<ingredient name="gunBowT3CompoundBow" count="30"/>
+			<ingredient name="gunBowT3CompoundBow" count="25"/>
 			<ingredient name="resourceWood" count="12000"/>
 			<ingredient name="resourceAnimalFat" count="100"/>
 			<ingredient name="resourcePaper" count="1"/>

@@ -75,7 +75,7 @@
 				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
 	
-				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="20" phase="1" />
+				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="15" phase="1" />
 				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="4000" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
@@ -133,7 +133,7 @@
 				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
 	
-				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="30" phase="1" />
+				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="25" phase="1" />
 				<objective type="FetchKeep" id="resourceAnimalFat" value="100" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="12000" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
