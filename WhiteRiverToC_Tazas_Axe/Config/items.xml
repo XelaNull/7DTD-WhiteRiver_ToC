@@ -64,8 +64,9 @@
 	</append>
 	
 	<!-- Code to Make Taza's Axe MORE Awesome -->
+	<!--
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage']/@value">26</set>
-	
+-->
 	<!--
 	<item name="meleeToolRepairT0TazasStoneAxe">
 		<effect_group name="meleeToolRepairT0TazasStoneAxe">
