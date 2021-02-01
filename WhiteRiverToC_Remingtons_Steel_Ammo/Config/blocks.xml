@@ -1,3 +1,11 @@
 <configs>
-	    <set xpath="/blocks/block[@name='autoTurret']/@AmmoItem">ammo9mmBulletBall,ammo9mmBulletSteel</set>
+	<!--
+	<block name="autoTurret">
+		<property name="AmmoItem" value="ammo9mmBulletBall"/>
+	
+	
+	-->
+	
+	
+	    <set xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']">ammo9mmBulletBall,ammo9mmBulletSteel</set>
 </configs>
