@@ -107,7 +107,7 @@
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 			<property class="Action0">
-				<property name="Create_item" value="ammo9mmBulletBall"/>
+				<property name="Create_item" value="ammo9mmBulletSteelRemington"/>
 			</property>
 		</item>
 

@@ -7,5 +7,5 @@
 	-->
 	
 	
-	    <set xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']">ammo9mmBulletBall,ammo9mmBulletSteel</set>
+	    <set xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']">ammo9mmBulletBall,ammo9mmBulletSteelRemington</set>
 </configs>
