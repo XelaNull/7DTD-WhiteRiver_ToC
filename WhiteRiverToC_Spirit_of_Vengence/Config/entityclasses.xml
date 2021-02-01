@@ -76,7 +76,7 @@
 			<property name="AvatarController" value="AvatarZombie01Controller"/>
 			<property name="RootMotion" value="true"/>
 			<property name="LootDropProb" value="1"/>
-			<property name="ExperienceGain" value="50000"/>
+			<property name="ExperienceGain" value="25000"/>
 			<property name="WalkType" value="2"/>
 			<property name="AITask-1" value="RangedAttackTarget" data="itemType=1;cooldown=3;duration=4;minRange=3;maxRange=300"/>
 			<property name="AITask-2" value="Leap"/>
@@ -109,7 +109,7 @@
 			<property name="ArmsExplosionDamageMultiplier" value="0"/>
 			<property name="HeadExplosionDamageMultiplier" value="0"/>
 			<property name="ChestExplosionDamageMultiplier" value="0"/>
-			<property name="PainResistPerHit" value="3"/>
+			<property name="PainResistPerHit" value="4"/>
 			<property name="MoveSpeed" value="0.7"/>
 			<property name="MoveSpeedAggro" value="0.9, 1.55"/>
 			<property name="MoveSpeedPanic" value="1.5"/>
@@ -118,8 +118,8 @@
 			<property name="CanClimbVertical" value="true"/>
 			<property name="JumpMaxDistance" value="7, 9"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="10000"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+				<passive_effect name="HealthMax" operation="base_set" value="20000"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SpiritJuggernautDeco"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffSpiritJuggernaut"/>
 				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffSpiritJuggernautSpeedDelay"/>
