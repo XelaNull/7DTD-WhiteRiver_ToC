@@ -42,12 +42,14 @@
 			<property name="Unlocks" value="ammo9mmBulletSteelRemington"/>
 			<property name="Unlocks" value="ammo44MagnumBulletSteelRemington"/>
 			<property name="Unlocks" value="ammo762mmBulletFMJSteelRemington"/>
+			<property name="Unlocks" value="remingtonTurret"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteelRemington" operation="set" value="1"/>				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="remingtonTurret" operation="set" value="1"/>				
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
