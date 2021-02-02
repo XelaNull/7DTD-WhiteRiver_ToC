@@ -54,7 +54,7 @@
 					<property name="RequiredPower" value="15"/>
 					<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 
-<!--					<property name="UnlockedBy" value="perkAdvancedEngineering,autoTurretSchematic"/> --></property>
+<!--					<property name="UnlockedBy" value="perkAdvancedEngineering,autoTurretSchematic"/> -->
 				
 					<property class="RepairItems">
 						<property name="resourceForgedIron" value="12"/>
