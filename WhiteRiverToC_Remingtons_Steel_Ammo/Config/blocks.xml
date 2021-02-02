@@ -6,8 +6,7 @@
 	
 	-->
 	
-	
-	    <set xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']">ammo9mmBulletBall,ammo9mmBulletSteelRemington</set>
+	    <append xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']/@value">ammo9mmBulletSteelRemington</append>
 			
 			<append xpath="/blocks">
 				<block name="remingtonTurret">
@@ -21,26 +20,26 @@
 					<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
 					<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
 					<property name="AmmoItem" value="ammo762mmBulletFMJSteelRemington"/>
-					<property name="TurnSpeed" value="22.5"/>
-					<property name="MaxDistance" value="30"/>
-					<property name="EntityDamage" value="50"/> <!-- 188 dps, 213 dps burst -->
+					<property name="TurnSpeed" value="18.5"/>
+					<property name="MaxDistance" value="40"/>
+					<property name="EntityDamage" value="60"/> <!-- 188 dps, 213 dps burst -->
 					<property name="BlockDamage" value="1"/>
 					<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
 				
-					<property name="BurstRoundCount" value="15"/>
-					<property name="BurstFireRate" value="0.15"/>
+					<property name="BurstRoundCount" value="5"/>
+					<property name="BurstFireRate" value="0.2"/>
 					<property name="CooldownTime" value="2"/>
 					<property name="OvershootTime" value="0.4"/>
 					<property name="FallAsleepTime" value="10"/>
 					<property name="WakeUpTime" value="0.5"/>
 				
-					<property name="YawRange" value="90"/>
-					<property name="PitchRange" value="90"/>
+					<property name="YawRange" value="60"/>
+					<property name="PitchRange" value="60"/>
 				
 					<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
 					<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
 				
-					<property name="DamageBonus.head" value="3"/>
+					<property name="DamageBonus.head" value="4"/>
 					<property name="DamageBonus.glass" value="1"/>
 					<property name="DamageBonus.wood" value="2"/>
 					<property name="DamageBonus.earth" value="0.2"/>
@@ -50,16 +49,16 @@
 					<property name="TargetingSound" value="turret_retarget_lp"/>
 					<property name="OverheatSound" value="turret_overheat_lp"/>
 					<property name="WakeUpSound" value="turret_windup"/>
-					<property name="FireSound" value="Pistol_Fire"/>
-					<property name="RequiredPower" value="15"/>
+					<property name="FireSound" value="m136_fire"/>
+					<property name="RequiredPower" value="25"/>
 					<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 
 <!--					<property name="UnlockedBy" value="perkAdvancedEngineering,autoTurretSchematic"/> -->
 				
 					<property class="RepairItems">
-						<property name="resourceForgedIron" value="12"/>
-						<property name="resourceMechanicalParts" value="2"/>
-						<property name="resourceElectricParts" value="2"/>
+						<property name="resourceForgedIron" value="22"/>
+						<property name="resourceMechanicalParts" value="4"/>
+						<property name="resourceElectricParts" value="4"/>
 					</property>
 					<!--
 					<property class="UpgradeBlock">
@@ -71,11 +70,11 @@
 					<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 					<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
 					<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
-					<drop event="Harvest" name="resourceScrapIron" count="10,40" tag="allHarvest"/>
+					<drop event="Harvest" name="resourceScrapIron" count="10,80" tag="allHarvest"/>
 					<drop event="Destroy" count="0"/>
 				
 					<property name="Stacknumber" value="10"/>
-					<property name="EconomicValue" value="3000"/>
+					<property name="EconomicValue" value="5000"/>
 					<property name="EconomicBundleSize" value="1"/>
 					<property name="ImposterExchange" value="imposterBlock" param1="109"/>
 					<property name="Group" value="Tools/Traps,Science"/>
