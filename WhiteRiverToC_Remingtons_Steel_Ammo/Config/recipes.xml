@@ -40,5 +40,16 @@
 			<ingredient name="resourceGunPowder" count="3"/>
 			<ingredient name="resourceBulletCasingSteelRemington" count="1"/>
 		</recipe>	
+		
+		<recipe name="remingtonTurret" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable"> <!-- trap -->
+			<ingredient name="motionsensor" count="1"/>
+			<ingredient name="resourceForgedSteel" count="50"/>
+			<ingredient name="gunRifleT1HuntingRifleParts" count="5"/>
+			<ingredient name="resourceOil" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedSteel,gunHandgunT1PistolParts,resourceOil,resourceScrapPolymers"/>
+			</effect_group>
+		</recipe>
 	</append>
 </configs>
