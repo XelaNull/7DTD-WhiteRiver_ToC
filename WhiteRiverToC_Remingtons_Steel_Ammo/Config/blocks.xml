@@ -11,6 +11,10 @@
 			<append xpath="/blocks">
 				<block name="remingtonTurret">
 					<property name="CreativeMode" value="Player"/>
+					<property name="CustomIcon" value="autoTurret"/>
+					<property name="CustomIconTint" value="cc3300"/>
+					<property name="TintColor" value="255,255,255"/>
+					
 					<property name="Class" value="Ranged"/>
 					<property name="DisplayType" value="blockElectricalHardened"/>
 					<property name="Material" value="Mmetal_medium"/>
