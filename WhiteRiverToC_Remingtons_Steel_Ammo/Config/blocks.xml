@@ -54,7 +54,7 @@
 					<property name="OverheatSound" value="turret_overheat_lp"/>
 					<property name="WakeUpSound" value="turret_windup"/>
 					<property name="FireSound" value="m136_fire"/>
-				<!--	<property name="RequiredPower" value="25"/> -->
+				  <property name="RequiredPower" value="25"/>
 					<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 
 <!--					<property name="UnlockedBy" value="perkAdvancedEngineering,autoTurretSchematic"/> -->
@@ -85,8 +85,7 @@
 					<property name="ImposterExchange" value="imposterBlock" param1="109"/>
 					<property name="Group" value="Tools/Traps,Science"/>
 					<property name="PickupJournalEntry" value="cameraTip"/>
-					<property name="FilterTags" value="fdecor,ftraps"/>
-					<!--<property name="FilterTags" value="fdecor,felectrical,ftraps"/>-->
+					<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
 					<property name="SortOrder1" value="70a0"/>
 				</block>
 				
