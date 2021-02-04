@@ -30,8 +30,8 @@
 					<property name="BlockDamage" value="1"/>
 					<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
 				
-					<property name="BurstRoundCount" value="5"/>
-					<property name="BurstFireRate" value="0.6"/>
+					<property name="BurstRoundCount" value="7"/>
+					<property name="BurstFireRate" value="0.05"/>
 					<property name="CooldownTime" value=".5"/>
 					<property name="OvershootTime" value="0.4"/>
 					<property name="FallAsleepTime" value="10"/>
