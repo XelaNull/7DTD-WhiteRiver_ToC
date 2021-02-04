@@ -26,16 +26,16 @@
 					<property name="AmmoItem" value="ammo762mmBulletFMJSteelRemington"/>
 					<property name="TurnSpeed" value="18.5"/>
 					<property name="MaxDistance" value="40"/>
-					<property name="EntityDamage" value="60"/> <!-- 188 dps, 213 dps burst -->
+					<property name="EntityDamage" value="90"/> <!-- 188 dps, 213 dps burst -->
 					<property name="BlockDamage" value="1"/>
 					<property name="RaySpread" value="2.1"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
 				
 					<property name="BurstRoundCount" value="3"/>
 					<property name="BurstFireRate" value="0.17"/>
-					<property name="CooldownTime" value=".3"/>
-					<property name="OvershootTime" value="0.4"/>
+					<property name="CooldownTime" value=".2"/>
+					<property name="OvershootTime" value="0.3"/>
 					<property name="FallAsleepTime" value="10"/>
-					<property name="WakeUpTime" value="0.5"/>
+					<property name="WakeUpTime" value="0.3"/>
 				
 					<property name="YawRange" value="60"/>
 					<property name="PitchRange" value="60"/>
