@@ -38,6 +38,33 @@
     	<property name="SortOrder1" value="70a0"/>
     </block>
     
+    <block name="teslaFlamethrowerTrap">
+    	<property name="Extends" value="dartTrap"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="Class" value="Launcher"/>
+    	<property name="DisplayType" value="blockElectricalHardenedMulti"/>
+    	<property name="Material" value="Mmetal_hard"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Mesh" value="models"/>
+    	<property name="Path" value="solid"/>
+    	<property name="Model" value="Entities/Electrical/flameThrowerTrapPrefab"/>
+    	<property name="MultiBlockDim" value="1,2,2"/>
+    	<property name="ModelOffset" value="0,.5,.5"/>
+    	<property name="OnlySimpleRotations" value="true"/>
+    	<property name="PlaySound" value="darttrap_fire"/>
+    	<!-- <property name="StartSound" value="darttrap_start"/> -->
+    	<property name="EndSound" value="darttrap_end"/>
+    	<property name="BurstFireRate" value="0.3"/>
+    	<property name="ShowTargeting" value="false"/>
+    	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+    	<property name="AmmoItem" value="ammoGasCan"/>
+    	<property name="RequiredPower" value="10"/>
+    	<property name="Stacknumber" value="10"/>
+    	<property name="TakeDelay" value="10"/>
+    	<property name="EconomicValue" value="220"/>
+    	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+    	<property name="SortOrder1" value="70a0"/>
+    </block>
   </append>
   
 </configs>
