@@ -99,7 +99,7 @@
     	<property name="BurstFireRate" value="0.5"/>
     	<property name="ShowTargeting" value="false"/>
     	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-    	<property name="AmmoItem" value="ammo762mmBulletFMJShockingRemington"/>
+    	<property name="AmmoItem" value="thrownAmmoMolotovCocktail"/>
     	<property name="RequiredPower" value="10"/>
     	<property name="Group" value="Tools/Traps,Science"/>
     	<property class="RepairItems">
