@@ -277,48 +277,6 @@
 		</item>
 		
 		
-		<item name="ammo762mmBulletFMJFlamingRemington">
-			<property name="Extends" value="ammo762mmBulletBall"/>
-			<property name="CustomIcon" value="ammo762mmBulletBall"/>
-			<property name="CustomIconTint" value="a0a0ff"/>
-			<property name="DisplayType" value="ammoBulletSteel"/>
-			<property name="Material" value="Msteel"/>
-			<property name="EconomicValue" value="10"/>
-			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
-			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
-			<!--<effect_group name="Base Effects" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="60"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
-				<display_value name="dTargetArmor" value="-.2"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
-				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkDeadEye,perkMachineGunner"/>
-				<display_value name="dDegradationPerUse" value="1.2"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-			</effect_group>-->
-			<effect_group name="ammo762mmBulletFMJFlamingRemington" tiered="false"> <!-- ammoArrowFlaming -->
-				<passive_effect name="EntityDamage" operation="base_set" value="25"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
-				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
-				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
-				<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
-				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
-		
-				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14">
-					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
-				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="15">
-					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
-		
-				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningFlamingArrow"/>
-		
-				<display_value name="dEntityDamageFire" value="120"/>
-				<display_value name="dDuration" value="14"/>
-			</effect_group>
-		</item>
-		
-		
 		
 		
 
@@ -335,7 +293,7 @@
 	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
 	<append xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
 	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
-	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington,ammo762mmBulletFMJShockingRemington,ammo762mmBulletFMJFlamingRemington</append>
+	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington,ammo762mmBulletFMJShockingRemington</append>
 	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>	
 	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>	
 </configs>
