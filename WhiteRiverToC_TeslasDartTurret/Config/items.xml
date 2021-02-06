@@ -1,0 +1,48 @@
+<configs>
+  <append xpath="/items">
+    <item name="ammoDartIronShocking">
+      <property name="CustomIcon" value="ammoDartIron"/>
+    	<property name="Extends" value="ammoArrowIron" param1="HandMeshfile"/>
+    	<property name="Meshfile" value="Entities/Electrical/steel_dartPrefab"/>
+    	<property name="HoldType" value="45"/>
+    	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+    	<property name="EconomicValue" value="34"/>
+    	<property name="EconomicBundleSize" value="10"/>
+    	<property name="DisplayType" value="ammoDart"/>
+    	<property class="Action1">
+    		<property name="Velocity" value="55"/>
+    		<property name="Gravity" value="-4"/>
+    		<property name="LifeTime" value="2"/>
+    	</property>
+    	<property class="Attributes">
+    		<property name="EntityDamage" value="22,45"/>
+    		<property name="BlockDamage" value="3,8"/>
+    	</property>
+    	<effect_group name="ammoDartIronShocking" tiered="false">
+    		<passive_effect name="EntityDamage" operation="base_set" value="45"/>
+    		<passive_effect name="BlockDamage" operation="base_set" value="2"/>
+    		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+    		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth,stone"/>
+    		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+        <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShocked"/>
+        <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+
+    	</effect_group>
+      <!--
+      <effect_group name="new Fire Proc" tiered="false">
+        <requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+        <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+      <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShocked"/>
+      <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+      </effect_group>		
+      <effect_group name="always refresh existing Fire Proc" tiered="false">
+        <requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+        <requirement name="HasBuff" target="other" buff="buffShocked"/>
+        <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+      </effect_group>
+    -->
+    </item>
+  </append>
+</configs>
