@@ -298,7 +298,7 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>-->
-			<effect_group name="ammoArrowFlaming" tiered="false"> <!-- ammoArrowFlaming -->
+			<effect_group name="ammo762mmBulletFMJFlamingRemington" tiered="false"> <!-- ammoArrowFlaming -->
 				<passive_effect name="EntityDamage" operation="base_set" value="25"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
@@ -335,7 +335,7 @@
 	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
 	<append xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
 	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
-	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
+	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington,ammo762mmBulletFMJShockingRemington,ammo762mmBulletFMJFlamingRemington</append>
 	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>	
 	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>	
 </configs>
