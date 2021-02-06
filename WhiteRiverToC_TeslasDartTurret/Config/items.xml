@@ -20,7 +20,7 @@
     		<property name="EntityDamage" value="22,45"/>
     		<property name="BlockDamage" value="3,8"/>
     	</property>
-    	<effect_group name="ammoDartIron" tiered="false">
+    	<effect_group name="ammoDartIronShocking" tiered="false">
     		<passive_effect name="EntityDamage" operation="base_set" value="45"/>
     		<passive_effect name="BlockDamage" operation="base_set" value="2"/>
     		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
