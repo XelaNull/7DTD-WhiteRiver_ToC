@@ -14,7 +14,7 @@
       <property name="Path" value="solid"/>
       <property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
       <property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
-      <property name="AmmoItem" value="ammoDartIronShocking"/>
+      <property name="AmmoItem" value="ammo762mmBulletFMJShockingRemington"/>
       <property name="TurnSpeed" value="18.5"/>
       <property name="MaxDistance" value="40"/>
       <property name="EntityDamage" value="70"/> <!-- 188 dps, 213 dps burst -->
@@ -99,7 +99,7 @@
     	<property name="BurstFireRate" value="0.5"/>
     	<property name="ShowTargeting" value="false"/>
     	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
-    	<property name="AmmoItem" value="ammoDartIronShocking"/>
+    	<property name="AmmoItem" value="ammo762mmBulletFMJShockingRemington"/>
     	<property name="RequiredPower" value="10"/>
     	<property name="Group" value="Tools/Traps,Science"/>
     	<property class="RepairItems">

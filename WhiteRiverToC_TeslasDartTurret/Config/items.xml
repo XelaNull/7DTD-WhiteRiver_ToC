@@ -50,5 +50,42 @@
       </effect_group>
     -->
     </item>
+    
+    
+    <item name="ammo762mmBulletFMJShockingRemington">
+			<property name="Extends" value="ammo762mmBulletBall"/>
+			<property name="CustomIcon" value="ammo762mmBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="DisplayType" value="ammoBulletSteel"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="60"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			
+			<effect_group name="new Fire Proc" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShocked"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+			</effect_group>		
+			<effect_group name="always refresh existing Fire Proc" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="HasBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+			</effect_group>
+		</item>
+		
   </append>
 </configs>
