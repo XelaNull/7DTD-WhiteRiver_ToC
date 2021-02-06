@@ -262,6 +262,7 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
+			<!--
 			<effect_group name="new Fire Proc" tiered="false">
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
 				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
@@ -272,8 +273,7 @@
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
 				<requirement name="HasBuff" target="other" buff="buffShocked"/>
 				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
-				<!--default duration is 10-->
-			</effect_group>
+			</effect_group>-->
 		</item>
 		
 		
