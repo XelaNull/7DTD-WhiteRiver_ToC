@@ -1,6 +1,6 @@
 <configs>
   <append xpath="/blocks">
-    <block name="teslasDartTrap">
+    <block name="teslasNewDartTrap">
     	<property name="CreativeMode" value="Player"/>
     	<property name="Class" value="Launcher"/>
     	<property name="DisplayType" value="blockElectricalHardened"/>
