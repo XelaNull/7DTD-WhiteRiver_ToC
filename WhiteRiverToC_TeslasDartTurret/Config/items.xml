@@ -26,9 +26,18 @@
     		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
     		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth,stone"/>
     		<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+        
+        <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="14">
+          <requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+        <triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningFlamingArrowDuration" operation="set" value="15">
+          <requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+    
+        <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffBurningFlamingArrow"/>
+
     	</effect_group>
-      
+      <!--
       <effect_group name="new Fire Proc" tiered="false">
+      
         <requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
         <requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
       <triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffShocked"/>
@@ -39,7 +48,7 @@
         <requirement name="HasBuff" target="other" buff="buffShocked"/>
         <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
       </effect_group>
-    
+    -->
     </item>
   </append>
 </configs>
