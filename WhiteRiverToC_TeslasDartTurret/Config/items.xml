@@ -88,4 +88,7 @@
 		</item>
 		
   </append>
+  
+  <append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJShockingRemington</append>
+
 </configs>
