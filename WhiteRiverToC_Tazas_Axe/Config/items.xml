@@ -73,8 +73,10 @@
 			<passive_effect name="BlockRange" operation="base_set" value="3"/>
 	-->
 	
+	<!--
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute']/@value">120</set>
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss']/@value">7</set>
+-->
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockRange']/@value">4</set>
 	
 	
