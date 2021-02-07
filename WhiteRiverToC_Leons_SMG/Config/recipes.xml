@@ -5,7 +5,7 @@
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
 		<recipe name="questwrit_toc_leon_name" count="1" craft_time = "90" craft_exp_gain="10000" >
-			<ingredient name="gunHandgunT1Pistol" count="5"/>
+			<ingredient name="gunHandgunT1Pistol" count="2"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		<recipe name="questwrit_toc_repairleon_name" count="1" craft_time = "90" craft_exp_gain="10000" >
