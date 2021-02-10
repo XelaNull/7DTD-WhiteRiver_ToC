@@ -90,4 +90,7 @@
 	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
 		<item group="ToCBooks"/>
 	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='junk']">
+		<item group="ToCBooks"/>
+	</append>
 </configs>	
