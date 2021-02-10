@@ -102,7 +102,7 @@
 				<action type="SpawnEnemy" id="zombieOldTimerRadiated" value="1" phase="1"/>
 				<objective type="ZombieKill" id="zombieOldTimerRadiated" value="1" phase="1"/>
 
-				<reward type="Exp" value="10000"/>
+				<reward type="Exp" value="5000"/>
 				<reward type="Item" id="questitem_toc_shovel_name" value="5-6" count="1"/>
 				<reward type="Item" id="questitem_toc_pickaxe_name" value="5-6" count="1"/>
 				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>

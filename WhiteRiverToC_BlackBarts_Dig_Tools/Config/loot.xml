@@ -1,7 +1,8 @@
 <configs>
 	<append xpath="lootcontainers">
 		<lootgroup name="blackbartTreasure" count="all">
-			<item name="casinoCoin" count="5000,10000"/>			
+			<item name="resourceGoldNugget" count="25,150"/>
+			<item name="resourceSilverNugget" count="50,150"/>		
 		</lootgroup>
 		<lootcontainer id="356" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="blackbartTreasure" count="1" />
