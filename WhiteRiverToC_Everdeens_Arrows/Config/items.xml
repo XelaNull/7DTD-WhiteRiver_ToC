@@ -1,4 +1,10 @@
 <configs>
+	<item name="questitem_coin_everdeen">
+		<property name="Extends" value="casinoCoin"/>
+		<property name="CustomIcon" value="casinoCoin"/>
+		<property name="CustomIconTint" value="2eb200"/> 
+	</item>
+	
 	<!-- Implement the new Arrows and Bolts into Vanilla Compound Bow & Wooden Bow -->
 	<!-- Thanks to wyldwitchykat for the append code below -->
 	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,item_toc_earrows_name</append>

@@ -7,6 +7,7 @@
 			<ingredient name="foodCropCorn" count="3"/>
 			<ingredient name="resourceCropSnowberryPlant" count="3"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_everdeen" count="1"/>		
 		</recipe>	
 		
 		<recipe name="questitem_toc_ebolts_name" count="1" craft_time="1" craft_exp_gain="0" >
@@ -16,6 +17,7 @@
 			<ingredient name="foodCropPotato" count="3"/>
 			<ingredient name="foodCropMushrooms" count="3"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_everdeen" count="1"/>					
 		</recipe>			
 	</append>
 </configs>

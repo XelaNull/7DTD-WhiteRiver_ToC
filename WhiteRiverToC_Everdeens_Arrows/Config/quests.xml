@@ -20,6 +20,7 @@
 			<objective type="Craft" id="writitem_toc_earrows_name" value="1" phase="2" />	
 
 			<reward type="Exp" value="1500" />
+			<reward type="Item" id="questitem_coin_everdeen" value="1" />			
 		</quest>
 		<quest id="+Reward of Everdeen's Arrows">
 			<property name="name_key" value="questreward_toc_earrows_name"/>
@@ -72,6 +73,7 @@
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 			<objective type="Craft" id="writitem_toc_ebolts_name" value="1" phase="2" />	
 			<reward type="Exp" value="1500" />
+			<reward type="Item" id="questitem_coin_everdeen" value="1" />			
 		</quest>		
 		<quest id="+Reward of Everdeen's Bolts">
 			<property name="name_key" value="questreward_toc_ebolts_name"/>
