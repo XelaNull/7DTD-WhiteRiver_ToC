@@ -29,7 +29,7 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Quest For Everdeen's Arrows"/>
+				<property name="QuestGiven" value="+Quest For Everdeen's Arrows Start"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
@@ -60,7 +60,7 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Quest For Everdeen's Bolts"/>
+				<property name="QuestGiven" value="+Quest For Everdeen's Bolts Start"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			

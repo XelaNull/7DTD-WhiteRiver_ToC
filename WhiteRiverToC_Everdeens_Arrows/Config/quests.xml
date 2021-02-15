@@ -1,5 +1,22 @@
 <config>
 	<append xpath="/quests">
+		<quest id="+Quest For Everdeen's Arrows Start">
+			<property name="name_key" value="quest_toc_earrows_name"/>
+			<property name="subtitle_key" value="quest_toc_earrows_subtitle"/>
+			<property name="description_key" value="quest_toc_earrows_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<!--<property name="offer_key" value="quest_toc_earrows_offer"/>-->
+			<property name="statement_key" value="quest_toc_earrows_statement"/>
+			<property name="response_key" value="questdialog_toc_earrows"/>				
+			<property name="group_name_key" value="quest_toc_earrows_group"/>
+			<property name="shareable" value="false" />
+
+			<reward type="Quest" id="+Quest For Everdeen's Arrows"/>
+			<reward type="Item" value="questitem_coin_everdeen" count="1"/>			
+		</quest>
 		<quest id="+Quest For Everdeen's Arrows">
 			<property name="name_key" value="quest_toc_earrows_name"/>
 			<property name="subtitle_key" value="quest_toc_earrows_subtitle"/>
@@ -20,7 +37,6 @@
 			<objective type="Craft" id="writitem_toc_earrows_name" value="1" phase="2" />	
 
 			<reward type="Exp" value="1500" />
-			<reward type="Item" id="questitem_coin_everdeen" value="1" />			
 		</quest>
 		<quest id="+Reward of Everdeen's Arrows">
 			<property name="name_key" value="questreward_toc_earrows_name"/>
@@ -52,7 +68,24 @@
 			<reward type="Item" id="foodVegetableStew" value="2-3" />
 			<reward type="Exp" value="3000" />
 		</quest>
-						
+		
+		<quest id="+Quest For Everdeen's Bolts Start">
+			<property name="name_key" value="quest_toc_ebolts_name"/>
+			<property name="subtitle_key" value="quest_toc_ebolts_subtitle"/>
+			<property name="description_key" value="quest_toc_ebolts_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="quest_toc_ebolts_offer"/>
+			<property name="statement_key" value="quest_toc_ebolts_statement"/>
+			<property name="response_key" value="questdialog_toc_ebolts"/>				
+			<property name="group_name_key" value="quest_toc_ebolts_group"/>
+			<property name="shareable" value="false" />
+
+			<reward type="Quest" id="+Quest For Everdeen's Bolts"/>
+			<reward type="Item" value="questitem_coin_everdeen" count="1"/>		
+		</quest>						
 		<quest id="+Quest For Everdeen's Bolts">
 			<property name="name_key" value="quest_toc_ebolts_name"/>
 			<property name="subtitle_key" value="quest_toc_ebolts_subtitle"/>
@@ -72,7 +105,6 @@
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 			<objective type="Craft" id="writitem_toc_ebolts_name" value="1" phase="2" />	
 			<reward type="Exp" value="1500" />
-			<reward type="Item" id="questitem_coin_everdeen" value="1" />			
 		</quest>		
 		<quest id="+Reward of Everdeen's Bolts">
 			<property name="name_key" value="questreward_toc_ebolts_name"/>
