@@ -57,7 +57,6 @@
 			
 			<reward type="Item" id="questitem_toc_amelia1map_name" value="1" />
 			<reward type="Exp" value="1000" />
-			<reward type="SkillPoints" value="1" />				
 		</quest>
 		
 		<!--
@@ -91,9 +90,7 @@
 			</objective>
 			<action type="SpawnEnemy" id="animalMountainLion" value="1" phase="2"/>
 
-
 			<reward type="Item" id="casinoCoin" value="1000,5000" />
-
 			<reward type="Exp" value="2500" />
 		</quest>
 		
@@ -194,9 +191,7 @@
 			<reward type="Item" id="item_toc_amelia_schem_name" value="1" />
 			
 			<reward type="Exp" value="1500" />
+			<reward type="SkillPoints" value="1" />
 		</quest>
-		
-		
-		
   </append>
 </config>
