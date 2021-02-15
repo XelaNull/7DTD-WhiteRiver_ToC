@@ -1,6 +1,23 @@
 <config>
 	<append xpath="/quests" >
 	
+		<quest id="+Quest For Bambi's Killer Bow">
+			<property name="name_key" value="quest_toc_bambi_name"/>
+			<property name="subtitle_key" value="quest_toc_bambi_subtitle"/>
+			<property name="description_key" value="quest_toc_bambi_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<!--<property name="offer_key" value="quest_toc_bambi_offer"/>-->
+			<property name="statement_key" value="quest_toc_bambi_statement"/>
+			<property name="response_key" value="questdialog_toc_bambi"/>				
+			<property name="group_name_key" value="quest_toc_bambi_group"/>
+			<property name="shareable" value="false" />
+
+			<reward type="Quest" id="+Quest For Bambi's Killer Bow"/>
+			<reward type="Item" value="questitem_coin_bambi" count="1"/>	
+		</quest>
 			<quest id="+Quest For Bambi's Killer Bow">
 				<property name="name_key" value="quest_toc_bambi_name"/>
 				<property name="subtitle_key" value="quest_toc_bambi_subtitle"/>
@@ -22,7 +39,6 @@
 				<objective type="Craft" id="questwrit_toc_bambi_name" value="1" phase="2" />		
 	
 				<reward type="Exp" value="1000" />
-				<reward type="Item" id="questitem_coin_bambi" value="1" />	
 			</quest>
 			<quest id="+Reward of Bambi's Killer Bow">
 				<property name="name_key" value="questreward_toc_bambi_name"/>
@@ -61,6 +77,23 @@
 			</quest>
 	
 	
+			<quest id="+Vet. Quest For Bambi's Killer Compound Bow Start">
+				<property name="name_key" value="vetquest_toc_bambi_name"/>
+				<property name="subtitle_key" value="vetquest_toc_bambi_subtitle"/>
+				<property name="description_key" value="vetquest_toc_bambi_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<!--<property name="offer_key" value="vetquest_toc_bambi_offer"/>-->
+				<property name="statement_key" value="vetquest_toc_bambi_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_bambi"/>				
+				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+	
+				<reward type="Quest" id="+Vet. Quest For Bambi's Killer Compound Bow"/>
+				<reward type="Item" value="questitem_vetcoin_bambi" count="1"/>	
+			</quest>
 			<quest id="+Vet. Quest For Bambi's Killer Compound Bow">
 				<property name="name_key" value="vetquest_toc_bambi_name"/>
 				<property name="subtitle_key" value="vetquest_toc_bambi_subtitle"/>
@@ -82,7 +115,6 @@
 				<objective type="Craft" id="vetquestwrit_toc_bambi_name" value="1" phase="2" />		
 
 				<reward type="Exp" value="5000" />
-				<reward type="Item" id="questitem_vetcoin_bambi" value="1" />	
 			</quest>		
 			<quest id="+Veteran Reward of Bambi's Killer Compound Bow">
 				<property name="name_key" value="vetquestreward_toc_bambi_name"/>
@@ -119,7 +151,24 @@
 				<reward type="SkillPoints" value="1" />				
 			</quest>
 			
-			
+	
+			<quest id="+Forest Prince Bow Elite Quest Start">
+				<property name="name_key" value="elitequest_toc_bambi_name"/>
+				<property name="subtitle_key" value="elitequest_toc_bambi_subtitle"/>
+				<property name="description_key" value="elitequest_toc_bambi_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<!--<property name="offer_key" value="elitequest_toc_bambi_offer"/>-->
+				<property name="statement_key" value="elitequest_toc_bambi_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_bambi"/>				
+				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
+				<property name="shareable" value="false" />
+
+				<reward type="Quest" id="+Forest Prince Bow Elite Quest"/>
+				<reward type="Item" value="questitem_elitecoin_bambi" count="1"/>	
+			</quest>			
 			<quest id="+Forest Prince Bow Elite Quest">
 				<property name="name_key" value="elitequest_toc_bambi_name"/>
 				<property name="subtitle_key" value="elitequest_toc_bambi_subtitle"/>
@@ -142,7 +191,6 @@
 
 				<reward type="Exp" value="12000" />
 				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
-				<reward type="Item" id="questitem_elitecoin_bambi" value="1" />	
 			</quest>	
 			
 			<quest id="+Elite Reward of Forest Prince Compound Bow">
