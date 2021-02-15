@@ -158,14 +158,13 @@
 			</objective>
 
 			<objective type="BlockPlace" id="woodFrameBlock" value="150" phase="3"/>
-
 			<objective type="BlockUpgrade" id="woodFrameBlock" value="100" phase="4"/>
 			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="5"/>
 			<action type="SpawnEnemy" id="animalMountainLion" value="4" phase="5"/>
 			<objective type="ZombieKill" id="zombieToCWendigo" value="1" phase="5"/>
 			
 			<reward type="Quest" id="+Reward of Amelia Earhart's Schematics"/>
-			<reward type="Exp" value="1500" />
+			<reward type="Exp" value="3500" />
 		</quest>
 		
 		<!--
