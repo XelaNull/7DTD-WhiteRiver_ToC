@@ -46,6 +46,7 @@
 		</recipe>
 		<recipe name="writitem_toc_amelia1_name" count="1" craft_time = "30" craft_exp_gain="1000" >
 			<ingredient name="casinoCoin" count="5000"/>
+			<ingredient name="questitem_vetcoin_amelia" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>	
 		

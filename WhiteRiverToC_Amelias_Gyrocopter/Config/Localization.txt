@@ -13,9 +13,7 @@ vehicleAmeliaGyroCopterChassis,items,Item,,,"Amelia Earhart Gyrocopter Chassis",
 vehicleAmeliaGyroCopterChassisDesc,items,Item,,,"An ingredient in building an Amelia Earhart Gyrocopter.",,,,,,,,,,,,,,
 vehicleAmeliaGyroCopterAccessories,items,Item,,,"Amelia Earhart Gyrocopter Accessories",,,,,,,,,,,,,,
 vehicleAmeliaGyroCopterAccessoriesDesc,items,Item,,,"An ingredient in building an Amelia Earhart Gyrocopter.",,,,,,,,,,,,,,
-
 quest_toc_amelia_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Quest for Amelia Earhart's Gyrocopter",,,,,,,,,,,,,,
-
 questitem_toc_amelia1_name,items,Quest - Note,,,+Amelia's Gyrocopter,,,,,,,,,,,,,,
 questitem_toc_amelia1_desc,items,Quest - Note,,,"This note contains a rumor that the local trader has a map to Amelia Earhart’s grave. Follow the clues to uncover the truth of what happened to Amelia and learn how to help complete her life's secret work.",,,,,,,,,,,,,,
 quest_toc_amelia1_name,Quest,Quest Info,,,"The Map to Amelia's Coffin",,,,,,,,,,,,,,
@@ -66,6 +64,7 @@ questitem_toc_amelia4_name,items,Quest - Note,,,+Amelia Earhart's Gyrocopter Sch
 questitem_toc_amelia4_desc,items,Quest - Note,,,"This set of schematics teaches you how to craft Amelia Earhart's namesake, the improved Gyrocopter.",,,,,,,,,,,,,,
 
 zombieToCWendigo,entityclasses,Entity,,,White-Haired Wendigo,,,,,,,,,,,,,,
-
+questitem_vetcoin_amelia,items,Item,,,"Veteran Tools of Citizenship - Amelia's Gyrocopter",,,,,,,,,,,,,,
+questitem_vetcoin_ameliaDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship Veteran's Citizenship card to start the Amelia's Gyrocopter quest.",,,,,,,,,,,,,,
 
 
