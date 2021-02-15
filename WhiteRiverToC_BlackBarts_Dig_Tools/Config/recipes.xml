@@ -10,6 +10,7 @@
 			<ingredient name="meleeToolShovelT1IronShovel" count="1"/>
 			<ingredient name="meleeToolPickT1IronPickaxe" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_blackb" count="1"/>
 		</recipe>	
 
 	</append>

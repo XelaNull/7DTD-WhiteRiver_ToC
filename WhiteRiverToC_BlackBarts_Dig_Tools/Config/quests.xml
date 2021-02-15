@@ -1,5 +1,22 @@
 <config>
 	<append xpath="/quests">
+		<quest id="+Quest For Black Bart's Flaming Dig Tools Start">
+			<property name="name_key" value="vetquest_toc_blackb_name"/>
+			<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
+			<property name="description_key" value="vetquest_toc_blackb_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<!--<property name="offer_key" value="vetquest_toc_blackb_offer"/>-->
+			<property name="statement_key" value="vetquest_toc_blackb_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_blackb"/>				
+			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+			<property name="shareable" value="false" />
+
+			<reward type="Quest" id="+Quest For Black Bart's Flaming Dig Tools"/>
+			<reward type="Item" value="questitem_vetcoin_blackb" count="1"/>
+		</quest>
 			<quest id="+Quest For Black Bart's Flaming Dig Tools">
 				<property name="name_key" value="vetquest_toc_blackb_name"/>
 				<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
@@ -52,8 +69,7 @@
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="vetquestmap_toc_blackb_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="20-70" />	
-				<reward type="Exp" value="3000" />
-				<reward type="SkillPoints" value="1" />			
+				<reward type="Exp" value="1000" />
 			</quest>
 			
 			<quest id="map_Black_Bart">

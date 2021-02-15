@@ -36,3 +36,5 @@ questitem_toc_shovel_name,items,Item,,,"Black Bart's Steel Shovel",,,,,,,,,,,,,,
 questitem_toc_shovel_desc,items,Item,,,"An irreplaceable shovel used by the famous stagecoach robber Black Bart to bury his treasure.",,,,,,,,,,,,,,
 questblock_toc_blackb_coffin,blocks,Container,,,"Black Bart's Coffin",,,,,,,,,,,,,,
 
+questitem_vetcoin_blackb,items,Item,,,"Veteran Tools of Citizenship - BlackBart's Dig Tools",,,,,,,,,,,,,,
+questitem_vetcoin_blackbDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship Veteran's Citizen card to start the BlackBart's Dig Tools quest.",,,,,,,,,,,,,,
