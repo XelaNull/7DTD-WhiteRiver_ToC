@@ -4,7 +4,7 @@
 
 <https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a191/>
 
-Tested with A19.3 (b3)
+Tested with A19.4 (b3)
 
 This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this Modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from.
 
@@ -26,6 +26,11 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 ### Questable Equipment:
 
+**VEHICLES**
+
+- **Amelia Earhart's Gyrocopter** - Discover the truth to what happened to Amelia Earhart and the crazy multi-seat flying contraption she invented.
+- **Spirit of Vengeance** - Take on an elite boss zombie and earn yourself a super-fast flaming motorcycle.
+
 **TOOLS:**
 
 - **Black Bart's Flaming Dig Tools** - Uncover the long-buried stash from the most famous stagecoach robber in the western U.S., providing a steel Pickaxe & Shovel with flaming mods and better stats than Vanilla. Stamina trait sure to keep you digging and digging and digging.
@@ -34,6 +39,7 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - **Jason's Machete** - A replicate machete used by the infamous serial killer himself. (Big Thanks to wyldwitchykat for this contribution)
 - **Rick Danger's Auger** - Obtain two higher tier Augers, the latter of which will turn even the largest mountain to butter.
 - **Taza's Axe** - The famed Taza's Axe, already awesome.
+- **Dwarven Forge** - Track down a lost colony of little people, and their secret to crafting exquisite items.
 
 **WEAPONS:**
 
@@ -51,9 +57,9 @@ Once the player obtains their citizenship card, they can use this to craft quest
 
 - **Brass For Lead** - Help the community restock its Lead supply and in exchange receive some brass.
 - **Everdeen's Arrows & Bolts** - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
-- **Gupta's Bandages** - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages.
+- **Gupta's Bandages** - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages. Gupta's bandages and first aid kits are rumored to be better quality than you can find elsewhere.
 - **QwikCrete** - Learn the secret to making quick-drying concrete blocks!
-- **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement.
+- **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement. Along with this, learn to craft an auto turret that takes the Remington 762 ammo.
 
 Nearly all quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward. Black Bart's dig tools are unique and the quest is designed NOT to be repeatable!
 
