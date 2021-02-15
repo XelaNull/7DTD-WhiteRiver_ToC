@@ -9,6 +9,23 @@
 		-->
 		
 		<!-- Collect 5,000 Dukes -->
+		<quest id="+Quest For Amelia Earhart's Gyrocopter Start"> <!-- Obtain 5,000 dukes and then craft the writ to prove you've paid -->
+			<property name="name_key" value="quest_toc_amelia1_name"/> 
+			<property name="subtitle_key" value="quest_toc_amelia1_subtitle"/> 
+			<property name="description_key" value="quest_toc_amelia1_description"/> 
+			<property name="icon" value="ui_game_symbol_treasure" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+		<!--	<property name="offer_key" value="quest_toc_amelia1_offer"/> -->
+			<property name="statement_key" value="quest_toc_amelia1_statement"/> 
+			<property name="response_key" value="questdialog_toc_amelia1"/>	
+			<property name="group_name_key" value="quest_toc_amelia_group"/> 
+			<property name="shareable" value="false" />
+			
+			<reward type="Quest" id="+Quest For Amelia Earhart's Gyrocopter"/>
+			<reward type="Item" value="questitem_vetcoin_amelia" count="1"/>
+		</quest>
 		<quest id="+Quest For Amelia Earhart's Gyrocopter"> <!-- Obtain 5,000 dukes and then craft the writ to prove you've paid -->
 			<property name="name_key" value="quest_toc_amelia1_name"/> 
 			<property name="subtitle_key" value="quest_toc_amelia1_subtitle"/> 
