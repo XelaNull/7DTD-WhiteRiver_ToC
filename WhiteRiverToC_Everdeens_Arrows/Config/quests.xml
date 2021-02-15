@@ -51,7 +51,6 @@
 			<reward type="Item" id="item_toc_earrows_name" value="50-150"/>
 			<reward type="Item" id="foodVegetableStew" value="2-3" />
 			<reward type="Exp" value="3000" />
-			<reward type="SkillPoints" value="2" />			
 		</quest>
 						
 		<quest id="+Quest For Everdeen's Bolts">
@@ -103,8 +102,7 @@
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 			<reward type="Item" id="item_toc_ebolts_name" value="100-200"/>
 			<reward type="Item" id="foodVegetableStew" value="2-4" />
-			<reward type="Exp" value="5000" />
-			<reward type="SkillPoints" value="2" />			
+			<reward type="Exp" value="3000" />
 		</quest>	
 	</append>
 </config>
