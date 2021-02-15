@@ -30,8 +30,7 @@
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
 				<reward type="Item" id="resourceScrapBrass" value="500" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-40" />	
-				<reward type="Exp" value="2000" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="Exp" value="1000" />
 			</quest>
 					
 	</append>
