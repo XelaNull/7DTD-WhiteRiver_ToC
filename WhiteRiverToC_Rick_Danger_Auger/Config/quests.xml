@@ -1,6 +1,23 @@
 <config>
 	<append xpath="/quests" >
 	
+		<quest id="+Veteran Quest For Rick Danger Auger Start">
+			<property name="name_key" value="vetquest_toc_rickdanger_name"/>
+			<property name="subtitle_key" value="vetquest_toc_rickdanger_subtitle"/>
+			<property name="description_key" value="vetquest_toc_rickdanger_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_rickdanger_offer"/>
+			<property name="statement_key" value="vetquest_toc_rickdanger_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_rickdanger"/>				
+			<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
+			<property name="shareable" value="false" />
+	
+			<reward type="Quest" id="+Veteran Quest For Rick Danger Auger"/>
+			<reward type="Item" id="questitem_vetcoin_rickdanger" value="1" />
+		</quest>
 			<quest id="+Veteran Quest For Rick Danger Auger">
 				<property name="name_key" value="vetquest_toc_rickdanger_name"/>
 				<property name="subtitle_key" value="vetquest_toc_rickdanger_subtitle"/>
@@ -21,7 +38,7 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="vetquestwrit_toc_rickdanger_name" value="1" phase="2" />		
 	
-				<reward type="Exp" value="1000" />
+				<reward type="Exp" value="2000" />
 			</quest>
 			<quest id="+Veteran Reward of Rick Danger Auger">
 				<property name="name_key" value="vetquestreward_toc_rickdanger_name"/>
@@ -52,12 +69,30 @@
 				<reward type="Item" id="vetitemreward_toc_rickdanger_name" value="4-5" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-50" />	
 				<reward type="Item" id="questblock_rickdanger_elitecrate_name" value="1" />
-				<reward type="Exp" value="5000" />
+				<reward type="Exp" value="3000" />
 				<reward type="SkillPoints" value="1" />				
 			</quest>
 	
 	
 			<!-- ELITE QUEST -->
+			<quest id="+Elite Quest For Rick Danger Improved Auger Start">
+				<property name="name_key" value="elitequest_toc_rickdanger_name"/>
+				<property name="subtitle_key" value="elitequest_toc_rickdanger_subtitle"/>
+				<property name="description_key" value="elitequest_toc_rickdanger_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="false" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_rickdanger_offer"/>
+				<property name="statement_key" value="elitequest_toc_rickdanger_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_rickdanger"/>				
+				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
+				<property name="shareable" value="false" />
+	
+				<reward type="Item" id="questitem_vetcoin_rickdanger" value="1" />
+				<reward type="Quest" id="+Elite Quest For Rick Danger Improved Auger"/>
+			</quest>		
+			
 			<quest id="+Elite Quest For Rick Danger Improved Auger">
 				<property name="name_key" value="elitequest_toc_rickdanger_name"/>
 				<property name="subtitle_key" value="elitequest_toc_rickdanger_subtitle"/>
@@ -78,7 +113,7 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="elitequestwrit_toc_rickdanger_name" value="1" phase="2" />		
 
-				<reward type="Exp" value="5000" />
+				<reward type="Exp" value="3000" />
 				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />				
 			</quest>		
 			
@@ -110,8 +145,8 @@
 				<reward type="Item" id="eliteitemreward_toc_rickdanger_name" value="6" />
 				<reward type="Item" id="questblock_rickdanger_elitecrate_name" value="2" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
-				<reward type="Exp" value="10000" />
-				<reward type="SkillPoints" value="2" />				
+				<reward type="Exp" value="4000" />
+				<reward type="SkillPoints" value="1" />				
 			</quest>
 			
 	</append>

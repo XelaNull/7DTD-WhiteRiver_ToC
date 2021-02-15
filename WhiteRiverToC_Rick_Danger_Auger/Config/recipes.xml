@@ -10,6 +10,7 @@
 			<ingredient name="resourceOilShale" count="2000"/>
 			<ingredient name="meleeToolAxeT3ChainsawParts" count="25"/>			
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_rickdanger" count="1"/>
 		</recipe>	
 		
 		<recipe name="elitequestitem_toc_rickdanger_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -20,6 +21,7 @@
 			<ingredient name="meleeToolAxeT3ChainsawParts" count="25"/>
 			<ingredient name="meleeToolAllSteelParts" count="25"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_elitecoin_rickdanger" count="1"/>
 		</recipe>			
 	</append>
 </configs>
