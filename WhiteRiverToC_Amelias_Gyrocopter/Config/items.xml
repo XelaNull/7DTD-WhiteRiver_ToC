@@ -14,11 +14,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>
 			<property name="CustomIconTint" value="cc3300"/> 
-			<property name="Unlocks" value="resourceRefinedLead"/>
-			<property name="Unlocks" value="carAmeliaBattery"/>
 			<property name="Unlocks" value="vehicleAmeliaGyroCopterChassis"/>
-			<property name="Unlocks" value="vehicleAmeliaGyroCopterAccessories"/>
-			<property name="Unlocks" value="vehicleAmeliaGyrocopterPlaceable"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="carAmeliaBattery" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceRefinedLead" operation="set" value="1"/>
