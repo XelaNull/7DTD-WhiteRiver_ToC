@@ -39,5 +39,5 @@ item_toc_ebolts_name,items,Item,,,"Bolts of Everdeen",,,,,,,,,,,,,,
 item_toc_ebolts_desc,items,Item,,,"Exquisitely crafted bolts guaranteed to fly true.",,,,,,,,,,,,,,
 
 
-questitem_coin_bambi,items,Item,,,"Tools of Citizenship - Everdeen's Arrows",,,,,,,,,,,,,,
-questitem_coin_bambiDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, Citizen card to start the Everdeen's Arrows quest.",,,,,,,,,,,,,,
+questitem_coin_everdeen,items,Item,,,"Tools of Citizenship - Everdeen's Arrows",,,,,,,,,,,,,,
+questitem_coin_everdeenDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, Citizen card to start the Everdeen's Arrows quest.",,,,,,,,,,,,,,

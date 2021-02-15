@@ -10,7 +10,7 @@
 			<ingredient name="questitem_vetcoin_qwikcrete" count="1"/>
 		</recipe>	
 
-    <recipe name="questblock_toc_qwikcrete_name" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
+    <recipe name="questblock_toc_qwikcrete_name" count="1" craft_area="cementMixer" tags="cementMixerCrafting,learnable">
     	<ingredient name="resourceConcreteMix" count="10"/>
       <ingredient name="resourceBone" count="2"/>
     </recipe>

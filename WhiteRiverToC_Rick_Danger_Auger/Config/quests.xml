@@ -89,7 +89,7 @@
 				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
 	
-				<reward type="Item" id="questitem_vetcoin_rickdanger" value="1" />
+				<reward type="Item" id="questitem_elitecoin_rickdanger" value="1" />
 				<reward type="Quest" id="+Elite Quest For Rick Danger Improved Auger"/>
 			</quest>		
 			
