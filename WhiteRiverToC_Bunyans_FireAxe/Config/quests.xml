@@ -19,6 +19,7 @@
 				<objective type="Craft" id="questwrit_toc_bunyan_name" value="1" phase="2" />
 				
 				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questitem_coin_bunyan" value="1" />
 			</quest>
 			
 			<quest id="+Reward of Bunyan's FireAxe">
@@ -49,9 +50,8 @@
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->		
 				<reward type="Item" id="item_toc_bunyanaxe_name" value="2-6" />	
 				<reward type="Item" id="modMeleeWoodSplitterSchematic" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="5-20" />
+				<reward type="Item" id="pouredConcreteBlock" value="10-20" />
 				<reward type="Exp" value="2000" />
-				<reward type="SkillPoints" value="1" />					
 			</quest>
 
 	</append>

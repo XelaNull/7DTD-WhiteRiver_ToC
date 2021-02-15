@@ -18,3 +18,6 @@ questwrit_toc_bunyan_name,items,Quest - Note,,,+Writ Of Bunyan,,,,,,,,,,,,,,
 questwrit_toc_bunyan_description,items,Quest - Note,,,"Evidence of your contribution to your community and for completion of the Paul Bunyan FireAxe quest.",,,,,,,,,,,,,,
 item_toc_bunyanaxe_name,items,Item,,,"Bunyan's Fireaxe",,,,,,,,,,,,,,
 item_toc_bunyanaxe_desc,items,Item,,,"A FireAxe from one of the most famous lumberjacks of all.",,,,,,,,,,,,,,
+
+questitem_coin_bunyan,items,Item,,,"Tools of Citizenship - Bunyan's FireAxe",,,,,,,,,,,,,,
+questitem_coin_bunyanDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, Citizen card to start the Bunyan's FireAxe quest.",,,,,,,,,,,,,,
