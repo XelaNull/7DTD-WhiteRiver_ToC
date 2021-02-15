@@ -3,6 +3,23 @@
     <!-- Quest 1: Turn in 5 Marksman Rifles and obtain Trigger Group -->
     <!-- Quest 1 Reward: Pavlichenkos Trigger Group -->
     <!-- Quest 1 Reward: Pavlichenkos Barrel Quest -->
+		<quest id="+Vet Quest For Pavlichenko Rifle Start">
+			<property name="name_key" value="vetquest_toc_pavlichenko_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pavlichenko_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pavlichenko_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<!--<property name="offer_key" value="vetquest_toc_pavlichenko_offer"/>-->
+			<property name="statement_key" value="vetquest_toc_pavlichenko_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pavlichenko"/>				
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false" />
+			
+			<reward type="Quest" id="+Vet Quest For Pavlichenko Rifle"/>
+			<reward type="Item" value="questitem_vetcoin_pav" count="1"/>
+		</quest>
 		<quest id="+Vet Quest For Pavlichenko Rifle">
 			<property name="name_key" value="vetquest_toc_pavlichenko_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pavlichenko_subtitle"/>
@@ -52,7 +69,6 @@
       <reward type="Item" id="questitem_toc_pav_trigger_name" value="1" />
       <reward type="Item" id="vetquestitem_toc_pav_barrel_name" value="1" />
       <reward type="Exp" value="1000" />
-      <reward type="SkillPoints" value="1" />				
     </quest>
       
       
@@ -218,8 +234,8 @@
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->		
 			<reward type="Item" id="questitem_toc_pav_rifle_name" value="5-6" />
 
-			<reward type="Exp" value="20000" />
-			<reward type="SkillPoints" value="3" />				
+			<reward type="Exp" value="5000" />
+			<reward type="SkillPoints" value="1" />				
 		</quest>
 		
   </append>

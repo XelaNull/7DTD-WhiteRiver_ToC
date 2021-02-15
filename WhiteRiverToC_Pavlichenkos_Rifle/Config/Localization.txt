@@ -74,4 +74,5 @@ vetquestmap_toc_pav_map1_name,items,Quest - Note,,,"Pavlichenko Rifle Barrel Tre
 vetquestmap_toc_pav_map1_desc,items,Quest - Note,,,"A map that supposedly will lead you to a Pavlichenko Rifle Barrel",,,,,,,,,,,,,,
 vetquestmap_toc_pav_map2_name,items,Quest - Note,,,"Pavlichenko Stock Treasure map",,,,,,,,,,,,,,
 vetquestmap_toc_pav_map2_desc,items,Quest - Note,,,"A map that supposedly will lead you to a Pavlichenko Stock",,,,,,,,,,,,,,
-
+questitem_vetcoin_pav,items,Item,,,"Veteran Tools of Citizenship - Pavlichenko's Rifle",,,,,,,,,,,,,,
+questitem_vetcoin_pavDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship Veteran's Citizen card to start the Pavlichenko Rifle quest.",,,,,,,,,,,,,,
