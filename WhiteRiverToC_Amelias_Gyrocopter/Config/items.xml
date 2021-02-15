@@ -4,7 +4,7 @@
 		<item name="questitem_vetcoin_amelia">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="660000"/> 
+			<property name="CustomIconTint" value="7fa6ff"/> 
 		</item>
 
 		<item name="item_toc_amelia_schem_name">
