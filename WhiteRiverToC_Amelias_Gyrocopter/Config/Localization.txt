@@ -65,6 +65,6 @@ questitem_toc_amelia4_desc,items,Quest - Note,,,"This set of schematics teaches 
 
 zombieToCWendigo,entityclasses,Entity,,,White-Haired Wendigo,,,,,,,,,,,,,,
 questitem_vetcoin_amelia,items,Item,,,"Veteran Tools of Citizenship - Amelia's Gyrocopter",,,,,,,,,,,,,,
-questitem_vetcoin_ameliaDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship Veteran's Citizenship card to start the Amelia's Gyrocopter quest.",,,,,,,,,,,,,,
+questitem_vetcoin_ameliaDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, Veteran's Citizenship card to start the Amelia's Gyrocopter quest.",,,,,,,,,,,,,,
 
 
