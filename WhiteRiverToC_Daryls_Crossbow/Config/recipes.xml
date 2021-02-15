@@ -10,6 +10,7 @@
 			<ingredient name="gunBowT0PrimitiveBow" count="20"/>			
 			<ingredient name="resourceWood" count="400"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_daryl" count="1"/>
 		</recipe>	
 		
 		<recipe name="elitequestitem_toc_daryl_name" count="1" craft_time = "1" craft_exp_gain="0" >
@@ -20,6 +21,7 @@
 			<ingredient name="resourceWood" count="4000"/>
 			<ingredient name="resourceAnimalFat" count="50"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_elitecoin_daryl" count="1"/>
 		</recipe>			
 	</append>
 </configs>
