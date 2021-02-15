@@ -45,7 +45,6 @@
 			<objective type="Craft" id="writitem_toc_amelia1_name" value="1" phase="2" />		
 			
 			<reward type="Exp" value="1500" />
-			<reward type="Item" value="questitem_vetcoin_amelia" count="1"/>
 		</quest>
 		<quest id="+Reward of Amelia's Map"> <!-- Writ starts this quest to go obtain the actual map -->
 			<property name="name_key" value="questreward_toc_amelia1_name"/>
