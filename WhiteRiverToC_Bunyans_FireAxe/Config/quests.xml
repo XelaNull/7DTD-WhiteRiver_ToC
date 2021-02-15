@@ -36,7 +36,6 @@
 				<objective type="Craft" id="questwrit_toc_bunyan_name" value="1" phase="2" />
 				
 				<reward type="Exp" value="1000" />
-				<reward type="Item" id="questitem_coin_bunyan" value="1" />
 			</quest>
 			
 			<quest id="+Reward of Bunyan's FireAxe">

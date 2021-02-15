@@ -14,7 +14,7 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Quest For Dundee's Knife"/>
+				<property name="QuestGiven" value="+Quest For Dundee's Knife Start"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
