@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/quests" >
 	
-		<quest id="+Quest For Bambi's Killer Bow">
+		<quest id="+Quest For Bambi's Killer Bow Start">
 			<property name="name_key" value="quest_toc_bambi_name"/>
 			<property name="subtitle_key" value="quest_toc_bambi_subtitle"/>
 			<property name="description_key" value="quest_toc_bambi_description"/>
