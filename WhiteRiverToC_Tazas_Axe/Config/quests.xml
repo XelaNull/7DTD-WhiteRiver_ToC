@@ -1,5 +1,22 @@
 <config>
 	<append xpath="/quests" >	
+		<quest id="+Quest For Taza's Axe Start">
+			<property name="name_key" value="quest_toc_taza_name"/>
+			<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
+			<property name="description_key" value="quest_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="easy" />
+			<!--<property name="offer_key" value="quest_toc_taza_offer"/>-->
+			<property name="statement_key" value="quest_toc_taza_statement"/>
+			<property name="response_key" value="questdialog_toc_taza"/>				
+			<property name="group_name_key" value="quest_toc_taza_group"/>
+			<property name="shareable" value="false" />
+
+			<reward type="Quest" id="+Quest For Taza's Axe"/>
+			<reward type="Item" value="questitem_coin_taza" count="1"/>
+		</quest>
 			<quest id="+Quest For Taza's Axe">
 				<property name="name_key" value="quest_toc_taza_name"/>
 				<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
@@ -54,9 +71,25 @@
 				<reward type="Item" id="modMeleeWoodSplitterSchematic" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-60" />
 				<reward type="Exp" value="1500" />
-				<reward type="SkillPoints" value="1" />					
 			</quest>
 
+			<quest id="+Vet. Quest For Taza's Axe Start">
+				<property name="name_key" value="vetquest_toc_taza_name"/>
+				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
+				<property name="description_key" value="vetquest_toc_taza_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<!--<property name="offer_key" value="vetquest_toc_taza_offer"/>-->
+				<property name="statement_key" value="vetquest_toc_taza_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_taza"/>				
+				<property name="group_name_key" value="vetquest_toc_taza_group"/>
+				<property name="shareable" value="false" />						
+	
+				<reward type="Quest" id="+Vet. Quest For Taza's Axe"/>
+				<reward type="Item" value="questitem_vetcoin_taza" count="1"/>
+			</quest>
 			<quest id="+Vet. Quest For Taza's Axe">
 				<property name="name_key" value="vetquest_toc_taza_name"/>
 				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
@@ -79,7 +112,6 @@
 				
 				<reward type="Exp" value="5000" />
 			</quest>
-			
 			<quest id="+Veteran Reward of Taza's Axe">
 				<property name="name_key" value="vetquest_toc_taza_name"/>
 				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>

@@ -9,6 +9,7 @@
 			<ingredient name="resourceRockSmall" count="400"/>
 			<ingredient name="meleeToolRepairT0StoneAxe" count="20"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_taza" count="1"/>
 		</recipe>	
 		
 		<!-- The quest and goal item to craft for reward for: Taza's Axe -->
@@ -20,6 +21,7 @@
 			<ingredient name="resourceYuccaFibers" count="200"/>
 			<ingredient name="meleeToolRepairT0StoneAxe" count="20"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_taza" count="1"/>
 		</recipe>	
 	</append>
 </configs>
