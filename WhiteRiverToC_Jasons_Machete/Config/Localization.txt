@@ -20,3 +20,6 @@ item_toc_jason_name,items,Item,,,Jason's Machete,,,,,,,,,,,,,,
 item_toc_jason_description,items,Item,,,"A quest to obtain Jason's Machete by collecting 100 Chrysanthemums",,,,,,,,,,,,,,
 questblock_toc_jason_name,blocks,Container,,,+Sealed Jason's Crate,,,,,,,,,,,,,,
 questblock_toc_jason_desc,blocks,Container,,,A sealed crate offered to citizens of the White River settlements who complete the Jason's Quest.,,,,,,,,,,,,,,
+
+questitem_coin_bambi,items,Item,,,"Tools of Citizenship - Jason's Machete",,,,,,,,,,,,,,
+questitem_coin_bambiDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, Citizen card to start the Jason's machete quest.",,,,,,,,,,,,,,
