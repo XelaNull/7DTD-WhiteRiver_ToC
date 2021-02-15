@@ -9,14 +9,14 @@
 			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
-			<!--<property name="offer_key" value="quest_toc_bambi_offer"/>-->
+			<property name="offer_key" value="quest_toc_bambi_offer"/>
 			<property name="statement_key" value="quest_toc_bambi_statement"/>
 			<property name="response_key" value="questdialog_toc_bambi"/>				
 			<property name="group_name_key" value="quest_toc_bambi_group"/>
 			<property name="shareable" value="false" />
 
 			<reward type="Quest" id="+Quest For Bambi's Killer Bow"/>
-			<reward type="Item" value="questitem_coin_bambi" count="1"/>	
+			<reward type="Item" id="questitem_coin_bambi" count="1"/>	
 		</quest>
 			<quest id="+Quest For Bambi's Killer Bow">
 				<property name="name_key" value="quest_toc_bambi_name"/>
@@ -85,14 +85,14 @@
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
-				<!--<property name="offer_key" value="vetquest_toc_bambi_offer"/>-->
+				<property name="offer_key" value="vetquest_toc_bambi_offer"/>
 				<property name="statement_key" value="vetquest_toc_bambi_statement"/>
 				<property name="response_key" value="vetquestdialog_toc_bambi"/>				
 				<property name="group_name_key" value="vetquest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
 	
 				<reward type="Quest" id="+Vet. Quest For Bambi's Killer Compound Bow"/>
-				<reward type="Item" value="questitem_vetcoin_bambi" count="1"/>	
+				<reward type="Item" id="questitem_vetcoin_bambi" count="1"/>	
 			</quest>
 			<quest id="+Vet. Quest For Bambi's Killer Compound Bow">
 				<property name="name_key" value="vetquest_toc_bambi_name"/>
@@ -160,14 +160,14 @@
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
-				<!--<property name="offer_key" value="elitequest_toc_bambi_offer"/>-->
+				<property name="offer_key" value="elitequest_toc_bambi_offer"/>
 				<property name="statement_key" value="elitequest_toc_bambi_statement"/>
 				<property name="response_key" value="elitequestdialog_toc_bambi"/>				
 				<property name="group_name_key" value="elitequest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
 
 				<reward type="Quest" id="+Forest Prince Bow Elite Quest"/>
-				<reward type="Item" value="questitem_elitecoin_bambi" count="1"/>	
+				<reward type="Item" id="questitem_elitecoin_bambi" count="1"/>	
 			</quest>			
 			<quest id="+Forest Prince Bow Elite Quest">
 				<property name="name_key" value="elitequest_toc_bambi_name"/>

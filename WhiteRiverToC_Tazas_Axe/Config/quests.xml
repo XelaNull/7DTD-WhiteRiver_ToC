@@ -8,14 +8,14 @@
 			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
-			<!--<property name="offer_key" value="quest_toc_taza_offer"/>-->
+			<property name="offer_key" value="quest_toc_taza_offer"/>
 			<property name="statement_key" value="quest_toc_taza_statement"/>
 			<property name="response_key" value="questdialog_toc_taza"/>				
 			<property name="group_name_key" value="quest_toc_taza_group"/>
 			<property name="shareable" value="false" />
 
 			<reward type="Quest" id="+Quest For Taza's Axe"/>
-			<reward type="Item" value="questitem_coin_taza" count="1"/>
+			<reward type="Item" id="questitem_coin_taza" count="1"/>
 		</quest>
 			<quest id="+Quest For Taza's Axe">
 				<property name="name_key" value="quest_toc_taza_name"/>
@@ -81,14 +81,14 @@
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="easy" />
-				<!--<property name="offer_key" value="vetquest_toc_taza_offer"/>-->
+				<property name="offer_key" value="vetquest_toc_taza_offer"/>
 				<property name="statement_key" value="vetquest_toc_taza_statement"/>
 				<property name="response_key" value="vetquestdialog_toc_taza"/>				
 				<property name="group_name_key" value="vetquest_toc_taza_group"/>
 				<property name="shareable" value="false" />						
 	
 				<reward type="Quest" id="+Vet. Quest For Taza's Axe"/>
-				<reward type="Item" value="questitem_vetcoin_taza" count="1"/>
+				<reward type="Item" id="questitem_vetcoin_taza" count="1"/>
 			</quest>
 			<quest id="+Vet. Quest For Taza's Axe">
 				<property name="name_key" value="vetquest_toc_taza_name"/>

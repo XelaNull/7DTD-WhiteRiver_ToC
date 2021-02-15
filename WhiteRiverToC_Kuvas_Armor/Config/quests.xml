@@ -10,14 +10,14 @@
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="medium" />
-				<!--<property name="offer_key" value="quest_toc_kuva_offer"/>-->
+				<property name="offer_key" value="quest_toc_kuva_offer"/>
 				<property name="statement_key" value="quest_toc_kuva_statement"/>
 				<property name="response_key" value="questdialog_toc_kuva"/>				
 				<property name="group_name_key" value="quest_toc_kuva_group"/>
 				<property name="shareable" value="false" />
 	
 				<reward type="Quest" id="+Quest For Kuva's Red Armor"/>
-				<reward type="Item" value="questitem_coin_kuva" count="1"/>
+				<reward type="Item" id="questitem_coin_kuva" count="1"/>
 			</quest>
 			<quest id="+Quest For Kuva's Red Armor">
 				<property name="name_key" value="quest_toc_kuva_name"/>

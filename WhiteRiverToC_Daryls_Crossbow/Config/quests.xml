@@ -8,14 +8,14 @@
 			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="easy" />
-			<!--<property name="offer_key" value="vetquest_toc_daryl_offer"/>-->
+			<property name="offer_key" value="vetquest_toc_daryl_offer"/>
 			<property name="statement_key" value="vetquest_toc_daryl_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_daryl"/>				
 			<property name="group_name_key" value="vetquest_toc_daryl_group"/>
 			<property name="shareable" value="false" />				
 
 			<reward type="Quest" id="+Veteran Quest For Daryl's Zombiekiller Crossbow"/>
-			<reward type="Item" value="questitem_vetcoin_daryl" count="1"/>
+			<reward type="Item" id="questitem_vetcoin_daryl" count="1"/>
 		</quest>
 			<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow">
 				<property name="name_key" value="vetquest_toc_daryl_name"/>
@@ -86,14 +86,14 @@
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
-				<!--<property name="offer_key" value="elitequest_toc_daryl_offer"/>-->
+				<property name="offer_key" value="elitequest_toc_daryl_offer"/>
 				<property name="statement_key" value="elitequest_toc_daryl_statement"/>
 				<property name="response_key" value="elitequestdialog_toc_daryl"/>				
 				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
 				<property name="shareable" value="false" />		
 	
 				<reward type="Quest" id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow"/>
-				<reward type="Item" value="questitem_elitecoin_daryl" count="1"/>
+				<reward type="Item" id="questitem_elitecoin_daryl" count="1"/>
 			</quest>
 			<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow">
 				<property name="name_key" value="elitequest_toc_daryl_name"/>

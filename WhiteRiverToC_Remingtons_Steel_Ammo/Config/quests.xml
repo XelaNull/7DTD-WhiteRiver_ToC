@@ -10,7 +10,7 @@
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
 				<property name="difficulty" value="hard" />
-				<!--<property name="offer_key" value="elitequest_toc_remington_offer"/>-->
+				<property name="offer_key" value="elitequest_toc_remington_offer"/>
 				<property name="statement_key" value="elitequest_toc_remington_statement"/>
 				<property name="response_key" value="elitequestdialog_toc_remington"/>				
 				<property name="group_name_key" value="elitequest_toc_remington_group"/>

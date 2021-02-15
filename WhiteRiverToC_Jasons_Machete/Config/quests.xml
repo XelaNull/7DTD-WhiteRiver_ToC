@@ -9,14 +9,14 @@
 			<property name="repeatable" value="true" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="veryeasy" />
-			<!--<property name="offer_key" value="quest_toc_jason_offer"/>-->
+			<property name="offer_key" value="quest_toc_jason_offer"/>
 			<property name="statement_key" value="quest_toc_jason_statement"/>
 			<property name="response_key" value="questdialog_toc_jason"/>				
 			<property name="group_name_key" value="quest_toc_jason_group"/>
 			<property name="shareable" value="false" />
 
 			<reward type="Quest" id="+Quest For Jason's Machete"/>
-			<reward type="Item" value="questitem_coin_jason" count="1"/>
+			<reward type="Item" id="questitem_coin_jason" count="1"/>
 		</quest>
 			<quest id="+Quest For Jason's Machete">
 				<property name="name_key" value="quest_toc_jason_name"/>

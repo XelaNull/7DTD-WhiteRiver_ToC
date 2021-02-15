@@ -8,14 +8,14 @@
 			<property name="repeatable" value="false" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
-			<!--<property name="offer_key" value="vetquest_toc_blackb_offer"/>-->
+			<property name="offer_key" value="vetquest_toc_blackb_offer"/>
 			<property name="statement_key" value="vetquest_toc_blackb_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_blackb"/>				
 			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 			<property name="shareable" value="false" />
 
 			<reward type="Quest" id="+Quest For Black Bart's Flaming Dig Tools"/>
-			<reward type="Item" value="questitem_vetcoin_blackb" count="1"/>
+			<reward type="Item" id="questitem_vetcoin_blackb" count="1"/>
 		</quest>
 			<quest id="+Quest For Black Bart's Flaming Dig Tools">
 				<property name="name_key" value="vetquest_toc_blackb_name"/>

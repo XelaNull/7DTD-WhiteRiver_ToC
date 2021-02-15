@@ -9,7 +9,7 @@
 			<property name="repeatable" value="false" />
 			<property name="category_key" value="quest" />
 			<property name="difficulty" value="medium" />
-			<!--<property name="offer_key" value="vetquest_toc_rickdanger_offer"/>-->
+			<property name="offer_key" value="vetquest_toc_rickdanger_offer"/>
 			<property name="statement_key" value="vetquest_toc_rickdanger_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_rickdanger"/>				
 			<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
