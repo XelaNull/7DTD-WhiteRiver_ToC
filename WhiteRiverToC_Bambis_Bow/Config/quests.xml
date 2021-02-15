@@ -58,7 +58,6 @@
 				<reward type="Item" id="ammoArrowFlaming" value="50-100" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-50" />	
 				<reward type="Exp" value="1000" />
-				<reward type="SkillPoints" value="1" />				
 			</quest>
 	
 	
@@ -117,7 +116,7 @@
 				<reward type="Item" id="ammoCrossbowBoltFlaming" value="100-150" />
 				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
 				<reward type="Exp" value="5000" />
-				<reward type="SkillPoints" value="2" />				
+				<reward type="SkillPoints" value="1" />				
 			</quest>
 			
 			
@@ -177,8 +176,8 @@
 				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="150-450" />
 				<reward type="Item" id="ammoCrossbowBoltFlaming" value="150-400" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-250" />	
-				<reward type="Exp" value="12000" />
-				<reward type="SkillPoints" value="3" />				
+				<reward type="Exp" value="5000" />
+				<reward type="SkillPoints" value="2" />				
 			</quest>
 	</append>
 </config>
