@@ -1,5 +1,21 @@
 <configs>
 	<append xpath="/items">
+		<item name="questitem_coin_bambi">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="2eb200"/> 
+		</item>
+		<item name="questitem_vetcoin_bambi">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="7fa6ff"/> 
+		</item>
+		<item name="questitem_elitecoin_bambi">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="5f40c4"/> 
+		</item>
+		
 		<item name="questitem_toc_bambi_name"> 
 			<property name="DescriptionKey" value="questitem_toc_bambi_desc"/>									
 			<property name="CustomIcon" value="challengeQuestMaster"/>

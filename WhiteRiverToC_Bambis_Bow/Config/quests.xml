@@ -22,6 +22,7 @@
 				<objective type="Craft" id="questwrit_toc_bambi_name" value="1" phase="2" />		
 	
 				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questitem_coin_bambi" value="1" />	
 			</quest>
 			<quest id="+Reward of Bambi's Killer Bow">
 				<property name="name_key" value="questreward_toc_bambi_name"/>
@@ -82,6 +83,7 @@
 				<objective type="Craft" id="vetquestwrit_toc_bambi_name" value="1" phase="2" />		
 
 				<reward type="Exp" value="5000" />
+				<reward type="Item" id="questitem_vetcoin_bambi" value="1" />	
 			</quest>		
 			<quest id="+Veteran Reward of Bambi's Killer Compound Bow">
 				<property name="name_key" value="vetquestreward_toc_bambi_name"/>
@@ -140,7 +142,8 @@
 				<objective type="Craft" id="elitequestwrit_toc_bambi_name" value="1" phase="2" />		
 
 				<reward type="Exp" value="12000" />
-				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	<!-- This makes the quest repeatable -->						
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+				<reward type="Item" id="questitem_elitecoin_bambi" value="1" />	
 			</quest>	
 			
 			<quest id="+Elite Reward of Forest Prince Compound Bow">
