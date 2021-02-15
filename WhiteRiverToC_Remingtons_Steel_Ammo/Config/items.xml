@@ -1,7 +1,13 @@
 <configs>
 	<append xpath="/items">	
 				
-		<!-- ELITE QUEST -->		
+		<!-- ELITE QUEST -->
+		<item name="questitem_elitecoin_remington">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="5f40c4"/> 
+		</item>
+				
 		<item name="elitequestitem_toc_remington_name"> 
 			<property name="DescriptionKey" value="elitequestitem_toc_remington_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
@@ -9,7 +15,7 @@
 			<property name="Extends" value="questMaster"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Elite Quest For Remington's Steel Ammo"/>
+				<property name="QuestGiven" value="+Elite Quest For Remington's Steel Ammo Start"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			

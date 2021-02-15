@@ -9,9 +9,8 @@
 			<ingredient name="ammo44MagnumBulletBall" count="1000"/>
 			<ingredient name="ammo9mmBulletBall" count="1000"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_elitecoin_remington" count="1"/>
 		</recipe>		
-		
-		
 		
 		<recipe name="resourceBulletCasingSteelRemington" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
 			<ingredient name="unit_iron" count="2"/>

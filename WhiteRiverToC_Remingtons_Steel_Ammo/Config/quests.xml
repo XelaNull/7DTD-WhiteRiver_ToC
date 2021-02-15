@@ -2,6 +2,23 @@
 	<append xpath="/quests" >
 
 			<!-- ELITE QUEST -->
+			<quest id="+Elite Quest For Remington's Steel Ammo Start">
+				<property name="name_key" value="elitequest_toc_remington_name"/>
+				<property name="subtitle_key" value="elitequest_toc_remington_subtitle"/>
+				<property name="description_key" value="elitequest_toc_remington_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<!--<property name="offer_key" value="elitequest_toc_remington_offer"/>-->
+				<property name="statement_key" value="elitequest_toc_remington_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_remington"/>				
+				<property name="group_name_key" value="elitequest_toc_remington_group"/>
+				<property name="shareable" value="false" />
+	
+				<reward type="Quest" id="+Elite Quest For Remington's Steel Ammo"/>
+				<reward type="Item" id="questitem_elitecoin_remington" value="1" />	<!-- This makes the quest repeatable -->						
+			</quest>
 			<quest id="+Elite Quest For Remington's Steel Ammo">
 				<property name="name_key" value="elitequest_toc_remington_name"/>
 				<property name="subtitle_key" value="elitequest_toc_remington_subtitle"/>
