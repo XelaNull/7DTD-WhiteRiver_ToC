@@ -18,7 +18,8 @@
 				<objective type="FetchKeep" id="meleeWpnBladeT0BoneKnife" value="10" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="questwrit_toc_dundee_name" value="1" phase="2" />		
-				<reward type="Exp" value="1500" />
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="questitem_coin_dundee" value="1" />				
 			</quest>
 			<quest id="+Reward of Dundee's Knife">
 				<property name="name_key" value="questreward_toc_dundee_name"/>
@@ -51,7 +52,6 @@
 				<reward type="Item" id="questblock_toc_dundeecrate_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="20-100" />	
 				<reward type="Exp" value="1500" />
-				<reward type="SkillPoints" value="1" />					
 			</quest>
 	</append>
 </config>

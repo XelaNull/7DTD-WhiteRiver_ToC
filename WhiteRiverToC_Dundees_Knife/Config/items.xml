@@ -1,6 +1,11 @@
 <configs>
 	<append xpath="/items">
-
+		<item name="questitem_coin_dundee">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="2eb200"/> 
+		</item>
+		
 		<item name="questitem_toc_dundee_name"> 
 			<property name="DescriptionKey" value="questitem_toc_dundee_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>

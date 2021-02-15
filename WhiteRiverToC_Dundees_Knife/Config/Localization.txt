@@ -20,3 +20,6 @@ item_toc_dundeeknife_name,items,Item,,,"Dundee's Hunting Knife",,,,,,,,,,,,,,
 item_toc_dundeeknife_desc,items,Item,,,"A knife from the most famous of crocodile hunters.",,,,,,,,,,,,,,
 questblock_toc_dundeecrate_name,blocks,Container,,,+Sealed Dundee's Crate,,,,,,,,,,,,,,
 questblock_toc_dundeecrate_desc,blocks,Container,,,A sealed crate offered to citizens of the White River settlements who complete the Dundee Knife Quest.,,,,,,,,,,,,,,
+
+questitem_coin_bambi,items,Item,,,"Tools of Citizenship - Dundee's Knife",,,,,,,,,,,,,,
+questitem_coin_bambiDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, Citizen card to start the Dundee's Knife quest.",,,,,,,,,,,,,,
