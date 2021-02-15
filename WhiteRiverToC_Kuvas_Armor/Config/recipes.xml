@@ -10,6 +10,7 @@
 			<ingredient name="apparelCoatLeatherPoncho" count="2"/>
       <ingredient name="modDyeRed" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_kuva" count="1"/>
 		</recipe>	
     
     

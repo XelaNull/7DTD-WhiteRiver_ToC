@@ -95,3 +95,5 @@ item_toc_kuvablue_pants_desc,items,Quest - Note,,,"Expertly-crafted leather pant
 item_toc_kuvablue_boots_name,items,Quest - Note,,,"Kuva's Blue Leather Boots",,,,,,,,,,,,,,
 item_toc_kuvablue_boots_desc,items,Quest - Note,,,"A pair of very quiet leather boots made from some secret ingredients.",,,,,,,,,,,,,,
 zombieKuvaAssistant,entityclasses,Entity,,,"Kuva's Zombie Assistant",,,,,,,,,,,,,,
+questitem_coin_kuva,items,Item,,,"Tools of Citizenship - Kuva's Armor",,,,,,,,,,,,,,
+questitem_coin_kuvaDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, Citizen card to start the Kuva's Armor quest.",,,,,,,,,,,,,,

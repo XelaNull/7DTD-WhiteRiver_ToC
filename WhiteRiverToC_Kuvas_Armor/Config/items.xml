@@ -1,6 +1,11 @@
 <configs>
 	<append xpath="/items">
-
+		<item name="questitem_coin_kuva">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="2eb200"/> 
+		</item>
+		
     <!-- Quest & Writ for Kuva's Red Armor -->
 		<item name="questitem_toc_kuva_name"> 
 			<property name="DescriptionKey" value="questitem_toc_kuva_desc"/>						

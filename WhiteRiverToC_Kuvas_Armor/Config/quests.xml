@@ -2,6 +2,23 @@
 	<append xpath="/quests" >
 
       <!-- Quest & Write for Kuva's Red Armor -->
+			<quest id="+Quest For Kuva's Red Armor Start">
+				<property name="name_key" value="quest_toc_kuva_name"/>
+				<property name="subtitle_key" value="quest_toc_kuva_subtitle"/>
+				<property name="description_key" value="quest_toc_kuva_desc"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<!--<property name="offer_key" value="quest_toc_kuva_offer"/>-->
+				<property name="statement_key" value="quest_toc_kuva_statement"/>
+				<property name="response_key" value="questdialog_toc_kuva"/>				
+				<property name="group_name_key" value="quest_toc_kuva_group"/>
+				<property name="shareable" value="false" />
+	
+				<reward type="Quest" id="+Quest For Kuva's Red Armor"/>
+				<reward type="Item" value="questitem_coin_kuva" count="1"/>
+			</quest>
 			<quest id="+Quest For Kuva's Red Armor">
 				<property name="name_key" value="quest_toc_kuva_name"/>
 				<property name="subtitle_key" value="quest_toc_kuva_subtitle"/>
@@ -53,8 +70,7 @@
 				<reward type="Item" id="item_toc_kuvared_chest_name" value="1-2" />
 				<reward type="Item" id="item_toc_kuvared_legs_name" value="1-2" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-50" />	
-				<reward type="Exp" value="1500" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="Exp" value="2500" />
         <reward type="Quest" id="+Discover Kuva's Red Armor"/>		
 			</quest>
       
@@ -94,7 +110,6 @@
 				<property name="group_name_key" value="quest_toc_disckuva_group"/>
 				<property name="shareable" value="false" />
         
-        <reward type="SkillPoints" value="1" />				
         <reward type="Exp" value="500" />
       </quest>
       
@@ -186,7 +201,7 @@
 				<property name="shareable" value="false" />
 
         <reward type="Exp" value="5000" />    
-        <reward type="SkillPoints" value="2" />				  
+        <reward type="SkillPoints" value="1" />				  
       </quest>   
     </append>
   </config>
