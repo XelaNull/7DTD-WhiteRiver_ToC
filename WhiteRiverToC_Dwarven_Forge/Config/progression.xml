@@ -1,0 +1,11 @@
+<Configs>
+  <!--
+  	<perk name="perkAdvancedEngineering">
+  		<effect_group>
+  			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="toolForgeCrucible,autoTurret"/>
+  -->
+  <append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='5']/@tags">,</append>
+  <!--<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="ingotBundleForgedSteel"/>
+  </append>-->
+</Configs>

@@ -1,0 +1,14 @@
+<Configs>
+  <append xpath="/xui/ruleset[@name='default']">
+    <window_group name="workstation_dwarvenForge" controller="XUiC_WorkstationWindowGroup">
+      <window name="windowCraftingList"/>
+      <window name="craftingInfoPanel"/>
+      <window name="windowCraftingQueue"/>
+      <window name="windowToolsDwarvenForge" />
+      <window name="windowDwarvenFuel" />
+      <window name="windowThreeForgeInput" />
+      <window name="windowThreeForgeOutput" />
+      <window name="windowNonPagingHeader" />
+    </window_group>
+  </append>
+</Configs>

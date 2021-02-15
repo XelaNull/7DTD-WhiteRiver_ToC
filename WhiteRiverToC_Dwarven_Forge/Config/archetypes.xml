@@ -1,0 +1,143 @@
+<config>
+	<append xpath="/archetypes">
+		<archetype name="Jane" male="false" hair_color="0,0,0" eye_color="200,200,255" skin_color="255,255,255" type="Player" stance="Like" voice_set="trader_jen">
+			<base_mesh_parts>
+				<part slot="head" layer="base" mesh="female_base_face">
+					<texture name="female_head_asian" color="skin"/>
+					<texture name="female_head_lipstick" color="255,0,0"/>
+					<texture name="female_head_wound" color="255,0,0"/>
+					<texture name="female_eyeshadow" color="0,0,0"/>
+					<texture name="female_eyeliner" color="0,0,0"/>
+					<texture name="female_hair_overlay" color="hair"/>
+					<texture name="female_eyebrow_round" color="83,58,58,255"/>
+				</part>
+				<part slot="head" layer="outer" mesh="female_hair_long">
+					<texture name="female_shaggy_hair" color="hair"/>
+				</part>
+
+				<part slot="eyes" layer="inner" mesh="female_base_eyelashes">
+					<texture name="female_eyelashes_thick" color="hair"/>
+				</part>
+				<part slot="head" layer="inner" mesh="female_shaggy_hair_hat">
+					<texture name="female_shaggy_hair" color="hair"/>
+				</part>
+				<part slot="eyes" layer="base" mesh="female_base_eyes">
+					<texture name="unisex_eye_shaded" color="eye"/>
+				</part>
+				<part slot="hands" layer="base" mesh="female_base_hands">
+					<texture name="female_hands" color="skin"/>
+					<texture name="female_torso_wound" color="255,1,1"/>
+				</part>
+				<part slot="hands" layer="inner" mesh="female_plant_fiber_gloves">
+					<texture name="unisex_eye" color="255,255,255"/>
+					<texture name="female_head_wound" color="255,0,0"/>
+					<texture name="male_torso_wound" color="255,1,1"/>
+					<texture name="female_torso_wound" color="255,1,1"/>
+				</part>
+				<part slot="chest" layer="base" mesh="female_base_chest">
+					<texture name="female_torso_wound" color="255,1,1"/>
+					<texture name="male_torso_wound" color="255,1,1"/>
+					<texture name="female_torso" color="skin"/>
+				</part>
+				
+				<part slot="chest" layer="outer" mesh="female_armor_heavy_bandit_chest">
+					<texture name="unisex_bandit_armor" color="255,255,255"/>
+					<texture name="female_torso_wound" color="255,1,1"/>
+					<texture name="male_torso_wound" color="255,1,1"/>
+				</part>
+			
+				<part slot="legs" layer="base" mesh="female_clothes_denim_pants">
+					<texture name="female_pants_01" color="196,167,129"/>
+				</part>
+				<part slot="legs" layer="outer" mesh="female_armor_heavy_bandit_legarmor">
+					<texture name="unisex_bandit_armor" color="255,255,255"/>
+					<texture name="male_torso_wound" color="255,1,1"/>
+					<texture name="female_torso_wound" color="255,1,1"/>
+				</part>
+				<part slot="feet" layer="base" mesh="female_base_feet">
+					<texture name="female_feet" color="skin"/>
+				</part>
+				<part slot="feet" layer="outer" mesh="female_goth_boots">
+					<texture name="unisex_goth_boots" color="150,75,0"/>
+				</part>
+			</base_mesh_parts>
+			<preview_mesh_parts>
+			</preview_mesh_parts>
+			<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
+				<gene name="neckUp_Down" value="5"/>
+				<gene name="neckLeft_Right" value="0"/>
+				<gene name="neckTiltLeft_Right" value="0"/>
+				<gene name="headUp_Down" value="0"/>
+				<gene name="headLeft_Right" value="0"/>
+				<gene name="headTiltLeft_Right" value="0"/>
+				<gene name="jawOpen_Close" value="0"/>
+				<gene name="jawForward_Back" value="0"/>
+				<gene name="jawLeft_Right" value="0"/>
+				<gene name="mouthLeft_Right" value="0"/>
+				<gene name="mouthUp_Down" value="0"/>
+				<gene name="mouthNarrow_Pucker" value="0"/>
+				<gene name="tongueOut" value="0"/>
+				<gene name="tongueCurl" value="0"/>
+				<gene name="tongueUp_Down" value="0"/>
+				<gene name="tongueLeft_Right" value="0"/>
+				<gene name="tongueWide_Narrow" value="0"/>
+				<gene name="leftMouthSmile_Frown" value="0"/>
+				<gene name="rightMouthSmile_Frown" value="0"/>
+				<gene name="leftLowerLipUp_Down" value="0"/>
+				<gene name="rightLowerLipUp_Down" value="0"/>
+				<gene name="leftUpperLipUp_Down" value="0"/>
+				<gene name="rightUpperLipUp_Down" value="0"/>
+				<gene name="leftCheekPuff_Squint" value="0"/>
+				<gene name="rightCheekPuff_Squint" value="0"/>
+				<gene name="noseSneer" value="0"/>
+				<gene name="leftEyeOpen_Close" value="0"/>
+				<gene name="rightEyeOpen_Close" value="0"/>
+				<gene name="leftEyeUp_Down" value="0"/>
+				<gene name="rightEyeUp_Down" value="0"/>
+				<gene name="leftEyeIn_Out" value="0"/>
+				<gene name="rightEyeIn_Out" value="0"/>
+				<gene name="browsIn" value="0"/>
+				<gene name="leftBrowUp_Down" value="0"/>
+				<gene name="rightBrowUp_Down" value="0"/>
+				<gene name="midBrowUp_Down" value="0"/>
+			</expression>
+			<dna>
+				<gene name="height" value="-1.2"/>
+				<gene name="headSize" value="2.9"/>
+				<gene name="headWidth" value="1.7"/>
+				<gene name="handsSize" value="0.7"/>
+				<gene name="feetSize" value="0.95"/>
+				<gene name="muscle" value=".7"/>
+				<gene name="weight" value=".7"/>
+				<gene name="gluteusSize" value=".5"/>
+				<gene name="earsSize" value="0.5"/>
+				<gene name="earsPosition" value="0.5"/>
+				<gene name="earsRotation" value="0.5"/>
+				<gene name="noseSize" value="0.5"/>
+				<gene name="noseCurve" value="0.5"/>
+				<gene name="noseWidth" value="0.5"/>
+				<gene name="noseInclination" value="0.5"/>
+				<gene name="nosePosition" value="0.5"/>
+				<gene name="nosePronounced" value="0.5"/>
+				<gene name="noseFlatten" value="0.5"/>
+				<gene name="chinSize" value="0.5"/>
+				<gene name="chinPronounced" value="0.5"/>
+				<gene name="chinPosition" value="0.5"/>
+				<gene name="mandibleSize" value="0.72"/>
+				<gene name="jawsSize" value="0.275"/>
+				<gene name="jawsPosition" value="0.59"/>
+				<gene name="cheekSize" value="0"/>
+				<gene name="cheekPosition" value="0"/>
+				<gene name="lowCheekPronounced" value="0"/>
+				<gene name="lowCheekPosition" value="0"/>
+				<gene name="foreheadSize" value="0"/>
+				<gene name="foreheadPosition" value="0"/>
+				<gene name="lipsSize" value="0.675"/>
+				<gene name="mouthSize" value="0.555"/>
+				<gene name="eyeRotation" value="0.5"/>
+				<gene name="eyeSize" value="0.44"/>
+				<gene name="breastSize" value="1.4"/>
+			</dna>
+		</archetype>
+	</append>
+</config>

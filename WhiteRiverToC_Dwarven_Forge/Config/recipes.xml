@@ -1,0 +1,44 @@
+<Configs>
+  <append xpath="/recipes">
+    <recipe name="dwarvenForge" count="1" tags="learnable">
+    	<ingredient name="resourceRockSmall" count="50"/>
+    	<ingredient name="resourceClayLump" count="60"/>
+    	<ingredient name="resourceLeather" count="10"/>
+    	<ingredient name="resourceDuctTape" count="3"/>
+    	<ingredient name="resourceDwarvenForgedSteel" count="3"/>
+    </recipe>
+    
+    <recipe name="ingotBundleForgedSteel" count="1" craft_time="1700" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering" craft_tool="toolDwarvenCrucible">
+    	<ingredient name="unit_iron" count="900"/>
+    	<ingredient name="unit_clay" count="450"/>
+    	<effect_group>
+    		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="unit_clay,unit_iron"/>
+    	</effect_group>
+    </recipe>
+    
+    <recipe name="ingotBundleForgedIron" count="1" craft_time="1700" material_based="true" craft_area="forge" craft_tool="toolDwarvenAnvil">
+      <ingredient name="unit_iron" count="850"/>
+      <ingredient name="unit_clay" count="420"/>
+      <effect_group>
+    		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_clay,unit_iron"/>
+    	</effect_group>
+    </recipe>
+    
+    <recipe name="trapBundleSteelSpikes" count="1" craft_time="9000" material_based="true" craft_area="forge" craft_tool="toolDwarvenTools">
+      <ingredient name="unit_iron" count="3400"/>
+      <ingredient name="unit_clay" count="1680"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="resourceForgedIron"/>
+      </effect_group>
+    </recipe>
+  </append>
+  
+  <!--
+  <append xpath="/recipes">
+  
+    <recipe name="questitem_dwarven_forge_name" count="1" craft_time = "1" craft_exp_gain="0" >
+      <ingredient name="questitem_toc_elitecard_name" count="1"/>
+    </recipe>
+  </append>
+-->
+</Configs>

@@ -1,0 +1,11 @@
+<Configs>
+
+  <append xpath="/materials">
+    <material id="MresourceDwarvenSteel">
+    	<property name="damage_category" value="metal"/>
+    	<property name="surface_category" value="metal"/>
+    	<property name="forge_category" value="iron"/>
+    	<property name="Experience" value="20"/>
+    </material>
+  </append>
+</Configs>
