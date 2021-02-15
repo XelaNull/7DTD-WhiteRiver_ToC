@@ -1,5 +1,22 @@
 <config>
 	<append xpath="/quests" >
+		<quest id="+Quest For Leon's Modded SMG Start">
+			<property name="name_key" value="quest_toc_leon_name"/>
+			<property name="subtitle_key" value="quest_toc_leon_subtitle"/>
+			<property name="description_key" value="quest_toc_leon_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<!--<property name="offer_key" value="quest_toc_leon_offer"/>-->
+			<property name="statement_key" value="quest_toc_leon_statement"/>
+			<property name="response_key" value="questdialog_toc_leon"/>				
+			<property name="group_name_key" value="quest_toc_leon_group"/>
+			<property name="shareable" value="false" />
+
+			<reward type="Quest" id="+Quest For Leon's Modded SMG"/>
+			<reward type="Item" value="questitem_coin_leon" count="1"/>	
+		</quest>
 			<quest id="+Quest For Leon's Modded SMG">
 				<property name="name_key" value="quest_toc_leon_name"/>
 				<property name="subtitle_key" value="quest_toc_leon_subtitle"/>
@@ -50,8 +67,7 @@
 				<reward type="Item" id="modGunForegrip" value="1" /> 				
 				<reward type="Item" id="ammo9mmBulletBall" value="50-150" />
 				<reward type="Item" id="pouredConcreteBlock" value="10-80" />	
-				<reward type="Exp" value="1000" />
-				<reward type="SkillPoints" value="1" />					
+				<reward type="Exp" value="1500" />
 			</quest>
 			
 			
@@ -109,7 +125,24 @@
 				<reward type="SkillPoints" value="1" />						
 			</quest>
 			
-			
+
+			<quest id="+Vet. Quest For Leon's Modded SMG Start">
+				<property name="name_key" value="vetquest_toc_leon_name"/>
+				<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
+				<property name="description_key" value="vetquest_toc_leon_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<!--<property name="offer_key" value="vetquest_toc_leon_offer"/>-->
+				<property name="statement_key" value="vetquest_toc_leon_statement"/>
+				<property name="response_key" value="vetquestdialog_toc_leon"/>				
+				<property name="group_name_key" value="vetquest_toc_leon_group"/>
+				<property name="shareable" value="false" />
+	
+				<reward type="Quest" id="+Vet. Quest For Leon's Modded SMG"/>
+				<reward type="Item" value="questitem_vetcoin_leon" count="1"/>
+			</quest>			
 			<quest id="+Vet. Quest For Leon's Modded SMG">
 				<property name="name_key" value="vetquest_toc_leon_name"/>
 				<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
@@ -160,7 +193,7 @@
 				<reward type="Item" id="questblock_toc_leoncrate_name" value="1" />
 				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
 				<reward type="Exp" value="5000" />
-				<reward type="SkillPoints" value="2" />						
+				<reward type="SkillPoints" value="1" />						
 			</quest>
 	</append>
 </config>

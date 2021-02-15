@@ -7,6 +7,7 @@
 		<recipe name="questwrit_toc_leon_name" count="1" craft_time = "90" craft_exp_gain="10000" >
 			<ingredient name="gunHandgunT1Pistol" count="2"/>
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_coin_leon" count="1"/>			
 		</recipe>	
 		<recipe name="questwrit_toc_repairleon_name" count="1" craft_time = "90" craft_exp_gain="10000" >
 			<ingredient name="questitem_toc_leondegsmg_name" count="1"/>
@@ -23,6 +24,7 @@
 			<ingredient name="gunHandgunT1Pistol" count="10"/>
 			<ingredient name="gunHandgunT3SMG5" count="5"/>		
 			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_vetcoin_leon" count="1"/>
 		</recipe>
 	</append>
 </configs>

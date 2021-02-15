@@ -1,5 +1,16 @@
 <configs>
 	<append xpath="/items">
+		<item name="questitem_coin_leon">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="2eb200"/> 
+		</item>
+		<item name="questitem_vetcoin_leon">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="7fa6ff"/> 
+		</item>
+		
 		<item name="questitem_toc_leon_name"> 
 			<property name="DescriptionKey" value="questitem_toc_leon_description"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
@@ -8,7 +19,7 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Quest For Leon's Modded SMG"/>
+				<property name="QuestGiven" value="+Quest For Leon's Modded SMG Start"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
@@ -72,7 +83,7 @@
 			<property name="Material" value="MresourcePaper"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Vet. Quest For Leon's Modded SMG"/>
+				<property name="QuestGiven" value="+Vet. Quest For Leon's Modded SMG Start"/>
 				<property name="Delay" value="0"/>
 			</property>			
 			<property name="Group" value="Special Items"/>			
