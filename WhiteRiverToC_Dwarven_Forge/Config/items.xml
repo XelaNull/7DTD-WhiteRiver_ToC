@@ -64,8 +64,8 @@
     	<property name="DisplayType" value="toolAnvil"/>
     	<property name="ItemTypeIcon" value="forge"/>
     	<effect_group tiered="false">
-    		<passive_effect name="CraftingTime" operation="perc_add" value="-.777"/>
-    		<display_value name="dCraftingTime" value=".77"/>
+    		<passive_effect name="CraftingTime" operation="perc_add" value="-.5"/>
+    		<display_value name="dCraftingTime" value=".5"/>
     	</effect_group>
     </item>
     
