@@ -101,8 +101,8 @@
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
 				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger,9mmGun"/>
-				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger,9mmGun"/>
+				<display_value name="dDegradationPerUse" value="1.6"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
@@ -136,8 +136,8 @@
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
 				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger"/>
-				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger"/>
+				<display_value name="dDegradationPerUse" value="1.6"/>
 			</effect_group>
 		</item>
 
@@ -157,8 +157,8 @@
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
 				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkDeadEye,perkMachineGunner"/>
-				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dDegradationPerUse" value="1.6"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
@@ -196,8 +196,8 @@
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
 				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger,9mmGun"/>
-				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger,9mmGun"/>
+				<display_value name="dDegradationPerUse" value="1.6"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
@@ -219,8 +219,8 @@
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
 				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkGunslinger"/>
-				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger"/>
+				<display_value name="dDegradationPerUse" value="1.6"/>
 			</effect_group>
 		</item>
 
@@ -240,8 +240,8 @@
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
 				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.2" tags="perkDeadEye,perkMachineGunner"/>
-				<display_value name="dDegradationPerUse" value="1.2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dDegradationPerUse" value="1.6"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
