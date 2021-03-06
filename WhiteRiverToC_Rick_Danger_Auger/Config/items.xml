@@ -199,14 +199,14 @@
 
 			<effect_group name="eliteitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="28.7" tags="perkMiner69r"/>
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="375" tags="perkMiner69r"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="3000,6000" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="26.7" tags="perkMiner69r"/>
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="2600,5000" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1.5" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.55" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.9" tags="perkMiner69r"/>
 
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 

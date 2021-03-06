@@ -18,8 +18,8 @@
 		</recipe>
 		<recipe name="elitequestwrit_toc_rickdanger_name" count="1" craft_time = "300" craft_exp_gain="20000" >
 			<ingredient name="vetitemreward_toc_rickdanger_name" count="2"/>
-			<ingredient name="meleeToolAxeT3ChainsawParts" count="25"/>
-			<ingredient name="meleeToolAllSteelParts" count="25"/>
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="35"/>
+			<ingredient name="meleeToolAllSteelParts" count="35"/>
 			<ingredient name="resourcePaper" count="1"/>
 			<ingredient name="questitem_elitecoin_rickdanger" count="1"/>
 		</recipe>			
