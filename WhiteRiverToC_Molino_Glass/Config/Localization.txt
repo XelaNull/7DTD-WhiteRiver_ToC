@@ -1,0 +1,90 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper,blocks,block,,,Molino Bulletproof Glass Block,,,,,
+questblock_toc_glassNonFuzzyBulletproofCTRPlate,blocks,block,,,Molino Bulletproof Glass Plate Centered,,,,,
+questblock_toc_glassNonFuzzyBulletproofPlate,blocks,block,,,Molino Bulletproof Glass Plate,,,,,
+questblock_toc_glassNonFuzzyBulletproofBlock,blocks,block,,,Molino Bulletproof Glass Block,,,,,
+questblock_toc_glassNonFuzzyBulletproofRamp,blocks,block,,,Molino Bulletproof Glass Ramp,,,,,
+questblock_toc_glassNonFuzzyBulletproofPlateCurved,blocks,block,,,Molino Bulletproof Glass Curved Plate,,,,,
+
+questblock_toc_bulletproofGlassGroup_desc,blocks,Block,,,"Molino's super-clear Bulletproof Glass can be repaired with broken glass to maintain the White River community member's safety from 'them'. Regardless of the apocalypse, you can always have clear shiny strong windows."
+
+vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,Quest,Quest Info,,,+Veteran Quest For Molino Bulletproof Glass,,,,,
+
+vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle,Quest,Quest Info,,,"Obtain a stack of Molino Bulletproof Glass by gathering 50 regular Bulletproof Glass",,,,,
+
+vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,Quest,Quest Info,,,"Gather 50 regular Bulletproof Glass to receive a stack of Molino Bulletproof Glass.",,,,,,,,,,,,,,
+
+vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer,Quest,Quest Info,,,"The White River community is in desperate need of standard Bulletproof Glass. Help provide to your community and in return receive a small stack of specialized super-clear Molino Bulletproof Glass. Gather 50 regular Bulletproof Glass.",,,,,
+
+vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement,Quest,Quest Info,,,"Help your community gather a substantial amount of Bulletproof Glass and receive the recipe to the specialized super-clear Molino Bulletproof Glass.",,,,,
+
+vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Molino Bulletproof Glass",,,,,
+
+vetquestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper,Quest,Dialogs,,,"Obtain a stack of Molino Bulletproof Glass by gathering 50 regular Bulletproof Glass",,,,,
+
+vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,Quest,Quest Info,,,Veteran Reward of Molino Bulletproof Glass,,,,,
+
+vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle,Quest,Quest Info,,,"Return to the Trader to obtain your stack of Molino Bulletproof Glass",,,,,
+
+vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,Quest,Quest Info,,,"Now that you have collected the needed items, return the trader to collect your reward.",,,,,
+
+vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer,Quest,Quest Info,,,"You've really made a name for yourself with your continued support of your community. Return to the trader to collect your reward of a stack of super-clear Molino Bulletproof Glass.",,,,,
+
+vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement,Quest,Quest Info,,,"Obtain the recipe to Molino Bulletproof Glass from the Trader",,,,,
+
+vetquestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper,Quest,Dialogs,,,"Return to the Trader to obtain your recipe to craft Molino Bulletproof Glass",,,,,
+
+elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,Quest,Quest Info,,,"Collect Standard Bulletproof Glass for White River Settlements",,,,,
+
+elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle,Quest,Quest Info,,,"Obtain the Recipe for Molino Bulletproof Glass by gathering 150 regular Bulletproof Glass",,,,,
+
+elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,Quest,Quest Info,,,"Gather 150 regular Bulletproof Glass to receive the recipe for super-clear Molino Bulletproof Glass.",,,,,
+
+elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer,Quest,Quest Info,,,"After handing out so much regular Bulletproof Glass, the White River community is in desperate need of more regular Bulletproof Glass to give to newer community members and volunteers. Help the community by providing 50 regular Bulletproof Glass and in return the Trader will offer you their new Molino Bulletproof Glass recipe. Gather 50 regular Bulletproof Glass.",,,,,
+
+elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement,Quest,Quest Info,,,"Help your community gather regular Bulletproof Glass to protect the town center and receive the recipe for super-clear Molino Bulletproof Glass.",,,,,
+
+elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group,Quest,Quest Info,,,"White River - Tools of Citizenship, Elite Quest for the Recipe to Molino Bulletproof Glass",,,,,
+
+elitequestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper,Quest,Dialogs,,,"Obtain Molino Bulletproof Glass' recipe by gathering 150 regular Bulletproof Glass",,,,,
+
+elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,Quest,Quest Info,,,Elite Reward of Molino Bulletproof Glass Recipe,,,,,
+
+elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle,Quest,Quest Info,,,Return to the Trader to obtain your recipe to Molino Bulletproof Glass,,,,,
+
+elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,Quest,Quest Info,,,"Return the trader to learn how to craft your own Molino Bulletproof Glass.",,,,,
+
+elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer,Quest,Quest Info,,,"You've really made a name for yourself with your continued support of your community. Return to the trader and learn how to craft your own Molino Bulletproof Glass.",,,,,
+
+elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement,Quest,Quest Info,,,Obtain your Molino Bulletproof Glass Recipe from the Trader,,,,,
+
+elitequestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper,Quest,Dialogs,,,"Return to the Trader to obtain your recipe to craft Molino Bulletproof Glass",,,,,
+
+vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,items,Quest - Note,,,+Molino Bulletproof Glass Veteran Quest,,,,,
+
+vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,items,Quest - Note,,,"Molino Bulletproof Glass is just as durable as regular Bulletproof Glass but is clear and can be repaired with only broken glass pieces.",,,,,
+
+vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,items,Quest - Note,,,+Veteran Writ Of Molino Bulletproof Glass,,,,,
+
+vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,items,Quest - Note,,,"This writ is evidence of your astounding level of support of your community in collecting regular Bulletproof Glass.",,,,,
+
+elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,items,Quest - Note,,,+Molino Bulletproof Glass Recipe Elite Quest,,,,,
+
+elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,items,Quest - Note,,,"Molino Bulletproof Glass is just as durable as regular Bulletproof Glass but is clear and can be repaired with only broken glass pieces.",,,,,
+
+elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name,items,Quest - Note,,,+Elite Writ Of Molino Bulletproof Glass Recipe,,,,,
+
+elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,items,Quest - Note,,,"Evidence of your substantial contribution to your community and for completion of the Molino Bulletproof Glass Elite Quest.",,,,,
+
+eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name,items,Item,,,Molino Bulletproof Glass Schematic,,,,,
+
+eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,items,Item,,,"A schematic that teaches you how to craft super-clear Molino Bulletproof Glass.",,,,,
+
+questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelper,items,Item,,,"Veteran Tools of Citizenship - Molino Bulletproof Glass",,,,,
+
+questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelperDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship Veteran's Citizen card to start the Molino Bulletproof Glass quest.",,,,,
+
+questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper,items,Item,,,"Elite Tools of Citizenship - Molino Bulletproof Glass",,,,,
+
+questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelperDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship Elite Citizen card to start the Molino Bulletproof Glass quest.",,,,,

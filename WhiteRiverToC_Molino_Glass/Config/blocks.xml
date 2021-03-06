@@ -1,0 +1,78 @@
+<configs>
+	<append xpath="/blocks">
+	
+<block name="questblock_toc_glassNonFuzzyBulletproofMaster">
+		<property name="DescriptionKey" value="questblock_toc_bulletproofGlassGroup_desc"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="MglassBulletproof"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="2"/>
+	<property name="Model" value="cube_glass"/>
+	<property name="Mesh" value="transparent"/>
+	<property name="Texture" value="285"/> <!-- Transparent Texture -->
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<!-- If the MATERIAL is set to collidable (default) then ALL collision types = TRUE. Including sight. -->
+	<property class="RepairItems"> <property name="resourceBrokenGlass" value="50"/> </property>	
+	<drop event="Harvest" name="resourceBrokenGlass" count="21" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="FilterTags" value="fbuilding,fdecor,fwindows"/>
+	<property name="SortOrder1" value="7080"/>
+	<property name="SortOrder2" value="0002"/>
+</block>
+
+<block name="questblock_toc_glassNonFuzzyBulletproofCTRPlate">
+	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="SortOrder2" value="0160"/> <!-- SortShape -->
+	<property name="ImposterExchange" value="imposterBlock" param1="170"/> <!-- ShadowColour -->
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="CustomIcon" value="glassBulletproofCTRPlate"/>
+</block>
+
+<block name="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper">
+	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofCTRPlate"/>
+	<property name="UnlockedBy" value="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name"/>
+	<property name="CustomIcon" value="glassBulletproofCTRPlate"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="questblock_toc_glassNonFuzzyBulletproofCTRPlate,questblock_toc_glassNonFuzzyBulletproofPlate,questblock_toc_glassNonFuzzyBulletproofBlock,questblock_toc_glassNonFuzzyBulletproofRamp,questblock_toc_glassNonFuzzyBulletproofPlateCurved"/>
+	<property name="Stacknumber" value="200"/>	
+</block>
+
+<block name="questblock_toc_glassNonFuzzyBulletproofPlate">
+	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+	<property name="Model" value="plate_glass"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="170"/> <!-- ShadowColour -->
+	<property name="Group" value="Building,advBuilding"/>
+    <property name="CustomIcon" value="glassBulletproofPlate"/>
+</block>
+
+<block name="questblock_toc_glassNonFuzzyBulletproofBlock">
+	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
+	<property name="CustomIcon" value="glassBulletproofMaster"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="170"/> <!-- ShadowColour -->
+</block>
+
+<block name="questblock_toc_glassNonFuzzyBulletproofRamp">
+	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+	<property name="Model" value="ramp_glass"/>
+	<property name="CustomIcon" value="glassBulletproofRamp"/>
+	<property name="ImposterExchange" value="imposterRamp" param1="170"/> <!-- ShadowColour -->
+</block>
+
+<block name="questblock_toc_glassNonFuzzyBulletproofPlateCurved">
+	<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
+	<property name="Model" value="plate_corner_round_1m"/>
+	<property name="CustomIcon" value="glassBulletproofPlateCurved"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="170"/> <!-- ShadowColour -->
+</block>
+
+	</append>
+	
+</configs>
