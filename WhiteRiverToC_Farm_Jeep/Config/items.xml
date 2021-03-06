@@ -1,0 +1,22 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="FarmJeep">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="vehicle4x4TruckPlaceable"/>
+			<property name="CustomIconTint" value="255,0,0"/>
+			<property name="Meshfile" value="#Entities/Vehicles?jeep_Prefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property class="Action1">
+			<property name="Vehicle" value="FarmJeep"/>
+			<property name="VehicleSize" value="2,2,3"/>
+		</property>
+		<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="4"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+		</effect_group>
+		</item>
+	
+	</append>
+</configs>

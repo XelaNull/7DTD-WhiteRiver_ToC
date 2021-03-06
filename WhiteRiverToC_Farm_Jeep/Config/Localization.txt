@@ -1,0 +1,2 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+FarmJeep,vehicles,vehicle,,,"Farm Jeep (Farm Friend)",,,,,,,,,,,,,,
