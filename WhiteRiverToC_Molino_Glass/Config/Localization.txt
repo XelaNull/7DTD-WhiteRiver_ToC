@@ -41,7 +41,7 @@ elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_subtitle,Quest,Quest I
 
 elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_description,Quest,Quest Info,,,"Gather 150 regular Bulletproof Glass to receive the recipe for super-clear Molino Bulletproof Glass.",,,,,
 
-elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer,Quest,Quest Info,,,"After handing out so much regular Bulletproof Glass, the White River community is in desperate need of more regular Bulletproof Glass to give to newer community members and volunteers. Help the community by providing 150 regular Bulletproof Glass and in return the Trader will offer you their new Molino Bulletproof Glass recipe. Gather 50 regular Bulletproof Glass.",,,,,
+elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer,Quest,Quest Info,,,"After handing out so much regular Bulletproof Glass, the White River community is in desperate need of more regular Bulletproof Glass to give to newer community members and volunteers. Help the community by providing 150 regular Bulletproof Glass and in return the Trader will offer you their new Molino Bulletproof Glass recipe. Gather 150 regular Bulletproof Glass.",,,,,
 
 elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement,Quest,Quest Info,,,"Help your community gather regular Bulletproof Glass to protect the town center and receive the recipe for super-clear Molino Bulletproof Glass.",,,,,
 
