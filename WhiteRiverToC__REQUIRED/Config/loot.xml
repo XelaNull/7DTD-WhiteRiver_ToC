@@ -82,10 +82,10 @@
 		</lootcontainer>
 	</append>		
 	
-	<insertBefore xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="ToCBooks">
 		</lootgroup>
-	</insertBefore>
+	</insertAfter>
 	
 	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
 		<item group="ToCBooks"/>
