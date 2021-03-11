@@ -30,7 +30,7 @@
 		<item name="vetquestwrit_toc_qwikcrete_name">
 			<property name="DescriptionKey" value="vetquestwrit_toc_qwikcrete_description"/>									
 			<property name="CustomIcon" value="questMaster"/> 
-			<property name="CustomIconTint" value="d4af37"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>

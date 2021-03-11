@@ -2,9 +2,9 @@
 
 ## 7 Days to Die : White River - Tools of Citizenship
 
-<https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a191/>
+<https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192>
 
-Tested with A19.4 (b3)
+Tested with A19.4 (b7)
 
 This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this Modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from.
 
@@ -60,6 +60,7 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - **Gupta's Bandages** - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages. Gupta's bandages and first aid kits are rumored to be better quality than you can find elsewhere.
 - **QwikCrete** - Learn the secret to making quick-drying concrete blocks!
 - **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement. Along with this, learn to craft an auto turret that takes the Remington 762 ammo.
+- **Molino Bulletproof Glass** - Exchange regular bulletproof glass blocks with the Trader and they will teach you how to create clear Molino-branded bulletproof glass.
 
 Nearly all quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward. Black Bart's dig tools are unique and the quest is designed NOT to be repeatable!
 
@@ -91,6 +92,7 @@ Nearly all quests are designed to be repeatable in case of loss of equipment or 
 - BlackBart's Dig Tools
 - Bambi's Compound Bow
 - Amelia Earhart's Gyrocopter (Wendigo)
+- Molino Bulletproof Glass Blocks
 
 ##### White River Elite Citizen Card (1000 Zombies)
 
@@ -100,6 +102,7 @@ Nearly all quests are designed to be repeatable in case of loss of equipment or 
 - Qwik-Crete Recipe
 - Daryl's Crossbow
 - Bambi's Compound Bow
+- Molino Bulletproof Glass Recipe
 
 ##### Quests Not Requiring Citizen Card
 
@@ -117,3 +120,4 @@ Download the ZIP file and extract. Open the ONE folder and you will find EIGHTEE
 - Aeyvi-Daro :: For quest text and testing assistance on all quests.
 - mr.devolver :: Big thanks for the help fixing the GoTo Trader, improving the quest integration with the trader, and helping seek out a path to add the quests to the Trader dialog!
 - SteamM0nkey :: Big thanks to helping dive into the cause of imbalances in items, missing stats, and for the idea of the Bear Claws quest.
+- arramus & Fuzzy Pug :: Fuzzy Pug requested a new quest be added that grants clear bulletproof glass. arramus was kind enough to do the heavy lifting to create the quest, I rebranded the naming of it but mostly kept the quest and code intact as was provided.
