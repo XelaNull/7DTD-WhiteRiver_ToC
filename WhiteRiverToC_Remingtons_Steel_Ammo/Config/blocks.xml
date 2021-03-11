@@ -6,7 +6,7 @@
 	
 	-->
 	
-	    <append xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']/@value">ammo9mmBulletSteelRemington</append>
+<!--	    <append xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']/@value">ammo9mmBulletSteelRemington</append>-->
 			
 			<append xpath="/blocks">
 				<block name="remingtonTurret">
