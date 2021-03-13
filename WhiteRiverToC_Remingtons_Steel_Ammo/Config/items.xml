@@ -111,6 +111,7 @@
 		<item name="ammoBundle9mmBulletSteelRemington">
 			<property name="Extends" value="ammoBundleMaster"/>
 			<property name="CustomIcon" value="ammo9mmBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
 			<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
 			<property name="EconomicValue" value="900"/>
 			<property name="DescriptionKey" value="ammoSteelCasedGroupDesc"/>
