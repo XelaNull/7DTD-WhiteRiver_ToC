@@ -121,3 +121,4 @@ Download the ZIP file and extract. Open the ONE folder and you will find EIGHTEE
 - mr.devolver :: Big thanks for the help fixing the GoTo Trader, improving the quest integration with the trader, and helping seek out a path to add the quests to the Trader dialog!
 - SteamM0nkey :: Big thanks to helping dive into the cause of imbalances in items, missing stats, and for the idea of the Bear Claws quest.
 - arramus & Fuzzy Pug :: Fuzzy Pug requested a new quest be added that grants clear bulletproof glass. arramus was kind enough to do the heavy lifting to create the quest, I rebranded the naming of it but mostly kept the quest and code intact as was provided.
+- sechsterversuch & Zeeeni :: BIG thanks to these two for providing a full german translation for every quest, and for testing the translations afterwards!
