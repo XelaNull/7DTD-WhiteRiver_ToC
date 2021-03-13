@@ -2,7 +2,7 @@
 
 ## 7 Days to Die : White River - Tools of Citizenship
 
-<https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192>
+<https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a194-with-df-multiple-languages>
 
 Tested with A19.4 (b7)
 
