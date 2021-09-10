@@ -93,4 +93,16 @@
 	<append xpath="/lootcontainers/lootgroup[@name='junk']">
 		<item group="ToCBooks"/>
 	</append>
+
+			
+	<append xpath="/lootcontainers/lootcontainer[@id='70']">
+		<item name="questitem_toc_citizencard_name" count="1" prob="50"/>
+	</append>
+	<append xpath="/lootcontainers/lootcontainer[@id='71']">
+		<item name="questitem_toc_citizencard_name" count="1" prob="50"/>
+	</append>		
+	<append xpath="/lootcontainers/lootcontainer[@id='73']">
+		<item name="questitem_toc_citizencard_name" count="1" prob="50"/>
+	</append>					
+	
 </configs>	

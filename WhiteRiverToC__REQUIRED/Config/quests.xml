@@ -19,9 +19,8 @@
 				<property name="response_key" value="questdialog_tools_of_citizenship"/>				
 				<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
 				<property name="shareable" value="false" />
-				
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="questitem_toc_declaration_name" value="1" phase="2" />
+
+				<reward type="Item" id="questitem_toc_declaration_name" value="1" />	
 			</quest>	
 			
 			<quest id="quest_whiteRiverCitizen3">
@@ -29,7 +28,7 @@
 				<property name="subtitle_key" value="quest_toc_10z_subtitle"/>
 				<property name="description_key" value="quest_toc_10z_description"/>
 				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
+				<property name="repeatable" value="false" />
 				<property name="category_key" value="challenge" />
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="quest_toc_10z_offer"/>
@@ -50,7 +49,7 @@
 					<property name="nav_object" value="return_to_trader" />										
 				</objective>	
 				
-				<reward type="SkillPoints" value="1" />	
+				<!--<reward type="SkillPoints" value="1" />	-->
 				<reward type="Exp" value="1000" />
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />		
 				<reward type="Item" id="questblock_toc_citizencrate_name" value="1" />
@@ -83,8 +82,9 @@
 				</objective>				
 				
 				<reward type="Exp" value="10000" />
-				<reward type="SkillPoints" value="2" />	
-				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />		
+				<reward type="SkillPoints" value="1" />	
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	
 				<reward type="Item" id="questblock_toc_citizencrate_name" value="2" />
 			</quest>
 			
@@ -111,7 +111,7 @@
 				<reward type="Quest" id="quest_reward_100z"/>
 				
 				<reward type="Exp" value="10000" />
-				<reward type="SkillPoints" value="3" />	
+				<reward type="SkillPoints" value="2" />	
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />		
 				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
 			</quest>
@@ -143,7 +143,7 @@
 				</objective>				
 				
 				<reward type="Exp" value="10000" />
-				<reward type="SkillPoints" value="3" />	
+				<reward type="SkillPoints" value="1" />	
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />		
 				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
 			</quest>	

@@ -1,16 +1,16 @@
-# XelaNull-7dtd-Modlets
+# 7DTD-WhiteRiver_ToC
 
 ## 7 Days to Die : White River - Tools of Citizenship
 
 <https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a194-with-df-multiple-languages>
 
-Tested with A19.4 (b7)
+Tested with A19.6
 
 This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this Modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from.
 
 **This modlet pack is only XML XPath modlets and only needs to be installed on the server!**
 
-The modlet collection provides multi-tier quest lines, first requiring the player to craft a +Declaration of Citizenship. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player can craft a new +Declaration of Citizenship to start the process over of becoming a White River citizen.
+The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may also randomly find a +White River Citizenship Card on zombie loot bags and can then start the process over of becoming a White River citizen.
 
 --
 
