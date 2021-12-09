@@ -1,6 +1,6 @@
 <configs>
-	
-	
+
+
 	<append xpath="/lootcontainers">
 		<lootgroup name="ToCgroupArmorT0" loot_quality_template="QLTemplateT0">
 			<item name="armorClothPants"/>
@@ -14,7 +14,7 @@
 			<item name="armorScrapLegs"/>
 			<item name="armorScrapBoots"/>
 		</lootgroup>
-		
+
 		<lootgroup name="ToCgroupWeaponsT2_Ranged">
 			<item group="groupWeaponsT2_DeadEye"/>
 			<item group="groupWeaponsT2_Demolitionist"/>
@@ -24,7 +24,7 @@
 			<item group="groupWeaponsT2_Gunslinger"/>
 			<item group="groupWeaponsT2_TurretsSyndrome"/>
 		</lootgroup>
-		
+
 		<lootgroup name="ToCgroupArmorT1" loot_quality_template="QLTemplateT1">
 			<item name="armorLeatherBoots"/>
 			<item name="armorLeatherPants"/>
@@ -37,7 +37,7 @@
 			<item name="armorIronLegs"/>
 			<item name="armorIronChest"/>
 		</lootgroup>
-		
+
 		<lootgroup name="ToCgroupArmorT2" loot_quality_template="QLTemplateT2">
 			<item name="armorMilitaryGloves"/>
 			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
@@ -51,58 +51,58 @@
 			<item name="armorSteelHelmet"/>
 			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
 		</lootgroup>
-		
+
 		<!-- This section is to ensure if the player drops the sealed citizen crate on the ground and destroys it, at least some items will drop from it -->
 		<!-- This section won't be used unless a line is uncommented in quests.xml -->
-		<lootcontainer id="365" count="5,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
+		<lootcontainer id="365" name="WhiteRiverToCRequired01" count="5,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="groupWeaponsT2_Gunslinger" prob=".75" count="1"/>
 			<item group="bicycleParts" count="0,1"/>
 			<item group="ToCgroupArmorT0" count="0,1"/>
-			<item group="ToCgroupArmorT1" count="0,1"/>
-			<item group="beverages"/>
+			<item group="seeds" count="0,1"/>
+			<item group="drinks"/>
 			<item group="groupAmmoRegular" prob=".3"/>
 		</lootcontainer>
-		
-		<lootcontainer id="366" count="8,10" size="6,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+
+		<lootcontainer id="366" name="WhiteRiverToCRequired02" count="8,10" size="6,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
-			<item group="bicycleParts" count="1,2"/>
+			<item group="seeds" count="1,2"/>
 			<item group="ToCgroupArmorT2" count="0,2"/>
 			<item group="ToCgroupWeaponsT2_Ranged" count="0,1"/>
-			<item group="beverages"/>
+			<item group="drinks"/>
 			<item group="groupAmmoRegular" prob=".6"/>
 		</lootcontainer>
-		
-		
+
+
 		<lootgroup name="randomEliteQuests">
 		</lootgroup>
 
-		
-		<lootcontainer id="390" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+
+		<lootcontainer id="390" name="WhiteRiverToCRequired03" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="randomEliteQuests" count="1" />
 		</lootcontainer>
-	</append>		
-	
+	</append>
+
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="ToCBooks">
 		</lootgroup>
 	</insertAfter>
-	
+
 	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
 		<item group="ToCBooks"/>
 	</append>
-	<append xpath="/lootcontainers/lootgroup[@name='junk']">
+	<append xpath="/lootcontainers/lootgroup[@name='groupJunk03']">
 		<item group="ToCBooks"/>
 	</append>
 
-			
+
 	<append xpath="/lootcontainers/lootcontainer[@id='70']">
 		<item name="questitem_toc_citizencard_name" count="1" prob="50"/>
 	</append>
 	<append xpath="/lootcontainers/lootcontainer[@id='71']">
 		<item name="questitem_toc_citizencard_name" count="1" prob="50"/>
-	</append>		
+	</append>
 	<append xpath="/lootcontainers/lootcontainer[@id='73']">
 		<item name="questitem_toc_citizencard_name" count="1" prob="50"/>
-	</append>					
-	
-</configs>	
+	</append>
+
+</configs>
