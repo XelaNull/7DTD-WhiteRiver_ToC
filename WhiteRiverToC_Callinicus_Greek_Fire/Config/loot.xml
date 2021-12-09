@@ -6,8 +6,8 @@
       <item name="item_toc_greekfire_name"/>
     </lootgroup>
   </insertAfter>
-      
+
   <append xpath="/lootcontainers/lootgroup[@name='ToCBooks']">
-    <item group="groupBooksGreekFire" count="1" prob="12"/>
+    <item group="groupBooksGreekFire" count="1" prob="4"/>
   </append>
 </configs>
