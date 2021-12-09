@@ -1,8 +1,8 @@
 <configs>
 	<append xpath="lootcontainers">
-		<lootcontainer id="358" count="3,5" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="358" name="WhiteRiverToCDeschain01" count="3,5" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="modMeleeT2" count="0,1" prob="0.5"/>
-			
+
 			<item name="crafteditem_toc_45lcsilver_name" count="12,96"/>
 			<item name="crafteditem_toc_45lcgold_name" count="6,48"/>
 
@@ -10,7 +10,7 @@
 			<item group="groupTreasureMaps" count="0,1" prob="0.1"/>
 		</lootcontainer>
 	</append>
-	
+
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
 		<lootgroup name="groupBooksDarkTower">
 			<item name="item_toc_desc_book1_name"/>
@@ -23,8 +23,8 @@
 			<item name="item_toc_desc_book8_name" prob=".1" />
 		</lootgroup>
 	</insertAfter>
-			
+
 	<append xpath="/lootcontainers/lootgroup[@name='ToCBooks']">
 		<item group="groupBooksDarkTower" count="1" prob="12"/>
 	</append>
-</configs>	
+</configs>

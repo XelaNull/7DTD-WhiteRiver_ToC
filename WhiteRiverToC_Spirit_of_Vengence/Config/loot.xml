@@ -1,13 +1,13 @@
 <configs>
 
 	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
-		<item name="questitem_spirit_vengeance_name" count="1"/>	
+		<item name="questitem_spirit_vengeance_name" count="1"/>
 	</append>
-		
+
 	<append xpath="/lootcontainers">
-		<lootcontainer id="831" count="0" size="9,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+		<lootcontainer id="831" name="WhiteRiverToCSpirit01" count="0" size="9,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
 		</lootcontainer>
-	</append> 
+	</append>
 
 	<!-- Add the Spirit of Vengeance Quest Starter to the Deschain's Crate -->
 	<append xpath="/lootcontainers/lootcontainer[@id='358']">
