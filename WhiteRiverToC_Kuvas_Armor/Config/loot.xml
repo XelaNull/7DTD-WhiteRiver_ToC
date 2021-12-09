@@ -1,14 +1,14 @@
 <configs>
 	<append xpath="lootcontainers">
 		<lootgroup name="kuvaSchematics" count="all">
-			<item name="schem_toc_kuvatallow_name" />	
+			<item name="schem_toc_kuvatallow_name" />
 			<item name="schem_toc_kuvaliner_name" />
 			<item name="schem_toc_kuvatwine_name" />
 			<item name="schem_toc_kuvasoles_name" />
 		</lootgroup>
-		<lootcontainer id="361" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="361" name="WhiteRiverToCKuva01" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="kuvaSchematics" count="1" />
 		</lootcontainer>
-	
-	</append>		
-</configs>	
+
+	</append>
+</configs>
