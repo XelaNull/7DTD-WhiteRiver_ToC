@@ -1,14 +1,14 @@
 <configs>
-	<append xpath="/blocks">	
+	<append xpath="/blocks">
 		<block name="questblock_toc_blackb_coffin">
-			<property name="Class" value="Loot"/>		
+			<property name="Class" value="Loot"/>
 			<property name="CustomIcon" value="cntChest01"/>
 			<property name="Material" value="MwoodReinforced"/>
 			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
-			<property name="Shape" value="Ext3dModel"/>
+			<property name="Shape" value="ModelEntity"/>
 			<property name="Texture" value="293"/>
 			<property name="Mesh" value="models"/>
-			<property name="Model" value="Furniture/coffin"/>
+			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -17,7 +17,6 @@
 			<drop event="Destroy" name="resourceWood" count="1,3"/>
 			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 			<property name="FilterTags" value="floot"/>
-		</block>		
-	</append>	
-</configs>	
-	
+		</block>
+	</append>
+</configs>
