@@ -1,11 +1,28 @@
 <configs>
 	<append xpath="/lootcontainers">
-		<lootcontainer id="367" name="WhiteRiverToCTaza01" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="modMeleeT2" count="0,1" prob="0.2"/>
-			<item group="perkBooks" count="0,1" prob="0.2"/>
-			<item group="groupAmmoRegular" count="1"/>
-			<item group="groupAmmoAdvanced" count="0,1"/>
-			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
-		</lootcontainer>
+		<lootgroup name="groupWhiteRiverTOCConcreteBlocks" count="all">
+			<item name="concreteShapes:VariantHelper" count="15,50"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCTazaAxe" loot_quality_template="questT2QualTemplate">
+			<item name="meleeToolRepairT0TazasStoneAxe"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCTazaAxeVeteran" loot_quality_template="questT3QualTemplate">
+			<item name="meleeToolRepairT0TazasStoneAxe"/>
+		</lootgroup>
+
+		<lootgroup name="groupToCQuestT2Food" count="all">
+			<item name="questToCRewardT2FoodBundle"/>
+		</lootgroup>
+
+		<lootgroup name="groupToCQuestT3Food" count="all">
+			<item name="questToCRewardT3FoodBundle"/>
+		</lootgroup>
+
+		<lootgroup name="groupToCQuestT4Food" count="all">
+			<item name="questToCRewardT4FoodBundle"/>
+		</lootgroup>
+
 	</append>
 </configs>

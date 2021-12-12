@@ -1,20 +1,73 @@
 <configs>
 	<append xpath="/items">
+
+		<item name="questToCRewardT2FoodBundle">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleFood"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardFoodBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="0"/>
+				<property name="Random_item" value="foodVegetableStew,foodMeatStew,foodBlueberryPie,foodSteakAndPotato,foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread"/>
+				<property name="Random_item_count" value="5,5,5,5,5,5,5"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+
+		<item name="questToCRewardT3FoodBundle">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleFood"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardFoodBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="0"/>
+				<property name="Random_item" value="foodShamChowder,foodHoboStew,foodChiliDog,foodFishTacos"/>
+				<property name="Random_item_count" value="5,5,5,5"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+
+		<item name="questToCRewardT4FoodBundle">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleFood"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardFoodBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="0"/>
+				<property name="Random_item" value="foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast"/>
+				<property name="Random_item_count" value="5,5,5,5"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+
+
 		<item name="questitem_coin_taza">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
 		<item name="questitem_vetcoin_taza">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="7fa6ff"/> 
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		
-		<item name="questitem_toc_taza_name"> 
-			<property name="DescriptionKey" value="questitem_toc_taza_description"/>						
+
+		<item name="questitem_toc_taza_name">
+			<property name="DescriptionKey" value="questitem_toc_taza_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -23,11 +76,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Taza's Axe Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_taza_name">
-			<property name="DescriptionKey" value="questwrit_toc_taza_description"/>						
+			<property name="DescriptionKey" value="questwrit_toc_taza_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -35,17 +88,17 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Taza's Axe"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>			
-		
-		<item name="vetquestitem_toc_taza_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_taza_description"/>									
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
+		<item name="vetquestitem_toc_taza_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_taza_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -54,12 +107,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Taza's Axe Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetquestwrit_toc_taza_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_taza_description"/>									
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="vetquestwrit_toc_taza_description"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -71,10 +124,10 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Taza's Axe"/>
 				<property name="Delay" value="0"/>
-			</property>		
+			</property>
 		</item>
 	</append>
-	
+
 	<!-- Code to Make Taza's Axe MORE Awesome -->
 	<!--
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage']/@value">26</set>
@@ -84,12 +137,12 @@
 		<effect_group name="meleeToolRepairT0TazasStoneAxe">
 			<passive_effect name="BlockRange" operation="base_set" value="3"/>
 	-->
-	
+
 	<!--
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute']/@value">120</set>
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss']/@value">7</set>
 -->
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockRange']/@value">4</set>
-	
-	
+
+
 </configs>
