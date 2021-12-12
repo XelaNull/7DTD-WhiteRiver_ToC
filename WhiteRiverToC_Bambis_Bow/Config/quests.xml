@@ -44,6 +44,7 @@
 				<property name="name_key" value="questreward_toc_bambi_name"/>
 				<property name="subtitle_key" value="questreward_toc_bambi_subtitle"/>
 				<property name="description_key" value="questreward_toc_bambi_description"/>
+				<property name="completion_key" value="quest_toc_bambi_completion"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
@@ -123,6 +124,7 @@
 				<property name="name_key" value="vetquestreward_toc_bambi_name"/>
 				<property name="subtitle_key" value="vetquestreward_toc_bambi_subtitle"/>
 				<property name="description_key" value="vetquestreward_toc_bambi_desc"/>
+				<property name="completion_key" value="quest_toc_bambi_completion"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
@@ -145,12 +147,13 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
-				<reward type="Exp" value="5000" />
+				<reward type="Exp" value="3000" />
 				<reward type="Item" id="casinoCoin" value="760"/>
 
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="LootItem" id="groupWhiteRiverTOCBambiVet" value="1" />
 				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCBowMods" value="1"/>
 
 				<reward type="LootItem" id="groupQuestToCBowMods" ischosen="true" value="1"/>
 				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
@@ -204,6 +207,7 @@
 				<property name="name_key" value="elitequestreward_toc_bambi_name"/>
 				<property name="subtitle_key" value="elitequestreward_toc_bambi_subtitle"/>
 				<property name="description_key" value="elitequestreward_toc_bambi_desc"/>
+				<property name="completion_key" value="quest_toc_bambi_completion"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
