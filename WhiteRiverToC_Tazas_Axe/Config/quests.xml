@@ -43,6 +43,7 @@
 				<property name="name_key" value="questreward_toc_taza_name"/>
 				<property name="subtitle_key" value="questreward_toc_taza_subtitle"/>
 				<property name="description_key" value="questreward_toc_taza_description"/>
+				<property name="completion_key" value="quest_toc_taza_completion"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
@@ -69,7 +70,7 @@
 
 				<reward type="Exp" value="1500"/>
 				<reward type="Item" id="casinoCoin" value="560"/>
-				
+
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" isfixed="true"/>
 			  <reward type="LootItem" id="groupWhiteRiverTOCTazaAxe" value="1" isfixed="true"/>
 
@@ -122,6 +123,7 @@
 				<property name="name_key" value="vetquest_toc_taza_name"/>
 				<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
 				<property name="description_key" value="vetquest_toc_taza_description"/>
+				<property name="completion_key" value="quest_toc_taza_completion"/>
 				<property name="icon" value="ui_game_symbol_map_trader" />
 				<property name="repeatable" value="true" />
 				<property name="category_key" value="quest" />
@@ -133,7 +135,6 @@
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn"/>
 				<property name="reward_choices_count" value="3" />
-
 
 				<objective type="Goto" value="5" phase="1"/>
 				<objective type="ReturnToNPC">

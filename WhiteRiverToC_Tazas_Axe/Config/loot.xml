@@ -1,8 +1,6 @@
 <configs>
 	<append xpath="/lootcontainers">
-		<lootgroup name="groupWhiteRiverTOCConcreteBlocks" count="all">
-			<item name="concreteShapes:VariantHelper" count="15,50"/>
-		</lootgroup>
+
 
 		<lootgroup name="groupWhiteRiverTOCTazaAxe" loot_quality_template="questT2QualTemplate">
 			<item name="meleeToolRepairT0TazasStoneAxe"/>
