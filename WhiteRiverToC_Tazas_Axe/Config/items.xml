@@ -12,7 +12,7 @@
 				<property name="Create_item" value="resourcePaper"/>
 				<property name="Create_item_count" value="0"/>
 				<property name="Random_item" value="foodVegetableStew,foodMeatStew,foodBlueberryPie,foodSteakAndPotato,foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread"/>
-				<property name="Random_item_count" value="5,5,5,5,5,5,5"/>
+				<property name="Random_item_count" value="1-5,1-5,1-5,1-5,1-5,1-5,1-5"/>
 				<property name="Random_count" value="1"/>
 				<property name="Unique_random_only" value="true"/>
 			</property>
@@ -29,8 +29,8 @@
 				<property name="Create_item" value="resourcePaper"/>
 				<property name="Create_item_count" value="0"/>
 				<property name="Random_item" value="foodShamChowder,foodHoboStew,foodChiliDog,foodFishTacos"/>
-				<property name="Random_item_count" value="5,5,5,5"/>
-				<property name="Random_count" value="1"/>
+				<property name="Random_item_count" value="1-5,1-5,1-5,1-5"/>
+				<property name="Random_count" value="2"/>
 				<property name="Unique_random_only" value="true"/>
 			</property>
 		</item>
@@ -46,8 +46,8 @@
 				<property name="Create_item" value="resourcePaper"/>
 				<property name="Create_item_count" value="0"/>
 				<property name="Random_item" value="foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast"/>
-				<property name="Random_item_count" value="5,5,5,5"/>
-				<property name="Random_count" value="1"/>
+				<property name="Random_item_count" value="1-5,1-5,1-5,1-5"/>
+				<property name="Random_count" value="2"/>
 				<property name="Unique_random_only" value="true"/>
 			</property>
 		</item>
