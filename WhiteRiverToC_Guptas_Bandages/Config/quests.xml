@@ -11,15 +11,15 @@
 				<property name="difficulty" value="veryeasy" />
 				<property name="offer_key" value="quest_toc_gupta_offer"/>
 				<property name="statement_key" value="quest_toc_gupta_statement"/>
-				<property name="response_key" value="questdialog_toc_gupta"/>				
+				<property name="response_key" value="questdialog_toc_gupta"/>
 				<property name="group_name_key" value="quest_toc_gupta_group"/>
 				<property name="shareable" value="false" />
-	
+
 				<objective type="Fetch" id="resourceCropAloeLeaf" value="10" phase="1" />
 				<objective type="Fetch" id="resourceCloth" value="10" phase="1" />
 				<objective type="Fetch" id="medicalBandage" value="10" phase="1" />
 				<property name="completiontype" value="TurnIn" />
-				
+
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
 					<property name="phase" value="2"/>
@@ -27,16 +27,16 @@
 				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />										
+					<property name="nav_object" value="return_to_trader" />
 				</objective>
-					
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="medicalGuptaFirstAidBandage" value="2-5" />
 				<reward type="Item" id="medicalGuptaFirstAidKit" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="10-40" />	
+				<reward type="Item" id="concreteShapesBlock" value="10-40" />
 				<reward type="Exp" value="2000" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="SkillPoints" value="1" />
 			</quest>
-					
+
 	</append>
 </config>

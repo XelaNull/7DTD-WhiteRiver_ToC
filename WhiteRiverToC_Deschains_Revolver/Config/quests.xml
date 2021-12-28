@@ -11,20 +11,20 @@
 				<property name="difficulty" value="hard" />
 				<property name="offer_key" value="quest_toc_desch_offer"/>
 				<property name="statement_key" value="quest_toc_desch_statement"/>
-				<property name="response_key" value="questdialog_toc_desch"/>				
-				<property name="group_name_key" value="quest_toc_desch_group"/>				
+				<property name="response_key" value="questdialog_toc_desch"/>
+				<property name="group_name_key" value="quest_toc_desch_group"/>
 				<property name="shareable" value="false" />
-	
+
 				<objective type="Craft" id="item_toc_desc_book14_name" value="1" phase="1" />
 				<objective type="Craft" id="item_toc_desc_book58_name" value="1" phase="1" />
 				<objective type="FetchKeep" id="secureDoorWooden" value="18" phase="2" />
 				<objective type="FetchKeep" id="vaultDoor01" value="1" phase="2" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="2" />
-				<objective type="Craft" id="questwrit_toc_desch_name" value="1" phase="3" />		
-				
+				<objective type="Craft" id="questwrit_toc_desch_name" value="1" phase="3" />
+
 				<reward type="Exp" value="2500" />
 			</quest>
-			
+
 			<quest id="+Reward of Deschain's Revolver">
 				<property name="name_key" value="questreward_toc_desch_name"/>
 				<property name="subtitle_key" value="questreward_toc_desch_subtitle"/>
@@ -35,11 +35,11 @@
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="questreward_toc_desch_offer"/>
 				<property name="statement_key" value="questreward_toc_desch_statement"/>
-				<property name="response_key" value="questrewarddialog_toc_desch"/>				
-				<property name="group_name_key" value="quest_toc_desch_group"/>	
+				<property name="response_key" value="questrewarddialog_toc_desch"/>
+				<property name="group_name_key" value="quest_toc_desch_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
-	
+
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
 					<property name="phase" value="2"/>
@@ -47,16 +47,16 @@
 				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />										
+					<property name="nav_object" value="return_to_trader" />
 				</objective>
-				
+
 				<reward type="Item" id="itemreward_toc_desch_name" value="2-6" />
 				<reward type="Item" id="questblock_toc_deschcrate_name" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="100-150" />	
+				<reward type="Item" id="concreteShapesBlock" value="100-150" />
 				<reward type="Item" id="itemreward_toc_deschhat_name" value="1" />
-				
+
 				<reward type="Exp" value="5000" />
-				<reward type="SkillPoints" value="2" />					
+				<reward type="SkillPoints" value="2" />
 			</quest>
 	</append>
 </config>

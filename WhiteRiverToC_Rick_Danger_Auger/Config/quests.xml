@@ -1,6 +1,6 @@
 <config>
 	<append xpath="/quests" >
-	
+
 		<quest id="+Veteran Quest For Rick Danger Auger Start">
 			<property name="name_key" value="vetquest_toc_rickdanger_name"/>
 			<property name="subtitle_key" value="vetquest_toc_rickdanger_subtitle"/>
@@ -11,10 +11,10 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="vetquest_toc_rickdanger_offer"/>
 			<property name="statement_key" value="vetquest_toc_rickdanger_statement"/>
-			<property name="response_key" value="vetquestdialog_toc_rickdanger"/>				
+			<property name="response_key" value="vetquestdialog_toc_rickdanger"/>
 			<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
 			<property name="shareable" value="false" />
-	
+
 			<reward type="Quest" id="+Veteran Quest For Rick Danger Auger"/>
 			<reward type="Item" id="questitem_vetcoin_rickdanger" value="1" />
 		</quest>
@@ -28,16 +28,16 @@
 				<property name="difficulty" value="medium" />
 				<property name="offer_key" value="vetquest_toc_rickdanger_offer"/>
 				<property name="statement_key" value="vetquest_toc_rickdanger_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_rickdanger"/>				
+				<property name="response_key" value="vetquestdialog_toc_rickdanger"/>
 				<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
-	
+
 				<objective type="FetchKeep" id="resourcePotassiumNitratePowder" value="2000" phase="1" />
 				<objective type="FetchKeep" id="resourceOilShale" value="2000" phase="1" />
 				<objective type="FetchKeep" id="meleeToolAxeT3ChainsawParts" value="25" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="vetquestwrit_toc_rickdanger_name" value="1" phase="2" />		
-	
+				<objective type="Craft" id="vetquestwrit_toc_rickdanger_name" value="1" phase="2" />
+
 				<reward type="Exp" value="2000" />
 			</quest>
 			<quest id="+Veteran Reward of Rick Danger Auger">
@@ -50,11 +50,11 @@
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="vetquestreward_toc_rickdanger_offer"/>
 				<property name="statement_key" value="vetquestreward_toc_rickdanger_statement"/>
-				<property name="response_key" value="vetquestrewarddialog_toc_rickdanger"/>				
+				<property name="response_key" value="vetquestrewarddialog_toc_rickdanger"/>
 				<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
-	
+
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
 					<property name="phase" value="2"/>
@@ -62,18 +62,18 @@
 				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />										
+					<property name="nav_object" value="return_to_trader" />
 				</objective>
-				
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="vetitemreward_toc_rickdanger_name" value="4-5" />
-				<reward type="Item" id="pouredConcreteBlock" value="10-50" />	
+				<reward type="Item" id="concreteShapesBlock" value="10-50" />
 				<reward type="Item" id="questblock_rickdanger_elitecrate_name" value="1" />
 				<reward type="Exp" value="3000" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="SkillPoints" value="1" />
 			</quest>
-	
-	
+
+
 			<!-- ELITE QUEST -->
 			<quest id="+Elite Quest For Rick Danger Improved Auger Start">
 				<property name="name_key" value="elitequest_toc_rickdanger_name"/>
@@ -85,14 +85,14 @@
 				<property name="difficulty" value="hard" />
 				<property name="offer_key" value="elitequest_toc_rickdanger_offer"/>
 				<property name="statement_key" value="elitequest_toc_rickdanger_statement"/>
-				<property name="response_key" value="elitequestdialog_toc_rickdanger"/>				
+				<property name="response_key" value="elitequestdialog_toc_rickdanger"/>
 				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
-	
+
 				<reward type="Item" id="questitem_elitecoin_rickdanger" value="1" />
 				<reward type="Quest" id="+Elite Quest For Rick Danger Improved Auger"/>
-			</quest>		
-			
+			</quest>
+
 			<quest id="+Elite Quest For Rick Danger Improved Auger">
 				<property name="name_key" value="elitequest_toc_rickdanger_name"/>
 				<property name="subtitle_key" value="elitequest_toc_rickdanger_subtitle"/>
@@ -103,20 +103,20 @@
 				<property name="difficulty" value="hard" />
 				<property name="offer_key" value="elitequest_toc_rickdanger_offer"/>
 				<property name="statement_key" value="elitequest_toc_rickdanger_statement"/>
-				<property name="response_key" value="elitequestdialog_toc_rickdanger"/>				
+				<property name="response_key" value="elitequestdialog_toc_rickdanger"/>
 				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
-	
+
 				<objective type="FetchKeep" id="vetitemreward_toc_rickdanger_name" value="2" phase="1" />
 				<objective type="FetchKeep" id="meleeToolAxeT3ChainsawParts" value="35" phase="1" />
 				<objective type="FetchKeep" id="meleeToolAllSteelParts" value="35" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="elitequestwrit_toc_rickdanger_name" value="1" phase="2" />		
+				<objective type="Craft" id="elitequestwrit_toc_rickdanger_name" value="1" phase="2" />
 
 				<reward type="Exp" value="3000" />
-				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />				
-			</quest>		
-			
+				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
+			</quest>
+
 			<quest id="+Elite Reward of Rick Danger Improved Auger">
 				<property name="name_key" value="elitequestreward_toc_rickdanger_name"/>
 				<property name="subtitle_key" value="elitequestreward_toc_rickdanger_subtitle"/>
@@ -127,11 +127,11 @@
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="elitequestreward_toc_rickdanger_offer"/>
 				<property name="statement_key" value="elitequestreward_toc_rickdanger_statement"/>
-				<property name="response_key" value="elitequestrewarddialog_toc_rickdanger"/>				
+				<property name="response_key" value="elitequestrewarddialog_toc_rickdanger"/>
 				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
-	
+
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
 					<property name="phase" value="2"/>
@@ -140,14 +140,14 @@
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
 				</objective>
-				
-				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />				
+
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
 				<reward type="Item" id="eliteitemreward_toc_rickdanger_name" value="6" />
 				<reward type="Item" id="questblock_rickdanger_elitecrate_name" value="2" />
-				<reward type="Item" id="pouredConcreteBlock" value="50-100" />	
+				<reward type="Item" id="concreteShapesBlock" value="50-100" />
 				<reward type="Exp" value="4000" />
-				<reward type="SkillPoints" value="1" />				
+				<reward type="SkillPoints" value="1" />
 			</quest>
-			
+
 	</append>
 </config>

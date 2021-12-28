@@ -10,7 +10,7 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="vetquest_toc_blackb_offer"/>
 			<property name="statement_key" value="vetquest_toc_blackb_statement"/>
-			<property name="response_key" value="vetquestdialog_toc_blackb"/>				
+			<property name="response_key" value="vetquestdialog_toc_blackb"/>
 			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 			<property name="shareable" value="false" />
 
@@ -27,15 +27,15 @@
 				<property name="difficulty" value="medium" />
 				<property name="offer_key" value="vetquest_toc_blackb_offer"/>
 				<property name="statement_key" value="vetquest_toc_blackb_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_blackb"/>				
+				<property name="response_key" value="vetquestdialog_toc_blackb"/>
 				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 				<property name="shareable" value="false" />
-	
+
 				<objective type="FetchKeep" id="resourceScrapIron" value="600" phase="1" />
 				<objective type="FetchKeep" id="meleeToolShovelT1IronShovel" value="1" phase="1" />
 				<objective type="FetchKeep" id="meleeToolPickT1IronPickaxe" value="1" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="vetquestwrit_toc_blackb_name" value="1" phase="2" />		
+				<objective type="Craft" id="vetquestwrit_toc_blackb_name" value="1" phase="2" />
 
 				<reward type="Exp" value="5000" />
 			</quest>
@@ -51,11 +51,11 @@
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="vetquestreward_toc_blackb_offer"/>
 				<property name="statement_key" value="vetquestreward_toc_blackb_statement"/>
-				<property name="response_key" value="vetquestrewarddialog_toc_blackb"/>				
+				<property name="response_key" value="vetquestrewarddialog_toc_blackb"/>
 				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
-	
+
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
 					<property name="phase" value="2"/>
@@ -63,15 +63,15 @@
 				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />					
+					<property name="nav_object" value="return_to_trader" />
 				</objective>
-				
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="vetquestmap_toc_blackb_name" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="20-70" />	
+				<reward type="Item" id="concreteShapesBlock" value="20-70" />
 				<reward type="Exp" value="1000" />
 			</quest>
-			
+
 			<quest id="map_Black_Bart">
 				<property name="name_key" value="vetquest_toc_blackb_map_name"/>
 				<property name="subtitle_key" value="vetquest_toc_blackb_map_subtitle"/>
@@ -82,10 +82,10 @@
 				<property name="difficulty" value="hard" />
 				<property name="offer_key" value="vetquest_toc_blackb_map_offer"/>
 				<property name="statement_key" value="vetquest_toc_blackb_map_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_blackb_map"/>				
+				<property name="response_key" value="vetquestdialog_toc_blackb_map"/>
 				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 				<property name="shareable" value="false" />
-		
+
 				<objective type="TreasureChest">
 					<property name="block" value="questblock_toc_blackb_coffin"/>
 					<property name="distance" value="500-1200"/>
@@ -97,10 +97,10 @@
 	        <property name="radius_reduction_sound" value="ui_radius_shrink" />
 				</objective>
 
-				<reward type="Quest" id="+Black Bart's Tool Challenge"/>	
+				<reward type="Quest" id="+Black Bart's Tool Challenge"/>
 				<reward type="Exp" value="5000"/>
-			</quest> 
-			
+			</quest>
+
 			<quest id="+Black Bart's Tool Challenge">
 				<property name="name_key" value="vetquest_toc_blackb_chlng_name"/>
 				<property name="subtitle_key" value="vetquest_toc_blackb_chlng_subtitle"/>
@@ -111,10 +111,10 @@
 				<property name="difficulty" value="hard" />
 				<property name="offer_key" value="vetquest_toc_blackb_chlng_offer"/>
 				<property name="statement_key" value="vetquest_toc_blackb_chlng_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_blackb_chlng"/>				
+				<property name="response_key" value="vetquestdialog_toc_blackb_chlng"/>
 				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 				<property name="shareable" value="false" />
-		
+
 				<action type="SpawnEnemy" id="zombieOldTimerRadiated" value="1" phase="1"/>
 				<objective type="ZombieKill" id="zombieOldTimerRadiated" value="1" phase="1"/>
 
@@ -123,8 +123,8 @@
 				<reward type="Item" id="questitem_toc_pickaxe_name" value="5-6" count="1"/>
 				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
 				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
-				<reward type="SkillPoints" value="1" />      
-			</quest> 
-					
+				<reward type="SkillPoints" value="1" />
+			</quest>
+
 	</append>
 </config>

@@ -1,5 +1,0 @@
-<configs>
-	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
-		<item name="elitequestitem_toc_remington_name" />
-	</append>
-</configs>	

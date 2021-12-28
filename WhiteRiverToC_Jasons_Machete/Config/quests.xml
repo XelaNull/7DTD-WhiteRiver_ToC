@@ -11,7 +11,7 @@
 			<property name="difficulty" value="veryeasy" />
 			<property name="offer_key" value="quest_toc_jason_offer"/>
 			<property name="statement_key" value="quest_toc_jason_statement"/>
-			<property name="response_key" value="questdialog_toc_jason"/>				
+			<property name="response_key" value="questdialog_toc_jason"/>
 			<property name="group_name_key" value="quest_toc_jason_group"/>
 			<property name="shareable" value="false" />
 
@@ -28,13 +28,13 @@
 				<property name="difficulty" value="veryeasy" />
 				<property name="offer_key" value="quest_toc_jason_offer"/>
 				<property name="statement_key" value="quest_toc_jason_statement"/>
-				<property name="response_key" value="questdialog_toc_jason"/>				
+				<property name="response_key" value="questdialog_toc_jason"/>
 				<property name="group_name_key" value="quest_toc_jason_group"/>
 				<property name="shareable" value="false" />
-	
+
 				<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="100" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="questwrit_toc_jason_name" value="1" phase="2" />		
+				<objective type="Craft" id="questwrit_toc_jason_name" value="1" phase="2" />
 
 				<reward type="Exp" value="1500" />
 			</quest>
@@ -48,11 +48,11 @@
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="questreward_toc_jason_offer"/>
 				<property name="statement_key" value="questreward_toc_jason_statement"/>
-				<property name="response_key" value="questrewarddialog_toc_jason"/>				
+				<property name="response_key" value="questrewarddialog_toc_jason"/>
 				<property name="group_name_key" value="quest_toc_jason_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
-	
+
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
 					<property name="phase" value="2"/>
@@ -60,13 +60,13 @@
 				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />										
+					<property name="nav_object" value="return_to_trader" />
 				</objective>
-				
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="item_toc_jason_name" value="2-6" />
 				<reward type="Item" id="questblock_toc_jason_name" value="1" />
-				<reward type="Item" id="pouredConcreteBlock" value="10-100" />	
+				<reward type="Item" id="concreteShapesBlock" value="10-100" />
 				<reward type="Exp" value="3000" />
 			</quest>
 	</append>

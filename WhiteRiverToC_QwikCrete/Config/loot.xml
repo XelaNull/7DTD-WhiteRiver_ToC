@@ -1,5 +1,0 @@
-<configs>
-	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
-		<item name="elitequestitem_toc_qwikcrete_name" />
-	</append>
-</configs>	

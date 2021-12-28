@@ -2,19 +2,18 @@
 	<append xpath="/blocks">
 		<!-- Create the blocks for the Sealed Citizen Crate & Citizen Crate items -->
 		<block name="questblock_rickdanger_elitecrate_name">
-			<property name="DescriptionKey" value="questblock_rickdanger_elitecrate_desc"/>						
+			<property name="DescriptionKey" value="questblock_rickdanger_elitecrate_desc"/>
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
 			<property name="Extends" value="cntShippingCrateHero"/>
 			<property name="DowngradeBlock" value="+Rick Danger's Crate"/>
 			<property name="FilterTags" value="floot"/>
-		</block>	
+		</block>
 		<block name="+Rick Danger's Crate">
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
-			<property name="LootList" value="368"/>
-		</block>	
-	</append>	
-</configs>	
-	
+			<property name="LootList" value="WhiteRiverToCRick01"/>
+		</block>
+	</append>
+</configs>

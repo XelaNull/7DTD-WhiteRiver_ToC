@@ -11,12 +11,12 @@
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="quest_toc_brass_offer"/>
 				<property name="statement_key" value="quest_toc_brass_statement"/>
-				<property name="response_key" value="questdialog_toc_brass"/>				
+				<property name="response_key" value="questdialog_toc_brass"/>
 				<property name="group_name_key" value="quest_toc_brass_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
-				
-				<objective type="Fetch" id="resourceScrapLead" value="2500" phase="1" />	
+
+				<objective type="Fetch" id="resourceScrapLead" value="2500" phase="1" />
 				<objective type="Goto" value="5" phase="2" />
 				<objective type="ReturnToNPC">
 					<property name="phase" value="3"/>
@@ -24,14 +24,14 @@
 				</objective>
 				<objective type="InteractWithNPC">
 					<property name="phase" value="4" />
-					<property name="nav_object" value="return_to_trader" />										
-				</objective>	
-				
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="resourceScrapBrass" value="500" />
-				<reward type="Item" id="pouredConcreteBlock" value="10-40" />	
+				<reward type="Item" id="concreteShapesBlock" value="10-40" />
 				<reward type="Exp" value="1000" />
 			</quest>
-					
+
 	</append>
 </config>
