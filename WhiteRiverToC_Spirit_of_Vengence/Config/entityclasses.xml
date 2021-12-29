@@ -1,15 +1,15 @@
 <configs>
 	<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,motorcycle</append>
 	<append xpath="/entity_classes">
-		<entity_class name="vehicle_spirit_hell_beast">
-			<property name="Tags" value="vehicle, vehicle_spirit_hell_beast"/>
+		<entity_class name="vehicleSpiritHellBeast"> <!--Snufkin -->
+			<property name="Tags" value="vehicle,vehiclespirithellbeast"/>
 			<property name="Class" value="EntityMotorcycle"/>
 			<property name="Parent" value="Cars"/>
 			<property name="Prefab" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="831"/>
+			<property name="LootListAlive" value="vehicleMotorcycle"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="Explosion.ParticleIndex" value="6"/>
 			<property name="Explosion.RadiusBlocks" value="4"/>
@@ -19,8 +19,11 @@
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
 			<property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+			<property name="NavObject" value="motorcycle" />
 		</entity_class>
 	</append>
+
+
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>
 			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffInjuryKnockdown01">
@@ -33,11 +36,7 @@
 			</triggered_effect>
 		</effect_group>
 	</append>
-	
-	
-	
-	
-	
+
 	<append xpath="/entity_classes">
 		<entity_class name="Spirit_Zombie_Template" extends="zombieTemplateMale">
 			<property name="EntityType" value="Zombie" />
@@ -65,8 +64,8 @@
 			<property name="HasDeathAnim" value="false" />
 			<property name="TimeStayAfterDeath" value="90" />
 		</entity_class>
-		
-		
+
+
 		<entity_class name="ZombieSpiritJuggernaut" extends="Spirit_Zombie_Template">
 			<property name="Archetype" value="SpiritJuggernaut" />
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>

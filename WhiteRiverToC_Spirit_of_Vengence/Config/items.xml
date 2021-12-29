@@ -1,8 +1,8 @@
 <configs>
 	<append xpath="/items">
-		<!-- ELITE QUEST -->		
-		<item name="questitem_spirit_vengeance_name"> 
-			<property name="DescriptionKey" value="questitem_spirit_vengeance_description"/>						
+		<!-- ELITE QUEST -->
+		<item name="questitem_spirit_vengeance_name">
+			<property name="DescriptionKey" value="questitem_spirit_vengeance_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -10,12 +10,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Quest Hell Beast Starter"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_spirit_vengeance_name">
-			<property name="DescriptionKey" value="questwrit_spirit_vengeance_description"/>						
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="questwrit_spirit_vengeance_description"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -27,28 +27,31 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Spirit of Vengeance Hell Beast"/>
 				<property name="Delay" value="0"/>
-			</property>		
+			</property>
 		</item>
-		
-		<item name="vehicle_spirit_hell_beast">
-			<property name="DescriptionKey" value="vehicle_spirit_hell_beast_description"/>						
+	</append>
+
+	<append xpath="/items">
+		<item name="vehicleSpiritHellBeastPlaceable"> <!--Snufkin -->
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
 			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
 			<property name="CustomIconTint" value="255,0,0"/>
-			<property name="Tags" value="vehicle_spirit_hell_beast"/>
 			<property name="Meshfile" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 			<property name="EconomicValue" value="10000"/>
 			<property class="Action1">
-				<property name="Vehicle" value="vehicle_spirit_hell_beast"/>
+				<property name="Vehicle" value="vehicleSpiritHellBeast"/>
 				<property name="VehicleSize" value="1.3, 1.9, 3"/>
 			</property>
-			<effect_group name="vehicle_spirit_hell_beast" tiered="false">
+			<effect_group name="vehicleMotorcyclePlaceable" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="4"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
 			</effect_group>
 		</item>
+	</append>
 
+	<append xpath="/items">
 		<item name="meleeHandSpiritJuggernaut">
 			<property name="Extends" value="meleeHandMaster"/>
 			<property name="CreativeMode" value="None"/>
@@ -116,18 +119,18 @@
 				<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
 			</effect_group>
 		</item>
-		
-		
+
+
 		<item name="medicalVengeanceFirstAidKit">
-			<property name="DescriptionKey" value="medicalVengeanceFirstAidKitDesc"/>	
-			<property name="CustomIcon" value="medicalFirstAidKit"/>					
+			<property name="DescriptionKey" value="medicalVengeanceFirstAidKitDesc"/>
+			<property name="CustomIcon" value="medicalFirstAidKit"/>
 			<property name="CustomIconTint" value="00ff00"/>
 			<property name="Extends" value="medicalBandage" />
 			<property name="DisplayType" value="medicalFirstAidKit"/>
 			<property name="Group" value="Science,Medical"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="Stacknumber" value="1"/>
-		
+
 			<property class="Action0">
 				<!-- <requirement name="StatCompare" stat="health" operation="lte" value="50"/> -->
 				<property name="Sound_start" value="player_firstAidKit"/>
@@ -135,25 +138,25 @@
 			<property class="Action1">
 				<property name="Sound_start" value="player_firstAidKit"/>
 			</property>
-		
+
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="5"/> <!-- X -->
 				<display_value name="dhealAbrasionMult" value="4"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInjuryAbrasionTreated">
 					<requirement name="HasBuff" buff="buffInjuryAbrasion"/>
 				</triggered_effect>
-		
+
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="140"/> <!-- X -->
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="14"/>
 				<display_value name="foodHealthAmount" value="180"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleeding"/><display_value name="dStopsBleeding" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLaceration"/><display_value name="dStopsLaceration" value="1"/>
-		
+
 				<!-- used on other -->
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healAbrasionMult" operation="set" value="5"/> <!-- X -->
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medicalRegHealthAmount" operation="add" value="200"/> <!-- X -->
-		
+
 				<!-- used on other, regular health per tick based on perkPhysician -->
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="12.2">
 					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="0"/></triggered_effect>
@@ -165,7 +168,7 @@
 					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/></triggered_effect>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="13.5">
 					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/></triggered_effect>
-		
+
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables"/>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffInjuryBleeding"/>
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" target="other" buff="buffLaceration"/>
@@ -189,7 +192,7 @@
 					<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
 				</triggered_effect>
 			</effect_group>
-		
+
 			<effect_group tiered="false">
 				<!-- medical XP secondary action gains -->
 				<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="2000"/>

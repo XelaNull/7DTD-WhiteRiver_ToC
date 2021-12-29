@@ -1,36 +1,43 @@
 <configs>
-
 	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
-		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="SpiritVehicleChecker">
-			<requirement name="NotHasBuff" buff="SpiritVehicleChecker"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="VehicleSpiritChecker">
+			<requirement name="NotHasBuff" buff="VehicleSpiritChecker"/>
 		</triggered_effect>
 	</append>
+
 	<append xpath="/buffs">
-		<buff name="SpiritVehicleChecker" hidden="true">
+		<buff name="VehicleSpiritChecker" hidden="true">
 			<stack_type value="replace"/>
 			<duration value="500"/>
 			<update_rate value=".1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="SpiritHellBeastBikeCheck">
-					<requirement name="EntityTagCompare" target="other" tags="vehicle_spirit_hell_beast"/>
-					<requirement name="NotHasBuff" target="other" buff="SpiritHellBeastBikeCheck"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="vehicleSpiritHellBeastBikeCheck">
+					<requirement name="EntityTagCompare" target="other" tags="vehiclespirithellbeast"/>
+					<requirement name="NotHasBuff" target="other" buff="vehicleSpiritHellBeastBikeCheck"/>
 				</triggered_effect>
 			</effect_group>
 		</buff>
-		<buff name="SpiritHellBeastBikeCheck" hidden="true">	
-			<stack_type value="ignore"/>			
+
+<!-- Motorcycles -->
+
+		<buff name="vehicleSpiritHellBeastBikeCheck" hidden="true">
+			<stack_type value="ignore"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true"  transform_path="headlight"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".15,.1,-.2" local_rotation="0,0,0" parent_transform="headlight"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/p_torch_wall" local_offset="-.15,.1,-.2" local_rotation="0,0,0" parent_transform="headlight"/>
 				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="headlight"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,.1,.5" local_rotation="45,0,0" parent_transform="Origin/handlebar_joint"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?weapon_bags_smallPrefab.prefab" local_offset="0,1.4,-0.8" local_rotation="0,0,0" parent_transform="Origin"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?weapon_bags_smallPrefab.prefab" local_offset="0,.85,-0.8" local_rotation="0,0,0" parent_transform="Origin"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset=".24,.58,0.9" local_rotation="90,0,0" parent_transform="Origin"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Spear/spear_steel_Prefab.prefab" local_offset="-.24,.58,0.9" local_rotation="90,0,0" parent_transform="Origin"/>
 			</effect_group>
 		</buff>
-		
+
+	</append>
+
+
+	<append xpath="/buffs">
 		<buff name="SpiritJuggernautDeco" hidden="true">
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab" local_offset="-.2,.13,0" local_rotation="180,0,0" parent_transform="LeftShoulder"/>
@@ -49,6 +56,7 @@
 				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" target="self"  particle="p_rocketLauncherFire" />
 			</effect_group>
 		</buff>
+
 		<buff name="buffSpiritJuggernaut" hidden="false">
 			<update_rate value="12"/>
 			<effect_group>
