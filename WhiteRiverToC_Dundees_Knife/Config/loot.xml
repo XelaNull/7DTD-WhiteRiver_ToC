@@ -1,6 +1,6 @@
 <configs>
 	<append xpath="lootcontainers">
-		<lootgroup name="groupWhiteRiverTOCDundee" loot_quality_template="questT3QualTemplate">
+		<lootgroup name="groupWhiteRiverTOCDundee" loot_quality_template="questT2QualTemplate">
 			<item name="item_toc_dundeeknife_name"/>
 		</lootgroup>
 	</append>
