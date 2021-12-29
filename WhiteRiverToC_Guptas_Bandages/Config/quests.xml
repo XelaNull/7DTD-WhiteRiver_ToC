@@ -19,6 +19,7 @@
 				<objective type="Fetch" id="resourceCloth" value="10" phase="1" />
 				<objective type="Fetch" id="medicalBandage" value="10" phase="1" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -30,12 +31,19 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="Item" id="medicalGuptaFirstAidBandage" value="2-5" />
 				<reward type="Item" id="medicalGuptaFirstAidKit" value="1" />
-				<reward type="Item" id="concreteShapesBlock" value="10-40" />
-				<reward type="Exp" value="2000" />
-				<reward type="SkillPoints" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCGuptas" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 			</quest>
 
 	</append>

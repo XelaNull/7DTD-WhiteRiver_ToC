@@ -53,6 +53,7 @@
 				<property name="group_name_key" value="vetquest_toc_daryl_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -64,16 +65,18 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="Item" id="vetitem_toc_daryl_name" value="3-4" />
-				<reward type="Item" id="modGunBowPolymerString" value="1" />
-				<reward type="Item" id="modGunMeleeTheHunter" value="1" />
-				<reward type="Item" id="plantedCorn1Schematic" value="1" />
-				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="100-250" />
-				<reward type="Item" id="ammoCrossbowBoltFlaming" value="100-250" />
-				<reward type="Item" id="concreteShapesBlock" value="10-50" />
-				<reward type="Item" id="questblock_toc_darylcrate_name" value="1" />
-				<reward type="Exp" value="1000" />
+				<reward type="LootItem" id="groupWhiteRiverTOCDarylVet" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDarylArrowsVet" value="1"/>
+
+				<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
 			</quest>
 
 
@@ -133,6 +136,7 @@
 				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -144,14 +148,18 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
+				<reward type="Exp" value="1000" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="Item" id="eliteitem_toc_daryl_name" value="5-6" />
-				<reward type="Item" id="questblock_toc_darylcrate_name" value="2" />
-				<reward type="Item" id="ammoCrossbowBoltSteelAP" value="100-250" />
-				<reward type="Item" id="ammoCrossbowBoltFlaming" value="100-250" />
-				<reward type="Item" id="concreteShapesBlock" value="50-100" />
-				<reward type="Exp" value="3000" />
-				<reward type="SkillPoints" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCDarylElite" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+				<reward type="LootItem" id="groupQuestToCDarylArrowsElite" value="1"/>
+
+				<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
 			</quest>
 
 	</append>

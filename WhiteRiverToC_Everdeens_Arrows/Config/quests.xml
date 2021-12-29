@@ -10,12 +10,12 @@
 			<property name="difficulty" value="easy" />
 			<property name="offer_key" value="quest_toc_earrows_offer"/>
 			<property name="statement_key" value="quest_toc_earrows_statement"/>
-			<property name="response_key" value="questdialog_toc_earrows"/>				
+			<property name="response_key" value="questdialog_toc_earrows"/>
 			<property name="group_name_key" value="quest_toc_earrows_group"/>
 			<property name="shareable" value="false" />
 
 			<reward type="Quest" id="+Quest For Everdeen's Arrows"/>
-			<reward type="Item" id="questitem_coin_everdeen" count="1"/>			
+			<reward type="Item" id="questitem_coin_everdeen" count="1"/>
 		</quest>
 		<quest id="+Quest For Everdeen's Arrows">
 			<property name="name_key" value="quest_toc_earrows_name"/>
@@ -27,14 +27,14 @@
 			<property name="difficulty" value="easy" />
 			<property name="offer_key" value="quest_toc_earrows_offer"/>
 			<property name="statement_key" value="quest_toc_earrows_statement"/>
-			<property name="response_key" value="questdialog_toc_earrows"/>				
+			<property name="response_key" value="questdialog_toc_earrows"/>
 			<property name="group_name_key" value="quest_toc_earrows_group"/>
 			<property name="shareable" value="false" />
 
 			<objective type="FetchKeep" id="foodCropCorn" value="3" phase="1" />
 			<objective type="FetchKeep" id="resourceCropSnowberryPlant" value="3" phase="1" />
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-			<objective type="Craft" id="writitem_toc_earrows_name" value="1" phase="2" />	
+			<objective type="Craft" id="writitem_toc_earrows_name" value="1" phase="2" />
 
 			<reward type="Exp" value="1500" />
 		</quest>
@@ -48,10 +48,11 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="questreward_toc_earrows_offer"/>
 			<property name="statement_key" value="questreward_toc_earrows_statement"/>
-			<property name="response_key" value="questrewarddialog_toc_earrows"/>				
+			<property name="response_key" value="questrewarddialog_toc_earrows"/>
 			<property name="group_name_key" value="quest_toc_earrows_group"/>
 			<property name="shareable" value="false" />
 			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="2" />
 
 			<objective type="Goto" value="5" phase="1" />
 			<objective type="ReturnToNPC">
@@ -60,15 +61,24 @@
 			</objective>
 			<objective type="InteractWithNPC">
 				<property name="phase" value="3" />
-				<property name="nav_object" value="return_to_trader" />									
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
-			
+
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="360"/>
+
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="item_toc_earrows_name" value="50-150"/>
-			<reward type="Item" id="foodVegetableStew" value="2-3" />
-			<reward type="Exp" value="3000" />
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenArrows" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenStew" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 		</quest>
-		
+
 		<quest id="+Quest For Everdeen's Bolts Start">
 			<property name="name_key" value="quest_toc_ebolts_name"/>
 			<property name="subtitle_key" value="quest_toc_ebolts_subtitle"/>
@@ -79,13 +89,13 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="quest_toc_ebolts_offer"/>
 			<property name="statement_key" value="quest_toc_ebolts_statement"/>
-			<property name="response_key" value="questdialog_toc_ebolts"/>				
+			<property name="response_key" value="questdialog_toc_ebolts"/>
 			<property name="group_name_key" value="quest_toc_ebolts_group"/>
 			<property name="shareable" value="false" />
 
 			<reward type="Quest" id="+Quest For Everdeen's Bolts"/>
-			<reward type="Item" id="questitem_coin_everdeen" count="1"/>		
-		</quest>						
+			<reward type="Item" id="questitem_coin_everdeen" count="1"/>
+		</quest>
 		<quest id="+Quest For Everdeen's Bolts">
 			<property name="name_key" value="quest_toc_ebolts_name"/>
 			<property name="subtitle_key" value="quest_toc_ebolts_subtitle"/>
@@ -96,16 +106,16 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="quest_toc_ebolts_offer"/>
 			<property name="statement_key" value="quest_toc_ebolts_statement"/>
-			<property name="response_key" value="questdialog_toc_ebolts"/>				
+			<property name="response_key" value="questdialog_toc_ebolts"/>
 			<property name="group_name_key" value="quest_toc_ebolts_group"/>
 			<property name="shareable" value="false" />
 
 			<objective type="FetchKeep" id="foodCropPotato" value="3" phase="1" />
 			<objective type="FetchKeep" id="foodCropMushrooms" value="3" phase="1" />
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-			<objective type="Craft" id="writitem_toc_ebolts_name" value="1" phase="2" />	
+			<objective type="Craft" id="writitem_toc_ebolts_name" value="1" phase="2" />
 			<reward type="Exp" value="1500" />
-		</quest>		
+		</quest>
 		<quest id="+Reward of Everdeen's Bolts">
 			<property name="name_key" value="questreward_toc_ebolts_name"/>
 			<property name="subtitle_key" value="questreward_toc_ebolts_subtitle"/>
@@ -116,10 +126,11 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="questreward_toc_ebolts_offer"/>
 			<property name="statement_key" value="questreward_toc_ebolts_statement"/>
-			<property name="response_key" value="questrewarddialog_toc_ebolts"/>				
+			<property name="response_key" value="questrewarddialog_toc_ebolts"/>
 			<property name="group_name_key" value="quest_toc_ebolts_group"/>
 			<property name="shareable" value="false" />
 			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="2" />
 
 			<objective type="Goto" value="5" phase="1" />
 			<objective type="ReturnToNPC">
@@ -128,13 +139,22 @@
 			</objective>
 			<objective type="InteractWithNPC">
 				<property name="phase" value="3" />
-				<property name="nav_object" value="return_to_trader" />									
+				<property name="nav_object" value="return_to_trader" />
 			</objective>
-			
+
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="360"/>
+
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="item_toc_ebolts_name" value="100-200"/>
-			<reward type="Item" id="foodVegetableStew" value="2-4" />
-			<reward type="Exp" value="3000" />
-		</quest>	
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenBolts" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCEverdeenStew" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
 	</append>
 </config>

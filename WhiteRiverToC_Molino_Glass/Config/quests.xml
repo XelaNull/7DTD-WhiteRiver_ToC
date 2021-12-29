@@ -11,7 +11,7 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
 			<property name="statement_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
-			<property name="response_key" value="vetquestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>				
+			<property name="response_key" value="vetquestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<property name="group_name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
 			<property name="shareable" value="false" />
 
@@ -28,16 +28,15 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
 			<property name="statement_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
-			<property name="response_key" value="vetquestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>				
+			<property name="response_key" value="vetquestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<property name="group_name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
 			<property name="shareable" value="false" />
 
 			<objective type="Fetch" id="glassBulletproofBlockVariantHelper" value="50" phase="1" />
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-			<objective type="Craft" id="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" value="1" phase="2" />			
+			<objective type="Craft" id="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" value="1" phase="2" />
 
-			<reward type="Exp" value="500" />
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->						
+			<reward type="Exp" value="250" />
 		</quest>
 		<quest id="+Veteran Reward of Non Fuzzy Bulletproof Glass">
 			<property name="name_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
@@ -49,10 +48,11 @@
 			<property name="difficulty" value="medium" />
 			<property name="offer_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
 			<property name="statement_key" value="vetquestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
-			<property name="response_key" value="vetquestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>				
+			<property name="response_key" value="vetquestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<property name="group_name_key" value="vetquest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
 			<property name="shareable" value="false" />
 			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3" />
 
 			<objective type="Goto" value="5" phase="1"/>
 			<objective type="ReturnToNPC">
@@ -62,13 +62,23 @@
 			<objective type="InteractWithNPC">
 				<property name="phase" value="3" />
 				<property name="nav_object" value="go_to_trader" />
-				<property name="use_closest" value="true" />				
+				<property name="use_closest" value="true" />
 			</objective>
-			
-			<reward type="Item" id="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" value="50-100" />
-			<reward type="Exp" value="1000" />
-		</quest>		
-		
+
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="560"/>
+
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
+			<reward type="LootItem" id="groupWhiteRiverTOCMolinoVet" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+
 
 		<quest id="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe Start">
 			<property name="name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
@@ -80,12 +90,12 @@
 			<property name="difficulty" value="hard" />
 			<property name="offer_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
 			<property name="statement_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
-			<property name="response_key" value="elitequestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>				
+			<property name="response_key" value="elitequestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<property name="group_name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
 			<property name="shareable" value="false" />
 
 			<reward type="Quest" id="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe"/>
-			<reward type="Item" id="questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper" value="1" />	<!-- This makes the quest repeatable -->						
+			<reward type="Item" id="questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper" value="1" />	<!-- This makes the quest repeatable -->
 		</quest>
 		<quest id="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe">
 			<property name="name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
@@ -97,16 +107,16 @@
 			<property name="difficulty" value="hard" />
 			<property name="offer_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
 			<property name="statement_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
-			<property name="response_key" value="elitequestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>				
+			<property name="response_key" value="elitequestdialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<property name="group_name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
 			<property name="shareable" value="false" />
 
 			<objective type="Fetch" id="glassBulletproofBlockVariantHelper" value="150" phase="1" />
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-			<objective type="Craft" id="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" value="1" phase="2" />			
-			
+			<objective type="Craft" id="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" value="1" phase="2" />
+
 			<reward type="Exp" value="1000" />
-			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	<!-- This makes the quest repeatable -->						
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	<!-- This makes the quest repeatable -->
 		</quest>
 		<quest id="+Elite Reward of Non Fuzzy Bulletproof Glass Recipe">
 			<property name="name_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
@@ -118,10 +128,11 @@
 			<property name="difficulty" value="easy" />
 			<property name="offer_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_offer"/>
 			<property name="statement_key" value="elitequestreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_statement"/>
-			<property name="response_key" value="elitequestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>				
+			<property name="response_key" value="elitequestrewarddialog_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<property name="group_name_key" value="elitequest_toc_glassNonFuzzyBulletproofBlockVariantHelper_group"/>
 			<property name="shareable" value="false" />
 			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3" />
 
 			<objective type="ReturnToNPC">
 				<property name="phase" value="1"/>
@@ -130,13 +141,22 @@
 			<objective type="InteractWithNPC">
 				<property name="phase" value="2" />
 				<property name="nav_object" value="go_to_trader" />
-				<property name="use_closest" value="true" />				
+				<property name="use_closest" value="true" />
 			</objective>
-			
-			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->						
-			<reward type="Item" id="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" value="20-50" />
+
+			<reward type="Exp" value="500" />
+			<reward type="Item" id="casinoCoin" value="560"/>
+
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
 			<reward type="Item" id="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name" value="1" />
-			<reward type="Exp" value="2000" />
-		</quest>			
+			<reward type="LootItem" id="groupWhiteRiverTOCMolinoElite" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
 	</append>
 </config>

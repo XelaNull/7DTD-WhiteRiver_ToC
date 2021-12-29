@@ -1,8 +1,17 @@
 <configs>
 	<append xpath="lootcontainers">
+
+		<lootgroup name="groupWhiteRiverTOCBlackBartShovel" loot_quality_template="questT3QualTemplate">
+			<item name="questitem_toc_shovel_name"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCBlackBartPickaxe" loot_quality_template="questT3QualTemplate">
+			<item name="questitem_toc_pickaxe_name"/>
+		</lootgroup>
+
 		<lootgroup name="blackbartTreasure" count="all">
-			<item name="resourceGoldNugget" count="25,75"/>
-			<item name="resourceSilverNugget" count="50,75"/>
+			<item name="resourceGoldNugget" count="15,45"/>
+			<item name="resourceSilverNugget" count="25,50"/>
 		</lootgroup>
 		<lootcontainer id="356" name="WhiteRiverToCBlackBart01" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="blackbartTreasure" count="1" />

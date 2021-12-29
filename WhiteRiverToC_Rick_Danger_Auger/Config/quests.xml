@@ -38,7 +38,7 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="vetquestwrit_toc_rickdanger_name" value="1" phase="2" />
 
-				<reward type="Exp" value="2000" />
+				<reward type="Exp" value="500" />
 			</quest>
 			<quest id="+Veteran Reward of Rick Danger Auger">
 				<property name="name_key" value="vetquestreward_toc_rickdanger_name"/>
@@ -54,6 +54,7 @@
 				<property name="group_name_key" value="vetquest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -65,12 +66,20 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
+				<reward type="Exp" value="1500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="Item" id="vetitemreward_toc_rickdanger_name" value="4-5" />
-				<reward type="Item" id="concreteShapesBlock" value="10-50" />
-				<reward type="Item" id="questblock_rickdanger_elitecrate_name" value="1" />
-				<reward type="Exp" value="3000" />
-				<reward type="SkillPoints" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCRickDangerVet" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+				<reward type="LootItem" id="groupQuestHelmetLightSchematic" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestForge" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" ischosen="true" value="1"/>
+
 			</quest>
 
 
@@ -113,7 +122,7 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="elitequestwrit_toc_rickdanger_name" value="1" phase="2" />
 
-				<reward type="Exp" value="3000" />
+				<reward type="Exp" value="500" />
 				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
 			</quest>
 
@@ -131,6 +140,7 @@
 				<property name="group_name_key" value="elitequest_toc_rickdanger_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -141,12 +151,21 @@
 					<property name="phase" value="3" />
 				</objective>
 
-				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
-				<reward type="Item" id="eliteitemreward_toc_rickdanger_name" value="6" />
-				<reward type="Item" id="questblock_rickdanger_elitecrate_name" value="2" />
-				<reward type="Item" id="concreteShapesBlock" value="50-100" />
-				<reward type="Exp" value="4000" />
 				<reward type="SkillPoints" value="1" />
+				<reward type="Exp" value="2000" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
+				<reward type="LootItem" id="groupWhiteRiverTOCRickDangerElite" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+				<reward type="LootItem" id="groupQuestHelmetLightSchematic" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestForge" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT3" ischosen="true" value="1"/>
+
 			</quest>
 
 	</append>

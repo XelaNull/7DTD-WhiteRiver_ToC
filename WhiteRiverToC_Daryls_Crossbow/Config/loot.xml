@@ -3,11 +3,32 @@
 		<item name="elitequestitem_toc_daryl_name" />
 	</append>
 	<append xpath="lootcontainers">
-		<lootcontainer id="357" name="WhiteRiverToCDaryl01" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="modGunT2" count="0,1" prob="0.2"/>
-			<item group="perkBooks" count="0,1" prob="0.2"/>
-			<item group="groupAmmoRegular" count="2"/>
-			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
-		</lootcontainer>
+		<lootgroup name="groupQuestToCDarylArrowsVet">
+			<item name="ammoCrossbowBoltIron" count="20,50"/>
+			<item name="ammoCrossbowBoltFlaming" count="20,30"/>
+			<item name="ammoCrossbowBoltStone" count="50,100"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestToCDarylArrowsElite">
+			<item name="ammoCrossbowBoltIron" count="50,150"/>
+			<item name="ammoCrossbowBoltSteelAP" count="50,75"/>
+			<item name="ammoCrossbowBoltFlaming" count="50,100"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestToCDarylBowMods">
+			<item name="modGunBowPolymerString"/>
+			<item name="modGunMeleeTheHunter"/>
+			<item name="modGunForegrip"/>
+			<item name="modGunBowArrowRest"/>
+			<item name="modGunCrippleEm"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCDarylVet" loot_quality_template="questT2QualTemplate">
+			<item name="vetitem_toc_daryl_name"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCDarylElite" loot_quality_template="questT3QualTemplate">
+			<item name="eliteitem_toc_daryl_name"/>
+		</lootgroup>
 	</append>
 </configs>

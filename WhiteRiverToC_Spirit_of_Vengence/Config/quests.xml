@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/quests" >
 		<!-- ELITE QUEST -->
-		
+
 		<quest id="+Elite Quest Hell Beast Starter">
 			<property name="name_key" value="quest_spiritstart_name"/>
 			<property name="subtitle_key" value="quest_spiritstart_subtitle"/>
@@ -17,11 +17,11 @@
 			<property name="shareable" value="false" />
 
 			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
-			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3" />		
-			<reward type="Quest" id="+Elite Quest For Spirit of Vengeance Hell Beast"/>			
-		</quest>		
+			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3" />
+			<reward type="Quest" id="+Elite Quest For Spirit of Vengeance Hell Beast"/>
+		</quest>
 
-		
+
 		<quest id="+Elite Quest For Spirit of Vengeance Hell Beast">
 			<property name="name_key" value="quest_spirit_vengeance_name"/>
 			<property name="subtitle_key" value="quest_spirit_vengeance_subtitle"/>
@@ -53,12 +53,11 @@
 			<action type="SpawnEnemy" id="animalWolf" value="4" phase="3"/>
 
 			<objective type="ZombieKill" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
-			
+
 			<reward type="Item" id="questwrit_spirit_vengeance_name" value="1" />
-			<reward type="Exp" value="15000" />
-			<reward type="SkillPoints" value="2" />				
-		</quest>		
-		
+			<reward type="Exp" value="500" />
+		</quest>
+
 		<quest id="+Elite Reward of Spirit of Vengeance Hell Beast">
 			<property name="name_key" value="questreward_spirit_vengeance_name"/>
 			<property name="subtitle_key" value="questreward_spirit_vengeance_subtitle"/>
@@ -71,8 +70,9 @@
 			<property name="statement_key" value="questreward_spirit_vengeance_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
 			<property name="group_name_key" value="questreward_spirit_vengeance_group"/>
-			<property name="shareable" value="false" />						
+			<property name="shareable" value="false" />
 			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="3" />
 
 			<objective type="Goto" value="5" phase="1" />
 			<objective type="ReturnToNPC">
@@ -82,11 +82,22 @@
 			<objective type="InteractWithNPC">
 				<property name="phase" value="3" />
 			</objective>
-			
-			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />				
+
+			<reward type="SkillPoints" value="1" />
+			<reward type="Exp" value="1500" />
+			<reward type="Item" id="casinoCoin" value="560"/>
+
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
 			<reward type="Item" id="vehicle_spirit_hell_beast" value="1" />
-			<reward type="Exp" value="10000" />
-			<reward type="SkillPoints" value="3" />				
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT3" ischosen="true" value="1"/>
+
 		</quest>
 	</append>
 </config>

@@ -1,10 +1,7 @@
 <configs>
 	<append xpath="lootcontainers">
-		<lootcontainer id="360" name="WhiteRiverToCJason01" count="3,6" size="5,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="modGunT2" count="0,1" prob="0.2"/>
-			<item group="perkBooks" count="0,1" prob="0.4"/>
-			<item group="groupAmmoRegular" count="1"/>
-			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
-		</lootcontainer>
+		<lootgroup name="groupWhiteRiverTOCJason" loot_quality_template="questT3QualTemplate">
+			<item name="item_toc_jason_name"/>
+		</lootgroup>
 	</append>
 </configs>

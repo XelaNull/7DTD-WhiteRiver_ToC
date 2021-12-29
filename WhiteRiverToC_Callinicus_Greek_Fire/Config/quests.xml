@@ -1,6 +1,6 @@
 <config>
 	<append xpath="/quests" >
-		
+
 			<quest id="+Callinicus Greek Fire">
 				<property name="name_key" value="quest_toc_greekfire_name"/>
 				<property name="subtitle_key" value="quest_toc_greekfire_subtitle"/>
@@ -11,12 +11,12 @@
 				<property name="difficulty" value="easy" />
 				<property name="offer_key" value="quest_toc_greekfire_offer"/>
 				<property name="statement_key" value="quest_toc_greekfire_statement"/>
-				<property name="response_key" value="questdialog_toc_greekfire"/>				
-				<property name="group_name_key" value="quest_toc_greekfire_group"/>	
+				<property name="response_key" value="questdialog_toc_greekfire"/>
+				<property name="group_name_key" value="quest_toc_greekfire_group"/>
 				<property name="shareable" value="false" />
-				
+
 				<reward type="Item" id="item_toc_greekfire_schem_name" value="1" />
-				<reward type="Exp" value="5000" />
+				<reward type="Exp" value="1000" />
 			</quest>
 	</append>
 </config>

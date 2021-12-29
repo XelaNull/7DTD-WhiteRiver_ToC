@@ -60,6 +60,7 @@
 			<property name="group_name_key" value="quest_toc_amelia_group"/>
 			<property name="shareable" value="false" />
 			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="1" />
 
 			<objective type="Goto" value="5" phase="1" />
 			<objective type="ReturnToNPC">
@@ -71,7 +72,7 @@
 				<property name="nav_object" value="return_to_trader" />
 			</objective>
 
-			<reward type="Item" id="questitem_toc_amelia1map_name" value="1" />
+			<reward type="Item" id="questitem_toc_amelia1map_name" ischosen="true" value="1" />
 			<reward type="Exp" value="1000" />
 		</quest>
 
@@ -174,8 +175,10 @@
 				<property name="nav_object" value="rally" />
 			</objective>
 
-			<objective type="BlockPlace" id="woodFrameBlock" value="150" phase="3"/>
-			<objective type="BlockUpgrade" id="woodFrameBlock" value="100" phase="4"/>
+
+			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="150" phase="3"/>
+			<objective type="BlockUpgrade" id="frameShapes" value="100" phase="4"/>
+			
 			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="5"/>
 			<action type="SpawnEnemy" id="animalMountainLion" value="4" phase="5"/>
 			<objective type="ZombieKill" id="zombieToCWendigo" value="1" phase="5"/>

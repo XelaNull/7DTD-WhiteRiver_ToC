@@ -1,10 +1,19 @@
 <configs>
 	<append xpath="/lootcontainers">
-		<lootcontainer id="362" name="WhiteRiverToCLeon01" count="5,12" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="modGunT2" count="0,1" prob="0.2"/>
-			<item group="perkBooks" count="1,2" prob="0.3"/>
-			<item group="groupQuestAmmo" count="2"/>
-			<item group="groupTreasureMaps" count="0,1" prob="0.05"/>
-		</lootcontainer>
+		<lootgroup name="groupWhiteRiverTOCLeonDegraded" loot_quality_template="questT1QualTemplate">
+			<item name="questitem_toc_leondegsmg_name"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCLeon" loot_quality_template="questT2QualTemplate">
+			<item name="questitem_toc_leonsmg_name"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCLeonAmmo" loot_quality_template="questT2QualTemplate">
+			<item name="ammo9mmBulletBall" count="50,100"/>
+		</lootgroup>
+
+		<lootgroup name="groupWhiteRiverTOCLeonVet" loot_quality_template="questT3QualTemplate">
+			<item name="questitem_toc_leonsmg_name"/>
+		</lootgroup>
 	</append>
 </configs>

@@ -3,18 +3,18 @@
 		<item name="questitem_coin_leon">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
 		<item name="questitem_vetcoin_leon">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="7fa6ff"/> 
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		
-		<item name="questitem_toc_leon_name"> 
-			<property name="DescriptionKey" value="questitem_toc_leon_description"/>						
+
+		<item name="questitem_toc_leon_name">
+			<property name="DescriptionKey" value="questitem_toc_leon_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -23,11 +23,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Leon's Modded SMG Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_leon_name">
-			<property name="DescriptionKey" value="questwrit_toc_leon_description"/>									
+			<property name="DescriptionKey" value="questwrit_toc_leon_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -35,17 +35,17 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Leon's Degraded SMG"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>		
-		
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
 		<item name="questitem_toc_repairleon_name">
-			<property name="DescriptionKey" value="questitem_toc_repairleon_desc"/>										
+			<property name="DescriptionKey" value="questitem_toc_repairleon_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="d8006c"/>
 			<property name="Extends" value="questMaster"/>
@@ -56,10 +56,10 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest To Repair Leon's SMG"/>
 				<property name="Delay" value="0"/>
-			</property>	
-		</item>	
+			</property>
+		</item>
 		<item name="questwrit_toc_repairleon_name">
-			<property name="DescriptionKey" value="questwrit_toc_repairleon_desc"/>											
+			<property name="DescriptionKey" value="questwrit_toc_repairleon_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -67,18 +67,18 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Leon's Modded SMG"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>		
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 
-		
-		<item name="vetquestitem_toc_leon_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_leon_description"/>														
+
+		<item name="vetquestitem_toc_leon_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_leon_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -87,11 +87,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Leon's Modded SMG Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="vetquestwrit_toc_leon_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_leon_description"/>																	
+			<property name="DescriptionKey" value="vetquestwrit_toc_leon_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -99,20 +99,20 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Leon's Modded SMG"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
+			</property>
+			<property name="Group" value="Special Items"/>
 		</item>
-		
+
 		<item name="questitem_toc_leondegsmg_name">
-			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>																							
-			<property name="CustomIcon" value="gunHandgunT3SMG5"/> 
+			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			
+
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="6"/>
@@ -132,15 +132,15 @@
 			<property name="LightValue" value=".45"/>
 			<property name="EconomicValue" value="1100"/>
 			<property name="ShowQuality" value="true"/>
-		
+
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
 				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
 				<property name="Reload_time" value="5.1"/>
-				<property name="Sound_start" value="mp5_fire"/>
-				<property name="Sound_loop" value="mp5_fire"/>
-				<property name="Sound_end" value="mp5_fire_end"/>
+				<property name="Sound_start" value="smg_fire"/>
+				<property name="Sound_loop" value="smg_fire"/>
+				<property name="Sound_end" value="smg_fire_end"/>
 				<property name="Sound_empty" value="dryfire"/>
 				<property name="Sound_reload" value="mp5_reload"/>
 				<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
@@ -159,7 +159,7 @@
 				<property name="Zoom_max_in" value="55"/>
 				<property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
 			</property>
-		
+
 			<effect_group name="questitem_toc_leondegsmg_name">
 				<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkGunslinger,9mmGun"/>
@@ -193,14 +193,14 @@
 				<passive_effect name="WeaponHandling" operation="base_set" value=".1" tags="perkGunslinger"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="250,400" tier="1,6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkGunslinger,9mmGun"/>
-			</effect_group>			
-		</item>		
-	
+			</effect_group>
+		</item>
+
 		<item name="questitem_toc_leonsmg_name">
-			<property name="DescriptionKey" value="questitem_toc_leonsmg_desc"/>																							
-			<property name="CustomIcon" value="gunHandgunT3SMG5"/> 
+			<property name="DescriptionKey" value="questitem_toc_leonsmg_desc"/>
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="TintColor" value="91,0,0"/>			
+			<property name="TintColor" value="91,0,0"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="6"/>
@@ -219,15 +219,15 @@
 			<property name="LightValue" value=".45"/>
 			<property name="EconomicValue" value="2500"/>
 			<property name="ShowQuality" value="true"/>
-		
+
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
 				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
 				<property name="Reload_time" value="3.1"/>
-				<property name="Sound_start" value="mp5_fire"/>
-				<property name="Sound_loop" value="mp5_fire"/>
-				<property name="Sound_end" value="mp5_fire_end"/>
+				<property name="Sound_start" value="smg_fire"/>
+				<property name="Sound_loop" value="smg_fire"/>
+				<property name="Sound_end" value="smg_fire_end"/>
 				<property name="Sound_empty" value="dryfire"/>
 				<property name="Sound_reload" value="mp5_reload"/>
 				<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
@@ -246,15 +246,15 @@
 				<property name="Zoom_max_in" value="55"/>
 				<property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
 			</property>
-		
+
 			<effect_group name="questitem_toc_leonsmg_name">
 				<passive_effect name="MaxRange" operation="base_set" value="75" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
-		
+
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="550" tags="perkGunslinger"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1200" tags="perkGunslinger"/>
-		
+
 				<passive_effect name="MagazineSize" operation="base_set" value="40" tags="perkGunslinger"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/> <!-- 4s -->
 				<passive_effect name="ModSlots" operation="base_set" value="1,2,2,3,4,5" tier="1,2,3,4,5,6"/>
@@ -264,27 +264,27 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/> <!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
-		
+
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> <!-- random DegMax -->
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> <!-- random APM -->
 				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/> <!-- random WeaponHandling -->
-		
+
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.15" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.15" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".3" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".7" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.4" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2" tags="perkGunslinger"/>
-		
+
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".3" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".6" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.2" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".2" tags="perkGunslinger"/>
-		
+
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkGunslinger"/>
-		
+
 				<passive_effect name="DegradationMax" operation="base_set" value="350,1100" tier="1,6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value=".8" tags="perkGunslinger,9mmGun"/>
 			</effect_group>

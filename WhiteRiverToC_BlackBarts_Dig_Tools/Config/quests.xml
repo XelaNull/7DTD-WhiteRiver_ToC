@@ -55,6 +55,8 @@
 				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
+
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -66,10 +68,18 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
+				<reward type="Exp" value="500" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="vetquestmap_toc_blackb_name" value="1" />
-				<reward type="Item" id="concreteShapesBlock" value="20-70" />
-				<reward type="Exp" value="1000" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 			</quest>
 
 			<quest id="map_Black_Bart">
@@ -98,7 +108,7 @@
 				</objective>
 
 				<reward type="Quest" id="+Black Bart's Tool Challenge"/>
-				<reward type="Exp" value="5000"/>
+				<reward type="Exp" value="500"/>
 			</quest>
 
 			<quest id="+Black Bart's Tool Challenge">
@@ -114,16 +124,25 @@
 				<property name="response_key" value="vetquestdialog_toc_blackb_chlng"/>
 				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
 				<property name="shareable" value="false" />
+				<property name="reward_choices_count" value="2" />
 
-				<action type="SpawnEnemy" id="zombieOldTimerRadiated" value="1" phase="1"/>
-				<objective type="ZombieKill" id="zombieOldTimerRadiated" value="1" phase="1"/>
+				<action type="SpawnEnemy" id="zombieSkateboarderRadiated" value="1" phase="1"/>
+				<objective type="ZombieKill" id="zombieSkateboarderRadiated" value="1" phase="1"/>
 
-				<reward type="Exp" value="5000"/>
-				<reward type="Item" id="questitem_toc_shovel_name" value="5-6" count="1"/>
-				<reward type="Item" id="questitem_toc_pickaxe_name" value="5-6" count="1"/>
-				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
-				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+				<reward type="Exp" value="1000" />
 				<reward type="SkillPoints" value="1" />
+				<reward type="Item" id="casinoCoin" value="560"/>
+
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
+				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCBlackBartShovel" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCBlackBartPickaxe" value="1" />
+
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" ischosen="true" isfixed="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
 			</quest>
 
 	</append>

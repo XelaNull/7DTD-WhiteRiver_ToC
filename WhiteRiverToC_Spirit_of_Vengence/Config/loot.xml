@@ -10,7 +10,9 @@
 	</append>
 
 	<!-- Add the Spirit of Vengeance Quest Starter to the Deschain's Crate -->
-	<append xpath="/lootcontainers/lootcontainer[@id='358']">
-		<item name="questitem_spirit_vengeance_name" count="1"/>
+	<append xpath="/lootcontainers/lootgroup[@name='groupWhiteRiverTOCDeschain']">
+		<item name="questitem_spirit_vengeance_name"/>
 	</append>
+
+	<setattribute xpath="/lootcontainers/lootgroup[@name='groupWhiteRiverTOCDeschain']" name="count">2</setattribute>
 </configs>

@@ -39,7 +39,7 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="writitem_toc_kuva_name" value="1" phase="2" />
 
-				<reward type="Exp" value="1000" />
+				<reward type="Exp" value="500" />
 			</quest>
 			<quest id="+Reward of Kuva's Red Armor">
 				<property name="name_key" value="questreward_toc_kuva_name"/>
@@ -55,6 +55,7 @@
 				<property name="group_name_key" value="quest_toc_kuva_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="2" />
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -66,12 +67,18 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="Item" id="item_toc_kuvared_chest_name" value="1-2" />
-				<reward type="Item" id="item_toc_kuvared_legs_name" value="1-2" />
-				<reward type="Item" id="concreteShapesBlock" value="10-50" />
-				<reward type="Exp" value="2500" />
         <reward type="Quest" id="+Discover Kuva's Red Armor"/>
+				<reward type="Exp" value="1000" />
+
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaChest" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaLegs" value="1" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupReading1" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="1"/>
 			</quest>
 
       <!-- +Discover Kuva's Red Armor -->
@@ -93,7 +100,7 @@
         <objective type="Wear" id="item_toc_kuvared_legs_name"/>
 
         <reward type="Item" id="questitem_toc_kuvatruth_name" value="1" />
-				<reward type="Exp" value="500" />
+				<reward type="Exp" value="100" />
 			</quest>
       <!-- Discover the Truth behind Kuva's Red Armor -->
       <quest id="+Kuva's Red Armor Secret">
@@ -110,7 +117,7 @@
 				<property name="group_name_key" value="quest_toc_disckuva_group"/>
 				<property name="shareable" value="false" />
 
-        <reward type="Exp" value="500" />
+        <reward type="Exp" value="100" />
       </quest>
 
 
@@ -156,11 +163,12 @@
 						<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
 					<property name="radius_reduction_sound" value="ui_radius_shrink" />
     		</objective>
+
         <reward type="Quest" id="+Kuva's Secret Recipe Challenge"/>
-				<reward type="Item" id="item_toc_kuvaliner_name" value="1-3" />
-				<reward type="Item" id="item_toc_kuvatwine_name" value="1"/>
-				<reward type="Item" id="item_toc_kuvatallow_name" value="0-1"/>
-				<reward type="Exp" value="2000"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaLiner" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaTwine" value="1"/>
+				<reward type="LootItem" id="groupWhiteRiverTOCKuvaTallow" value="1"/>
+				<reward type="Exp" value="1000"/>
     	</quest>
 
       <quest id="+Kuva's Secret Recipe Challenge">
@@ -182,26 +190,8 @@
 				<action type="SpawnEnemy" id="zombieKuvaAssistant" value="2" phase="2"/>
         <objective type="ZombieKill" id="zombieKuvaAssistant" value="1" phase="2"/>
 
-        <reward type="Exp" value="3000"/>
+        <reward type="Exp" value="1000"/>
         <reward type="Item" id="questitem_toc_kuvablue_name" value="1"/>
-      </quest>
-
-      <quest id="+Kuva's Blue Armor Explained">
-				<property name="name_key" value="quest_toc_kuvaanswr_name"/>
-				<property name="subtitle_key" value="quest_toc_kuvaanswr_subtitle"/>
-				<property name="description_key" value="quest_toc_kuvaanswr_desc"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="quest_toc_kuvaanswr_offer"/>
-				<property name="statement_key" value="quest_toc_kuvaanswr_statement"/>
-				<property name="response_key" value="questdialog_toc_kuvaanswr"/>
-				<property name="group_name_key" value="quest_toc_kuvaanswr_group"/>
-				<property name="shareable" value="false" />
-
-        <reward type="Exp" value="5000" />
-        <reward type="SkillPoints" value="1" />
       </quest>
     </append>
   </config>
