@@ -67,7 +67,7 @@
 				</objective>
 
 				<reward type="Exp" value="1500" />
-				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="LootItem" id="groupWhiteRiverTOCRickDangerVet" value="1" />
@@ -153,7 +153,7 @@
 
 				<reward type="SkillPoints" value="1" />
 				<reward type="Exp" value="2000" />
-				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
 
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="LootItem" id="groupWhiteRiverTOCRickDangerElite" value="1" />

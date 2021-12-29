@@ -118,7 +118,7 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="vetquestwrit_toc_bambi_name" value="1" phase="2" />
 
-				<reward type="Exp" value="5000" />
+				<reward type="Exp" value="1500" />
 			</quest>
 			<quest id="+Veteran Reward of Bambi's Killer Compound Bow">
 				<property name="name_key" value="vetquestreward_toc_bambi_name"/>
@@ -148,7 +148,7 @@
 				</objective>
 
 				<reward type="Exp" value="3000" />
-				<reward type="Item" id="casinoCoin" value="760"/>
+				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="LootItem" id="groupWhiteRiverTOCBambiVet" value="1" />
@@ -199,7 +199,7 @@
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="elitequestwrit_toc_bambi_name" value="1" phase="2" />
 
-				<reward type="Exp" value="12000" />
+				<reward type="Exp" value="500" />
 				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
 			</quest>
 
@@ -230,9 +230,8 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
-				<reward type="Exp" value="5000" />
-				<reward type="Item" id="casinoCoin" value="1060"/>
-				<reward type="SkillPoints" value="1" />
+				<reward type="Exp" value="2000" />
+				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
 
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="eliteitem_toc_bambi_name" value="6" />

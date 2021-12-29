@@ -96,8 +96,7 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
-				<reward type="Exp" value="5000" />
-				<reward type="SkillPoints" value="1" />
+				<reward type="Exp" value="1500" />
 				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
 				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
 
@@ -131,13 +130,6 @@
 
 
 				<reward type="Quest" id="quest_reward_1000z"/>
-
-<!--
-				<reward type="Exp" value="2500" />
-				<reward type="SkillPoints" value="1" />
-				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
-				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
--->
 			</quest>
 
 			<quest id="quest_reward_1000z">
@@ -166,7 +158,7 @@
 					<property name="use_closest" value="true" />
 				</objective>
 
-				<reward type="Exp" value="10000" />
+				<reward type="Exp" value="2000" />
 				<reward type="SkillPoints" value="1" />
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
 				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
@@ -198,7 +190,7 @@
 					<property name="use_closest" value="true" />
 				</objective>
 
-				<reward type="Exp" value="2000" />
+				<reward type="Exp" value="1000" />
 				<reward type="Item" id="questblock_toc_randomcrate_name" value="1" />
 			</quest>
 
