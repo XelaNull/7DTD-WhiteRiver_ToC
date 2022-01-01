@@ -132,7 +132,6 @@
 				<reward type="Exp" value="2000" />
 				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
 				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
 				<reward type="LootItem" id="groupWhiteRiverTOCBlackBartShovel" value="1" />

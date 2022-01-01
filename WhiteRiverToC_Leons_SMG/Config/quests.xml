@@ -208,7 +208,6 @@
 				<reward type="Exp" value="1500" />
 				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="LootItem" id="groupWhiteRiverTOCLeonVet" value="1" />
 				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1" />
 				<reward type="Item" id="modGunSoundSuppressorSilencer" value="1" />
