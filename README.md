@@ -6,15 +6,15 @@
 
 Tested with A20
 
-This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from. The duke and experience rewards are in-line with vanilla quests, and across all quests and tiers in this modlet pack only a handful of skillpoints are offered and only on the highest complexity quests.
-
-**This modlet pack is comprised of only XML XPath modlets and only needs to be installed on the server!**
-
-The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship item. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may start this quest again as a Tier 1 Trader quest, and also can randomly find a +White River Citizenship Card on zombie loot bags.
+The White River settlements are looking for new citizens to give extra tools and equipment that they've collected. They are offering to provide a select few survivors access to higher quality equipment in exchange for volunteering to complete various tasks for the settlement. There is a limited supply and these items are only available to those who gain citizenry with White River settlements. In addition to the reward, the player is also offered a small stack of wet concrete blocks, from the last of the Trader's community inventory to assist in re-establishing a homestead.
 
 --
 
-The White River settlements are looking for new citizens to give extra tools and equipment that they've collected. They are offering to provide a select few survivors access to higher quality equipment in exchange for volunteering to complete various tasks for the settlement. There is a limited supply and these items are only available to those who gain citizenry with White River settlements. In addition to the reward, the player is also offered a small stack of wet concrete blocks, from the last of the Trader's community inventory to assist in re-establishing a homestead.
+This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from. The duke and experience rewards are in-line with vanilla quests, and across all quests and tiers in this modlet pack only a handful of skillpoints are offered and only on the highest complexity quests. Due to the multi-tier design of this modlet collection, it provides equipment for beginners all the way up through the elite.
+
+**This modlet pack is XML XPath ONLY and only needs to be installed on the server or player hosting the game! Other players do not need to install this modlet pack locally.**
+
+The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship item. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may start this quest again as a Tier 1 Trader quest, and also can randomly find a +White River Citizenship Card on zombie loot bags.
 
 ### Citizenship is offered in three-tiers:
 
@@ -27,34 +27,33 @@ Once the player obtains their citizenship card, they can use this to craft quest
 ### Questable Equipment:
 
 **VEHICLES**
-
-- **Amelia Earhart's Gyrocopter** - Discover the truth to what happened to Amelia Earhart and the crazy multi-seat flying contraption she invented.
-- **Spirit of Vengeance** - Take on an elite boss zombie and earn yourself a super-fast flaming motorcycle.
+- **Amelia's Gyrocopter** - Discover the truth of what happened to Amelia Earhart. Fight a Wendigo to reclaim her long-lost schematics explaining how to build a three-seater souped-up Gyrocopter. Guaranteed to get you and your friends across the map with speed and ease.
+- **Spirit of Vengeance** - Take on a demon Juggernaut and obtain a super-fast vehicle. A player using this vehicle is a sure-sign of their elite status. Big thanks to **Snufkin's Server-Side Zombies** & **Snufkins's Server-Side Vehicles** for a big part of the base code for the vehicle and zombie. Tested for compatibility with Snufkin's mods, so you can run both at the same time if you want!
 
 **TOOLS:**
-
 - **Black Bart's Flaming Dig Tools** - Uncover the long-buried stash from the most famous stagecoach robber in the western U.S., providing a steel Pickaxe & Shovel with flaming mods and better stats than Vanilla. Stamina trait sure to keep you digging and digging and digging.
 - **Bunyan's FireAxe** - Help the Trader with some potable water and receive a Paul Bunyan branded FireAxe.
 - **Dundee's Hunting Knife** - Take on everything with Dundee's famous Hunting Knife with slightly better stats than Vanilla.
-- **Jason's Machete** - A replicate machete used by the infamous serial killer himself. (Big Thanks to wyldwitchykat for this contribution)
-- **Rick Danger's Auger** - Obtain two higher tier Augers, the latter of which will turn even the largest mountain to butter.
+- **Jason's Machete** - A replicate machete used by the infamous serial killer himself. (Big Thanks to **Wyldwitchykat** for this contribution)
+- **Rick Danger's Auger** - Obtain two higher tier Augers, the latter of which will turn even the largest mountain to butter, but will expend a LOT of gasoline and degrade your Auger quick..
 - **Taza's Axe** - The famed Taza's Axe, already awesome.
 
 **WEAPONS:**
-
-- **Bambi's Killer Compound Bow** - Earn the famed deer killer, "Bambi's Killer" Compound Bow with slightly better stats than Vanilla.
+- **Bambi's Killer Compound Bow** - Earn the famed deer killer, "Bambi's Killer Compound Bow" or "Forest Prince Compound Bow" with slightly better stats than Vanilla.
+- **Bear Grylls's Claws** -"Why fight bare fisted when you can fight bear fisted." Thanks, **SteamM0nkey** for this idea.
 - **Daryl's Crossbow** - Obtain a replica copy of Daryl's Zombiekiller Crossbow.
-- **Deschain's Revolver** - Earn a legendary revolver, crafted from Excalibur, that was used by the famed Roland Deschain.
+- **Deschain's Revolver** - Collect the eight Dark Tower series books and craft nineteen doors to have one of Roland Deschain's legendary revolvers bestowed upon you. Has custom bullets that are expensive to craft, but super powerful.
 - **Leon's Modded SMG** - Help Leon finish his DIY gun project, resulting in a 9mm SMG weapon with slightly better stats than Vanilla.
 - **Pavlichenko's Rifle** - Locate and assemble a branded Marksman rifle from the famed marksman, Pavlichenko.
 
 **ARMOR:**
 
-- **Kuva's Red Armor** - Discover the secret ingredient in Kuva's Red Armor with slightly better stats and environmental mods.
+- **Kuva's Red Armor** - Discover the secret ingredient in Kuva's Legendary Red Armor. This armor is rumored to be lightweight and stealthy, with resistances to heat & cold, and an extra mod slot per piece. The basic quest is EASY, but the Veteran quest is HARD.
 
 **RESOURCES:**
 
 - **Brass For Lead** - Help the community restock its Lead supply and in exchange receive some brass.
+- **Elite Random** - Obtain a sealed crate from four veteran cards that gives you a single random elite quest starter. Obtain a veteran card back at the start of your elite quest. If you complete the Elite quest, you obtain an Elite citizen's card!
 - **Everdeen's Arrows & Bolts** - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
 - **Gupta's Bandages** - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages. Gupta's bandages and first aid kits are rumored to be better quality than you can find elsewhere.
 - **Molino Bulletproof Glass** - Exchange regular bulletproof glass blocks with the Trader and they will teach you how to create clear Molino-branded bulletproof glass.
