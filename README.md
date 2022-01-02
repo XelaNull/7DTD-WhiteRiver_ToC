@@ -4,13 +4,13 @@
 
 <https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a194-with-df-multiple-languages>
 
-Tested with A19.6
+Tested with A20
 
-This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives new players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this Modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from.
+This modlet collection extends the new player White River citizenship quest line to provide some quests to obtain improved tools, weapons, and armor. Each item has a small back-story and explanation in an attempt to blend with the vanilla game and Trader. This gives players a chance to obtain better equipment through a method other than randomness or traditional progression. The rewards this modlet pack provides were carefully considered against Vanilla gameplay. In most cases, the named items only provide a small improvement over the items they were created from. The duke and experience rewards are in-line with vanilla quests, and across all quests and tiers in this modlet pack only a handful of skillpoints are offered and only on the highest complexity quests.
 
-**This modlet pack is only XML XPath modlets and only needs to be installed on the server!**
+**This modlet pack is comprised of only XML XPath modlets and only needs to be installed on the server!**
 
-The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may also randomly find a +White River Citizenship Card on zombie loot bags and can then start the process over of becoming a White River citizen.
+The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship item. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may start this quest again as a Tier 1 Trader quest, and also can randomly find a +White River Citizenship Card on zombie loot bags.
 
 --
 
@@ -19,10 +19,10 @@ The White River settlements are looking for new citizens to give extra tools and
 ### Citizenship is offered in three-tiers:
 
 - Tier 1 : Kill 10 Zombies. This is the Basic level of citizenship. Reward: +White River Citizenship Card
-- Tier 2 : Kill 100 Zombies. This is the Veteran level of citizenship. Reward: +White River Veteran Citizenship Card
-- Tier 3 : Kill 1000 Zombies. This is the Elite level of citizenship. Reward: +White River Elite Citizenship Card
+- Tier 3 : Kill 100 Zombies. This is the Veteran level of citizenship. This is started as a Tier 3 Trader quest. Reward: +White River Veteran Citizenship Card
+- Tier 5 : Kill 1000 Zombies. This is the Elite level of citizenship. This is started as a Tier 5 Trader quest. Reward: +White River Elite Citizenship Card
 
-Once the player obtains their citizenship card, they can use this to craft quest-starter items for the equipment quests below. Some of the quests below offer a veteran version which rewards a sealed crate containing better quality, more items, and greater quantity of each multi-quantity item. Some offer an even higher level set of rewards for elite citizens. However, after a "Veteran" or "Elite" quest is complete, only a basic citizenship card is returned. The player must successfully complete the Tier 2 or 3 citizenship quest again in order to pursue another Veteran/Elite equipment quest.
+Once the player obtains their citizenship card, they can use this to craft quest-starter items for the equipment quests below. Some of the quests below offer a veteran version which rewards better quality, more items, and greater quantity of each multi-quantity item. Some offer an even higher level set of rewards for elite citizens. After a "Veteran" quest is complete, the Trader keeps your Veteran Citizenship Card, requiring you to complete the Tier 3 Trader quest again to obtain a new Veteran Citizenship Card. However, after an "Elite" quest is complete, an Elite Citizenship Card is returned.
 
 ### Questable Equipment:
 
@@ -39,7 +39,6 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - **Jason's Machete** - A replicate machete used by the infamous serial killer himself. (Big Thanks to wyldwitchykat for this contribution)
 - **Rick Danger's Auger** - Obtain two higher tier Augers, the latter of which will turn even the largest mountain to butter.
 - **Taza's Axe** - The famed Taza's Axe, already awesome.
-- **Dwarven Forge** - Track down a lost colony of little people, and their secret to crafting exquisite items.
 
 **WEAPONS:**
 
@@ -58,11 +57,14 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - **Brass For Lead** - Help the community restock its Lead supply and in exchange receive some brass.
 - **Everdeen's Arrows & Bolts** - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
 - **Gupta's Bandages** - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages. Gupta's bandages and first aid kits are rumored to be better quality than you can find elsewhere.
-- **QwikCrete** - Learn the secret to making quick-drying concrete blocks!
-- **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement. Along with this, learn to craft an auto turret that takes the Remington 762 ammo.
 - **Molino Bulletproof Glass** - Exchange regular bulletproof glass blocks with the Trader and they will teach you how to create clear Molino-branded bulletproof glass.
 
-Nearly all quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward. Black Bart's dig tools are unique and the quest is designed NOT to be repeatable!
+The quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward.
+
+**UPCOMING:**
+- **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement. Along with this, learn to craft an auto turret that takes the Remington 762 ammo.
+- **Dwarven Forge** - Track down a lost colony of little people, and their secret to crafting exquisite items.
+
 
 #### Quest Listing by Tier
 
@@ -83,7 +85,6 @@ Nearly all quests are designed to be repeatable in case of loss of equipment or 
 
 - Taza's Axe
 - Rick Danger Auger
-- Qwik-Crete Blocks
 - Pavlichenko's Rifle
 - Leon's SMG
 - Kuva's Armor
@@ -99,7 +100,6 @@ Nearly all quests are designed to be repeatable in case of loss of equipment or 
 - Spirit of Vengeance (Juggernaut)
 - Rick Danger Auger
 - Remington's Steel Ammo
-- Qwik-Crete Recipe
 - Daryl's Crossbow
 - Bambi's Compound Bow
 - Molino Bulletproof Glass Recipe
@@ -110,7 +110,7 @@ Nearly all quests are designed to be repeatable in case of loss of equipment or 
 
 #### Installation
 
-Download the ZIP file and extract. Open the ONE folder and you will find EIGHTEEN folders inside. Copy the EIGHTEEN folders to your 7 Days to Die "Mods" folder. The default location for a Steam-based Windows 10 install is: C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Data\Mods
+Download the ZIP file and extract. Open the ONE folder and you will find MULTIPLE folders inside. Copy the MULTIPLE folders to your 7 Days to Die "Mods" folder. The default location for a Steam-based Windows 10 install is: C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Data\Mods
 
 ### ACKNOWLEDGEMENTS:
 
@@ -121,4 +121,5 @@ Download the ZIP file and extract. Open the ONE folder and you will find EIGHTEE
 - mr.devolver :: Big thanks for the help fixing the GoTo Trader, improving the quest integration with the trader, and helping seek out a path to add the quests to the Trader dialog!
 - SteamM0nkey :: Big thanks to helping dive into the cause of imbalances in items, missing stats, and for the idea of the Bear Claws quest.
 - arramus & Fuzzy Pug :: Fuzzy Pug requested a new quest be added that grants clear bulletproof glass. arramus was kind enough to do the heavy lifting to create the quest, I rebranded the naming of it but mostly kept the quest and code intact as was provided.
-- sechsterversuch & Zeeeni :: BIG thanks to these two for providing a full german translation for every quest, and for testing the translations afterwards!
+- sechsterversuch & Zeeeni :: BIG thanks to these two for providing a full German translation for every quest, and for testing the translations afterwards!
+- IBM Watson :: For providing language translation for all other languages.
