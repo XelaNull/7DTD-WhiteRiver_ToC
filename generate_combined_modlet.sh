@@ -14,7 +14,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
 		<Name value=\"White River - Tools of Citizenship\" />
 		<Description value=\"Extend White River quest line to allow player to craft fabled equipment through collecting a lot of resources.\" />
 		<Author value=\"Created by Shouden Kalferas and many others (see README)\" />
-		<Version value=\"A20_1.0\" />
+		<Version value=\"A20_1.0e\" />
 		<Website value=\"https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a196-with-df-multiple-languages\" />
 	</ModInfo>
 </xml>" > CombinedModlet/ModInfo.xml
@@ -102,6 +102,6 @@ zip -r $(date +%Y-%d-%m_%H%M%S)-7DTD-WhiteRiverToC-combined.zip 7DTD-WhiteRiverT
 mv 7DTD-WhiteRiverToC-combined extracted_7DTD-WhiteRiverToC-combined
 
 # Publish to standalone repo
-cp -rp extracted_7DTD-WhiteRiverToC-combined/* ../../7DTD-WhiteRiver_ToC-combined/
+cp -rp extracted_7DTD-WhiteRiverToC-combined/* ../../7DTD-WhiteRiver_ToC-combined/WhiteRiverToC-combined/
 rm -rf ../../7DTD-WhiteRiver_ToC-combined/README.md
 mv ../../7DTD-WhiteRiver_ToC-combined/MODLIST.md ../../7DTD-WhiteRiver_ToC-combined/README.md
