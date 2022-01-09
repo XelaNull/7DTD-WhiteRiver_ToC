@@ -1,0 +1,76 @@
+<config>
+	<append xpath="/quests" >
+
+			<!-- ELITE QUEST -->
+			<quest id="+Elite Quest For Remington's Steel Ammo Start">
+				<property name="name_key" value="elitequest_toc_remington_name"/>
+				<property name="subtitle_key" value="elitequest_toc_remington_subtitle"/>
+				<property name="description_key" value="elitequest_toc_remington_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_remington_offer"/>
+				<property name="statement_key" value="elitequest_toc_remington_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_remington"/>
+				<property name="group_name_key" value="elitequest_toc_remington_group"/>
+				<property name="shareable" value="false" />
+
+				<reward type="Quest" id="+Elite Quest For Remington's Steel Ammo"/>
+				<reward type="Item" id="questitem_elitecoin_remington" value="1" />	<!-- This makes the quest repeatable -->
+			</quest>
+			<quest id="+Elite Quest For Remington's Steel Ammo">
+				<property name="name_key" value="elitequest_toc_remington_name"/>
+				<property name="subtitle_key" value="elitequest_toc_remington_subtitle"/>
+				<property name="description_key" value="elitequest_toc_remington_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="hard" />
+				<property name="offer_key" value="elitequest_toc_remington_offer"/>
+				<property name="statement_key" value="elitequest_toc_remington_statement"/>
+				<property name="response_key" value="elitequestdialog_toc_remington"/>
+				<property name="group_name_key" value="elitequest_toc_remington_group"/>
+				<property name="shareable" value="false" />
+
+				<objective type="FetchKeep" id="ammo762mmBulletBall" value="1000" phase="1" />
+				<objective type="FetchKeep" id="ammo44MagnumBulletBall" value="1000" phase="1" />
+				<objective type="FetchKeep" id="ammo9mmBulletBall" value="1000" phase="1" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
+				<objective type="Craft" id="elitequestwrit_toc_remington_name" value="1" phase="2" />
+
+				<reward type="Exp" value="500" />
+			</quest>
+
+			<quest id="+Elite Reward of Remington's Steel Ammo">
+				<property name="name_key" value="elitequestreward_toc_remington_name"/>
+				<property name="subtitle_key" value="elitequestreward_toc_remington_subtitle"/>
+				<property name="description_key" value="elitequestreward_toc_remington_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="repeatable" value="true" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="easy" />
+				<property name="offer_key" value="elitequestreward_toc_remington_offer"/>
+				<property name="statement_key" value="elitequestreward_toc_remington_statement"/>
+				<property name="response_key" value="elitequestrewarddialog_toc_remington"/>
+				<property name="group_name_key" value="elitequest_toc_remington_group"/>
+				<property name="shareable" value="false" />
+				<property name="completiontype" value="TurnIn" />
+
+				<objective type="Goto" value="5" phase="1" />
+				<objective type="ReturnToNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+				<objective type="InteractWithNPC">
+					<property name="phase" value="3" />
+					<property name="nav_object" value="return_to_trader" />
+				</objective>
+
+				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
+				<reward type="Item" id="eliteitemreward_toc_remington_schem_name" value="1" />
+				<reward type="Exp" value="1500" />
+			</quest>
+
+	</append>
+</config>

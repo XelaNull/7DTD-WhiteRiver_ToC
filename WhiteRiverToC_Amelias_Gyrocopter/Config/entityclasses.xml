@@ -8,7 +8,7 @@
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="80"/>
+			<property name="LootListAlive" value="vehicleGyrocopter"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="Explosion.ParticleIndex" value="6"/>
 			<property name="Explosion.RadiusBlocks" value="3"/>
@@ -21,7 +21,7 @@
 			<property name="NavObject" value="gyrocopter" />
 		</entity_class>
 	</append>
-	
+
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>
 			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" stat="Stamina" operation="subtract" value="20">
@@ -29,7 +29,7 @@
 			</triggered_effect>
 		</effect_group>
 	</append>
-	
+
 	<append xpath="/entity_classes">
 		<entity_class name="ToCWendigo_Zombie_Template" extends="zombieTemplateMale">
 			<property name="EntityType" value="Zombie" />
@@ -57,7 +57,7 @@
 			<property name="HasDeathAnim" value="false" />
 			<property name="TimeStayAfterDeath" value="30" />
 		</entity_class>
-		
+
 		<entity_class name="zombieToCWendigo" extends="ToCWendigo_Zombie_Template">
 			<property name="Archetype" value="ToCWendigo" />
 			<property name="Tags" value="entity,zombie,walker,boss,wendigo,umazombie,ToCWendigo" />
@@ -85,11 +85,11 @@
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>
 		</entity_class>
-		
+
 	</append>
-	
-	
-	
-	
-	
+
+
+
+
+
 </configs>
