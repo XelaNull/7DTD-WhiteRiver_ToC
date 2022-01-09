@@ -56,6 +56,7 @@
 				<property name="group_name_key" value="elitequest_toc_remington_group"/>
 				<property name="shareable" value="false" />
 				<property name="completiontype" value="TurnIn" />
+				<property name="reward_choices_count" value="3" />
 
 				<objective type="Goto" value="5" phase="1" />
 				<objective type="ReturnToNPC">
@@ -67,9 +68,16 @@
 					<property name="nav_object" value="return_to_trader" />
 				</objective>
 
-				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
+				<reward type="Item" id="casinoCoin" value="560"/>
+				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
 				<reward type="Item" id="eliteitemreward_toc_remington_schem_name" value="1" />
-				<reward type="Exp" value="1500" />
+				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+
+				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 			</quest>
 
 	</append>

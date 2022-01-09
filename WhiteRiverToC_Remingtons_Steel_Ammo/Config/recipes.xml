@@ -27,19 +27,28 @@
 		<recipe name="ammoBundle9mmBulletSteelRemington" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="80"/>
 			<ingredient name="resourceGunPowder" count="80"/>
-			<ingredient name="resourceBulletCasing" count="80"/>
+			<ingredient name="resourceBulletCasingSteelRemington" count="80"/>
 		</recipe>
 		<recipe name="ammo44MagnumBulletSteelRemington" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="1"/>
 			<ingredient name="resourceGunPowder" count="3"/>
 			<ingredient name="resourceBulletCasingSteelRemington" count="1"/>
 		</recipe>
+		<recipe name="ammoBundle44MagnumBulletSteelRemington" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="120"/>
+			<ingredient name="resourceBulletCasingSteelRemington" count="80"/>
+		</recipe>
 		<recipe name="ammo762mmBulletFMJSteelRemington" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="1"/>
 			<ingredient name="resourceGunPowder" count="4"/>
 			<ingredient name="resourceBulletCasingSteelRemington" count="1"/>
 		</recipe>
-
+		<recipe name="ammoBundle762mmBulletSteelRemington" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="80"/>
+			<ingredient name="resourceGunPowder" count="160"/>
+			<ingredient name="resourceBulletCasingSteelRemington" count="80"/>
+		</recipe>
 		<recipe name="remingtonTurret" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable"> <!-- trap -->
 			<ingredient name="motionsensor" count="1"/>
 			<ingredient name="resourceForgedSteel" count="150"/>

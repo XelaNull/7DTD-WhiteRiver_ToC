@@ -100,6 +100,24 @@
 			</effect_group>
 		</item>
 
+		<item name="ammoBundle9mmBulletSteelRemington">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ammo9mmBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="ammoBundle9mmBulletSteelRemington"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="0"/>
+				<property name="Random_item" value="ammo9mmBulletSteelRemington"/>
+				<property name="Random_item_count" value="100"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		<!--- End 9mm -->
+
 		<item name="ammo44MagnumBulletSteelRemington">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
@@ -121,6 +139,25 @@
 			</effect_group>
 		</item>
 
+		<item name="ammoBundle44MagnumBulletSteelRemington">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="ammoBundle44MagnumBulletSteelRemington"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="0"/>
+				<property name="Random_item" value="ammo44MagnumBulletSteelRemington"/>
+				<property name="Random_item_count" value="100"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+
+
+
 		<item name="ammo762mmBulletFMJSteelRemington">
 			<property name="Extends" value="ammo762mmBulletBall"/>
 			<property name="CustomIcon" value="ammo762mmBulletBall"/>
@@ -137,12 +174,37 @@
 				<display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
 				<display_value name="dTargetPenetration" value="1"/>-->
+				<passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
 				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkDeadEye,perkMachineGunner"/>
 				<!--<display_value name="dDegradationPerUse" value="1.6"/>-->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
 		</item>
+
+
+
+
+
+		<item name="ammoBundle762mmBulletSteelRemington">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ammo762mmBulletBall"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="ammoBundle762mmBulletSteelRemington"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="0"/>
+				<property name="Random_item" value="ammo762mmBulletFMJSteelRemington"/>
+				<property name="Random_item_count" value="100"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+
+
 </append>
 
 	<append xpath="/items/item[@name='questitem_toc_leondegsmg_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
