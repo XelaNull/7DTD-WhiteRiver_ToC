@@ -48,15 +48,20 @@
 			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="Unlocks" value="resourceBulletCasingSteelRemington"/>
 			<property name="Unlocks" value="ammo9mmBulletSteelRemington"/>
+			<property name="Unlocks" value="ammoBundle9mmBulletSteelRemington"/>
 			<property name="Unlocks" value="ammo44MagnumBulletSteelRemington"/>
+			<property name="Unlocks" value="ammoBundle44MagnumBulletSteelRemington"/>
 			<property name="Unlocks" value="ammo762mmBulletFMJSteelRemington"/>
+			<property name="Unlocks" value="ammoBundle762mmBulletSteelRemington"/>
 			<property name="Unlocks" value="remingtonTurret"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBulletCasingSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle9mmBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletSteelRemington" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle44MagnumBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletFMJSteelRemington" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoBundle762mmBulletSteelRemington" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="remingtonTurret" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
@@ -107,6 +112,7 @@
 			<property name="CustomIconTint" value="a0a0ff"/>
 			<property name="ItemTypeIcon" value="bundle"/>
 			<property name="DescriptionKey" value="ammoBundle9mmBulletSteelRemington"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourcePaper"/>
 				<property name="Create_item_count" value="0"/>
@@ -146,6 +152,7 @@
 			<property name="CustomIconTint" value="a0a0ff"/>
 			<property name="ItemTypeIcon" value="bundle"/>
 			<property name="DescriptionKey" value="ammoBundle44MagnumBulletSteelRemington"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourcePaper"/>
 				<property name="Create_item_count" value="0"/>
@@ -194,6 +201,7 @@
 			<property name="CustomIconTint" value="a0a0ff"/>
 			<property name="ItemTypeIcon" value="bundle"/>
 			<property name="DescriptionKey" value="ammoBundle762mmBulletSteelRemington"/>
+			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourcePaper"/>
 				<property name="Create_item_count" value="0"/>
