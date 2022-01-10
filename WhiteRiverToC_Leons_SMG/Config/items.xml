@@ -109,6 +109,51 @@
 		</item>
 
 		<item name="questitem_toc_leondegsmg_name">
+			<property name="Extends" value="gunHandgunT3SMG5"/>
+			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="1100"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+
+			<property class="Action0">
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Reload_time" value="5.1"/>
+				<property name="Sound_reload" value="mp5_reload"/>
+
+			</property>
+
+			<effect_group name="questitem_toc_leondegsmg_name">
+				<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkGunslinger,9mmGun"/>
+
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="140" tags="perkGunslinger"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="300" tags="perkGunslinger"/>
+
+				<passive_effect name="MagazineSize" operation="base_set" value="15" tags="perkGunslinger"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,2" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="150" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/>
+
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.55" tags="perkGunslinger"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.55" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.7" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.5" tags="perkGunslinger"/>
+
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".6" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2.5" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.8" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".8" tags="perkGunslinger"/>
+
+				<passive_effect name="WeaponHandling" operation="base_set" value=".1" tags="perkGunslinger"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,400" tier="1,6" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkGunslinger,9mmGun"/>
+			</effect_group>
+			<!--
 			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
 			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="cc3300"/>
@@ -123,8 +168,8 @@
 			<property name="SoundJammed" value="weapon_jam"/>
 			<property name="Attachments" value="meleeToolFlashlight02"/>
 			<property name="TintColor" value="255,255,255"/>
-			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+			<property name="CrosshairOnAim" value="true"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
 			<property name="Sound_Sight_In" value="smg_sight_in"/>
 			<property name="Sound_Sight_Out" value="smg_sight_out"/>
 			<property name="Group" value="Ammo/Weapons"/>
@@ -135,7 +180,7 @@
 
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
-				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Delay" value=".150"/>
 				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
 				<property name="Reload_time" value="5.1"/>
 				<property name="Sound_start" value="smg_fire"/>
@@ -145,9 +190,6 @@
 				<property name="Sound_reload" value="mp5_reload"/>
 				<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
 				<property name="Particles_muzzle_fire_fpv" value="gunfire_SMG_fpv"/>
-				<!-- <property name="DamageBonus.head" value="4"/>
-				<property name="DamageBonus.wood" value="5"/>
-				<property name="DamageBonus.earth" value=".2"/> -->
 				<property name="ScopeOffset" value="-.000525,.1449,-.2"/>
 				<property name="SideOffset" value="0,0,0"/>
 				<property name="BarrelOffset" value="-.062,.062,.16"/>
@@ -163,22 +205,22 @@
 			<effect_group name="questitem_toc_leondegsmg_name">
 				<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="140" tags="perkGunslinger"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="300" tags="perkGunslinger"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="15" tags="perkGunslinger"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/> <!-- 4s -->
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/>
 				<passive_effect name="ModSlots" operation="base_set" value="1,2" tier="1,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="150" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> <!-- random DegMax -->
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> <!-- random APM -->
-				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/> <!-- random WeaponHandling -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/>
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/>
+				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.55" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.55" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".35" tags="perkGunslinger"/>
@@ -194,9 +236,57 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="250,400" tier="1,6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
+		-->
 		</item>
 
 		<item name="questitem_toc_leonsmg_name">
+			<property name="Extends" value="gunHandgunT3SMG5"/>
+			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="EconomicValue" value="1700"/>
+			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+
+			<property class="Action0">
+				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
+				<property name="Reload_time" value="3.6"/>
+				<property name="Sound_reload" value="mp5_reload"/>
+
+			</property>
+
+			<effect_group name="questitem_toc_leonsmg_name">
+				<passive_effect name="MaxRange" operation="base_set" value="70" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="35" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="3.1" tags="perkGunslinger"/>
+
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="520" tags="perkGunslinger"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1050" tags="perkGunslinger"/>
+
+				<passive_effect name="MagazineSize" operation="base_set" value="35" tags="perkGunslinger"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.17" tags="perkGunslinger"/>
+
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.25" tags="perkGunslinger"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.25" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.4" tags="perkGunslinger"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2" tags="perkGunslinger"/>
+
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".4" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".8" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.25" tags="perkGunslinger"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25" tags="perkGunslinger"/>
+
+				<passive_effect name="WeaponHandling" operation="base_set" value=".9" tags="perkGunslinger"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="500,800" tier="1,6" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkGunslinger,9mmGun"/>
+			</effect_group>
+			<!--
 			<property name="DescriptionKey" value="questitem_toc_leonsmg_desc"/>
 			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="cc3300"/>
@@ -210,8 +300,8 @@
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="SoundJammed" value="weapon_jam"/>
 			<property name="Attachments" value="meleeToolFlashlight02"/>
-			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+			<property name="CrosshairOnAim" value="true"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
 			<property name="Sound_Sight_In" value="smg_sight_in"/>
 			<property name="Sound_Sight_Out" value="smg_sight_out"/>
 			<property name="Group" value="Ammo/Weapons"/>
@@ -222,7 +312,7 @@
 
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
-				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Delay" value=".150"/>
 				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
 				<property name="Reload_time" value="3.1"/>
 				<property name="Sound_start" value="smg_fire"/>
@@ -232,9 +322,6 @@
 				<property name="Sound_reload" value="mp5_reload"/>
 				<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
 				<property name="Particles_muzzle_fire_fpv" value="gunfire_SMG_fpv"/>
-				<!-- <property name="DamageBonus.head" value="4"/>
-				<property name="DamageBonus.wood" value="5"/>
-				<property name="DamageBonus.earth" value=".2"/> -->
 				<property name="ScopeOffset" value="-.000525,.1449,-.2"/>
 				<property name="SideOffset" value="0,0,0"/>
 				<property name="BarrelOffset" value="-.062,.062,.16"/>
@@ -250,25 +337,25 @@
 			<effect_group name="questitem_toc_leonsmg_name">
 				<passive_effect name="MaxRange" operation="base_set" value="75" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/>
 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="550" tags="perkGunslinger"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1200" tags="perkGunslinger"/>
 
 				<passive_effect name="MagazineSize" operation="base_set" value="40" tags="perkGunslinger"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/> <!-- 4s -->
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/>
 				<passive_effect name="ModSlots" operation="base_set" value="1,2,2,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.19,.19" tags="perkGunslinger"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.19,.19" tags="perkGunslinger"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/>
 
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> <!-- random DegMax -->
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> <!-- random APM -->
-				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/> <!-- random MagazineSize -->
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/> <!-- random WeaponHandling -->
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/>
+				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkGunslinger"/>
 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.15" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.15" tags="perkGunslinger"/>
@@ -288,6 +375,7 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="350,1100" tier="1,6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value=".8" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
+		-->
 		</item>
 	</append>
 </configs>

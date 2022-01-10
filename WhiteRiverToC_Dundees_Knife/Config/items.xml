@@ -3,12 +3,12 @@
 		<item name="questitem_coin_dundee">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="2eb200"/> 
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-		
-		<item name="questitem_toc_dundee_name"> 
-			<property name="DescriptionKey" value="questitem_toc_dundee_description"/>						
+
+		<item name="questitem_toc_dundee_name">
+			<property name="DescriptionKey" value="questitem_toc_dundee_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -17,11 +17,11 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Dundee's Knife Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 		<item name="questwrit_toc_dundee_name">
-			<property name="DescriptionKey" value="questwrit_toc_dundee_description"/>						
+			<property name="DescriptionKey" value="questwrit_toc_dundee_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -29,17 +29,19 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>	
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Dundee's Knife"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>	
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 
 		<item name="item_toc_dundeeknife_name"> <!-- T2 Blades -->
-			<property name="DescriptionKey" value="item_toc_dundeeknife_desc"/>						
+			<property name="Extends" value="meleeWpnBladeT1HuntingKnife"/>
+
+			<property name="DescriptionKey" value="item_toc_dundeeknife_desc"/>
 			<property name="Tags" value="knife,melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
@@ -56,74 +58,30 @@
 			<property name="SoundDestroy" value="wooddestroy1"/>
 			<property name="UnlockedBy" value="perkDeepCuts,meleeWpnBladeT1HuntingKnifeSchematic"/>
 			<property name="ShowQuality" value="true"/>
-		
-			<property class="Action0">
-				<property name="Class" value="DynamicMelee"/>
-				<property name="Damage_type" value="Slashing"/>
-				<property name="Sphere" value=".1"/>
-				<property name="Sound_start" value="swoosh"/>
-				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
-				<property name="ToolCategory.Butcher" value="0" param1="5"/>
-				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
-		
-				<property name="UseGrazingHits" value="true"/>
-				<property name="GrazeStart" value=".25"/>
-				<property name="GrazeEnd" value=".35"/>
-				<property name="SwingDegrees" value="90"/>
-				<property name="SwingAngle" value="90"/>
-				<property class="HitSounds">
-					<property name="Override0" value="organic" param1="metalstaborganic"/>
-				</property>
-				<property class="GrazeSounds">
-					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-				</property>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="DynamicMelee"/>
-				<property name="Damage_type" value="Slashing"/>
-				<property name="Sphere" value=".1"/>
-				<property name="Sound_start" value="swoosh"/>
-				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
-				<property name="ToolCategory.Butcher" value="0" param1="5"/>
-				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
-				<property name="UsePowerAttackAnimation" value="true"/>
-		
-				<property name="UseGrazingHits" value="true"/>
-				<property name="GrazeStart" value=".2"/>
-				<property name="GrazeEnd" value=".3"/>
-				<property name="SwingDegrees" value="80"/>
-				<property name="SwingAngle" value="140"/>
-				<property class="HitSounds">
-					<property name="Override0" value="organic" param1="metalstaborganic"/>
-				</property>
-				<property class="GrazeSounds">
-					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
-				</property>
-			</property>
-		
+
 			<effect_group name="item_toc_dundeeknife_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="7" tags="perkDeepCuts,knife"/> <!-- meleeWpnBladeT1HuntingKnife -->
-				<passive_effect name="BlockDamage" operation="base_set" value="6.5" tags="perkDeepCuts"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="150" tags="perkDeepCuts,perkFlurryOfBlows"/><!-- Gazz change 60 to 120 power attacks are fine as is -->
-				<passive_effect name="StaminaLoss" operation="base_set" value="6.7" tags="primary"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="380,1000" tier="1,6" tags="perkDeepCuts"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="7.1" tags="perkDeepCuts,knife"/> <!-- meleeWpnBladeT1HuntingKnife -->
+				<passive_effect name="BlockDamage" operation="base_set" value="6.3" tags="perkDeepCuts"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkDeepCuts,perkFlurryOfBlows"/><!-- Gazz change 60 to 120 power attacks are fine as is -->
+				<passive_effect name="StaminaLoss" operation="base_set" value="7.2" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="550,1300" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkDeepCuts"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.3" tags="perkDeepCuts"/>
 				<passive_effect name="BlockRange" operation="base_set" value="2.7" tags="perkDeepCuts"/>
-		
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-		
+
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkDeepCuts"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2" tags="perkDeepCuts"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
-		
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
+
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
-				<!-- <passive_effect name="DamageModifier" operation="perc_add" value="0" tags="organic"/> affects organic block harvesting based on block.material.damage_category, not animal corpse harvesting -->
+				<passive_effect name="DamageModifier" operation="perc_add" value=".6" tags="organic"/>
 				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
 				<display_value name="dBleeding" value="1"/> <!-- the bleeding proc is run by the perk -->
 			</effect_group>
@@ -132,7 +90,7 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="AttacksPerMinute" operation="base_add" value="-60" tags="secondary"/>
-				<passive_effect name="StaminaLoss" operation="base_add" value="17.3" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_add" value="12.3" tags="secondary"/>
 			</effect_group>
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
@@ -141,9 +99,9 @@
 					<passive_effect name="EntityDamage" operation="perc_add" value="4.2" tags="perkDeepCuts"/>
 					<display_value name="dEntityDamageSneak" value="4.2"/>
 			</effect_group>
-			<property name="Group" value="Ammo/Weapons"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
-		
+
 	</append>
 </configs>

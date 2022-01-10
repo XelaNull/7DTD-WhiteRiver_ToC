@@ -129,20 +129,12 @@
 	</append>
 
 	<!-- Code to Make Taza's Axe MORE Awesome -->
-	<!--
-	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage']/@value">26</set>
--->
-	<!--
-	<item name="meleeToolRepairT0TazasStoneAxe">
-		<effect_group name="meleeToolRepairT0TazasStoneAxe">
-			<passive_effect name="BlockRange" operation="base_set" value="3"/>
-	-->
-
-	<!--
-	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute']/@value">120</set>
-	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss']/@value">7</set>
--->
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">23</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage' and @operation='perc_add' and @tier='2,6']/@value">.15,.55</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss' and @operation='base_set']/@value">7</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss' and @operation='perc_add']/@value">-.15,.15</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">120</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='perc_add']/@value">-.1,.1</set>
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockRange']/@value">4</set>
-
 
 </configs>

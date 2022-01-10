@@ -2,7 +2,7 @@
 	<append xpath="/items">
 
     <item name="item_toc_claws_name">
-      <property name="DescriptionKey" value="item_toc_claws_description"/>									
+      <property name="DescriptionKey" value="item_toc_claws_description"/>
       <property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
       <property name="CustomIconTint" value="ff0000"/>
 
@@ -61,18 +61,18 @@
     		</property>
     	</property>
     	<effect_group name="item_toc_claws_name">
-    		<passive_effect name="EntityDamage" operation="base_set" value="11.1" tags="perkBrawler"/>
-    		<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkBrawler"/>
+    		<passive_effect name="EntityDamage" operation="base_set" value="10.6" tags="perkBrawler"/>
+    		<passive_effect name="BlockDamage" operation="base_set" value="3.2" tags="perkBrawler"/>
     		<passive_effect name="AttacksPerMinute" operation="base_set" value="110" tags="perkBrawler"/>
     		<passive_effect name="StaminaLoss" operation="base_set" value="8.6" tags="primary"/>
-    		<passive_effect name="DegradationMax" operation="base_set" value="400,1200" tier="1,6" tags="perkBrawler"/>
-    		<passive_effect name="DegradationPerUse" operation="base_set" value=".8" tags="perkBrawler"/>
+    		<passive_effect name="DegradationMax" operation="base_set" value="400,1100" tier="1,6" tags="perkBrawler"/>
+    		<passive_effect name="DegradationPerUse" operation="base_set" value="1.1" tags="perkBrawler"/>
     		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
     		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkBrawler"/>
 
     		<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
-    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
-    		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
+    		<passive_effect name="ModPowerBonus" operation="base_add" value="310" tags="EconomicValue"/>
 
     		<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.18" tags="perkBrawler"/> <!-- random EntityDmg -->
     		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.7" tier="2,6" tags="perkBrawler"/> <!-- tier bonus -->
@@ -99,9 +99,9 @@
     		<passive_effect name="StaminaLoss" operation="base_set" value="14.3" tags="secondary"/>
     	</effect_group>
     </item>
-		
-		<item name="questitem_toc_claws_name"> 
-			<property name="DescriptionKey" value="questitem_toc_claws_desc"/>									
+
+		<item name="questitem_toc_claws_name">
+			<property name="DescriptionKey" value="questitem_toc_claws_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -110,16 +110,16 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bear Grylls Iron Knuckles"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
 
 		<item name="schemitem_toc_claws_name">
-			<property name="DescriptionKey" value="schemitem_toc_claws_description"/>						
+			<property name="DescriptionKey" value="schemitem_toc_claws_description"/>
     	<property name="Extends" value="schematicMaster"/>
     	<property name="CreativeMode" value="Player"/>
     	<property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
-      <property name="CustomIconTint" value="cc3300"/> 
+      <property name="CustomIconTint" value="cc3300"/>
     	<property name="Unlocks" value="item_toc_claws_name"/>
     	<effect_group tiered="false">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_claws_name" operation="set" value="1"/>
@@ -133,7 +133,7 @@
 
     <item name="vetitem_toc_claws_name">
       <property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attFortitude,perkBrawler,canHaveCosmetic,longShaft"/>
-      <property name="DescriptionKey" value="vetitem_toc_claws_description"/>									
+      <property name="DescriptionKey" value="vetitem_toc_claws_description"/>
       <property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
       <property name="CustomIconTint" value="0000ff"/>
 
@@ -173,13 +173,13 @@
     		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkBrawler"/>
 
     		<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
-    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".13" tags="EntityDamage,BlockDamage"/>
-    		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    		<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+    		<passive_effect name="ModPowerBonus" operation="base_add" value="320" tags="EconomicValue"/>
 
-    		<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/> 
-    		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/> 
-    		<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/> 
-    		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/> 
+    		<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/>
+    		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/>
+    		<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.19" tags="perkBrawler"/>
+    		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.9" tier="2,6" tags="perkBrawler"/>
 
     		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
     		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
@@ -196,15 +196,15 @@
     		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
     	</effect_group>
     	<effect_group name="Power Attack">
-    		<passive_effect name="EntityDamage" operation="perc_add" value="1.4" tags="secondary"/>
-    		<passive_effect name="BlockDamage" operation="perc_add" value="1.4" tags="secondary"/>
+    		<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+    		<passive_effect name="BlockDamage" operation="perc_add" value="1.3" tags="secondary"/>
     		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
     		<passive_effect name="StaminaLoss" operation="base_set" value="15.3" tags="secondary"/>
     	</effect_group>
     </item>
-		
-		<item name="vetquestitem_toc_claws_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_claws_desc"/>									
+
+		<item name="vetquestitem_toc_claws_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_claws_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -213,22 +213,22 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bear Grylls Steel Knuckles"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
-		
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
 		<item name="vetschemitem_toc_claws_name">
-			<property name="DescriptionKey" value="vetschemitem_toc_claws_desc"/>						
+			<property name="DescriptionKey" value="vetschemitem_toc_claws_desc"/>
 			<property name="Extends" value="schematicMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
-			<property name="CustomIconTint" value="5C5CFF"/> 
+			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="Unlocks" value="vetitem_toc_claws_name"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vetitem_toc_claws_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
-	
+
   </append>
-</configs>    
+</configs>
