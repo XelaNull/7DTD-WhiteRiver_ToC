@@ -88,32 +88,12 @@
 			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
 		</lootgroup>
 
-		<!-- This section is to ensure if the player drops the sealed citizen crate on the ground and destroys it, at least some items will drop from it -->
-		<!-- This section won't be used unless a line is uncommented in quests.xml -->
-		<lootcontainer id="365" name="WhiteRiverToCRequired01" count="5,10" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="groupWeaponsT2_Gunslinger" prob=".75" count="1"/>
-			<item group="bicycleParts" count="0,1"/>
-			<item group="ToCgroupArmorT0" count="0,1"/>
-			<item group="seeds" count="0,1"/>
-			<item group="drinks"/>
-			<item group="groupAmmoRegular" prob=".3"/>
-		</lootcontainer>
-
-		<lootcontainer id="366" name="WhiteRiverToCRequired02" count="8,10" size="6,6" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="groupWeaponsT2_Gunslinger" prob=".75"/>
-			<item group="seeds" count="1,2"/>
-			<item group="ToCgroupArmorT2" count="0,2"/>
-			<item group="ToCgroupWeaponsT2_Ranged" count="0,1"/>
-			<item group="drinks"/>
-			<item group="groupAmmoRegular" prob=".6"/>
-		</lootcontainer>
-
 
 		<lootgroup name="randomEliteQuests">
 		</lootgroup>
 
 
-		<lootcontainer id="390" name="WhiteRiverToCRequired03" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+		<lootcontainer id="390" name="WhiteRiverToCRequiredRandom" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="randomEliteQuests" count="1" />
 		</lootcontainer>
 	</append>
