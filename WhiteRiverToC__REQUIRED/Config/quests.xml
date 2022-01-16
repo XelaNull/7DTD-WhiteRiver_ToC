@@ -109,46 +109,6 @@
 			</quest>
 
 
-			<quest id="+Kill 104 Zombies">
-				<property name="name_key" value="quest_toc_100z_name"/>
-				<property name="subtitle_key" value="quest_toc_100z_subtitle"/>
-				<property name="description_key" value="Kill 1004 Zombies"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="medium" />
-				<property name="difficulty_tier" value="4"/>
-				<property name="offer_key" value="quest_toc_100z_offer"/>
-				<property name="statement_key" value="quest_toc_100z_statement"/>
-				<property name="response_key" value="questdialog_toc_100z"/>
-				<property name="group_name_key" value="quest_toc_100z_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="5" />
-
-				<objective type="ZombieKill" value="100" phase="1" />
-				<objective type="Goto" value="5" phase="2" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="3"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="1500" />
-				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
-
-				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
-			</quest>
-
 			<quest id="+Kill 1000 Zombies">
 				<property name="name_key" value="quest_toc_1000z_name"/>
 				<property name="subtitle_key" value="quest_toc_1000z_subtitle"/>
@@ -186,45 +146,7 @@
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
 			</quest>
 
-			<quest id="+Kill 106 Zombies">
-				<property name="name_key" value="quest_toc_100z_name"/>
-				<property name="subtitle_key" value="quest_toc_100z_subtitle"/>
-				<property name="description_key" value="Kill 1006 Zombies"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="medium" />
-				<property name="difficulty_tier" value="6"/>
-				<property name="offer_key" value="quest_toc_100z_offer"/>
-				<property name="statement_key" value="quest_toc_100z_statement"/>
-				<property name="response_key" value="questdialog_toc_100z"/>
-				<property name="group_name_key" value="quest_toc_100z_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="5" />
 
-				<objective type="ZombieKill" value="100" phase="1" />
-				<objective type="Goto" value="5" phase="2" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="3"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="1500" />
-				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
-
-				<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
-			</quest>
 
 <!--
 			<quest id="quest_reward_1000z">
