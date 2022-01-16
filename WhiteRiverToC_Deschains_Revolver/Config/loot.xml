@@ -13,13 +13,13 @@
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
 		<lootgroup name="groupBooksDarkTower">
 			<item name="item_toc_desc_book1_name" prob=".2"/>
-			<item name="item_toc_desc_book2_name" prob=".1"/>
-			<item name="item_toc_desc_book3_name" prob=".1"/>
-			<item name="item_toc_desc_book4_name" prob=".1"/>
-			<item name="item_toc_desc_book5_name" prob=".1"/>
-			<item name="item_toc_desc_book6_name" prob=".1"/>
-			<item name="item_toc_desc_book7_name" prob=".1"/>
-			<item name="item_toc_desc_book8_name" prob=".05" />
+			<item name="item_toc_desc_book2_name" prob=".05"/>
+			<item name="item_toc_desc_book3_name" prob=".05"/>
+			<item name="item_toc_desc_book4_name" prob=".05"/>
+			<item name="item_toc_desc_book5_name" prob=".05"/>
+			<item name="item_toc_desc_book6_name" prob=".05"/>
+			<item name="item_toc_desc_book7_name" prob=".05"/>
+			<item name="item_toc_desc_book8_name" prob=".02" />
 		</lootgroup>
 	</insertAfter>
 
