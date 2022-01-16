@@ -72,7 +72,7 @@
 				<property name="nav_object" value="return_to_trader" />
 			</objective>
 
-			<reward type="Item" id="questitem_toc_amelia1map_name" ischosen="true" isfixed="true" value="1" />
+			<reward type="Item" id="questitem_toc_amelia1map_name" value="1" />
 			<reward type="LootItem" id="groupTreasureMaps" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
