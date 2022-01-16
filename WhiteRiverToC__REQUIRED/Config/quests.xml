@@ -146,42 +146,6 @@
 				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
 			</quest>
 
-
-
-<!--
-			<quest id="quest_reward_1000z">
-				<property name="name_key" value="quest_toc_1000zreward_name"/>
-				<property name="subtitle_key" value="quest_toc_1000zreward_subtitle"/>
-				<property name="description_key" value="quest_toc_1000zreward_description"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="quest_toc_1000zreward_offer"/>
-				<property name="statement_key" value="quest_toc_1000zreward_statement"/>
-				<property name="response_key" value="questdialog_toc_1000zreward"/>
-				<property name="group_name_key" value="quest_toc_1000z_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn"/>
-
-				<objective type="Goto" value="5" phase="1"/>
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="go_to_trader" />
-					<property name="use_closest" value="true" />
-				</objective>
-
-				<reward type="Exp" value="2000" />
-				<reward type="SkillPoints" value="1" />
-				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
-				<reward type="Item" id="questblock_toc_elitecrate_name" value="3" />
-			</quest>
-		-->
-
 			<quest id="+Obtain a Random Elite Quest">
 				<property name="name_key" value="quest_toc_randomelite_name"/>
 				<property name="subtitle_key" value="quest_toc_randomelite_subtitle"/>
