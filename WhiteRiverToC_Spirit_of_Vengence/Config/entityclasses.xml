@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,motorcycle</append>
 	<append xpath="/entity_classes">
-		<entity_class name="vehicleSpiritHellBeast"> <!--Snufkin -->
+		<entity_class name="vehicleSpiritHellBeastToC"> <!--Snufkin -->
 			<property name="Tags" value="vehicle,vehiclespirithellbeast"/>
 			<property name="Class" value="EntityMotorcycle"/>
 			<property name="Parent" value="Cars"/>

@@ -32,7 +32,7 @@
 	</append>
 
 	<append xpath="/items">
-		<item name="vehicleSpiritHellBeastPlaceable"> <!--Snufkin -->
+		<item name="vehicleSpiritHellBeastToCPlaceable"> <!--Snufkin -->
 			<property name="Extends" value="vehicleMinibikePlaceable"/>
 			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
 			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
@@ -40,7 +40,7 @@
 			<property name="Meshfile" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
 			<property name="EconomicValue" value="10000"/>
 			<property class="Action1">
-				<property name="Vehicle" value="vehicleSpiritHellBeast"/>
+				<property name="Vehicle" value="vehicleSpiritHellBeastToC"/>
 				<property name="VehicleSize" value="1.3, 1.9, 3"/>
 			</property>
 			<effect_group name="vehicleMotorcyclePlaceable" tiered="false">

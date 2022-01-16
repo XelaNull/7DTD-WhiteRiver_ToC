@@ -1,7 +1,7 @@
 <configs>
 
 	<append xpath="/vehicles">
-	<vehicle name="vehicleSpiritHellBeast"> <!--Snufkin -->
+	<vehicle name="vehicleSpiritHellBeastToC"> <!--Snufkin -->
 
 			<property name="cameraDistance" value="3.5, 5"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
