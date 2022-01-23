@@ -3,18 +3,20 @@
 		<item name="questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelper">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="7fa6ff"/> 
+			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="5f40c4"/> 
+			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 
-		<item name="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"> 
-			<property name="DescriptionKey" value="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>												
+		<item name="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -23,13 +25,13 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Quest For Non Fuzzy Bulletproof Glass Recipe Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
-		
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
 		<item name="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>									
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="vetquestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -41,12 +43,12 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Non Fuzzy Bulletproof Glass"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
-		
+			</property>
+		</item>
+
 		<!-- ELITE -->
-		<item name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"> 
-			<property name="DescriptionKey" value="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>									
+		<item name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
+			<property name="DescriptionKey" value="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="questMaster"/>
@@ -55,13 +57,13 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Quest For Non Fuzzy Bulletproof Glass Recipe Start"/>
 				<property name="Delay" value="0"/>
-			</property>			
-			<property name="Group" value="Special Items"/>			
-		</item>	
-		
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
 		<item name="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_name">
-			<property name="DescriptionKey" value="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>						
-			<property name="CustomIcon" value="questMaster"/> 
+			<property name="DescriptionKey" value="elitequestwrit_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
+			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Material" value="MresourcePaper"/>
@@ -73,20 +75,20 @@
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Non Fuzzy Bulletproof Glass Recipe"/>
 				<property name="Delay" value="0"/>
-			</property>		
-		</item>	
-		
+			</property>
+		</item>
+
 		<item name="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_schem_name">
-			<property name="DescriptionKey" value="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>						
+			<property name="DescriptionKey" value="eliteitemreward_toc_glassNonFuzzyBulletproofBlockVariantHelper_description"/>
 			<property name="Extends" value="schematicMaster"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="glassBulletproofCTRPlate"/> 
+			<property name="CustomIcon" value="glassBulletproofCTRPlate"/>
 			<property name="Unlocks" value="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="questblock_toc_glassNonFuzzyBulletproofBlockVariantHelper" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
-		
+
 	</append>
 </configs>
