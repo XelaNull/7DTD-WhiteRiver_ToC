@@ -1,57 +1,57 @@
 <configs>
 	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
-      <property name="Sound_start" value="mp5_s_fire"/>
+      <property name="Sound_start" value="smg_s_fire"/>
       <property name="Sound_end" value="silencefiller"/>
-      <property name="Sound_loop" value="mp5_s_fire"/>
+      <property name="Sound_loop" value="smg_s_fire"/>
       <property name="BarrelOffset" value="0,0,0"/>
       <property name="BarrelScale" value="1,1,1"/>
     </item_property_overrides>
-    
+
     <item_property_overrides name="questitem_toc_leonsmg_name">
-      <property name="Sound_start" value="mp5_s_fire"/>
+      <property name="Sound_start" value="smg_s_fire"/>
       <property name="Sound_end" value="silencefiller"/>
-      <property name="Sound_loop" value="mp5_s_fire"/>
+      <property name="Sound_loop" value="smg_s_fire"/>
       <property name="BarrelOffset" value="0,0,0"/>
       <property name="BarrelScale" value="1,1,1"/>
     </item_property_overrides>
   </append>
-  
-  
+
+
   <append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="SideOffset" value="0,.0108,.0148"/>
 			<property name="SideScale" value="1.25,1.25,1.25"/>
     </item_property_overrides>
-    
+
     <item_property_overrides name="questitem_toc_leonsmg_name">
       <property name="SideOffset" value="0,.0108,.0148"/>
 			<property name="SideScale" value="1.25,1.25,1.25"/>
     </item_property_overrides>
   </append>
-  
-  
+
+
   <append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="SideOffset" value="0,.0065,0"/>
       <property name="SideScale" value="1.5,1.5,1.5"/>
     </item_property_overrides>
-    
+
     <item_property_overrides name="questitem_toc_leonsmg_name">
       <property name="SideOffset" value="0,.0065,0"/>
       <property name="SideScale" value="1.5,1.5,1.5"/>
     </item_property_overrides>
   </append>
 
-  
-  
+
+
   <append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="ScopeOffset" value="0,.0999,-.2534"/>
       <property name="ScopeScale" value=".9,.9,.9"/>
       <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
-    
+
     <item_property_overrides name="questitem_toc_leonsmg_name">
       <property name="ScopeOffset" value="0,.0999,-.2534"/>
       <property name="ScopeScale" value=".9,.9,.9"/>
@@ -66,7 +66,7 @@
       <property name="ScopeScale" value=".8,.8,.8"/>
       <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
-    
+
     <item_property_overrides name="questitem_toc_leonsmg_name">
       <property name="ScopeOffset" value="-.0012,.098,-.2405"/>
       <property name="ScopeScale" value=".8,.8,.8"/>
@@ -81,22 +81,22 @@
       <property name="ScopeScale" value="1,1,1"/>
       <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
-    
+
     <item_property_overrides name="questitem_toc_leonsmg_name">
       <property name="ScopeOffset" value="0,-.1029,-.1373"/>
       <property name="ScopeScale" value="1,1,1"/>
       <property name="ScopeCameraOffset" value="0,0,0"/>
     </item_property_overrides>
   </append>
-  
-  
+
+
   <append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
     <item_property_overrides name="questitem_toc_leondegsmg_name">
       <property name="ScopeOffset" value=".0001,.1,-.15"/>
       <property name="ScopeScale" value=".55,.55,.55"/>
       <property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
     </item_property_overrides>
-    
+
     <item_property_overrides name="questitem_toc_leonsmg_name">
       <property name="ScopeOffset" value=".0001,.1,-.15"/>
       <property name="ScopeScale" value=".55,.55,.55"/>
