@@ -6,6 +6,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			 <property name="Tags" value="ToC_coin"/>
 		</item>
 
 		<item name="item_toc_amelia_schem_name">
@@ -82,7 +83,7 @@
 		</item>
 
     <item name="vehicleAmeliaGyrocopterPlaceable">
-			<property name="Tags" value="vehicle,vengine,vfuel,canHaveCosmetic"/>						
+			<property name="Tags" value="vehicle,vengine,vfuel,canHaveCosmetic"/>
       <property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>
       <property name="CustomIconTint" value="cc3300"/>
     	<property name="Extends" value="vehicleMinibikePlaceable"/>
