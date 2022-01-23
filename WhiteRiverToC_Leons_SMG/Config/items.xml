@@ -5,12 +5,14 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_vetcoin_leon">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 
 		<item name="questitem_toc_leon_name">
