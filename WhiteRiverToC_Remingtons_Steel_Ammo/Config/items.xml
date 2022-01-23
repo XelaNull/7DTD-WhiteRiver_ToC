@@ -8,6 +8,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 
 		<item name="elitequestitem_toc_remington_name">
