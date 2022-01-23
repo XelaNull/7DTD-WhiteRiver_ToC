@@ -1,6 +1,6 @@
 <configs>
 	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
-		<item name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" />
+		<item name="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name" count="1" />
 	</append>
 
 	<append xpath="lootcontainers">
