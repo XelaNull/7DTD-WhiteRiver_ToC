@@ -5,6 +5,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 
     <!-- Quest & Writ for Kuva's Red Armor -->
@@ -408,7 +409,7 @@
 				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
 				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>				
+				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
