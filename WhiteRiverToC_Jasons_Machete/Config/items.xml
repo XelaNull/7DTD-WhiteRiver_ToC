@@ -5,6 +5,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 
 		<item name="questitem_toc_jason_name">
