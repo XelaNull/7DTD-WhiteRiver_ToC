@@ -5,12 +5,14 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		<item name="questitem_elitecoin_rickdanger">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>			
 		</item>
 
 		<item name="vetquestitem_toc_rickdanger_name">
