@@ -31,10 +31,14 @@
 				<property name="group_name_key" value="quest_toc_taza_group"/>
 				<property name="shareable" value="false" />
 
-				<objective type="FetchKeep" id="resourceRockSmall" value="400" phase="1" />
-				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="questwrit_toc_taza_name" value="1" phase="2" />
+				<objective type="ZombieKill" value="20" phase="1" />
+				<requirement type="Holding" id="meleeToolRepairT0StoneAxe" phase="1"/>
+
+				<objective type="FetchKeep" id="resourceRockSmall" value="1200" phase="2" />
+				<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="20" phase="2" />
+				<objective type="FetchKeep" id="resourcePaper" value="1" phase="2" />
+
+				<objective type="Craft" id="questwrit_toc_taza_name" value="1" phase="3" />
 
 				<reward type="Exp" value="1500" />
 			</quest>
