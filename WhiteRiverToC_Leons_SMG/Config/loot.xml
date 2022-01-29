@@ -4,7 +4,7 @@
 			<item name="questitem_toc_leondegsmg_name"/>
 		</lootgroup>
 
-		<lootgroup name="groupWhiteRiverTOCLeon" loot_quality_template="questT2QualTemplate">
+		<lootgroup name="groupWhiteRiverTOCLeon" loot_quality_template="questT1QualTemplate">
 			<item name="questitem_toc_leonsmg_name"/>
 		</lootgroup>
 
