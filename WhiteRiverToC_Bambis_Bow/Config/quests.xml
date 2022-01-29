@@ -32,7 +32,7 @@
 				<property name="group_name_key" value="quest_toc_bambi_group"/>
 				<property name="shareable" value="false" />
 
-				<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1" />
+				<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="5" phase="1" />
 				<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1" />
 				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />

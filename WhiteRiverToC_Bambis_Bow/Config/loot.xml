@@ -25,11 +25,11 @@
 			<item name="modGunCrippleEm"/>
 		</lootgroup>
 
-		<lootgroup name="groupWhiteRiverTOCBambi" loot_quality_template="questT2QualTemplate">
+		<lootgroup name="groupWhiteRiverTOCBambi" loot_quality_template="questT1QualTemplate">
 			<item name="item_toc_bambi_name"/>
 		</lootgroup>
 
-		<lootgroup name="groupWhiteRiverTOCBambiVet" loot_quality_template="questT3QualTemplate">
+		<lootgroup name="groupWhiteRiverTOCBambiVet" loot_quality_template="questT2QualTemplate">
 			<item name="item_toc_bambi_name"/>
 		</lootgroup>
 	</append>
