@@ -1,11 +1,11 @@
 <configs>
 	<append xpath="lootcontainers">
 		<lootgroup name="groupWhiteRiverTOCEverdeenArrows" loot_quality_template="questT3QualTemplate">
-			<item name="item_toc_earrows_name" count="50,150"/>
+			<item name="item_toc_earrows_name" count="30,100"/>
 		</lootgroup>
 
     <lootgroup name="groupWhiteRiverTOCEverdeenBolts" loot_quality_template="questT3QualTemplate">
-			<item name="item_toc_ebolts_name" count="50,150"/>
+			<item name="item_toc_ebolts_name" count="30,100"/>
 		</lootgroup>
 
     <lootgroup name="groupWhiteRiverTOCEverdeenStew" loot_quality_template="questT3QualTemplate">

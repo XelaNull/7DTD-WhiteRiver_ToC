@@ -31,8 +31,9 @@
 			<property name="group_name_key" value="quest_toc_earrows_group"/>
 			<property name="shareable" value="false" />
 
-			<objective type="FetchKeep" id="foodCropCorn" value="3" phase="1" />
-			<objective type="FetchKeep" id="foodCropBlueberries" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodCropCorn" value="7" phase="1" />
+			<objective type="FetchKeep" id="foodCropBlueberries" value="15" phase="1" />
+			<objective type="FetchKeep" id="foodBakedPotato" value="3" phase="1" />
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 			<objective type="Craft" id="writitem_toc_earrows_name" value="1" phase="2" />
 
@@ -110,8 +111,10 @@
 			<property name="group_name_key" value="quest_toc_ebolts_group"/>
 			<property name="shareable" value="false" />
 
-			<objective type="FetchKeep" id="foodCropPotato" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodCropCorn" value="7" phase="1" />
 			<objective type="FetchKeep" id="foodCropMushrooms" value="3" phase="1" />
+			<objective type="FetchKeep" id="foodBakedPotato" value="3" phase="1" />
+
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 			<objective type="Craft" id="writitem_toc_ebolts_name" value="1" phase="2" />
 			<reward type="Exp" value="1500" />
