@@ -32,7 +32,9 @@
 				<property name="group_name_key" value="quest_toc_jason_group"/>
 				<property name="shareable" value="false" />
 
-				<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="100" phase="1" />
+				<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="150" phase="1" />
+				<objective type="FetchKeep" id="resourceScrapIron" value="400" phase="1" />
+
 				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
 				<objective type="Craft" id="questwrit_toc_jason_name" value="1" phase="2" />
 

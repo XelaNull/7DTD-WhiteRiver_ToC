@@ -5,7 +5,7 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="ToC_coin"/>			
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 
 		<item name="questitem_toc_jason_name">
@@ -41,7 +41,6 @@
 
 		<item name="item_toc_jason_name"> <!-- T3 Blades -->
 			<property name="Extends" value="meleeWpnBladeT3Machete"/>
-
 			<property name="DescriptionKey" value="item_toc_jason_description"/>
 			<property name="Tags" value="machete,melee,grunting,longShaft,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
@@ -60,20 +59,20 @@
 			<property name="ShowQuality" value="true"/>
 
 			<effect_group name="item_toc_jason_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="25" tags="perkDeepCuts"/> <!-- meleeToolKnifeMachete -->
-				<passive_effect name="BlockDamage" operation="base_set" value="23" tags="perkDeepCuts"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkDeepCuts"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="21.5" tags="perkDeepCuts"/> <!-- meleeToolKnifeMachete -->
+				<passive_effect name="BlockDamage" operation="base_set" value="19" tags="perkDeepCuts"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkDeepCuts"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="18.5" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="300,900" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
-				<passive_effect name="MaxRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.35" tags="perkDeepCuts"/>
 				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkDeepCuts"/>
 
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="310" tags="EconomicValue"/>
 
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/> <!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkDeepCuts"/> <!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/> <!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
