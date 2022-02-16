@@ -2,7 +2,7 @@
 	<append xpath="/vehicles">
   <!-- vehicleGyrocopter -->
     <vehicle name="vehicleAmeliaGyrocopter">
-			
+
 			<property name="cameraDistance" value="10, 10"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
 			<property name="motorTorqueMinQ" value="0"/>
@@ -24,9 +24,9 @@
 			<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
-  
+
       <property name="hornSound" value="vehicle/minibike/minibike_horn"/>
-  
+
       <property class="engine">
         <property name="class" value="Engine"/>
         <property name="slot_type" value="engine"/>
@@ -44,12 +44,12 @@
         <property name="sound_no_fuel_shut_off" value="Vehicles/Gyrocopter/gyrocopter_sputter"/>
         <property name="paint" value="body"/>
       </property>
-  
+
       <property class="fuelTank">
         <property name="class" value="FuelTank"/>
         <property name="capacity" value="400"/>
       </property>
-  
+
       <property class="handlebars">
         <property name="class" value="Steering"/>
         <property name="slot_type" value="handlebars"/>
@@ -60,33 +60,33 @@
         <property name="IKHandRPosition" value=".052, 1.0054, .755"/>
         <property name="IKHandRRotation" value="0, -17.2, -90"/>
       </property>
-  
+
       <property class="seat0">
         <property name="position" value="0, .05, .98"/>
         <property name="rotation" value="-25, 0, 0"/>
         <property name="exit" value="-1.3,0,.9 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
       </property>
-  
+
 			<property class="seat1">
 				<property name="position" value=".5, .05, .98"/>
 				<property name="rotation" value="-25, 0, 0"/>
 				<property name="exit" value="-1.3,0,.9 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
 			</property>
-			
+
 			<property class="seat2">
 				<property name="position" value="-.5, .05, .98"/>
 				<property name="rotation" value="-25, 0, 0"/>
 				<property name="exit" value="-1.3,0,.9 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
 			</property>
-	
+
 			<property class="motor0">
 				<property name="engine" value="engine"/>
 				<property name="engineOffPer" value=".02"/>
 				<property name="rpmAccel_min_max" value="0.01, .3"/>
 				<property name="rpmMax" value="8"/>
 				<property name="rpmDrag" value=".993"/>
-				<property name="trigger" value="relative"/> 
-				<property name="type" value="spin"/> 
+				<property name="trigger" value="relative"/>
+				<property name="type" value="spin"/>
 				<property name="transform" value="Origin/TopPropellerJoint"/>
 				<property name="axis" value="1"/>
 			</property>
@@ -107,7 +107,7 @@
 				<property name="trigger" value="motor0"/>
 				<property name="type" value="relative"/>
 				<property name="force" value="0, .18, 0"/>
-				<property name="ceiling" value="150, 240"/>
+				<property name="ceiling" value="280, 300"/>
 			</property>
 
 			<property class="force1">
@@ -143,22 +143,22 @@
       <property class="wheel0">
         <property name="torqueScale_motor_brake" value="1, 1"/>
       </property>
-  
+
       <property class="wheel1">
         <property name="torqueScale_motor_brake" value="1, 1"/>
       </property>
-  
+
       <property class="wheel2">
         <property name="torqueScale_motor_brake" value="1, 1"/>
       </property>
-			
+
 			<property class="headlight">
 				<property name="class" value="Headlight"/>
 				<property name="parent_part" value="chassis"/>
 				<property name="transform" value="Origin/headlight"/>
 				<property name="bright" value=".75"/>
 			</property>
-  
+
       <property class="storage">
         <property name="class" value="Storage"/>
         <property name="display_name" value="basket"/>
@@ -166,7 +166,7 @@
         <property name="mesh" value="basket"/>
         <property name="transform" value="basket"/>
       </property>
-  
+
     </vehicle>
   </append>
-</configs> 
+</configs>
