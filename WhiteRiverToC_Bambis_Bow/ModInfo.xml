@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
 		<Name value="White River Tools of Citizenship - Bambi's Bow" />
+		<DisplayName value="White River Tools of Citizenship - Bambi's Bow" />
 		<Description value="Gather tons of wood and craft a bunch of Wooden Bow's to obtain a named Compound Bow." />
 		<Author value="Shouden Kalferas, and morggin" />
-		<Version value="A20_1.0j" />
+		<Version value="1.0_1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
-	</ModInfo>
 </xml>

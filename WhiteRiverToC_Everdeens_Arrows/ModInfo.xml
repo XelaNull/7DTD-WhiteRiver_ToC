@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
 		<Name value="White River Tools of Citizenship - Everdeen's Arrows" />
+		<DisplayName value="White River Tools of Citizenship - Everdeen's Arrows" />
 		<Description value="Gather food to help feed the settlement and in exchange they'll offer you premium named arrows or bolts." />
 		<Author value="Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet" />
-		<Version value="A20_1.0j" />
+		<Version value="1.0_1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
-	</ModInfo>
 </xml>

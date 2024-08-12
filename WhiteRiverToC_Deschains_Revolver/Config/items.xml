@@ -177,89 +177,6 @@
 			</effect_group>
 		</item>
 
-		<!-- Backwards Compatibility -->
-		<item name="crafteditem_toc_45lcsilver_schem_name">
-			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>
-			<property name="Extends" value="ammo44MagnumBulletBall"/>
-			<property name="DisplayType" value="ammoBulletHP"/>
-			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
-			<property name="CustomIconTint" value="c4cace"/>
-			<property name="EconomicValue" value="75"/>
-			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
-			<effect_group name="45LC Silver Bullet of Gilead" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="100" tags="perkGunslinger"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
-				<display_value name="dTargetArmor" value="1"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1">
-					<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
-				</passive_effect>
-			</effect_group>
-		</item>
-
-		<item name="crafteditem_toc_45lcgold_schem_name">
-			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>
-			<property name="Extends" value="ammo44MagnumBulletBall"/>
-			<property name="DisplayType" value="ammoBulletAP"/>
-			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
-			<property name="CustomIconTint" value="d4af37"/>
-			<property name="EconomicValue" value="100"/>
-			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
-			<effect_group name="45LC Gold Bullet of Gilead" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkGunslinger"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="14" tags="perkGunslinger"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.3"/>
-				<display_value name="dTargetArmor" value="-.2"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
-				<display_value name="dTargetPenetration" value="1"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger"/>
-				<display_value name="dDegradationPerUse" value=".3"/>
-			</effect_group>
-		</item>
-
-		<item name="itemreward_toc_deschhat_schem_name"> <!-- item name directly referenced in the code -->
-			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>
-			<property name="Tags" value="head,clothing,canHaveCosmetic"/>
-			<property name="CustomIcon" value="apparelCowboyHat"/>
-			<property name="CustomIconTint" value="624a2e"/>
-			<property name="DisplayType" value="armor"/>
-			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="Waterproof" value=".55"/>
-			<property name="Encumbrance" value=".01"/>
-			<property name="Material" value="Mleather"/>
-			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="1"/> <!-- weight because loot only -->
-			<property name="FuelValue" value="16"/>
-			<property name="EconomicValue" value="420"/>
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="EquipSlot" value="Head"/>
-			<property name="DescriptionKey" value="apparelCowboyHatGroupDesc"/>
-			<property name="Group" value="Clothing"/>
-			<property class="UMA">
-				<property name="Mesh" value="gear_cowboyhat"/>
-				<property name="Overlay0" value="gear_cowboyhat"/>
-				<property name="Layer" value="2"/>
-				<property name="UISlot" value="Headgear"/>
-				<property name="Mask0" value="Head" param1="outer"/>
-				<property name="ShowAltHair" value="true"/>
-			</property>
-			<effect_group tiered="false">
-				<passive_effect name="ModSlots" operation="base_set" value="2"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="10.5,14.3"/>
-
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="6.6,9"/>
-				<display_value name="dStaminaChangeOT" value="0"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-2"/><display_value name="dNoiseMultiplier" value="-2"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".2,.4" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".1" tags="buffInjuryBleeding"/>
-			</effect_group>
-		</item>
-
-		<!-- End Backwards Compatibility -->
-
 
 		<item name="resourceRepairKitDeschain">
 			<property name="HoldType" value="45"/>
@@ -305,9 +222,9 @@
 				<property name="ShowAltHair" value="true"/>
 			</property>
 			<effect_group tiered="false">
-				<passive_effect name="ModSlots" operation="base_set" value="2"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="10.5,14.3"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="3.8,6.2"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="11.5,15.3"/>
 
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="6.6,9"/>
 				<display_value name="dStaminaChangeOT" value="0"/>
@@ -401,7 +318,4 @@
 		</item>
 	</append>
 
-	<!-- Backwards Compatibility -->
-	<append xpath="/items/item[@name='itemreward_toc_desch_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,crafteditem_toc_45lcsilver_schem_name,crafteditem_toc_45lcgold_schem_name</append>
-	<!-- End Backwards Compatibility -->
 </configs>
