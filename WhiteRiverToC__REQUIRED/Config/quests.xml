@@ -10,7 +10,7 @@
 		<quest id="tier1_clear"/>
 	-->
 
-	<insertBefore xpath="/quests/quest_list[@id='trader_quests']">
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']">
 			<quest id="quest_whiteRiverCitizen2">
 				<property name="name_key" value="quest_tools_of_citizenship_name"/>
 				<property name="subtitle_key" value="quest_tools_of_citizenship_subtitle"/>
@@ -183,7 +183,31 @@
 
 	</insertBefore>
 
-	<append xpath="/quests/quest_list[@id='trader_quests']">
+	<append xpath="/quests/quest_list[@id='trader_rekt_quests']">
+		<quest id='quest_whiteRiverCitizen3' />
+		<quest id='+Kill 100 Zombies' />
+		<quest id='+Kill 1000 Zombies' />
+	</append>
+
+	<append xpath="/quests/quest_list[@id='trader_jen_quests']">
+		<quest id='quest_whiteRiverCitizen3' />
+		<quest id='+Kill 100 Zombies' />
+		<quest id='+Kill 1000 Zombies' />
+	</append>
+	
+	<append xpath="/quests/quest_list[@id='trader_bob_quests']">
+		<quest id='quest_whiteRiverCitizen3' />
+		<quest id='+Kill 100 Zombies' />
+		<quest id='+Kill 1000 Zombies' />
+	</append>
+	
+	<append xpath="/quests/quest_list[@id='trader_hugh_quests']">
+		<quest id='quest_whiteRiverCitizen3' />
+		<quest id='+Kill 100 Zombies' />
+		<quest id='+Kill 1000 Zombies' />
+	</append>
+	
+	<append xpath="/quests/quest_list[@id='trader_joel_quests']">
 		<quest id='quest_whiteRiverCitizen3' />
 		<quest id='+Kill 100 Zombies' />
 		<quest id='+Kill 1000 Zombies' />
