@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="White River Tools of Citizenship - Jason's Machete" />
+		<Name value="WhiteRiverToolsofCitizenship_JasonsMachete" />
 		<DisplayName value="White River Tools of Citizenship - Jason's Machete" />
 		<Description value="Receive a named machete in exchange for providing hunting knives to the settlement"/>
 		<Author value="Wyldwitchykat's addition to the White River ToC modlets by Shouden Kalferas" />
-		<Version value="1.0_1.2" />
+		<Version value="1.0.1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
 </xml>

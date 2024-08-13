@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="White River Tools of Citizenship - Gupta's First Aid Bandages" />
+		<Name value="WhiteRiverToolsofCitizenship_GuptasFirstAidBandages" />
 		<DisplayName value="White River Tools of Citizenship - Gupta's First Aid Bandages" />
 		<Description value="Gather tons of aloe leaves and receive some first aid bandages in return." />
 		<Author value="Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet" />
-		<Version value="1.0_1.2" />
+		<Version value="1.0.1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
 </xml>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="White River Tools of Citizenship - Bear Claws" />
+		<Name value="WhiteRiverToolsofCitizenship_BearClaws" />
 		<DisplayName value="White River Tools of Citizenship - Bear Claws" />
 		<Description value="Fend off a horde of bears and obtain the rare set of flaming bear claws!" />
 		<Author value="Shouden Kalferas with help from SteamM0nkey" />
-		<Version value="1.0_1.2" />
+		<Version value="1.0.1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
 </xml>

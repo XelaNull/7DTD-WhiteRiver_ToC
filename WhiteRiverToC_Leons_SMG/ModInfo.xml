@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="White River Tools of Citizenship - Leon's Modded SMG" />
+		<Name value="WhiteRiverToolsofCitizenship_LeonsModdedSMG" />
 		<DisplayName value="White River Tools of Citizenship - Leon's Modded SMG" />
 		<Description value="Gather tons of pistols to help equip the settlement, then repair the degredaded weapon to ultimately obtain a premium named SMG." />
 		<Author value="Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet" />
-		<Version value="1.0_1.2" />
+		<Version value="1.0.1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
 </xml>

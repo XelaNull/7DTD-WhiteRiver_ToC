@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="White River Tools of Citizenship - Spirit of Vengeance" />
+		<Name value="WhiteRiverToolsofCitizenship_SpiritofVengeance" />
 		<DisplayName value="White River Tools of Citizenship - Spirit of Vengeance" />		
 		<Description value="Help Johnny Blaze reclaim his soul by killing the embodiment of Mephistopholes." />
 		<Author value="Shouden Kalferas, based on Snufkin's Vehicles and Zombies, with help from arramus and Slawa" />
-		<Version value="1.0_1.2" />
+		<Version value="1.0.1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
 </xml>

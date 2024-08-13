@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="White River Tools of Citizenship - Bunyan's FireAxe" />
+		<Name value="WhiteRiverToolsofCitizenship_BunyansFireAxe" />
 		<DisplayName value="White River Tools of Citizenship - Bunyan's FireAxe" />
 		<Description value="Help the Trader stock up on water in exchange for a branded Paul Bunyan FireAxe" />
 		<Author value="Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet" />
-		<Version value="1.0_1.2" />
+		<Version value="1.0.1.2" />
 		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
 </xml>
