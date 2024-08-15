@@ -1,0 +1,56 @@
+<config>
+    <insertAfter xpath="/challenges/challenge_category[@name='Twitch']">
+    	<challenge_category name="White_River_ToC" title_key="TwitchInfo_Header" icon="ui_game_symbol_challenge_category_twitch"/>
+
+        <challenge_group category="White_River_ToC" name="Toc1" title_key="challengeGroupBasics"
+        reward_text_key="challengeRewardBonusTraderQuest" reward_event="challenge_group_reward_toc_basic" link_challenges="true"/>
+
+        <challenge_group category="White_River_ToC" name="Toc2" title_key="challengeGroupHomesteading"
+        reward_text_key="challengeRewardBonusHomesteadingReward" reward_event="challenge_group_reward_homesteading" link_challenges="true" hidden_by="Toc1"/>
+
+        <challenge_group category="White_River_ToC" name="Toc3" title_key="challengeGroupAdvancedSurvival"
+        reward_text_key="challengeRewardBonusSurvivalReward" reward_event="challenge_group_reward_advanced_survival" link_challenges="true" hidden_by="Toc2"/>
+
+        <challenge name="killZombiesToC1" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Toc1"
+            short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
+            reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="1"/>
+        </challenge>
+
+        <challenge name="BuildBlocksToC1" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="Toc1"
+            hint="challengeCraftBuildingBlocksHint1"
+            short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc">
+            <objective type="Craft" item="frameShapes:VariantHelper" count="1"/>
+        </challenge>
+
+        <challenge name="killZombiesToC2" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Toc2"
+            short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
+            reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="1"/>
+        </challenge>
+        
+        <challenge name="killZombiesToC3" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Toc3"
+            short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
+            reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="1"/>
+        </challenge>                
+      
+        <challenge name="groupCompleteChallengeToC1" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="Toc1"
+            prerequisite_hint="challengeGroupCompleteHint1" hint="challengeGroupCompleteHint2"
+            short_description_key="challengeGroupCompleteShort" description_key="challengeGroupCompleteDesc" redeem_always="false">
+            <objective type="ChallengeComplete" challenge="Toc1" is_redeemed="true" is_group="true"/>
+        </challenge>
+
+        <challenge name="groupCompleteChallengeToC2" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="Toc2"
+        prerequisite_hint="challengeGroupCompleteHint1" hint="challengeGroupCompleteHint2"
+        short_description_key="challengeGroupCompleteShort" description_key="challengeGroupCompleteDesc" redeem_always="false">
+        <objective type="ChallengeComplete" challenge="Toc2" is_redeemed="true" is_group="true"/>
+        </challenge>
+
+        <challenge name="groupCompleteChallengeToC3" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="Toc3"
+        prerequisite_hint="challengeGroupCompleteHint1" hint="challengeGroupCompleteHint2"
+        short_description_key="challengeGroupCompleteShort" description_key="challengeGroupCompleteDesc" redeem_always="false">
+        <objective type="ChallengeComplete" challenge="Toc3" is_redeemed="true" is_group="true"/>
+        </challenge>        
+    </insertAfter>
+</config>

@@ -39,16 +39,8 @@
 		</lootgroup>
 
 		<lootgroup name="ToCgroupArmorT0" loot_quality_template="QLTemplateT0">
-			<item name="armorClothPants"/>
-			<item name="armorClothJacket"/>
-			<item name="armorClothBoots"/>
-			<item name="armorClothGloves"/>
-			<item name="armorClothHat"/>
-			<item name="armorScrapHelmet"/>
-			<item name="armorScrapChest"/>
-			<item name="armorScrapGloves"/>
-			<item name="armorScrapLegs"/>
-			<item name="armorScrapBoots"/>
+			<item name="drinkJarCoffee" count="1,2"/>
+			<!-- BROKE -->
 		</lootgroup>
 
 		<lootgroup name="ToCgroupWeaponsT2_Ranged">
@@ -62,30 +54,13 @@
 		</lootgroup>
 
 		<lootgroup name="ToCgroupArmorT1" loot_quality_template="QLTemplateT1">
-			<item name="armorLeatherBoots"/>
-			<item name="armorLeatherPants"/>
-			<item name="armorLeatherChest"/>
-			<item name="armorLeatherGloves"/>
-			<item name="armorLeatherHood"/>
-			<item name="armorIronGloves"/>
-			<item name="armorIronHelmet"/>
-			<item name="armorIronBoots"/>
-			<item name="armorIronLegs"/>
-			<item name="armorIronChest"/>
+			<!-- BROKE -->
+			<item name="drinkJarGoldenRodTea" count="1,2"/>
 		</lootgroup>
 
 		<lootgroup name="ToCgroupArmorT2" loot_quality_template="QLTemplateT2">
-			<item name="armorMilitaryGloves"/>
-			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
-			<item name="armorMilitaryBoots"/>
-			<item name="armorMilitaryLegs"/>
-			<item name="armorMilitaryVest"/>
-			<item name="armorSteelBoots"/>
-			<item name="armorSteelLegs"/>
-			<item name="armorSteelChest"/>
-			<item name="armorSteelGloves"/>
-			<item name="armorSteelHelmet"/>
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+			<!-- BROKE -->
+			<item name="drinkJarGoldenRodTea" count="1,2"/>
 		</lootgroup>
 
 
