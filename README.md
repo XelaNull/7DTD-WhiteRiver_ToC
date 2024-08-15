@@ -79,6 +79,7 @@ The quests are designed to be repeatable in case of loss of equipment or to try 
 - Bunyan's FireAxe
 - Brass For Lead
 - Bambi's Compound Bow
+- Bear Grylls's Iron Knuckles
 
 ##### White River Veteran Citizen Card (100 Zombies)
 
@@ -93,6 +94,7 @@ The quests are designed to be repeatable in case of loss of equipment or to try 
 - Bambi's Compound Bow
 - Amelia Earhart's Gyrocopter (Wendigo)
 - Molino Bulletproof Glass Blocks
+- Bear Grylls's Steel Knuckles
 
 ##### White River Elite Citizen Card (1000 Zombies)
 
@@ -113,6 +115,7 @@ Download the ZIP file and extract. Open the ONE folder and you will find MULTIPL
 
 ### ACKNOWLEDGEMENTS:
 
+- ALo & arkangel5736 :: For continuing to keep the torch lit and the modpack operational, for their many optimization contributions to every single modlet in the pack, and for by and large bringing the entire modpack up to 1.0 compatibility. My deepest gratitude on behalf of the community.
 - Wyldwitchyka :: For the addition of the Jason's machete quest
 - morggin :: For the name and lore behind BlackBart, for the Bambi Terminator Crossbow, and for the idea of an Elite level set of quests
 - RichardPaul :: For the poem used in the Black Bart quest line.
