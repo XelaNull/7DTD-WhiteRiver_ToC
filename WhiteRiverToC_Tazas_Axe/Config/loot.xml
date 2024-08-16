@@ -1,26 +1,19 @@
-<configs>
+<config>
 	<append xpath="/lootcontainers">
-
-
 		<lootgroup name="groupWhiteRiverTOCTazaAxe" loot_quality_template="questT2QualTemplate">
 			<item name="meleeToolRepairT0TazasStoneAxe"/>
 		</lootgroup>
-
 		<lootgroup name="groupWhiteRiverTOCTazaAxeVeteran" loot_quality_template="questT3QualTemplate">
 			<item name="meleeToolRepairT0TazasStoneAxe"/>
 		</lootgroup>
-
 		<lootgroup name="groupToCQuestT2Food" count="all">
 			<item name="questToCRewardT2FoodBundle"/>
 		</lootgroup>
-
 		<lootgroup name="groupToCQuestT3Food" count="all">
 			<item name="questToCRewardT3FoodBundle"/>
 		</lootgroup>
-
 		<lootgroup name="groupToCQuestT4Food" count="all">
 			<item name="questToCRewardT4FoodBundle"/>
 		</lootgroup>
-
 	</append>
-</configs>
+</config>
