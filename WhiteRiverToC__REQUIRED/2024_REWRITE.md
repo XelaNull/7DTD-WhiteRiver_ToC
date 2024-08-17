@@ -49,11 +49,11 @@ Completion tokens are used to craft the citizenship card for the next tier up.
 ##### White River Initiate (Declaration of Citizenship)
 
 Challenge Tier 1:
-- Taza's Axe (Initiate) - Level 1 (New Quest Tier)
-- Dundee's Knife (Initiate) - Level 1-2 (New Quest Tier) 
-- Jason's Machete (Moved Quest) questitem_toc_jason_name
-- Brass For Lead (Moved Quest) questitem_toc_brass_name
-- Bear Grylls's Iron Knuckles (Moved Quest) questitem_toc_claws_nam
+- Taza's Axe (Initiate) - Level 1 (New Quest Tier) initiatequestitem_toc_taza_name
+- Dundee's Knife (Initiate) - Level 1-2 (New Quest Tier) initiatequestitem_toc_dundee_name
+- Jason's Machete (Moved Quest) questitem_toc_jason_name ** needs renamed
+- Brass For Lead (Moved Quest) questitem_toc_brass_name ** needs renamed
+- Bear Grylls's Iron Knuckles (Moved Quest) questitem_toc_claws_nam ** needs renamed
 + Craft White River Citizen Card
 
 ##### White River Citizen Card
