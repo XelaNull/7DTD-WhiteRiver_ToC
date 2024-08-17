@@ -1,34 +1,27 @@
-<configs>
+<config>
 	<append xpath="/items">
 		<item name="questitem_coin_kuva">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="ToC_coin"/>			
+			<property name="Tags" value="ToC_coin"/>
 		</item>
-
-    <!-- Quest & Writ for Kuva's Red Armor -->
+		<!-- Quest & Writ for Kuva's Red Armor -->
 		<item name="questitem_toc_kuva_name">
 			<property name="DescriptionKey" value="questitem_toc_kuva_desc"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="Stacknumber" value="1"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Kuva's Red Armor Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="writitem_toc_kuva_name">
 			<property name="DescriptionKey" value="writitem_toc_kuva_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Weight" value="0"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
@@ -37,20 +30,20 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Kuva's Red Armor"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-
-    <!-- The Two Pieces of Kuva's Red Armor -->
+		<!-- The Two Pieces of Kuva's Red Armor -->
 		<item name="item_toc_kuvared_chest_name">
 			<property name="DescriptionKey" value="item_toc_kuvared_chest_desc"/>
-			<property name="Extends" value="armorLeatherChest"/>
-			<property name="CustomIcon" value="armorLeatherChest"/>
+			<property name="Extends" value="armorCommandoOutfit"/>
+			<property name="CustomIcon" value="armorCommandoOutfit"/>
 			<property name="CustomIconTint" value="ff0000"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
 			<property name="EquipSlot" value="Chest"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -62,22 +55,20 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.56"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Overlay0Tint" value="100,0,0"/>
-			</property>
 		</item>
-    <item name="item_toc_kuvared_legs_name">
+		<item name="item_toc_kuvared_boots_name">
 			<property name="DescriptionKey" value="item_toc_kuvared_legs_desc"/>
-			<property name="Extends" value="armorLeatherPants"/>
-			<property name="CustomIcon" value="armorLeatherPants"/>
+			<property name="Extends" value="armorCommandoBoots"/>
+			<property name="CustomIcon" value="armorCommandoBoots"/>
 			<property name="CustomIconTint" value="ff0000"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
-			<property name="EquipSlot" value="Legs"/>
-				<effect_group>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
+			<property name="EquipSlot" value="Feet"/>
+			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4.27,6.47"/>
@@ -88,173 +79,151 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.56"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/>
+				<display_value name="dNoiseMultiplier" value=".1"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Overlay0Tint" value="100,0,0"/>
+		</item>
+		<!-- Discover the REAL Truth about the Kuva's Red Armor -->
+		<item name="questitem_toc_kuvatruth_name">
+			<property name="DescriptionKey" value="questitem_toc_kuvatruth_desc"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="+Kuva's Red Armor Secret"/>
 			</property>
 		</item>
-
-    <!-- Discover the REAL Truth about the Kuva's Red Armor -->
-    <item name="questitem_toc_kuvatruth_name">
-			<property name="DescriptionKey" value="questitem_toc_kuvatruth_desc"/>
-      <property name="CustomIcon" value="challengeQuestMaster"/>
-      <property name="CustomIconTint" value="cc3300"/>
-      <property name="Extends" value="questMaster"/>
-      <property name="Material" value="MresourcePaper"/>
-			<property name="Weight" value="0"/>
-			<property name="Stacknumber" value="1"/>
-      <property class="Action0">
-        <property name="Class" value="Quest"/>
-        <property name="QuestGiven" value="+Kuva's Red Armor Secret"/>
-        <property name="Delay" value="0"/>
-      </property>
-      <property name="Group" value="Special Items"/>
-    </item>
-
-
-    <!-- VETERAN QUESTLINE ITEMS -->
-    <item name="vetquestitem_toc_kuva_name">
+		<!-- VETERAN QUESTLINE ITEMS -->
+		<item name="vetquestitem_toc_kuva_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_kuva_desc"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="Weight" value="0"/>
 			<property name="Stacknumber" value="1"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Kuva's Red Armor"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-    <item name="vetmap_toc_kuva_name">
+		<item name="vetmap_toc_kuva_name">
 			<property name="DescriptionKey" value="vetmap_toc_kuva_desc"/>
-    	<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Extends" value="treasureQuestMaster"/>
 			<property name="Stacknumber" value="1"/>
-    	<property class="Action0">
-    		<property name="QuestGiven" value="treasure_kuva"/>
-    	</property>
-    </item>
-    <item name="questitem_toc_kuvablue_name">
+			<property class="Action0">
+				<property name="QuestGiven" value="treasure_kuva"/>
+			</property>
+		</item>
+		<item name="questitem_toc_kuvablue_name">
 			<property name="DescriptionKey" value="questitem_toc_kuvablue_desc"/>
 			<property name="CustomIcon" value="schematicMaster"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-    <!--  <property name="Extends" value="questMaster"/>-->
+			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="Extends" value="schematicMaster"/>
-
-      <property name="Material" value="MresourcePaper"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Unlocks" value="item_toc_kuvablue_chest_name"/>
-      <property name="Group" value="Special Items"/>
+			<property name="Group" value="Special Items"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_hood_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_chest_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_gloves_name" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_pants_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_boots_name" operation="set" value="1"/>
 			</effect_group>
-
-    </item>
-
-    <!-- SPECIAL INGREDIENTS -->
-    <item name="schem_toc_kuvatallow_name">
+		</item>
+		<!-- SPECIAL INGREDIENTS -->
+		<item name="schem_toc_kuvatallow_name">
 			<property name="DescriptionKey" value="schem_toc_kuvatallow_desc"/>
-    	<property name="Extends" value="schematicMaster"/>
-    	<property name="CreativeMode" value="Player"/>
-    	<property name="CustomIcon" value="resourceAnimalFat"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-    	<property name="Unlocks" value="item_toc_kuvatallow_name"/>
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="resourceAnimalFat"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="Unlocks" value="item_toc_kuvatallow_name"/>
 			<property name="Stacknumber" value="1"/>
-    	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvatallow_name" operation="set" value="1"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-    	</effect_group>
-    </item>
-    <item name="item_toc_kuvatallow_name">
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvatallow_name" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+		<item name="item_toc_kuvatallow_name">
 			<property name="DescriptionKey" value="item_toc_kuvatallow_desc"/>
-      <property name="Extends" value="resourceAnimalFat" />
-      <property name="CustomIcon" value="resourceAnimalFat"/>
+			<property name="Extends" value="resourceAnimalFat"/>
+			<property name="CustomIcon" value="resourceAnimalFat"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
-      <property name="UnlockedBy" value="schem_toc_kuvatallow_name"/>
-    </item>
-
-    <item name="schem_toc_kuvaliner_name">
+			<property name="UnlockedBy" value="schem_toc_kuvatallow_name"/>
+		</item>
+		<item name="schem_toc_kuvaliner_name">
 			<property name="DescriptionKey" value="schem_toc_kuvaliner_desc"/>
-    	<property name="Extends" value="schematicMaster"/>
-    	<property name="CreativeMode" value="Player"/>
-    	<property name="CustomIcon" value="modArmorInsulatedLiner"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-    	<property name="Unlocks" value="item_toc_kuvaliner_name"/>
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modArmorInsulatedLiner"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="Unlocks" value="item_toc_kuvaliner_name"/>
 			<property name="Stacknumber" value="1"/>
-    	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvaliner_name" operation="set" value="1"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-    	</effect_group>
-    </item>
-    <item name="item_toc_kuvaliner_name">
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvaliner_name" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+		<item name="item_toc_kuvaliner_name">
 			<property name="DescriptionKey" value="item_toc_kuvaliner_desc"/>
-      <property name="Extends" value="resourceLeather" />
-      <property name="CustomIcon" value="modArmorInsulatedLiner"/>
+			<property name="Extends" value="resourceLeather"/>
+			<property name="CustomIcon" value="modArmorInsulatedLiner"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
-      <property name="UnlockedBy" value="schem_toc_kuvaliner_name"/>
-    </item>
-
-    <item name="schem_toc_kuvatwine_name">
+			<property name="UnlockedBy" value="schem_toc_kuvaliner_name"/>
+		</item>
+		<item name="schem_toc_kuvatwine_name">
 			<property name="DescriptionKey" value="schem_toc_kuvatwine_desc"/>
-    	<property name="Extends" value="schematicMaster"/>
-    	<property name="CreativeMode" value="Player"/>
-    	<property name="CustomIcon" value="modGunBowPolymerString"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-    	<property name="Unlocks" value="item_toc_kuvatwine_name"/>
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modGunBowPolymerString"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="Unlocks" value="item_toc_kuvatwine_name"/>
 			<property name="Stacknumber" value="1"/>
-    	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvatwine_name" operation="set" value="1"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-    	</effect_group>
-    </item>
-    <item name="item_toc_kuvatwine_name">
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvatwine_name" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+		<item name="item_toc_kuvatwine_name">
 			<property name="DescriptionKey" value="item_toc_kuvatwine_desc"/>
-      <property name="Extends" value="resourceLeather" />
-      <property name="CustomIcon" value="modGunBowPolymerString"/>
+			<property name="Extends" value="resourceLeather"/>
+			<property name="CustomIcon" value="modGunBowPolymerString"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
-      <property name="UnlockedBy" value="schem_toc_kuvatwine_name"/>
-    </item>
-
-    <item name="schem_toc_kuvasoles_name">
+			<property name="UnlockedBy" value="schem_toc_kuvatwine_name"/>
+		</item>
+		<item name="schem_toc_kuvasoles_name">
 			<property name="DescriptionKey" value="schem_toc_kuvasoles_desc"/>
-    	<property name="Extends" value="schematicMaster"/>
-    	<property name="CreativeMode" value="Player"/>
-    	<property name="CustomIcon" value="apparelSuitDressShoes"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-    	<property name="Unlocks" value="item_toc_kuvasoles_name"/>
-			<property name="Stacknumber" value="1"/>
-    	<effect_group tiered="false">
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvasoles_name" operation="set" value="1"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-    	</effect_group>
-    </item>
-    <item name="item_toc_kuvasoles_name">
-			<property name="DescriptionKey" value="item_toc_kuvasoles_desc"/>
-      <property name="Extends" value="resourceLeather" />
-      <property name="CustomIcon" value="apparelSuitDressShoes"/>
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="armorAthleticBoots"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
-      <property name="UnlockedBy" value="schem_toc_kuvasoles_name"/>
-    </item>
-
-
+			<property name="Unlocks" value="item_toc_kuvasoles_name"/>
+			<property name="Stacknumber" value="1"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvasoles_name" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+		<item name="item_toc_kuvasoles_name">
+			<property name="DescriptionKey" value="item_toc_kuvasoles_desc"/>
+			<property name="Extends" value="resourceLeather"/>
+			<property name="CustomIcon" value="armorAthleticBoots"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="UnlockedBy" value="schem_toc_kuvasoles_name"/>
+		</item>
+		
 		<item name="item_toc_kuvablue_hood_name">
+		<!-- Temporary changed by 7DAYSTODIE_JP -->
 			<property name="DescriptionKey" value="item_toc_kuvablue_hood_desc"/>
-      <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-      <property name="CustomIcon" value="armorLeatherHood"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-      <property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="Extends" value="armorRogueHelmet" param1="CustomIcon"/>
+			<property name="CustomIcon" value="armorAssassinHelmet"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Tags" value="head,armor,armorHead,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
 			<property name="EquipSlot" value="Head"/>
-			<property name="UnlockedBy" value="perkLightArmor,armorLeatherSetSchematic,questitem_toc_kuvablue_name"/>
+			<property name="UnlockedBy" value="perkMediumArmor,questitem_toc_kuvablue_name"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
@@ -270,29 +239,24 @@
 				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.28"/> <!-- using 2+ digits leads to fake bugs reports due to how rounding numbers works -->
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
+				<display_value name="dStaminaChangeOT" value="-.28"/>
+				<!-- using 2+ digits leads to fake bugs reports due to how rounding numbers works -->
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
+				<display_value name="dNoiseMultiplier" value=".01"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_hood"/>
-				<property name="Overlay0" value="armor_leather_hood"/>
-				<property name="Overlay0Tint" value="92,92,255"/>
-				<property name="Layer" value="2"/>
-				<property name="UISlot" value="Headgear"/>
-				<property name="Mask0" value="Head" param1="inner"/>
-				<property name="Mask1" value="Head" param1="outer"/>
-			</property>
-    </item>
-
+		</item>
 		<item name="item_toc_kuvablue_chest_name">
+		<!-- Temporary changed by 7DAYSTODIE_JP -->
 			<property name="DescriptionKey" value="item_toc_kuvablue_chest_desc"/>
-      <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-      <property name="CustomIcon" value="armorLeatherChest"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-      <property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="Extends" value="armorRogueOutfit" param1="CustomIcon"/>
+			<property name="CustomIcon" value="armorBikerOutfit"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
 			<property name="EquipSlot" value="Chest"/>
-			<property name="UnlockedBy" value="perkLightArmor,armorLeatherSetSchematic,questitem_toc_kuvablue_name"/>
+			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
@@ -309,26 +273,23 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
+				<display_value name="dNoiseMultiplier" value=".01"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_chest"/>
-				<property name="Overlay0" value="armor_leather_chest"/>
-				<property name="Overlay0Tint" value="92,92,255"/>
-				<property name="Layer" value="2"/>
-				<property name="UISlot" value="ChestArmor"/>
-			</property>
-    </item>
-
-		<item name="item_toc_kuvablue_gloves_name"> <!-- item name directly referenced in the code -->
+		</item>
+		<item name="item_toc_kuvablue_gloves_name">
+		<!-- Temporary changed by 7DAYSTODIE_JP -->
+			<!-- item name directly referenced in the code -->
 			<property name="DescriptionKey" value="item_toc_kuvablue_gloves_desc"/>
-      <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-      <property name="CustomIcon" value="armorLeatherGloves"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-      <property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="Extends" value="armorRogueGloves" param1="CustomIcon"/>
+			<property name="CustomIcon" value="armorFarmerGloves"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
 			<property name="EquipSlot" value="Hands"/>
-			<property name="UnlockedBy" value="perkLightArmor,armorLeatherSetSchematic,questitem_toc_kuvablue_name"/>
+			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
@@ -345,62 +306,22 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
+				<display_value name="dNoiseMultiplier" value=".01"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_gloves"/>
-				<property name="Overlay0" value="armor_leather_gloves"/>
-				<property name="Overlay0Tint" value="92,92,255"/>
-				<property name="Layer" value="3"/>
-				<property name="UISlot" value="Gloves"/>
-			</property>
-    </item>
-
-		<item name="item_toc_kuvablue_pants_name">
-			<property name="DescriptionKey" value="item_toc_kuvablue_pants_desc"/>
-      <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-      <property name="CustomIcon" value="armorLeatherPants"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-      <property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
-			<property name="EquipSlot" value="Legs"/>
-			<property name="UnlockedBy" value="perkLightArmor,armorLeatherSetSchematic,questitem_toc_kuvablue_name"/>
-			<effect_group>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
-				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
-			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_pants"/>
-				<property name="Overlay0" value="armor_leather_pants"/>
-				<property name="Overlay0Tint" value="92,92,255"/>
-				<property name="Layer" value="3"/>
-				<property name="UISlot" value="LegArmor"/>
-			</property>
-    </item>
-
+		</item>
 		<item name="item_toc_kuvablue_boots_name">
+		<!-- Temporary changed by 7DAYSTODIE_JP -->
 			<property name="DescriptionKey" value="item_toc_kuvablue_boots_desc"/>
-      <property name="Extends" value="armorLeatherMaster" param1="CustomIcon"/>
-      <property name="CustomIcon" value="armorLeatherBoots"/>
-      <property name="CustomIconTint" value="5C5CFF"/>
-      <property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg"/>
+			<property name="Extends" value="armorRogueBoots" param1="CustomIcon"/>
+			<property name="CustomIcon" value="armorAthleticBoots"/>
+			<property name="CustomIconTint" value="5C5CFF"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
+			<property name="SoundPickup" value="outfit_cloth_grab"/>
+			<property name="SoundPlace" value="outfit_cloth_place"/>
 			<property name="EquipSlot" value="Feet"/>
-			<property name="UnlockedBy" value="perkLightArmor,armorLeatherSetSchematic,questitem_toc_kuvablue_name"/>
+			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
@@ -417,25 +338,17 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/><display_value name="dNoiseMultiplier" value=".01"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
+				<display_value name="dNoiseMultiplier" value=".01"/>
 			</effect_group>
-			<property class="UMA">
-				<property name="Mesh" value="armor_leather_feet"/>
-				<property name="Overlay0" value="armor_leather_boots"/>
-				<property name="Overlay0Tint" value="92,92,255"/>
-				<property name="Layer" value="0"/>
-				<property name="UISlot" value="Footwear"/>
-			</property>
-    </item>
+		</item>
 	</append>
-
 	<!-- Set the gear so that when you unlock armorLeather from schematic that it also unlocks the Kuva Blue Armor Set -->
- 	<append xpath="/items/item[@name='armorLeatherSetSchematic']/effect_group">
+	<!-- Temporary changed by 7DAYSTODIE_JP -->
+	<!-- <append xpath="/items/item[@name='armorLeatherSetSchematic']/effect_group">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_hood_name" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_chest_name" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_gloves_name" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_pants_name" operation="set" value="1"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_boots_name" operation="set" value="1"/>
-	</append>
-
-</configs>
+	</append> -->
+</config>
