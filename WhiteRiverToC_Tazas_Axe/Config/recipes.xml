@@ -8,7 +8,7 @@
 			<ingredient name="resourceRockSmall" count="200"/>
 			<ingredient name="meleeToolRepairT0StoneAxe" count="10"/>
 			<ingredient name="resourcePaper" count="1"/>
-			<ingredient name="initiatequestitem_coin_taza" count="1"/>
+			<ingredient name="questitem_initiatecoin_taza" count="1"/>
 		</recipe>
 		<recipe name="questitem_toc_taza_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
