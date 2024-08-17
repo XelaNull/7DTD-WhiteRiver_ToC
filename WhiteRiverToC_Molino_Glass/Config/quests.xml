@@ -59,6 +59,7 @@
 				<property name="nav_object" value="go_to_trader"/>
 			</objective>
 			<reward type="Exp" value="500"/>
+			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>			
 			<reward type="Item" id="casinoCoin" value="560"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCMolinoVet" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>

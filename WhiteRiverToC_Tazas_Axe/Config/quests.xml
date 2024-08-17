@@ -63,6 +63,7 @@
 			<reward type="Exp" value="1500"/>
 			<reward type="Item" id="casinoCoin" value="560"/>
 			<reward type="Item" id="questitem_toc_declaration_name" value="1" isfixed="true"/>
+			<reward type="Item" id="questitem_initiate_completion_token" value="1" isfixed="true"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCTazaAxe" value="1" isfixed="true"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" isfixed="true" value="2"/>
 			<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
@@ -131,6 +132,7 @@
 			<reward type="Exp" value="1500"/>
 			<reward type="Item" id="casinoCoin" value="560"/>
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1" isfixed="true"/>
+			<reward type="Item" id="questitem_citizen_completion_token" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCTazaAxe" value="1" isfixed="true"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" isfixed="true" value="2"/>
 			<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
@@ -198,6 +200,8 @@
 				<property name="phase" value="2"/>
 			</objective>
 			<reward type="Exp" value="1500"/>
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>			
+			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>			
 			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCTazaAxeVeteran" value="1" isfixed="true"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" isfixed="true" value="2"/>

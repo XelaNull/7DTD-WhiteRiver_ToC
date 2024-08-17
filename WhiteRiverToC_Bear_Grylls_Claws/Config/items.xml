@@ -1,14 +1,14 @@
 <config>
 	<append xpath="/items">
-		<item name="questitem_toc_claws_name">
+		<item name="initiatequestitem_toc_claws_name">
 			<property name="DescriptionKey" value="questitem_toc_claws_desc"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Bear Grylls Iron Knuckles"/>
+				<property name="QuestGiven" value="+Initiate Quest For Bear Grylls Iron Knuckles"/>
 			</property>
 		</item>
-		<item name="schemitem_toc_claws_name">
+		<item name="initiateschemitem_toc_claws_name">
 			<property name="DescriptionKey" value="schemitem_toc_claws_description"/>
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="CreativeMode" value="Player"/>
@@ -20,7 +20,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
-		<item name="item_toc_claws_name">
+		<item name="initiateitem_toc_claws_name">
 			<property name="Extends" value="meleeWpnKnucklesT1IronKnuckles"/>
 			<property name="DescriptionKey" value="item_toc_claws_description"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
@@ -86,7 +86,7 @@
 					<property name="Override0" value="organic" param1="metalhitcloth"/>
 				</property>
 			</property>
-			<effect_group name="item_toc_claws_name">
+			<effect_group name="initiateitem_toc_claws_name">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="110" tags="perkBrawler"/>
 				<passive_effect name="EntityDamage" operation="base_set" value="10.6" tags="perkBrawler"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="3.2" tags="perkBrawler"/>
@@ -125,33 +125,33 @@
 			</effect_group>
 		</item>
 		
-		<item name="vetquestitem_toc_claws_name">
-			<property name="DescriptionKey" value="vetquestitem_toc_claws_desc"/>
+		<item name="questitem_toc_claws_name">
+			<property name="DescriptionKey" value="questitem_toc_claws_desc"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
 				<property name="QuestGiven" value="+Quest For Bear Grylls Steel Knuckles"/>
 			</property>
 		</item>
-		<item name="vetschemitem_toc_claws_name">
-			<property name="DescriptionKey" value="vetschemitem_toc_claws_desc"/>
+		<item name="schemitem_toc_claws_name">
+			<property name="DescriptionKey" value="schemitem_toc_claws_desc"/>
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="Unlocks" value="vetitem_toc_claws_name"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vetitem_toc_claws_name" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_claws_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
-		<item name="vetitem_toc_claws_name">
+		<item name="item_toc_claws_name">
 			<property name="Extends" value="meleeWpnKnucklesT3SteelKnuckles"/>
 			<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill"/>
 			<property name="DescriptionKey" value="vetitem_toc_claws_description"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
 			<property name="CustomIconTint" value="0000ff"/>
-			<property name="UnlockedBy" value="vetschemitem_toc_claws_name"/>
+			<property name="UnlockedBy" value="schemitem_toc_claws_name"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/Knuckles/knucklesSpikedRight_Prefab.prefab"/>
 			<property name="HoldType" value="79"/>
 			<property name="ScrapTimeOverride" value="10.0"/>
@@ -177,7 +177,7 @@
 				<property class="GrazeSounds">
 				<property name="Override0" value="organic" param1="metalgrazeorganic"/></property>
 			</property>
-			<effect_group name="vetitem_toc_claws_name">
+			<effect_group name="item_toc_claws_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="14.6" tags="perkBrawler"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6.2" tags="perkBrawler"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkBrawler"/>
