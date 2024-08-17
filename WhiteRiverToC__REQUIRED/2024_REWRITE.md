@@ -49,53 +49,53 @@ Completion tokens are used to craft the citizenship card for the next tier up.
 ##### White River Initiate (Declaration of Citizenship)
 
 Challenge Tier 1:
-- Taza's Axe (Initiate) - Level 1 (New Quest Tier) initiatequestitem_toc_taza_name
-- Dundee's Knife (Initiate) - Level 1-2 (New Quest Tier) initiatequestitem_toc_dundee_name
-- Jason's Machete (Moved Quest) questitem_toc_jason_name ** needs renamed
-- Brass For Lead (Moved Quest) questitem_toc_brass_name ** needs renamed
-- Bear Grylls's Iron Knuckles (Moved Quest) questitem_toc_claws_nam ** needs renamed
+- Taza's Axe (Initiate) (New Quest Tier) 
+- Dundee's Knife (Initiate) (New Quest Tier) 
+- Jason's Machete (Moved Quest)
+- Brass For Lead (Moved Quest) 
+- Bear Grylls's Iron Knuckles (Moved Quest) 
 + Craft White River Citizen Card
 
 ##### White River Citizen Card
 
 Challenge Tier 1:
-- Taza's Axe (Citizen) - Level 2-3 questitem_toc_taza_name
-- Dundee's Knife (Citizen) - Level 3-6 questitem_toc_dundee_name
-- Bambi's Compound Bow questitem_toc_bambi_name
-- Everdeen's Arrows & Bolts questitem_toc_earrows_name
-- Bear Grylls's Iron Knuckles (Moved Quest) vetquestitem_toc_claws_name
+- Taza's Axe (Citizen)
+- Dundee's Knife (Citizen) 
+- Bambi's Compound Bow 
+- Everdeen's Arrows & Bolts 
+- Bear Grylls's Iron Knuckles (Moved Quest) 
 
 Challenge Tier 2: (Both Challenge Tiers Unlock Same Time)
-- Bunyan's FireAxe questitem_toc_bunyan_name
-- Leon's SMG questitem_toc_leon_name
-- Kuva's Armor questitem_toc_kuva_name
-- Deschain's Revolver questitem_toc_desch_name
+- Bunyan's FireAxe 
+- Leon's SMG 
+- Kuva's Armor 
+- Deschain's Revolver 
 + Craft Veteran Citizen Card
 
 ##### White River Veteran Citizen Card (Veteran Challenge Tiers Unlock upon Completion of White River Citizen Card Challenge Tier 2)
 
 Challenge Tier 1:
-- Taza's Axe (Veteran) - Level 4-6 vetquestitem_toc_taza_name
-- Rick Danger Auger vetquestitem_toc_rickdanger_name
-- BlackBart's Dig Tools vetquestitem_toc_blackb_name
-- Bambi's Compound Bow vetquestitem_toc_bambi_name
-- Leon's SMG vetquestitem_toc_leon_name
-- Kuva's Armor vetquestitem_toc_kuva_name
+- Taza's Axe (Veteran) 
+- Rick Danger Auger 
+- BlackBart's Dig Tools 
+- Bambi's Compound Bow 
+- Leon's SMG 
+- Kuva's Armor 
 
 Challenge Tier 2: (Both Challenge Tiers Unlock Same Time)
-- Daryl's Compound Crossbow vetquestitem_toc_daryl_name
-- Pavlichenko's Rifle vetquestitem_toc_pav_name
-- Molino Bulletproof Glass Blocks vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name
-- Gupta's Bandages questitem_toc_gupta_name
-- Amelia Earhart's Gyrocopter questitem_toc_amelia1_name
+- Daryl's Compound Crossbow 
+- Pavlichenko's Rifle 
+- Molino Bulletproof Glass Blocks 
+- Gupta's Bandages 
+- Amelia Earhart's Gyrocopter 
 + Craft Elite Citizen Card
 
 ##### White River Elite Citizen Card (Elite Challenge Tiers Unlock upon Completion of White River Veteran Citizen Card Challenge Tier 2)
 
 Challenge Tier 1:
-- Spirit of Vengeance  questitem_spirit_vengeance_name
-- Rick Danger Auger elitequestitem_toc_rickdanger_name
-- Remington's Steel Ammo elitequestitem_toc_remington_name
-- Daryl's Crossbow elitequestitem_toc_daryl_name
-- Bambi's Compound Bow elitequestitem_toc_bambi_name
-- Molino Bulletproof Glass Recipe elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name
+- Spirit of Vengeance  
+- Rick Danger Auger 
+- Remington's Steel Ammo 
+- Daryl's Crossbow 
+- Bambi's Compound Bow 
+- Molino Bulletproof Glass Recipe 
