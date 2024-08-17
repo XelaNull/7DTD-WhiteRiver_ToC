@@ -2,7 +2,7 @@
 
   <!-- Kick off the custom Quest-line as soon as the White River Citizen initial quest completes -->
 	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
-		<reward type="Quest" id="quest_whiteRiverCitizen2" stage="aftercomplete"/>
+		<reward type="Item" id="questitem_toc_declaration_name" ischosen="true" value="1"/>
 	</insertAfter>
 
 	<!--
