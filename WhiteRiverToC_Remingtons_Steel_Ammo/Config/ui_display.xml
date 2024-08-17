@@ -1,4 +1,4 @@
-<khaine>
+<config>
 	<!-- Adding Steel Ammo to ui_display so stats display correctly -->
 	<append xpath="/ui_display_info/item_display">
 		<item_display_info display_type="ammoBulletSteel" display_group="groupAmmo">
@@ -7,4 +7,4 @@
 			<display_entry name="DegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" negative_preferred="true"/>
 		</item_display_info>
 	</append>
-</khaine>
+</config>

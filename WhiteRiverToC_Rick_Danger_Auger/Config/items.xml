@@ -1,4 +1,4 @@
-<configs>
+<config>
 	<append xpath="/items">
 		<item name="questitem_vetcoin_rickdanger">
 			<property name="Extends" value="casinoCoin"/>
@@ -12,28 +12,21 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="ToC_coin"/>			
+			<property name="Tags" value="ToC_coin"/>
 		</item>
-
 		<item name="vetquestitem_toc_rickdanger_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_rickdanger_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Quest For Rick Danger Auger Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="vetquestwrit_toc_rickdanger_name">
 			<property name="DescriptionKey" value="vetquestwrit_toc_rickdanger_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
@@ -41,18 +34,16 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Rick Danger Auger"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-
-
-		<item name="vetitemreward_toc_rickdanger_name"> <!-- T4 Tools -->
+		<item name="vetitemreward_toc_rickdanger_name">
+			<!-- T4 Tools -->
 			<property name="DescriptionKey" value="vetitemreward_toc_rickdanger_desc"/>
 			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
 			<property name="DisplayType" value="motorTool"/>
 			<property name="HoldType" value="20"/>
-			<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
+			<property name="Meshfile" value="@:Other/Items/Tools/Auger/augerPrefab.prefab"/>
 			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
@@ -61,11 +52,10 @@
 			<property name="Group" value="Tools/Traps"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="EconomicValue" value="2500"/>
-			<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
+			<property name="Material" value="MMotorToolParts"/>
+			<property name="Weight" value="6"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolAugerSchematic"/>
 			<property name="ShowQuality" value="true"/>
-
-
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Hitmask_override" value="Melee"/>
@@ -83,12 +73,12 @@
 				<property name="SupportHarvesting" value="true"/>
 				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 			</property>
-
 			<effect_group name="vetitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
-
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/>
+				<!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/>
+				<!-- tier bonus -->
 				<passive_effect name="MaxRange" operation="base_set" value="2.35" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="perkMiner69r"/>
@@ -97,30 +87,24 @@
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.1,.2" tags="perkMiner69r"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.55" tier="2,6" tags="perkMiner69r"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-
 				<passive_effect name="DegradationMax" operation="base_set" value="2400,5200" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1.3" tags="perkMiner69r"/>
-
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
-
 				<passive_effect name="SphereCastRadius" operation="base_set" value=".1" tags="perkMiner69r"/>
 				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.5" tags="Harvesting"/>
-
 				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkMiner69r"/>
 				<passive_effect name="MagazineSize" operation="base_set" value="400" tags="perkMiner69r"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkMiner69r"/>
-
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".5" tags="perkMiner69r"/>
-		    <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".5" tags="perkMiner69r"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".5" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.3" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".3" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.3" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".3" tags="perkMiner69r"/>
-
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="325" tags="perkMiner69r"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1000" tags="perkMiner69r"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.1,.1" tags="perkMiner69r"/>
@@ -128,27 +112,20 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.06" tags="perkMiner69r"/>
 			</effect_group>
 		</item>
-
-
 		<!-- ELITE QUEST -->
 		<item name="elitequestitem_toc_rickdanger_name">
 			<property name="DescriptionKey" value="elitequestitem_toc_rickdanger_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Quest For Rick Danger Improved Auger Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="elitequestwrit_toc_rickdanger_name">
 			<property name="DescriptionKey" value="elitequestwrit_toc_rickdanger_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="SellableToTrader" value="false"/>
@@ -156,17 +133,15 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Rick Danger Improved Auger"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
 		</item>
-
-
 		<item name="eliteitemreward_toc_rickdanger_name">
 			<property name="DescriptionKey" value="eliteitemreward_toc_rickdanger_desc"/>
 			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
 			<property name="DisplayType" value="motorTool"/>
 			<property name="HoldType" value="20"/>
-			<property name="Meshfile" value="#Other/Items?Tools/augerPrefab.prefab"/>
+			<property name="Meshfile" value="@:Other/Items/Tools/Auger/augerPrefab.prefab"/>
 			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
@@ -175,10 +150,10 @@
 			<property name="Group" value="Tools/Traps"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="EconomicValue" value="3500"/>
-			<property name="Material" value="MMotorToolParts"/> <property name="Weight" value="6"/>
+			<property name="Material" value="MMotorToolParts"/>
+			<property name="Weight" value="6"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolAugerSchematic"/>
 			<property name="ShowQuality" value="true"/>
-
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Hitmask_override" value="Melee"/>
@@ -196,38 +171,30 @@
 				<property name="SupportHarvesting" value="true"/>
 				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 			</property>
-
 			<effect_group name="eliteitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="24.7" tags="perkMiner69r,miningTool"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="2000,5000" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1.35" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/>
-
 				<passive_effect name="MaxRange" operation="base_set" value="2.55" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.9" tags="perkMiner69r"/>
-
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-
 				<passive_effect name="SphereCastRadius" operation="base_set" value=".1" tags="perkMiner69r"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="perkMiner69r"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMiner69r"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
-
 				<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/>
 				<passive_effect name="PlayerExpGain" operation="perc_add" value="-.5" tags="Harvesting"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.08,.22" tags="perkMiner69r"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.65" tier="2,6" tags="perkMiner69r"/>
-
 				<passive_effect name="WeaponHandling" operation="base_set" value="6" tags="perkMiner69r"/>
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.06" tags="perkMiner69r"/>
-
 				<passive_effect name="MagazineSize" operation="base_set" value="400" tags="perkMiner69r"/>
 				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkMiner69r"/>
-
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".5" tags="perkMiner69r"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".5" tags="perkMiner69r"/>
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
@@ -235,13 +202,11 @@
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".25" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.25" tags="perkMiner69r"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25" tags="perkMiner69r"/>
-
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1100" tags="perkMiner69r"/>
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="340" tags="perkMiner69r"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.12,.12" tags="perkMiner69r"/>
 			</effect_group>
 		</item>
-
 	</append>
-</configs>
+</config>
