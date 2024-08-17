@@ -1,29 +1,28 @@
-<configs>
+<config>
 	<append xpath="/recipes">
-			<recipe name="questitem_toc_desch_name" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="questitem_toc_desch_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
-	
-		<recipe name="item_toc_desc_book14_name" count="1" craft_time = "60" craft_exp_gain="5000" >
+		<recipe name="item_toc_desc_book14_name" count="1" craft_time="60" craft_exp_gain="5000">
 			<ingredient name="item_toc_desc_book1_name" count="1"/>
 			<ingredient name="item_toc_desc_book2_name" count="1"/>
 			<ingredient name="item_toc_desc_book3_name" count="1"/>
 			<ingredient name="item_toc_desc_book4_name" count="1"/>
-		</recipe>	
-		<recipe name="item_toc_desc_book58_name" count="1" craft_time = "60" craft_exp_gain="5000" >
+		</recipe>
+		<recipe name="item_toc_desc_book58_name" count="1" craft_time="60" craft_exp_gain="5000">
 			<ingredient name="item_toc_desc_book5_name" count="1"/>
 			<ingredient name="item_toc_desc_book6_name" count="1"/>
 			<ingredient name="item_toc_desc_book7_name" count="1"/>
 			<ingredient name="item_toc_desc_book8_name" count="1"/>
-		</recipe>	
-		<recipe name="questwrit_toc_desch_name" count="1" craft_time = "300" craft_exp_gain="10000" >
-			<ingredient name="secureDoorWooden" count="18"/>
+		</recipe>
+		<recipe name="questwrit_toc_desch_name" count="1" craft_time="300" craft_exp_gain="10000">
+		<!-- Temporary changed by 7DAYSTODIE_JP -->
+			<!-- <ingredient name="secureDoorWooden" count="18"/> -->
 			<ingredient name="vaultDoor01" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
 			<ingredient name="item_toc_desc_book14_name" count="1"/>
 			<ingredient name="item_toc_desc_book58_name" count="1"/>
-		</recipe>	
-			
+		</recipe>
 		<recipe name="crafteditem_toc_45lcsilver_name" count="6" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="6"/>
 			<ingredient name="resourceGunPowder" count="60"/>
@@ -36,6 +35,5 @@
 			<ingredient name="resourceBulletCasing" count="3"/>
 			<ingredient name="resourceGoldNugget" count="1"/>
 		</recipe>
-
 	</append>
-</configs>
+</config>

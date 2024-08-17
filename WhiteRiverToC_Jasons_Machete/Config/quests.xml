@@ -1,83 +1,74 @@
 <config>
-	<append xpath="/quests" >
-
+	<append xpath="/quests">
 		<quest id="+Quest For Jason's Machete Start">
 			<property name="name_key" value="quest_toc_jason_name"/>
 			<property name="subtitle_key" value="quest_toc_jason_subtitle"/>
 			<property name="description_key" value="quest_toc_jason_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="veryeasy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
 			<property name="offer_key" value="quest_toc_jason_offer"/>
 			<property name="statement_key" value="quest_toc_jason_statement"/>
 			<property name="response_key" value="questdialog_toc_jason"/>
 			<property name="group_name_key" value="quest_toc_jason_group"/>
-			<property name="shareable" value="false" />
-
+			<property name="shareable" value="false"/>
 			<reward type="Quest" id="+Quest For Jason's Machete"/>
 			<reward type="Item" id="questitem_coin_jason" count="1"/>
 		</quest>
-			<quest id="+Quest For Jason's Machete">
-				<property name="name_key" value="quest_toc_jason_name"/>
-				<property name="subtitle_key" value="quest_toc_jason_subtitle"/>
-				<property name="description_key" value="quest_toc_jason_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="veryeasy" />
-				<property name="offer_key" value="quest_toc_jason_offer"/>
-				<property name="statement_key" value="quest_toc_jason_statement"/>
-				<property name="response_key" value="questdialog_toc_jason"/>
-				<property name="group_name_key" value="quest_toc_jason_group"/>
-				<property name="shareable" value="false" />
+		<quest id="+Quest For Jason's Machete">
+			<property name="name_key" value="quest_toc_jason_name"/>
+			<property name="subtitle_key" value="quest_toc_jason_subtitle"/>
+			<property name="description_key" value="quest_toc_jason_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="offer_key" value="quest_toc_jason_offer"/>
+			<property name="statement_key" value="quest_toc_jason_statement"/>
+			<property name="response_key" value="questdialog_toc_jason"/>
+			<property name="group_name_key" value="quest_toc_jason_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="100" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="questwrit_toc_jason_name" value="1" phase="2"/>
+			<reward type="Exp" value="250"/>
+		</quest>
+		<quest id="+Reward of Jason's Machete">
+			<property name="name_key" value="questreward_toc_jason_name"/>
+			<property name="subtitle_key" value="questreward_toc_jason_subtitle"/>
+			<property name="description_key" value="questreward_toc_jason_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="questreward_toc_jason_offer"/>
+			<property name="statement_key" value="questreward_toc_jason_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_jason"/>
+			<property name="group_name_key" value="quest_toc_jason_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="2"/>
 
-				<objective type="FetchKeep" id="resourceCropChrysanthemumPlant" value="150" phase="1" />
-				<objective type="FetchKeep" id="resourceScrapIron" value="400" phase="1" />
-
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="questwrit_toc_jason_name" value="1" phase="2" />
-
-				<reward type="Exp" value="250" />
-			</quest>
-			<quest id="+Reward of Jason's Machete">
-				<property name="name_key" value="questreward_toc_jason_name"/>
-				<property name="subtitle_key" value="questreward_toc_jason_subtitle"/>
-				<property name="description_key" value="questreward_toc_jason_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="questreward_toc_jason_offer"/>
-				<property name="statement_key" value="questreward_toc_jason_statement"/>
-				<property name="response_key" value="questrewarddialog_toc_jason"/>
-				<property name="group_name_key" value="quest_toc_jason_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="2" />
-
-				<objective type="Goto" value="5" phase="1" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="500" />
-				<reward type="Item" id="casinoCoin" value="560"/>
-
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="LootItem" id="groupWhiteRiverTOCJason" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-
-				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
-			</quest>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
+			<!-- This makes the quest repeatable -->
+			<reward type="LootItem" id="groupWhiteRiverTOCJason" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
 	</append>
 </config>

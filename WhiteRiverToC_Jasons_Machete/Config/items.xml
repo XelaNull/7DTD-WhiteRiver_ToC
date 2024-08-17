@@ -1,4 +1,4 @@
-<configs>
+<config>
 	<append xpath="/items">
 		<item name="questitem_coin_jason">
 			<property name="Extends" value="casinoCoin"/>
@@ -7,26 +7,19 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="Tags" value="ToC_coin"/>
 		</item>
-
 		<item name="questitem_toc_jason_name">
 			<property name="DescriptionKey" value="questitem_toc_jason_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Jason's Machete Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="questwrit_toc_jason_name">
 			<property name="DescriptionKey" value="questwrit_toc_jason_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
@@ -34,12 +27,11 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Jason's Machete"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-
-		<item name="item_toc_jason_name"> <!-- T3 Blades -->
+		<item name="item_toc_jason_name">
+			<!-- T3 Blades -->
 			<property name="Extends" value="meleeWpnBladeT3Machete"/>
 			<property name="DescriptionKey" value="item_toc_jason_description"/>
 			<property name="Tags" value="machete,melee,grunting,longShaft,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
@@ -48,8 +40,9 @@
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="HoldType" value="47"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab"/>
-			<property name="Material" value="MmeleeWpnBladeParts"/> <property name="Weight" value="5"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/Knives/machetePrefab.prefab"/>
+			<property name="Material" value="MmeleeWpnBladeParts"/>
+			<property name="Weight" value="5"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -57,31 +50,33 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="6.5"/>
 			<property name="ShowQuality" value="true"/>
-
 			<effect_group name="item_toc_jason_name">
-				<passive_effect name="EntityDamage" operation="base_set" value="21.5" tags="perkDeepCuts"/> <!-- meleeToolKnifeMachete -->
-				<passive_effect name="BlockDamage" operation="base_set" value="19" tags="perkDeepCuts"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkDeepCuts"/>
-				<passive_effect name="StaminaLoss" operation="base_set" value="18.5" tags="primary"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="25" tags="perkDeepCuts"/>
+				<!-- meleeToolKnifeMachete -->
+				<passive_effect name="BlockDamage" operation="base_set" value="23" tags="perkDeepCuts"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="65" tags="perkDeepCuts"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="15" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="300,900" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
-				<passive_effect name="MaxRange" operation="base_set" value="2.35" tags="perkDeepCuts"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
 				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkDeepCuts"/>
-
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="310" tags="EconomicValue"/>
-
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkDeepCuts"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/> <!-- tier bonus -->
-
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="350" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/>
+				<!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.05,.2" tags="perkDeepCuts"/>
+				<!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.8" tier="2,6" tags="perkDeepCuts"/>
+				<!-- tier bonus -->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.4" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.6" tags="stone"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="metal"/>
 				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
-				<display_value name="dBleeding" value="1"/> <!-- the bleeding proc is run by the perk -->
+				<display_value name="dBleeding" value="1"/>
+				<!-- the bleeding proc is run by the perk -->
 			</effect_group>
 			<effect_group name="Power Attack">
 				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -91,11 +86,10 @@
 			<effect_group name="sneak damage bonus">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
 				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
-					<passive_effect name="DamageBonus" operation="base_add" value="4"/>
-					<passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkDeepCuts"/>
-					<display_value name="dEntityDamageSneak" value="4"/>
+				<passive_effect name="DamageBonus" operation="base_add" value="4"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="4" tags="perkDeepCuts"/>
+				<display_value name="dEntityDamageSneak" value="4"/>
 			</effect_group>
 		</item>
-
 	</append>
-</configs>
+</config>

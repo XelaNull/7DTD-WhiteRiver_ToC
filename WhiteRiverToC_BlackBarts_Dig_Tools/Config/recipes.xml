@@ -1,17 +1,15 @@
-<configs>
+<config>
 	<append xpath="/recipes">
-
 		<!-- The quest and goal item to craft for reward for: Black Bart's Flaming Pickaxe & Shovel -->
-		<recipe name="vetquestitem_toc_blackb_name" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="vetquestitem_toc_blackb_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
-		<recipe name="vetquestwrit_toc_blackb_name" count="1" craft_time = "120" craft_exp_gain="10000" >
+		<recipe name="vetquestwrit_toc_blackb_name" count="1" craft_time="120" craft_exp_gain="10000">
 			<ingredient name="resourceScrapIron" count="600"/>
 			<ingredient name="meleeToolShovelT1IronShovel" count="1"/>
 			<ingredient name="meleeToolPickT1IronPickaxe" count="1"/>
 			<ingredient name="resourcePaper" count="1"/>
 			<ingredient name="questitem_vetcoin_blackb" count="1"/>
-		</recipe>	
-
+		</recipe>
 	</append>
-</configs>
+</config>

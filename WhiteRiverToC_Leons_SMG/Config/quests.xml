@@ -1,222 +1,203 @@
 <config>
-	<append xpath="/quests" >
+	<append xpath="/quests">
 		<quest id="+Quest For Leon's Modded SMG Start">
 			<property name="name_key" value="quest_toc_leon_name"/>
 			<property name="subtitle_key" value="quest_toc_leon_subtitle"/>
 			<property name="description_key" value="quest_toc_leon_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="medium" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
 			<property name="offer_key" value="quest_toc_leon_offer"/>
 			<property name="statement_key" value="quest_toc_leon_statement"/>
 			<property name="response_key" value="questdialog_toc_leon"/>
 			<property name="group_name_key" value="quest_toc_leon_group"/>
-			<property name="shareable" value="false" />
-
+			<property name="shareable" value="false"/>
 			<reward type="Quest" id="+Quest For Leon's Modded SMG"/>
 			<reward type="Item" id="questitem_coin_leon" count="1"/>
 		</quest>
-			<quest id="+Quest For Leon's Modded SMG">
-				<property name="name_key" value="quest_toc_leon_name"/>
-				<property name="subtitle_key" value="quest_toc_leon_subtitle"/>
-				<property name="description_key" value="quest_toc_leon_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="medium" />
-				<property name="offer_key" value="quest_toc_leon_offer"/>
-				<property name="statement_key" value="quest_toc_leon_statement"/>
-				<property name="response_key" value="questdialog_toc_leon"/>
-				<property name="group_name_key" value="quest_toc_leon_group"/>
-				<property name="shareable" value="false" />
+		<quest id="+Quest For Leon's Modded SMG">
+			<property name="name_key" value="quest_toc_leon_name"/>
+			<property name="subtitle_key" value="quest_toc_leon_subtitle"/>
+			<property name="description_key" value="quest_toc_leon_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
+			<property name="offer_key" value="quest_toc_leon_offer"/>
+			<property name="statement_key" value="quest_toc_leon_statement"/>
+			<property name="response_key" value="questdialog_toc_leon"/>
+			<property name="group_name_key" value="quest_toc_leon_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="gunHandgunT1Pistol" value="2" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="questwrit_toc_leon_name" value="1" phase="2"/>
+			<reward type="Exp" value="500"/>
+		</quest>
+		<quest id="+Reward of Leon's Degraded SMG">
+			<property name="name_key" value="questreward_toc_leon_name"/>
+			<property name="subtitle_key" value="questreward_toc_leon_subtitle"/>
+			<property name="description_key" value="questreward_toc_leon_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="questreward_toc_leon_offer"/>
+			<property name="statement_key" value="questreward_toc_leon_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_leon"/>
+			<property name="group_name_key" value="quest_toc_leon_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="2"/>
 
-				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="2" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="questwrit_toc_leon_name" value="1" phase="2" />
-				<reward type="Exp" value="500" />
-			</quest>
-			<quest id="+Reward of Leon's Degraded SMG">
-				<property name="name_key" value="questreward_toc_leon_name"/>
-				<property name="subtitle_key" value="questreward_toc_leon_subtitle"/>
-				<property name="description_key" value="questreward_toc_leon_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="questreward_toc_leon_offer"/>
-				<property name="statement_key" value="questreward_toc_leon_statement"/>
-				<property name="response_key" value="questrewarddialog_toc_leon"/>
-				<property name="group_name_key" value="quest_toc_leon_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="2" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
+			<!-- This makes the quest repeatable -->
+			<reward type="LootItem" id="groupWhiteRiverTOCLeonDegraded" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCLeonAmmo" value="1"/>
+			<reward type="Item" id="questitem_toc_repairleon_name"/>
+			<reward type="Item" id="modGunForegrip" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+		<quest id="+Quest To Repair Leon's SMG">
+			<property name="name_key" value="quest_toc_repairleon_name"/>
+			<property name="subtitle_key" value="quest_toc_repairleon_subtitle"/>
+			<property name="description_key" value="quest_toc_repairleon_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
+			<property name="offer_key" value="quest_toc_repairleon_offer"/>
+			<property name="statement_key" value="quest_toc_repairleon_statement"/>
+			<property name="response_key" value="questdialog_toc_repairleon"/>
+			<property name="group_name_key" value="quest_toc_repairleon_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="questitem_toc_leondegsmg_name" value="1" phase="1"/>
+			<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
+			<objective type="FetchKeep" id="resourceSpring" value="5" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="questwrit_toc_repairleon_name" value="1" phase="2"/>
+			<reward type="Exp" value="500"/>
+		</quest>
+		<quest id="+Reward of Leon's Modded SMG">
+			<property name="name_key" value="questreward_toc_repairleon_name"/>
+			<property name="subtitle_key" value="questreward_toc_repairleon_subtitle"/>
+			<property name="description_key" value="questreward_toc_repairleon_desc"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="questreward_toc_repairleon_offer"/>
+			<property name="statement_key" value="questreward_toc_repairleon_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_repairleon"/>
+			<property name="group_name_key" value="quest_toc_repairleon_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="2"/>
 
-				<objective type="Goto" value="5" phase="1" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1500"/>
+			<reward type="Item" id="casinoCoin" value="360"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
+			<!-- This makes the quest repeatable -->
+			<reward type="LootItem" id="groupWhiteRiverTOCLeon" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCLeonAmmo" value="1"/>
+			<reward type="Item" id="modGunSoundSuppressorSilencer" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+		<quest id="+Vet. Quest For Leon's Modded SMG Start">
+			<property name="name_key" value="vetquest_toc_leon_name"/>
+			<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
+			<property name="description_key" value="vetquest_toc_leon_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="vetquest_toc_leon_offer"/>
+			<property name="statement_key" value="vetquest_toc_leon_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_leon"/>
+			<property name="group_name_key" value="vetquest_toc_leon_group"/>
+			<property name="shareable" value="false"/>
+			<reward type="Quest" id="+Vet. Quest For Leon's Modded SMG"/>
+			<reward type="Item" id="questitem_vetcoin_leon" count="1"/>
+		</quest>
+		<quest id="+Vet. Quest For Leon's Modded SMG">
+			<property name="name_key" value="vetquest_toc_leon_name"/>
+			<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
+			<property name="description_key" value="vetquest_toc_leon_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="vetquest_toc_leon_offer"/>
+			<property name="statement_key" value="vetquest_toc_leon_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_leon"/>
+			<property name="group_name_key" value="vetquest_toc_leon_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="gunHandgunT1Pistol" value="10" phase="1"/>
+			<objective type="FetchKeep" id="gunHandgunT3SMG5" value="5" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="vetquestwrit_toc_leon_name" value="1" phase="2"/>
+			<reward type="Exp" value="500"/>
+		</quest>
+		<quest id="+Veteran Reward of Leon's Modded SMG">
+			<property name="name_key" value="vetquestreward_toc_leon_name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_leon_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_leon_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="vetquestreward_toc_leon_offer"/>
+			<property name="statement_key" value="vetquestreward_toc_leon_statement"/>
+			<property name="response_key" value="vetquestrewarddialog_toc_leon"/>
+			<property name="group_name_key" value="vetquest_toc_leon_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3"/>
 
-				<reward type="Exp" value="500" />
-				<reward type="Item" id="casinoCoin" value="560"/>
-
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="LootItem" id="groupWhiteRiverTOCLeonDegraded" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCLeonAmmo" value="1" />
-				<reward type="Item" id="questitem_toc_repairleon_name" />
-				<reward type="Item" id="modGunForegrip" value="1" />
-
-				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
-			</quest>
-
-
-			<quest id="+Quest To Repair Leon's SMG">
-				<property name="name_key" value="quest_toc_repairleon_name"/>
-				<property name="subtitle_key" value="quest_toc_repairleon_subtitle"/>
-				<property name="description_key" value="quest_toc_repairleon_desc"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="medium" />
-				<property name="offer_key" value="quest_toc_repairleon_offer"/>
-				<property name="statement_key" value="quest_toc_repairleon_statement"/>
-				<property name="response_key" value="questdialog_toc_repairleon"/>
-				<property name="group_name_key" value="quest_toc_repairleon_group"/>
-				<property name="shareable" value="false" />
-
-				<objective type="FetchKeep" id="questitem_toc_leondegsmg_name" value="1" phase="1" />
-				<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1" />
-				<objective type="FetchKeep" id="resourceSpring" value="5" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="questwrit_toc_repairleon_name" value="1" phase="2" />
-				<reward type="Exp" value="500" />
-			</quest>
-			<quest id="+Reward of Leon's Modded SMG">
-				<property name="name_key" value="questreward_toc_repairleon_name"/>
-				<property name="subtitle_key" value="questreward_toc_repairleon_subtitle"/>
-				<property name="description_key" value="questreward_toc_repairleon_desc"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="questreward_toc_repairleon_offer"/>
-				<property name="statement_key" value="questreward_toc_repairleon_statement"/>
-				<property name="response_key" value="questrewarddialog_toc_repairleon"/>
-				<property name="group_name_key" value="quest_toc_repairleon_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="2" />
-
-				<objective type="Goto" value="5" phase="1" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="1500" />
-				<reward type="Item" id="casinoCoin" value="360"/>
-
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="LootItem" id="groupWhiteRiverTOCLeon" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCLeonAmmo" value="1" />
-				<reward type="Item" id="modGunSoundSuppressorSilencer" value="1" />
-
-				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
-			</quest>
-
-
-			<quest id="+Vet. Quest For Leon's Modded SMG Start">
-				<property name="name_key" value="vetquest_toc_leon_name"/>
-				<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
-				<property name="description_key" value="vetquest_toc_leon_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="vetquest_toc_leon_offer"/>
-				<property name="statement_key" value="vetquest_toc_leon_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_leon"/>
-				<property name="group_name_key" value="vetquest_toc_leon_group"/>
-				<property name="shareable" value="false" />
-
-				<reward type="Quest" id="+Vet. Quest For Leon's Modded SMG"/>
-				<reward type="Item" id="questitem_vetcoin_leon" count="1"/>
-			</quest>
-			<quest id="+Vet. Quest For Leon's Modded SMG">
-				<property name="name_key" value="vetquest_toc_leon_name"/>
-				<property name="subtitle_key" value="vetquest_toc_leon_subtitle"/>
-				<property name="description_key" value="vetquest_toc_leon_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="vetquest_toc_leon_offer"/>
-				<property name="statement_key" value="vetquest_toc_leon_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_leon"/>
-				<property name="group_name_key" value="vetquest_toc_leon_group"/>
-				<property name="shareable" value="false" />
-
-				<objective type="FetchKeep" id="gunHandgunT1Pistol" value="10" phase="1" />
-				<objective type="FetchKeep" id="gunHandgunT3SMG5" value="5" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="vetquestwrit_toc_leon_name" value="1" phase="2" />
-				<reward type="Exp" value="500" />
-			</quest>
-			<quest id="+Veteran Reward of Leon's Modded SMG">
-				<property name="name_key" value="vetquestreward_toc_leon_name"/>
-				<property name="subtitle_key" value="vetquestreward_toc_leon_subtitle"/>
-				<property name="description_key" value="vetquestreward_toc_leon_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="vetquestreward_toc_leon_offer"/>
-				<property name="statement_key" value="vetquestreward_toc_leon_statement"/>
-				<property name="response_key" value="vetquestrewarddialog_toc_leon"/>
-				<property name="group_name_key" value="vetquest_toc_leon_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="3" />
-
-				<objective type="Goto" value="5" phase="1" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="1500" />
-				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
-
-				<reward type="LootItem" id="groupWhiteRiverTOCLeonVet" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1" />
-				<reward type="Item" id="modGunSoundSuppressorSilencer" value="1" />
-
-				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
-			</quest>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1500"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCLeonVet" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="Item" id="modGunSoundSuppressorSilencer" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
 	</append>
 </config>
