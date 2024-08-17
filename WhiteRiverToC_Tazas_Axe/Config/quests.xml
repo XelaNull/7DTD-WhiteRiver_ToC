@@ -1,5 +1,73 @@
 <config>
 	<append xpath="/quests">
+		<quest id="Initiate_Quest_For_Tazas_Axe_Start">
+			<property name="name_key" value="quest_toc_taza_name"/>
+			<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
+			<property name="description_key" value="quest_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="offer_key" value="quest_toc_taza_offer"/>
+			<property name="statement_key" value="quest_toc_taza_statement"/>
+			<property name="response_key" value="questdialog_toc_taza"/>
+			<property name="group_name_key" value="quest_toc_taza_group"/>
+			<property name="shareable" value="false"/>
+			<reward type="Quest" id="Initiate_Quest_For_Tazas_Axe"/>
+			<reward type="Item" id="questitem_initiatecoin_taza" count="1"/>
+		</quest>	
+		<quest id="Initiate_Quest_For_Tazas_Axe">
+			<property name="name_key" value="quest_toc_taza_name"/>
+			<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
+			<property name="description_key" value="quest_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="quest_toc_taza_offer"/>
+			<property name="statement_key" value="quest_toc_taza_statement"/>
+			<property name="response_key" value="questdialog_toc_taza"/>
+			<property name="group_name_key" value="quest_toc_taza_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="resourceRockSmall" value="200" phase="1"/>
+			<objective type="FetchKeep" id="meleeToolRepairT0StoneAxe" value="10" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="questwrit_toc_taza_name" value="1" phase="2"/>
+			<reward type="Exp" value="1500"/>
+		</quest>		
+		<quest id="Initiate_Reward_of_Tazas_Axe">
+			<property name="name_key" value="questreward_toc_taza_name"/>
+			<property name="subtitle_key" value="questreward_toc_taza_subtitle"/>
+			<property name="description_key" value="questreward_toc_taza_description"/>
+			<property name="completion_key" value="quest_toc_taza_completion"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="questreward_toc_taza_offer"/>
+			<property name="statement_key" value="questreward_toc_taza_statement"/>
+			<property name="response_key" value="questrewarddialog_toc_taza"/>
+			<property name="group_name_key" value="quest_toc_taza_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3"/>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1500"/>
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="questitem_toc_declaration_name" value="1" isfixed="true"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCTazaAxe" value="1" isfixed="true"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" isfixed="true" value="2"/>
+			<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+		</quest>		
 		<quest id="Quest_For_Tazas_Axe_Start">
 			<property name="name_key" value="quest_toc_taza_name"/>
 			<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
