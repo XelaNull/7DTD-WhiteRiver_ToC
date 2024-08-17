@@ -1,5 +1,5 @@
 <config>
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCCitizen1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
             <challenge name="challengeCitizen15" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_knife" group="ToCCitizen1"
                 hint="challengeCraftBuildingBlocksHint1"
                 short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc">

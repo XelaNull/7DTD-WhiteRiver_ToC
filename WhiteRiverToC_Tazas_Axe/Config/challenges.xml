@@ -1,5 +1,5 @@
 <config>
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCInitiate1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
             <challenge name="challengeInitiate1" title_key="quest_toc_taza_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCInitiate1"
                 short_description_key="quest_toc_taza_description" description_key="quest_toc_taza_subtitle"
                 reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
@@ -7,7 +7,7 @@
             </challenge>
         </insertAfter>
 
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCCitizen1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
             <challenge name="challengeCitizen11" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCCitizen1"
                 short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
                 reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
@@ -15,7 +15,7 @@
             </challenge>
         </insertAfter>
 
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCVeteran1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
             <challenge name="challengeVeteran11" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCVeteran1"
                 short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
                 reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">

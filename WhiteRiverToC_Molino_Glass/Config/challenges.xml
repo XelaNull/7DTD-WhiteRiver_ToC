@@ -1,5 +1,5 @@
 <config>
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCElite1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
             <challenge name="challengeElite6" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCElite1"
                 hint="challengeCraftBuildingBlocksHint1"
                 short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc">
@@ -7,7 +7,7 @@
             </challenge>
         </insertAfter>
 
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCVeteran2']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
             <challenge name="challengeVeteran23" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCVeteran2"
                 short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
                 reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">

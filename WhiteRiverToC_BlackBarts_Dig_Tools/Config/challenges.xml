@@ -1,5 +1,5 @@
 <config>
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCVeteran1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
             <challenge name="challengeVeteran13" title_key="challengeKillZombies" icon="ui_game_symbol_treasure" group="ToCVeteran1"
                 short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
                 reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
