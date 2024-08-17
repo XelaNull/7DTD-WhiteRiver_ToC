@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/recipes">
 		<recipe name="questitem_toc_jason_name" count="1" craft_time="1" craft_exp_gain="0">
-			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+			<ingredient name="questitem_toc_declaration_name" count="1"/>
 		</recipe>
 		<recipe name="questwrit_toc_jason_name" count="1" craft_time="90" craft_exp_gain="10000">
 			<ingredient name="resourceCropChrysanthemumPlant" count="100"/>

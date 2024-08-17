@@ -60,7 +60,7 @@
 			</objective>
 			<reward type="Exp" value="500"/>
 			<reward type="Item" id="casinoCoin" value="560"/>
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
+			<reward type="Item" id="questitem_toc_declaration_name" value="1"/>
 			<!-- This makes the quest repeatable -->
 			<reward type="LootItem" id="groupWhiteRiverTOCJason" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
