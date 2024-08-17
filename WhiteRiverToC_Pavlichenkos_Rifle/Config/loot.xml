@@ -1,17 +1,16 @@
-<configs>
+<config>
 	<append xpath="/lootcontainers">
-
 		<lootcontainer id="363" name="WhiteRiverToCPav01" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item name="questitem_toc_pav_barrel_name" count="1" />
+			<item name="questitem_toc_pav_barrel_name" count="1"/>
 		</lootcontainer>
-
-    <lootcontainer id="364" name="WhiteRiverToCPav02" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-      <item name="questitem_toc_pav_stock_name" count="1" />
-    </lootcontainer>
-
+		<lootcontainer id="364" name="WhiteRiverToCPav02" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="questitem_toc_pav_stock_name" count="1"/>
+		</lootcontainer>
+		<lootcontainer id="365" name="WhiteRiverToCPav03" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="questitem_toc_pav_scope_name" count="1"/>
+		</lootcontainer>
 		<lootgroup name="groupWhiteRiverTOCPavlichenko" loot_quality_template="questT3QualTemplate">
 			<item name="questitem_toc_pav_rifle_name"/>
 		</lootgroup>
-
 	</append>
-</configs>
+</config>

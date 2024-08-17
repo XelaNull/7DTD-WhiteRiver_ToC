@@ -1,45 +1,22 @@
-<configs>
+<config>
 	<append xpath="/items">
 		<item name="questitem_vetcoin_pav">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="ToC_coin"/>			
+			<property name="Tags" value="ToC_coin"/>
 		</item>
-
-		<!-- Pavlichenkos_Rifle_Quest -->
-		<!-- Pavlichenkos_Trigger_Group -->
+		<!-- Pavlichenkos_Rifle_Quest_Start -->
 		<item name="vetquestitem_toc_pav_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_pav_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet Quest For Pavlichenko Rifle Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-		<item name="vetquestwrit_toc_pav_name">
-			<property name="DescriptionKey" value="vetquestwrit_toc_pav_description"/>
-			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="c0c0c0"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="NoScrapping" value="true"/>
-			<property name="Group" value="Special Items"/>
-			<property name="SellableToTrader" value="false"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Reward of Pavlichenko Trigger Group"/>
-				<property name="Delay" value="0"/>
-			</property>
-			<property name="Group" value="Special Items"/>
-		</item>
+		<!-- Pavlichenkos_Trigger_Group_Item -->
 		<item name="questitem_toc_pav_trigger_name">
 			<property name="DescriptionKey" value="questitem_toc_pav_trigger_desc"/>
 			<property name="Extends" value="partsMaster"/>
@@ -47,32 +24,32 @@
 			<property name="CustomIcon" value="modGunTriggerGroupSemi"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-
-
-		<!-- Pavlichenkos_Barrel_Map -->
-		<!-- Pavlichenkos_Barrel -->
-    <item name="vetquestitem_toc_pav_barrel_name">
-			<property name="DescriptionKey" value="vetquestitem_toc_pav_barrel_desc"/>
-      <property name="CustomIcon" value="challengeQuestMaster"/>
-      <property name="CustomIconTint" value="ddccbe"/>
-      <property name="Extends" value="questMaster"/>
-      <property name="Material" value="MresourcePaper"/>
-      <property class="Action0">
-        <property name="Class" value="Quest"/>
-        <property name="QuestGiven" value="+Quest For Pavlichenko Barrel"/>
-        <property name="Delay" value="0"/>
-      </property>
-      <property name="Group" value="Special Items"/>
-    </item>
-		<item name="vetquestmap_toc_pav_barrel_name">
-			<property name="DescriptionKey" value="vetquestmap_toc_pav_barrel_desc"/>
-    	<property name="Extends" value="treasureQuestMaster"/>
+		<item name="vetquestwrit_toc_pav_name">
+			<property name="DescriptionKey" value="vetquestwrit_toc_pav_description"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
+			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
-    	<property class="Action0">
-    		<property name="QuestGiven" value="map_Pavlichenko_Barrel"/>
-    	</property>
-    </item>
+			<property name="Group" value="Special Items"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Reward of Pavlichenko Trigger Group"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
+		</item>
+		<!-- Pavlichenkos_Barrel_Map -->
+		<item name="vetquestmap_toc_pav_barrel_name">
+			<property name="DescriptionKey" value="vetquestmap_toc_pav_barrel_desc"/>
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="map_Pavlichenko_Barrel"/>
+			</property>
+		</item>
+		<!-- Pavlichenkos_Barrel_Item -->
 		<item name="questitem_toc_pav_barrel_name">
 			<property name="DescriptionKey" value="questitem_toc_pav_barrel_desc"/>
 			<property name="Extends" value="partsMaster"/>
@@ -80,32 +57,26 @@
 			<property name="CustomIcon" value="modGunBarrelExtender"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-
-
+		<!-- Pavlichenkos__Barrel_Quest -->
+		<item name="vetquestitem_toc_pav_barrel_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_pav_barrel_desc"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="+Quest For Pavlichenko Barrel"/>
+			</property>
+		</item>
 		<!-- Pavlichenkos_Stock_Map -->
-		<!-- Pavlichenkos_Stock -->
-		<item name="vetquestitem_toc_pav_stock_name">
-			<property name="DescriptionKey" value="vetquestitem_toc_pav_stock_desc"/>
-      <property name="CustomIcon" value="challengeQuestMaster"/>
-      <property name="CustomIconTint" value="ddccbe"/>
-      <property name="Extends" value="questMaster"/>
-      <property name="Material" value="MresourcePaper"/>
-      <property class="Action0">
-        <property name="Class" value="Quest"/>
-        <property name="QuestGiven" value="+Quest For Pavlichenko Stock"/>
-        <property name="Delay" value="0"/>
-      </property>
-      <property name="Group" value="Special Items"/>
-    </item>
 		<item name="vetquestmap_toc_pav_stock_name">
 			<property name="DescriptionKey" value="vetquestmap_toc_pav_stock_desc"/>
-    	<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Extends" value="treasureQuestMaster"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
-    	<property class="Action0">
-    		<property name="QuestGiven" value="map_Pavlichenko_Stock"/>
-    	</property>
-    </item>
+			<property class="Action0">
+				<property name="QuestGiven" value="map_Pavlichenko_Stock"/>
+			</property>
+		</item>
+		<!-- Pavlichenkos_Stock_Item -->
 		<item name="questitem_toc_pav_stock_name">
 			<property name="DescriptionKey" value="questitem_toc_pav_stock_desc"/>
 			<property name="Extends" value="partsMaster"/>
@@ -113,29 +84,57 @@
 			<property name="CustomIcon" value="modGunRetractingStock"/>
 			<property name="Stacknumber" value="1"/>
 		</item>
-
-
-		<!-- Assemble_Pavlichenkos_Rifle_Quest -->
-		<!-- Pavlichenkos_Rifle -->
+		<!-- Pavlichenkos_Stock_Quest -->
+		<item name="vetquestitem_toc_pav_stock_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_pav_stock_desc"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="+Quest For Pavlichenko Stock"/>
+			</property>
+		</item>
+		<!-- Pavlichenkos_Scope_Map -->
+		<item name="vetquestmap_toc_pav_scope_name">
+			<property name="DescriptionKey" value="vetquestmap_toc_pav_scope_desc"/>
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="map_Pavlichenko_Scope"/>
+			</property>
+		</item>
+		<!-- Pavlichenkos_Scope_Item -->
+		<item name="questitem_toc_pav_scope_name">
+			<property name="DescriptionKey" value="questitem_toc_pav_scope_desc"/>
+			<property name="Extends" value="partsMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modGunScopeLarge"/>
+			<property name="Stacknumber" value="1"/>
+		</item>
+		<!-- Pavlichenkos_Scope_Quest -->
+		<item name="vetquestitem_toc_pav_scope_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_pav_scope_desc"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="+Quest For Pavlichenko Scope"/>
+			</property>
+		</item>
+		<!-- Assemble_Pavlichenkos_Rifle_Assembly_Quest -->
 		<item name="vetquestitem_toc_pav_rifle_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_pav_rifle_desc"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Assembling Pavlichenko Rifle"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
+		<!-- Pavlichenkos_Rifle -->
 		<item name="vetquestwrit_toc_pav_rifle_name">
 			<property name="DescriptionKey" value="vetquestwrit_toc_pav_rifle_desc"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
@@ -143,153 +142,153 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Pavlichenko Marksman Rifle"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-		<!-- ACTUAL MARKSMAN RIFLE -->
-		<item name="questitem_toc_pav_rifle_name">
-			<property name="DescriptionKey" value="questitem_toc_pav_rifle_desc"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,bottomAttachments,attPerception,perkDeadEye,canHaveCosmetic"/>
-			<property name="DisplayType" value="rangedGun"/>
-			<property name="CustomIcon" value="gunRifleT2LeverActionRifle"/>
-
-
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="HoldType" value="11"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/SniperRifle/sniperRiflePrefab.prefab"/>
-			<property name="Material" value="MRifleParts"/> <property name="Weight" value="5"/>
-			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="SoundJammed" value="weapon_jam"/>
-			<property name="Attachments" value="meleeToolFlashlight02"/>
-			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
-			<property name="Sound_Sight_In" value="rifle_sight_in"/>
-			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
-			<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
-			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
-			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> <!-- End: Needed for the attachment flashlight -->
-			<property name="Group" value="Ammo/Weapons"/>
-			<property name="RepairExpMultiplier" value="10.8"/>
-			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="6000"/>
-			<property name="ShowQuality" value="true"/>
-
-			<property class="Action0">
-				<property name="Class" value="Ranged"/>
-				<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
-				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP"/>
-				<property name="Reload_time" value="1.75"/>
-				<property name="Sound_start" value="sniperrifle_fire"/>
-				<property name="Sound_loop" value="sniperrifle_fire"/>
-				<property name="Sound_repeat" value=""/>
-				<property name="Sound_end" value=""/>
-				<property name="Sound_empty" value="dryfire"/>
-				<property name="Sound_reload" value="sniperrifle_reload"/>
-				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
-				<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
-				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
-			</property>
-
-			<property class="Action1">
-				<property name="Class" value="Zoom"/>
-				<property name="Zoom_max_out" value="55"/>
-				<property name="Zoom_max_in" value="55"/>
-				<property name="ScopeCameraOffset" value="0,.0262,-.05"/>
-			</property>
-
-			<effect_group name="questitem_toc_pav_rifle_name">
-				<passive_effect name="MaxRange" operation="base_set" value="180" tags="perkDeadEye"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="80" tags="perkDeadEye"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> <!-- random effective rng -->
-				<passive_effect name="EntityDamage" operation="base_add" value="14" tags="perkDeadEye"/> <!-- damage offset -->
-				<passive_effect name="BlockDamage" operation="base_add" value="-1" tags="perkDeadEye"/> <!-- damage offset -->
-
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="120" tags="perkDeadEye"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkDeadEye"/>
-
-				<passive_effect name="MagazineSize" operation="base_set" value="10" tags="perkDeadEye"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkDeadEye"/> <!-- 2.7s -->
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".20" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkDeadEye"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/> <!-- tier bonus -->
-
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.25,.25" tags="perkDeadEye"/> <!-- random DegMax -->
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkDeadEye"/> <!-- random APM -->
-				<passive_effect name="MagazineSize" operation="base_add" value="-.5,2.2"/> <!-- random MagazineSize -->
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.1" tags="perkDeadEye"/> <!-- random WeaponHandling -->
-
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkDeadEye"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkDeadEye"/>
-				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".066" tags="perkDeadEye"/>
-				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkDeadEye"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.2" tags="perkDeadEye"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1.8" tags="perkDeadEye"/>
-
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".75" tags="perkDeadEye"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2" tags="perkDeadEye"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.1" tags="perkDeadEye"/>
-				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".1" tags="perkDeadEye"/>
-
-				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11" tags="perkDeadEye"/>
-				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkDeadEye"/>
-
-				<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6" tags="perkDeadEye"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1.3" tags="perkDeadEye"/>
-
-				<!--
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
-				-->
-			</effect_group>
-		</item>
-
-
 		<!-- Pavlichenkos_4x_Scope_Quest -->
-		<!-- Pavlichenkos_4x_Scope -->
-		<!--
+		<!-- Pavlichenkos_4x_Scope 
 		<item name="+Writ Of Pavlichenko 4x Scope">
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="NoScrapping" value="true"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Pavlichenko 4x Scope"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
-		</item>
-		-->
-		<!-- ITEM: Pavlichenko 4x Scope -->
-
+		</item> -->
 		<!-- Pavlichenkos_8x_Scope_Quest -->
 		<!-- Pavlichenkos_8x_Scope -->
-		<!--
 		<item name="+Writ Of Pavlichenko 8x Scope">
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="NoScrapping" value="true"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Pavlichenko 8x Scope"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-		-->
-		<!-- ITEM: Pavlichenko 8x Scope -->
 
-  </append>
-</configs>
+		<!-- ACTUAL MARKSMAN RIFLE -->
+		<item name="questitem_toc_pav_rifle_name">
+			<property name="Extends" value="gunRifleT3SniperRifle"/>
+			<property name="DescriptionKey" value="questitem_toc_pav_rifle_desc"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
+			<property name="DisplayType" value="rangedGun"/>
+			<property name="CustomIcon" value="gunRifleT3SniperRifle"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="HoldType" value="77"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Sharp Shooter/sharpShooterGunPrefab.prefab"/>
+			<property name="Material" value="MRifleParts"/>
+			<property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Attachments" value="meleeToolFlashlight02"/>
+			<property name="CrosshairOnAim" value="true"/>
+			<!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<!-- aimTest -->
+			<property name="Sound_Sight_In" value="rifle_sight_in"/>
+			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+			<property name="LightSource" value="lightSource"/>
+			<!-- Start: Needed for the attachment flashlight -->
+			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<!-- End: Needed for the attachment flashlight -->
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="LightValue" value=".45"/>
+			<property name="EconomicValue" value="6000"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundPickup" value="rifle_polymer_grab"/>
+			<property name="SoundPlace" value="rifle_polymer_place"/>
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Magazine_items" value="ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP"/>
+				<property name="Reload_time" value="1.75"/>
+				<property name="Sound_start" value="sharpshooter_fire"/>
+				<property name="Sound_loop" value="sharpshooter_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="AutoReload" value="false"/>
+				<property name="Particles_muzzle_fire" value="gunfire_sniper"/>
+				<property name="Particles_muzzle_fire_fpv" value="gunfire_sniper_fpv"/>
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+				<property name="triggerEffectTriggerPullDualsense" value="RifleTrigger"/>
+				<property name="triggerEffectTriggerPullXbox" value="PistolTrigger"/>
+				<property name="triggerEffectTriggerShootDualsense" value="RifleShoot"/>
+				<property name="triggerEffectTriggerShootXbox" value="PistolShoot"/>
+			</property>		
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="SightsCameraOffset" value="0,0,0"/>
+				<property name="ScopeCameraOffset" value="0,0,0"/>
+				<property name="triggerEffectTriggerPullDualsense" value="PistolZoom"/>
+			</property>
+			<effect_group name="questitem_toc_pav_rifle_name">
+				<passive_effect name="MaxRange" operation="base_set" value="180" tags="perkDeadEye"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="80" tags="perkDeadEye"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/>
+				<!-- random effective rng -->
+				<passive_effect name="EntityDamage" operation="base_add" value="14" tags="perkDeadEye"/>
+				<!-- damage offset -->
+				<passive_effect name="BlockDamage" operation="base_add" value="-1" tags="perkDeadEye"/>
+				<!-- damage offset -->
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="120" tags="perkDeadEye"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkDeadEye"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="10" tags="perkDeadEye"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkDeadEye"/>
+				<!-- 2.7s -->
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".20" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/>
+				<!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkDeadEye"/>
+				<!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeadEye"/>
+				<!-- tier bonus -->
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.25,.25" tags="perkDeadEye"/>
+				<!-- random DegMax -->
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkDeadEye"/>
+				<!-- random APM -->
+				<passive_effect name="MagazineSize" operation="base_add" value="-.5,2.2"/>
+				<!-- random MagazineSize -->
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.04,.1" tags="perkDeadEye"/>
+				<!-- random WeaponHandling -->
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkDeadEye"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkDeadEye"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".066" tags="perkDeadEye"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkDeadEye"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.2" tags="perkDeadEye"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="1.8" tags="perkDeadEye"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".75" tags="perkDeadEye"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2" tags="perkDeadEye"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.1" tags="perkDeadEye"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".1" tags="perkDeadEye"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11" tags="perkDeadEye"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkDeadEye"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6" tags="perkDeadEye"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1.3" tags="perkDeadEye"/>
+			</effect_group>
+		</item>
+	</append>
+</config>
