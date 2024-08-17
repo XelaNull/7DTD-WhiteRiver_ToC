@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/items">
 
-		<!-- This is crafted freely by the player to kick off the 10-Zombie Challenge -->
+		<!-- This is crafted freely by the player to work through Initiate quests -->
 		<item name="questitem_toc_declaration_name">
 			<property name="DescriptionKey" value="questitem_toc_declaration_description"/>						
 			<property name="CustomIcon" value="questMaster"/>
@@ -18,6 +18,15 @@
 			</property>	
 		</item>		
 		
+		<item name="questitem_initiate_completion_token">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Tags" value="ToC_coin"/>
+		</item>
+		
+		<!-- This is crafted by the player to work through Citizen Quests -->
 		<item name="questitem_toc_citizencard_name">
 			<property name="DescriptionKey" value="questitem_toc_citizencard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
@@ -27,6 +36,14 @@
 			<property name="NoScrapping" value="true"/>
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
+		</item>
+
+		<item name="questitem_citizen_completion_token">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Tags" value="ToC_coin"/>
 		</item>
 		
 		<item name="questitem_toc_veteranquest_name">
@@ -44,6 +61,7 @@
 			</property>	
 		</item>		
 		
+		<!-- This is crafted by the player to work through Veteran Quests -->
 		<item name="questitem_toc_veterancard_name">
 			<property name="DescriptionKey" value="questitem_toc_veterancard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
@@ -55,6 +73,14 @@
 			<property name="Group" value="Special Items"/>
 		</item>
 		
+		<item name="questitem_veteran_completion_token">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Tags" value="ToC_coin"/>
+		</item>
+
 		<item name="questitem_toc_elitequest_name">
 			<property name="DescriptionKey" value="questitem_toc_elitequest_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
@@ -71,6 +97,7 @@
 			</property>	
 		</item>
 		
+		<!-- This is crafted by the player to work through Elite Quests -->
 		<item name="questitem_toc_elitecard_name">
 			<property name="DescriptionKey" value="questitem_toc_elitecard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
@@ -81,7 +108,7 @@
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
 		</item>
-		
+
 		<item name="questitem_toc_randomelite_name">
 			<property name="DescriptionKey" value="questitem_toc_randomelite_desc"/>						
 			<property name="CustomIcon" value="challengeQuestMaster"/>
