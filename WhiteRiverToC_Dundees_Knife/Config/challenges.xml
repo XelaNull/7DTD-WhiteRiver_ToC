@@ -1,0 +1,17 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_category[@name='White_River_ToC']/challenge_group[@name='ToCInitiate1']">
+            <challenge name="challengeInitiate2" title_key="quest_toc_dundee_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
+                short_description_key="quest_toc_dundee_description" description_key="quest_toc_dundee_subtitle"
+                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+                <objective type="Craft" item="initiatequestitem_toc_dundee_name"/>
+            </challenge>
+        </insertAfter>
+
+        <insertAfter xpath="/challenges/challenge_category[@name='White_River_ToC']/challenge_group[@name='ToCCitizen1']">
+            <challenge name="challengeCitizen12" title_key="challengeKillZombies" icon="ui_game_symbol_knife" group="ToCCitizen1"
+                short_description_key="quest_toc_dundee_description" description_key="quest_toc_dundee_subtitle"
+                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+                <objective type="Craft" item="questitem_toc_dundee_name"/>
+            </challenge>
+        </insertAfter>             
+</config>
