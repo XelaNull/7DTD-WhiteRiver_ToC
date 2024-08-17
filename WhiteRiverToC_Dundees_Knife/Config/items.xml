@@ -1,6 +1,6 @@
 <config>
 	<append xpath="/items">
-		<item name="initiatequestitem_coin_dundee">
+		<item name="questitem_initiatecoin_dundee">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="ff0000"/>

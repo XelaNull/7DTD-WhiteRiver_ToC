@@ -15,7 +15,7 @@
 			</effect_group>
 		</recipe>
 		<recipe name="questitem_toc_claws_name" count="1" craft_time="1" craft_exp_gain="0">
-			<ingredient name="questitem_toc_citizen_name" count="1"/>
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
 		<recipe name="item_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
 			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="5"/>
