@@ -1,172 +1,199 @@
-<configs>
+<config>
 	<append xpath="/vehicles">
-  <!-- vehicleGyrocopter -->
-    <vehicle name="vehicleAmeliaGyrocopter">
-
-			<property name="cameraDistance" value="10, 10"/>
+	<!-- Revised by 7DAYSTODIE_JP -->
+	<!-- PLEASE NOTE: This vehicle info has been overwritten with v1.0 info so this is different from the original one. -->
+		<!-- vehicleGyrocopter -->
+		<vehicle name="vehicleAmeliaGyrocopter">
+			<property name="cameraDistance" value="6, 8"/>
 			<property name="cameraTurnRate" value=".2, .35"/>
-			<property name="motorTorqueMinQ" value="0"/>
-			<property name="motorTorqueMaxQ" value="1400"/>
-			<property name="brakeTorque" value="10"/>
-			<property name="steerRate" value="150"/>
-			<property name="steerCenteringRate" value="100"/>
+			<property name="steerRate" value="130"/>
+			<property name="steerCenteringRate" value="90"/>
 
 			<property name="tiltAngleMax" value="8"/>
 			<property name="tiltThreshold" value="2"/>
-			<property name="tiltDampening" value=".5"/>
+			<property name="tiltDampening" value=".01"/>
 			<property name="tiltDampenThreshold" value="0"/>
 			<property name="tiltUpForce" value="1"/>
 			<property name="upAngleMax" value="60"/>
-			<property name="upForce" value=".3"/>
+			<property name="upForce" value=".5"/>
 
+			<property name="motorTorque_turbo" value="1, 1, 2, 2"/>
+			<property name="velocityMax_turbo" value="9, 9, 15, 9"/>
+			<property name="brakeTorque" value="10"/>
 			<property name="unstickForce" value="1"/>
-			<property name="velocityMax" value="15, 24"/>
 			<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
 			<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 			<property name="waterLift_y_depth_force" value="1, .5, .1"/>
 
-      <property name="hornSound" value="vehicle/minibike/minibike_horn"/>
+			<property name="hornSound" value="gyrocopter_horn"/>
 
-      <property class="engine">
-        <property name="class" value="Engine"/>
-        <property name="slot_type" value="engine"/>
-        <property name="fuelKmPerL" value="0.01"/>
-        <property name="foodDrain" value=".008,.02"/><!-- driving/turbo, gyro -->
-        <property name="gear1" value="
-                  500,2500, -1400,800,0, 1500,9999,9999,
-                  ,
-                  ,
-                  0, .5,  .45, .1,  -9, .1, .1, Vehicles/Gyrocopter/gyrocopter_idle_lp,
-                  -.1, .1,  .65, .7,  0, 9, .1, Vehicles/Gyrocopter/gyrocopter_med_lp
-                  "/>
-        <property name="sound_start" value="Vehicles/Gyrocopter/gyrocopter_start"/>
-        <property name="sound_shut_off" value="Vehicles/Gyrocopter/gyrocopter_shutoff"/>
-        <property name="sound_no_fuel_shut_off" value="Vehicles/Gyrocopter/gyrocopter_sputter"/>
-        <property name="paint" value="body"/>
-      </property>
+			<property name="recipeName" value="vehicleGyrocopterPlaceable" />
 
-      <property class="fuelTank">
-        <property name="class" value="FuelTank"/>
-        <property name="capacity" value="400"/>
-      </property>
-
-      <property class="handlebars">
-        <property name="class" value="Steering"/>
-        <property name="slot_type" value="handlebars"/>
-        <property name="transform" value="Origin"/>
-        <property name="steerMaxAngle" value="0"/>
-        <property name="IKHandLPosition" value="-.052, .923, .755"/>
-        <property name="IKHandLRotation" value="0, 17.2, 90"/>
-        <property name="IKHandRPosition" value=".052, 1.0054, .755"/>
-        <property name="IKHandRRotation" value="0, -17.2, -90"/>
-      </property>
-
-      <property class="seat0">
-        <property name="position" value="0, .05, .98"/>
-        <property name="rotation" value="-25, 0, 0"/>
-        <property name="exit" value="-1.3,0,.9 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
-      </property>
-
-			<property class="seat1">
-				<property name="position" value=".5, .05, .98"/>
-				<property name="rotation" value="-25, 0, 0"/>
-				<property name="exit" value="-1.3,0,.9 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property class="chassis">
+				<property name="class" value="Chassis"/>
+				<property name="paint" value="M"/>
 			</property>
 
-			<property class="seat2">
-				<property name="position" value="-.5, .05, .98"/>
-				<property name="rotation" value="-25, 0, 0"/>
-				<property name="exit" value="-1.3,0,.9 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
+			<property class="engine">
+				<property name="class" value="Engine"/>
+				<property name="particleOn" value="Particles/p_on"/>
+				<property name="particleDamaged" value="Particles/p_damaged"/>
+				<property name="particleBroken" value="Particles/p_broken"/>
+				<property name="fuelKmPerL" value="0.15"/>
+				<property name="foodDrain" value=".002,.00811"/><!-- driving/turbo, gyro -->
+				<property name="gear1" value="
+									500,2500, -1400,800,0, 1500,9999,9999,
+									,
+									,
+									0, .5,  .45, .1,  -9, .1, .1, Vehicles/Gyrocopter/gyrocopter_idle_lp,
+									-.1, .1,  .65, .7,  0, 9, .1, Vehicles/Gyrocopter/gyrocopter_med_lp
+									"/>
+				<property name="sound_start" value="Vehicles/Gyrocopter/gyrocopter_start"/>
+				<property name="sound_shut_off" value="Vehicles/Gyrocopter/gyrocopter_shutoff"/>
+				<property name="sound_no_fuel_shut_off" value="Vehicles/Gyrocopter/gyrocopter_sputter"/>
+
+				<property name="mod" value="speed"/>
+				<property name="modT" value="M/TailMod"/>
+				<property name="modRBT" value="TailMod"/>
+				<property name="modHideT" value="M/Tail"/>
+				<property name="modHideRBT" value="Tail"/>
+			</property>
+
+			<property class="fuelTank">
+				<property name="class" value="FuelTank"/>
+				<property name="capacity" value="80"/>
+			</property>
+
+			<property class="handlebars">
+				<property name="class" value="Steering"/>
+				<property name="steerMaxAngle" value="0"/>
+				<property name="IKHandLPosition" value="-0.0781, 1.3623, 0.2236"/>
+				<property name="IKHandLRotation" value="-85.6472, -59.8085, 175.7939"/>
+				<property name="IKHandRPosition" value="0.0359, 1.4392, 0.2335"/>
+				<property name="IKHandRRotation" value="83.2585, 90.3006, -170.2602"/>
+			</property>
+
+			<property class="seat0">
+				<property name="class" value="Seat"/>
+				<property name="pose" value="50"/>
+				<property name="position" value="-.32,0,1.032"/>
+				<property name="rotation" value="0, 0, 0"/>
+				<property name="exit" value="-1.3,0,.9 ~ 1.3,0,1.5 ~ -.5,0,-2.4 ~ -.5,0,2.4 ~ -.5,2,0"/>
+			</property>
+
+			<property class="seat1">
+				<property name="class" value="Seat"/>
+				<property name="pose" value="51"/>
+				<property name="position" value=".32,0,1.032"/>
+				<property name="rotation" value="0, 0, 0"/>
+				<property name="exit" value="1.3,0,.9 ~ -1.3,0,1.5 ~ .5,0,-2.4 ~ .5,0,2.4 ~ .5,2,0"/>
 			</property>
 
 			<property class="motor0">
-				<property name="engine" value="engine"/>
-				<property name="engineOffPer" value=".02"/>
-				<property name="rpmAccel_min_max" value="0.01, .3"/>
-				<property name="rpmMax" value="8"/>
+				<property name="rpmAccel_min_max" value=".002, .05"/>
+				<property name="rpmMax" value="3"/>
 				<property name="rpmDrag" value=".993"/>
-				<property name="trigger" value="relative"/>
+				<property name="trigger" value="vel"/>
 				<property name="type" value="spin"/>
-				<property name="transform" value="Origin/TopPropellerJoint"/>
+				<property name="transform" value="M/PropTop"/>
 				<property name="axis" value="1"/>
 			</property>
 
 			<property class="motor1">
 				<property name="engine" value="engine"/>
-				<property name="turbo" value="1.65"/>
-				<property name="rpmAccel_min_max" value="0.05, .4"/>
+				<property name="engineOffPer" value=".05"/>
+				<property name="turbo" value="1.35"/>
+				<property name="rpmAccel_min_max" value="0, .1"/>
 				<property name="rpmMax" value="8"/>
 				<property name="rpmDrag" value=".993"/>
-				<property name="trigger" value="relative"/>
+				<property name="trigger" value="inputForward"/>
 				<property name="type" value="spin"/>
-				<property name="transform" value="Origin/BackPropellerJoint"/>
+				<property name="transform" value="M/PropBack"/>
 				<property name="axis" value="2"/>
 			</property>
 
 			<property class="force0">
 				<property name="trigger" value="motor0"/>
 				<property name="type" value="relative"/>
-				<property name="force" value="0, .18, 0"/>
-				<property name="ceiling" value="280, 300"/>
+				<property name="force" value="0, .19, 0"/>
+				<property name="ceiling" value="260, 280"/>
 			</property>
 
 			<property class="force1">
 				<property name="trigger" value="motor1"/>
 				<property name="type" value="relative"/>
-				<property name="force" value="0, 0,.0"/>
+				<property name="force" value="0, 0, .15"/>
 			</property>
 
 			<property class="force2">
 				<property name="trigger" value="inputForward"/>
 				<property name="type" value="relative"/>
-				<property name="force" value="0, 0.05,0 "/>
+				<property name="force" value="0, 0, .0"/>
 			</property>
 
 			<property class="force3">
 				<property name="trigger" value="inputStrafe"/>
 				<property name="type" value="relativeTorque"/>
-				<property name="force" value="0, .022, 0"/>
+				<property name="force" value="0, .03, 0"/>
 			</property>
 
 			<property class="force4">
 				<property name="trigger" value="inputUp"/>
 				<property name="type" value="relativeTorque"/>
-				<property name="force" value="-.01, 0, 0"/>
+				<property name="force" value="-.02, 0, 0"/>
 			</property>
 
 			<property class="force5">
 				<property name="trigger" value="inputDown"/>
 				<property name="type" value="relativeTorque"/>
-				<property name="force" value=".01, 0, 0"/>
+				<property name="force" value=".02, 0, 0"/>
 			</property>
 
-      <property class="wheel0">
-        <property name="torqueScale_motor_brake" value="1, 1"/>
-      </property>
+			<property class="wheel0">
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
 
-      <property class="wheel1">
-        <property name="torqueScale_motor_brake" value="1, 1"/>
-      </property>
+			<property class="wheel1">
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
 
-      <property class="wheel2">
-        <property name="torqueScale_motor_brake" value="1, 1"/>
-      </property>
+			<property class="wheel2">
+				<property name="torqueScale_motor_brake" value="1, 1"/>
+			</property>
 
 			<property class="headlight">
 				<property name="class" value="Headlight"/>
-				<property name="parent_part" value="chassis"/>
-				<property name="transform" value="Origin/headlight"/>
+
 				<property name="bright" value=".75"/>
+
+				<property name="transform" value="M/HeadLights/Lights"/>
+				<property name="matT" value="M/HeadLights"/>
+				<property name="matEmissive" value="808080"/>
+
+				<property name="mod" value="light"/>
+				<property name="modT" value="M/LightMod"/>
+				<property name="modOnT" value="M/LightMod/Lights"/>
+				<property name="modHideT" value="M/HeadLights"/>
+				<property name="modMatEmissive" value="909090"/>
 			</property>
 
-      <property class="storage">
-        <property name="class" value="Storage"/>
-        <property name="display_name" value="basket"/>
-        <property name="slot_type" value="basket"/>
-        <property name="mesh" value="basket"/>
-        <property name="transform" value="basket"/>
-      </property>
+			<property class="armor">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="armor"/>
+				<property name="modT" value="M/Armor"/>
+				<property name="TODOmodRBT" value="Armor"/>
+			</property>
 
-    </vehicle>
-  </append>
-</configs>
+			<property class="fuelsaver">
+				<property name="class" value="VehiclePart"/>
+				<property name="mod" value="fuelsaver"/>
+				<property name="modT" value="M/FuelSaver"/>
+				<property name="TODOmodRBT" value="FuelSaver"/>
+			</property>
+
+			<property class="storage">
+				<property name="class" value="Storage"/>
+			</property>
+		</vehicle>
+	</append>
+</config>

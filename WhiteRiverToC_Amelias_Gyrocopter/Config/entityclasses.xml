@@ -1,10 +1,12 @@
-<configs>
+<config>
 	<append xpath="/entity_classes">
+		<!-- Revised by 7DAYSTODIE_JP -->
 		<entity_class name="vehicleAmeliaGyrocopter">
-			<property name="Tags" value="vehicle,vehicleAmelia"/>
+			<property name="Extends" value="vehicleGyrocopter"/>
 			<property name="Class" value="EntityVGyroCopter"/>
+			<property name="Tags" value="vehicle,usesGas,vehicleAmelia"/>
 			<property name="Parent" value="Cars"/>
-			<property name="Prefab" value="#Entities/Vehicles?gyrocopter_Prefab.prefab"/>
+			<property name="Prefab" value="@:Entities/Vehicles/VGyrocopter/VGyrocopterP.prefab"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
@@ -18,10 +20,11 @@
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
 			<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
-			<property name="NavObject" value="gyrocopter" />
+			<property name="NavObject" value="gyrocopter"/>
 		</entity_class>
+		<!-- END -->
 	</append>
-
+	
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>
 			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" stat="Stamina" operation="subtract" value="20">
@@ -29,38 +32,16 @@
 			</triggered_effect>
 		</effect_group>
 	</append>
-
+	
 	<append xpath="/entity_classes">
-		<entity_class name="ToCWendigo_Zombie_Template" extends="zombieTemplateMale">
-			<property name="EntityType" value="Zombie" />
-			<!--property name="Mesh" value="Zombies/zombie01Ragdoll" /-->
-			<property name="Prefab" value="NPC" />
-			<property name="Class" value="EntityZombie" />
-			<property name="Parent" value="Enemies" />
-			<property name="IsEnemyEntity" value="true" />
-			<property name="HandItem" value="meleeHandZombie01" />
-			<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
-			<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
-			<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
-			<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath" />
-			<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
-			<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
-			<property name="PainResistPerHit" value=".5"/><!-- Radiated -->
-			<property name="AttackTimeoutDay" value="1.5" />
-			<property name="AttackTimeoutNight" value="1.1" />
-			<property name="WalkType" value="7" />
-			<property name="ModelType" value="ZombieUMA" />
-			<property name="RootMotion" value="true" />
-			<property name="HasRagdoll" value="true" />
-			<!--property name="AvatarController" value="AvatarZombieUMAController" /-->
-			<property name="PhysicsBody" value="zombieUMA" />
-			<property name="HasDeathAnim" value="false" />
-			<property name="TimeStayAfterDeath" value="30" />
-		</entity_class>
-
-		<entity_class name="zombieToCWendigo" extends="ToCWendigo_Zombie_Template">
-			<property name="Archetype" value="ToCWendigo" />
-			<property name="Tags" value="entity,zombie,walker,boss,wendigo,umazombie,ToCWendigo" />
+		<entity_class name="zombieToCWendigo" extends="zombieMutated">
+			<property name="SizeScale" value="1.4"/>
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="Archetype" value="ToCWendigo"/>
+			<property name="Tags" value="entity,zombie,walker,boss,wendigo,umazombie,ToCWendigo"/>
+			<property name="DismemberMultiplierHead" value=".4"/>
+			<property name="DismemberMultiplierArms" value=".4"/>
+			<property name="DismemberMultiplierLegs" value=".4"/>
 			<property name="ExperienceGain" value="8000"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value="1"/>
@@ -68,14 +49,38 @@
 			<property name="MoveSpeed" value="0.5"/>
 			<property name="WalkType" value="2"/>
 			<property name="MoveSpeedAggro" value="1, 1.5"/>
+			<property name="PainResistPerHit" value="-1"/> <!-- (-1) no pain -->
 			<property name="CanClimbVertical" value="true"/>
-			<property name="JumpMaxDistance" value="14, 18"/>
+			<property name="JumpMaxDistance" value="4, 8"/>
+			<property name="StompsSpikes" value="true"/>
+			<property name="Mass" value="1000"/>
+			<property name="Weight" value="500"/>
+			<property name="SightRange" value="15"/> <!-- distance in meters -->
+			<property name="TimeStayAfterDeath" value="60"/>
+			<property name="DeadBodyHitPoints" value="400"/>
+			<property name="HasRagdoll" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
 			<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
 			<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
 			<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
 			<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
 			<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
 			<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+			
+			<property name="AINoiseSeekDist" value="3"/>
+			<property name="AIPathCostScale" value=".6, 1"/>
+			<property name="AITask" value="
+			Leap|
+			BreakBlock|
+			DestroyArea|
+			Territorial|
+			ApproachDistraction|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+			ApproachSpot|
+			Look|
+			Wander|
+			"/>
+			
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="7000"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
@@ -85,11 +90,5 @@
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>
 		</entity_class>
-
 	</append>
-
-
-
-
-
-</configs>
+</config>
