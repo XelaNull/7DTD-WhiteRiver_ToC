@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="WhiteRiverToolsofCitizenship_BrassforLead" />
-		<DisplayName value="White River Tools of Citizenship - Brass for Lead" />
-		<Description value="Gather tons of lead and receive brass in return." />
-		<Author value="Shouden Kalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet" />
-		<Version value="1.0.1.2" />
-		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
+	<Name value="WhiteRiverToC_Brass_For_Lead"/>
+	<DisplayName value="White River Tools of Citizenship - Brass for Lead"/>
+	<Description value="Gather tons of lead and receive brass in return."/>
+	<Author value="ShoudenKalferas, Royal Deluxe Vanilla+ Quests Modlet, 7DaystoDie.JP, PaLoALo, ArkAngel"/>
+	<Version value="1.0.1.0"/>
+	<Website value="https://github.com/XelaNull/7DTD-WhiteRiver_ToC"/>
 </xml>
