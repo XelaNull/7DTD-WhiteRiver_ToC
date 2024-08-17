@@ -1,4 +1,5 @@
 <config>
+<!--
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
             <challenge name="challengeCitizen14" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_basics_craft_arrows" group="ToCCitizen1"
                 short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
@@ -6,4 +7,5 @@
                 <objective type="Craft" item="questitem_toc_earrows_name"/>
             </challenge>
         </insertAfter>             
+-->
 </config>
