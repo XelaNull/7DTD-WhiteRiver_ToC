@@ -1,0 +1,36 @@
+<configs>
+	<append xpath="lootcontainers">
+
+		<!-- Veteran Quest -->
+		<lootgroup name="CollapsedMineTreasure" count="all">
+			<item name="schem_toc_dwarvenforge" count="1"/>
+			<item name="vetquestmap_toc_dwarven_forge" count="1"/>
+		</lootgroup>
+		<lootcontainer id="357" name="WhiteRiverToCDwarvenMine" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="CollapsedMineTreasure" count="1" />
+		</lootcontainer>
+
+
+		<!-- Elite Quest -->
+		<lootgroup name="TelcharCoffinTreasure" count="all">
+			<item name="toolDwarvenTools" count="1"/>
+		</lootgroup>
+		<lootcontainer id="358" name="WhiteRiverToCDwarvenTelcharCoffin" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="TelcharCoffinTreasure" count="1" />
+		</lootcontainer>
+
+
+
+	</append>
+
+	<!-- Rare Drop for the Dwarven Forge Quest -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
+		<lootgroup name="groupBooksChiselAndDrift">
+			<item name="schem_toc_chiselanddrift_second"/>
+		</lootgroup>
+	</insertAfter>
+
+	<append xpath="/lootcontainers/lootgroup[@name='ToCBooks']">
+		<item group="groupBooksChiselAndDrift" count="1" prob=".50"/>
+	</append>
+</configs>

@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+WRDwarf01,entityclasses,Entity,,,Forge Master Dwarf,,,,,,,,,,,,,
+WRDwarf02,entityclasses,Entity,,,Wood Logger Dwarf,,,,,,,,,,,,,
+WRDwarf03,entityclasses,Entity,,,Masher Basher Dwarf,,,,,,,,,,,,,
+WRDwarf04,entityclasses,Entity,,,Gold Digger Dwarf,,,,,,,,,,,,,
+WRDwarf05,entityclasses,Entity,,,Bear Hunter Dwarf,,,,,,,,,,,,,

@@ -1,0 +1,17 @@
+<Configs>
+
+  <append xpath="/materials">
+    <material id="MresourceDwarvenSteel">
+    	<property name="damage_category" value="metal"/>
+    	<property name="surface_category" value="metal"/>
+    	<property name="forge_category" value="iron"/>
+    	<property name="Experience" value="20"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="300"/>
+      <property name="Mass" type="int" value="20"/>
+      <property name="explosionresistance" value="1.8"/>
+      <property name="MaxDamage" value="12000"/>
+    </material>
+  </append>
+</Configs>

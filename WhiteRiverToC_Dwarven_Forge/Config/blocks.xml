@@ -1,0 +1,192 @@
+<Configs>
+  <append xpath="/blocks">
+
+    <!-- Coffin of the Collapsed Mine -->
+    <block name="questblock_toc_dwarvenmine_coffin">
+      <property name="Extends" value="cntCasketModernClosedTan"/>
+      <property name="CustomIconTint" value="A1A1A1"/>
+      <property name="TintColor" value="A1A1A1"/>
+      <property name="LootList" value="WhiteRiverToCDwarvenMine"/>
+		</block>
+
+    <!-- Coffin of Telchar's Grandparent -->
+    <block name="questblock_toc_dwarvenmine_coffintelchar">
+      <property name="Extends" value="cntCasketModernClosedTan"/>
+      <property name="CustomIconTint" value="A1A1A1"/>
+      <property name="TintColor" value="A1A1A1"/>
+      <property name="LootList" value="WhiteRiverToCDwarvenTelcharCoffin"/>
+    </block>
+
+    <!-- Dwarven Forge Workstation -->
+    <!-- Localization: yes -->
+    <block name="dwarvenForge">
+    	<property name="Class" value="Forge"/>
+      <property name="CustomIcon" value="forge"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="CustomTint" value="FFFFFF"/>
+    	<property name="Material" value="Mstone_scrap"/>
+    	<property name="MaxDamage" value="1000"/>
+    	<property name="StabilitySupport" value="true"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Path" value="solid"/>
+    	<property name="Model" value="Entities/Crafting/forgePrefab"/>
+    	<property name="Place" value="TowardsPlacerInverted"/>
+    	<property name="OnlySimpleRotations" value="true"/>
+    	<property name="IsTerrainDecoration" value="true"/>
+    	<property name="ParticleName" value="forge"/>
+    	<property name="ParticleOffset" value="0.5,0,0.5"/>
+    	<property name="ImposterDontBlock" value="true"/>
+    	<property name="Stacknumber" value="1"/>
+    	<property name="HeatMapStrength" value="9"/>
+    	<property name="HeatMapTime" value="12000"/>
+    	<property name="HeatMapFrequency" value="1000"/>
+    	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+    	<property name="ActiveRadiusEffects" value="buffCampfireAOE(5)"/>
+      <property name="UnlockedBy" value="schem_toc_dwarvenforge"/>
+    	<property class="Workstation">
+    		<property name="CraftingAreaRecipes" value="dwarvenForge"/>
+    		<property name="Modules" value="tools,output,fuel,material_input"/>
+    		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+    	</property>
+    	<property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+    	<property name="OpenSound" value="forge_open"/>
+    	<property name="CloseSound" value="forge_close"/>
+    	<property name="CraftSound" value="forge_smelt_click"/>
+    	<property name="CraftCompleteSound" value="forge_item_complete"/>
+    	<property name="WorkstationJournalTip" value="forgeTip"/>
+
+    	<property class="RepairItems">
+    		<property name="resourceRockSmall" value="50"/>
+    		<property name="resourceClayLump" value="60"/>
+    		<property name="resourceLeather" value="20"/>
+    	</property>
+    	<drop event="Harvest" name="resourceRockSmall" count="40" tag="allHarvest"/>
+    	<drop event="Harvest" name="resourceClayLump" count="20" tag="allHarvest"/>
+    	<drop event="Harvest" name="resourceLeather" count="5" tag="allHarvest"/>
+    	<drop event="Destroy" count="0"/>
+    	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+    	<property name="TakeDelay" value="30"/>
+    	<property name="Group" value="Building,advBuilding"/>
+    	<property name="EconomicValue" value="5000"/>
+    	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+    	<property name="SortOrder1" value="70i0"/>
+    </block>
+
+
+    <block name="dwarvenWorkbench">
+      <property name="CustomIcon" value="workbench"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="CustomTint" value="FFFFFF"/>
+    	<property name="Class" value="Workstation"/>
+    	<property name="Material" value="Mmetal"/>
+    	<property name="MaxDamage" value="800"/>
+    	<property name="StabilitySupport" value="false"/>
+    	<property name="Weight" value="0"/>
+    	<property name="Shape" value="ModelEntity"/>
+    	<property name="Model" value="Entities/Crafting/workbenchPrefab"/>
+    	<property name="Place" value="TowardsPlacerInverted"/>
+    	<property name="ModelOffset" value=".5,.5,0"/>
+    	<property name="DisplayType" value="blockMulti"/>
+    	<property name="UnlockedBy" value="perkAdvancedEngineering,workbenchSchematic"/>
+    	<property name="MultiBlockDim" value="2,2,1"/>
+    	<property name="ImposterDontBlock" value="true"/>
+    	<property name="OnlySimpleRotations" value="true"/>
+    	<property name="IsTerrainDecoration" value="true"/>
+    	<property name="HeatMapStrength" value="2"/>
+    	<property name="HeatMapTime" value="5000"/>
+    	<property name="HeatMapFrequency" value="1000"/>
+    	<!--<property name="RecipeList" value="backpack, workbench"/>-->
+    	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+    	<property name="Stacknumber" value="1"/>
+      <property name="UnlockedBy" value="schem_toc_dwarvenforge"/>
+    	<property class="Workstation">
+    		<property name="Modules" value="output"/>
+    		<property name="CraftingAreaRecipes" value="dwarvenWorkbench"/>
+    	</property>
+    	<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+    	<property name="OpenSound" value="open_workbench"/>
+    	<property name="CloseSound" value="close_workbench"/>
+    	<property name="WorkstationJournalTip" value="workbenchTip"/>
+    	<property class="RepairItems">
+    		<property name="resourceForgedIron" value="25"/>
+    		<property name="resourceMechanicalParts" value="20"/>
+    		<property name="resourceWood" value="50"/>
+    	</property>
+    	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+    	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+    	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+    	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+    	<drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+    	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+    	<drop event="Destroy" count="0"/>
+    	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+    	<property name="TakeDelay" value="15"/>
+    	<property name="DescriptionKey" value="workbenchDesc"/>
+    	<property name="EconomicValue" value="2000"/>
+    	<property name="Group" value="Building,advBuilding"/>
+    	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+    	<property name="SortOrder1" value="70i0"/>
+    </block>
+  </append>
+
+  <!-- STEEL TRUSSING SHEET -->
+  <!-- Dwarven Crucible: Bundle of Steel Trussing Sheets -->
+  <append xpath="/blocks">
+    <block name="SteelTrussingSheet">
+      <property name="CustomIcon" value="metalTrussingSheet"/>
+      <property name="CustomIconTint" value="ffff00"/>
+    	<property name="Group" value="Building,advBuilding"/>
+    	<property name="DisplayType" value="blockHardened"/>
+      <property name="Material" value="Msteel"/>
+    	<property name="Texture" value="310"/>
+    	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
+    	<property name="CreativeMode" value="None"/>
+    	<property class="RepairItems"> <property name="resourceForgedSteel" value="1"/> </property>
+      	<drop event="Harvest" name="resourceScrapIron" count="17" tag="allHarvest"/>
+      	<drop event="Destroy" count="0"/>
+        <drop event="Fall" count="0" prob="0"/>
+    	<property name="EconomicValue" value="20"/>
+    	<property name="FilterTags" value="fbuilding,firon"/>
+    	<property name="SortOrder1" value="40e0"/>
+    	<property name="SortOrder2" value="0703"/>
+      <property name="Map.Color" value="255,255,0"/>
+      <property name="RandomTintColor1" value="255,255,0" />
+      <property name="Shape" value="New"/>
+    	<property name="LightOpacity" value="0"/>
+    	<property name="Model" value="billboard"/>
+    	<property name="Collide" value="movement,melee,rocket"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+    	<property name="Mesh" value="cutout"/>
+    </block>
+
+    <block name="DwarvenSteelTrussingSheet">
+      <property name="CustomIcon" value="metalTrussingSheet"/>
+      <property name="CustomIconTint" value="ffff00"/>
+    	<property name="Group" value="Building,advBuilding"/>
+    	<property name="DisplayType" value="blockHardened"/>
+      <property name="Material" value="MresourceDwarvenSteel"/>
+    	<property name="Texture" value="310"/>
+    	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
+    	<property name="CreativeMode" value="None"/>
+    	<property class="RepairItems"> <property name="resourceForgedSteel" value="1"/> </property>
+      	<drop event="Harvest" name="resourceScrapIron" count="17" tag="allHarvest"/>
+      	<drop event="Destroy" count="0"/>
+        <drop event="Fall" count="0" prob="0"/>
+    	<property name="EconomicValue" value="20"/>
+    	<property name="FilterTags" value="fbuilding,firon"/>
+    	<property name="SortOrder1" value="40e0"/>
+    	<property name="SortOrder2" value="0703"/>
+      <property name="Map.Color" value="255,255,0"/>
+      <property name="RandomTintColor1" value="255,255,0" />
+      <property name="Shape" value="New"/>
+    	<property name="LightOpacity" value="0"/>
+    	<property name="Model" value="billboard"/>
+    	<property name="Collide" value="movement,melee,rocket"/>
+      <property name="Place" value="TowardsPlacerInverted"/>
+    	<property name="Mesh" value="cutout"/>
+    </block>
+  </append>
+  <!-- END STEEL TRUSSING SHEET -->
+
+
+</Configs>

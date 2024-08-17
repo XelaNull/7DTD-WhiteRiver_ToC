@@ -1,0 +1,11 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="WRDwarfJane01Deco" hidden="true">
+			<effect_group>
+				<!-- 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/SledgeHammer/steelSledgeHammerPrefab.prefab" local_offset="-0.11,0.5,-0.04" local_rotation="0,0,0" parent_transform="RightHand"/> -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/SledgeHammer/steelSledgeHammerPrefab.prefab" local_offset="-0.11,.2,-0.04" local_rotation="0,0,0" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->
+				<!--<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="-0.06,0.4,-.04" local_rotation="0,0,0" parent_transform="RightHand"/>-->
+			</effect_group>
+		</buff>
+	</append>
+</configs>

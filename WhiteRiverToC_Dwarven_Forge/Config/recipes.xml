@@ -1,0 +1,258 @@
+<Configs>
+  <!--
+  QUEST STARTER ITEM
+  -->
+  <append xpath="/recipes">
+    <recipe name="vetquestitem_dwarven_forge" count="1" craft_time = "1" craft_exp_gain="0" >
+      <ingredient name="questitem_toc_veterancard_name" count="1"/>
+    </recipe>
+
+    <recipe name="elitequest_toc_dwarven_forge_phaseone" count="1" craft_time = "1" craft_exp_gain="0" >
+      <ingredient name="vetquestitem_vetcoin_dwarven_forge" count="1"/>
+      <ingredient name="questitem_toc_elitecard_name" count="1"/>
+    </recipe>
+  </append>
+
+
+  <!-- Recipes for Dwarven Forge, Tools, and Required Items  -->
+  <append xpath="/recipes">
+    <recipe name="dwarvenForge" count="1" craft_time="1800" tags="learnable">
+    	<ingredient name="resourceRockSmall" count="500"/>
+    	<ingredient name="resourceClayLump" count="100"/>
+    	<ingredient name="resourceLeather" count="10"/>
+    	<ingredient name="resourceDuctTape" count="10"/>
+    	<ingredient name="resourceAgedDwarvenForgedSteel" count="10"/>
+    </recipe>
+
+    <recipe name="toolDwarvenAnvil" count="1" craft_area="workbench" tags="learnable">
+      <ingredient name="resourceAgedDwarvenForgedSteel" count="8"/>
+    </recipe>
+
+    <recipe name="toolDwarvenBellows" count="1" craft_area="workbench" tags="learnable">
+    	<ingredient name="resourceLeather" count="50"/>
+    	<ingredient name="resourceDuctTape" count="10"/>
+      <ingredient name="resourceSpring" count="10"/>
+      <ingredient name="resourceAgedDwarvenForgedSteel" count="2"/>
+    	<ingredient name="resourceDwarvenForgedSteel" count="1"/>
+    </recipe>
+
+    <recipe name="schem_toc_chiselanddrift" count="1" craft_time="1" craft_exp_gain="500" >
+      <ingredient name="schem_toc_chiselanddrift_first" count="1"/>
+      <ingredient name="schem_toc_chiselanddrift_second" count="1"/>
+    </recipe>
+
+    <recipe name="toolDwarvenChiselAndDriftSet" count="1" craft_area="workbench" craft_tool="toolDwarvenAnvil" tags="learnable">
+    	<ingredient name="meleeToolSalvageT3ImpactDriver" count="1"/>
+    	<ingredient name="meleeToolSalvageT2Ratchet" count="3"/>
+      <ingredient name="resourceDwarvenRefinedBrass" count="200"/>
+    	<ingredient name="resourceAgedDwarvenForgedSteel" count="3"/>
+      <ingredient name="resourceDwarvenForgedSteel" count="2"/>
+    </recipe>
+
+    <recipe name="resourceDwarvenRefinedBrass" count="100" craft_time="900" craft_area="chemistryStation" tags="learnable,perkGreaseMonkey,chemStationCrafting">
+			<ingredient name="resourceScrapLead" count="2200"/>
+      <ingredient name="resourceScrapBrass" count="1300"/>
+		</recipe>
+
+<!-- dwarvenForge -->
+    <recipe name="resourceDwarvenForgedSteel" count="1" material_based="true" craft_area="dwarvenForge" tags="learnable,perkAdvancedEngineering">
+      <ingredient name="unit_iron" count="12821"/>
+      <ingredient name="unit_clay" count="6411"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+      </effect_group>
+    </recipe>
+  <!-- End Recipes for Base Dwarven Forge -->
+
+
+
+
+
+  <!-- ************************************* -->
+  <!-- CUSTOM RECIPES -->
+
+  <!-- Dwarven Forge -->
+  <!-- Dwarven Forge: Bundle of Buckshot (100) -->
+  <recipe name="resourceBundleBuckshot" count="1" material_based="true" craft_area="dwarvenForge" tags="perkAdvancedEngineering">
+    <ingredient name="unit_lead" count="255"/>
+  	<ingredient name="unit_clay" count="85"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_lead"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Forge: Bundle of Empty Cans -->
+  <recipe name="resourceBundleDrinkCanEmpty" count="1" material_based="true" craft_area="dwarvenForge" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="425"/>
+  	<ingredient name="unit_clay" count="85"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Forge: Bundle of Glass Jars -->
+  <recipe name="resourceBundleDrinkJarEmpty" count="1" material_based="true" craft_area="dwarvenForge" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_glass" count="850"/>
+  	<ingredient name="unit_clay" count="85"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_glass"/>
+  	</effect_group>
+  </recipe>
+
+  <!-- Dwarven Anvil -->
+  <!-- Dwarven Anvil: Bundle of Iron Ingots (100) -->
+  <recipe name="resourceBundleForgedIron" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenAnvil" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="850"/>
+  	<ingredient name="unit_clay" count="425"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Anvil: Bundle of Iron Arrowheads -->
+  <recipe name="resourceBundleArrowHeadIron" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenAnvil" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="170"/>
+  	<ingredient name="unit_clay" count="85"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+  	</effect_group>
+  </recipe>
+
+  <!-- Dwarven Crucible -->
+  <!-- Dwarven Crucible: Bundle of Steel Casings -->
+  <recipe name="resourceBundleBulletCasingSteelRemington" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenCrucible" tags="perkAdvancedEngineering">
+    <ingredient name="unit_iron" count="340"/>
+    <ingredient name="unit_clay" count="170"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+    </effect_group>
+  </recipe>
+  <!-- Dwarven Crucible: Bundle of Steel Ingots (100) -->
+  <recipe name="resourceBundleForgedSteel" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenCrucible" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="1700"/>
+  	<ingredient name="unit_clay" count="850"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Crucible: Bundle of Steel Arrowheads -->
+  <recipe name="resourceBundleArrowHeadSteelAP" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenCrucible" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="5"/>
+  	<ingredient name="unit_clay" count="1"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Crucible: Bundle of Steel Trussing Sheets -->
+  <recipe name="bundleSteelTrussingSheet" count="1" craft_area="dwarvenForge" craft_tool="toolDwarvenCrucible" tags="perkAdvancedEngineering">
+    <ingredient name="resourceForgedSteel" count="2"/>
+    <effect_group>
+  		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedSteel"/>
+  	</effect_group>
+  </recipe>
+
+  <!-- Dwarven Chisel and Drift Set -->
+  <!-- Dwarven Chisel and Drift Set: Bundle of Bullet Tips (1000) -->
+  <recipe name="resourceBundleBulletTip" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenChiselAndDriftSet" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_lead" count="1700"/>
+  	<ingredient name="unit_clay" count="850"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_lead"/>
+  	</effect_group>
+  </recipe>
+
+  <!-- Dwarven Chisel and Drift Set: Bundle of Brass Casings (1000) -->
+  <recipe name="resourceBundleBulletCasing" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenChiselAndDriftSet" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_brass" count="4250"/>
+  	<ingredient name="unit_clay" count="850"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_brass"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Chisel and Drift Set: Bundle of Nails -->
+  <recipe name="resourceBundleNail" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenChiselAndDriftSet" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="85"/>
+  	<ingredient name="unit_clay" count="85"/>
+  </recipe>
+  <!-- Dwarven Chisel and Drift Set: Bundle of Rocket Casing -->
+  <recipe name="resourceBundleRocketCasing" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenChiselAndDriftSet" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="425"/>
+  	<ingredient name="unit_clay" count="255"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Chisel and Drift Set: Bundle of Rocket Tips -->
+  <recipe name="resourceBundleRocketTip" count="1" material_based="true" craft_area="dwarvenForge" craft_tool="toolDwarvenChiselAndDriftSet" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_lead" count="425"/>
+  	<ingredient name="unit_clay" count="255"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_lead"/>
+  	</effect_group>
+  </recipe>
+
+
+
+  <!-- Dwarven Workbench -->
+  <recipe name="dwarvenWorkbench" count="1" tags="learnable,workbenchCrafting">
+  	<ingredient name="resourceDwarvenForgedSteel" count="2"/>
+  	<ingredient name="resourceMechanicalParts" count="100"/>
+  	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+  	<ingredient name="resourceDwarvenRefinedBrass" count="100"/>
+  	<ingredient name="resourceWood" count="50"/>
+  </recipe>
+
+  <!-- Dwarven Workbench: Bundle of Iron Conical Spikes ***** -->
+  <!-- Dwarven Workbench:Bundle of Steel Conical Spikes **** -->
+  <!-- Dwarven Workbench: Bundle of Steel Spikes **** -->
+  <!-- Dwarven Workbench: Bundle of Dwarven Steel Trussing Sheets **** -->
+  <recipe name="bundleDwarvenSteelTrussingSheet" count="1" craft_tool="toolDwarvenTools" craft_area="dwarvenWorkbench" tags="perkAdvancedEngineering">
+    <ingredient name="resourceDwarvenForgedSteel" count="1"/>
+  </recipe>
+
+  <!-- Dwarven Workbench: Bundle of Iron Spikes -->
+  <recipe name="bundleTrapSpikesIronDmg0" count="1" craft_tool="toolDwarvenTools" craft_area="dwarvenWorkbench">
+  	<ingredient name="resourceForgedIron" count="34"/>
+  </recipe>
+
+  <!-- Dwarven Workbench: Bundle of Metal Fences -->
+  <recipe name="bundleMetalFenceRailingTrellisSheetBlockVariantHelper" count="1" material_based="true" craft_area="dwarvenForge" tags="perkAdvancedEngineering">
+  	<ingredient name="unit_iron" count="127"/>
+  	<ingredient name="unit_clay" count="85"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+  	</effect_group>
+  </recipe>
+
+  <!-- Dwarven Workbench: Bundle of Metal Trussing / I-Beams -->
+  <recipe name="bundleMetalTrussingIBeamBlockVariantHelper" count="1" craft_tool="toolDwarvenTools" craft_area="dwarvenWorkbench" tags="perkAdvancedEngineering">
+  	<ingredient name="resourceScrapIron" count="340"/>
+  	<ingredient name="resourceClayLump" count="42"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+  	</effect_group>
+  </recipe>
+
+  <!-- Dwarven Workbench: Bundle of Blade Traps -->
+  <recipe name="bundleBladeTrap" count="1" craft_tool="toolDwarvenTools" craft_area="dwarvenWorkbench" tags="perkAdvancedEngineering">
+  	<ingredient name="resourceForgedIron" count="85"/>
+  	<ingredient name="resourceForgedSteel" count="85"/>
+  	<ingredient name="resourceMechanicalParts" count="51"/>
+  	<ingredient name="resourceElectricParts" count="4"/>
+  	<ingredient name="resourceOil" count="8"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+  	</effect_group>
+  </recipe>
+  <!-- Dwarven Workbench: Bundle of Motion Sensors -->
+  <recipe name="bundleMotionsensor" count="1" craft_tool="toolDwarvenTools" craft_area="dwarvenWorkbench" tags="perkAdvancedEngineering">
+  	<ingredient name="resourceForgedIron" count="170"/>
+  	<ingredient name="resourceElectricParts" count="42"/>
+  	<ingredient name="resourceMechanicalParts" count="85"/>
+  	<effect_group>
+  		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceElectricParts"/>
+  	</effect_group>
+  </recipe>
+
+  <!-- END CUSTOM RECIPES -->
+  <!-- ************************************* -->
+</append>
+
+</Configs>

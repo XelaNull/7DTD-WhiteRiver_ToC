@@ -1,0 +1,16 @@
+<Configs>
+
+  <append xpath="/ui_display_info/crafting_category_display">
+
+    <crafting_category_list display_type="dwarvenForge">
+      <crafting_category name="DwarvenAll" icon="ui_game_symbol_forge" display_name="lblAll" />
+      <crafting_category name="DwarvenResources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+      <crafting_category name="DwarvenAmmo/DwarvenWeapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+      <crafting_category name="DwarvenTools/DwarvenTraps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="dwarvenWorkbench">
+      <crafting_category name="DwarvenAll" icon="ui_game_symbol_forge" display_name="lblAll" />
+    </crafting_category_list>
+  </append>
+</Configs>

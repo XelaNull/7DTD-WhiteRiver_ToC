@@ -1,0 +1,93 @@
+<config>
+
+  <!-- STEEL SPIKES -->
+  <append xpath="/blocks">
+    <block name="trapSpikesSteelMaster">
+      <property name="CreativeMode" value="None"/>
+      <property name="Class" value="TrunkTip"/>
+      <property name="BlockTag" value="Spike"/>
+      <property name="Damage" value="33"/>
+      <property name="Damage_received" value="33"/>
+      <property name="Material" value="MstainlessSteel"/>
+      <property name="Texture" value="150"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="CustomTint" value="1e9403"/>
+
+      <property name="DisplayType" value="blockHardened"/>
+      <property name="MaxDamage" value="264"/>
+      <property name="Model" value="Entities/traps/ironSpikesTrap2BloodPrefab"/>
+      <property name="IsTerrainDecoration" value="false"/>
+      <property name="ImposterExclude" value="true"/>
+      <property name="Collide" value="movement,melee"/>
+      <property name="CanPickup" value="true" param1="trapSpikesSteelDmg0" />
+
+      <property name="LightOpacity" value="6"/>
+      <property name="Path" value="solid"/>
+      <property name="BuffsWhenWalkedOn" value="triggerBleeding"/>
+      <property class="RepairItems"> <property name="resourceForgedSteel" value="2"/> </property>
+      <property name="CustomUpgradeSound" value="place_block_metal"/>
+
+      <drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+      <drop event="Fall" count="0"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="DescriptionKey" value="trapSpikesGroupDesc"/>
+      <property name="EconomicValue" value="50"/>
+      <property name="EconomicBundleSize" value="20"/>
+      <property name="FilterTags" value="fdecor,ftraps"/>
+      <property name="SortOrder1" value="70g0"/>
+    </block>
+
+    <block name="trapSpikesSteelDmg2">
+      <property name="Extends" value="trapSpikesSteelMaster"/>
+
+      <property name="Material" value="MstainlessSteel"/>
+      <property name="Texture" value="191"/>
+      <property name="CustomIconTint" value="ffffff"/>
+      <property name="TintColor" value="255,255,255"/>
+      <property name="Map.Color" value="255,255,255"/>
+
+      <property name="CreativeMode" value="Dev"/>
+      <property name="Model" value="Entities/traps/ironSpikesTrap2BloodPrefab"/>
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="trapSpikesSteelDmg0"/>
+        <property name="Item" value="resourceForgedSteel"/>
+        <property name="ItemCount" value="1"/>
+        <property name="UpgradeHitCount" value="4"/>
+      </property>
+    </block>
+
+    <block name="trapSpikesSteelDmg1">
+      <property name="Extends" value="trapSpikesSteelMaster"/>
+
+      <property name="Material" value="MstainlessSteel"/>
+      <property name="Texture" value="191"/>
+      <property name="CustomIconTint" value="ffffff"/>
+      <property name="TintColor" value="255,255,255"/>
+      <property name="Map.Color" value="255,255,255"/>
+
+      <property name="CreativeMode" value="Dev"/>
+      <property name="Model" value="Entities/traps/ironSpikesTrap1BloodPrefab"/>
+      <property class="UpgradeBlock">
+        <property name="ToBlock" value="trapSpikesSteelDmg0"/>
+        <property name="Item" value="resourceForgedSteel"/>
+        <property name="ItemCount" value="1"/>
+        <property name="UpgradeHitCount" value="4"/>
+      </property>
+      <property name="DowngradeBlock" value="trapSpikesSteelDmg2"/>
+    </block>
+
+    <block name="trapSpikesSteelDmg0">
+      <property name="Extends" value="trapSpikesSteelMaster"/>
+      <property name="Material" value="MstainlessSteel"/>
+      <property name="Texture" value="150"/>
+      <property name="CustomIconTint" value="ffffff"/>
+      <property name="TintColor" value="255,255,255"/>
+      <property name="Map.Color" value="255,255,255"/>
+      <property name="CustomIcon" value="trapSpikesScrapIronMaster"/>
+      <property name="DowngradeBlock" value="trapSpikesSteelDmg1"/>
+    </block>
+  </append>
+  <!-- END STEEL SPIKES -->
+
+
+</config>

@@ -1,0 +1,31 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="WRDwarf01Deco" hidden="true">
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/SledgeHammer/steelSledgeHammerPrefab.prefab" local_offset="-0.11,0.5,-0.04" local_rotation="0,0,0" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="-0.06,0.4,-.04" local_rotation="0,0,0" parent_transform="RightHand"/>
+			</effect_group>
+		</buff>
+		<buff name="WRDwarf02Deco" hidden="true">
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab" local_offset="-0.11,0.5,-0.04" local_rotation="0,0,0" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->
+			</effect_group>
+		</buff>
+		<buff name="WRDwarf03Deco" hidden="true">
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/ClubIron/ClubIronPrefab.prefab" local_offset="-0.09,0.0,-0.04" local_rotation="0,0,0" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/ClubIron/ClubIronPrefab.prefab" local_offset="-0.09,0.0,-0.04" local_rotation="0,0,180" parent_transform="LeftHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->
+			</effect_group>
+		</buff>
+		<buff name="WRDwarf04Deco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Tools/pickaxe_steelPrefab.prefab" local_offset="-0.09,-0.3,-0.015" local_rotation="0,-90,180" parent_transform="LeftHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->
+			</effect_group>
+		</buff>
+		<buff name="WRDwarf05Deco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Knives/hunting_knifePrefab.prefab" local_offset="-0.1,0.0,-0.04" local_rotation="0,225,0" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->
+			</effect_group>
+		</buff>		
+	</append>
+</configs>

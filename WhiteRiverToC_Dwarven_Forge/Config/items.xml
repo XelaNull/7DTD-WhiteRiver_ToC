@@ -1,0 +1,810 @@
+<config>
+  <!-- VETERANS TIER -->
+  <append xpath="/items">
+    <!-- VETERAN QUEST ITEMS -->
+    <!-- Localization: yes -->
+    <item name="vetquestitem_vetcoin_dwarven_forge">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="7fa6ff"/>
+			<property name="Stacknumber" value="1"/>
+      <property name="Tags" value="ToC_coin"/>
+		</item>
+
+    <!-- Player crafts quest starter -->
+    <!-- Quest popup should explain that the Trader was thought to have a journal that might interest them -->
+    <!-- The player should travel to the Trader to obtain it -->
+    <!-- Localization: yes -->
+    <item name="vetquestitem_dwarven_forge">
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Quest For Lost Civilization of Little People Start"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
+    <!-- Journal of Horace the Explorer -->
+    <!--
+    Journal of Horace the Explorer:
+    "I once read about a great hall built in the Blue Mountains by a tribe
+    of craftsmen specializing in stone and metalwork. They called their great hall, Nogrod.
+
+    I made it my life's work to seek this tribe out to learn from and study them. After
+    what seemed a lifetime of travels, I happened upon a tribe of short statured little
+    people. They were stone-hard, stubborn, fast in friendship and in enmity, and
+    they suffered toil and hunger and hurt of body more hardily than any other peoples
+    I've met during my journeys."
+
+    Intrigued by the journal, you decide to strike out for parts unknown to find
+    the fabled collapsed mine mentioned in the journal. Surely there will be
+    treasure of dwarven proportions. Perhaps their advanced technology and
+    deep mines have allowed them to survive the apocalypse? There’s only one way
+    to find out.
+
+    The journal crumbles before your eyes. But before it does, you have a chance
+    to study the hand-drawn map on its last page.
+
+    You get the feeling this is probably the start of an epic adventure that may require
+    the help of a friend, some extra ammo, and some extra first aid kits.
+    -->
+    <!-- Localization: yes -->
+		<item name="vetquestjournal_toc_dwarven_forge">
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Veteran Quest for a Dwarven Forge"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
+    <!-- Map found in chest of the collapsed mine that Horace directs the player to -->
+    <!--
+    An old weathered map written in a strange language you don't understand. After
+    studying the map for some time, you believe you recognize some landmarks.
+    Marked on the map is what you believe may be the last location of the descendants
+    of this tribe of craftsmen.
+    -->
+    <!-- Localization: yes -->
+    <item name="vetquestmap_toc_dwarven_forge">
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="vetmap_Dwarven_Forge_PhaseTwo_WaveOne"/>
+			</property>
+		</item>
+
+    <!--
+    After the three waves of attacks you wipe the sweat and blood from your beow,
+    and take a swig of your beverage of choice.
+
+    "So the legend written about in the journal was true!"
+
+    You look in your pack and realize you've stumbled onto what appears to be
+    some long-lost recipes to craft a Dwarven Forge, Anvil, and Bellows! This
+    is truly a magnificent find and will bolster your ability to craft higher
+    quality items. You wonder to yourself what secret recipes you'll stumble
+    upon once you create this new crafting station and tools.
+    -->
+    <!-- Localization: yes -->
+    <item name="vetquestitem_toc_dwarven_forge_phaseone_complete">
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Dwarven_Forge_Vet_Completion"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+    <!-- END VETERAN QUEST ITEMS -->
+
+
+    <!-- Schematic: Dwarven Forge -->
+    <!-- Localization: yes -->
+    <item name="schem_toc_dwarvenforge">
+    	<property name="Extends" value="schematicMaster"/>
+    	<property name="CreativeMode" value="Player"/>
+    	<property name="CustomIcon" value="forge"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="Stacknumber" value="1"/>
+    	<property name="Unlocks" value="ingotBundleForgedSteel"/>
+      <property name="Unlocks" value="dwarvenForge"/>
+    	<effect_group tiered="false">
+        <!-- Recipes Unlocked by the Schematic -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceDwarvenForgedSteel" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="dwarvenForge" operation="set" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+    	</effect_group>
+    </item>
+
+    <!-- Dwarven Forge Tools, and Requirements -->
+    <!-- Localization: yes -->
+    <item name="schem_toc_dwarvenanvil">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="toolAnvil"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Unlocks" value="toolDwarvenAnvil"/>
+      <effect_group tiered="false">
+        <!-- Recipes Unlocked by the Schematic -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolDwarvenAnvil" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+      </effect_group>
+    </item>
+    <!-- Dwarven Anvil -->
+    <!-- Localization: yes -->
+    <item name="toolDwarvenAnvil">
+      <property name="CustomIcon" value="toolAnvil"/>
+      <property name="CustomIconTint" value="1e9403"/>
+    	<property name="Tags" value="toolAnvil"/>
+    	<property name="HoldType" value="45"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="Msteel"/>
+    	<property name="Weight" value="200"/>
+    	<property name="Stacknumber" value="1"/>
+    	<property name="EconomicValue" value="2500"/>
+    	<property name="Group" value="Tools/Traps"/>
+    	<property name="DisplayType" value="toolAnvil"/>
+    	<property name="ItemTypeIcon" value="forge"/>
+      <property name="UnlockedBy" value="schem_toc_dwarvenanvil"/>
+    	<effect_group tiered="false">
+    		<passive_effect name="CraftingTime" operation="perc_add" value="-.444"/>
+    		<display_value name="dCraftingTime" value=".8"/>
+    	</effect_group>
+    </item>
+
+    <!-- Schematic: Dwarven Bellows -->
+    <!-- Localization: yes -->
+    <item name="schem_toc_dwarvenbellows">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="toolBellows"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Unlocks" value="toolDwarvenBellows"/>
+      <effect_group tiered="false">
+        <!-- Recipes Unlocked by the Schematic -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolDwarvenBellows" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+      </effect_group>
+    </item>
+    <!-- Dwarven Bellows -->
+    <!-- Localization: yes -->
+    <item name="toolDwarvenBellows">
+      <property name="Extends" value="toolBellows"/>
+      <property name="CustomIcon" value="toolBellows"/>
+      <property name="CustomIconTint" value="1e9403"/>
+    	<property name="HoldType" value="45"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="MtoolBellows"/>
+    	<property name="Stacknumber" value="1"/>
+    	<property name="Weight" value="100"/>
+    	<property name="EconomicValue" value="5000"/>
+    	<property name="Group" value="Tools/Traps"/>
+    	<property name="DisplayType" value="toolBellows"/>
+    	<property name="ItemTypeIcon" value="forge"/>
+    	<effect_group tiered="false">
+    		<passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.444"/>
+    		<display_value name="dCraftingSmeltTime" value=".44"/>
+    	</effect_group>
+    </item>
+
+    <!-- This items can only be obtained from completion of Part 2 (Veteran) -->
+    <!-- Dwarven Crucible -->
+    <!-- Localization: yes -->
+    <item name="toolDwarvenCrucible">
+      <property name="CustomIcon" value="toolForgeCrucible"/>
+      <property name="CustomIconTint" value="1e9403"/>
+    	<property name="HoldType" value="45"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="Msteel"/>
+    	<property name="Stacknumber" value="1"/>
+    	<property name="Group" value="Tools/Traps"/>
+    	<property name="EconomicValue" value="2500"/>
+    	<property name="SellableToTrader" value="false"/>
+    	<property name="ItemTypeIcon" value="forge"/>
+    </item>
+
+    <!-- Aged Dwarven Forged Steel -->
+    <!-- Localization: yes -->
+    <item name="resourceAgedDwarvenForgedSteel">
+      <property name="CustomIcon" value="resourceForgedSteel"/>
+      <property name="CustomIconTint" value="1e9403"/>
+    	<property name="HoldType" value="45"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="MresourceForgedSteel"/>
+    	<property name="Stacknumber" value="50"/>
+    	<property name="EconomicValue" value="50"/>
+    	<property name="Group" value="DwarvenResources"/>
+    	<property name="CraftingIngredientTime" value="15"/>
+    	<property name="RepairTime" value="1"/>
+    	<property name="RepairAmount" value="400"/>
+    </item>
+    <!-- Dwarven Forged Steel -->
+    <!-- Localization: yes -->
+    <item name="resourceDwarvenForgedSteel">
+      <property name="CustomIcon" value="resourceForgedSteel"/>
+      <property name="CustomIconTint" value="1e9403"/>
+    	<property name="HoldType" value="45"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="MresourceForgedSteel"/>
+    	<property name="Stacknumber" value="50"/>
+    	<property name="EconomicValue" value="50"/>
+      <property name="Group" value="DwarvenResources"/>
+    	<property name="CraftingIngredientTime" value="15"/>
+    	<property name="RepairTime" value="1"/>
+    	<property name="RepairAmount" value="400"/>
+    </item>
+
+
+
+  </append>
+
+
+
+  <!-- ELITE TIER ITEMS -->
+  <append xpath="/items">
+		<!-- ELITE QUEST ITEMS -->
+    <!-- Localization: yes -->
+		<item name="elitequest_toc_dwarven_forge_phaseone">
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="elite_Dwarven_Forge_PhaseOne_WaveOne"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+    <!-- END ELITE QUEST ITEMS -->
+
+    <!-- ELITE Tier: After completion of Part 1 (Elite) -->
+    <!-- Dwarven Chisel & Drift Set -->
+    <!-- Localization: yes -->
+    <item name="schem_toc_chiselanddrift">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="toolAndDieSet"/>
+      <!--<property name="CustomIconTint" value="1e9403"/>-->
+      <property name="Stacknumber" value="1"/>
+      <property name="Unlocks" value="toolDwarvenChiselAndDriftSet"/>
+      <effect_group tiered="false">
+        <!-- Recipes Unlocked by the Schematic -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolDwarvenChiselAndDriftSet" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+      </effect_group>
+    </item>
+    <!-- Piece together two halves of the schematic to create main schematic -->
+    <!-- Localization: yes -->
+    <item name="schem_toc_chiselanddrift_first">
+    	<property name="ItemTypeIcon" value="book"/>
+    	<property name="AltItemTypeIcon" value="book_read"/>
+    	<property name="CreativeMode" value="None"/>
+    	<property name="HoldType" value="31"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="Mpaper"/>
+    	<property name="Weight" value="5"/>
+    	<property name="EconomicValue" value="800"/>
+    	<property name="Group" value="Books,Mods,SchematicsOnly"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="toolAndDieSet"/>
+      <property name="CustomIconTint" value="6f87ad"/>
+      <property name="Stacknumber" value="1"/>
+    </item>
+    <!-- Localization: yes -->
+    <item name="schem_toc_chiselanddrift_second">
+    	<property name="ItemTypeIcon" value="book"/>
+    	<property name="AltItemTypeIcon" value="book_read"/>
+    	<property name="CreativeMode" value="None"/>
+    	<property name="HoldType" value="31"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="Mpaper"/>
+    	<property name="Weight" value="5"/>
+    	<property name="EconomicValue" value="800"/>
+    	<property name="Group" value="Books,Mods,SchematicsOnly"/>
+
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="toolAndDieSet"/>
+      <property name="CustomIconTint" value="6f87ad"/>
+      <property name="Stacknumber" value="1"/>
+    </item>
+
+    <!-- Localization: yes -->
+    <item name="toolDwarvenChiselAndDriftSet">
+      <property name="CustomIcon" value="toolAndDieSet"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Msteel"/>
+      <property name="Weight" value="30"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="EconomicValue" value="2500"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="ItemTypeIcon" value="forge"/>
+      <property name="DisplayType" value="toolBellows"/>
+
+      <effect_group tiered="false">
+        <passive_effect name="CraftingSmeltTime" operation="perc_add" value="-.444"/>
+        <display_value name="dCraftingSmeltTime" value=".8"/>
+      </effect_group>
+    </item>
+
+    <!-- ELITE Tier: This item can only be obtained thru completion of Part 2 (Elite) -->
+    <!-- Dwarven Toolbox -->
+    <!-- Localization: yes -->
+    <item name="toolDwarvenTools">
+      <property name="CustomIcon" value="cntToolBoxOpen"/>
+      <property name="CustomIconTint" value="2fff00"/>
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Msteel"/>
+      <property name="Weight" value="5"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Group" value="Tools/Traps"/>
+      <property name="EconomicValue" value="2500"/>
+      <property name="ItemTypeIcon" value="forge"/>
+      <property name="DisplayType" value="toolAnvil"/>
+      <effect_group tiered="false">
+        <passive_effect name="CraftingTime" operation="perc_add" value="-.444"/>
+        <display_value name="dCraftingTime" value=".8"/>
+      </effect_group>
+    </item>
+
+    <!-- Dwarven Refined Brass (Needed to craft the Chisel & Drift Set -->)
+    <!-- Localization: yes -->
+    <item name="resourceDwarvenRefinedBrass"> <!-- scrap material -->
+      <property name="CustomIcon" value="resourceScrapBrass"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="Tags" value="brass"/>
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="MresourceScrapBrassSmall"/>
+      <property name="MeltTimePerUnit" value=".4"/>
+      <property name="Stacknumber" value="6000"/>
+      <property name="Weight" value="1"/>
+      <property name="EconomicValue" value="20"/>
+      <property name="EconomicBundleSize" value="10"/>
+      <property name="Group" value="Resources"/>
+      <property name="CraftingIngredientTime" value=".2"/>
+    </item>
+
+    <!-- Telchar's Autobiography -->
+    <item name="elitejournal_dwarven_forge_telchars_autobiography">
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Elite Quest for a Dwarven Forge"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="Special Items"/>
+		</item>
+
+    <!-- Dwarven Workbench -->
+    <item name="schem_toc_dwarvenworkbench">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="CustomIcon" value="workbench"/>
+      <property name="CustomIconTint" value="1e9403"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Unlocks" value="dwarvenWorkbench"/>
+      <effect_group tiered="false">
+        <!-- Recipes Unlocked by the Schematic -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="dwarvenWorkbench" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+      </effect_group>
+    </item>
+
+
+    <!-- ************************************* -->
+    <!-- CUSTOM ITEMS -->
+    <item name="dwarvenBundleMaster">
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="MresourceForgedSteel"/>
+      <property name="Stacknumber" value="50"/>
+      <property name="EconomicValue" value="50"/>
+      <property name="Group" value="DwarvenAll,DwarvenResources"/>
+      <property name="CraftingIngredientTime" value="15"/>
+      <property name="RepairTime" value="1"/>
+      <property name="RepairAmount" value="400"/>
+      <property class="Action0">
+    		<property name="Class" value="OpenBundle"/>
+    		<property name="Delay" value="0"/>
+    		<property name="Use_time" value="0"/>
+    		<property name="Sound_start" value="close_garbage"/>
+    		<property name="Create_item" value="resourceForgedSteel"/>
+    		<property name="Create_item_count" value="100"/>
+    	</property>
+    </item>
+
+    <!-- Dwarven Forge -->
+    <!-- Dwarven Forge: Bundle of Buckshot -->
+    <item name="resourceBundleBuckshot">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceBuckshotDesc"/>
+      <property name="CustomIcon" value="resourceBuckshot"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenAmmo/DwarvenWeapons,DwarvenAmmo"/>
+      <property class="Action0">
+    		<property name="Class" value="OpenBundle"/>
+    		<property name="Delay" value="0"/>
+    		<property name="Use_time" value="0"/>
+    		<property name="Sound_start" value="close_garbage"/>
+    		<property name="Create_item" value="resourceBuckshot"/>
+    		<property name="Create_item_count" value="100"/>
+    	</property>
+    </item>
+    <!-- Dwarven Forge: Bundle of Empty Cans -->
+    <item name="resourceBundleDrinkCanEmpty">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="drinkCanEmptyDesc"/>
+      <property name="CustomIcon" value="drinkCanEmpty"/>
+      <property name="EconomicValue" value="500"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenResources"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="drinkCanEmpty"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+
+    <!-- Dwarven Forge: Bundle of Glass Jars -->
+    <item name="resourceBundleDrinkJarEmpty">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="drinkJarEmptyDesc"/>
+      <property name="CustomIcon" value="drinkJarEmpty"/>
+      <property name="EconomicValue" value="600"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenResources"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="drinkJarEmpty"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+
+    <!-- Dwarven Anvil -->
+    <!-- Dwarven Anvil: Bundle of Iron Ingots -->
+    <item name="resourceBundleForgedIron">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceForgedIronDesc"/>
+      <property name="CustomIcon" value="resourceForgedIron"/>
+      <property name="EconomicValue" value="1200"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenResources"/>
+      <property class="Action0">
+    		<property name="Class" value="OpenBundle"/>
+    		<property name="Delay" value="0"/>
+    		<property name="Use_time" value="0"/>
+    		<property name="Sound_start" value="close_garbage"/>
+    		<property name="Create_item" value="resourceForgedIron"/>
+    		<property name="Create_item_count" value="100"/>
+    	</property>
+    </item>
+    <!-- Dwarven Anvil: Bundle of Iron Arrowheads -->
+    <item name="resourceBundleArrowHeadIron">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceArrowHeadIronDesc"/>
+      <property name="CustomIcon" value="resourceArrowHeadIron"/>
+      <property name="EconomicValue" value="1200"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenResources"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceArrowHeadIron"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+
+    <!-- Dwarven Crucible -->
+    <!-- Dwarven Crucible: Bundle of Steel Casings -->
+    <item name="resourceBundleBulletCasingSteelRemington">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceBulletCasingDesc"/>
+      <property name="CustomIcon" value="resourceBulletCasing"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenAmmo/DwarvenWeapons,DwarvenAmmo"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceBulletCasingSteelRemington"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+
+
+    <!-- Dwarven Crucible: Bundle of Steel Ingots -->
+    <item name="resourceBundleForgedSteel">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceForgedSteelDesc"/>
+      <property name="CustomIcon" value="resourceForgedSteel"/>
+      <property name="EconomicValue" value="1200"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenResources"/>
+      <property class="Action0">
+    		<property name="Class" value="OpenBundle"/>
+    		<property name="Delay" value="0"/>
+    		<property name="Use_time" value="0"/>
+    		<property name="Sound_start" value="close_garbage"/>
+    		<property name="Create_item" value="resourceForgedSteel"/>
+    		<property name="Create_item_count" value="100"/>
+    	</property>
+    </item>
+    <!-- Dwarven Crucible: Bundle of Steel Arrowheads -->
+    <item name="resourceBundleArrowHeadSteelAP">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceArrowHeadSteelAPDesc"/>
+      <property name="CustomIcon" value="resourceArrowHeadSteelAP"/>
+      <property name="EconomicValue" value="4000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenAmmo/DwarvenWeapons,DwarvenAmmo"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceArrowHeadSteelAP"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+    <!-- Dwarven Crucible: Bundle of Steel Trussing Sheets -->
+    <item name="bundleSteelTrussingSheet">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="metalTrussingSheetDesc"/>
+      <property name="CustomIcon" value="metalTrussingSheet"/>
+      <property name="CustomIconTint" value="ffff00"/>
+      <property name="EconomicValue" value="4000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenBuilding"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="SteelTrussingSheet"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+
+    <!-- Dwarven Chisel and Drift Set -->
+    <!-- Dwarven Chisel and Drift Set: Bundle of Bullet Tips -->
+    <item name="resourceBundleBulletTip">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceBulletTipDesc"/>
+      <property name="CustomIcon" value="resourceBulletTip"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenAmmo/DwarvenWeapons,DwarvenAmmo"/>
+      <property class="Action0">
+    		<property name="Class" value="OpenBundle"/>
+    		<property name="Delay" value="0"/>
+    		<property name="Use_time" value="0"/>
+    		<property name="Sound_start" value="close_garbage"/>
+    		<property name="Create_item" value="resourceBulletTip"/>
+    		<property name="Create_item_count" value="1000"/>
+    	</property>
+    </item>
+    <!-- Dwarven Chisel and Drift Set: Bundle of Dwarven Steel Trussing Sheets **** -->
+    <item name="bundleDwarvenSteelTrussingSheet">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="metalTrussingSheetDesc"/>
+      <property name="CustomIcon" value="metalTrussingSheet"/>
+      <property name="CustomIconTint" value="ffff00"/>
+      <property name="EconomicValue" value="4000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenBuilding"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="DwarvenSteelTrussingSheet"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+    <!-- Dwarven Chisel and Drift Set: Bundle of Brass Casings -->
+    <item name="resourceBundleBulletCasing">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceBulletCasingDesc"/>
+      <property name="CustomIcon" value="resourceBulletCasing"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenAmmo/DwarvenWeapons,DwarvenAmmo"/>
+      <property class="Action0">
+    		<property name="Class" value="OpenBundle"/>
+    		<property name="Delay" value="0"/>
+    		<property name="Use_time" value="0"/>
+    		<property name="Sound_start" value="close_garbage"/>
+    		<property name="Create_item" value="resourceBulletCasing"/>
+    		<property name="Create_item_count" value="1000"/>
+    	</property>
+    </item>
+    <!-- Dwarven Chisel and Drift Set: Bundle of Nails -->
+    <item name="resourceBundleNail">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceNailDesc"/>
+      <property name="CustomIcon" value="resourceNail"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenResources"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceNail"/>
+        <property name="Create_item_count" value="100"/>
+      </property>
+    </item>
+    <!-- Dwarven Chisel and Drift Set: Bundle of Rocket Casing -->
+    <item name="resourceBundleRocketCasing">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceRocketCasingDesc"/>
+      <property name="CustomIcon" value="resourceRocketCasing"/>
+      <property name="EconomicValue" value="7700"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenAmmo/DwarvenWeapons,DwarvenAmmo"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceRocketCasing"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+    <!-- Dwarven Chisel and Drift Set: Bundle of Rocket Tips -->
+    <item name="resourceBundleRocketTip">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="resourceRocketTipDesc"/>
+      <property name="CustomIcon" value="resourceRocketTip"/>
+      <property name="EconomicValue" value="5000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenAmmo/DwarvenWeapons,DwarvenAmmo"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="resourceRocketTip"/>
+        <property name="Create_item_count" value="1000"/>
+      </property>
+    </item>
+
+
+    <!-- Dwarven Workbench: Bundle of Iron Spikes -->
+    <item name="bundleTrapSpikesIronDmg0">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="trapSpikesGroupDesc"/>
+      <property name="CustomIcon" value="trapSpikesScrapIronMaster"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenTools/DwarvenTraps"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="trapSpikesIronDmg0"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+    <!-- Dwarven Workbench: Bundle of Metal Fences -->
+    <item name="bundleMetalFenceRailingTrellisSheetBlockVariantHelper">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="metalFenceRailingTrellisSheetBlockVariantHelperDesc"/>
+      <property name="CustomIcon" value="metalFenceRailingTrellisSheetBlockVariantHelper"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenTools/DwarvenTraps"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="metalFenceRailingTrellisSheetBlockVariantHelper"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+    <!-- Dwarven Workbench: Bundle of Metal Trussing / I-Beams -->
+    <item name="bundleMetalTrussingIBeamBlockVariantHelper">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="iBeamDesc"/>
+      <property name="CustomIcon" value="iBeam"/>
+      <property name="EconomicValue" value="1000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenTools/DwarvenTraps"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="metalTrussingIBeamBlockVariantHelper"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+    <!-- Dwarven Workbench: Bundle of Blade Traps -->
+    <item name="bundleBladeTrap">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="bladeTrapDesc"/>
+      <property name="CustomIcon" value="bladeTrap"/>
+      <property name="EconomicValue" value="4000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenTools/DwarvenTraps"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="bladeTrap"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+    <!-- Dwarven Workbench: Bundle of Motion Sensors -->
+    <item name="bundleMotionsensor">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="DescriptionKey" value="motionsensorDesc"/>
+      <property name="CustomIcon" value="motionsensor"/>
+      <property name="EconomicValue" value="4000"/>
+      <property name="Stacknumber" value="10"/>
+      <property name="Group" value="DwarvenAll,DwarvenTools/DwarvenTraps"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Sound_start" value="close_garbage"/>
+        <property name="Create_item" value="motionsensor"/>
+        <property name="Create_item_count" value="10"/>
+      </property>
+    </item>
+
+
+    <!-- END CUSTOM ITEMS -->
+    <!-- ************************************* -->
+  </append>
+
+
+
+</config>

@@ -1,0 +1,349 @@
+<config>
+	<append xpath="/quests">
+		<!-- VETERAN QUEST (Part 1) -->
+
+		<!-- You hear word that the Trader has a book that might interest a seasoned
+		explorer such as yourself. Travel to the Trader to collect this relic from the
+		past to discover what secrets it may hold for you.
+
+
+
+		The Trader opens up their safe and pulls out a book and hands it to you.
+
+		'Ive been keeping this old dusty journal for a long time, waiting for the right
+		adventurer to come along. You've made quite a name for yourself through all of
+		the quests that you've completed for our community. I think you've really shown
+		me that you are the person to pass on this journal to. Be careful though, it's
+		really fragile and ancient. I suspect this will lead you on an unexpected
+		journey of your own.'
+		-->
+		<!-- Localization: yes -->
+		<quest id="+Quest For Lost Civilization of Little People Start">
+			<property name="name_key" value="vetquest_toc_dwarven_forge"/>
+			<property name="subtitle_key" value="vetquest_toc_dwarven_forge_subtitle"/>
+			<property name="description_key" value="vetquest_toc_dwarven_forge_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="quest" />
+			<property name="difficulty" value="medium" />
+			<property name="offer_key" value="vetquest_toc_dwarven_forge_offer"/>
+			<property name="statement_key" value="vetquest_toc_dwarven_forge_statement"/>
+			<property name="response_key" value="vetquest_toc_dwarven_forge_response"/>
+			<property name="completion_key" value="vetquest_toc_dwarven_forge_completion"/>
+			<property name="group_name_key" value="vetquest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="reward_choices_count" value="5" />
+
+			<objective type="Goto" value="5" phase="2" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="1000" />
+
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
+
+
+			<reward type="Item" id="vetquestjournal_toc_dwarven_forge" value="1" />
+<!--
+
+
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		-->
+		</quest>
+
+		<!--
+
+		-->
+		<!-- Go dig at the collapsed mine in hopes of finding the next clue -->
+		<!-- Player to find: Forge Schematic & Map to last known location of tribe -->
+		<!-- Localization: yes -->
+		<quest id="+Veteran Quest for a Dwarven Forge">
+			<property name="name_key" value="vetquest_toc_dwarven_forge_mine"/>
+			<property name="subtitle_key" value="vetquest_toc_dwarven_forge_mine_subtitle"/>
+			<property name="description_key" value="vetquest_toc_dwarven_forge_mine_description"/>
+			<property name="icon" value="ui_game_symbol_map" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="difficulty" value="hard" />
+			<!-- There should be no offer quest as this quest starts from reading a journal -->
+			<property name="offer_key" value="vetquest_toc_dwarven_forge_mine_offer"/>
+			<property name="statement_key" value="vetquest_toc_dwarven_forge_mine_statement"/>
+			<property name="response_key" value="vetquest_toc_dwarven_forge_mine_response"/>
+			<property name="group_name_key" value="vetquest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+
+			<objective type="TreasureChest">
+				<property name="block" value="questblock_toc_dwarvenmine_coffin"/>
+				<property name="distance" value="1500-2200"/>
+				<property name="default_radius" value="18"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="9" />
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+
+			<reward type="Exp" value="500"/>
+		</quest>
+
+		<!-- VETERAN QUEST (Part 2) -->
+		<!--
+		'We cannot get out. We cannot get out. They have taken the bridge and Second
+		Hall. Frar and Loni and Nali fell there bravely while the rest retreated to
+		Mazarbul. We still hold the chamber but hope is fading now. Oin’s party went
+		five days ago, but have not returned. We cannot get out. The end comes soon.
+		They are coming.'
+
+		The thought occurs to you that there may have been survivors from Oin's party
+		who fled to the point on the map.
+		-->
+		<!-- Localization: yes -->
+		<quest id="vetmap_Dwarven_Forge_PhaseTwo_WaveOne">
+			<property name="name_key" value="vetquest_toc_dwarven_forge_coffinmap"/>
+			<property name="subtitle_key" value="vetquest_toc_dwarven_forge_coffinmap_subtitle"/>
+			<property name="description_key" value="vetquest_toc_dwarven_forge_coffinmap_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="vetquest_toc_dwarven_forge_coffinmap_offer"/>
+			<property name="statement_key" value="vetquest_toc_dwarven_forge_coffinmap_statement"/>
+			<property name="response_key" value="vetquest_toc_dwarven_forge_coffinmap_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="group_name_key" value="vetquest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+
+			<objective type="RandomGoto" value="500-800" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+
+<!--
+			<objective type="ClosestPOIGoto">
+				<property name="distance" value="10"/>
+				<property name="phase" value="1"/>
+			</objective>
+ 			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest" />
+-->
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+
+			<!-- Three Waves of Enemies to Kill:
+				Wave 1: 5 Dwarves: Drops Dwarven Anvil Schematic & 5 Aged Dwarven Forged Steel
+			-->
+
+			<action type="SpawnEnemy" id="zombieSpiderFeral" value="8" phase="3"/>
+			<action type="SpawnEnemy" id="animalBoar" value="4" phase="3"/>
+			<objective type="ZombieKill" id="zombieSpiderFeral" value="5" phase="3"/>
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="150"/>
+			</objective>
+
+			<reward type="Exp" value="1000" />
+			<reward type="Item" id="schem_toc_dwarvenanvil" value="1" />
+			<reward type="Item" id="resourceAgedDwarvenForgedSteel" value="5" />
+
+			<reward type="Quest" id="vetmap_Dwarven_Forge_PhaseTwo_WaveTwo"/>
+		</quest>
+
+		<quest id="vetmap_Dwarven_Forge_PhaseTwo_WaveTwo">
+			<property name="name_key" value="vetquest_toc_dwarven_forge_coffinmap"/>
+			<property name="subtitle_key" value="vetquest_toc_dwarven_forge_coffinmap_subtitle"/>
+			<property name="description_key" value="vetquest_toc_dwarven_forge_coffinmap_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="vetquest_toc_dwarven_forge_coffinmap_offer"/>
+			<property name="statement_key" value="vetquest_toc_dwarven_forge_coffinmap_statement"/>
+			<property name="response_key" value="vetquest_toc_dwarven_forge_coffinmap_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="group_name_key" value="vetquest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+
+			<!-- Three Waves of Enemies to Kill:
+				Wave 2: 3 Dwarves & 1 Giant: Drops Bellows Schematic & 5 Aged Dwarven Forged Steel
+			-->
+			<action type="SpawnEnemy" id="zombieSpiderFeral" value="5" phase="1"/>
+			<action type="SpawnEnemy" id="zombieScreamer" value="1" phase="1"/>
+			<action type="SpawnEnemy" id="animalBoar" value="2" phase="1"/>
+			<objective type="ZombieKill" id="zombieScreamer" value="1" phase="1"/>
+
+			<reward type="Exp" value="1000" />
+			<reward type="Item" id="schem_toc_dwarvenbellows" value="1" />
+			<reward type="Item" id="resourceAgedDwarvenForgedSteel" value="5" />
+
+			<reward type="Quest" id="vetmap_Dwarven_Forge_PhaseTwo_WaveThree"/>
+		</quest>
+
+		<quest id="vetmap_Dwarven_Forge_PhaseTwo_WaveThree">
+			<property name="name_key" value="vetquest_toc_dwarven_forge_coffinmap"/>
+			<property name="subtitle_key" value="vetquest_toc_dwarven_forge_coffinmap_subtitle"/>
+			<property name="description_key" value="vetquest_toc_dwarven_forge_coffinmap_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="vetquest_toc_dwarven_forge_coffinmap_offer"/>
+			<property name="statement_key" value="vetquest_toc_dwarven_forge_coffinmap_statement"/>
+			<property name="response_key" value="vetquest_toc_dwarven_forge_coffinmap_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="group_name_key" value="vetquest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+
+			<!-- Three Waves of Enemies to Kill:
+				Wave 3: 3 Dwarves & 1 Giant: Drops Bellows Schematic & 5 Aged Dwarven Forged Steel
+			-->
+			<action type="SpawnEnemy" id="zombieSpiderFeral" value="3" phase="1"/>
+			<action type="SpawnEnemy" id="zombieScreamer" value="1" phase="1"/>
+			<action type="SpawnEnemy" id="animalBoar" value="2" phase="1"/>
+			<objective type="ZombieKill" id="zombieScreamer" value="1" phase="1"/>
+
+			<reward type="Exp" value="1000" />
+			<reward type="Item" id="toolDwarvenCrucible" value="1" />
+			<reward type="Item" id="resourceAgedDwarvenForgedSteel" value="10" />
+
+			<reward type="Item" id="vetquestitem_toc_dwarven_forge_phaseone_complete" value="1"/>
+		</quest>
+
+
+		<!--
+			Craft the items:
+			Dwarven Forge
+			Dwarven Anvil
+			Dwarven Bellows
+		-->
+		<quest id="+Dwarven_Forge_Vet_Completion">
+			<property name="name_key" value="vetquest_dwarven_forge_complete"/>
+			<property name="subtitle_key" value="vetquest_dwarven_forge_complete_subtitle"/>
+			<property name="description_key" value="vetquest_dwarven_forge_complete_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="vetquest_dwarven_forge_complete_offer"/>
+			<property name="statement_key" value="vetquest_dwarven_forge_complete_statement"/>
+			<property name="response_key" value="vetquest_dwarven_forge_complete_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="group_name_key" value="vetquest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+
+			<objective type="FetchKeep" id="dwarvenForge" value="1" phase="1" />
+			<objective type="FetchKeep" id="toolDwarvenAnvil" value="1" phase="1" />
+			<objective type="FetchKeep" id="resourceDwarvenForgedSteel" value="1" phase="2" />
+			<objective type="Craft" id="toolDwarvenBellows" value="1" phase="2" />
+
+			<reward type="Exp" value="1500" />
+			<reward type="Item" id="vetquestitem_vetcoin_dwarven_forge" count="1"/>
+		</quest>
+
+
+
+
+
+		<!-- ELITE QUEST (Part 1) -->
+		<quest id="elite_Dwarven_Forge_PhaseOne_WaveOne">
+			<property name="name_key" value="elitequest_toc_dwarven_forge_phaseone"/>
+			<property name="subtitle_key" value="elitequest_toc_dwarven_forge_phaseone_subtitle"/>
+			<property name="description_key" value="elitequest_toc_dwarven_forge_phaseone_description"/>
+			<property name="icon" value="ui_game_symbol_zombie" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="challenge" />
+			<property name="difficulty" value="hard" />
+			<property name="offer_key" value="elitequest_toc_dwarven_forge_phaseone_offer"/>
+			<property name="statement_key" value="elitequest_toc_dwarven_forge_phaseone_statement"/>
+			<property name="response_key" value="elitequest_toc_dwarven_forge_phaseone_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="group_name_key" value="elitequest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+
+			<objective type="RandomGoto" value="1200-2500" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieSpiderFeral" value="8" phase="3"/>
+			<action type="SpawnEnemy" id="animalBoar" value="2" phase="3"/>
+			<objective type="ZombieKill" id="zombieSpiderFeral" value="1" phase="3"/>
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="150"/>
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieSpiderFeral" value="1" phase="4"/>
+			<action type="SpawnEnemy" id="animalBoar" value="2" phase="4"/>
+			<objective type="ZombieKill" id="zombieSpiderFeral" value="1" phase="4"/>
+			<objective type="StayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="150"/>
+			</objective>
+
+			<reward type="Exp" value="1000" />
+			<reward type="Item" id="schem_toc_chiselanddrift_second" value="1" />
+			<reward type="Item" id="elitejournal_dwarven_forge_telchars_autobiography" value="1" />
+		</quest>
+
+		<!-- ELITE QUEST (Part 2) -->
+		<quest id="+Elite Quest for a Dwarven Forge">
+			<property name="name_key" value="elitequest_toc_dwarven_forge"/>
+			<property name="subtitle_key" value="elitequest_toc_dwarven_forge_subtitle"/>
+			<property name="description_key" value="elitequest_toc_dwarven_forge_description"/>
+			<property name="icon" value="ui_game_symbol_map" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="difficulty" value="hard" />
+			<!-- There should be no offer quest as this quest starts from reading a journal -->
+			<property name="offer_key" value="elitequest_toc_dwarven_forge_offer"/>
+			<property name="statement_key" value="elitequest_toc_dwarven_forge_statement"/>
+			<property name="response_key" value="elitequest_toc_dwarven_forge_response"/>
+			<property name="group_name_key" value="elitequest_toc_dwarven_forge_group"/>
+			<property name="shareable" value="false" />
+
+			<objective type="TreasureChest">
+				<property name="block" value="questblock_toc_dwarvenmine_coffintelchar"/>
+				<property name="distance" value="1500-2200"/>
+				<property name="default_radius" value="100"/>
+				<property name="nav_object" value="treasure" />
+				<property name="direct_nav_object" value="treasure_direct" />
+				<property name="blocks_per_reduction" value="9" />
+				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+			</objective>
+
+			<event type="TreasureRadiusReduction" chance="0.25">
+				<action type="SpawnGSEnemy" id="zombieSpiderFeral" value="1-3"/>
+			</event>
+
+			<reward type="Exp" value="500"/>
+		</quest>
+		<!-- ELITE QUEST -->
+
+	</append>
+</config>

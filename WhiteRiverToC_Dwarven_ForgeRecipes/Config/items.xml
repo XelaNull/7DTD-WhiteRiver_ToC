@@ -1,0 +1,25 @@
+<config>
+  <append xpath="/items">
+    <item name="dwarvenAgedForgedSteel">
+    </item>
+
+
+
+
+    <item name="trapBundleSteelSpikes">
+      <property name="Extends" value="dwarvenBundleMaster"/>
+      <property name="CustomIcon" value="trapSpikesScrapIronMaster"/>
+      <property name="Stacknumber" value="20"/>
+      <property name="EconomicValue" value="3000"/>
+      <property name="UnlockedBy" value="schem_toc_dwarventools"/>
+      <property class="Action0">
+        <property name="Create_item" value="trapSpikesSteelDmg0"/>
+      </property>
+    </item>
+
+  </append>
+
+
+
+
+</config>
