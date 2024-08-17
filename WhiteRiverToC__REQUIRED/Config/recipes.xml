@@ -18,7 +18,7 @@
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>
 		-->
-		<recipe name="questitem_toc_randomelite_name" count="1" craft_time="600" craft_exp_gain="8000" >
+		<recipe name="questitem_toc_randomelite_name" count="1" craft_time="600" craft_exp_gain="8000">
 			<ingredient name="questitem_toc_veterancard_name" count="4"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>

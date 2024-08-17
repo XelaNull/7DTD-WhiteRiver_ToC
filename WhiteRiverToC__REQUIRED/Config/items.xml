@@ -1,7 +1,5 @@
 <configs>
 	<append xpath="/items">
-
-		<!-- This is crafted freely by the player to work through Initiate quests -->
 		<item name="questitem_toc_declaration_name">
 			<property name="DescriptionKey" value="questitem_toc_declaration_description"/>						
 			<property name="CustomIcon" value="questMaster"/>
@@ -17,7 +15,6 @@
 				<property name="Delay" value="0"/>
 			</property>	
 		</item>		
-		
 		<item name="questitem_initiate_completion_token">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
@@ -25,8 +22,7 @@
 			<property name="Stacknumber" value="10"/>
 			<property name="Tags" value="ToC_coin"/>
 		</item>
-		
-		<!-- This is crafted by the player to work through Citizen Quests -->
+
 		<item name="questitem_toc_citizencard_name">
 			<property name="DescriptionKey" value="questitem_toc_citizencard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
@@ -37,7 +33,6 @@
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
 		</item>
-
 		<item name="questitem_citizen_completion_token">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
@@ -45,23 +40,6 @@
 			<property name="Stacknumber" value="10"/>
 			<property name="Tags" value="ToC_coin"/>
 		</item>
-		
-		<item name="questitem_toc_veteranquest_name">
-			<property name="DescriptionKey" value="questitem_toc_veteranquest_description"/>						
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="660000"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 100 Zombies"/>
-				<property name="Delay" value="0"/>
-			</property>	
-		</item>		
-		
-		<!-- This is crafted by the player to work through Veteran Quests -->
 		<item name="questitem_toc_veterancard_name">
 			<property name="DescriptionKey" value="questitem_toc_veterancard_description"/>						
 			<property name="CustomIcon" value="resourcePaper"/>
@@ -72,7 +50,6 @@
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
 		</item>
-		
 		<item name="questitem_veteran_completion_token">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
@@ -80,48 +57,31 @@
 			<property name="Stacknumber" value="10"/>
 			<property name="Tags" value="ToC_coin"/>
 		</item>
-
-		<item name="questitem_toc_elitequest_name">
-			<property name="DescriptionKey" value="questitem_toc_elitequest_description"/>						
-			<property name="CustomIcon" value="resourcePaper"/>
-			<property name="CustomIconTint" value="660000"/>
-			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>			
-			<property name="Group" value="Special Items"/>
-			<property name="Description" value=""/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 1000 Zombies"/>
-				<property name="Delay" value="0"/>
-			</property>	
-		</item>
-		
-		<!-- This is crafted by the player to work through Elite Quests -->
 		<item name="questitem_toc_elitecard_name">
-			<property name="DescriptionKey" value="questitem_toc_elitecard_description"/>						
+			<property name="DescriptionKey" value="questitem_toc_elitecard_description"/>
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Stacknumber" value="1"/>
+			<property name="Stacknumber" value="100"/>
 			<property name="NoScrapping" value="true"/>
-			<property name="Weight" value="0"/>			
+			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
+			
 		</item>
-
 		<item name="questitem_toc_randomelite_name">
-			<property name="DescriptionKey" value="questitem_toc_randomelite_desc"/>						
+			<property name="DescriptionKey" value="questitem_toc_randomelite_desc"/>
 			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="660000"/>
 			<property name="Extends" value="resourcePaper"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Weight" value="0"/>			
+			<property name="NoScrapping" value="true"/>
+			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Obtain a Random Elite Quest"/>
-				<property name="Delay" value="0"/>
-			</property>	
+				<property name="QuestGiven" value="Obtain_a_Random_Elite_Quest"/>
+				<property name="UseAnimation" value="false"/>
+			</property>
 		</item>
 	</append>
 </configs>

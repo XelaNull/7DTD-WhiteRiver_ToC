@@ -1,207 +1,41 @@
 <config>
 
-  <!-- Kick off the custom Quest-line as soon as the White River Citizen initial quest completes -->
+  	<!-- Kick off the custom Quest-line as soon as the White River Citizen initial quest completes -->
 	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
 		<reward type="Item" id="questitem_toc_declaration_name" ischosen="true" value="1"/>
 	</insertAfter>
 
-	<!--
-	<quest_list id="trader_quests">
-		<quest id="tier1_clear"/>
-	-->
+	<!-- Change the Trader's first quest wrap-up text as an entry-point to direct player to Tools of Citizenship. -->
+
 
 	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']">
-		<quest id="quest_whiteRiverCitizen2">
-			<property name="name_key" value="quest_tools_of_citizenship_name"/>
-			<property name="subtitle_key" value="quest_tools_of_citizenship_subtitle"/>
-			<property name="description_key" value="quest_tools_of_citizenship_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="false" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
-			<property name="offer_key" value="quest_tools_of_citizenship_offer"/>
-			<property name="statement_key" value="quest_tools_of_citizenship_statement"/>
-			<property name="response_key" value="questdialog_tools_of_citizenship"/>
-			<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
-			<property name="shareable" value="false" />
-
-			<reward type="Item" id="questitem_toc_declaration_name" value="1" />
-		</quest>
-
-		<quest id="quest_whiteRiverCitizen3">
-			<property name="name_key" value="quest_toc_10z_name"/>
-			<property name="subtitle_key" value="quest_toc_10z_subtitle"/>
-			<property name="description_key" value="quest_toc_10z_description"/>
-			<property name="completion_key" value="quest_toc_10z_completion"/>
-			<property name="icon" value="ui_game_symbol_zombie" />
-			<property name="repeatable" value="false" />
-			<property name="category_key" value="challenge" />
-			<property name="difficulty" value="easy" />
-			<property name="difficulty_tier" value="1"/>
-			<property name="offer_key" value="quest_toc_10z_offer"/>
-			<property name="statement_key" value="quest_toc_10z_statement"/>
-			<property name="response_key" value="questdialog_toc_10z"/>
-			<property name="group_name_key" value="quest_tools_of_citizenship_group"/>
-			<property name="shareable" value="false" />
-			<property name="completiontype" value="TurnIn" />
-			<property name="reward_choices_count" value="5" />
-
-			<!--<objective type="ZombieKill" value="10" phase="1" />-->
-
-			<action type="TrackChallenge">
-				<property name="challenge" value="killZombiesToC1" />
-				<property name="on_complete" value="false"/>
-				<property name="delay" value="1"/>
-			</action>
-
-			<action type="TrackChallenge">
-				<property name="challenge" value="BuildBlocksToC1" />
-				<property name="on_complete" value="false"/>
-				<property name="delay" value="1"/>
-			</action>
-
-			<objective type="Goto" id="trader" value="1" phase="1">
-			<property name="biome_filter_type" value="OnlyBiome"/>
-			<property name="biome_filter" value="pine_forest"/>
-			<!-- <property name="biome_filter_type" value="ExcludeBiome"/> -->
-			<!-- <property name="biome_filter" value="wasteland"/> -->
-			<property name="nav_object" value="go_to_trader"/>
-			</objective>
-
-			<objective type="InteractWithNPC">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="return_to_trader"/>
-				<property name="use_closest" value="true"/>
-			</objective>
-<!--
-			<objective type="Goto" value="5" phase="2" />
-			<objective type="ReturnToNPC">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
-			<objective type="InteractWithNPC">
-				<property name="phase" value="4" />
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
--->
-			<reward type="Exp" value="1000" />
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
-
-			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
-		</quest>
-
-		<quest id="+Kill 100 Zombies">
-			<property name="name_key" value="quest_toc_100z_name"/>
-			<property name="subtitle_key" value="quest_toc_100z_subtitle"/>
-			<property name="description_key" value="quest_toc_100z_description"/>
-			<property name="icon" value="ui_game_symbol_zombie" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="challenge" />
-			<property name="difficulty" value="medium" />
-			<property name="difficulty_tier" value="3"/>
-			<property name="offer_key" value="quest_toc_100z_offer"/>
-			<property name="statement_key" value="quest_toc_100z_statement"/>
-			<property name="response_key" value="questdialog_toc_100z"/>
-			<property name="group_name_key" value="quest_toc_100z_group"/>
-			<property name="shareable" value="false" />
-			<property name="completiontype" value="TurnIn" />
-			<property name="reward_choices_count" value="5" />
-
-			<!--<objective type="ZombieKill" value="100" phase="1" />-->
-			<objective type="Goto" value="5" phase="2" />
-			<objective type="ReturnToNPC">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
-			<objective type="InteractWithNPC">
-				<property name="phase" value="4" />
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
-
-			<reward type="Exp" value="1500" />
-			<reward type="Item" id="questitem_toc_veterancard_name" value="1" />
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />
-
-			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
-		</quest>
-
-
-		<quest id="+Kill 1000 Zombies">
-			<property name="name_key" value="quest_toc_1000z_name"/>
-			<property name="subtitle_key" value="quest_toc_1000z_subtitle"/>
-			<property name="description_key" value="quest_toc_1000z_description"/>
-			<property name="icon" value="ui_game_symbol_zombie" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="challenge" />
-			<property name="difficulty" value="hard" />
-			<property name="difficulty_tier" value="5"/>
-			<property name="offer_key" value="quest_toc_1000z_offer"/>
-			<property name="statement_key" value="quest_toc_1000z_statement"/>
-			<property name="response_key" value="questdialog_toc_1000z"/>
-			<property name="group_name_key" value="quest_toc_1000z_group"/>
-			<property name="shareable" value="false" />
-			<property name="completiontype" value="TurnIn" />
-
-<!--
-			<objective type="ZombieKill" value="250" phase="1" />
-			<objective type="ZombieKill" value="250" phase="2" />
-			<objective type="ZombieKill" value="250" phase="3" />
-			<objective type="ZombieKill" value="250" phase="4" />
--->			
-			<objective type="Goto" value="5" phase="5" />
-			<objective type="ReturnToNPC">
-				<property name="phase" value="6"/>
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
-			<objective type="InteractWithNPC">
-				<property name="phase" value="7" />
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
-
-			<!--<reward type="Quest" id="quest_reward_1000z"/>-->
-			<reward type="Exp" value="2000" />
-			<reward type="SkillPoints" value="1" />
-			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />
-		</quest>
-
-		<quest id="+Obtain a Random Elite Quest">
-			<property name="name_key" value="quest_toc_randomelite_name"/>
+		<quest id="Obtain_a_Random_Elite_Quest">
+			<property name="name_key" value="quest_toc_randomelite_name" param1="name"/>
 			<property name="subtitle_key" value="quest_toc_randomelite_subtitle"/>
 			<property name="description_key" value="quest_toc_randomelite_description"/>
-			<property name="icon" value="ui_game_symbol_zombie" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="challenge" />
-			<property name="difficulty" value="hard" />
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="hard"/>
 			<property name="offer_key" value="quest_toc_randomelite_offer"/>
 			<property name="statement_key" value="quest_toc_randomelite_statement"/>
 			<property name="response_key" value="questdialog_toc_randomelite"/>
 			<property name="group_name_key" value="quest_toc_randomelite_group"/>
-			<property name="shareable" value="false" />
+			<property name="shareable" value="false"/>
 			<property name="completiontype" value="TurnIn"/>
-			<property name="reward_choices_count" value="1" />
-
-			<objective type="Goto" value="5" phase="1"/>
+			<property name="reward_choices_count" value="1"/>
+			
 			<objective type="ReturnToNPC">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="return_to_trader" />
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
 			</objective>
 			<objective type="InteractWithNPC">
-				<property name="phase" value="3" />
-				<property name="nav_object" value="go_to_trader" />
-				<property name="use_closest" value="true" />
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="go_to_trader"/>
 			</objective>
-
-			<reward type="Exp" value="1000" />
-			<reward type="Item" id="questblock_toc_randomcrate_name" value="1" />
-
+			
+			<reward type="Exp" value="1000"/>
+			<reward type="Item" id="questblock_toc_randomcrate_name" value="1"/>
 			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestArmor" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
@@ -209,33 +43,4 @@
 		</quest>
 	</insertAfter>
 
-	<append xpath="/quests/quest_list[@id='trader_rekt_quests']">
-		<quest id='quest_whiteRiverCitizen3' />
-		<quest id='+Kill 100 Zombies' />
-		<quest id='+Kill 1000 Zombies' />
-	</append>
-
-	<append xpath="/quests/quest_list[@id='trader_jen_quests']">
-		<quest id='quest_whiteRiverCitizen3' />
-		<quest id='+Kill 100 Zombies' />
-		<quest id='+Kill 1000 Zombies' />
-	</append>
-	
-	<append xpath="/quests/quest_list[@id='trader_bob_quests']">
-		<quest id='quest_whiteRiverCitizen3' />
-		<quest id='+Kill 100 Zombies' />
-		<quest id='+Kill 1000 Zombies' />
-	</append>
-	
-	<append xpath="/quests/quest_list[@id='trader_hugh_quests']">
-		<quest id='quest_whiteRiverCitizen3' />
-		<quest id='+Kill 100 Zombies' />
-		<quest id='+Kill 1000 Zombies' />
-	</append>
-	
-	<append xpath="/quests/quest_list[@id='trader_joel_quests']">
-		<quest id='quest_whiteRiverCitizen3' />
-		<quest id='+Kill 100 Zombies' />
-		<quest id='+Kill 1000 Zombies' />
-	</append>
 </config>

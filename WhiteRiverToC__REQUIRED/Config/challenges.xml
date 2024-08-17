@@ -8,25 +8,25 @@
         <challenge name="challengeInitiate1" title_key="quest_toc_taza_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCInitiate1"
             short_description_key="quest_toc_taza_description" description_key="quest_toc_taza_subtitle"
             reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
-    		<objective type="Craft" item="questitem_toc_taza_name"/>
+    		<objective type="Craft" item="initiatequestitem_toc_taza_name"/>
         </challenge>
 
         <challenge name="challengeInitiate2" title_key="quest_toc_dundee_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
             short_description_key="quest_toc_dundee_description" description_key="quest_toc_dundee_subtitle"
             reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
-    		<objective type="Craft" item="questitem_toc_dundee_name"/>
+    		<objective type="Craft" item="initiatequestitem_toc_dundee_name"/>
         </challenge>
 
         <challenge name="challengeInitiate3" title_key="quest_toc_jason_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
             short_description_key="quest_toc_jason_description" description_key="quest_toc_jason_subtitle"
             reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
-    		<objective type="Craft" item="questitem_toc_jason_name"/>
+    		<objective type="Craft" item="initiatequestitem_toc_jason_name"/>
         </challenge>
 
         <challenge name="challengeInitiate4" title_key="quest_toc_brass_name" icon="ui_game_symbol_challenge_basics_gather_resources" group="ToCInitiate1"
             short_description_key="quest_toc_brass_description" description_key="quest_toc_brass_subtitle"
             reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
-    		<objective type="Craft" item="questitem_toc_brass_name"/>
+    		<objective type="Craft" item="initiatequestitem_toc_brass_name"/>
         </challenge>
 
         <challenge name="challengeInitiate5" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCInitiate1"
