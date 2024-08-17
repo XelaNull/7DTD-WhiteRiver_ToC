@@ -1,165 +1,149 @@
 <config>
-	<append xpath="/quests" >
+	<append xpath="/quests">
 		<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow Start">
 			<property name="name_key" value="vetquest_toc_daryl_name"/>
 			<property name="subtitle_key" value="vetquest_toc_daryl_subtitle"/>
 			<property name="description_key" value="vetquest_toc_daryl_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquest_toc_daryl_offer"/>
 			<property name="statement_key" value="vetquest_toc_daryl_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_daryl"/>
 			<property name="group_name_key" value="vetquest_toc_daryl_group"/>
-			<property name="shareable" value="false" />
-
+			<property name="shareable" value="false"/>
 			<reward type="Quest" id="+Veteran Quest For Daryl's Zombiekiller Crossbow"/>
 			<reward type="Item" id="questitem_vetcoin_daryl" count="1"/>
 		</quest>
-			<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow">
-				<property name="name_key" value="vetquest_toc_daryl_name"/>
-				<property name="subtitle_key" value="vetquest_toc_daryl_subtitle"/>
-				<property name="description_key" value="vetquest_toc_daryl_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="vetquest_toc_daryl_offer"/>
-				<property name="statement_key" value="vetquest_toc_daryl_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_daryl"/>
-				<property name="group_name_key" value="vetquest_toc_daryl_group"/>
-				<property name="shareable" value="false" />
+		<quest id="+Veteran Quest For Daryl's Zombiekiller Crossbow">
+			<property name="name_key" value="vetquest_toc_daryl_name"/>
+			<property name="subtitle_key" value="vetquest_toc_daryl_subtitle"/>
+			<property name="description_key" value="vetquest_toc_daryl_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="vetquest_toc_daryl_offer"/>
+			<property name="statement_key" value="vetquest_toc_daryl_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_daryl"/>
+			<property name="group_name_key" value="vetquest_toc_daryl_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1"/>
+			<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1"/>
+			<objective type="FetchKeep" id="resourceWood" value="400" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="vetwrititem_toc_daryl_name" value="1" phase="2"/>
+			<reward type="Exp" value="1000"/>
+		</quest>
+		<quest id="+Veteran Reward of Daryl's Zombiekiller Crossbow">
+			<property name="name_key" value="vetquestreward_toc_daryl_name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_daryl_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_daryl_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="vetquestreward_toc_daryl_offer"/>
+			<property name="statement_key" value="vetquestreward_toc_daryl_statement"/>
+			<property name="response_key" value="vetquestrewarddialog_toc_daryl"/>
+			<property name="group_name_key" value="vetquest_toc_daryl_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3"/>
 
-				<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1" />
-				<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1" />
-				<objective type="FetchKeep" id="resourceWood" value="400" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="vetwrititem_toc_daryl_name" value="1" phase="2" />
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCDarylVet" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestToCDarylArrowsVet" value="1"/>
+			<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+		</quest>
+		<!-- ELITE QUEST -->
+		<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow Start">
+			<property name="name_key" value="elitequest_toc_daryl_name"/>
+			<property name="subtitle_key" value="elitequest_toc_daryl_subtitle"/>
+			<property name="description_key" value="elitequest_toc_daryl_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="elitequest_toc_daryl_offer"/>
+			<property name="statement_key" value="elitequest_toc_daryl_statement"/>
+			<property name="response_key" value="elitequestdialog_toc_daryl"/>
+			<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+			<property name="shareable" value="false"/>
+			<reward type="Quest" id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow"/>
+			<reward type="Item" id="questitem_elitecoin_daryl" count="1"/>
+		</quest>
+		<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow">
+			<property name="name_key" value="elitequest_toc_daryl_name"/>
+			<property name="subtitle_key" value="elitequest_toc_daryl_subtitle"/>
+			<property name="description_key" value="elitequest_toc_daryl_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="elitequest_toc_daryl_offer"/>
+			<property name="statement_key" value="elitequest_toc_daryl_statement"/>
+			<property name="response_key" value="elitequestdialog_toc_daryl"/>
+			<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="gunBowT3CompoundBow" value="20" phase="1"/>
+			<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceWood" value="4000" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="elitewrititem_toc_daryl_name" value="1" phase="2"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>
+			<!-- This makes the quest repeatable -->
+		</quest>
+		<quest id="+Elite Reward of Daryl's Zombiekiller Compound Crossbow">
+			<property name="name_key" value="elitequestreward_toc_daryl_name"/>
+			<property name="subtitle_key" value="elitequestreward_toc_daryl_subtitle"/>
+			<property name="description_key" value="elitequestreward_toc_daryl_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="elitequestreward_toc_daryl_offer"/>
+			<property name="statement_key" value="elitequestreward_toc_daryl_statement"/>
+			<property name="response_key" value="elitequestrewarddialog_toc_daryl"/>
+			<property name="group_name_key" value="elitequest_toc_daryl_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3"/>
 
-				<reward type="Exp" value="1000" />
-			</quest>
-			<quest id="+Veteran Reward of Daryl's Zombiekiller Crossbow">
-				<property name="name_key" value="vetquestreward_toc_daryl_name"/>
-				<property name="subtitle_key" value="vetquestreward_toc_daryl_subtitle"/>
-				<property name="description_key" value="vetquestreward_toc_daryl_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="vetquestreward_toc_daryl_offer"/>
-				<property name="statement_key" value="vetquestreward_toc_daryl_statement"/>
-				<property name="response_key" value="vetquestrewarddialog_toc_daryl"/>
-				<property name="group_name_key" value="vetquest_toc_daryl_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="3" />
-
-				<objective type="Goto" value="5" phase="1" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="500" />
-				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
-
-				<reward type="LootItem" id="groupWhiteRiverTOCDarylVet" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-				<reward type="LootItem" id="groupQuestToCDarylArrowsVet" value="1"/>
-
-				<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-			</quest>
-
-
-			<!-- ELITE QUEST -->
-			<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow Start">
-				<property name="name_key" value="elitequest_toc_daryl_name"/>
-				<property name="subtitle_key" value="elitequest_toc_daryl_subtitle"/>
-				<property name="description_key" value="elitequest_toc_daryl_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="elitequest_toc_daryl_offer"/>
-				<property name="statement_key" value="elitequest_toc_daryl_statement"/>
-				<property name="response_key" value="elitequestdialog_toc_daryl"/>
-				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
-				<property name="shareable" value="false" />
-
-				<reward type="Quest" id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow"/>
-				<reward type="Item" id="questitem_elitecoin_daryl" count="1"/>
-			</quest>
-			<quest id="+Elite Quest For Daryl's Zombiekiller Compound Crossbow">
-				<property name="name_key" value="elitequest_toc_daryl_name"/>
-				<property name="subtitle_key" value="elitequest_toc_daryl_subtitle"/>
-				<property name="description_key" value="elitequest_toc_daryl_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="elitequest_toc_daryl_offer"/>
-				<property name="statement_key" value="elitequest_toc_daryl_statement"/>
-				<property name="response_key" value="elitequestdialog_toc_daryl"/>
-				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
-				<property name="shareable" value="false" />
-
-				<objective type="FetchKeep" id="gunBowT3CompoundBow" value="20" phase="1" />
-				<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1" />
-				<objective type="FetchKeep" id="resourceWood" value="4000" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="elitewrititem_toc_daryl_name" value="1" phase="2" />
-
-				<reward type="Exp" value="2000" />
-				<reward type="Item" id="questitem_toc_veterancard_name" value="1" />	<!-- This makes the quest repeatable -->
-			</quest>
-
-			<quest id="+Elite Reward of Daryl's Zombiekiller Compound Crossbow">
-				<property name="name_key" value="elitequestreward_toc_daryl_name"/>
-				<property name="subtitle_key" value="elitequestreward_toc_daryl_subtitle"/>
-				<property name="description_key" value="elitequestreward_toc_daryl_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="elitequestreward_toc_daryl_offer"/>
-				<property name="statement_key" value="elitequestreward_toc_daryl_statement"/>
-				<property name="response_key" value="elitequestrewarddialog_toc_daryl"/>
-				<property name="group_name_key" value="elitequest_toc_daryl_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="3" />
-
-				<objective type="Goto" value="5" phase="1" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="1000" />
-				<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
-
-				<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="LootItem" id="groupWhiteRiverTOCDarylElite" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-				<reward type="LootItem" id="groupQuestToCDarylArrowsElite" value="1"/>
-
-				<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-			</quest>
-
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1"/>
+			<!-- This makes the quest repeatable -->
+			<reward type="LootItem" id="groupWhiteRiverTOCDarylElite" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestToCDarylArrowsElite" value="1"/>
+			<reward type="LootItem" id="groupQuestToCDarylBowMods" ischosen="true" isfixed="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+		</quest>
 	</append>
 </config>

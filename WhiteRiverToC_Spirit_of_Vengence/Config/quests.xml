@@ -1,107 +1,90 @@
 <config>
-	<append xpath="/quests" >
+	<append xpath="/quests">
 		<!-- ELITE QUEST -->
-
-		<quest id="+Elite Quest Hell Beast Starter">
+		<quest id="Elite_Quest_Hell_Beast_Starter">
 			<property name="name_key" value="quest_spiritstart_name"/>
 			<property name="subtitle_key" value="quest_spiritstart_subtitle"/>
 			<property name="description_key" value="quest_spiritstart_description"/>
-			<property name="icon" value="ui_game_symbol_zombie" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="insane" />
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="insane"/>
 			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
 			<property name="statement_key" value="quest_spiritstart_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
-			<property name="shareable" value="false" />
-
-			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3" />
-			<reward type="Quest" id="+Elite Quest For Spirit of Vengeance Hell Beast"/>
+			<property name="shareable" value="false"/>
+			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3"/>
+			<reward type="Quest" id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast"/>
 		</quest>
-
-
-		<quest id="+Elite Quest For Spirit of Vengeance Hell Beast">
+		<quest id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast">
 			<property name="name_key" value="quest_spirit_vengeance_name"/>
 			<property name="subtitle_key" value="quest_spirit_vengeance_subtitle"/>
 			<property name="description_key" value="quest_spirit_vengeance_description"/>
-			<property name="icon" value="ui_game_symbol_zombie" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="challenge" />
-			<property name="difficulty" value="insane" />
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="insane"/>
 			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
 			<property name="statement_key" value="quest_spirit_vengeance_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
 			<property name="login_rally_reset" value="true"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
-			<property name="shareable" value="false" />
-
+			<property name="shareable" value="false"/>
 			<objective type="RandomGoto" value="500-800" phase="1">
 				<property name="completion_distance" value="50"/>
-				<property name="nav_object" value="quest" />
+				<property name="nav_object" value="quest"/>
 			</objective>
 			<objective type="RallyPoint">
 				<property name="start_mode" value="Create"/>
 				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally" />
+				<property name="nav_object" value="rally"/>
 			</objective>
 			<action type="SpawnEnemy" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
-			<action type="SpawnEnemy" id="zombieScreamer" value="2-4" phase="3"/>
-			<action type="SpawnEnemy" id="zombieSpiderFeral" value="2-4" phase="3"/>
-			<action type="SpawnEnemy" id="zombieDemolition" value="1-3" phase="3"/>
-			<action type="SpawnEnemy" id="animalWolf" value="4" phase="3"/>
-
-			<objective type="ZombieKill" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
-
-			<reward type="Item" id="questwrit_spirit_vengeance_name" value="1" />
-			<reward type="Exp" value="500" />
+			<action type="SpawnEnemy" id="animalWolf" value="2" phase="3"/>
+			<objective type="EntityKill" id="ZombieSpiritJuggernaut" value="1" phase="4"/>
+			<reward type="Item" id="questwrit_spirit_vengeance_name" value="1"/>
+			<reward type="Exp" value="500"/>
 		</quest>
-
-		<quest id="+Elite Reward of Spirit of Vengeance Hell Beast">
+		<quest id="Elite_Reward_of_Spirit_of_Vengeance_Hell_Beast">
 			<property name="name_key" value="questreward_spirit_vengeance_name"/>
 			<property name="subtitle_key" value="questreward_spirit_vengeance_subtitle"/>
 			<property name="description_key" value="questreward_spirit_vengeance_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="questreward_spirit_vengeance_offer"/>
 			<property name="statement_key" value="questreward_spirit_vengeance_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
 			<property name="group_name_key" value="questreward_spirit_vengeance_group"/>
-			<property name="shareable" value="false" />
-			<property name="completiontype" value="TurnIn" />
-			<property name="reward_choices_count" value="3" />
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3"/>
 
-			<objective type="Goto" value="5" phase="1" />
 			<objective type="ReturnToNPC">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="return_to_trader" />
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
 			</objective>
 			<objective type="InteractWithNPC">
-				<property name="phase" value="3" />
+				<property name="phase" value="2"/>
 			</objective>
-
-			<reward type="SkillPoints" value="1" />
-			<reward type="Exp" value="1500" />
+			<reward type="SkillPoints" value="1"/>
+			<reward type="Exp" value="1500"/>
 			<reward type="LootItem" id="groupQuestcasinoCoinT2" value="1"/>
-
-			<reward type="Item" id="questitem_toc_elitecard_name" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="vehicleSpiritHellBeastToCPlaceable" value="1" />
+			<reward type="Item" id="questitem_toc_elitecard_name" value="1"/>
+			<!-- This makes the quest repeatable -->
+			<reward type="Item" id="vehicleSpiritHellBeastToCPlaceable" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestcasinoCoinT3" ischosen="true" value="1"/>
-
 		</quest>
 	</append>
-
-
-	<append xpath="/quests/quest[contains(@id,'Reward of Deschain')]">
-		<reward type="Item" id="questitem_spirit_vengeance_name" value="1" />
-	</append>
+	<!-- <append xpath="/quests/quest[contains(@id,'Reward of Deschain')]">
+		<reward type="Item" id="questitem_spirit_vengeance_name" value="1"/>
+	</append> -->
 </config>

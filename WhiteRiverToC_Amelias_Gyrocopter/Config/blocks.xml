@@ -1,22 +1,24 @@
-<configs>
+<config>
 	<append xpath="/blocks/block[@name='cntCar03SedanDamage1Master']">
 		<drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.02" tag="salvageHarvest"/>
-  </append>
+	</append>
 	<append xpath="/blocks/block[@name='cntBusSchool']">
 		<drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.01" tag="salvageHarvest"/>
-  </append>
+	</append>
 	<append xpath="/blocks/block[@name='decoCarMotorFlat']">
 		<drop event="Harvest" name="smallAmeliaEngine" count="1" prob="0.15" tag="salvageHarvest"/>
-  </append>
+	</append>
 	<append xpath="/blocks">
 		<block name="questblock_toc_amelia_coffin">
+			<!-- Temporary changed by 7DAYSTODIE_JP -->
 			<property name="Class" value="Loot"/>
-			<property name="CustomIcon" value="cntChest01"/>
+			<property name="CustomIcon" value="cntCoffinWildWestClosed"/>
 			<property name="Material" value="MwoodReinforced"/>
-			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="StabilitySupport" value="false"/>
+			<!-- build restriction -->
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Texture" value="293"/>
-			<property name="Mesh" value="models"/>
+			<!-- <property name="Mesh" value="models"/> -->
 			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
@@ -25,7 +27,7 @@
 			<property name="CreativeMode" value="None"/>
 			<drop event="Destroy" name="resourceWood" count="1,3"/>
 			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-			<property name="FilterTags" value="floot"/>
+			<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
 		</block>
 	</append>
-</configs>
+</config>

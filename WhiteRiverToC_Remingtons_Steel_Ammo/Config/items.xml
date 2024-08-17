@@ -1,34 +1,26 @@
-<configs>
+<config>
 	<append xpath="/items">
-
 		<!-- ELITE QUEST -->
-
 		<item name="questitem_elitecoin_remington">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="ToC_coin"/>			
+			<property name="Tags" value="ToC_coin"/>
 		</item>
-
 		<item name="elitequestitem_toc_remington_name">
 			<property name="DescriptionKey" value="elitequestitem_toc_remington_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Quest For Remington's Steel Ammo Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="elitequestwrit_toc_remington_name">
 			<property name="DescriptionKey" value="elitequestwrit_toc_remington_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="SellableToTrader" value="false"/>
@@ -36,11 +28,9 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Elite Reward of Remington's Steel Ammo"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
 		</item>
-
-
 		<item name="eliteitemreward_toc_remington_schem_name">
 			<property name="DescriptionKey" value="eliteitemreward_toc_remington_description"/>
 			<property name="Extends" value="schematicMaster"/>
@@ -67,22 +57,21 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
-
-
 		<item name="resourceBulletCasingSteelRemington">
 			<property name="Extends" value="resourceBulletCasing"/>
-			<property name="CustomIcon" value="resourceBulletCasing"/><property name="CustomIconTint" value="a0a0ff"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
 			<property name="DescriptionKey" value="resourceBulletCasingSteelDesc"/>
 			<property name="Material" value="MresourceScrapIron"/>
-			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="Stacknumber" value="500"/>
+			<!-- STK resource -->
 			<property name="EconomicValue" value="10"/>
 			<property name="EconomicBundleSize" value="10"/>
 			<property name="Group" value="Resources,Ammo/Weapons"/>
 			<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 			<property name="UnlockedBy" value="eliteitemreward_toc_remington_schem_name"/>
 		</item>
-
-
+		
 		<item name="ammo9mmBulletSteelRemington">
 			<property name="Extends" value="ammo9mmBulletBall"/>
 			<property name="CustomIcon" value="ammo9mmBulletBall"/>
@@ -95,25 +84,30 @@
 			<effect_group name="ammo9mmBulletSteelRemington" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="39" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="9.5" tags="perkGunslinger"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.3"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".55" tags="perkGunslinger"/><display_value name="dTargetPenetration" value=".55"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger,9mmGun"/><display_value name="dDegradationPerUse" value="1.6"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger"/>
+				<display_value name="dTargetArmor" value="-.3"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".55" tags="perkGunslinger"/>
+				<display_value name="dTargetPenetration" value=".55"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.6" tags="perkGunslinger,9mmGun"/>
+				<display_value name="dDegradationPerUse" value="1.6"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
-
 			<effect_group name="perkPenetrator" tiered="false">
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger,9mmGun">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger,9mmGun">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger,9mmGun">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger,9mmGun">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/>
+				</passive_effect>
 			</effect_group>
 		</item>
-
 		<item name="ammoBundle9mmBulletSteelRemington">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
@@ -132,7 +126,6 @@
 			</property>
 		</item>
 		<!--- End 9mm -->
-
 		<item name="ammo44MagnumBulletSteelRemington">
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
 			<property name="CustomIcon" value="ammo44MagnumBulletBall"/>
@@ -145,25 +138,30 @@
 			<effect_group name="ammo44MagnumBulletSteelRemington" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="86" tags="perkGunslinger,revolver"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="16" tags="perkGunslinger"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.4" tags="perkGunslinger"/><display_value name="dTargetArmor" value="-.4"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".7" tags="perkGunslinger"/><display_value name="dTargetPenetration" value=".7"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.7" tags="perkGunslinger"/><display_value name="dDegradationPerUse" value="1.7"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.4" tags="perkGunslinger"/>
+				<display_value name="dTargetArmor" value="-.4"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".7" tags="perkGunslinger"/>
+				<display_value name="dTargetPenetration" value=".7"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.7" tags="perkGunslinger"/>
+				<display_value name="dDegradationPerUse" value="1.7"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
-
 			<effect_group name="perkPenetrator" tiered="false">
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkGunslinger">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkGunslinger">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkGunslinger">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkGunslinger">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/>
+				</passive_effect>
 			</effect_group>
 		</item>
-
 		<item name="ammoBundle44MagnumBulletSteelRemington">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
@@ -181,9 +179,6 @@
 				<property name="Unique_random_only" value="true"/>
 			</property>
 		</item>
-
-
-
 		<item name="ammo762mmBulletFMJSteelRemington">
 			<property name="Extends" value="ammo762mmBulletBall"/>
 			<property name="CustomIcon" value="ammo762mmBulletBall"/>
@@ -199,29 +194,30 @@
 					<requirement name="ItemHasTags" tags="perkMachineGunner"/>
 				</passive_effect>
 				<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDeadEye,perkMachineGunner"/>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.45" tags="perkDeadEye,perkMachineGunner"/><display_value name="dTargetArmor" value="-.45"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".8"/><display_value name="dTargetPenetration" value=".8"/>
-				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.8" tags="perkDeadEye,perkMachineGunner"/><display_value name="dDegradationPerUse" value="1.8"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.45" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dTargetArmor" value="-.45"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value=".8"/>
+				<display_value name="dTargetPenetration" value=".8"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value="1.8" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dDegradationPerUse" value="1.8"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
-
 			<effect_group name="perkPenetrator" tiered="false">
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye,perkMachineGunner">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkDeadEye,perkMachineGunner">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye,perkMachineGunner">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/>
+				</passive_effect>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/>
+				</passive_effect>
 			</effect_group>
 		</item>
-
-
-
-
-
 		<item name="ammoBundle762mmBulletSteelRemington">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
@@ -239,14 +235,10 @@
 				<property name="Unique_random_only" value="true"/>
 			</property>
 		</item>
-
-
-</append>
-
-	<append xpath="/items/item[@name='questitem_toc_leondegsmg_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
+	</append>
+<!--	<append xpath="/items/item[@name='questitem_toc_leondegsmg_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append> -->
 	<append xpath="/items/item[@name='questitem_toc_leonsmg_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
 	<append xpath="/items/item[@name='questitem_toc_pav_rifle_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
-
 	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteelRemington</append>
 	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteelRemington</append>
 	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteelRemington</append>
@@ -257,4 +249,5 @@
 	<append xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
 	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
 	<append xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletFMJSteelRemington</append>
-</configs>
+
+</config>

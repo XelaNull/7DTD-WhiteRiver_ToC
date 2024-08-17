@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="WhiteRiverToolsofCitizenship_BlackBartsFlamingDigTools" />
-		<DisplayName value="White River Tools of Citizenship - Black Bart's Flaming Dig Tools" />
-		<Description value="Gather tons of iron and craft a bunch of Iron Pickaxe and Shovels to obtain a set of named Flaming Steel Shovel and Pickaxe tools." />
-		<Author value="Shouden Kalferas(Code), morggin(Lore), Aeyvi Kalferas(Quest Text), RichardPaul(Poem) " />
-		<Version value="1.0.1.2" />
-		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
+	<Name value="WhiteRiverToC_BlackBarts_Dig_Tools"/>
+	<DisplayName value="White River Tools of Citizenship - Black Bart's Flaming Dig Tools"/>
+	<Description value="Gather tons of iron and craft a bunch of Iron Pickaxe and Shovels to obtain a set of named Flaming Steel Shovel and Pickaxe tools."/>
+	<Author value="ShoudenKalferas(Code), morggin(Lore), AeyviDaro(Quest Text), RichardPaul(Poem), 7DaystoDie.JP, PaLoALo, ArkAngel"/>
+	<Version value="1.0.1.0"/>
+	<Website value="https://github.com/XelaNull/7DTD-WhiteRiver_ToC"/>
 </xml>

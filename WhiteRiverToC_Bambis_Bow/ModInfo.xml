@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="WhiteRiverToolsofCitizenship_BambisBow" />
-		<DisplayName value="White River Tools of Citizenship - Bambi's Bow" />
-		<Description value="Gather tons of wood and craft a bunch of Wooden Bow's to obtain a named Compound Bow." />
-		<Author value="Shouden Kalferas, and morggin" />
-		<Version value="1.0.1.2" />
-		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
+	<Name value="WhiteRiverToC_Bambis_Bow"/>
+	<DisplayName value="White River Tools of Citizenship - Bambi's Bow"/>
+	<Description value="Gather tons of stone and craft a bunch of Stone Axes to obtain a Taza's Axe."/>
+	<Author value="ShoudenKalferas, morggin, 7DaystoDie.JP, PaLoALo, ArkAngel"/>
+	<Version value="1.0.1.0"/>
+	<Website value="https://github.com/XelaNull/7DTD-WhiteRiver_ToC"/>
 </xml>

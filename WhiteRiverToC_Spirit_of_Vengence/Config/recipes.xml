@@ -1,8 +1,7 @@
-<configs>
+<config>
 	<append xpath="/recipes">
-
-		<recipe name="questitem_spirit_vengeance_name" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="questitem_spirit_vengeance_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_elitecard_name" count="1"/>
 		</recipe>
-  </append>
-</configs>
+	</append>
+</config>

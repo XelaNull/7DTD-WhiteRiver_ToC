@@ -1,22 +1,20 @@
-<configs>
+<config>
 	<append xpath="/recipes">
-
 		<!-- The quest and goal item to craft for reward for: Taza's Axe -->
-		<recipe name="questitem_toc_taza_name" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="questitem_toc_taza_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
-		<recipe name="questwrit_toc_taza_name" count="1" craft_time = "90" craft_exp_gain="10000" >
-			<ingredient name="resourceRockSmall" count="1200"/>
+		<recipe name="questwrit_toc_taza_name" count="1" craft_time="90" craft_exp_gain="10000">
+			<ingredient name="resourceRockSmall" count="400"/>
 			<ingredient name="meleeToolRepairT0StoneAxe" count="20"/>
 			<ingredient name="resourcePaper" count="1"/>
 			<ingredient name="questitem_coin_taza" count="1"/>
 		</recipe>
-
 		<!-- The quest and goal item to craft for reward for: Taza's Axe -->
-		<recipe name="vetquestitem_toc_taza_name" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="vetquestitem_toc_taza_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
-		<recipe name="vetquestwrit_toc_taza_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+		<recipe name="vetquestwrit_toc_taza_name" count="1" craft_time="300" craft_exp_gain="20000">
 			<ingredient name="resourceRockSmall" count="4000"/>
 			<ingredient name="resourceYuccaFibers" count="200"/>
 			<ingredient name="meleeToolRepairT0StoneAxe" count="20"/>
@@ -24,4 +22,4 @@
 			<ingredient name="questitem_vetcoin_taza" count="1"/>
 		</recipe>
 	</append>
-</configs>
+</config>

@@ -1,22 +1,18 @@
-<configs>
+<config>
 	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
 		<item name="elitequestitem_toc_bambi_name" count="1"/>
 	</append>
-
-
 	<append xpath="/lootcontainers">
 		<lootgroup name="groupQuestToCArrows">
 			<item name="ammoArrowIron" count="20,50"/>
 			<item name="ammoArrowFlaming" count="20,30"/>
 			<item name="ammoArrowStone" count="50,100"/>
 		</lootgroup>
-
 		<lootgroup name="groupQuestToCArrowsVet">
 			<item name="ammoArrowIron" count="50,150"/>
 			<item name="ammoArrowSteelAP" count="50,75"/>
 			<item name="ammoArrowFlaming" count="50,100"/>
 		</lootgroup>
-
 		<lootgroup name="groupQuestToCBowMods">
 			<item name="modGunBowPolymerString"/>
 			<item name="modGunMeleeTheHunter"/>
@@ -24,13 +20,11 @@
 			<item name="modGunBowArrowRest"/>
 			<item name="modGunCrippleEm"/>
 		</lootgroup>
-
-		<lootgroup name="groupWhiteRiverTOCBambi" loot_quality_template="questT1QualTemplate">
+		<lootgroup name="groupWhiteRiverTOCBambi" loot_quality_template="questT2QualTemplate">
 			<item name="item_toc_bambi_name"/>
 		</lootgroup>
-
-		<lootgroup name="groupWhiteRiverTOCBambiVet" loot_quality_template="questT2QualTemplate">
+		<lootgroup name="groupWhiteRiverTOCBambiVet" loot_quality_template="questT3QualTemplate">
 			<item name="item_toc_bambi_name"/>
 		</lootgroup>
 	</append>
-</configs>
+</config>

@@ -1,32 +1,25 @@
-<configs>
+<config>
 	<append xpath="/items">
 		<item name="questitem_coin_bunyan">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="ToC_coin"/>			
+			<property name="Tags" value="ToC_coin"/>
 		</item>
-
 		<item name="questitem_toc_bunyan_name">
 			<property name="DescriptionKey" value="questitem_toc_bunyan_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Bunyan's FireAxe Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="questwrit_toc_bunyan_name">
 			<property name="DescriptionKey" value="questwrit_toc_bunyan_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
@@ -34,21 +27,18 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Bunyan's FireAxe"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-
-
-
-		<item name="item_toc_bunyanaxe_name"> <!-- T2 Tools -->
+		<item name="item_toc_bunyanaxe_name">
+			<!-- T2 Tools -->
 			<property name="DescriptionKey" value="item_toc_bunyanaxe_desc"/>
 			<property name="Tags" value="axe,melee,grunting,medium,longShaft,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
 			<property name="DisplayType" value="melee"/>
 			<property name="CustomIcon" value="meleeToolAxeT1IronFireaxe"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="HoldType" value="17"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/fireaxe_ironPrefab.prefab"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/Axe/fireaxe_ironPrefab.prefab"/>
 			<property name="Material" value="MmeleeToolAllSteel"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="DegradationBreaksAfter" value="false"/>
@@ -88,25 +78,30 @@
 			<effect_group name="item_toc_bunyanaxe_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="20.1" tags="perkMiner69r"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="55.0" tags="perkMiner69r"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r"/> <!-- Gazz change 47 to 60 -->
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkMiner69r"/>
+				<!-- Gazz change 47 to 60 -->
 				<passive_effect name="StaminaLoss" operation="base_set" value="12.6" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="288,841" tier="1,6" tags="perkMiner69r"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1.1" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="3.1" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="4" tags="perkMiner69r"/>
-
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".11" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.18,.18" tags="perkMiner69r"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.18,.18" tags="perkMiner69r"/> <!-- random rng -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
-				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.15" tags="perkMiner69r"/> <!-- random DegMax -->
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> <!-- random APM -->
-				<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/> <!-- random StamLoss -->
-
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.18,.18" tags="perkMiner69r"/>
+				<!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkMiner69r"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.18,.18" tags="perkMiner69r"/>
+				<!-- random rng -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2,.6" tier="2,6" tags="perkMiner69r"/>
+				<!-- tier bonus -->
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.15" tags="perkMiner69r"/>
+				<!-- random DegMax -->
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/>
+				<!-- random APM -->
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05" tags="perkMiner69r"/>
+				<!-- random StamLoss -->
 				<passive_effect name="HarvestCount" operation="base_set" value=".8" tags="butcherHarvest"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="stone"/>
@@ -119,9 +114,8 @@
 				<passive_effect name="StaminaLoss" operation="base_add" value="32.9" tags="secondary"/>
 				<!-- Moaning and grunting sounds moved to buffs.xml, <effect_group name="Power Attack Grunt"> -->
 			</effect_group>
-
 			<property name="Group" value="Tools/Traps"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
 	</append>
-</configs>
+</config>
