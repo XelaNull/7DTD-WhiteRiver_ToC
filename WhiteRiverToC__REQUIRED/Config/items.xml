@@ -10,7 +10,8 @@
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
 		</item>		
-		<item name="questitem_initiate_completion_token">
+		<item name="questitem_initiate_completion_ticket">
+			<property name="DescriptionKey" value="questitem_initiate_completion_ticketDesc"/>						
 			<property name="Extends" value="adminT1QuestTicket"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="Tags" value="ToC_coin"/>
@@ -26,7 +27,8 @@
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
 		</item>
-		<item name="questitem_citizen_completion_token">
+		<item name="questitem_citizen_completion_ticket">
+			<property name="DescriptionKey" value="questitem_citizen_completion_ticketDesc"/>						
 			<property name="Extends" value="adminT2QuestTicket"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="Tags" value="ToC_coin"/>
@@ -41,7 +43,8 @@
 			<property name="Weight" value="0"/>			
 			<property name="Group" value="Special Items"/>
 		</item>
-		<item name="questitem_veteran_completion_token">
+		<item name="questitem_veteran_completion_ticket">
+			<property name="DescriptionKey" value="questitem_veteran_completion_ticketDesc"/>						
 			<property name="Extends" value="adminT3QuestTicket"/>
 			<property name="Stacknumber" value="10"/>
 			<property name="Tags" value="ToC_coin"/>
@@ -71,9 +74,6 @@
 				<property name="QuestGiven" value="Obtain_a_Random_Elite_Quest"/>
 				<property name="UseAnimation" value="false"/>
 			</property>
-		</item>
-		<item name="meleeToolRepairT0TazasStoneAxeInitiate">
-			<property name="Extends" value="meleeToolRepairT0StoneAxe"/>
 		</item>
 	</append>
 </configs>

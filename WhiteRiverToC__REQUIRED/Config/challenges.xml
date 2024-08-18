@@ -1,5 +1,5 @@
 <config>
-    <insertAfter xpath="/challenges/challenge_category[@name='Twitch']">
+    <insertAfter xpath="/challenges/challenge[@name='twitchHomerunDerby']">
     	<challenge_category name="White_River_ToC" title_key="WhiteRiverToolsOfCitizenship_Header" icon="ui_game_symbol_challenge_basics_stone_axe_harvest"/>
         <!-- Initiate --> 
         <!-- Challengegroup #1 -->   
@@ -12,10 +12,10 @@
         </challenge> 
         <!-- Citizen -->
         <challenge_group category="White_River_ToC" name="ToCCitizen1" title_key="WhiteRiverToCCitizenGroup"
-        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_toc_basic" link_challenges="true"/> <!-- hidden_by="ToCInitiate1" -->
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_toc_basic" link_challenges="true" /> <!-- hidden_by="ToCInitiate1" -->
         <!-- Challengegroup #1 --> 
         <challenge_group category="White_River_ToC" name="ToCCitizen2" title_key="WhiteRiverToCCitizenGroup"
-        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_homesteading" link_challenges="true"/> <!-- hidden_by="ToCInitiate1" -->
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_homesteading" link_challenges="true" /> <!-- hidden_by="ToCInitiate1"  -->
         <!-- Challengegroup #2 -->       
         <challenge name="challengeCitizen25" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCCitizen2"
             hint="challengeCraftBuildingBlocksHint1"
@@ -24,7 +24,7 @@
         </challenge> 
         <!-- Veteran -->
         <challenge_group category="White_River_ToC" name="ToCVeteran1" title_key="WhiteRiverToCVeteranGroup"
-        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true"/> <!-- hidden_by="ToCCitizen2" -->
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true" /> <!-- hidden_by="ToCCitizen2" -->
         <!-- Challengegroup #1 -->         
         <challenge_group category="White_River_ToC" name="ToCVeteran2" title_key="WhiteRiverToCVeteranGroup"
         reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true" /> <!-- hidden_by="ToCCitizen2" -->
