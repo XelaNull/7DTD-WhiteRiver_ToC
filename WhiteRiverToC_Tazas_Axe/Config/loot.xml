@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/lootcontainers">
 		<lootgroup name="groupWhiteRiverTOCTazaAxeInitiate" loot_quality_template="questT1QualTemplate">
-			<item name="meleeToolRepairT0TazasStoneAxe"/>
+			<item name="initiatequestitem_toc_initiates_axe"/>
 		</lootgroup>	
 		<lootgroup name="groupWhiteRiverTOCTazaAxe" loot_quality_template="questT2QualTemplate">
 			<item name="meleeToolRepairT0TazasStoneAxe"/>

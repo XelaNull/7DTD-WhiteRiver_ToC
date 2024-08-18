@@ -50,7 +50,7 @@
 			<property name="group_name_key" value="initiatequest_toc_initiates_axe_group"/>
 			<property name="shareable" value="false"/>
 			<property name="completiontype" value="TurnIn"/>
-			<property name="reward_choices_count" value="2"/>
+			<!--<property name="reward_choices_count" value="3"/>-->
 			<objective type="ReturnToNPC">
 				<property name="phase" value="1"/>
 				<property name="nav_object" value="return_to_trader"/>
@@ -60,11 +60,11 @@
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="return_to_trader"/>
 			</objective>
-			<reward type="Exp" value="500"/>
+			<reward type="Exp" value="1500"/>
 			<reward type="Item" id="casinoCoin" value="560"/>
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1" isfixed="true"/>
 			<reward type="Item" id="questitem_initiate_completion_ticket" value="1"/>
-			<reward type="LootItem" id="meleeToolRepairT0TazasStoneAxeInitiate" value="1" isfixed="true"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCTazaAxeInitiate" value="1" isfixed="true"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" isfixed="true" value="2"/>
 			<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupToCQuestT2Food" ischosen="true" value="2"/>
