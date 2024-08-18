@@ -1,9 +1,15 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
-            <challenge name="challengeVeteran22" title_key="challengeKillZombies" icon="ui_game_symbol_rifle" group="ToCVeteran2"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeVeteran22" title_key="veteran_challenge_toc_pavlichenko_name" icon="ui_game_symbol_rifle" group="ToCVeteran2"
+                short_description_key="veteran_challenge_toc_pavlichenko_short" description_key="veteran_challenge_toc_pavlichenko_long"
+                reward_text_key="veteran_challenge_toc_pavlichenko_reward" reward_event="challenge_reward_500">
                 <objective type="Craft" item="vetquestitem_toc_pav_name"/>
             </challenge>
         </insertAfter>                
+<!--
+veteran_challenge_toc_pavlichenko_name,Quest,Quest Info,,,"Quest for Pavlichenko Rifle"
+veteran_challenge_toc_pavlichenko_short,Quest,Quest Info,,,"Build your own Pavlichenko rifle."
+veteran_challenge_toc_pavlichenko_long,Quest,Quest Info,,,"[DECEA3]Embark on a grand adventure[-] across the land far and wide to [DECEA3]locate all the pieces[-] to [DECEA3]build yourself[-] the ultimate rifle, a [DECEA3]Pavlichenko rifle[-]."
+veteran_challenge_toc_pavlichenko_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,    
+-->            
 </config>

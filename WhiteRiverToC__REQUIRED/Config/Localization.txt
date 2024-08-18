@@ -46,4 +46,15 @@ questblock_toc_randomcrate_desc,blocks,Container,,,"A sealed crate containing a 
 WhiteRiverToC_Vanilla_Quest_Completion,Quest,Quest Info,,,"Noah sent you eh? We have a variety of challenging quests for you. You can either talk to me for some simple quests or if you are interested in actually contributing around here, read over this [DECEA3]+Declaration of Citizenship[-].\n\nTake this shovel and get the hell out of here. Oh, and check your accomplishments for your progress through White River citizenry."
 WhiteRiverToC_Vanilla_Quest_Popup,Quest,Quest Info,,,"Good Job Survivor,\n\nYou have proved to be capable with much potential. We have marked your map with the nearest White River Outpost location. There you will find a Trader where you can buy and sell goods, and trade stories with one of our friendly citizens.\n\nThanks,\nNoah"
 WhiteRiverToC_Vanilla_Quest_Popup_Group,Quest,Quest Info,,,"White River Initiate"
-meleeToolRepairT0TazasStoneAxeInitiate
+initiate_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Citizen Card"
+initiate_challenge_toc_short,Quest,Quest Info,,,"You did it! Craft your White River Citizen Card"
+initiate_challenge_toc_long,Quest,Quest Info,,,"Now that you have saved up enough question completion tickets, [DECEA3]craft a White River Citizen Card[-] from your completion tickets.\n\n[DECEA3]Become a full White River Citizen[-] and continue amassing your collection of citizenry tools."
+initiate_challenge_toc_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+citizen_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Veteran Citizen Card"
+citizen_challenge_toc_short,Quest,Quest Info,,,"You are a Veteran."
+citizen_challenge_toc_long,Quest,Quest Info,,,"After the long haul, you are ready to hang your citizen hat up on the wall and instead emblazon yourself as a veteran citizen.\n\nCraft a [DECEA3]+Veteran Citizen Card[-] from your citizen completion tickets."
+citizen_challenge_toc_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+veteran_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Elite Citizen Card"
+veteran_challenge_toc_short,Quest,Quest Info,,,"Show the world how elite you truly are."
+veteran_challenge_toc_long,Quest,Quest Info,,,"At long last, you have amassed enough tickets to earn yourself a place amongst the most elite of White River citizens.\n\nCraft a [DECEA3]+Elite Citizen Card[-] from your citizen completion tickets."
+veteran_challenge_toc_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,

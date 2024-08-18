@@ -3,7 +3,7 @@
             <challenge name="challengeInitiate1" title_key="initiate_challenge_toc_initiates_axe_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCInitiate1"
                 short_description_key="initiate_challenge_toc_initiates_axe_short" description_key="initiate_challenge_toc_initiates_axe_long"
                 prerequisite_hint="initiate_challenge_toc_initiates_axe_Hint1" 
-                reward_text_key="initiate_challenge_toc_initiates_axe_reward" reward_event="challenge_reward_500">
+                reward_text_key="initiate_challenge_toc_initiates_axe_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="initiatequestitem_toc_initiates_axe_name"/> <!-- hint="initiate_challenge_toc_initiates_axe_Hint2" -->
            		<!-- <objective type="QuestComplete" quest_tag="initiate_axe_complete" quest_text_key="initiate_challenge_quest_complete"/> -->
                 <!-- <objective type="Harvest" held="meleeToolRepairT0TazasStoneAxeInitiate" required_held="true" item="resourceWood" count="10" override_tracker_index="quest_wood_trees" track_distance="20"/> -->

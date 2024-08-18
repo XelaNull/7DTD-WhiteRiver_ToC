@@ -14,7 +14,7 @@
 			<property class="Action0">
 				<property name="QuestGiven" value="+Initiate Quest For Jason's Machete Start"/>
 			</property>
-		</item>
+		</item>		
 		<item name="initiatequestwrit_toc_jason_name">
 			<property name="DescriptionKey" value="initiatequestwrit_toc_jason_description"/>
 			<property name="CustomIcon" value="questMaster"/>

@@ -1,9 +1,23 @@
 <config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
+            <challenge name="challengeCitizen16" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_knife" group="ToCCitizen1"
+                short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc"
+                reward_text_key="citizen_challenge_toc_grylls_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="questitem_toc_claws_name"/>
+            </challenge> 
+        </insertAfter>  
+
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
             <challenge name="challengeCitizen16" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_knife" group="ToCCitizen1"
-                hint="challengeCraftBuildingBlocksHint1"
-                short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc">
-                <objective type="Craft" item="vetquestitem_toc_claws_name"/>
+                short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc"
+                reward_text_key="citizen_challenge_toc_grylls_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="questitem_toc_claws_name"/>
             </challenge> 
-        </insertAfter>             
+        </insertAfter>  
+<!--
+citizen_challenge_toc_grylls_name,Quest,Quest Info,,,"Quest for Bear Gryll's Claws"
+citizen_challenge_toc_grylls_short,Quest,Quest Info,,,"Prove your worth in bear hand-to-hand combat."
+citizen_challenge_toc_grylls_long,Quest,Quest Info,,,"Time to double-down on how much of a bda ass you are. This time you'll be taking on [DECEA3]multiple bears in hand-to-hand combat[-]. Prove your worth and [DECEA3]obtain a quality steel knuckles[-]."
+citizen_challenge_toc_grylls_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->                     
 </config>

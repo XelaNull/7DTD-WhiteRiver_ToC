@@ -1,17 +1,28 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
-            <challenge name="challengeCitizen22" title_key="challengeKillZombies" icon="ui_game_symbol_pistol" group="ToCCitizen2"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeCitizen22" title_key="citizen_challenge_toc_leon_name" icon="ui_game_symbol_pistol" group="ToCCitizen2"
+                short_description_key="citizen_challenge_toc_leon_short" description_key="citizen_challenge_toc_leon_long"
+                reward_text_key="citizen_challenge_toc_leon_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_leon_name"/>
             </challenge>
         </insertAfter>
 
         <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
-            <challenge name="challengeVeteran15" title_key="challengeKillZombies" icon="ui_game_symbol_pistol" group="ToCVeteran1"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeVeteran15" title_key="veteran_challenge_toc_leon_name" icon="ui_game_symbol_pistol" group="ToCVeteran1"
+                short_description_key="veteran_challenge_toc_leon_short" description_key="veteran_challenge_toc_leon_long"
+                reward_text_key="veteran_challenge_toc_leon_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="vetquestitem_toc_leon_name"/>
             </challenge>
-        </insertAfter>                
+        </insertAfter>   
+<!--
+citizen_challenge_toc_leon_name,Quest,Quest Info,,,"Quest for Leon's SMG"
+citizen_challenge_toc_leon_short,Quest,Quest Info,,,"Help Leon with his DIY project, obtain an SMG."
+citizen_challenge_toc_leon_long,Quest,Quest Info,,,"[DECEA3]Help Leon[-] with his latest DIY projects to [DECEA3]obtain a working SMG[-]."
+citizen_challenge_toc_leon_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+veteran_challenge_toc_leon_name,Quest,Quest Info,,,"Quest for Leon's SMG"
+veteran_challenge_toc_leon_short,Quest,Quest Info,,,"Help Leon with the next generation of SMG."
+veteran_challenge_toc_leon_long,Quest,Quest Info,,,"Leon is back at it. This time he is guaranteed to suceed with his second generation SMG. [DECEA3]Help Leon repair his SMG[-] and you will obtain one to keep."
+veteran_challenge_toc_leon_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,    
+-->                     
 </config>

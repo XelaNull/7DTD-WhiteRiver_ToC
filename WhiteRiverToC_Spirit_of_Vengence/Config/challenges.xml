@@ -1,9 +1,15 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
-            <challenge name="challengeElite1" title_key="challengeGroupCrafting" icon="ui_game_symbol_4x4" group="ToCElite1"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeElite1" title_key="citizen_challenge_toc_spirit_name" icon="ui_game_symbol_4x4" group="ToCElite1"
+                short_description_key="elite_challenge_toc_spirit_short" description_key="elite_challenge_toc_spirit_long"
+                reward_text_key="elite_challenge_toc_spirit_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_spirit_vengeance_name"/>
             </challenge>
-        </insertAfter>                
+        </insertAfter>         
+<!--
+elite_challenge_toc_spirit_name,Quest,Quest Info,,,"Quest for Spirit of Vengence"
+elite_challenge_toc_spirit_short,Quest,Quest Info,,,"Take on minions from hell."
+elite_challenge_toc_spirit_long,Quest,Quest Info,,,"[DECEA3]Help Johnny Blaze reclaim his soul[-] by surrounding yourself with as many survivors as you can, and then killing the embodiment of Mephistopholes.\n\nHopefully, too many of your meat-shield friends won't die along with these minions of hell.\n\nBe rewarded with the fastest land vehicle."
+elite_challenge_toc_spirit_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->
 </config>

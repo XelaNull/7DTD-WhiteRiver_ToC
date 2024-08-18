@@ -1,9 +1,15 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
-            <challenge name="challengeVeteran13" title_key="challengeKillZombies" icon="ui_game_symbol_treasure" group="ToCVeteran1"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeVeteran13" title_key="veteran_challenge_toc_blackbart_name" icon="ui_game_symbol_treasure" group="ToCVeteran1"
+                short_description_key="veteran_challenge_toc_blackbart_short" description_key="veteran_challenge_toc_blackbart_long"
+                reward_text_key="veteran_challenge_toc_blackbart_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="vetquestitem_toc_blackb_name"/>
             </challenge>
-        </insertAfter>                
+        </insertAfter>  
+<!--
+veteran_challenge_toc_blackbart_name,Quest,Quest Info,,,"Quest for BlackBart's Dig Tools"
+veteran_challenge_toc_blackbart_short,Quest,Quest Info,,,"Dig deep to discover real treasure."
+veteran_challenge_toc_blackbart_long,Quest,Quest Info,,,"Go an adventure, chasing X marks the spot, to see if you can dig deep enough to discover a real treasure. Only serious miners need apply. But for the worthy, the reward is like no other."
+veteran_challenge_toc_blackbart_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,  
+-->                      
 </config>

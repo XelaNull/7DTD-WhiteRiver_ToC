@@ -1,17 +1,28 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
-            <challenge name="challengeVeteran12" title_key="challengeKillZombies" icon="ui_game_symbol_treasure" group="ToCVeteran1"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeVeteran12" title_key="veteran_challenge_toc_rickdanger_name" icon="ui_game_symbol_treasure" group="ToCVeteran1"
+                short_description_key="veteran_challenge_toc_rickdanger_short" description_key="veteran_challenge_toc_rickdanger_long"
+                reward_text_key="veteran_challenge_toc_rickdanger_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="vetquestitem_toc_rickdanger_name"/>
             </challenge>
         </insertAfter>
 
         <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
             <challenge name="challengeElite2" title_key="challengeKillZombies" icon="ui_game_symbol_treasure" group="ToCElite1"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+                short_description_key="challengeKillZombiesShort" description_key="challenge_reward_default"
+                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_default">
                 <objective type="Craft" item="elitequestitem_toc_rickdanger_name"/>
             </challenge>
-        </insertAfter>                        
+        </insertAfter>  
+<!--
+veteran_challenge_toc_rickdanger_name,Quest,Quest Info,,,"Quest for Rick Danger Auger"
+veteran_challenge_toc_rickdanger_short,Quest,Quest Info,,,"Recover the plans for an experimental auger."
+veteran_challenge_toc_rickdanger_long,Quest,Quest Info,,,"Help the community restock its [DECEA3]mining supplies[-] by [DECEA3]gathering-] some of your own to contribute!\n\nIn exchange for your help, you will be provided some plans to an [DECEA3]experimental auger[-]."
+veteran_challenge_toc_rickdanger_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+elite_challenge_toc_rickdanger_name,Quest,Quest Info,,,"Quest for Rick Danger Auger"
+elite_challenge_toc_rickdanger_short,Quest,Quest Info,,,"Recover the plans for an experimental auger."
+elite_challenge_toc_rickdanger_long,Quest,Quest Info,,,"Help the community restock its [DECEA3]mining supplies[-] by [DECEA3]gathering-] some of your own to contribute!\n\nIn exchange for your help, you will be provided some plans to an [DECEA3]experimental auger[-]."
+elite_challenge_toc_rickdanger_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->                              
 </config>

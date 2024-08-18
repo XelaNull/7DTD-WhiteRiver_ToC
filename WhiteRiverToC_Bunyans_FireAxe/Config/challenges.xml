@@ -1,9 +1,15 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
-            <challenge name="challengeCitizen21" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCCitizen2"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeCitizen21" title_key="citizen_challenge_toc_bunyan_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCCitizen2"
+                short_description_key="citizen_challenge_toc_bunyan_short" description_key="citizen_challenge_toc_bunyan_long"
+                reward_text_key="citizen_challenge_toc_bunyan_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_bunyan_name"/>
             </challenge>
         </insertAfter>               
+<!--        
+citizen_challenge_toc_bunyan_name,Quest,Quest Info,,,"Quest for Bunyan's FireAxe"
+citizen_challenge_toc_bunyan_short,Quest,Quest Info,,,"Fell 50 trees at a time with a Bunyan axe."
+citizen_challenge_toc_bunyan_long,Quest,Quest Info,,,"No handheld axe fells trees faster than Bunyan's FireAxe. Rumored to once have been used to fell 50 trees in a single swing.\n\nHelp [DECEA3]stock the community's food stores[-] through [DECEA3]obtaining bottled water[-]."
+citizen_challenge_toc_bunyan_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->         
 </config>

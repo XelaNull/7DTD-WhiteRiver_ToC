@@ -1,17 +1,28 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
-            <challenge name="challengeCitizen23" title_key="challengeKillZombies" icon="ui_game_symbol_armor_leather" group="ToCCitizen2"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeCitizen23" title_key="citizen_challenge_toc_kuva_name" icon="ui_game_symbol_armor_leather" group="ToCCitizen2"
+                short_description_key="citizen_challenge_toc_kuva_short" description_key="citizen_challenge_toc_kuva_long"
+                reward_text_key="citizen_challenge_toc_kuva_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_kuva_name"/>
             </challenge>
         </insertAfter>
 
         <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
-            <challenge name="challengeVeteran16" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_armor_leather" group="ToCVeteran1"
-                hint="challengeCraftBuildingBlocksHint1"
-                short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc">
+            <challenge name="challengeVeteran16" title_key="veteran_challenge_toc_kuva_name" icon="ui_game_symbol_armor_leather" group="ToCVeteran1"
+                short_description_key="veteran_challenge_toc_kuva_short" description_key="veteran_challenge_toc_kuva_long"
+                reward_text_key="veteran_challenge_toc_kuva_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="vetquestitem_toc_kuva_name"/>
             </challenge>    
         </insertAfter>                
+<!--
+citizen_challenge_toc_kuva_name,Quest,Quest Info,,,"Quest for Kuva's Armor"
+citizen_challenge_toc_kuva_short,Quest,Quest Info,,,"Recover the recipe for Kuva's armor."
+citizen_challenge_toc_kuva_long,Quest,Quest Info,,,"[DECEA3]Embark on an adventure[-] to find out whether the rumors are true. First you'll have to [DECEA3]locate the recipe[-] to Kuva's armor.\n\nIf you fnid the rumors to be true, you may find yourself with the ability to craft a set of Kuva armor."
+citizen_challenge_toc_kuva_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+veteran_challenge_toc_kuva_name,Quest,Quest Info,,,"Quest for Kuva's Armor"
+veteran_challenge_toc_kuva_short,Quest,Quest Info,,,"Recover the recipe for Kuva's armor."
+veteran_challenge_toc_kuva_long,Quest,Quest Info,,,"[DECEA3]Continue your adventure[-] to find out the truth regarding Kuvas armor. "
+veteran_challenge_toc_kuva_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,    
+-->         
 </config>

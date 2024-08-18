@@ -1,9 +1,15 @@
 <config>
-        <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
-            <challenge name="challengeInitiate4" title_key="quest_toc_brass_name" icon="ui_game_symbol_challenge_basics_gather_resources" group="ToCInitiate1"
-                short_description_key="quest_toc_brass_description" description_key="quest_toc_brass_subtitle"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCInitiate1']">
+            <challenge name="challengeInitiate4" title_key="initiate_challenge_toc_brass_name" icon="ui_game_symbol_challenge_basics_gather_resources" group="ToCInitiate1"
+                short_description_key="initiate_challenge_toc_brass_short" description_key="initiate_challenge_toc_brass_long"
+                reward_text_key="initiate_challenge_toc_brass_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="initiatequestitem_toc_brass_name"/>
             </challenge>
-        </insertAfter>              
+        </insertAfter>
+<!--
+initiate_challenge_toc_brass_name,Quest,Quest Info,,,"Quest to restock community lead"
+initiate_challenge_toc_brass_short,Quest,Quest Info,,,"Receive brass by supplying the community with lead."
+initiate_challenge_toc_brass_long,Quest,Quest Info,,,"The White River community is always short on lead for bullet making.\n\n[DECEA3]Provide lead[-] to help stock the community's stores and [DECEA3]receive brass[-] in exchange for your hard work. The community is always short on lead, so this quest can be repeated."
+initiate_challenge_toc_brass_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->                      
 </config>

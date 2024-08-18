@@ -102,7 +102,7 @@ Challenge Tier 2: (Both Challenge Tiers Unlock Same Time)
     Short tag: Recover the recipe for Kuva's armor.
     Long: [DECEA3]Embark on an adventure[-] to find out whether the rumors are true. First you'll have to [DECEA3]locate the recipe[-] to Kuva's armor.\n\nIf you fnid the rumors to be true, you may find yourself with the ability to craft a set of Kuva armor.
 - Deschain's Revolver 
-    Short tag: Find 8 books, Craft 10 Doors, obtain a lightning fast revolver.
+    Short tag: Find 8 books, Craft 19 Doors, obtain a lightning fast revolver.
     Long: [DECEA3]Collect all 8 books[-] of the Dark Tower Series and [DECEA3]craft 19 doors[-] for the Tower.\n\nIn exchange, [DECEA3]receive Roland Deschain's Revolver[-] and [DECEA3]schematics[-] to make matching [DECEA3]gold[-] and [DECEA3]silver bullets[-].
 + Craft Veteran Citizen Card
     Short tag: You are a Veteran.
@@ -146,6 +146,8 @@ Challenge Tier 2: (Both Challenge Tiers Unlock Same Time)
     Short tag: Discover what happened to Amelia Earhart.
     Long: [DECEA3]Go on a grand adventure[-] and [DECEA3]discover the truth[-] of what happened to Amelia Earhart, and [DECEA3]what she was working on[-] in her final days.
 + Craft Elite Citizen Card
+    Short tag: Show the world how elite you truly are.
+    Long tag: At long last, you have amassed enough tickets to earn yourself a place amongst the most elite of White River citizens. Craft a [DECEA3]+Elite Citizen Card[-] from your citizen completion tickets.
 
 ##### White River Elite Citizen Card (Elite Challenge Tiers Unlock upon Completion of White River Veteran Citizen Card Challenge Tier 2)
 

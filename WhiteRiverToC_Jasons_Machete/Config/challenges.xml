@@ -1,9 +1,15 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
-            <challenge name="challengeInitiate3" title_key="quest_toc_jason_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
-                short_description_key="quest_toc_jason_description" description_key="quest_toc_jason_subtitle"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeInitiate3" title_key="initiate_challenge_toc_jason_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
+                short_description_key="initiate_challenge_toc_jason_axe_short" description_key="initiate_challenge_toc_jason_axe_long"
+                reward_text_key="initiate_challenge_toc_jason_axe_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="initiatequestitem_toc_jason_name"/>
             </challenge>
-        </insertAfter>              
+        </insertAfter>
+<!--
+initiate_challenge_toc_jason_name,Quest,Quest Info,,,"Quest for Jason's Machete"
+initiate_challenge_toc_jason_axe_short,Quest,Quest Info,,,"Prove your worth as a citizen, obtain a machete."
+initiate_challenge_toc_jason_axe_long,Quest,Quest Info,,,"The flower is more powerful than the sword...or machete.\n\n[DECEA3]Collect[-] a lot of flowers to warm the Trader's heart and [DECEA3]obtain a machete[-] with the name JASON carved into the handle."
+initiate_challenge_toc_jason_axe_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->                      
 </config>

@@ -46,3 +46,12 @@ questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelper,items,Item,,,"Veter
 questitem_vetcoin_glassNonFuzzyBulletproofBlockVariantHelperDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River tools of citizenship veteran's citizen card to start the Molino bulletproof glass quest.",,Eine symbolische Münze, die anzeigt dass Sie die Bürgerkarte Ihres White River tools of citizenship-Veteranen abgegeben haben um die quest Molino bulletproof glass zu starten,,,,,,,,,,,,
 questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper,items,Item,,,"Elite Tools of Citizenship - Molino Bulletproof Glass",,Elite tools of citizenship - Molino Kugelsicheres Glas,,,,,,,,,,,,
 questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelperDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River tools of citizenship elite citizen card to start the Molino bulletproof glass quest.",,Eine symbolische Münze die anzeigt dass Sie Ihre elite-Bürgerkarte "White River tools of citizenship" abgegeben haben um die quest "Molino bulletproof glass" zu starten,,,,,,,,,,,,
+veteran_challenge_toc_molino_name,Quest,Quest Info,,,"Quest for Molino Bulletproof Glass"
+veteran_challenge_toc_molino_short,Quest,Quest Info,,,"Obtain some bulletproof glass blocks."
+veteran_challenge_toc_molino_long,Quest,Quest Info,,,"[DECEA3]Obtain bulletproof glass blocks[-]. Just some, though. And only after you provide the communuity with a large stack of regular glass blocks."
+veteran_challenge_toc_molino_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,  
+
+elite_challenge_toc_molino_name,Quest,Quest Info,,,"Quest for Molino Bulletproof Glass"
+elite_challenge_toc_molino_short,Quest,Quest Info,,,"Learn how to craft bulletproof glass blocks."
+elite_challenge_toc_molino_long,Quest,Quest Info,,,"[DECEA3]Learn to craft bulletproof blocks[-] by [DECEA3]providing[-] a lot of regular glass blocks to help the community restock."
+elite_challenge_toc_molino_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,

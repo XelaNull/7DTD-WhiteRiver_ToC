@@ -1,17 +1,29 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
-            <challenge name="challengeInitiate2" title_key="quest_toc_dundee_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
-                short_description_key="quest_toc_dundee_description" description_key="quest_toc_dundee_subtitle"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeInitiate2" title_key="initiate_challenge_toc_dundee_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
+                short_description_key="initiate_challenge_toc_dundee_axe_short" description_key="initiate_challenge_toc_dundee_axe_long"
+                reward_text_key="initiate_challenge_toc_dundee_axe_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="initiatequestitem_toc_dundee_name"/>
             </challenge>
         </insertAfter>
 
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
-            <challenge name="challengeCitizen12" title_key="challengeKillZombies" icon="ui_game_symbol_knife" group="ToCCitizen1"
-                short_description_key="quest_toc_dundee_description" description_key="quest_toc_dundee_subtitle"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeCitizen12" title_key="citizen_challenge_toc_dundee_name" icon="ui_game_symbol_knife" group="ToCCitizen1"
+                short_description_key="citizen_challenge_toc_dundee_short" description_key="citizen_challenge_toc_dundee_long"
+                reward_text_key="citizen_challenge_toc_dundee_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_dundee_name"/>
             </challenge>
-        </insertAfter>             
+        </insertAfter>       
+
+<!--
+initiate_challenge_toc_dundee_name,Quest,Quest Info,,,"Quest for Dundee's Knife"
+initiate_challenge_toc_dundee_axe_short,Quest,Quest Info,,,"Prove your worth as a citizen, obtain a knife. "
+initiate_challenge_toc_dundee_axe_long,Quest,Quest Info,,,"Help prove that you can be of help to the White River community as a citizen, by [DECEA3]crafting some bone knives[-]. In exchange for your help, you'll [DECEA3]receive a shoddily-made Dundee knife[-].\n\nOne stepping-stone along the path towards citizenship."
+initiate_challenge_toc_dundee_axe_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+citizen_challenge_toc_dundee_name,Quest,Quest Info,,,"Quest for Dundee's Knife"
+citizen_challenge_toc_dundee_short,Quest,Quest Info,,,"Help your community, and obtain a better Dundee branded knife."
+citizen_challenge_toc_dundee_long,Quest,Quest Info,,,"Help prove that you can be of help to the White River community as a citizen, by [DECEA3]crafting some bone knives[-].\n\nIn exchange for your help, you'll [DECEA3]receive a high quality Dundee knife[-]."
+citizen_challenge_toc_dundee_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->              
 </config>

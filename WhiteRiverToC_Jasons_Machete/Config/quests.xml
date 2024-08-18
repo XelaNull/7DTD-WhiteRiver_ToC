@@ -1,6 +1,6 @@
 <config>
 	<append xpath="/quests">
-		<quest id="+Quest For Jason's Machete Start">
+		<quest id="+Initiate Quest For Jason's Machete Start">
 			<property name="name_key" value="initiatequest_toc_jason_name"/>
 			<property name="subtitle_key" value="initiatequest_toc_jason_subtitle"/>
 			<property name="description_key" value="initiatequest_toc_jason_description"/>
@@ -13,7 +13,7 @@
 			<property name="response_key" value="initiatequestdialog_toc_jason"/>
 			<property name="group_name_key" value="initiatequest_toc_jason_group"/>
 			<property name="shareable" value="false"/>
-			<reward type="Quest" id="+Quest For Jason's Machete"/>
+			<reward type="Quest" id="+Initiate Quest For Jason's Machete"/>
 			<reward type="Item" id="initiatequestitem_coin_jason" count="1"/>
 		</quest>
 		<quest id="+Initiate Quest For Jason's Machete">

@@ -1,14 +1,25 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
-            <challenge name="challengeCitizen14" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeCitizen14" title_key="citizen_challenge_toc_everdeena_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1"
+                short_description_key="citizen_challenge_toc_everdeena_short" description_key="citizen_challenge_toc_everdeena_long"
+                reward_text_key="citizen_challenge_toc_everdeena_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_earrows_name"/>
             </challenge>
-            <challenge name="challengeCitizen15" title_key="challengeKillZombies" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1"
-                short_description_key="challengeKillZombiesShort" description_key="challengeKillZombiesDesc"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
+            <challenge name="challengeCitizen15" title_key="citizen_challenge_toc_everdeenb_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1"
+                short_description_key="citizen_challenge_toc_everdeenb_short" description_key="citizen_challenge_toc_everdeenb_long"
+                reward_text_key="citizen_challenge_toc_everdeenb_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_ebolts_name"/>
             </challenge>            
         </insertAfter>         
+<!--
+citizen_challenge_toc_everdeena_name,Quest,Quest Info,,,"Quest for Everdeen's Arrows"
+citizen_challenge_toc_everdeena_short,Quest,Quest Info,,,"Stock your quiver by stocking your community's kitchen."
+citizen_challenge_toc_everdeena_long,Quest,Quest Info,,,"The White River community's kitchen seems always bare these days. As a full-fledged citizen it is now your responsibility to help keep them stocked.\n\nHelp [DECEA3]locate some food[-] and in exchange [DECEA3]receive some quality arrows[-]."
+citizen_challenge_toc_everdeena_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+citizen_challenge_toc_everdeenb_name,Quest,Quest Info,,,"Quest for Everdeen's Bolts"
+citizen_challenge_toc_everdeenb_short,Quest,Quest Info,,,"Stock your quiver by stocking your community's kitchen."
+citizen_challenge_toc_everdeenb_long,Quest,Quest Info,,,"The White River community's kitchen seems always bare these days. As a full-fledged citizen it is now your responsibility to help keep them stocked.\n\nHelp [DECEA3]locate some food[-] and in exchange [DECEA3]receive some quality crossbow bolts[-]."
+citizen_challenge_toc_everdeenb_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->
 </config>
