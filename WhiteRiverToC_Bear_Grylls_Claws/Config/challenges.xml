@@ -1,9 +1,9 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
-            <challenge name="challengeCitizen16" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_knife" group="ToCCitizen1"
-                short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc"
-                reward_text_key="citizen_challenge_toc_grylls_reward" reward_event="challenge_reward_default">
-                <objective type="Craft" item="questitem_toc_claws_name"/>
+            <challenge name="challengeInitiate16" title_key="initiate_challenge_toc_grylls_name" icon="ui_game_symbol_knife" group="ToCCitizen1"
+                short_description_key="initiate_challenge_toc_grylls_short" description_key="initiate_challenge_toc_grylls_long"
+                reward_text_key="intiate_challenge_toc_grylls_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="initiateitem_toc_claws_name"/>
             </challenge> 
         </insertAfter>  
 
@@ -15,7 +15,12 @@
             </challenge> 
         </insertAfter>  
 <!--
-citizen_challenge_toc_grylls_name,Quest,Quest Info,,,"Quest for Bear Gryll's Claws"
+initiate_challenge_toc_grylls_name,Quest,Quest Info,,,"Quest for Bear Gryll's Iron Claws"
+initiate_challenge_toc_grylls_short,Quest,Quest Info,,,"Kill some bears in hand-to-hand combat."
+initiate_challenge_toc_grylls_long,Quest,Quest Info,,,"Nothing says demonstrating how much of a bad ass you are, like taking on a bear in [DECEA3]hand-to-hand[-] combat. [DECEA3]Kill a bear[-] while wearing knuckles and [DECEA3]obtain[-] a quality set of iron knuckles."
+intiate_challenge_toc_grylls_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+citizen_challenge_toc_grylls_name,Quest,Quest Info,,,"Quest for Bear Gryll's Steel Claws"
 citizen_challenge_toc_grylls_short,Quest,Quest Info,,,"Prove your worth in bear hand-to-hand combat."
 citizen_challenge_toc_grylls_long,Quest,Quest Info,,,"Time to double-down on how much of a bda ass you are. This time you'll be taking on [DECEA3]multiple bears in hand-to-hand combat[-]. Prove your worth and [DECEA3]obtain a quality steel knuckles[-]."
 citizen_challenge_toc_grylls_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
