@@ -3,7 +3,7 @@
 		<item name="questitem_initiatecoin_dundee">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
-			<property name="CustomIconTint" value="ff0000"/>
+			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Tags" value="ToC_coin"/>
 		</item>	

@@ -64,7 +64,7 @@
 			<reward type="Exp" value="1000"/>
 			<reward type="Item" id="casinoCoin" value="560"/>
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
-			<reward type="Item" id="questitem_citizen_completion_token" value="1"/>
+			<reward type="Item" id="questitem_citizen_completion_ticket" value="1"/>
 			<!-- This makes the quest repeatable -->
 			<reward type="LootItem" id="groupWhiteRiverTOCBambi" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
@@ -135,7 +135,7 @@
 				<property name="nav_object" value="return_to_trader"/>
 			</objective>
 			<reward type="Exp" value="3000"/>
-			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>		
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>		
 			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>			
 			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCBambiVet" value="1"/>

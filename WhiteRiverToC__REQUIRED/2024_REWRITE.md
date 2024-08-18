@@ -46,56 +46,123 @@ The declaration of citizenship card can be crafted from a piece of paper and is 
 Each completed quest rewards a completion token for either Initiate, Citizen, or Veteran. Elite quests don't need to return completion token as there is no larger tier.
 Completion tokens are used to craft the citizenship card for the next tier up. 
 
+
 ##### White River Initiate (Declaration of Citizenship)
 
 Challenge Tier 1:
 - Taza's Axe (Initiate) (New Quest Tier) 
+    Short tag: Prove your worth as a citizen, obtain an axe.
+    Long: [DECEA3]Gather[-] an amount of small stone.\n\n[DECEA3]Craft[-] a handful of stone axes.\n\nIn exchange for your hard work you'll [DECEA3]receive[-] an Initiate Taza axe, which is a replica of the famous Taza Axe.\n\nA solid axe will become the primary [DECEA3]tool of your citizenship[-].
 - Dundee's Knife (Initiate) (New Quest Tier) 
+    Short tag: Prove your worth as a citizen, obtain a knife. 
+    Long: Help prove that you can be of help to the White River community as a citizen, by [DECEA3]crafting some bone knives[-]. In exchange for your help, you'll [DECEA3]receive a shoddily-made Dundee knife[-].\n\nOne stepping-stone along the path towards citizenship.
 - Jason's Machete (Moved Quest)
+    Short tag: Prove your worth as a citizen, obtain a machete.
+    Long: The flower is more powerful than the sword...or machete.\n\n[DECEA3]Collect[-] a lot of flowers to warm the Trader's heart and [DECEA3]obtain a machete[-] with the name JASON carved into the handle.
 - Brass For Lead (Moved Quest) 
+    Short tag: Help stock the community's lead supply.
+    Long: The White River community is always short on lead for bullet making.\n\n[DECEA3]Provide lead[-] to help stock the community's stores and [DECEA3]receive brass[-] in exchange for your hard work. The community is always short on lead, so this quest can be repeated.
 - Bear Grylls's Iron Knuckles (Moved Quest) 
+    Short tag: Kill a bear in hand-to-hand combat.
+    Long: Nothing says demonstrating how much of a bad ass you are, like taking on a bear in [DECEA3]hand-to-hand[-] combat. [DECEA3]Kill a bear[-] while wearing knuckles and [DECEA3]obtain[-] a quality set of iron knuckles.
 + Craft White River Citizen Card
+    Short tag: You did it! Craft your White River Citizen Card
+    Long tag: Now that you have saved up enough question completion tokens, [DECEA3]craft a White River Citizen Card[-] from your completion tokens. [DECEA3]Become a full White River Citizen[-] and continue amassing your collection of citizenry tools.
 
 ##### White River Citizen Card
 
 Challenge Tier 1:
 - Taza's Axe (Citizen)
+    Short tag: Help your community, and obtain a better Taza's axe.
+    Long: [DECEA3]Gather[-] an amount of small stone.\n\n[DECEA3]Craft[-] a handful of stone axes.\n\nIn exchange for your hard work you'll [DECEA3]receive[-] a fabled Taza axe, which is a replica of the famous Taza Axe.\n\nA solid axe will become the primary [DECEA3]tool of your citizenship[-].
 - Dundee's Knife (Citizen) 
-- Bambi's Compound Bow 
-- Everdeen's Arrows & Bolts 
+    Short tag: Help your community, and obtain a better Dundee branded knife.
+    Long: Help prove that you can be of help to the White River community as a citizen, by [DECEA3]crafting some bone knives[-].\n\nIn exchange for your help, you'll [DECEA3]receive a high quality Dundee knife[-].
+- Bambi's Compound Bow
+    Short tag: Help your community, and obtain a compound bow.
+    Long: [DECEA3]Obtain some bow parts[-] for the Trader and [DECEA3]obtain a quality compound bow[-] for your efforts.\n\nThis will make a fine addition to your [DECEA3]t[-]ools [DECEA3]o[-]f [DECEA3]c[-]itizenship.
+- Everdeen's Arrows
+    Short tag: Stock your quiver by stocking your community's kitchen.
+    Long: The White River community's kitchen seems always bare these days. As a full-fledged citizen it is now your responsibility to help keep them stocked.\n\nHelp [DECEA3]locate some food[-] and in exchange [DECEA3]receive some quality arrows[-].
+- Everdeen's Bolts 
+    Short tag: Stock your quiver by stocking your community's kitchen.
+    Long: The White River community's kitchen seems always bare these days. As a full-fledged citizen it is now your responsibility to help keep them stocked.\n\nHelp [DECEA3]locate some food[-] and in exchange [DECEA3]receive some quality crossbow bolts[-].
 - Bear Grylls's Iron Knuckles (Moved Quest) 
+    Short tag: Prove your worth in bear hand-to-hand combat.
+    Long: Time to double-down on how much of a bda ass you are. This time you'll be taking on [DECEA3]multiple bears in hand-to-hand combat[-]. Prove your worth and [DECEA3]obtain a quality steel knuckles[-].
 
 Challenge Tier 2: (Both Challenge Tiers Unlock Same Time)
 - Bunyan's FireAxe 
+    Short tag: Fell 50 trees at a time with a Bunyan axe.
+    Long: No handheld axe fells trees faster than Bunyan's FireAxe. Rumored to once have been used to fell 50 trees in a single swing.\n\nHelp [DECEA3]stock the community's food stores[-] through [DECEA3]obtaining bottled water[-].
 - Leon's SMG 
+    Short tag: Help Leon with his DIY project, obtain an SMG.
+    Long: [DECEA3]Help Leon[-] with his latest DIY projects to [DECEA3]obtain a working SMG[-].
 - Kuva's Armor 
+    Short tag: Recover the recipe for Kuva's armor.
+    Long: 
 - Deschain's Revolver 
+    Short tag: Find 8 books, Craft 10 Doors, obtain a lightning fast revolver.
+    Long: 
 + Craft Veteran Citizen Card
 
 ##### White River Veteran Citizen Card (Veteran Challenge Tiers Unlock upon Completion of White River Citizen Card Challenge Tier 2)
 
 Challenge Tier 1:
 - Taza's Axe (Veteran) 
+    Short tag: Show substantial support and obtain the best quality Taza's axe.
+    Long: [DECEA3]Gather[-] an amount of small stone.\n\n[DECEA3]Craft[-] a handful of stone axes.\n\nIn exchange for your hard work you'll [DECEA3]receive[-] the fabled Taza axe.\n\nThis famous axe will become the primary [DECEA3]tool of your citizenship[-].
 - Rick Danger Auger 
+    Short tag: Recover the plans for an experimental auger.
+    Long: 
 - BlackBart's Dig Tools 
+    Short tag: Dig deep to discover real treasure.
+    Long: 
 - Bambi's Compound Bow 
+    Short tag: Obtain a better quality Bambi's Compound bow.
+    Long: 
 - Leon's SMG 
+    Short tag: Help Leon with the next generation of SMG.
+    Long: 
 - Kuva's Armor 
-
+    Short tag: Recover the recipe for Kuva's armor.
+    Long: 
 Challenge Tier 2: (Both Challenge Tiers Unlock Same Time)
 - Daryl's Compound Crossbow 
+    Short tag: Work hard and obtain a zombie-killing compound crossbow.
+    Long: 
 - Pavlichenko's Rifle 
+    Short tag: Build your own Pavlichenko rifle.
+    Long: 
 - Molino Bulletproof Glass Blocks 
-- Gupta's Bandages 
+    Short tag: Obtain some bulletproof glass blocks.
+    Long: 
+- Gupta's Bandages (Moved Quest)
+    Short tag: Craft heal-over-time bandages.
+    Long: 
 - Amelia Earhart's Gyrocopter 
+    Short tag: Discover what happened to Amelia Earhart.
+    Long: 
 + Craft Elite Citizen Card
 
 ##### White River Elite Citizen Card (Elite Challenge Tiers Unlock upon Completion of White River Veteran Citizen Card Challenge Tier 2)
 
 Challenge Tier 1:
-- Spirit of Vengeance  
+- Spirit of Vengeance
+    Short tag: Take on minions from hell.
+    Long: 
 - Rick Danger Auger 
+    Short tag: Recover the plans for an experimental auger.
+    Long: 
 - Remington's Steel Ammo 
+    Short tag: Discover how to craft steel ammo.
+    Long: 
 - Daryl's Crossbow 
+    Short tag: Obtain the ultimately zombie-killing compound crossbow.
+    Long: 
 - Bambi's Compound Bow 
+    Short tag: Obtain a top-tier compound bow.
+    Long: 
 - Molino Bulletproof Glass Recipe 
+    Short tag: Learn how to craft bulletproof glass blocks.
+    Long: 

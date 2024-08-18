@@ -64,8 +64,8 @@
 			<reward type="Exp" value="1000"/>
 			<reward type="Item" id="casinoCoin" value="360"/>
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
-			<!-- Small Easter Egg For More Veteran->Elite Tokens -->
-			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>	
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>	
 			<!-- This makes the quest repeatable -->
 			<reward type="Item" id="questitem_toc_pav_trigger_name" value="1"/>
 			<reward type="Item" id="vetquestitem_toc_pav_barrel_name" value="1"/>
@@ -119,8 +119,8 @@
 				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
 			<reward type="Item" id="questitem_toc_pav_barrel_name" value="1"/>
-			<!-- Small Easter Egg For More Veteran->Elite Tokens -->
-			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
 			<reward type="Item" id="vetquestitem_toc_pav_stock_name" value="1"/>
 			<reward type="Exp" value="500"/>
 		</quest>
@@ -167,8 +167,8 @@
 				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
 			<reward type="Item" id="vetquestitem_toc_pav_scope_name" value="1"/>
-			<!-- Small Easter Egg For More Veteran->Elite Tokens -->
-			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>			
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>			
 			<reward type="Item" id="questitem_toc_pav_stock_name" value="1"/>
 			<reward type="Exp" value="500"/>
 		</quest>
@@ -215,8 +215,8 @@
 				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
 			<reward type="Item" id="vetquestitem_toc_pav_rifle_name" value="1"/>
-			<!-- Small Easter Egg For More Veteran->Elite Tokens -->
-			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
 			<reward type="Item" id="questitem_toc_pav_scope_name" value="1"/>
 			<reward type="Exp" value="500"/>
 		</quest>
@@ -270,8 +270,8 @@
 			</objective>
 			<reward type="SkillPoints" value="1"/>
 			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>
-			<!-- Small Easter Egg For More Veteran->Elite Tokens -->
-			<reward type="Item" id="questitem_veteran_completion_token" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
 			<reward type="Exp" value="2000"/>
 			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCPavlichenko" value="1"/>
