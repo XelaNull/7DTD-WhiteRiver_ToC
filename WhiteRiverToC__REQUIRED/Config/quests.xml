@@ -1,11 +1,14 @@
 <config>
-
-  	<!-- Kick off the custom Quest-line as soon as the White River Citizen initial quest completes -->
+  	<!-- Ensure the Vanilla questline offers up a Declaration of Citizenship -->
 	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
-		<reward type="Item" id="questitem_toc_declaration_name" ischosen="true" value="1"/>
+		<reward type="Item" id="questitem_toc_declaration_name" isfixed="true" value="1"/>
 	</insertAfter>
-
-	<!-- Change the Trader's first quest wrap-up text as an entry-point to direct player to Tools of Citizenship. -->
+	<!-- These XPath statements are the most likely in this modlet to cause some confliction with other modlet -->
+	<!-- These ultimately serve only to provide a more textual fluent experience for the player. They are not required for functional play. -->
+	<!-- If someone finds a conflict on these in the future, you should have no fear commenting them out -->
+	<set xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/property[@name='completion_key']/@value">WhiteRiverToC_Vanilla_Quest_Completion</set> <!-- works-->
+	<set xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/action[@type='ShowMessageWindow']/property[@name='message']/@value">WhiteRiverToC_Vanilla_Quest_Popup</set>
+	<set xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/action[@type='ShowMessageWindow']/property[@name='title']/@value">WhiteRiverToC_Vanilla_Quest_Popup_Group</set>
 
 
 	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']">
@@ -42,5 +45,4 @@
 			<reward type="LootItem" id="groupQuestToCVehicleParts" ischosen="true" value="1"/>
 		</quest>
 	</insertAfter>
-
 </config>
