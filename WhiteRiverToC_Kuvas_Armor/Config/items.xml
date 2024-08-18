@@ -223,7 +223,7 @@
 			<property name="SoundPickup" value="outfit_cloth_grab"/>
 			<property name="SoundPlace" value="outfit_cloth_place"/>
 			<property name="EquipSlot" value="Head"/>
-			<property name="UnlockedBy" value="perkMediumArmor,questitem_toc_kuvablue_name"/>
+			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
