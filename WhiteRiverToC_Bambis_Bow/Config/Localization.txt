@@ -68,7 +68,7 @@ citizen_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
 
 veteran_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"
 veteran_challenge_toc_bambi_short,Quest,Quest Info,,,"Obtain a better quality Bambi's Compound bow."
-veteran_challenge_toc_bambi_long,Quest,Quest Info,,,"[DECEA3]Obtain some compound bows[-] for the Trader and [DECEA3]obtain a high-quality compound bow[-] in exchange for your efforts.\n\nThis will make a top-shelf addition to your [DECEA3]t[-]ools [DECEA3]o[-]f [DECEA3]c[-]itizenship.""
+veteran_challenge_toc_bambi_long,Quest,Quest Info,,,"[DECEA3]Obtain some compound bows[-] for the Trader and [DECEA3]obtain a high-quality compound bow[-] in exchange for your efforts.\n\nThis will make a top-shelf addition to your [DECEA3]t[-]ools [DECEA3]o[-]f [DECEA3]c[-]itizenship."
 veteran_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
 
 elite_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"

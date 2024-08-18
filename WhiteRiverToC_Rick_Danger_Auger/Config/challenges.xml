@@ -8,9 +8,9 @@
         </insertAfter>
 
         <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
-            <challenge name="challengeElite2" title_key="challengeKillZombies" icon="ui_game_symbol_treasure" group="ToCElite1"
-                short_description_key="challengeKillZombiesShort" description_key="challenge_reward_default"
-                reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_default">
+            <challenge name="challengeElite2" title_key="elite_challenge_toc_rickdanger_name" icon="ui_game_symbol_treasure" group="ToCElite1"
+                short_description_key="elite_challenge_toc_rickdanger_short" description_key="elite_challenge_toc_rickdanger_long"
+                reward_text_key="elite_challenge_toc_rickdanger_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="elitequestitem_toc_rickdanger_name"/>
             </challenge>
         </insertAfter>  

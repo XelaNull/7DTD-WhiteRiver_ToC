@@ -1,15 +1,15 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
-            <challenge name="challengeInitiate16" title_key="initiate_challenge_toc_grylls_name" icon="ui_game_symbol_knife" group="ToCCitizen1"
+            <challenge name="challengeInitiate15" title_key="initiate_challenge_toc_grylls_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
                 short_description_key="initiate_challenge_toc_grylls_short" description_key="initiate_challenge_toc_grylls_long"
-                reward_text_key="intiate_challenge_toc_grylls_reward" reward_event="challenge_reward_default">
+                reward_text_key="initiatequestitem_toc_claws_name" reward_event="challenge_reward_default">
                 <objective type="Craft" item="initiateitem_toc_claws_name"/>
             </challenge> 
         </insertAfter>  
 
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
-            <challenge name="challengeCitizen16" title_key="challengeCraftBuildingBlocks" icon="ui_game_symbol_knife" group="ToCCitizen1"
-                short_description_key="challengeCraftBuildingBlocksShort" description_key="challengeCraftBuildingBlocksDesc"
+            <challenge name="challengeCitizen16" title_key="citizen_challenge_toc_grylls_name" icon="ui_game_symbol_knife" group="ToCCitizen1"
+                short_description_key="citizen_challenge_toc_grylls_short" description_key="citizen_challenge_toc_grylls_long"
                 reward_text_key="citizen_challenge_toc_grylls_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_claws_name"/>
             </challenge> 
