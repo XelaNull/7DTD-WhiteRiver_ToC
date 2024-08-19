@@ -48,7 +48,7 @@ WhiteRiverToC_Vanilla_Quest_Popup,Quest,Quest Info,,,"Good Job Survivor,\n\nYou 
 WhiteRiverToC_Vanilla_Quest_Popup_Group,Quest,Quest Info,,,"White River Initiate"
 initiate_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Citizen Card"
 initiate_challenge_toc_short,Quest,Quest Info,,,"You did it! Craft your White River Citizen Card"
-initiate_challenge_toc_long,Quest,Quest Info,,,"Now that you have saved up enough question completion tickets, [DECEA3]craft a White River Citizen Card[-] from your completion tickets.\n\n[DECEA3]Become a full White River Citizen[-] and continue amassing your collection of citizenry tools."
+initiate_challenge_toc_long,Quest,Quest Info,,,"Now that you have saved up enough quest completion tickets, [DECEA3]craft a +White River Citizen Card[-] from your completion tickets.\n\n[DECEA3]Become a full White River Citizen[-] and continue amassing your collection of citizenry tools."
 initiate_challenge_toc_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
 citizen_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Veteran Citizen Card"
 citizen_challenge_toc_short,Quest,Quest Info,,,"You are a Veteran."
