@@ -1,5 +1,5 @@
 <config>
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCInitiate1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
             <challenge name="challengeInitiate4" title_key="initiate_challenge_toc_brass_name" icon="ui_game_symbol_challenge_basics_gather_resources" group="ToCInitiate1"
                 short_description_key="initiate_challenge_toc_brass_short" description_key="initiate_challenge_toc_brass_long"
                 reward_text_key="initiate_challenge_toc_brass_reward" reward_event="challenge_reward_default">

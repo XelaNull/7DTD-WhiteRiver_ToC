@@ -1,5 +1,5 @@
 <config>
-        <insertAfter xpath="/challenges/challenge_group[@name='White_River_ToC']/challenge_group[@name='ToCElite1']">
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
             <challenge name="challengeElite3" title_key="elite_challenge_toc_remington_name" icon="ui_game_symbol_pistol" group="ToCElite1"
                 short_description_key="elite_challenge_toc_remington_short" description_key="elite_challenge_toc_remington_long"
                 reward_text_key="elite_challenge_toc_remington_reward" reward_event="challenge_reward_default">
