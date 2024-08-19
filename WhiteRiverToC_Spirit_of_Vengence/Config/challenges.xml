@@ -1,6 +1,6 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
-            <challenge name="challengeElite1" title_key="citizen_challenge_toc_spirit_name" icon="ui_game_symbol_4x4" group="ToCElite1"
+            <challenge name="challengeElite1" title_key="elite_challenge_toc_spirit_name" icon="ui_game_symbol_4x4" group="ToCElite1"
                 short_description_key="elite_challenge_toc_spirit_short" description_key="elite_challenge_toc_spirit_long"
                 reward_text_key="elite_challenge_toc_spirit_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_spirit_vengeance_name"/>
