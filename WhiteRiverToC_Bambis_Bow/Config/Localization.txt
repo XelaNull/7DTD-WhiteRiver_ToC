@@ -63,7 +63,7 @@ questitem_elitecoin_bambiDesc,items,Item,,,"A symbolic coin to indicate that you
 quest_toc_bambi_completion,Quest,Quest Info,,,"Great job collecting these much needed items for our community. I've got some extra items laying around. Select something from this pile.",,,,,,,,,,,,,,
 citizen_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"
 citizen_challenge_toc_bambi_short,Quest,Quest Info,,,"Help your community, and obtain a compound bow."
-citizen_challenge_toc_bambi_long,Quest,Quest Info,,,"[DECEA3]Obtain some bow parts[-] for the Trader and [DECEA3]obtain a quality compound bow[-] for your efforts.\n\nThis will make a fine addition to your [DECEA3]t[-]ools [DECEA3]o[-]f [DECEA3]c[-]itizenship."
+citizen_challenge_toc_bambi_long,Quest,Quest Info,,,"[DECEA3]Obtain some bow parts[-] for the Trader and [DECEA3]obtain a quality compound bow[-] for your efforts.\n\nThis will make a fine addition to your\n[DECEA3]t[-]ools [DECEA3]o[-]f [DECEA3]c[-]itizenship."
 citizen_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
 
 veteran_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"
@@ -73,5 +73,5 @@ veteran_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
 
 elite_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"
 elite_challenge_toc_bambi_short,Quest,Quest Info,,,"Obtain a top-tier compound bow."
-elite_challenge_toc_bambi_long,Quest,Quest Info,,,"Seek out the [DECEA3]Forest Price[-], the ultimate compound bow.\n\nWas this the bow that killed Bambi?"
+elite_challenge_toc_bambi_long,Quest,Quest Info,,,"Seek out the [DECEA3]Forest Prince[-], the ultimate compound bow.\n\nWas this the bow that killed Bambi?"
 elite_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
