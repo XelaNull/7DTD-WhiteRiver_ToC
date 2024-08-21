@@ -25,8 +25,8 @@
 				<property name="phase" value="3"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
-			<action type="SpawnEnemy" id="animalBear" value="3" phase="4"/>
-			<objective type="EntityKill" id="animalBear" value="3" phase="4"/>
+			<action type="SpawnEnemy" id="animalBear" value="1" phase="4"/>
+			<objective type="EntityKill" id="animalBear" value="1" phase="4"/>
 			<requirement type="Quests.Requirements.Holding" id="meleeWpnKnucklesT1IronKnuckles" phase="4"/>
 			<reward type="Item" id="initiateschemitem_toc_claws_name" value="1"/>
 			<reward type="Item" id="questitem_toc_declaration_name" value="1"/>

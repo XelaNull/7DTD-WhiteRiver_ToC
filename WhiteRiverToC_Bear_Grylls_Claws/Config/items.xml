@@ -139,7 +139,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
-			<property name="Unlocks" value="vetitem_toc_claws_name"/>
+			<property name="Unlocks" value="item_toc_claws_name"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_claws_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
@@ -148,7 +148,7 @@
 		<item name="item_toc_claws_name">
 			<property name="Extends" value="meleeWpnKnucklesT3SteelKnuckles"/>
 			<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill"/>
-			<property name="DescriptionKey" value="vetitem_toc_claws_description"/>
+			<property name="DescriptionKey" value="item_toc_claws_description"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
 			<property name="CustomIconTint" value="0000ff"/>
 			<property name="UnlockedBy" value="schemitem_toc_claws_name"/>

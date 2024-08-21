@@ -65,5 +65,5 @@ citizen_challenge_toc_leon_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
 
 veteran_challenge_toc_leon_name,Quest,Quest Info,,,"Quest for Leon's SMG"
 veteran_challenge_toc_leon_short,Quest,Quest Info,,,"Help Leon with the next generation of SMG."
-veteran_challenge_toc_leon_long,Quest,Quest Info,,,"Leon is back at it. This time he is guaranteed to suceed with his second generation SMG. [DECEA3]Help Leon repair his SMG[-] and you will obtain one to keep."
+veteran_challenge_toc_leon_long,Quest,Quest Info,,,"Leon is back at it. This time he is guaranteed to succeed with his second generation SMG. [DECEA3]Help Leon repair his SMG[-] and you will obtain one to keep."
 veteran_challenge_toc_leon_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,  

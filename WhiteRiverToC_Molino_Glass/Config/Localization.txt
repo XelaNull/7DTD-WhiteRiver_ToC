@@ -48,7 +48,7 @@ questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelper,items,Item,,,"Eli
 questitem_elitecoin_glassNonFuzzyBulletproofBlockVariantHelperDesc,items,Item,,,"A symbolic coin to indicate that you have turned in your White River tools of citizenship elite citizen card to start the Molino bulletproof glass quest.",,Eine symbolische Münze die anzeigt dass Sie Ihre elite-Bürgerkarte "White River tools of citizenship" abgegeben haben um die quest "Molino bulletproof glass" zu starten,,,,,,,,,,,,
 veteran_challenge_toc_molino_name,Quest,Quest Info,,,"Quest for Molino Bulletproof Glass"
 veteran_challenge_toc_molino_short,Quest,Quest Info,,,"Obtain some bulletproof glass blocks."
-veteran_challenge_toc_molino_long,Quest,Quest Info,,,"[DECEA3]Obtain bulletproof glass blocks[-]. Just some, though. And only after you provide the communuity with a large stack of regular glass blocks."
+veteran_challenge_toc_molino_long,Quest,Quest Info,,,"[DECEA3]Obtain bulletproof glass blocks[-]. Just some, though. And only after you provide the community with a large stack of regular glass blocks."
 veteran_challenge_toc_molino_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,  
 
 elite_challenge_toc_molino_name,Quest,Quest Info,,,"Quest for Molino Bulletproof Glass"
