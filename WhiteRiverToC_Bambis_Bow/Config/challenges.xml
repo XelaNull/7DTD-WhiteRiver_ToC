@@ -1,11 +1,12 @@
 <config>
         <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
-            <challenge name="challengeCitizen13" title_key="citizen_challenge_toc_bambi_name" icon="citizen_challenge_toc_bambi_long" group="ToCCitizen1"
-                short_description_key="citizen_challenge_toc_bambi_short" description_key="challengeKillZombiesDesc"
+            <challenge name="challengeCitizen13" title_key="citizen_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1"
+                short_description_key="citizen_challenge_toc_bambi_short" description_key="citizen_challenge_toc_bambi_long"
                 reward_text_key="citizen_challenge_toc_bambi_reward" reward_event="challenge_reward_default">
                 <objective type="Craft" item="questitem_toc_bambi_name"/>
-            </challenge>
-        </insertAfter>
+            </challenge> 
+        </insertAfter>  
+
 
         <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
             <challenge name="challengeVeteran14" title_key="veteran_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCVeteran1"
