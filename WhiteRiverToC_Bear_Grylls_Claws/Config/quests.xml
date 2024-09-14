@@ -14,20 +14,28 @@
 			<property name="group_name_key" value="initiatequest_toc_claws_group"/>
 			<property name="shareable" value="false"/>
 			<property name="reward_choices_count" value="1"/>
+			<property name="quest_type" value="special"/>
+
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
 			<objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1"/>
-			<objective type="RandomGoto" value="500-1000" phase="2">
-				<property name="completion_distance" value="50"/>
+
+			<objective type="RandomGotoNPC" phase="2">
+				<property name="completion_distance" value="20"/>
+				<property name="distance" value="100-500"/>
 				<property name="nav_object" value="quest"/>
+				<property name="biome_filter_type" value="SameBiome"/>
 			</objective>
+			
 			<objective type="RallyPoint">
 				<property name="start_mode" value="Create"/>
 				<property name="phase" value="3"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
+			
 			<action type="SpawnEnemy" id="animalBear" value="1" phase="4"/>
 			<objective type="EntityKill" id="animalBear" value="1" phase="4"/>
 			<requirement type="Quests.Requirements.Holding" id="meleeWpnKnucklesT1IronKnuckles" phase="4"/>
+			
 			<reward type="Item" id="initiateschemitem_toc_claws_name" value="1"/>
 			<reward type="Item" id="questitem_toc_declaration_name" value="1"/>
 			<reward type="Item" id="questitem_initiate_completion_ticket" value="1"/>
@@ -51,7 +59,7 @@
 			<property name="reward_choices_count" value="1"/>
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
 			<objective type="FetchKeep" id="resourceForgedSteel" value="100" phase="1"/>
-			<objective type="RandomGoto" value="500-1000" phase="2">
+			<objective type="RandomGotoNPC" value="500-1000" phase="2">
 				<property name="completion_distance" value="50"/>
 				<property name="nav_object" value="quest"/>
 			</objective>
