@@ -22,6 +22,7 @@
 			<property name="group_name_key" value="quest_toc_amelia_group"/>
 			<property name="shareable" value="false"/>
 			<reward type="Quest" id="Quest_For_Amelia_Earharts_Gyrocopter"/>
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>			
 			<reward type="Item" id="questitem_vetcoin_amelia" count="1"/>
 		</quest>
 		<quest id="Quest_For_Amelia_Earharts_Gyrocopter">
@@ -195,6 +196,8 @@
 			<property name="group_name_key" value="quest_toc_amelia_group"/>
 			<property name="shareable" value="false"/>
 			<reward type="Item" id="item_toc_amelia_schem_name" value="1"/>
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>			
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>			
 			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="Exp" value="1500"/>
 			<reward type="SkillPoints" value="1"/>

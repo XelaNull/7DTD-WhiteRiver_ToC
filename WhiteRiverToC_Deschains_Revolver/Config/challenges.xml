@@ -1,0 +1,15 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen2']">
+            <challenge name="challengeCitizen24" title_key="citizen_challenge_toc_deschain_name" icon="ui_game_symbol_pistol" group="ToCCitizen2"
+                short_description_key="citizen_challenge_toc_deschain_short" description_key="citizen_challenge_toc_deschain_long"
+                reward_text_key="citizen_challenge_toc_deschain_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="questitem_toc_desch_name"/>
+            </challenge>
+        </insertAfter>        
+<!--
+citizen_challenge_toc_deschain_name,Quest,Quest Info,,,"Quest for Deschain's Revoler"
+citizen_challenge_toc_deschain_short,Quest,Quest Info,,,"Find 8 books, Craft 19 Doors, obtain a lightning fast revolver."
+citizen_challenge_toc_deschain_long,Quest,Quest Info,,,"[DECEA3]Collect all 8 books[-] of the Dark Tower Series and [DECEA3]craft 19 doors[-] for the Tower.\n\nIn exchange, [DECEA3]receive Roland Deschain's Revolver[-] and [DECEA3]schematics[-] to make matching [DECEA3]gold[-] and [DECEA3]silver bullets[-]."
+citizen_challenge_toc_deschain_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->            
+</config>

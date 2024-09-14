@@ -1,22 +1,22 @@
 <config>
 	<append xpath="/items">
-		<item name="questitem_coin_jason">
+		<item name="initiatequestitem_coin_jason">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Tags" value="ToC_coin"/>
 		</item>
-		<item name="questitem_toc_jason_name">
-			<property name="DescriptionKey" value="questitem_toc_jason_description"/>
+		<item name="initiatequestitem_toc_jason_name">
+			<property name="DescriptionKey" value="initiatequestitem_toc_jason_description"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="QuestGiven" value="+Quest For Jason's Machete Start"/>
+				<property name="QuestGiven" value="+Initiate Quest For Jason's Machete Start"/>
 			</property>
-		</item>
-		<item name="questwrit_toc_jason_name">
-			<property name="DescriptionKey" value="questwrit_toc_jason_description"/>
+		</item>		
+		<item name="initiatequestwrit_toc_jason_name">
+			<property name="DescriptionKey" value="initiatequestwrit_toc_jason_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
@@ -30,10 +30,10 @@
 				<property name="UseAnimation" value="false"/>
 			</property>
 		</item>
-		<item name="item_toc_jason_name">
+		<item name="initiateitem_toc_jason_name">
 			<!-- T3 Blades -->
 			<property name="Extends" value="meleeWpnBladeT3Machete"/>
-			<property name="DescriptionKey" value="item_toc_jason_description"/>
+			<property name="DescriptionKey" value="initiateitem_toc_jason_description"/>
 			<property name="Tags" value="machete,melee,grunting,longShaft,light,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="CustomIcon" value="meleeWpnBladeT3Machete"/>
@@ -50,7 +50,7 @@
 			<property name="Group" value="Ammo/Weapons"/>
 			<property name="RepairExpMultiplier" value="6.5"/>
 			<property name="ShowQuality" value="true"/>
-			<effect_group name="item_toc_jason_name">
+			<effect_group name="initiateitem_toc_jason_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="25" tags="perkDeepCuts"/>
 				<!-- meleeToolKnifeMachete -->
 				<passive_effect name="BlockDamage" operation="base_set" value="23" tags="perkDeepCuts"/>

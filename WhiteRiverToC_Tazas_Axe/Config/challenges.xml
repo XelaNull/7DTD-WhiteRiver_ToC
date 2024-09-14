@@ -1,0 +1,49 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCInitiate1']">
+            <challenge name="challengeInitiate1" title_key="initiate_challenge_toc_initiates_axe_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCInitiate1"
+                short_description_key="initiate_challenge_toc_initiates_axe_short" description_key="initiate_challenge_toc_initiates_axe_long"
+                prerequisite_hint="initiate_challenge_toc_initiates_axe_Hint1" 
+                reward_text_key="initiate_challenge_toc_initiates_axe_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="initiatequestitem_toc_initiates_axe_name"/> <!-- hint="initiate_challenge_toc_initiates_axe_Hint2" -->
+           		<!-- <objective type="QuestComplete" quest_tag="initiate_axe_complete" quest_text_key="initiate_challenge_quest_complete"/> -->
+                <!-- <objective type="Harvest" held="meleeToolRepairT0TazasStoneAxeInitiate" required_held="true" item="resourceWood" count="10" override_tracker_index="quest_wood_trees" track_distance="20"/> -->
+		        <!--<objective type="KillByTag" held="meleeToolRepairT0TazasStoneAxeInitiate" required_held="true" entity_tags="zombie" target_name_key="xuiZombies" count="10"/>-->
+            </challenge>
+        </insertAfter>
+
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
+            <challenge name="challengeCitizen11" title_key="citizen_challenge_toc_taza_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCCitizen1"
+                short_description_key="citizen_challenge_toc_taza_short" description_key="citizen_challenge_toc_taza_long"
+                reward_text_key="citizen_challenge_toc_taza_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="questitem_toc_taza_name"/>
+            </challenge>
+        </insertAfter>
+
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+            <challenge name="challengeVeteran11" title_key="veteran_challenge_toc_taza_name" icon="ui_game_symbol_challenge_basics_stone_axe_harvest" group="ToCVeteran1"
+                short_description_key="veteran_challenge_toc_taza_short" description_key="veteran_challenge_toc_taza_long"
+                reward_text_key="veteran_challenge_toc_taza_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="vetquestitem_toc_taza_name"/>
+            </challenge>
+        </insertAfter>               
+<!--
+initiate_challenge_toc_initiates_axe_name,Quest,Quest Info,,,"Quest for Initiate's Axe"
+initiate_challenge_toc_initiates_axe_short,Quest,Quest Info,,,"The first tool of your citizenry."
+initiate_challenge_toc_initiates_axe_long,Quest,Quest Info,,,"[DECEA3]Gather[-] an amount of small stone.\n\n[DECEA3]Craft[-] a handful of stone axes.\n\nIn exchange for your hard work you'll [DECEA3]receive[-] an Initiate Taza axe, which is a replica of the famous Taza Axe.\n\nA solid axe will become the primary [DECEA3]tool of your citizenship[-]."
+initiate_challenge_toc_initiates_axe_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+initiate_challenge_toc_initiates_axe_Hint1,Challenges,Challenge,,,[00FF00]Craft[-] [FFB400]a +Declaration of Citizenship[-]
+initiate_challenge_toc_initiates_axe_Hint1_alt,Challenges,Challenge,,,[00FF00]Craft[-] [FFB400]a +Declaration of Citizenship[-]
+initiate_challenge_toc_initiates_axe_Hint2,Challenges,Challenge,,,[00FF00]Press [-][FFB400][action:local:Primary] to swing the Initiate axe while aiming at zombies.[-]
+initiate_challenge_toc_initiates_axe_Hint2_alt,Challenges,Challenge,,,[00FF00]Press [-][FFB400][action:local:Primary] to swing the Initiate axe while pointing it towards zombies.[-]
+
+citizen_challenge_toc_taza_name,Quest,Quest Info,,,"Quest for fabled Taza's Axe"
+citizen_challenge_toc_taza_short,Quest,Quest Info,,,"Help your community, and obtain a Taza's axe."
+citizen_challenge_toc_taza_long,Quest,Quest Info,,,"[DECEA3]Gather[-] an amount of small stone.\n\n[DECEA3]Craft[-] a handful of stone axes.\n\nIn exchange for your hard work you'll [DECEA3]receive[-] a fabled Taza axe, which is a replica of the famous Taza Axe.\n\nA solid axe will become the primary [DECEA3]tool of your citizenship[-]."
+citizen_challenge_toc_taza_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+veteran_challenge_toc_taza_name,Quest,Quest Info,,,"Quest for fabled Taza's Axe"
+veteran_challenge_toc_taza_short,Quest,Quest Info,,,"Show substantial support and obtain the best quality Taza's axe."
+veteran_challenge_toc_taza_long,Quest,Quest Info,,,"[DECEA3]Gather[-] an amount of small stone.\n\n[DECEA3]Craft[-] a handful of stone axes.\n\nIn exchange for your hard work you'll [DECEA3]receive[-] the fabled Taza axe.\n\nThis famous axe will become the primary [DECEA3]tool of your citizenship[-]."
+veteran_challenge_toc_taza_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->
+</config>

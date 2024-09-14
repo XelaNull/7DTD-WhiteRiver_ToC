@@ -1,0 +1,15 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+            <challenge name="challengeVeteran24" title_key="veteran_challenge_toc_gupta_name" icon="ui_game_symbol_healing_factor" group="ToCVeteran2"
+                short_description_key="veteran_challenge_toc_gupta_short" description_key="veteran_challenge_toc_gupta_long"
+                reward_text_key="veteran_challenge_toc_gupta_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="questitem_toc_gupta_name"/>
+            </challenge>
+        </insertAfter>     
+<!--
+veteran_challenge_toc_gupta_name,Quest,Quest Info,,,"Quest for Gupta's Bandages"
+veteran_challenge_toc_gupta_short,Quest,Quest Info,,,"Craft heal-over-time bandages."
+veteran_challenge_toc_gupta_long,Quest,Quest Info,,,"[DECEA3]Obtain medical supplies[-] for the community and be rewarded with the Doctor's own [DECEA3]specially formulate bandage and first aid kit[-].\n\nGuaranteed to provide superior healing for those moments where you really need it."
+veteran_challenge_toc_gupta_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,    
+-->                            
+</config>

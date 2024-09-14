@@ -1,0 +1,15 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+            <challenge name="challengeVeteran25" title_key="veteran_challenge_toc_amelia_name" icon="ui_game_symbol_wind" group="ToCVeteran2"
+                short_description_key="veteran_challenge_toc_amelia_short" description_key="veteran_challenge_toc_amelia_long"
+                reward_text_key="veteran_challenge_toc_amelia_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="questitem_toc_amelia1_name"/>
+            </challenge> 
+        </insertAfter>   
+<!--
+veteran_challenge_toc_amelia_name,Quest,Quest Info,,,"Quest for Amelia Earhardt's Lost Plans"
+veteran_challenge_toc_amelia_short,Quest,Quest Info,,,"Discover what happened to Amelia Earhart."
+veteran_challenge_toc_amelia_long,Quest,Quest Info,,,"[DECEA3]Go on a grand adventure[-] and [DECEA3]discover the truth[-] of what happened to Amelia Earhart, and [DECEA3]what she was working on[-] in her final days."
+veteran_challenge_toc_amelia_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->
+</config>

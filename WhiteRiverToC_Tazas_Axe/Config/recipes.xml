@@ -1,6 +1,15 @@
 <config>
 	<append xpath="/recipes">
 		<!-- The quest and goal item to craft for reward for: Taza's Axe -->
+		<recipe name="initiatequestitem_toc_initiates_axe_name" count="1" craft_time="1" craft_exp_gain="0">
+			<ingredient name="questitem_toc_declaration_name" count="1"/>
+		</recipe>
+		<recipe name="initiatequestwrit_toc_initiates_axe_name" count="1" craft_time="90" craft_exp_gain="10000">
+			<ingredient name="resourceRockSmall" count="200"/>
+			<ingredient name="meleeToolRepairT0StoneAxe" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="questitem_initiatecoin_initiates_axe" count="1"/>
+		</recipe>
 		<recipe name="questitem_toc_taza_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>

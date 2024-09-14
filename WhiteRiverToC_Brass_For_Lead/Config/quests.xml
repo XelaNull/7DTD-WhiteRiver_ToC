@@ -28,7 +28,8 @@
 			<reward type="Exp" value="1000"/>
 			<reward type="Item" id="casinoCoin" value="560"/>
 			<reward type="Item" id="resourceScrapBrass" value="500"/>
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
+			<reward type="Item" id="questitem_toc_declaration_name" value="1"/>
+			<reward type="Item" id="questitem_initiate_completion_ticket" value="1"/>
 			<!-- This makes the quest repeatable -->
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
 			<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="1"/>

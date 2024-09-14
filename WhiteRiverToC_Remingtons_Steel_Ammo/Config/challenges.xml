@@ -1,0 +1,15 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+            <challenge name="challengeElite3" title_key="elite_challenge_toc_remington_name" icon="ui_game_symbol_pistol" group="ToCElite1"
+                short_description_key="elite_challenge_toc_remington_short" description_key="elite_challenge_toc_remington_long"
+                reward_text_key="elite_challenge_toc_remington_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="elitequestitem_toc_remington_name"/>
+            </challenge>
+        </insertAfter>           
+<!--
+elite_challenge_toc_remington_name,Quest,Quest Info,,,"Quest for Remington's Steel Ammo"
+elite_challenge_toc_remington_short,Quest,Quest Info,,,"Discover how to craft steel ammo."
+elite_challenge_toc_remington_long,Quest,Quest Info,,,"[DECEA3]Discover how to craft[-] a kind of ammunition that has a harder shell, damages your rifle durability faster, but causes more damage to zombies in your sights. [DECEA3]Remington Steel Ammunition[-]."
+elite_challenge_toc_remington_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->                 
+</config>

@@ -1,19 +1,18 @@
-<configs>
+<config>
 	<append xpath="/blocks">
-
 		<block name="questblock_toc_randomcrate_name">
 			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="CustomIconTint" value="ffffb3"/>
 			<property name="Extends" value="cntShippingCrateHero"/>
-			<property name="DowngradeBlock" value="+Random Elite Citizen Crate"/>
-			<property name="FilterTags" value="floot"/>
+			<property name="DowngradeBlock" value="Random_Elite_Citizen_Crate"/>
+			<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
 		</block>
-		<block name="+Random Elite Citizen Crate">
+		<block name="Random_Elite_Citizen_Crate">
 			<property name="CustomIcon" value="cntCardboardBox"/>
 			<property name="CustomIconTint" value="333333"/>
 			<property name="Extends" value="cntGarageStorage"/>
 			<property name="LootList" value="WhiteRiverToCRequiredRandom"/>
 		</block>
 	</append>
-</configs>
+</config>

@@ -1,0 +1,42 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCCitizen1']">
+            <challenge name="challengeCitizen13" title_key="citizen_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCCitizen1"
+                short_description_key="citizen_challenge_toc_bambi_short" description_key="citizen_challenge_toc_bambi_long"
+                reward_text_key="citizen_challenge_toc_bambi_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="questitem_toc_bambi_name"/>
+            </challenge> 
+        </insertAfter>  
+
+
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran1']">
+            <challenge name="challengeVeteran14" title_key="veteran_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCVeteran1"
+                short_description_key="veteran_challenge_toc_bambi_short" description_key="veteran_challenge_toc_bambi_long"
+                reward_text_key="veteran_challenge_toc_bambi_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="vetquestitem_toc_bambi_name"/>
+            </challenge>
+        </insertAfter>     
+        
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+            <challenge name="challengeElite5" title_key="elite_challenge_toc_bambi_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCElite1"
+                short_description_key="elite_challenge_toc_bambi_short" description_key="elite_challenge_toc_bambi_long"
+                reward_text_key="elite_challenge_toc_bambi_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="elitequestitem_toc_bambi_name"/>
+            </challenge>
+        </insertAfter>    
+<!--
+citizen_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"
+citizen_challenge_toc_bambi_short,Quest,Quest Info,,,"Help your community, and obtain a compound bow."
+citizen_challenge_toc_bambi_long,Quest,Quest Info,,,"[DECEA3]Obtain some bow parts[-] for the Trader and [DECEA3]obtain a quality compound bow[-] for your efforts.\n\nThis will make a fine addition to your [DECEA3]t[-]ools [DECEA3]o[-]f [DECEA3]c[-]itizenship."
+citizen_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+veteran_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"
+veteran_challenge_toc_bambi_short,Quest,Quest Info,,,"Obtain a better quality Bambi's Compound bow."
+veteran_challenge_toc_bambi_long,Quest,Quest Info,,,"[DECEA3]Obtain some compound bows[-] for the Trader and [DECEA3]obtain a high-quality compound bow[-] in exchange for your efforts.\n\nThis will make a top-shelf addition to your [DECEA3]t[-]ools [DECEA3]o[-]f [DECEA3]c[-]itizenship.""
+veteran_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+elite_challenge_toc_bambi_name,Quest,Quest Info,,,"Quest for Bambi's Bow"
+elite_challenge_toc_bambi_short,Quest,Quest Info,,,"Obtain a top-tier compound bow."
+elite_challenge_toc_bambi_long,Quest,Quest Info,,,"Seek out the [DECEA3]Forest Price[-], the ultimate compound bow.\n\nWas this the bow that killed Bambi?"
+elite_challenge_toc_bambi_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->
+</config>
