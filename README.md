@@ -16,7 +16,7 @@ This modlet collection extends the new player White River citizenship quest line
 
 **This modlet pack is XML XPath ONLY and only needs to be installed on the server or player hosting the game! Other players do not need to install this modlet pack locally.**
 
-The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship item. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may start this quest again as a Tier 1 Trader quest, and also can randomly find a +White River Citizenship Card on zombie loot bags.
+The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship item. This allows them to start working through proving their worth as a possible citizen, through performing quests for White River. This earns the player a +White River Citizenship Card which opens up another tier of quests to complete. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may start again through another Declaration of Citizenship.
 
 ### Citizenship is offered in four-tiers:
 
