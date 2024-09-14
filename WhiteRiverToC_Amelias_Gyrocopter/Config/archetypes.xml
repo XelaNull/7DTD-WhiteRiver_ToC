@@ -1,4 +1,5 @@
 <config>
+	<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
 	<append xpath="/archetypes">
 		<archetype name="ToCWendigo" male="false" hair_color="4,2,2" eye_color="34,17,7" skin_color="177,251,242" type="Zombie" stance="Like" voice_set="trader">
 			<base_mesh_parts>
@@ -36,7 +37,7 @@
 					<texture name="female_feet" color="skin"/>
 				</part>
 			</base_mesh_parts>
-			<preview_mesh_parts></preview_mesh_parts>
+			<preview_mesh_parts/>
 			<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 				<gene name="neckUp_Down" value="0"/>
 				<gene name="neckLeft_Right" value="0"/>

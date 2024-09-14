@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="WhiteRiverToolsofCitizenship_RemingtonsSteelAmmo" />
-		<DisplayName value="White River Tools of Citizenship - Remington's Steel Ammo" />		
-		<Description value="Help the community stock up on 7.62 and 9mm ammo and learn the secret to creating steel ammo." />
-		<Author value="Shouden Kalferas, Based on Khaine's Steel Ammo" />
-		<Version value="1.0.1.2" />	
-		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a192/" />
+	<Name value="WhiteRiverToC_Remingtons_Steel_Ammo"/>
+	<DisplayName value="White River Tools of Citizenship - Remington's Steel Ammo"/>
+	<Description value="Help the community stock up on 7.62 and 9mm ammo and learn the secret to creating steel ammo."/>
+	<Author value="ShoudenKalferas, Based on Khaine's Steel Ammo, 7DaystoDie.JP, PaLoALo, ArkAngel"/>
+	<Version value="1.0.1.0"/>
+	<Website value="https://github.com/XelaNull/7DTD-WhiteRiver_ToC"/>
 </xml>

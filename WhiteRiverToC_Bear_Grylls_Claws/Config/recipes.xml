@@ -1,33 +1,32 @@
-<configs>
+<config>
 	<append xpath="/recipes">
-	
-		<recipe name="questitem_toc_claws_name" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		<recipe name="initiatequestitem_toc_claws_name" count="1" craft_time="1" craft_exp_gain="0">
+			<ingredient name="questitem_toc_declaration_name" count="1"/>
 		</recipe>
-    
-		<recipe name="item_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
+		<recipe name="initiateitem_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
 			<ingredient name="resourceForgedIron" count="12"/>
 			<ingredient name="resourceMechanicalParts" count="4"/>
 			<ingredient name="resourceLeather" count="2"/>
 			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
 			</effect_group>
 		</recipe>
-		
-    <recipe name="vetquestitem_toc_claws_name" count="1" craft_time = "1" craft_exp_gain="0" >
-      <ingredient name="questitem_toc_veterancard_name" count="1"/>
-    </recipe>
-	
-		<recipe name="vetitem_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
+		<recipe name="questitem_toc_claws_name" count="1" craft_time="1" craft_exp_gain="0">
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="item_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
 			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="5"/>
 			<ingredient name="resourceForgedSteel" count="10"/>
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnKnucklesT3SteelKnucklesParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnKnucklesT3SteelKnucklesParts,resourceForgedSteel,resourceLeather,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
 			</effect_group>
 		</recipe>
-	
-  </append>
-</configs>
+	</append>
+</config>

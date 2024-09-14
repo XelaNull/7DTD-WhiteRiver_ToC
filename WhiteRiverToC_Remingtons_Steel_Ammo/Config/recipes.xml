@@ -1,17 +1,15 @@
-<configs>
+<config>
 	<append xpath="/recipes">
-
-		<recipe name="elitequestitem_toc_remington_name" count="1" craft_time = "1" craft_exp_gain="0" >
+		<recipe name="elitequestitem_toc_remington_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_elitecard_name" count="1"/>
 		</recipe>
-		<recipe name="elitequestwrit_toc_remington_name" count="1" craft_time = "300" craft_exp_gain="20000" >
+		<recipe name="elitequestwrit_toc_remington_name" count="1" craft_time="300" craft_exp_gain="20000">
 			<ingredient name="ammo762mmBulletBall" count="1000"/>
 			<ingredient name="ammo44MagnumBulletBall" count="1000"/>
 			<ingredient name="ammo9mmBulletBall" count="1000"/>
 			<ingredient name="resourcePaper" count="1"/>
 			<ingredient name="questitem_elitecoin_remington" count="1"/>
 		</recipe>
-
 		<recipe name="resourceBulletCasingSteelRemington" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
 			<ingredient name="unit_iron" count="4"/>
 			<ingredient name="unit_clay" count="2"/>
@@ -49,7 +47,8 @@
 			<ingredient name="resourceGunPowder" count="160"/>
 			<ingredient name="resourceBulletCasingSteelRemington" count="80"/>
 		</recipe>
-		<recipe name="remingtonTurret" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable"> <!-- trap -->
+		<recipe name="remingtonTurret" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+			<!-- trap -->
 			<ingredient name="motionsensor" count="1"/>
 			<ingredient name="resourceForgedSteel" count="150"/>
 			<ingredient name="gunRifleT1HuntingRifleParts" count="10"/>
@@ -60,4 +59,4 @@
 			</effect_group>
 		</recipe>
 	</append>
-</configs>
+</config>

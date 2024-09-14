@@ -1,16 +1,13 @@
-<configs>
+<config>
 	<append xpath="/lootcontainers/lootgroup[@name='randomEliteQuests']">
 		<item name="elitequestitem_toc_rickdanger_name" count="1"/>
 	</append>
 	<append xpath="/lootcontainers">
-
 		<lootgroup name="groupWhiteRiverTOCRickDangerVet" loot_quality_template="questT3QualTemplate">
 			<item name="vetitemreward_toc_rickdanger_name"/>
 		</lootgroup>
-
 		<lootgroup name="groupWhiteRiverTOCRickDangerElite" loot_quality_template="questT3QualTemplate">
 			<item name="eliteitemreward_toc_rickdanger_name"/>
 		</lootgroup>
-
 	</append>
-</configs>
+</config>

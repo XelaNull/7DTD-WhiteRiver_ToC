@@ -1,44 +1,41 @@
 <config>
-	<append xpath="/quests" >
+	<append xpath="/quests">
+		<quest id="+Quest For White River Brass">
+			<property name="name_key" value="quest_toc_brass_name"/>
+			<property name="subtitle_key" value="quest_toc_brass_subtitle"/>
+			<property name="description_key" value="quest_toc_brass_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="quest_toc_brass_offer"/>
+			<property name="statement_key" value="quest_toc_brass_statement"/>
+			<property name="response_key" value="questdialog_toc_brass"/>
+			<property name="group_name_key" value="quest_toc_brass_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3"/>
+			<objective type="Fetch" id="resourceScrapLead" value="2500" phase="1"/>
 
-			<quest id="+Quest For White River Brass">
-				<property name="name_key" value="quest_toc_brass_name"/>
-				<property name="subtitle_key" value="quest_toc_brass_subtitle"/>
-				<property name="description_key" value="quest_toc_brass_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="quest_toc_brass_offer"/>
-				<property name="statement_key" value="quest_toc_brass_statement"/>
-				<property name="response_key" value="questdialog_toc_brass"/>
-				<property name="group_name_key" value="quest_toc_brass_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="3" />
-
-				<objective type="Fetch" id="resourceScrapLead" value="2500" phase="1" />
-				<objective type="Goto" value="5" phase="2" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="3"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="4" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="1000" />
-				<reward type="Item" id="casinoCoin" value="560"/>
-				<reward type="Item" id="resourceScrapBrass" value="500" />
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-
-				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-				<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-			</quest>
-
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="resourceScrapBrass" value="500"/>
+			<reward type="Item" id="questitem_toc_declaration_name" value="1"/>
+			<reward type="Item" id="questitem_initiate_completion_ticket" value="1"/>
+			<!-- This makes the quest repeatable -->
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestT1Books" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestNightVisionGoggles" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+		</quest>
 	</append>
 </config>

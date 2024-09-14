@@ -1,0 +1,12 @@
+<Pavlichenko>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']">
+		<display_entry item="questitem_toc_pav_rifle_name" unlock_level="61,68,76,84,92,100">
+		</display_entry>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRifles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="questitem_toc_pav_rifle_name"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="questitem_toc_pav_rifle_name"/>
+	</append>
+</Pavlichenko>
+
+

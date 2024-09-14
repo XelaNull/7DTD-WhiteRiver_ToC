@@ -1,22 +1,21 @@
 <config>
 	<append xpath="/quests">
-    <!-- Quest 1: Turn in 5 Marksman Rifles and obtain Trigger Group -->
-    <!-- Quest 1 Reward: Pavlichenkos Trigger Group -->
-    <!-- Quest 1 Reward: Pavlichenkos Barrel Quest -->
+		<!-- Quest 1: Turn in 5 Marksman Rifles and obtain Trigger Group -->
+		<!-- Quest 1 Reward: Pavlichenkos Trigger Group -->
+		<!-- Quest 1 Reward: Pavlichenkos Barrel Quest -->
 		<quest id="+Vet Quest For Pavlichenko Rifle Start">
 			<property name="name_key" value="vetquest_toc_pavlichenko_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pavlichenko_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pavlichenko_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquest_toc_pavlichenko_offer"/>
 			<property name="statement_key" value="vetquest_toc_pavlichenko_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pavlichenko"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
-			<property name="shareable" value="false" />
-
+			<property name="shareable" value="false"/>
 			<reward type="Quest" id="+Vet Quest For Pavlichenko Rifle"/>
 			<reward type="Item" id="questitem_vetcoin_pav" count="1"/>
 		</quest>
@@ -24,118 +23,107 @@
 			<property name="name_key" value="vetquest_toc_pavlichenko_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pavlichenko_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pavlichenko_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquest_toc_pavlichenko_offer"/>
 			<property name="statement_key" value="vetquest_toc_pavlichenko_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pavlichenko"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
-			<property name="shareable" value="false" />
-
-			<objective type="FetchKeep" id="gunRifleT2LeverActionRifle" value="5" phase="1" />
-			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-			<objective type="Craft" id="vetquestwrit_toc_pav_name" value="1" phase="2" />
-
-			<reward type="Exp" value="500" />
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="gunRifleT2LeverActionRifle" value="5" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="vetquestwrit_toc_pav_name" value="1" phase="2"/>
+			<reward type="Exp" value="500"/>
 		</quest>
-
-    <quest id="+Reward of Pavlichenko Trigger Group">
+		<quest id="+Reward of Pavlichenko Trigger Group">
 			<property name="name_key" value="vetquestreward_toc_pavlichenko_name"/>
 			<property name="subtitle_key" value="vetquestreward_toc_pavlichenko_subtitle"/>
 			<property name="description_key" value="vetquestreward_toc_pavlichenko_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquestreward_toc_pavlichenko_offer"/>
 			<property name="statement_key" value="vetquestreward_toc_pavlichenko_statement"/>
 			<property name="response_key" value="vetquestrewarddialog_toc_pavlichenko"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
-			<property name="shareable" value="false" />
-			<property name="completiontype" value="TurnIn" />
-			<property name="reward_choices_count" value="2" />
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="2"/>
 
-			<objective type="Goto" value="5" phase="1" />
 			<objective type="ReturnToNPC">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="return_to_trader" />
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
 			</objective>
-      <objective type="InteractWithNPC">
-        <property name="phase" value="3" />
-				<property name="nav_object" value="return_to_trader" />
-      </objective>
-
-			<reward type="Exp" value="1000" />
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
 			<reward type="Item" id="casinoCoin" value="360"/>
-
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-			<reward type="Item" id="questitem_toc_pav_trigger_name" value="1" />
-      <reward type="Item" id="vetquestitem_toc_pav_barrel_name" value="1" />
+			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>	
+			<!-- This makes the quest repeatable -->
+			<reward type="Item" id="questitem_toc_pav_trigger_name" value="1"/>
+			<reward type="Item" id="vetquestitem_toc_pav_barrel_name" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
-    </quest>
-
-
-
-    <!-- Quest 2: Dig up map_Pavlichenko_Barrel -->
-    <!-- Quest 2 Reward: Pavlichenkos Barrel -->
-    <!-- Quest 2 Reward: Pavlichenkos Stock Quest -->
-    <quest id="+Quest For Pavlichenko Barrel">
+		</quest>
+		<!-- Quest 2: Dig up map_Pavlichenko_Barrel -->
+		<!-- Quest 2 Reward: Pavlichenkos Barrel -->
+		<!-- Quest 2 Reward: Pavlichenkos Stock Quest -->
+		<quest id="+Quest For Pavlichenko Barrel">
 			<property name="name_key" value="vetquest_toc_pav_barrel_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pav_barrel_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pav_barrel_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquest_toc_pav_barrel_offer"/>
 			<property name="statement_key" value="vetquest_toc_pav_barrel_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pav_barrel"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
-			<property name="shareable" value="false" />
-
-      <reward type="Item" id="vetquestmap_toc_pav_barrel_name" value="1" />
-      <reward type="Exp" value="100" />
-    </quest>
-
+			<property name="shareable" value="false"/>
+			<reward type="Item" id="vetquestmap_toc_pav_barrel_name" value="1"/>
+			<reward type="Exp" value="100"/>
+		</quest>
 		<quest id="map_Pavlichenko_Barrel">
 			<property name="name_key" value="vetquest_toc_pav_barrelmap_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pav_barrelmap_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pav_barrelmap_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="treasure" />
-			<property name="difficulty" value="medium" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="difficulty" value="medium"/>
 			<property name="offer_key" value="vetquest_toc_pav_barrelmap_offer"/>
 			<property name="statement_key" value="vetquest_toc_pav_barrelmap_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pav_barrel"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
 			<property name="shareable" value="false"/>
-
 			<objective type="TreasureChest">
 				<property name="block" value="vetquestmap_toc_pav_map1_name"/>
 				<property name="distance" value="1500-3750"/>
 				<property name="default_radius" value="9"/>
-				<property name="nav_object" value="treasure" />
-				<property name="direct_nav_object" value="treasure_direct" />
-				<property name="blocks_per_reduction" value="10" />
-					<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
-				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="10"/>
+				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
-
+			<reward type="Item" id="questitem_toc_pav_barrel_name" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
 			<reward type="Item" id="vetquestitem_toc_pav_stock_name" value="1"/>
 			<reward type="Exp" value="500"/>
 		</quest>
-
-
-
 		<!-- Quest 3: Dig up Treasure of Pavlichenkos_Stock -->
 		<!-- Quest 3 Reward: Pavlichenko Stock -->
 		<!-- Quest 3 Reward: Assemble Pavlichenkos Rifle Quest -->
@@ -143,117 +131,156 @@
 			<property name="name_key" value="vetquest_toc_pav_stock_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pav_stock_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pav_stock_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquest_toc_pav_stock_offer"/>
 			<property name="statement_key" value="vetquest_toc_pav_stock_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pav_stock"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
 			<property name="shareable" value="false"/>
-
-			<reward type="Item" id="vetquestmap_toc_pav_stock_name" value="1" />
-			<reward type="Exp" value="100" />
+			<reward type="Item" id="vetquestmap_toc_pav_stock_name" value="1"/>
+			<reward type="Exp" value="100"/>
 		</quest>
-
 		<quest id="map_Pavlichenko_Stock">
 			<property name="name_key" value="vetquest_toc_pav_stockmap_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pav_stockmap_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pav_stockmap_description"/>
-			<property name="icon" value="ui_game_symbol_map" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="treasure" />
-			<property name="difficulty" value="medium" />
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="difficulty" value="medium"/>
 			<property name="offer_key" value="vetquest_toc_pav_stockmap_offer"/>
 			<property name="statement_key" value="vetquest_toc_pav_stockmap_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pav_stock"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
 			<property name="shareable" value="false"/>
-
 			<objective type="TreasureChest">
 				<property name="block" value="vetquestmap_toc_pav_map2_name"/>
 				<property name="distance" value="1500-2500"/>
 				<property name="default_radius" value="9"/>
-				<property name="nav_object" value="treasure" />
-				<property name="direct_nav_object" value="treasure_direct" />
-				<property name="blocks_per_reduction" value="10" />
-					<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
-				<property name="radius_reduction_sound" value="ui_radius_shrink" />
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="10"/>
+				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
-
-			<reward type="Item" id="vetquestitem_toc_pav_rifle_name" value="1"/>
+			<reward type="Item" id="vetquestitem_toc_pav_scope_name" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>			
+			<reward type="Item" id="questitem_toc_pav_stock_name" value="1"/>
 			<reward type="Exp" value="500"/>
 		</quest>
-
-
-		<!-- Quest 4: Assemble Pavlichenkos_Rifle -->
-		<!-- Quest 4 Reward: Pavlichenkos Rifle -->
-		<!-- Quest 4 Reward: Pavlichenkos_4x_Scope_Quest -->
-		<!-- Quest 4 Reward: Pavlichenkos_4x_Scope_Quest -->
-		<quest id="+Quest For Assembling Pavlichenko Rifle">
+		
+		<!-- Quest 4 Reward: Pavlichenkos_4x_Scope_Quest ? -->
+		<!-- Quest 4 Reward: Pavlichenkos_8x_Scope_Quest -->
+		<quest id="+Quest For Pavlichenko Scope">
+			<property name="name_key" value="vetquest_toc_pav_scope_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_scope_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_scope_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="vetquest_toc_pav_scope_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_scope_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_scope"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false"/>
+			<reward type="Item" id="vetquestmap_toc_pav_scope_name" value="1"/>
+			<reward type="Exp" value="100"/>
+		</quest>
+		<quest id="map_Pavlichenko_Scope">
+			<property name="name_key" value="vetquest_toc_pav_stockmap_name"/>
+			<property name="subtitle_key" value="vetquest_toc_pav_stockmap_subtitle"/>
+			<property name="description_key" value="vetquest_toc_pav_stockmap_description"/>
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="difficulty" value="medium"/>
+			<property name="offer_key" value="vetquest_toc_pav_stockmap_offer"/>
+			<property name="statement_key" value="vetquest_toc_pav_stockmap_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_pav_stock"/>
+			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="TreasureChest">
+				<property name="block" value="vetquestmap_toc_pav_map2_name"/>
+				<property name="distance" value="1500-2500"/>
+				<property name="default_radius" value="9"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="10"/>
+				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+			</objective>
+			<reward type="Item" id="vetquestitem_toc_pav_rifle_name" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
+			<reward type="Item" id="questitem_toc_pav_scope_name" value="1"/>
+			<reward type="Exp" value="500"/>
+		</quest>
+		
+		<!-- Quest 5: Assemble Pavlichenkos_Rifle -->
+		<!-- Quest 5 Reward: Pavlichenkos Rifle -->
+			<quest id="+Quest For Assembling Pavlichenko Rifle">
 			<property name="name_key" value="vetquest_toc_pav_assemble_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pav_assemble_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pav_assemble_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquest_toc_pav_assemble_offer"/>
 			<property name="statement_key" value="vetquest_toc_pav_assemble_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pav_assemble"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
-			<property name="shareable" value="false" />
-
-			<objective type="FetchKeep" id="questitem_toc_pav_trigger_name" value="1" phase="1" />
-			<objective type="FetchKeep" id="questitem_toc_pav_stock_name" value="1" phase="1" />
-			<objective type="FetchKeep" id="questitem_toc_pav_barrel_name" value="1" phase="1" />
-			<objective type="FetchKeep" id="gunRifleT1HuntingRifleParts" value="20" phase="1" />
-			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-			<objective type="Craft" id="vetquestwrit_toc_pav_rifle_name" value="1" phase="2" />
-
-			<reward type="Exp" value="1000" />
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="questitem_toc_pav_trigger_name" value="1" phase="1"/>
+			<objective type="FetchKeep" id="questitem_toc_pav_stock_name" value="1" phase="1"/>
+			<objective type="FetchKeep" id="questitem_toc_pav_barrel_name" value="1" phase="1"/>
+			<objective type="FetchKeep" id="questitem_toc_pav_scope_name" value="1" phase="1"/>
+			<objective type="FetchKeep" id="gunRifleT1HuntingRifleParts" value="20" phase="1"/>
+			<objective type="Craft" id="vetquestwrit_toc_pav_rifle_name" value="1" phase="2"/>
+			<reward type="Exp" value="1000"/>
 		</quest>
-
 		<quest id="+Reward of Pavlichenko Marksman Rifle">
 			<property name="name_key" value="vetquest_toc_pav_reward_name"/>
 			<property name="subtitle_key" value="vetquest_toc_pav_reward_subtitle"/>
 			<property name="description_key" value="vetquest_toc_pav_reward_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="true" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="easy" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
 			<property name="offer_key" value="vetquest_toc_pav_reward_offer"/>
 			<property name="statement_key" value="vetquest_toc_pav_reward_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_pav_reward"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
-			<property name="shareable" value="false" />
-			<property name="completiontype" value="TurnIn" />
-			<property name="reward_choices_count" value="3" />
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="3"/>
 
-			<objective type="Goto" value="5" phase="1" />
 			<objective type="ReturnToNPC">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="return_to_trader" />
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
 			</objective>
 			<objective type="InteractWithNPC">
-				<property name="phase" value="3" />
-				<property name="nav_object" value="return_to_trader" />
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
 			</objective>
-
-			<reward type="SkillPoints" value="1" />
-			<reward type="Exp" value="2000" />
+			<reward type="SkillPoints" value="1"/>
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>
+			<!-- Small Easter Egg For More Veteran->Elite tickets -->
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
+			<reward type="Exp" value="2000"/>
 			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
-
-			<reward type="LootItem" id="groupWhiteRiverTOCPavlichenko" value="1" />
+			<reward type="LootItem" id="groupWhiteRiverTOCPavlichenko" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 		</quest>
-
-  </append>
+	</append>
 </config>

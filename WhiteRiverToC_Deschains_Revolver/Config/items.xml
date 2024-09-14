@@ -1,17 +1,12 @@
-<configs>
+<config>
 	<append xpath="/items">
-
 		<item name="questitem_toc_desch_name">
 			<property name="DescriptionKey" value="questitem_toc_desch_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
-			<property name="Stacknumber" value="1"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="NoScrapping" value="true"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
-				<property name="Delay" value="0"/>
 			</property>
 			<property name="Group" value="Special Items"/>
 		</item>
@@ -20,49 +15,51 @@
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
-			<property name="Weight" value="0"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
-			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Deschain's Revolver"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-
-		<item name="itemreward_toc_desch_name"> <!-- T3 pistols -->
+		<item name="itemreward_toc_desch_name">
+			<!-- T3 pistols -->
 			<property name="DescriptionKey" value="itemreward_toc_desch_description"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,noSilencer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,canHaveCosmetic"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,44enforcer,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,rangerDamage,enforcerReload"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="CustomIcon" value="gunHandgunT2Magnum44"/>
 			<property name="CustomIconTint" value="b30000"/>
 			<property name="HoldType" value="44"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Magnums/44MagnumPrefab.prefab"/>
-			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="1"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Magnums/magnumPrefab.prefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="Weight" value="1"/>
 			<property name="RepairTools" value="resourceRepairKitDeschain"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="SoundJammed" value="weapon_jam"/>
 			<property name="Attachments" value="meleeToolFlashlight02"/>
-			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+			<property name="CrosshairOnAim" value="true"/>
+			<!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<!-- aimTest -->
 			<property name="Sound_Sight_In" value="revolver_sight_in"/>
 			<property name="Sound_Sight_Out" value="revolver_sight_out"/>
-			<property name="LightSource" value="lightSource"/> <!-- Start: Needed for the attachment flashlight -->
+			<property name="LightSource" value="lightSource"/>
+			<!-- Start: Needed for the attachment flashlight -->
 			<property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
-			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/> <!-- End: Needed for the attachment flashlight -->
+			<property name="AttachmentFlashlight" value="meleeToolFlashlight02"/>
+			<!-- End: Needed for the attachment flashlight -->
 			<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="ShowQuality" value="true"/>
-
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
-				<property name="Delay" value="0"/> <!-- obsolete if rounds per minute exists -->
+				<property name="Delay" value="0"/>
+				<!-- obsolete if rounds per minute exists -->
 				<property name="Magazine_items" value="crafteditem_toc_45lcsilver_name,crafteditem_toc_45lcgold_name"/>
 				<property name="Reload_time" value="-1"/>
 				<property name="Sound_start" value="44magnum_fire"/>
@@ -83,36 +80,39 @@
 				<property name="Zoom_max_out" value="55"/>
 				<property name="Zoom_max_in" value="55"/>
 			</property>
-
 			<effect_group name="itemreward_toc_desch_name">
 				<passive_effect name="MaxRange" operation="base_set" value="80" tags="perkGunslinger"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="35" tags="perkGunslinger"/>
-				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> <!-- random effective rng -->
-
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/>
+				<!-- random effective rng -->
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="1000" tags="perkGunslinger"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1200" tags="perkGunslinger"/>
-
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="0"/>-->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-
 				<passive_effect name="MagazineSize" operation="base_set" value="6" tags="perkGunslinger"/>
-				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/> <!-- 4s -->
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkGunslinger"/>
+				<!-- 4s -->
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkGunslinger"/> <!-- random EntityDmg -->
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.6" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/> <!-- random BlockDmg -->
-				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/> <!-- tier bonus -->
-
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.2" tags="perkGunslinger"/>
+				<!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.6" tier="2,6" tags="perkGunslinger"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkGunslinger"/>
+				<!-- random BlockDmg -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkGunslinger"/>
+				<!-- tier bonus -->
 				<!-- <passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/>  random DegMax -->
-				<passive_effect name="DegradationMax" operation="base_set" value="1"  tags="perkGunslinger"/>
-				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/> <!-- random APM -->
-				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkGunslinger"/> <!-- random MagazineSize -->
-				<passive_effect name="WeaponHandling" operation="perc_add" value="-.02,.12" tags="perkGunslinger"/> <!-- random WeaponHandling -->
-
+				<passive_effect name="DegradationMax" operation="base_set" value="1" tags="perkGunslinger"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/>
+				<!-- random APM -->
+				<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122" tags="perkGunslinger"/>
+				<!-- random MagazineSize -->
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.02,.12" tags="perkGunslinger"/>
+				<!-- random WeaponHandling -->
 				<!-- Lower how much the weapon spreads its bullets when running, walking, etc -->
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.3" tags="perkGunslinger"/>
 				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.3" tags="perkGunslinger"/>
@@ -120,24 +120,19 @@
 				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".5" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value=".6" tags="perkGunslinger"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value=".9" tags="perkGunslinger"/>
-
 				<!-- Lower the Vertical Kick -->
 				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".5" tags="perkGunslinger"/>
-
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.3" tags="perkGunslinger"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".15" tags="perkGunslinger"/>
-
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="3.2" tags="perkGunslinger"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".9" tags="perkGunslinger"/>
-
 				<!-- Set it to be super reliable.. it is crafted from Excalibur, afterall.. -->
 				<passive_effect name="DegradationMax" operation="base_set" value="10000,20000" tier="1,6" tags="perkGunslinger"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
 				<!-- <triggered_effect trigger="onSelfEquipStart" action="CVarLogValue" cvar="onSelfEquipStartMagnum"/> -->
 			</effect_group>
 		</item>
-
 		<item name="crafteditem_toc_45lcsilver_name">
 			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
@@ -156,7 +151,6 @@
 				</passive_effect>
 			</effect_group>
 		</item>
-
 		<item name="crafteditem_toc_45lcgold_name">
 			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>
 			<property name="Extends" value="ammo44MagnumBulletBall"/>
@@ -176,63 +170,60 @@
 				<display_value name="dDegradationPerUse" value=".3"/>
 			</effect_group>
 		</item>
-
-
+		<!-- Backwards Compatibility -->
+		<item name="crafteditem_toc_45lcsilver_schem_name">
+			<property name="DescriptionKey" value="crafteditem_toc_45lcsilver_desc"/>
+			<property name="Extends" value="ammo44MagnumBulletBall"/>
+			<property name="DisplayType" value="ammoBulletHP"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletHP"/>
+			<property name="CustomIconTint" value="c4cace"/>
+			<property name="EconomicValue" value="75"/>
+			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
+			<effect_group name="45LC Silver Bullet of Gilead" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="100" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1">
+					<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+				</passive_effect>
+			</effect_group>
+		</item>
+		<item name="crafteditem_toc_45lcgold_schem_name">
+			<property name="DescriptionKey" value="crafteditem_toc_45lcgold_desc"/>
+			<property name="Extends" value="ammo44MagnumBulletBall"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletAP"/>
+			<property name="CustomIconTint" value="d4af37"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+			<effect_group name="45LC Gold Bullet of Gilead" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="14" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger"/>
+				<display_value name="dDegradationPerUse" value=".3"/>
+			</effect_group>
+		</item>
+		<!-- End Backwards Compatibility -->
 		<item name="resourceRepairKitDeschain">
 			<property name="HoldType" value="45"/>
 			<property name="Tags" value="junk"/>
 			<property name="CustomIcon" value="resourceRepairKit"/>
-			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Msteel"/>
-			<property name="Stacknumber" value="25"/> <!-- STK resourceRepairKit -->
+			<property name="Stacknumber" value="25"/>
+			<!-- STK resourceRepairKit -->
 			<property name="EconomicValue" value="186"/>
 			<property name="RepairTime" value="3"/>
 			<property name="RepairAmount" value="32000"/>
 			<!--<property name="Group" value="Resources"/>-->
 		</item>
-
-		<item name="itemreward_toc_deschhat_name"> <!-- item name directly referenced in the code -->
-			<property name="DescriptionKey" value="itemreward_toc_deschhat_desc"/>
-			<property name="Tags" value="head,clothing,canHaveCosmetic"/>
-			<property name="CustomIcon" value="apparelCowboyHat"/>
-			<property name="CustomIconTint" value="624a2e"/>
-			<property name="DisplayType" value="armor"/>
-			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
-			<property name="Stacknumber" value="1"/>
-			<property name="Waterproof" value=".55"/>
-			<property name="Encumbrance" value=".01"/>
-			<property name="Material" value="Mleather"/>
-			<property name="DegradationBreaksAfter" value="false"/>
-			<property name="Weight" value="1"/> <!-- weight because loot only -->
-			<property name="FuelValue" value="16"/>
-			<property name="EconomicValue" value="420"/>
-			<property name="HoldType" value="45"/>
-			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="EquipSlot" value="Head"/>
-			<property name="DescriptionKey" value="apparelCowboyHatGroupDesc"/>
-			<property name="Group" value="Clothing"/>
-			<property class="UMA">
-				<property name="Mesh" value="gear_cowboyhat"/>
-				<property name="Overlay0" value="gear_cowboyhat"/>
-				<property name="Layer" value="2"/>
-				<property name="UISlot" value="Headgear"/>
-				<property name="Mask0" value="Head" param1="outer"/>
-				<property name="ShowAltHair" value="true"/>
-			</property>
-			<effect_group tiered="false">
-				<passive_effect name="ModSlots" operation="base_set" value="3"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="3.8,6.2"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="11.5,15.3"/>
-
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="6.6,9"/>
-				<display_value name="dStaminaChangeOT" value="0"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-2"/><display_value name="dNoiseMultiplier" value="-2"/>
-				<passive_effect name="BuffResistance" operation="base_add" value=".2,.4" tags="buffInfectionCatch,buffInjuryBleeding,buffInjuryStunned01"/><passive_effect name="BuffResistance" operation="base_add" value=".2" tags="buffInfectionCatch"/><passive_effect name="BuffResistance" operation="base_add" value=".1" tags="buffInjuryBleeding"/>
-			</effect_group>
-		</item>
-
+		
 		<item name="item_toc_desc_book14_name">
 			<property name="DescriptionKey" value="item_toc_desc_book14_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
@@ -242,7 +233,6 @@
 				<property name="QuestGiven" value="+Quest For Deschain's Revolver"/>
 			</property>
 		</item>
-
 		<item name="item_toc_desc_book1_name">
 			<property name="DescriptionKey" value="item_toc_desc_book1_desc"/>
 			<property name="Extends" value="challengeQuestMaster"/>
@@ -317,5 +307,7 @@
 			</property>
 		</item>
 	</append>
-
-</configs>
+	<!-- Backwards Compatibility -->
+	<append xpath="/items/item[@name='itemreward_toc_desch_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,crafteditem_toc_45lcsilver_schem_name,crafteditem_toc_45lcgold_schem_name</append>
+	<!-- End Backwards Compatibility -->
+</config>

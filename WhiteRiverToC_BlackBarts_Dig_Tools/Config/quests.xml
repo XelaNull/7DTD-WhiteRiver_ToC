@@ -4,144 +4,127 @@
 			<property name="name_key" value="vetquest_toc_blackb_name"/>
 			<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
 			<property name="description_key" value="vetquest_toc_blackb_description"/>
-			<property name="icon" value="ui_game_symbol_map_trader" />
-			<property name="repeatable" value="false" />
-			<property name="category_key" value="quest" />
-			<property name="difficulty" value="medium" />
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
 			<property name="offer_key" value="vetquest_toc_blackb_offer"/>
 			<property name="statement_key" value="vetquest_toc_blackb_statement"/>
 			<property name="response_key" value="vetquestdialog_toc_blackb"/>
 			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
-			<property name="shareable" value="false" />
-
+			<property name="shareable" value="false"/>
 			<reward type="Quest" id="+Quest For Black Bart's Flaming Dig Tools"/>
 			<reward type="Item" id="questitem_vetcoin_blackb" count="1"/>
 		</quest>
-			<quest id="+Quest For Black Bart's Flaming Dig Tools">
-				<property name="name_key" value="vetquest_toc_blackb_name"/>
-				<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
-				<property name="description_key" value="vetquest_toc_blackb_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="medium" />
-				<property name="offer_key" value="vetquest_toc_blackb_offer"/>
-				<property name="statement_key" value="vetquest_toc_blackb_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_blackb"/>
-				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
-				<property name="shareable" value="false" />
+		<quest id="+Quest For Black Bart's Flaming Dig Tools">
+			<property name="name_key" value="vetquest_toc_blackb_name"/>
+			<property name="subtitle_key" value="vetquest_toc_blackb_subtitle"/>
+			<property name="description_key" value="vetquest_toc_blackb_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
+			<property name="offer_key" value="vetquest_toc_blackb_offer"/>
+			<property name="statement_key" value="vetquest_toc_blackb_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_blackb"/>
+			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="resourceScrapIron" value="600" phase="1"/>
+			<objective type="FetchKeep" id="meleeToolShovelT1IronShovel" value="1" phase="1"/>
+			<objective type="FetchKeep" id="meleeToolPickT1IronPickaxe" value="1" phase="1"/>
+			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
+			<objective type="Craft" id="vetquestwrit_toc_blackb_name" value="1" phase="2"/>
+			<reward type="Exp" value="1500"/>
+		</quest>
+		<quest id="+Reward of Black Bart's Treasure Map">
+			<property name="name_key" value="vetquestreward_toc_blackb_name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_blackb_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_blackb_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="vetquestreward_toc_blackb_offer"/>
+			<property name="statement_key" value="vetquestreward_toc_blackb_statement"/>
+			<property name="response_key" value="vetquestrewarddialog_toc_blackb"/>
+			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+			<property name="shareable" value="false"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="reward_choices_count" value="2"/>
 
-				<objective type="FetchKeep" id="resourceScrapIron" value="600" phase="1" />
-				<objective type="FetchKeep" id="meleeToolShovelT1IronShovel" value="1" phase="1" />
-				<objective type="FetchKeep" id="meleeToolPickT1IronPickaxe" value="1" phase="1" />
-				<objective type="FetchKeep" id="resourcePaper" value="1" phase="1" />
-				<objective type="Craft" id="vetquestwrit_toc_blackb_name" value="1" phase="2" />
-
-				<reward type="Exp" value="1500" />
-			</quest>
-
-
-			<quest id="+Reward of Black Bart's Treasure Map">
-				<property name="name_key" value="vetquestreward_toc_blackb_name"/>
-				<property name="subtitle_key" value="vetquestreward_toc_blackb_subtitle"/>
-				<property name="description_key" value="vetquestreward_toc_blackb_description"/>
-				<property name="icon" value="ui_game_symbol_map_trader" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="quest" />
-				<property name="difficulty" value="easy" />
-				<property name="offer_key" value="vetquestreward_toc_blackb_offer"/>
-				<property name="statement_key" value="vetquestreward_toc_blackb_statement"/>
-				<property name="response_key" value="vetquestrewarddialog_toc_blackb"/>
-				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
-				<property name="shareable" value="false" />
-				<property name="completiontype" value="TurnIn" />
-				<property name="reward_choices_count" value="2" />
-
-
-				<objective type="Goto" value="5" phase="1" />
-				<objective type="ReturnToNPC">
-					<property name="phase" value="2"/>
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-				<objective type="InteractWithNPC">
-					<property name="phase" value="3" />
-					<property name="nav_object" value="return_to_trader" />
-				</objective>
-
-				<reward type="Exp" value="500" />
-				<reward type="Item" id="casinoCoin" value="560"/>
-
-				<reward type="Item" id="questitem_toc_citizencard_name" value="1" />	<!-- This makes the quest repeatable -->
-				<reward type="Item" id="vetquestmap_toc_blackb_name" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-
-				<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
-			</quest>
-
-			<quest id="map_Black_Bart">
-				<property name="name_key" value="vetquest_toc_blackb_map_name"/>
-				<property name="subtitle_key" value="vetquest_toc_blackb_map_subtitle"/>
-				<property name="description_key" value="vetquest_toc_blackb_map_description"/>
-				<property name="icon" value="ui_game_symbol_map" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="treasure" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="vetquest_toc_blackb_map_offer"/>
-				<property name="statement_key" value="vetquest_toc_blackb_map_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_blackb_map"/>
-				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
-				<property name="shareable" value="false" />
-
-				<objective type="TreasureChest">
-					<property name="block" value="questblock_toc_blackb_coffin"/>
-					<property name="distance" value="500-1200"/>
-					<property name="default_radius" value="12"/>
-	        <property name="nav_object" value="treasure" />
-	        <property name="direct_nav_object" value="treasure_direct" />
-	        <property name="blocks_per_reduction" value="12" />
-	          <!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
-	        <property name="radius_reduction_sound" value="ui_radius_shrink" />
-				</objective>
-
-				<reward type="Quest" id="+Black Bart's Tool Challenge"/>
-				<reward type="Exp" value="500"/>
-			</quest>
-
-			<quest id="+Black Bart's Tool Challenge">
-				<property name="name_key" value="vetquest_toc_blackb_chlng_name"/>
-				<property name="subtitle_key" value="vetquest_toc_blackb_chlng_subtitle"/>
-				<property name="description_key" value="vetquest_toc_blackb_chlng_desc"/>
-				<property name="icon" value="ui_game_symbol_zombie" />
-				<property name="repeatable" value="true" />
-				<property name="category_key" value="challenge" />
-				<property name="difficulty" value="hard" />
-				<property name="offer_key" value="vetquest_toc_blackb_chlng_offer"/>
-				<property name="statement_key" value="vetquest_toc_blackb_chlng_statement"/>
-				<property name="response_key" value="vetquestdialog_toc_blackb_chlng"/>
-				<property name="group_name_key" value="vetquest_toc_blackb_group"/>
-				<property name="shareable" value="false" />
-				<property name="reward_choices_count" value="2" />
-
-				<action type="SpawnEnemy" id="zombieSkateboarderRadiated" value="1" phase="1"/>
-				<objective type="ZombieKill" id="zombieSkateboarderRadiated" value="1" phase="1"/>
-
-				<reward type="Exp" value="2000" />
-				<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
-
-				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
-				<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
-				<reward type="LootItem" id="groupWhiteRiverTOCBlackBartShovel" value="1" />
-				<reward type="LootItem" id="groupWhiteRiverTOCBlackBartPickaxe" value="1" />
-
-				<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" ischosen="true" isfixed="true" value="1"/>
-				<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
-				<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
-			</quest>
-
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>
+			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
+			<!-- This makes the quest repeatable -->
+			<reward type="Item" id="vetquestmap_toc_blackb_name" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+		</quest>
+		<quest id="map_Black_Bart">
+			<property name="name_key" value="vetquest_toc_blackb_map_name"/>
+			<property name="subtitle_key" value="vetquest_toc_blackb_map_subtitle"/>
+			<property name="description_key" value="vetquest_toc_blackb_map_description"/>
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="vetquest_toc_blackb_map_offer"/>
+			<property name="statement_key" value="vetquest_toc_blackb_map_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_blackb_map"/>
+			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+			<property name="shareable" value="false"/>
+			<objective type="TreasureChest">
+				<property name="block" value="questblock_toc_blackb_coffin"/>
+				<property name="distance" value="500-1200"/>
+				<property name="default_radius" value="12"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="12"/>
+				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+			</objective>
+			<reward type="Quest" id="+Black Bart's Tool Challenge"/>
+			<reward type="Exp" value="500"/>
+		</quest>
+		<quest id="+Black Bart's Tool Challenge">
+			<property name="name_key" value="vetquest_toc_blackb_chlng_name"/>
+			<property name="subtitle_key" value="vetquest_toc_blackb_chlng_subtitle"/>
+			<property name="description_key" value="vetquest_toc_blackb_chlng_desc"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="vetquest_toc_blackb_chlng_offer"/>
+			<property name="statement_key" value="vetquest_toc_blackb_chlng_statement"/>
+			<property name="response_key" value="vetquestdialog_toc_blackb_chlng"/>
+			<property name="group_name_key" value="vetquest_toc_blackb_group"/>
+			<property name="shareable" value="false"/>
+			<property name="reward_choices_count" value="2"/>
+			<action type="SpawnEnemy" id="zombieSkateboarderRadiated" value="1" phase="1"/>
+			<objective type="EntityKill" id="zombieSkateboarderRadiated" value="1" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
+			<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+			<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCBlackBartShovel" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCBlackBartPickaxe" value="1"/>
+			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" ischosen="true" isfixed="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>
+		</quest>
 	</append>
 </config>

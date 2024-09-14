@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="WhiteRiverToolsofCitizenship_AmeliasGyrocopter" />
-		<DisplayName value="White River Tools of Citizenship - Amelia Earhart's Gyrocopter" />
-		<Description value="Find a rare item, craft a super-difficult item, and piece together a rare fast gyrocopter." />
-		<Author value="Shouden Kalferas and Aeyvi Kalferas" />
-		<Version value="1.0.1.2" />
-		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
+	<Name value="WhiteRiverToC_Amelias_Gyrocopter"/>
+	<DisplayName value="White River Tools of Citizenship - Amelia Earharts Gyrocopter"/>
+	<Description value="Find a rare item, craft a super-difficult item, and piece together a rare fast gyrocopter."/>
+	<Author value="ShoudenKalferas, AeyviDaro, 7DaystoDie.JP, PaLoALo, ArkAngel"/>
+	<Version value="1.0.1.0"/>
+	<Website value="https://github.com/XelaNull/7DTD-WhiteRiver_ToC"/>
 </xml>

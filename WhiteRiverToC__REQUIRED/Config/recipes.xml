@@ -1,25 +1,24 @@
 <configs>
-	<append xpath="/recipes">
-		<!--
-		This is the code that makes it so a player can take their basic citizen's card and craft the 100z or 1000z quest
-		to obtain their higher tiered card. I've moved the ability to gain these upper tiered cards to the trader's quests
-		This pevents people from exploiting these quests and running several in parallel.
-
-		I'm leaving this code in place in case someone wants to re-enable this legacy/old-style method of starting these quests.
-		-->
-
-		<!--
-		<recipe name="questitem_toc_veteranquest_name" count="1" craft_time = "120" craft_exp_gain="10000" >
-			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+	<append xpath="/recipes">		
+		<!-- The four Citizenship Cards -->
+		<recipe name="questitem_toc_declaration_name" count="1" craft_time = "120" craft_exp_gain="10000" >
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>
-		<recipe name="questitem_toc_elitequest_name" count="1" craft_time="240" craft_exp_gain="12000" >
-			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		<recipe name="questitem_toc_citizencard_name" count="1" craft_time="240" craft_exp_gain="12000" >
+			<ingredient name="questitem_initiate_completion_ticket" count="5"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>		
+		<recipe name="questitem_toc_veterancard_name" count="1" craft_time="240" craft_exp_gain="12000" >
+			<ingredient name="questitem_citizen_completion_ticket" count="10"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>
-		-->
-		<recipe name="questitem_toc_randomelite_name" count="1" craft_time="600" craft_exp_gain="8000" >
-			<ingredient name="questitem_toc_veterancard_name" count="4"/>
+		<recipe name="questitem_toc_elitecard_name" count="1" craft_time="240" craft_exp_gain="12000" >
+			<ingredient name="questitem_veteran_completion_ticket" count="12"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>		
+		<!-- The Random Elite Crate 1/3 the cost, but might reward an elite card if you succeed -->
+		<recipe name="questitem_toc_randomelite_name" count="1" craft_time="600" craft_exp_gain="8000">
+			<ingredient name="questitem_veteran_completion_ticket" count="4"/>
 			<ingredient name="resourcePaper" count="1"/>
 		</recipe>
 	</append>

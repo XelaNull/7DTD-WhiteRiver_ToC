@@ -1,0 +1,28 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+            <challenge name="challengeElite6" title_key="veteran_challenge_toc_molino_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCElite1"
+                short_description_key="veteran_challenge_toc_molino_short" description_key="veteran_challenge_toc_molino_long"
+                reward_text_key="veteran_challenge_toc_molino_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="elitequestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+            </challenge>
+        </insertAfter>
+
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+            <challenge name="challengeVeteran23" title_key="elite_challenge_toc_molino_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCVeteran2"
+                short_description_key="elite_challenge_toc_molino_short" description_key="elite_challenge_toc_molino_long"
+                reward_text_key="elite_challenge_toc_molino_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="vetquestitem_toc_glassNonFuzzyBulletproofBlockVariantHelper_name"/>
+            </challenge>
+        </insertAfter>                
+<!--
+veteran_challenge_toc_molino_name,Quest,Quest Info,,,"Quest for Molino Bulletproof Glass"
+veteran_challenge_toc_molino_short,Quest,Quest Info,,,"Obtain some bulletproof glass blocks."
+veteran_challenge_toc_molino_long,Quest,Quest Info,,,"[DECEA3]Obtain bulletproof glass blocks[-]. Just some, though. And only after you provide the communuity with a large stack of regular glass blocks."
+veteran_challenge_toc_molino_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,  
+
+elite_challenge_toc_molino_name,Quest,Quest Info,,,"Quest for Molino Bulletproof Glass"
+elite_challenge_toc_molino_short,Quest,Quest Info,,,"Learn how to craft bulletproof glass blocks."
+elite_challenge_toc_molino_long,Quest,Quest Info,,,"[DECEA3]Learn to craft bulletproof blocks[-] by [DECEA3]providing[-] a lot of regular glass blocks to help the community restock."
+elite_challenge_toc_molino_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->                 
+</config>

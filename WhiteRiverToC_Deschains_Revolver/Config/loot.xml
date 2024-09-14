@@ -1,16 +1,14 @@
-<configs>
+<config>
 	<append xpath="lootcontainers">
 		<lootgroup name="groupWhiteRiverTOCDeschain" loot_quality_template="questT3QualTemplate">
 			<item name="itemreward_toc_desch_name" count="1"/>
 		</lootgroup>
-
 		<lootgroup name="groupWhiteRiverTOCDeschainAmmo" loot_quality_template="questT3QualTemplate">
 			<item name="crafteditem_toc_45lcsilver_name" count="12,96"/>
 			<item name="crafteditem_toc_45lcgold_name" count="6,48"/>
 		</lootgroup>
 	</append>
-
-	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']" >
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="groupBooksDarkTower">
 			<item name="item_toc_desc_book1_name" prob=".2"/>
 			<item name="item_toc_desc_book2_name" prob=".05"/>
@@ -19,13 +17,10 @@
 			<item name="item_toc_desc_book5_name" prob=".05"/>
 			<item name="item_toc_desc_book6_name" prob=".05"/>
 			<item name="item_toc_desc_book7_name" prob=".05"/>
-			<item name="item_toc_desc_book8_name" prob=".02" />
+			<item name="item_toc_desc_book8_name" prob=".02"/>
 		</lootgroup>
 	</insertAfter>
-
 	<append xpath="/lootcontainers/lootgroup[@name='ToCBooks']">
 		<item group="groupBooksDarkTower" count="1" prob=".75"/>
 	</append>
-
-
-</configs>
+</config>

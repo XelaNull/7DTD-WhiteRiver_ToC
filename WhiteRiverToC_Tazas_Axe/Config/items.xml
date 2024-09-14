@@ -1,6 +1,5 @@
-<configs>
+<config>
 	<append xpath="/items">
-
 		<item name="questToCRewardT2FoodBundle">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
@@ -17,7 +16,6 @@
 				<property name="Unique_random_only" value="true"/>
 			</property>
 		</item>
-
 		<item name="questToCRewardT3FoodBundle">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
@@ -34,7 +32,6 @@
 				<property name="Unique_random_only" value="true"/>
 			</property>
 		</item>
-
 		<item name="questToCRewardT4FoodBundle">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
@@ -51,8 +48,13 @@
 				<property name="Unique_random_only" value="true"/>
 			</property>
 		</item>
-
-
+		<item name="questitem_initiatecoin_initiates_axe">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
+		</item>		
 		<item name="questitem_coin_taza">
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
@@ -67,76 +69,172 @@
 			<property name="Stacknumber" value="1"/>
 			<property name="Tags" value="ToC_coin"/>
 		</item>
-
+		<item name="initiatequestitem_toc_initiates_axe_name">
+			<property name="DescriptionKey" value="initiatequestitem_toc_initiates_axe_description"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Initiate_Quest_For_Initiates_Axe_Start"/>
+			</property>
+		</item>		
 		<item name="questitem_toc_taza_name">
 			<property name="DescriptionKey" value="questitem_toc_taza_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Quest For Taza's Axe Start"/>
-				<property name="Delay" value="0"/>
+				<property name="QuestGiven" value="Quest_For_Tazas_Axe_Start"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-		<item name="questwrit_toc_taza_name">
-			<property name="DescriptionKey" value="questwrit_toc_taza_description"/>
+		<item name="initiatequestwrit_toc_initiates_axe_name">
+			<property name="DescriptionKey" value="initiatequestwrit_toc_initiates_axe_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
 			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Reward of Taza's Axe"/>
-				<property name="Delay" value="0"/>
+				<property name="QuestGiven" value="Initiate_Reward_of_Initiates_Axe"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
+		</item>		
+		<item name="questwrit_toc_taza_name">
+			<property name="DescriptionKey" value="questwrit_toc_taza_description"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="c0c0c0"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
-		</item>
-
-		<item name="vetquestitem_toc_taza_name">
-			<property name="DescriptionKey" value="vetquestitem_toc_taza_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
-			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="SellableToTrader" value="false"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Vet. Quest For Taza's Axe Start"/>
-				<property name="Delay" value="0"/>
+				<property name="QuestGiven" value="Reward_of_Tazas_Axe"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
+		</item>
+		<item name="vetquestitem_toc_taza_name">
+			<property name="DescriptionKey" value="vetquestitem_toc_taza_description"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="Vet_Quest_For_Tazas_Axe_Start"/>
+			</property>
 		</item>
 		<item name="vetquestwrit_toc_taza_name">
 			<property name="DescriptionKey" value="vetquestwrit_toc_taza_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Veteran Reward of Taza's Axe"/>
-				<property name="Delay" value="0"/>
+				<property name="QuestGiven" value="Veteran_Reward_of_Tazas_Axe"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
 		</item>
+	<!-- Create an Initiate's Axe from the regular Axe -->
+		<item name="initiatequestitem_toc_initiates_axe">
+			<property name="DescriptionKey" value="initiatequestitem_toc_initiates_axe_description"/>
+			<!--<property name="Extends" value="meleeToolRepairT0StoneAxe"/>-->
+			<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+			<property name="Tags" value="axe,melee,light,tool,longShaft,repairTool,miningTool,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic,harvestingSkill,corpseRemoval"/>
+			<property name="DisplayType" value="meleeRepairTool"/>
+			<property name="HoldType" value="32"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/Axe/stone_axePrefab.prefab"/>
+			<property name="Material" value="Mstone"/>
+			<property name="TintColor" value="107, 107, 71"/>
+			<property name="ScrapTimeOverride" value="10.0"/>
+			<property name="RepairTools" value="resourceRockSmall"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="TraderStageTemplate" value="baseTier0"/><!-- meleeToolRepairT0StoneAxe -->
+			<property name="SellableToTrader" value="false"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="ShowQuality" value="true"/>
+			<!-- <property name="UnlockedBy" value="perkMiner69r,craftingHarvestingTools"/> -->
+			<property name="Group" value="Tools/Traps,Basics"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundPickup" value="axe_stone_grab"/>
+			<property name="SoundPlace" value="axe_stone_place"/>
+			
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".1"/>
+				<property name="Sound_start" value="axe_stone_swing"/>
+				<property name="ToolCategory.Butcher" value="0" param1="4"/><!-- damage vs entity corpses -->
+				<property name="GrazeStart" value=".15"/>
+				<property name="GrazeEnd" value=".3"/>
+				<property name="SwingDegrees" value="45"/>
+				<property name="SwingAngle" value="135"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property class="HitSounds">
+					<property name="Override0" value="organic" param1="stonehitorganic"/>
+				</property>
+				<property class="GrazeSounds">
+					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+				</property>
+			</property>
+			<property class="Action1"> <!-- UseAction -->
+				<property name="Class" value="Repair"/>
+				<property name="Delay" value=".64"/> <!-- Repair actions still need the delay amount -->
+				<property name="Repair_amount" value="100"/>
+				<property name="Upgrade_hit_offset" value="-1"/>
+				<property name="Sound_start" value="repair_block"/>
+				<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoorBlockVariantHelper,ironDoorDoubleBlockVariantHelper,vaultDoor01,vaultDoor01Double,ironHatchBlockVariantHelper,vaultHatch01,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,glassBulletproofBlockVariantHelper"/>
+				<property name="UsePowerAttackAnimation" value="false"/>
+			</property>
+			<effect_group name="initiatequestitem_toc_initiates_axe">
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="105" tags="perkMiner69r,axe"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="8" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkMiner69r"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,1,2,2,3" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="6" tags="perkMiner69r"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="22" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+				<display_value name="dBlockRepairAmount" value="100"/>
+				<passive_effect name="HarvestCount" operation="base_set" value=".7" tags="butcherHarvest"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.85" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.33" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+				<passive_effect name="DamageModifier" operation="base_set" value="1" tags="head,perkMiner69r" match_all_tags="true"/>
+				<passive_effect name="DismemberChance" operation="base_set" value=".05" tags="perkMiner69r"/>
+			</effect_group>			
+		</item>		
 	</append>
 
 	<!-- Code to Make Taza's Axe MORE Awesome -->
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">23</set>
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage' and @operation='perc_add' and @tier='2,6']/@value">.15,.55</set>
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss' and @operation='base_set']/@value">7</set>
-	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss' and @operation='perc_add']/@value">-.15,.15</set>
-	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">110</set>
-	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='perc_add']/@value">-.1,.15</set>
+	<!-- Revised by 7DAYSTODIE_JP -->
+	<!-- <set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='StaminaLoss' and @operation='perc_add']/@value">-.15,.15</set> -->
+	<append xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']">
+		<passive_effect name="StaminaLoss" operation="perc_add" value="-.15,.15"/>
+	</append>
+	<!-- END -->
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='base_set']/@value">120</set>
+	<!-- Revised by 7DAYSTODIE_JP -->
+	<!-- <set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='AttacksPerMinute' and @operation='perc_add']/@value">-.1,.1</set> -->
+	<append xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']">
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/>
+	</append>
+	<!-- END -->
 	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockRange']/@value">4</set>
 
-</configs>
+</config>

@@ -1,0 +1,28 @@
+<config>
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCElite1']">
+            <challenge name="challengeElite4" title_key="veteran_challenge_toc_daryl_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCElite1"
+                short_description_key="veteran_challenge_toc_daryl_short" description_key="veteran_challenge_toc_daryl_long"
+                reward_text_key="veteran_challenge_toc_daryl_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="elitequestitem_toc_daryl_name"/>
+            </challenge>
+        </insertAfter>
+
+        <insertAfter xpath="/challenges/challenge_group[@name='ToCVeteran2']">
+            <challenge name="challengeVeteran21" title_key="elite_challenge_toc_daryl_name" icon="ui_game_symbol_challenge_basics_craft_bow" group="ToCVeteran2"
+                short_description_key="elite_challenge_toc_daryl_short" description_key="elite_challenge_toc_daryl_long"
+                reward_text_key="elite_challenge_toc_daryl_reward" reward_event="challenge_reward_default">
+                <objective type="Craft" item="vetquestitem_toc_daryl_name"/>
+            </challenge>
+        </insertAfter>      
+<!--
+veteran_challenge_toc_daryl_name,Quest,Quest Info,,,"Quest for Daryl's Crossbow"
+veteran_challenge_toc_daryl_short,Quest,Quest Info,,,"Work hard and obtain a zombie-killing compound crossbow."
+veteran_challenge_toc_daryl_long,Quest,Quest Info,,,"[DECEA3]Provide bow parts[-] to the community and [DECEA3]receive[-] a nice [DECEA3]compound crossbow[-]. It says the name Daryl on the side of it."
+veteran_challenge_toc_daryl_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,  
+
+elite_challenge_toc_daryl_name,Quest,Quest Info,,,"Quest for Daryl's Crossbow"
+elite_challenge_toc_daryl_short,Quest,Quest Info,,,"Obtain the ultimately zombie-killing compound crossbow."
+elite_challenge_toc_daryl_long,Quest,Quest Info,,,"[DECEA3]Provide compound bows[-] to the community and [DECEA3]receive[-] a really sweet [DECEA3]compound crossbow[-], like no other. Guaranteed to be the ulitmate zombie-killing compound crossbow."
+elite_challenge_toc_daryl_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->                     
+</config>

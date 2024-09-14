@@ -1,19 +1,16 @@
-<configs>
+<config>
 	<append xpath="/lootcontainers">
 		<lootgroup name="groupWhiteRiverTOCLeonDegraded" loot_quality_template="questT1QualTemplate">
 			<item name="questitem_toc_leondegsmg_name"/>
 		</lootgroup>
-
-		<lootgroup name="groupWhiteRiverTOCLeon" loot_quality_template="questT1QualTemplate">
+		<lootgroup name="groupWhiteRiverTOCLeon" loot_quality_template="questT2QualTemplate">
 			<item name="questitem_toc_leonsmg_name"/>
 		</lootgroup>
-
 		<lootgroup name="groupWhiteRiverTOCLeonAmmo" loot_quality_template="questT2QualTemplate">
 			<item name="ammo9mmBulletBall" count="50,100"/>
 		</lootgroup>
-
 		<lootgroup name="groupWhiteRiverTOCLeonVet" loot_quality_template="questT3QualTemplate">
 			<item name="questitem_toc_leonsmg_name"/>
 		</lootgroup>
 	</append>
-</configs>
+</config>

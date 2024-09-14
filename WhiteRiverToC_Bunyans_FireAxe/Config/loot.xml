@@ -1,10 +1,7 @@
-<configs>
+<config>
 	<append xpath="lootcontainers">
-
 		<lootgroup name="groupWhiteRiverTOCBunyan" loot_quality_template="questT3QualTemplate">
 			<item name="item_toc_bunyanaxe_name"/>
 		</lootgroup>
-
-
 	</append>
-</configs>
+</config>

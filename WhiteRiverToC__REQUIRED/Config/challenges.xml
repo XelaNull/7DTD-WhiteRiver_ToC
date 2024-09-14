@@ -1,0 +1,94 @@
+<config>
+    <insertAfter xpath="/challenges/challenge[@name='twitchHomerunDerby']">
+    	<challenge_category name="White_River_ToC" title_key="WhiteRiverToolsOfCitizenship_Header" icon="ui_game_symbol_challenge_basics_stone_axe_harvest"/>
+        <!-- Initiate --> 
+        <!-- Challengegroup #1 -->   
+        <challenge_group category="White_River_ToC" name="ToCInitiate1" title_key="WhiteRiverToCInitiateGroup"
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_toc_basic" link_challenges="true" /> <!-- hidden_by="Basics" -->
+        <challenge name="challengeInitiate5" title_key="initiate_challenge_toc_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCInitiate1"
+            short_description_key="initiate_challenge_toc_short" description_key="initiate_challenge_toc_long"
+            reward_text_key="initiate_challenge_toc_reward" reward_event="challenge_reward_default">
+            <objective type="Craft" item="questitem_toc_citizencard_name"/>
+        </challenge> 
+        <!-- Citizen -->
+        <challenge_group category="White_River_ToC" name="ToCCitizen1" title_key="WhiteRiverToCCitizenGroup"
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_toc_basic" link_challenges="true" /> <!-- hidden_by="ToCInitiate1" -->
+        <!-- Challengegroup #1 --> 
+        <challenge_group category="White_River_ToC" name="ToCCitizen2" title_key="WhiteRiverToCCitizenGroup"
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_homesteading" link_challenges="true" /> <!-- hidden_by="ToCInitiate1"  -->
+        <!-- Challengegroup #2 -->       
+        <challenge name="challengeCitizen25" title_key="citizen_challenge_toc_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCCitizen2"
+            short_description_key="citizen_challenge_toc_short" description_key="citizen_challenge_toc_long"
+            reward_text_key="citizen_challenge_toc_reward" reward_event="challenge_reward_default">
+            <objective type="Craft" item="questitem_toc_veterancard_name"/>
+        </challenge> 
+        <!-- Veteran -->
+        <challenge_group category="White_River_ToC" name="ToCVeteran1" title_key="WhiteRiverToCVeteranGroup"
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true" /> <!-- hidden_by="ToCCitizen2" -->
+        <!-- Challengegroup #1 -->         
+        <challenge_group category="White_River_ToC" name="ToCVeteran2" title_key="WhiteRiverToCVeteranGroup"
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true" /> <!-- hidden_by="ToCCitizen2" -->
+        <challenge name="challengeVeteran26" title_key="veteran_challenge_toc_name" icon="ui_game_symbol_challenge_homesteading_craft_building_block" group="ToCVeteran2"
+            short_description_key="veteran_challenge_toc_short" description_key="veteran_challenge_toc_long"
+            reward_text_key="veteran_challenge_toc_reward" reward_event="challenge_reward_default">
+            <objective type="Craft" item="questitem_toc_elitecard_name"/>
+        </challenge>   
+        <!-- Elite --> 
+        <!-- Challengegroup #1 -->         
+        <challenge_group category="White_River_ToC" name="ToCElite1" title_key="WhiteRiverToCEliteGroup"
+        reward_text_key="WhiteRiverToCChangeName" reward_event="challenge_group_reward_advanced_survival" link_challenges="true" /> <!-- hidden_by="ToCCitizen2" -->
+        <!-- Challenge Completes -->
+        <!-- Initiate -->
+        <challenge name="challengeInitiate99" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="ToCInitiate1"
+            prerequisite_hint="tocInitiatechallengeGroupCompleteHint1" hint="tocInitiatechallengeGroupCompleteHint2"
+            short_description_key="tocInitiatechallengeGroupCompleteShort" description_key="tocInitiatechallengeGroupCompleteDesc" redeem_always="false">
+            <objective type="ChallengeComplete" challenge="ToCInitiate1" is_redeemed="true" is_group="true"/>
+        </challenge>
+        <!-- Citizen -->
+        <challenge name="challengeCitizen99" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="ToCCitizen2"
+            prerequisite_hint="tocCitizenchallengeGroupCompleteHint1" hint="tocCitizenchallengeGroupCompleteHint2"
+            short_description_key="tocCitizenchallengeGroupCompleteShort" description_key="tocCitizenchallengeGroupCompleteDesc" redeem_always="false">
+            <objective type="ChallengeComplete" challenge="ToCCitizen2" is_redeemed="true" is_group="true"/>
+        </challenge>
+        <!-- Veteran -->
+        <challenge name="challengeVeteran99" title_key="challengeGroupComplete" icon="ui_game_symbol_challenge_basics_redeem_rewards" group="ToCVeteran2"
+            prerequisite_hint="tocVeteranchallengeGroupCompleteHint1" hint="tocVeteranchallengeGroupCompleteHint2"
+            short_description_key="tocVeteranchallengeGroupCompleteShort" description_key="tocVeteranchallengeGroupCompleteDesc" redeem_always="false">
+            <objective type="ChallengeComplete" challenge="ToCVeteran2" is_redeemed="true" is_group="true"/>
+        </challenge>
+    </insertAfter>
+<!--
+tocInitiatechallengeGroupCompleteDesc,Challenges,Challenge,,,"Congratulations on beomoing a Citizen!\n\nAfter successfully completing every [DECEA3]Challenge[-] within the [DECEA3]Initiate Quests - Declare your Citizenship[-] category, it's time to claim your well-earned [DECEA3]Rewards[-].\n\nSelect each completed [DECEA3]Challenge[-] marked [00FF00]GREEN[-] and press the [DECEA3]Redeem[-] button below or use [action:local:Forward].\n\n[DECEA3]Redeeming[-] all of the [DECEA3]Challenges[-] in each group will award you with a [DECEA3]Group Completion Reward[-]."
+tocInitiatechallengeGroupCompleteDesc_alt,Challenges,Challenge,,,"Congratulations on becmoing a Citizen!\n\nAfter successfully completing every challenge within the Initiate Quests - Declare your Citizenship category, it's time to claim your well-earned rewards.\n\nSelect each completed challenge marked [00FF00]GREEN[-] and click the Redeem button below or use the shortcut [action:gui:GUI Inspect].\n\nRedeeming all of the challenges in each group will award you with a group completion reward."
+tocInitiatechallengeGroupCompleteHint1,Challenges,Challenge,,,[00FF00]Hold [-][FFB400][action:local:Inventory][action:permanent:Inventory] to open the [-][00FF00]Radial[-][FFB400] menu.[-]\n[00FF00]Select [-][FFB400]the [-][00FF00]Challenges[-][FFB400] icon\nto open the window.[-]
+tocInitiatechallengeGroupCompleteHint2,Challenges,Challenge,,,[FFB400]Redeem all challenges in the\n Initiate Quests - Declare your Citizenship group.[-]
+tocInitiatechallengeGroupCompleteShort,Challenges,Challenge,,,Redeem all the rewards earned by becoming a White River Citizen..
+
+tocCitizenchallengeGroupCompleteDesc,Challenges,Challenge,,,"Congratulations on becoming a Veteran Citizen!\n\nAfter successfully completing every [DECEA3]Challenge[-] within the [DECEA3]Citizen Quests[-] category, it's time to claim your well-earned [DECEA3]Rewards[-].\n\nSelect each completed [DECEA3]Challenge[-] marked [00FF00]GREEN[-] and press the [DECEA3]Redeem[-] button below or use [action:local:Forward].\n\n[DECEA3]Redeeming[-] all of the [DECEA3]Challenges[-] in each group will award you with a [DECEA3]Group Completion Reward[-]."
+tocCitizenchallengeGroupCompleteDesc_alt,Challenges,Challenge,,,"Congratulations on becmoing a Citizen!\n\nAfter successfully completing every challenge within the Citizen Quests category, it's time to claim your well-earned rewards.\n\nSelect each completed challenge marked [00FF00]GREEN[-] and click the Redeem button below or use the shortcut [action:gui:GUI Inspect].\n\nRedeeming all of the challenges in each group will award you with a group completion reward."
+tocCitizenchallengeGroupCompleteHint1,Challenges,Challenge,,,[00FF00]Hold [-][FFB400][action:local:Inventory][action:permanent:Inventory] to open the [-][00FF00]Radial[-][FFB400] menu.[-]\n[00FF00]Select [-][FFB400]the [-][00FF00]Challenges[-][FFB400] icon\nto open the window.[-]
+tocCitizenchallengeGroupCompleteHint2,Challenges,Challenge,,,[FFB400]Redeem all challenges in the\nCitizen Quests group.[-]
+tocCitizenchallengeGroupCompleteShort,Challenges,Challenge,,,Redeem all the rewards earned by becoming a White River Veteran Citizen..
+
+tocVeteranchallengeGroupCompleteDesc,Challenges,Challenge,,,"Congratulations on becomoing an Elite Citizen!\n\nAfter successfully completing every [DECEA3]Challenge[-] within the [DECEA3]Veteran Quests - Provte Your Worth[-] category, it's time to claim your well-earned [DECEA3]Rewards[-].\n\nSelect each completed [DECEA3]Challenge[-] marked [00FF00]GREEN[-] and press the [DECEA3]Redeem[-] button below or use [action:local:Forward].\n\n[DECEA3]Redeeming[-] all of the [DECEA3]Challenges[-] in each group will award you with a [DECEA3]Group Completion Reward[-]."
+tocVeteranchallengeGroupCompleteDesc_alt,Challenges,Challenge,,,"Congratulations on becmoing a Citizen!\n\nAfter successfully completing every challenge within the Veteran Quests - Provte Your Worth category, it's time to claim your well-earned rewards.\n\nSelect each completed challenge marked [00FF00]GREEN[-] and click the Redeem button below or use the shortcut [action:gui:GUI Inspect].\n\nRedeeming all of the challenges in each group will award you with a group completion reward."
+tocVeteranchallengeGroupCompleteHint1,Challenges,Challenge,,,[00FF00]Hold [-][FFB400][action:local:Inventory][action:permanent:Inventory] to open the [-][00FF00]Radial[-][FFB400] menu.[-]\n[00FF00]Select [-][FFB400]the [-][00FF00]Challenges[-][FFB400] icon\nto open the window.[-]
+tocVeteranchallengeGroupCompleteHint2,Challenges,Challenge,,,[FFB400]Redeem all challenges in the\nVeteran Quests - Provte Your Worth group.[-]
+tocVeteranchallengeGroupCompleteShort,Challenges,Challenge,,,Redeem all the rewards earned by becoming a White River Elite Citizen.
+
+initiate_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Citizen Card"
+initiate_challenge_toc_short,Quest,Quest Info,,,"You did it! Craft your White River Citizen Card"
+initiate_challenge_toc_long,Quest,Quest Info,,,"Now that you have saved up enough question completion tickets, [DECEA3]craft a White River Citizen Card[-] from your completion tickets. [DECEA3]Become a full White River Citizen[-] and continue amassing your collection of citizenry tools."
+initiate_challenge_toc_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+citizen_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Veteran Citizen Card"
+citizen_challenge_toc_short,Quest,Quest Info,,,"You are a Veteran."
+citizen_challenge_toc_long,Quest,Quest Info,,,"After the long haul, you are ready to hang your citizen hat up on the wall and instead emblazon yourself as a veteran citizen. Craft a [DECEA3]+Veteran Citizen Card[-] from your citizen completion tickets."
+citizen_challenge_toc_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+
+veteran_challenge_toc_name,Quest,Quest Info,,,"Redeem your White River Elite Citizen Card"
+veteran_challenge_toc_short,Quest,Quest Info,,,"Show the world how elite you truly are."
+veteran_challenge_toc_long,Quest,Quest Info,,,"At long last, you have amassed enough tickets to earn yourself a place amongst the most elite of White River citizens. Craft a [DECEA3]+Elite Citizen Card[-] from your citizen completion tickets."
+veteran_challenge_toc_reward,Challenges,Rewards,,x,100 XP,,,,,,,,,,,,,
+-->    
+</config>

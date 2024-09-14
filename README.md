@@ -4,9 +4,11 @@
 
 <https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/>
 
-Tested with A20
+![WRToCBanner](WRToCbanner.jpg)
 
-The White River settlements are looking for new citizens to give extra tools and equipment that they've collected. They are offering to provide a select few survivors access to higher quality equipment in exchange for volunteering to complete various tasks for the settlement. There is a limited supply and these items are only available to those who gain citizenry with White River settlements. In addition to the reward, the player is also offered a small stack of wet concrete blocks, from the last of the Trader's community inventory to assist in re-establishing a homestead.
+Tested with 1.0
+
+The White River settlements are looking for new citizens to give extra tools and equipment that they've collected. They are offering to provide a select few survivors access to higher quality equipment in exchange for volunteering to complete various tasks for the settlement. There is a limited supply and these items are only available to those who gain citizenry with White River settlements. In addition to the reward, the player is also offered a small stack of concrete blocks, from the last of the Trader's community inventory to assist in re-establishing a homestead.
 
 --
 
@@ -14,15 +16,20 @@ This modlet collection extends the new player White River citizenship quest line
 
 **This modlet pack is XML XPath ONLY and only needs to be installed on the server or player hosting the game! Other players do not need to install this modlet pack locally.**
 
-The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship item. This allows them to begin a quest to volunteer to help lay to rest 10 old residents now turned zombie. This earns the player a +White River Citizenship Card which they can then use to select which quest they would like to pursue. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may start this quest again as a Tier 1 Trader quest, and also can randomly find a +White River Citizenship Card on zombie loot bags.
+The modlet collection provides multi-tier quest lines. Once the new player reaches the trader, they are given a +Declaration of Citizenship item. This allows them to start working through proving their worth as a possible citizen, through performing quests for White River. This earns the player a +White River Citizenship Card which opens up another tier of quests to complete. The player's citizenship card is returned to them after they complete the settlement's quest. If it is lost for any reason, the player may start again through another Declaration of Citizenship.
 
-### Citizenship is offered in three-tiers:
+### Citizenship is offered in four-tiers:
 
-- Tier 1 : Kill 10 Zombies. This is the Basic level of citizenship. Reward: +White River Citizenship Card
-- Tier 3 : Kill 100 Zombies. This is the Veteran level of citizenship. This is started as a Tier 3 Trader quest. Reward: +White River Veteran Citizenship Card
-- Tier 5 : Kill 1000 Zombies. This is the Elite level of citizenship. This is started as a Tier 5 Trader quest. Reward: +White River Elite Citizenship Card
+- Tier 1 : Declaration of Citizenship - These quests are to prove your worth as a citizen. Reward: +White River Citizenship Card
+- Tier 2 : White River Citizen - These are the standard/normal tier quests. Reward: +White River Veteran Citizen Card
+- Tier 3 : White River Veteran - These are the veteran tier quests. Reward: +White River Elite Citizen Card
+- Tier 4 : White River Elite - These are the elite tier quests.
 
-Once the player obtains their citizenship card, they can use this to craft quest-starter items for the equipment quests below. Some of the quests below offer a veteran version which rewards better quality, more items, and greater quantity of each multi-quantity item. Some offer an even higher level set of rewards for elite citizens. After a "Veteran" quest is complete, the Trader keeps your Veteran Citizenship Card, requiring you to complete the Tier 3 Trader quest again to obtain a new Veteran Citizenship Card. However, after an "Elite" quest is complete, an Elite Citizenship Card is returned.
+The player uses their citizenship card (or declaration card) to craft quest-starter items for the equipment quests below. Some of the quests below offer progressive tier such as veteran version which rewards better quality, more items, and greater quantity of each multi-quantity item. Some offer an even higher level set of rewards for elite citizens.
+
+### Challenges Support
+
+With v1.0 also comes native support for the game's challenges page to track your progress through your White River citizenry. With this, we have changed the way that you progress through the citizenship tiers. Instead of tying the citizenship tiers merely to killing zombies, we have now tied the progression to this achievements page and configured it so that you must complete each tier of quests in order to progress to the next tier. This closes a previous loop and provides for a slightly slower progress, at the expense of players now will no longer be able to just complete whatever quests they want and ignore others.
 
 ### Questable Equipment:
 
@@ -57,51 +64,57 @@ Once the player obtains their citizenship card, they can use this to craft quest
 - **Everdeen's Arrows & Bolts** - The settlement is trying to put together a feast. Help feed everyone in exchange for named arrows & bolts slightly better than Vanilla.
 - **Gupta's Bandages** - Can't craft first aid bandages? Trade Aloe Leaves & Cotton for a few First Aid Bandages. Gupta's bandages and first aid kits are rumored to be better quality than you can find elsewhere.
 - **Molino Bulletproof Glass** - Exchange regular bulletproof glass blocks with the Trader and they will teach you how to create clear Molino-branded bulletproof glass.
+- **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement. Along with this, learn to craft an auto turret that takes the Remington 762 ammo.
 
 The quests are designed to be repeatable in case of loss of equipment or to try your luck at a higher quality reward.
 
 **UPCOMING:**
-- **Remington's Steel Ammo** - A spin off of Khaine's Steel Ammo mod that turns it into a questable achievement. Along with this, learn to craft an auto turret that takes the Remington 762 ammo.
 - **Dwarven Forge** - Track down a lost colony of little people, and their secret to crafting exquisite items.
-
 
 #### Quest Listing by Tier
 
-##### White River Citizen Card (10 Zombies)
+##### Declaration of Citizenship
+
+- Initiate's Axe
+- Jason's Machete
+- Dundee's Knife
+- Brass For Lead
+- Bear Grylls's Iron Knuckles
+
+##### White River Citizen Card
 
 - Taza's Axe
-- Leon's SMG
-- Kuva's Armor
-- Jason's Machete
 - Everdeen's Arrows & Bolts
 - Dundee's Knife
+- Bear Grylls's Steel Knuckles
+- Bambi's Compound Bow
+- Leon's SMG
+- Kuva's Armor
 - Deschain's Revolver
 - Bunyan's FireAxe
-- Brass For Lead
-- Bambi's Compound Bow
 
-##### White River Veteran Citizen Card (100 Zombies)
+##### White River Veteran Citizen Card
 
 - Taza's Axe
 - Rick Danger Auger
-- Pavlichenko's Rifle
 - Leon's SMG
 - Kuva's Armor
-- Gupta's Bandages
-- Daryl's Compound Crossbow
 - BlackBart's Dig Tools
 - Bambi's Compound Bow
-- Amelia Earhart's Gyrocopter (Wendigo)
+- Pavlichenko's Rifle
 - Molino Bulletproof Glass Blocks
+- Gupta's Bandages
+- Daryl's Compound Crossbow
+- Amelia Earhart's Gyrocopter (Wendigo)
 
-##### White River Elite Citizen Card (1000 Zombies)
+##### White River Elite Citizen Card
 
 - Spirit of Vengeance (Juggernaut)
 - Rick Danger Auger
 - Remington's Steel Ammo
+- Molino Bulletproof Glass Recipe
 - Daryl's Crossbow
 - Bambi's Compound Bow
-- Molino Bulletproof Glass Recipe
 
 ##### Quests Not Requiring Citizen Card
 
@@ -113,6 +126,7 @@ Download the ZIP file and extract. Open the ONE folder and you will find MULTIPL
 
 ### ACKNOWLEDGEMENTS:
 
+- ALo, arkangel5736, JP :: For continuing to keep the torch lit and the modpack operational, for their many optimization contributions to every single modlet in the pack, and for by and large bringing the entire modpack up to 1.0 compatibility. My deepest gratitude on behalf of the community.
 - Wyldwitchyka :: For the addition of the Jason's machete quest
 - morggin :: For the name and lore behind BlackBart, for the Bambi Terminator Crossbow, and for the idea of an Elite level set of quests
 - RichardPaul :: For the poem used in the Black Bart quest line.

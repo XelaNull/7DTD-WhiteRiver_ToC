@@ -1,6 +1,4 @@
-<configs>
-
-
+<config>
 	<append xpath="/lootcontainers">
 		<lootgroup name="groupQuestToCVehicleParts">
 			<item group="bicycleParts" count="1,2" loot_prob_template="QuestT1Prob"/>
@@ -8,7 +6,6 @@
 			<item group="motorcycleParts" count="1,2" loot_prob_template="QuestT3Prob"/>
 			<item group="4x4Parts" count="1,2" loot_prob_template="QuestT3Prob"/>
 		</lootgroup>
-
 		<lootgroup name="groupQuestToCSeeds">
 			<item name="plantedPotato1" count="2,4"/>
 			<item name="plantedCoffee1" count="1,3"/>
@@ -23,7 +20,6 @@
 			<item name="plantedChrysanthemum1" count="1,3"/>
 			<item name="plantedPumpkin1" count="1,3"/>
 		</lootgroup>
-
 		<lootgroup name="groupQuestToCDrinks">
 			<item name="drinkJarYuccaJuice" count="1,2"/>
 			<item name="drinkJarBoiledWater" count="1,2"/>
@@ -33,24 +29,15 @@
 			<item name="drinkJarBeer" count="1,2"/>
 			<item name="drinkYuccaJuiceSmoothie" count="1"/>
 		</lootgroup>
-
 		<lootgroup name="groupWhiteRiverTOCConcreteBlocks" count="all">
 			<item name="concreteShapes:VariantHelper" count="15,50"/>
 		</lootgroup>
-
 		<lootgroup name="ToCgroupArmorT0" loot_quality_template="QLTemplateT0">
-			<item name="armorClothPants"/>
-			<item name="armorClothJacket"/>
-			<item name="armorClothBoots"/>
-			<item name="armorClothGloves"/>
-			<item name="armorClothHat"/>
-			<item name="armorScrapHelmet"/>
-			<item name="armorScrapChest"/>
-			<item name="armorScrapGloves"/>
-			<item name="armorScrapLegs"/>
-			<item name="armorScrapBoots"/>
+			<item name="armorPrimitiveHelmet"/>
+			<item name="armorPrimitiveOutfit"/>
+			<item name="armorPrimitiveBoots"/>
+			<item name="armorPrimitiveGloves"/>
 		</lootgroup>
-
 		<lootgroup name="ToCgroupWeaponsT2_Ranged">
 			<item group="groupWeaponsT2_DeadEye"/>
 			<item group="groupWeaponsT2_Demolitionist"/>
@@ -60,71 +47,55 @@
 			<item group="groupWeaponsT2_Gunslinger"/>
 			<item group="groupWeaponsT2_TurretsSyndrome"/>
 		</lootgroup>
-
 		<lootgroup name="ToCgroupArmorT1" loot_quality_template="QLTemplateT1">
-			<item name="armorLeatherBoots"/>
-			<item name="armorLeatherPants"/>
-			<item name="armorLeatherChest"/>
-			<item name="armorLeatherGloves"/>
-			<item name="armorLeatherHood"/>
-			<item name="armorIronGloves"/>
-			<item name="armorIronHelmet"/>
-			<item name="armorIronBoots"/>
-			<item name="armorIronLegs"/>
-			<item name="armorIronChest"/>
+			<item name="armorLumberjackBoots"/>
+			<item name="armorLumberjackOutfit"/>
+			<item name="armorLumberjackGloves"/>
+			<item name="armorLumberjackHelmet"/>
+			<item name="armorPreacherGloves"/>
+			<item name="armorPreacherHelmet"/>
+			<item name="armorPreacherBoots"/>
+			<item name="armorPreacherOutfit"/>
 		</lootgroup>
-
 		<lootgroup name="ToCgroupArmorT2" loot_quality_template="QLTemplateT2">
-			<item name="armorMilitaryGloves"/>
-			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
-			<item name="armorMilitaryBoots"/>
-			<item name="armorMilitaryLegs"/>
-			<item name="armorMilitaryVest"/>
+<!--			<item name="armorMilitaryGloves"/>
+			<item name="armorBikerHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
+			<item name="armorBikerBoots"/>
+			<item name="armorBikerGloves"/>
+			<item name="armorBikerOutfit"/>
 			<item name="armorSteelBoots"/>
 			<item name="armorSteelLegs"/>
 			<item name="armorSteelChest"/>
 			<item name="armorSteelGloves"/>
 			<item name="armorSteelHelmet"/>
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/> -->
 		</lootgroup>
-
-
+			<item name="plantedAloe1" count="1,3"/>
+			<item name="plantedMushroom1" count="2,4"/>	
+			<item name="plantedCorn1" count="2,4"/>
+			<item name="plantedBlueberry1" count="2,4"/>
+			<item group="groupWeaponsT2_DeadEye"/>
+			<item group="groupWeaponsT2_Demolitionist"/>
+			<item group="groupWeaponsT2_Boomstick"/>
+			<item group="groupWeaponsT2_Machinegunner"/>
+			<item group="groupWeaponsT3_Archery"/>
+			<item group="groupWeaponsT2_Gunslinger"/>
+			<item group="groupWeaponsT2_TurretsSyndrome"/>
+			<item group="questitem_toc_elitecard_name"/>			
 		<lootgroup name="randomEliteQuests">
 		</lootgroup>
-
-
 		<lootcontainer id="390" name="WhiteRiverToCRequiredRandom" count="1" size="3,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item group="randomEliteQuests" count="1" />
+			<item group="randomEliteQuests" count="1"/>
 		</lootcontainer>
 	</append>
-
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
 		<lootgroup name="ToCBooks">
 		</lootgroup>
 	</insertAfter>
-
 	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
 		<item group="ToCBooks"/>
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='groupJunk03']">
 		<item group="ToCBooks"/>
 	</append>
-
-
-	<!--
-	This was a method by which I was causing the Z loot bags to occassionally drop the citizen's card.
-	This method has been removed in favor of using Trader quest dialog to start quests.
-	-->
-	<!--
-	<append xpath="/lootcontainers/lootcontainer[@id='70']">
-		<item name="questitem_toc_citizencard_name" count="1" prob=".5"/>
-	</append>
-	<append xpath="/lootcontainers/lootcontainer[@id='71']">
-		<item name="questitem_toc_citizencard_name" count="1" prob=".5"/>
-	</append>
-	<append xpath="/lootcontainers/lootcontainer[@id='73']">
-		<item name="questitem_toc_citizencard_name" count="1" prob=".5"/>
-	</append>
-	-->
-
-</configs>
+</config>

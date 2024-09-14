@@ -1,74 +1,74 @@
-<configs>
-  <!-- Thanks to wyldwitchykat for the append code below -->
-  <append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
-  <append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
-  <append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
-  <!-- A separate entry for this one, so if the Bambi mod isnt included this line will only generate a warning in the server logs -->
-  <append xpath="/items/item[@name='item_toc_bambi_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
-  <append xpath="/items/item[@name='eliteitem_toc_bambi_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
-  
+<config>
+	<!-- Thanks to wyldwitchykat for the append code below -->
+	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
+	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
+	<!-- Conditional entry for the Bambi mod. If it isnt installed this will be ignored -->
+	<conditional>
+		<if cond="mod_loaded('WhiteRiverToC_Bambis_Bow')">
+			<append xpath="/items/item[@name='item_toc_bambi_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
+			<append xpath="/items/item[@name='eliteitem_toc_bambi_name']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowGreekFire</append>
+		</if>
+	</conditional>
 	<append xpath="/items">
-    <item name="item_toc_greekfire_name">
-      <property name="DescriptionKey" value="item_toc_greekfire_desc"/>
-      <property name="Extends" value="challengeQuestMaster"/>
-      <property name="CustomIcon" value="schematicMaster"/>
-      <property name="CustomIconTint" value="cc3300"/>
-      <property class="Action0">
-        <property name="QuestGiven" value="+Callinicus Greek Fire"/>
-      </property>
-    </item>
-    
-    <item name="item_toc_greekfire_schem_name">
-      <property name="DescriptionKey" value="item_toc_greekfire_schem_desc"/>						
-      <property name="Extends" value="schematicMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="ammoArrowFlaming"/>
-      <property name="CustomIconTint" value="cc3300"/> 
-      <property name="Unlocks" value="ammoArrowGreekFire"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoArrowGreekFire" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    
-    <item name="ammoArrowGreekFire">
-      <property name="DescriptionKey" value="ammoArrowGreekFire_desc"/>						
-    	<property name="Extends" value="ammoArrowIron"/>
-    	<property name="DisplayType" value="ammoArrowFlaming"/>
-      <property name="CustomIcon" value="ammoArrowFlaming"/>
-      <property name="CustomIconTint" value="ddccbe"/>
-    	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab.prefab"/>
-    	<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab.prefab"/>
-    	<property name="UsableUnderwater" value="false"/>
-    	<property name="FuelValue" value="27"/>
-    	<property name="EconomicValue" value="44"/>
-    	<property name="EconomicBundleSize" value="1"/>
-    	<property name="Damage_type" value="Heat"/>
-    	<property name="StickyOffset" value=".7"/>
-    	<property name="UnlockedBy" value="item_toc_greekfire_schem_name"/>
-    	<property class="Action1">
-    		<property name="Gravity" value="-5"/>
-    		<property name="DamageBonus.wood" value="2"/>
-    	</property>
-    
-    	<effect_group name="ammoArrowGreekFire" tiered="false"> <!-- ammoArrowFlaming -->
-    		<passive_effect name="EntityDamage" operation="base_set" value="32"/>
-    		<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-    		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
-    		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
-    		<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
-    		<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
-    
-    		<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffGreekFlamingArrowDuration" operation="set" value="14">
-    			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
-    		<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffGreekFlamingArrowDuration" operation="set" value="15">
-    			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
-    
-    		<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffGreekFlamingArrow"/>
-    
-    		<display_value name="dEntityDamageFire" value="150"/>
-    		<display_value name="dDuration" value="15"/>
-    	</effect_group>
-    </item>
-  </append>
-</configs>
+		<item name="item_toc_greekfire_name">
+			<property name="DescriptionKey" value="item_toc_greekfire_desc"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="+Callinicus Greek Fire"/>
+			</property>
+		</item>
+		<item name="item_toc_greekfire_schem_name">
+			<property name="DescriptionKey" value="item_toc_greekfire_schem_desc"/>
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ammoArrowFlaming"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Unlocks" value="ammoArrowGreekFire"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoArrowGreekFire" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+		<item name="ammoArrowGreekFire">
+			<property name="DescriptionKey" value="ammoArrowGreekFire_desc"/>
+			<property name="Extends" value="ammoArrowIron"/>
+			<property name="DisplayType" value="ammoArrowFlaming"/>
+			<property name="CustomIcon" value="ammoArrowFlaming"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab.prefab"/>
+			<property name="StickyMeshFile" value="@:Other/Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab.prefab"/>
+			<property name="UsableUnderwater" value="false"/>
+			<property name="FuelValue" value="27"/>
+			<property name="EconomicValue" value="44"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="Damage_type" value="Heat"/>
+			<property name="StickyOffset" value=".7"/>
+			<property name="UnlockedBy" value="item_toc_greekfire_schem_name"/>
+			<property class="Action1">
+				<property name="Gravity" value="-5"/>
+				<property name="DamageBonus.wood" value="2"/>
+			</property>
+			<effect_group name="ammoArrowGreekFire" tiered="false">
+				<!-- ammoArrowFlaming -->
+				<passive_effect name="EntityDamage" operation="base_set" value="32"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffGreekFlamingArrowDuration" operation="set" value="14">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffGreekFlamingArrowDuration" operation="set" value="15">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="other" buff="buffGreekFlamingArrow"/>
+				<display_value name="dEntityDamageFire" value="150"/>
+				<display_value name="dDuration" value="15"/>
+			</effect_group>
+		</item>
+	</append>
+</config>

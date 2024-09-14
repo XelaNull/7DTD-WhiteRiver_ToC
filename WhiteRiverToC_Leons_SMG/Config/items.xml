@@ -1,4 +1,4 @@
-<configs>
+<config>
 	<append xpath="/items">
 		<item name="questitem_coin_leon">
 			<property name="Extends" value="casinoCoin"/>
@@ -12,28 +12,21 @@
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="7fa6ff"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Tags" value="ToC_coin"/>			
+			<property name="Tags" value="ToC_coin"/>
 		</item>
-
 		<item name="questitem_toc_leon_name">
 			<property name="DescriptionKey" value="questitem_toc_leon_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest For Leon's Modded SMG Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="questwrit_toc_leon_name">
 			<property name="DescriptionKey" value="questwrit_toc_leon_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
@@ -41,23 +34,16 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Leon's Degraded SMG"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-
 		<item name="questitem_toc_repairleon_name">
 			<property name="DescriptionKey" value="questitem_toc_repairleon_desc"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="d8006c"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Group" value="Special Items"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Quest To Repair Leon's SMG"/>
-				<property name="Delay" value="0"/>
 			</property>
 		</item>
 		<item name="questwrit_toc_repairleon_name">
@@ -65,7 +51,6 @@
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
@@ -73,31 +58,22 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Reward of Leon's Modded SMG"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
-
-
 		<item name="vetquestitem_toc_leon_name">
 			<property name="DescriptionKey" value="vetquestitem_toc_leon_description"/>
-			<property name="CustomIcon" value="challengeQuestMaster"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="questMaster"/>
-			<property name="Material" value="MresourcePaper"/>
+			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
-				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Vet. Quest For Leon's Modded SMG Start"/>
-				<property name="Delay" value="0"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 		<item name="vetquestwrit_toc_leon_name">
 			<property name="DescriptionKey" value="vetquestwrit_toc_leon_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="d4af37"/>
 			<property name="Extends" value="resourcePaper"/>
-			<property name="Material" value="MresourcePaper"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="NoScrapping" value="true"/>
 			<property name="Group" value="Special Items"/>
@@ -105,65 +81,19 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="+Veteran Reward of Leon's Modded SMG"/>
-				<property name="Delay" value="0"/>
+				<property name="UseAnimation" value="false"/>
 			</property>
-			<property name="Group" value="Special Items"/>
 		</item>
 
 		<item name="questitem_toc_leondegsmg_name">
 			<property name="Extends" value="gunHandgunT3SMG5"/>
 			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
 			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="EconomicValue" value="1100"/>
-			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-
-			<property class="Action0">
-				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
-				<property name="Reload_time" value="5.1"/>
-				<property name="Sound_reload" value="mp5_reload"/>
-
-			</property>
-
-			<effect_group name="questitem_toc_leondegsmg_name">
-				<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkGunslinger,9mmGun"/>
-
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="140" tags="perkGunslinger"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="300" tags="perkGunslinger"/>
-
-				<passive_effect name="MagazineSize" operation="base_set" value="15" tags="perkGunslinger"/>
-				<passive_effect name="ModSlots" operation="base_set" value="1,2" tier="1,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="150" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.05,.05" tags="perkGunslinger"/>
-
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.55" tags="perkGunslinger"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.55" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.7" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.5" tags="perkGunslinger"/>
-
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".6" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="2.5" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.8" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".8" tags="perkGunslinger"/>
-
-				<passive_effect name="WeaponHandling" operation="base_set" value=".1" tags="perkGunslinger"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="250,400" tier="1,6" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkGunslinger,9mmGun"/>
-			</effect_group>
-			<!--
-			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
-			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
-			<property name="CustomIconTint" value="cc3300"/>
-
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="6"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/SMG/smgPrefab.prefab"/>
 			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="DegradationBreaksAfter" value="true"/>
@@ -179,7 +109,6 @@
 			<property name="LightValue" value=".45"/>
 			<property name="EconomicValue" value="1100"/>
 			<property name="ShowQuality" value="true"/>
-
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
 				<property name="Delay" value=".150"/>
@@ -203,7 +132,6 @@
 				<property name="Zoom_max_in" value="55"/>
 				<property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
 			</property>
-
 			<effect_group name="questitem_toc_leondegsmg_name">
 				<passive_effect name="MaxRange" operation="base_set" value="20" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkGunslinger,9mmGun"/>
@@ -238,104 +166,73 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="250,400" tier="1,6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="5" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
-		-->
 		</item>
 
 		<item name="questitem_toc_leonsmg_name">
 			<property name="Extends" value="gunHandgunT3SMG5"/>
 			<property name="DescriptionKey" value="questitem_toc_leondegsmg_desc"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
-			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="EconomicValue" value="1700"/>
-			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
-			<property name="DegradationBreaksAfter" value="true"/>
-
-			<property class="Action0">
-				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
-				<property name="Reload_time" value="3.6"/>
-				<property name="Sound_reload" value="mp5_reload"/>
-
-			</property>
-
-			<effect_group name="questitem_toc_leonsmg_name">
-				<passive_effect name="MaxRange" operation="base_set" value="70" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DamageFalloffRange" operation="base_set" value="35" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="EntityDamage" operation="base_add" value="3.1" tags="perkGunslinger"/>
-
-				<passive_effect name="RoundsPerMinute" operation="base_set" value="520" tags="perkGunslinger"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1050" tags="perkGunslinger"/>
-
-				<passive_effect name="MagazineSize" operation="base_set" value="35" tags="perkGunslinger"/>
-				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="perc_add" value=".12" tags="EntityDamage,BlockDamage"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="EntityDamage" operation="perc_add" value="-.1,.17" tags="perkGunslinger"/>
-
-				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="1.25" tags="perkGunslinger"/>
-				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1.25" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.4" tags="perkGunslinger"/>
-				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2" tags="perkGunslinger"/>
-
-				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".4" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".8" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.25" tags="perkGunslinger"/>
-				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".25" tags="perkGunslinger"/>
-
-				<passive_effect name="WeaponHandling" operation="base_set" value=".9" tags="perkGunslinger"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="500,800" tier="1,6" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="1.2" tags="perkGunslinger,9mmGun"/>
-			</effect_group>
-			<!--
-			<property name="DescriptionKey" value="questitem_toc_leonsmg_desc"/>
-			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
-			<property name="CustomIconTint" value="cc3300"/>
-			<property name="TintColor" value="91,0,0"/>
-			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,canHaveCosmetic"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 			<property name="DisplayType" value="rangedGun"/>
+			<property name="CustomIcon" value="gunHandgunT3SMG5"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Weight" value="6"/>
+			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="HoldType" value="6"/>
-			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MP5/MP5Prefab.prefab"/>
-			<property name="Material" value="MHandGunParts"/> <property name="Weight" value="6"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/SMG/smgPrefab.prefab"/>
+			<property name="Material" value="MHandGunParts"/>
+			<property name="ScrapTimeOverride" value="10.0"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
-			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="SoundJammed" value="weapon_jam"/>
 			<property name="Attachments" value="meleeToolFlashlight02"/>
-			<property name="CrosshairOnAim" value="true"/>
-			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 			<property name="Sound_Sight_In" value="smg_sight_in"/>
 			<property name="Sound_Sight_Out" value="smg_sight_out"/>
-			<property name="Group" value="Ammo/Weapons"/>
+			<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="LightValue" value=".45"/>
-			<property name="EconomicValue" value="2500"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="TraderStageTemplate" value="baseTier2"/><!-- gunHandgunT3SMG5 -->
+			<property name="UnlockedBy" value="craftingHandguns"/><!-- gunHandgunT3SMG5Schematic, -->
 			<property name="ShowQuality" value="true"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundPickup" value="rifle_polymer_grab"/>
+			<property name="SoundPlace" value="rifle_polymer_place"/>
 
 			<property class="Action0">
 				<property name="Class" value="Ranged"/>
-				<property name="Delay" value=".150"/>
+				<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
 				<property name="Magazine_items" value="ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP"/>
-				<property name="Reload_time" value="3.1"/>
+				<property name="Reload_time" value="4.1"/>
 				<property name="Sound_start" value="smg_fire"/>
 				<property name="Sound_loop" value="smg_fire"/>
 				<property name="Sound_end" value="smg_fire_end"/>
 				<property name="Sound_empty" value="dryfire"/>
-				<property name="Sound_reload" value="mp5_reload"/>
+				<property name="Sound_reload" value=""/>
+				<property name="AutoReload" value="false"/>
 				<property name="Particles_muzzle_fire" value="gunfire_SMG"/>
 				<property name="Particles_muzzle_fire_fpv" value="gunfire_SMG_fpv"/>
+				<!-- <property name="DamageBonus.head" value="4"/>
+				<property name="DamageBonus.wood" value="5"/>
+				<property name="DamageBonus.earth" value=".2"/> -->
 				<property name="ScopeOffset" value="-.000525,.1449,-.2"/>
 				<property name="SideOffset" value="0,0,0"/>
 				<property name="BarrelOffset" value="-.062,.062,.16"/>
 				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+				<property name="triggerEffectTriggerPullDualsense" value="PistolTrigger"/>
+				<property name="triggerEffectTriggerPullXbox" value="PistolTrigger"/>
+				<property name="triggerEffectShootDualsense" value="PistolShoot"/>
+				<property name="triggerEffectShootXbox" value="PistolShoot"/>
 			</property>
 			<property class="Action1">
 				<property name="Class" value="Zoom"/>
 				<property name="Zoom_max_out" value="55"/>
 				<property name="Zoom_max_in" value="55"/>
-				<property name="ScopeCameraOffset" value="-.0003,0,-.01"/>
+				<property name="SightsCameraOffset" value="-.0003,0,-.01"/>
+				<property name="zoomTriggerEffectPullDualsense" value="PistolZoom"/>
+				<property name="zoomTriggerEffectPullXb" value="PistolZoom"/>
 			</property>
-
 			<effect_group name="questitem_toc_leonsmg_name">
 				<passive_effect name="MaxRange" operation="base_set" value="75" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
@@ -377,7 +274,6 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="350,1100" tier="1,6" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value=".8" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
-		-->
 		</item>
 	</append>
-</configs>
+</config>

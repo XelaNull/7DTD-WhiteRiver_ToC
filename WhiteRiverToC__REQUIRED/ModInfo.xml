@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-		<Name value="WhiteRiverToolsofCitizenship" />
-		<DisplayName value="White River Tools of Citizenship" />
-		<Description value="Extend White River quest line to allow player to craft fabled equipment through collecting a lot of resources." />
-		<Author value="ShoudenKalferas, Loosely derived from Royal Deluxe Vanilla+ Quests Modlet" />
-		<Version value="1.0.1.2" />
-		<Website value="https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/" />
+		<Name value="WhiteRiverToolsofCitizenship"/>
+		<DisplayName value="White River Tools of Citizenship"/>
+		<Description value="Extend White River quest line to allow player to craft fabled equipment through collecting a lot of resources."/>
+		<Author value="ShoudenKalferas, Royal Deluxe Vanilla+ Quests Modlet, PaLoALo, ArkAngel"/>
+		<Version value="1.0.1.0"/>
+		<Website value="https://github.com/XelaNull/7DTD-WhiteRiver_ToC"/>
 </xml>

@@ -1,7 +1,7 @@
-<configs>
+<config>
 	<append xpath="/recipes">
-		<recipe name="questitem_toc_brass_name" count="1" craft_time = "1" craft_exp_gain="0" >
-			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		<recipe name="questitem_toc_brass_name" count="1" craft_time="1" craft_exp_gain="0">
+			<ingredient name="questitem_toc_declaration_name" count="1"/>
 		</recipe>
 	</append>
-</configs>
+</config>

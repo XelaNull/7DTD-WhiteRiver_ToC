@@ -1,4 +1,24 @@
-<configs>
-<!-- Add the Kuva Armor so it unlocks with the perk -->
-  <append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_pants_name,item_toc_kuvablue_boots_name</append>
-</configs>
+<config>
+	<!-- Add the Kuva Armor so it unlocks with the crafting skill -->
+	<!-- Temporary changed by 7DAYSTODIE_JP 
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']">
+		<effect_group name="Kuvas Blue Armor">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="1,6" value="1,2,3,4,5,5" tags="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name"/>
+			<effect_description level="4" desc_key="KuvasBlueArmor" long_desc_key="This unlocks the ability to make Kuva's Blue Armor"/>
+		</effect_group>
+	</append>
+-->
+
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']">
+		<display_entry icon="armorNomadHelmet" name_key="armorT5" has_quality="true" unlock_level="11,20,40,60,80,100">
+			<unlock_entry item="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name" />
+		</display_entry>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="20,40,60,80,100" value="1,2,3,4,5" tags="item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name"/>
+	</append>
+</config>
