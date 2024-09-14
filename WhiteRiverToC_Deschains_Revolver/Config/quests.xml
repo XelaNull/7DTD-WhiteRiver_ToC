@@ -54,7 +54,6 @@
 			<!-- This makes the quest repeatable -->
 			<reward type="LootItem" id="groupWhiteRiverTOCDeschain" value="1" isfixed="true"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCDeschainAmmo" value="1" isfixed="true"/>
-			<reward type="Item" id="itemreward_toc_deschhat_name" value="1"/>
 			<reward type="LootItem" id="groupTreasureMaps" ischosen="true" isfixed="true" value="1"/>
 			<reward type="LootItem" id="groupQuestT3RangedMods" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestT2HeavyArmorBonus" ischosen="true" value="1"/>
