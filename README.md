@@ -4,6 +4,8 @@
 
 <https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages/>
 
+![WRToCBanner](WRToCbanner.jpg)
+
 Tested with 1.0
 
 The White River settlements are looking for new citizens to give extra tools and equipment that they've collected. They are offering to provide a select few survivors access to higher quality equipment in exchange for volunteering to complete various tasks for the settlement. There is a limited supply and these items are only available to those who gain citizenry with White River settlements. In addition to the reward, the player is also offered a small stack of concrete blocks, from the last of the Trader's community inventory to assist in re-establishing a homestead.
