@@ -3,7 +3,7 @@
             <challenge name="challengeInitiate15" title_key="initiate_challenge_toc_grylls_name" icon="ui_game_symbol_knife" group="ToCInitiate1"
                 short_description_key="initiate_challenge_toc_grylls_short" description_key="initiate_challenge_toc_grylls_long"
                 reward_text_key="initiatequestitem_toc_claws_name" reward_event="challenge_reward_default">
-                <objective type="Craft" item="initiateitem_toc_claws_name"/>
+                <objective type="Craft" item="initiatequestitem_toc_claws_name"/>
             </challenge> 
         </insertAfter>  
 

@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/items">
 		<item name="initiatequestitem_toc_claws_name">
-			<property name="DescriptionKey" value="questitem_toc_claws_desc"/>
+			<property name="DescriptionKey" value="initiatequestitem_toc_claws_desc"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property class="Action0">
@@ -9,14 +9,14 @@
 			</property>
 		</item>
 		<item name="initiateschemitem_toc_claws_name">
-			<property name="DescriptionKey" value="schemitem_toc_claws_description"/>
+			<property name="DescriptionKey" value="initiateschemitem_toc_claws_description"/>
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT1IronKnuckles"/>
 			<property name="CustomIconTint" value="cc3300"/>
-			<property name="Unlocks" value="item_toc_claws_name"/>
+			<property name="Unlocks" value="initiateitem_toc_claws_name"/>
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_claws_name" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="initiateitem_toc_claws_name" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
 			</effect_group>
 		</item>
@@ -27,7 +27,7 @@
 			<property name="CustomIconTint" value="ff0000"/>
 			<property name="Tags" value="blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill"/>
 			<property name="EconomicValue" value="650"/>
-			<property name="UnlockedBy" value="schemitem_toc_claws_name"/>
+			<property name="UnlockedBy" value="initiateschemitem_toc_claws_name"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Meshfile" value="@:Other/Items/Weapons/Melee/Knuckles/knucklesRight_Prefab.prefab"/>
 			<property name="HoldType" value="61"/>
