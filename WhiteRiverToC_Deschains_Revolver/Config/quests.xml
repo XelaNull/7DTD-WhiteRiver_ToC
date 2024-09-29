@@ -15,9 +15,7 @@
 			<property name="shareable" value="false"/>
 			<objective type="Craft" id="item_toc_desc_book14_name" value="1" phase="1"/>
 			<objective type="Craft" id="item_toc_desc_book58_name" value="1" phase="1"/>
-			<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<!-- <objective type="FetchKeep" id="secureDoorWooden" value="18" phase="2"/> -->
-			<objective type="FetchKeep" id="vaultDoor01" value="1" phase="2"/>
+			<objective type="FetchKeep" id="secureDoorWooden" value="19" phase="2"/>
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="2"/>
 			<objective type="Craft" id="questwrit_toc_desch_name" value="1" phase="3"/>
 			<reward type="Exp" value="500"/>
@@ -39,11 +37,11 @@
 			<property name="reward_choices_count" value="3"/>
 
 			<objective type="ReturnToNPC">
-				<property name="phase" value="2"/>
+				<property name="phase" value="1"/>
 				<property name="nav_object" value="return_to_trader"/>
 			</objective>
 			<objective type="InteractWithNPC">
-				<property name="phase" value="3"/>
+				<property name="phase" value="2"/>
 				<property name="nav_object" value="return_to_trader"/>
 			</objective>
 			<reward type="SkillPoints" value="1"/>
@@ -54,10 +52,9 @@
 			<!-- This makes the quest repeatable -->
 			<reward type="LootItem" id="groupWhiteRiverTOCDeschain" value="1" isfixed="true"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCDeschainAmmo" value="1" isfixed="true"/>
-			<reward type="LootItem" id="groupTreasureMaps" ischosen="true" isfixed="true" value="1"/>
 			<reward type="LootItem" id="groupQuestT3RangedMods" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestT2HeavyArmorBonus" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestT2LightArmorBonus" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 		</quest>
 	</append>
 </config>

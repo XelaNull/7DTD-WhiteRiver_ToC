@@ -44,17 +44,17 @@
 			<reward type="Exp" value="1000"/>
 		</quest>
 		<quest id="+Quest For Bear Grylls Steel Knuckles">
-			<property name="name_key" value="vetquest_toc_claws_name"/>
-			<property name="subtitle_key" value="vetquest_toc_claws_subtitle"/>
-			<property name="description_key" value="vetquest_toc_claws_description"/>
+			<property name="name_key" value="quest_toc_claws_name"/>
+			<property name="subtitle_key" value="quest_toc_claws_subtitle"/>
+			<property name="description_key" value="quest_toc_claws_description"/>
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="quest"/>
 			<property name="difficulty" value="easy"/>
-			<property name="offer_key" value="vetquest_toc_claws_offer"/>
-			<property name="statement_key" value="vetquest_toc_claws_statement"/>
-			<property name="response_key" value="vetquestdialog_toc_claws"/>
-			<property name="group_name_key" value="vetquest_toc_claws_group"/>
+			<property name="offer_key" value="quest_toc_claws_offer"/>
+			<property name="statement_key" value="quest_toc_claws_statement"/>
+			<property name="response_key" value="questdialog_toc_claws"/>
+			<property name="group_name_key" value="quest_toc_claws_group"/>
 			<property name="shareable" value="false"/>
 			<property name="reward_choices_count" value="1"/>
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>

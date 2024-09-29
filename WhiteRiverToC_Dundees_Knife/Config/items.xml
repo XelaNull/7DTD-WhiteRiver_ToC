@@ -1,6 +1,7 @@
 <config>
 	<append xpath="/items">
 		<item name="questitem_initiatecoin_dundee">
+			<property name="DescriptionKey" value="questitem_initiatecoin_dundeeDesc"/>
 			<property name="Extends" value="casinoCoin"/>
 			<property name="CustomIcon" value="casinoCoin"/>
 			<property name="CustomIconTint" value="2eb200"/>
@@ -8,7 +9,7 @@
 			<property name="Tags" value="ToC_coin"/>
 		</item>	
 		<item name="initiatequestitem_toc_dundee_name">
-			<property name="DescriptionKey" value="questitem_toc_dundee_description"/>
+			<property name="DescriptionKey" value="initiatequestitem_toc_dundee_description"/>
 			<property name="CustomIconTint" value="ddccbe"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="NoScrapping" value="true"/>
@@ -17,7 +18,7 @@
 			</property>
 		</item>		
 		<item name="initiatequestwrit_toc_dundee_name">
-			<property name="DescriptionKey" value="questwrit_toc_dundee_description"/>
+			<property name="DescriptionKey" value="initiatequestwrit_toc_dundee_description"/>
 			<property name="CustomIcon" value="questMaster"/>
 			<property name="CustomIconTint" value="c0c0c0"/>
 			<property name="Extends" value="resourcePaper"/>

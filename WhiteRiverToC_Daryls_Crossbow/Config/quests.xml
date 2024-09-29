@@ -29,9 +29,9 @@
 			<property name="response_key" value="vetquestdialog_toc_daryl"/>
 			<property name="group_name_key" value="vetquest_toc_daryl_group"/>
 			<property name="shareable" value="false"/>
-			<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="2" phase="1"/>
-			<objective type="FetchKeep" id="gunBowT0PrimitiveBow" value="20" phase="1"/>
-			<objective type="FetchKeep" id="resourceWood" value="400" phase="1"/>
+			<objective type="FetchKeep" id="gunBowT1WoodenBowParts" value="4" phase="1"/>
+			<objective type="FetchKeep" id="gunBowT1IronCrossbow" value="20" phase="1"/>
+			<objective type="FetchKeep" id="resourceForgedIron" value="20" phase="1"/>
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
 			<objective type="Craft" id="vetwrititem_toc_daryl_name" value="1" phase="2"/>
 			<reward type="Exp" value="1000"/>
@@ -102,9 +102,9 @@
 			<property name="response_key" value="elitequestdialog_toc_daryl"/>
 			<property name="group_name_key" value="elitequest_toc_daryl_group"/>
 			<property name="shareable" value="false"/>
-			<objective type="FetchKeep" id="gunBowT3CompoundBow" value="20" phase="1"/>
+			<objective type="FetchKeep" id="gunBowT3CompoundCrossbow" value="20" phase="1"/>
 			<objective type="FetchKeep" id="resourceAnimalFat" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceWood" value="4000" phase="1"/>
+			<objective type="FetchKeep" id="resourceForgedIron" value="200" phase="1"/>
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
 			<objective type="Craft" id="elitewrititem_toc_daryl_name" value="1" phase="2"/>
 			<reward type="Exp" value="2000"/>

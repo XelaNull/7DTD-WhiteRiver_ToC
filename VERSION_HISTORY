@@ -1,0 +1,12 @@
+1.0.1.3 (bugfix release)
+    - Localization Fixes:
+        - Bear Grylls Claws "Bear" vs "Bears"
+        - Kuva's "leather ponches" instead of "primitive outfits"
+        - Dundee's Knife: Fixed the quest text for the initiate writ to be correct.
+    - Deschain's Revolver: Quest was requiring the wrong number of doors
+    - Bear Grylls: Steel claws starting quest text was broken and not displaying
+    - Gupta's Bandages: Was giving back T2 citizen card instead of T3
+    - Kuva's Blue Armor Schematics was not properly unlocking and was showing read before player had read it
+    - Pavlichenko's Rifle: Scope reworked as a rifle component, and an extra leg to the quest chain. Configured quest to end as soon as you assemble the rifle Oddly, no scope is included in the completed rifle. (WIP)
+    - Kuva's Armor: Rebalanced against vanilla, ensured all the same benefits of rogue attire plus alittle something something extra. 
+    - Daryl's Crossbow: Adjusted the requirements of the quest so that it requires you to provide whatever item it is that you get in reward. (crossbow for crossbow)
