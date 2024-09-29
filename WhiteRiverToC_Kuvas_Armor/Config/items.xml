@@ -121,7 +121,7 @@
 			<property name="Extends" value="schematicMaster"/>
 			<property name="Weight" value="1"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="Unlocks" value="item_toc_kuvablue_chest_name"/>
+			<property name="Unlocks" value="item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_boots_name,item_toc_kuvablue_hood_name"/>
 			<property name="Group" value="Special Items"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_hood_name" operation="set" value="1"/>
@@ -213,142 +213,223 @@
 		</item>
 		
 		<item name="item_toc_kuvablue_hood_name">
-		<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<property name="DescriptionKey" value="item_toc_kuvablue_hood_desc"/>
 			<property name="Extends" value="armorRogueHelmet" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="item_toc_kuvablue_hood_desc"/>
 			<property name="CustomIcon" value="armorAssassinHelmet"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="head,armor,armorHead,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
-			<property name="SoundPickup" value="outfit_cloth_grab"/>
-			<property name="SoundPlace" value="outfit_cloth_place"/>
+			<property name="Tags" value="head,armor,armorHead,canHaveCosmetic,lightArmor,lightArmorDeg"/>
 			<property name="EquipSlot" value="Head"/>
+			<property name="SoundPickup" value="headwear_cloth_grab"/>
+			<property name="SoundPlace" value="headwear_cloth_place"/>
 			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9,13.5" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="9,13.5" tier="1,6" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
-				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<!-- using 2+ digits leads to fake bugs reports due to how rounding numbers works -->
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
-				<display_value name="dNoiseMultiplier" value=".01"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="18,23"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="18,23"/>
+				
+				<passive_effect name="ScavengingTime" operation="perc_add" value="-.025,-.045,-.065,-.085,-.15,-.25" tier="1,2,3,4,5,6"/>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".025,.045,.065,.085,.15,.25" tier="1,2,3,4,5,6"/>
+				<display_value name="dLootStage" value=".025,.045,.065,.085,.15,.25" tier="1,2,3,4,5,6"/>
+
+
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0362" tags="running"/>
+				<display_value name="dStaminaChangeOT" value=".28"/>
+				<passive_effect name="Mobility" operation="perc_add" value=".01"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.01"/>
+				<display_value name="dNoiseMultiplier" value="-.01"/>
+
 			</effect_group>
 		</item>
 		<item name="item_toc_kuvablue_chest_name">
-		<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<property name="DescriptionKey" value="item_toc_kuvablue_chest_desc"/>
 			<property name="Extends" value="armorRogueOutfit" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="item_toc_kuvablue_chest_desc"/>
+			<property name="DisplayType" value="armorRogueOutfit"/>
+			<property name="ArmorGroup" value="groupRogue"/>			
 			<property name="CustomIcon" value="armorBikerOutfit"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="DegradationBreaksAfter" value="true"/>
 			<property name="Tags" value="upperbody,chest,armor,armorChest,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
-			<property name="SoundPickup" value="outfit_cloth_grab"/>
-			<property name="SoundPlace" value="outfit_cloth_place"/>
 			<property name="EquipSlot" value="Chest"/>
+			<property name="SoundPickup" value="outfit_leather_grab"/>
+			<property name="SoundPlace" value="outfit_leather_place"/>
 			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
 			<effect_group>
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9,13.5" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="9,13.5" tier="1,6" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
-				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
-				<display_value name="dNoiseMultiplier" value=".01"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="18,23"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="18,23"/>
+				
+				<display_value name="dSneakEffectiveness" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+
+				<!-- ToC Improvements -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0362" tags="running"/>
+				<display_value name="dStaminaChangeOT" value=".28"/>
+				<passive_effect name="Mobility" operation="perc_add" value=".01"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.01"/>
+				<display_value name="dNoiseMultiplier" value="-.01"/>
+				<passive_effect name="ScavengingTime" operation="perc_add" value="-.025,-.045,-.065,-.085,-.15,-.25" tier="1,2,3,4,5,6"/>
 			</effect_group>
+
+			<effect_group>
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+					<passive_effect name="LightMultiplier" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6">
+						<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="65"/>
+					</passive_effect>
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
+					<passive_effect name="CrouchSpeed" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+					<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.02,-.04,-.06,-.08,-.1,-.2" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="Entities/Player/*/Gear/Prefabs/gear*StealthPrefab"/>
+				<property name="TransformName" value="body"/>
+				<property name="Excludes" value="body"/>
+				<property name="CullDistFPV" value="0.32"/>
+			</property>
 		</item>
 		<item name="item_toc_kuvablue_gloves_name">
-		<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<!-- item name directly referenced in the code -->
-			<property name="DescriptionKey" value="item_toc_kuvablue_gloves_desc"/>
 			<property name="Extends" value="armorRogueGloves" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="item_toc_kuvablue_gloves_desc"/>
+			<property name="DisplayType" value="armorRogueGloves"/>
+			<property name="ArmorGroup" value="groupRogue"/>			
 			<property name="CustomIcon" value="armorFarmerGloves"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
-			<property name="SoundPickup" value="outfit_cloth_grab"/>
-			<property name="SoundPlace" value="outfit_cloth_place"/>
+			<!--<property name="Tags" value="upperbody,hands,armor,armorHands,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>-->
+			<property name="Tags" value="upperbody,hands,armor,armorHands,canHaveCosmetic,lightArmor,lightArmorDeg"/>
 			<property name="EquipSlot" value="Hands"/>
+			<property name="SoundPickup" value="gloves_leather_grab"/>
+			<property name="SoundPlace" value="gloves_leather_place"/>
 			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
-			<effect_group>
+			<effect_group name="RogueToCGloves">
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9,13.5" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="9,13.5" tier="1,6" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
-				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
-				<display_value name="dNoiseMultiplier" value=".01"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="18,23"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="18,23"/>
+				
+				<display_value name="dLockpickSpeed" value=".025,.045,.065,.085,.15,.25" tier="1,2,3,4,5,6"/>
+				<display_value name="dLockpickSuccess" value=".025,.045,.065,.085,.15,.25" tier="1,2,3,4,5,6"/>
+				
+				<!-- ToC Improvements -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0362" tags="running"/>
+				<display_value name="dStaminaChangeOT" value=".28"/>
+				<passive_effect name="Mobility" operation="perc_add" value=".01"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.01"/>
+				<display_value name="dNoiseMultiplier" value="-.01"/>
 			</effect_group>
+
+			<effect_group>
+				<passive_effect name="LockPickTime" operation="perc_add" value="-.025,-.045,-.065,-.085,-.15,-.25" tier="1,2,3,4,5,6"/>
+				<passive_effect name="LockPickBreakChance" operation="perc_add" value="-.025,-.045,-.065,-.085,-.15,-.25" tier="1,2,3,4,5,6"/>
+			</effect_group>
+
+			<property class="SDCS">
+				<property name="Prefab" value="Entities/Player/*/Gear/Prefabs/gear*StealthPrefab"/>
+				<property name="TransformName" value="hands"/>
+				<property name="Excludes" value="hands"/>
+				<property name="CullDistFPV" value="0"/>
+			</property>
 		</item>
 		<item name="item_toc_kuvablue_boots_name">
-		<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<property name="DescriptionKey" value="item_toc_kuvablue_boots_desc"/>
 			<property name="Extends" value="armorRogueBoots" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="item_toc_kuvablue_boots_desc"/>
+			<property name="DisplayType" value="armorRogueBoots"/>
+			<property name="ArmorGroup" value="groupRogue"/>			
 			<property name="CustomIcon" value="armorAthleticBoots"/>
 			<property name="CustomIconTint" value="5C5CFF"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>
-			<property name="SoundPickup" value="outfit_cloth_grab"/>
-			<property name="SoundPlace" value="outfit_cloth_place"/>
+			<!-- <property name="Tags" value="lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill"/>-->			
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,canHaveCosmetic,lightArmor,lightArmorDeg"/>
 			<property name="EquipSlot" value="Feet"/>
+			<property name="SoundPickup" value="footwear_leather_grab"/>
+			<property name="SoundPlace" value="footwear_leather_place"/>
 			<property name="UnlockedBy" value="questitem_toc_kuvablue_name"/>
-			<effect_group>
+			<effect_group name="RogueToCBoots">
 				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,5" tier="1,2,3,4,5,6"/>
-				<passive_effect name="ModPowerBonus" operation="base_add" value="900" tags="EconomicValue"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.27,9.47"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="7.27,9.47" tags="heat,electrical"/>
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="0,2.73" tier="1,6"/>
-				<passive_effect name="HypothermalResist" operation="base_add" value="2.5,4.5"/>
-				<passive_effect name="HyperthermalResist" operation="base_add" value="2.5,4.5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="500" tags="EconomicValue"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="9,13.5" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="9,13.5" tier="1,6" tags="heat,electrical"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
 				<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="210,325" tier="1,6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="250,500" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
-				<passive_effect name="Mobility" operation="perc_add" value="-.01"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0181" tags="walking"/>
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0362" tags="running"/>
-				<display_value name="dStaminaChangeOT" value="-.28"/>
-				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".01"/>
-				<display_value name="dNoiseMultiplier" value=".01"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="18,23"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="18,23"/>
+
+				<display_value name="dFallDamage" value="1.5,2.5,3.5,4.5,5.5,6.5" tier="1,2,3,4,5,6"/>
+
+				<!-- Improvements for Kuva -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0181" tags="walking"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".0362" tags="running"/>
+				<display_value name="dStaminaChangeOT" value=".28"/>
+				<passive_effect name="Mobility" operation="perc_add" value=".01"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.01"/>
+				<display_value name="dNoiseMultiplier" value="-.01"/>
+			</effect_group>
+
+			<!-- Increase $rogueBootFallDMG with each tier to then process in buffPlayerFallingDamage -->
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$rogueBootFallDMG" operation="set" value=".01414" >
+					<requirement name="RequirementItemTier" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$rogueBootFallDMG" operation="set" value=".02828" >
+					<requirement name="RequirementItemTier" operation="Equals" value="2"/></triggered_effect>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$rogueBootFallDMG" operation="set" value=".044" >
+					<requirement name="RequirementItemTier" operation="Equals" value="3"/></triggered_effect>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$rogueBootFallDMG" operation="set" value=".05656" >
+					<requirement name="RequirementItemTier" operation="Equals" value="4"/></triggered_effect>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$rogueBootFallDMG" operation="set" value=".0707" >
+					<requirement name="RequirementItemTier" operation="Equals" value="5"/></triggered_effect>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$rogueBootFallDMG" operation="set" value=".08484" >
+					<requirement name="RequirementItemTier" operation="Equals" value="6"/></triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$rogueBootFallDMG" operation="set" value="0"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffRogueBoots"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffRogueBoots"/>
 			</effect_group>
 		</item>
 	</append>
-	<!-- Set the gear so that when you unlock armorLeather from schematic that it also unlocks the Kuva Blue Armor Set -->
-	<!-- Temporary changed by 7DAYSTODIE_JP -->
-	<!-- <append xpath="/items/item[@name='armorLeatherSetSchematic']/effect_group">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_hood_name" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_chest_name" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_gloves_name" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="item_toc_kuvablue_boots_name" operation="set" value="1"/>
-	</append> -->
+
 </config>
