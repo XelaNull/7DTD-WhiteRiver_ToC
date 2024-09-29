@@ -8,8 +8,6 @@
 			<property name="StabilitySupport" value="false"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Texture" value="293"/>
-			<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<!-- <property name="Mesh" value="models"/> -->
 			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
@@ -28,13 +26,29 @@
 			<property name="StabilitySupport" value="false"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Texture" value="293"/>
-			<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<!-- <property name="Mesh" value="models"/> -->
 			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 			<property name="IsTerrainDecoration" value="true"/>
 			<property name="LootList" value="WhiteRiverToCPav02"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_helpers,SC_loot"/>
+		</block>
+		<block name="vetquestmap_toc_pav_map3_name">
+			<property name="DescriptionKey" value="vetquestmap_toc_pav_map3_desc"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="cntChest01"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Texture" value="293"/>
+			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="WhiteRiverToCPav03"/>
 			<property name="CreativeMode" value="None"/>
 			<drop event="Destroy" name="resourceWood" count="1,3"/>
 			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>

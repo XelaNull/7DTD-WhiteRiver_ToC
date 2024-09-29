@@ -63,7 +63,6 @@
 			</objective>
 			<reward type="Exp" value="1000"/>
 			<reward type="Item" id="casinoCoin" value="360"/>
-			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
 			<!-- Small Easter Egg For More Veteran->Elite tickets -->
 			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>	
 			<!-- This makes the quest repeatable -->
@@ -118,7 +117,7 @@
 				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
 				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
-			<reward type="Item" id="questitem_toc_pav_barrel_name" value="1"/>
+			<!--<reward type="Item" id="questitem_toc_pav_barrel_name" value="1"/>-->
 			<!-- Small Easter Egg For More Veteran->Elite tickets -->
 			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
 			<reward type="Item" id="vetquestitem_toc_pav_stock_name" value="1"/>
@@ -169,7 +168,7 @@
 			<reward type="Item" id="vetquestitem_toc_pav_scope_name" value="1"/>
 			<!-- Small Easter Egg For More Veteran->Elite tickets -->
 			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>			
-			<reward type="Item" id="questitem_toc_pav_stock_name" value="1"/>
+			<!--<reward type="Item" id="questitem_toc_pav_stock_name" value="1"/>-->
 			<reward type="Exp" value="500"/>
 		</quest>
 		
@@ -205,19 +204,21 @@
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
 			<property name="shareable" value="false"/>
 			<objective type="TreasureChest">
-				<property name="block" value="vetquestmap_toc_pav_map2_name"/>
-				<property name="distance" value="1500-2500"/>
-				<property name="default_radius" value="9"/>
+				<property name="block" value="vetquestmap_toc_pav_map3_name"/>
+				<property name="distance" value="1000-2000"/>
+				<property name="default_radius" value="12"/>
 				<property name="nav_object" value="treasure"/>
 				<property name="direct_nav_object" value="treasure_direct"/>
-				<property name="blocks_per_reduction" value="10"/>
+				<property name="blocks_per_reduction" value="8"/>
 				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
 				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
+			<!-- Pavlichenko Rifle Assemble Quest Starter -->
 			<reward type="Item" id="vetquestitem_toc_pav_rifle_name" value="1"/>
 			<!-- Small Easter Egg For More Veteran->Elite tickets -->
 			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
-			<reward type="Item" id="questitem_toc_pav_scope_name" value="1"/>
+			<!-- Pavlichenko Scope Item (Generic)-->
+			<!--<reward type="Item" id="questitem_toc_pav_scope_name" value="1"/>-->
 			<reward type="Exp" value="500"/>
 		</quest>
 		
@@ -257,30 +258,14 @@
 			<property name="response_key" value="vetquestdialog_toc_pav_reward"/>
 			<property name="group_name_key" value="vetquest_toc_pavlichenko_group"/>
 			<property name="shareable" value="false"/>
-			<property name="completiontype" value="TurnIn"/>
-			<property name="reward_choices_count" value="3"/>
 
-			<objective type="ReturnToNPC">
-				<property name="phase" value="1"/>
-				<property name="nav_object" value="return_to_trader"/>
-			</objective>
-			<objective type="InteractWithNPC">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="return_to_trader"/>
-			</objective>
 			<reward type="SkillPoints" value="1"/>
 			<reward type="Item" id="questitem_toc_veterancard_name" value="1"/>
 			<!-- Small Easter Egg For More Veteran->Elite tickets -->
 			<reward type="Item" id="questitem_veteran_completion_ticket" value="1"/>
-			<reward type="Exp" value="2000"/>
+			<reward type="Exp" value="3000"/>
 			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="LootItem" id="groupWhiteRiverTOCPavlichenko" value="1"/>
-			<reward type="LootItem" id="groupWhiteRiverTOCConcreteBlocks" value="1"/>
-			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
-			<reward type="LootItem" id="groupQuestT2Food" ischosen="true" value="1"/>
 		</quest>
 	</append>
 </config>
