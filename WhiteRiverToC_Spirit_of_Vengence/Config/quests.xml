@@ -23,14 +23,17 @@
 			<property name="description_key" value="quest_spirit_vengeance_description"/>
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
-			<property name="category_key" value="challenge"/>
-			<property name="difficulty" value="insane"/>
+			<property name="category_key" value="quest"/>
 			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="difficulty" value="4"/>
 			<property name="statement_key" value="quest_spirit_vengeance_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
 			<property name="login_rally_reset" value="true"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
-			<property name="shareable" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
 			<property name="completion_key" value="quest_clear_completion"/>
 
 			<objective type="RandomPOIGoto">
