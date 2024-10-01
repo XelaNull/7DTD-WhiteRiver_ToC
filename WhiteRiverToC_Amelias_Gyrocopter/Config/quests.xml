@@ -134,49 +134,57 @@
 			<property name="response_key" value="questdialog_toc_amelia3"/>
 			<property name="group_name_key" value="quest_toc_amelia_group"/>
 			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="completion_key" value="quest_clear_completion"/>
+			<!--<action type="ShowMessageWindow">
+				<property name="message" value="quest_toc_amelia3_description"/>
+				<property name="title_key" value="Amelia"/>
+				<property name="delay" value="4"/>
+				<property name="phase" value="1"/>
+			</action>
+			
 			<objective type="RandomGoto" value="1100-2500" phase="1">
 				<property name="completion_distance" value="5"/>
 				<property name="nav_object" value="quest"/>
 			</objective>
-			<reward type="Quest" id="Completion_of_Amelia_Step_4"/>
-		</quest>
-		<quest id="Completion_of_Amelia_Step_4">
-			<property name="name_key" value="quest_toc_amelia3_name"/>
-			<property name="subtitle_key" value="quest_toc_amelia3_subtitle"/>
-			<property name="description_key" value="quest_toc_amelia3_description"/>
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="quest"/>
-			<property name="difficulty" value="hard"/>
-			<property name="statement_key" value="quest_toc_amelia3_statement"/>
-			<property name="response_key" value="questdialog_toc_amelia3"/>
-			<property name="group_name_key" value="quest_toc_amelia_group"/>
-			<property name="shareable" value="false"/>
-			<property name="login_rally_reset" value="true"/>
-			
-			<action type="ShowMessageWindow">
-				<property name="message" value="quest_toc_amelia3_description"/>
-				<property name="title_key" value="Amelia"/>
-				<property name="delay" value="4"/>
-			</action>
-			
-			<objective type="RandomGoto" value="1-5" phase="1">
-				<property name="completion_distance" value="5"/>
+			-->
+			<!--
+			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="50" phase="2"/>
+			<objective type="BlockUpgrade" id="frameShapes" value="25" phase="3"/>
+			-->
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
+				<property name="biome_filter" value="" param1="biome_filter"/>
 				<property name="nav_object" value="quest"/>
+				<property name="poi_tier" value="3" param1="poi_tier"/>
 			</objective>
+
 			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
-			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="50" phase="3"/>
-			<objective type="BlockUpgrade" id="frameShapes" value="25" phase="4"/>
 
-			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="5"/>
-			<action type="SpawnEnemy" id="animalMountainLion" value="2" phase="5"/>
-			<objective type="EntityKill" id="zombieToCWendigo" value="1" phase="5"/>
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="4"/>
+			<action type="SpawnEnemy" id="animalMountainLion" value="2" phase="4"/>
+			<objective type="EntityKill" id="zombieToCWendigo" value="1" phase="4"/>
 			<reward type="Quest" id="Reward_of_Amelia_Earharts_Schematics"/>
 			<reward type="Exp" value="500"/>
+
+			<!--<reward type="Quest" id="Completion_of_Amelia_Step_4"/>-->
 		</quest>
 		<!--
 		The final reward quest should say some crap about how the Wendigo was carrying a pouch that had a

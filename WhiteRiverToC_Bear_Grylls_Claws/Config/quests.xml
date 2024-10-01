@@ -51,7 +51,6 @@
 			<property name="response_key" value="questdialog_toc_claws"/>
 			<property name="group_name_key" value="quest_toc_claws_group"/>
 			<property name="shareable" value="false"/>
-			<property name="reward_choices_count" value="2"/>
 
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
 			<objective type="FetchKeep" id="resourceForgedSteel" value="100" phase="1"/>
@@ -71,11 +70,11 @@
 			<requirement type="Quests.Requirements.Holding" id="meleeWpnKnucklesT3SteelKnuckles" phase="4"/>
 
 			<reward type="Item" id="schemitem_toc_claws_name" value="1"/>
-			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
 			<reward type="Item" id="questitem_citizen_completion_ticket" value="1"/>	
-			<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+			<reward type="Item" id="modMeleeClubBurningShaft" value="1"/>
 			<reward type="Item" id="tocZombieBearClaws" value="5"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="Exp" value="2000"/>
 		</quest>
 

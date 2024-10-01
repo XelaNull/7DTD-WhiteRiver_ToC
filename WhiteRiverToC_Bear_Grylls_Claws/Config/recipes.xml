@@ -5,12 +5,12 @@
 		</recipe>
 		<recipe name="initiateitem_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
 			<ingredient name="resourceForgedIron" count="12"/>
-			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="tocBearClaws" count="10"/>
 			<ingredient name="resourceLeather" count="2"/>
 			<ingredient name="resourceDuctTape" count="2"/>
 			<ingredient name="resourceLegendaryParts" count="0"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedIron,resourceLeather,resourceDuctTape"/>
 				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
 			</effect_group>
 		</recipe>
@@ -18,26 +18,26 @@
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
 		<recipe name="item_toc_claws_name" count="1" craft_area="workbench" tags="learnable,perkBrawler">
-			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="5"/>
-			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="tocZombieBearClaws" count="10"/>
+			<ingredient name="resourceForgedSteel" count="12"/>
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceDuctTape" count="3"/>
 			<ingredient name="resourceLegendaryParts" count="0"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="meleeWpnKnucklesT3SteelKnucklesParts,resourceForgedSteel,resourceLeather,resourceDuctTape"/>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceLeather,resourceDuctTape"/>
 				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
 			</effect_group>
 		</recipe>
 
 
-		<recipe name="tocClawsBearBait" count="1" craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+		<recipe name="tocClawsBearBait" count="1" craft_time="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="foodRawMeat" count="10"/>
 			<ingredient name="foodCanPears" count="3"/>
 			<ingredient name="foodHoney" count="5"/>
 		</recipe>
 
 
-		<recipe name="tocClawsZombieBearBait" count="1" craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+		<recipe name="tocClawsZombieBearBait" count="1" craft_time="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="foodRottingFlesh" count="10"/>
 			<ingredient name="resourceCropCoffeeBeans" count="4"/>
 			<ingredient name="foodCropPumpkin" count="1"/>

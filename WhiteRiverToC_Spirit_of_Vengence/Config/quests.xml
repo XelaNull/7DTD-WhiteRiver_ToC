@@ -31,23 +31,38 @@
 			<property name="login_rally_reset" value="true"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
 			<property name="shareable" value="false"/>
+			<property name="completion_key" value="quest_clear_completion"/>
 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="20"/>
-				<property name="distance" value="100-500"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
+				<property name="biome_filter" value="" param1="biome_filter"/>
 				<property name="nav_object" value="quest"/>
-				<property name="biome_filter_type" value="SameBiome"/>
+				<property name="poi_tier" value="4" param1="poi_tier"/>
 			</objective>
 
 			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
 
-			<action type="SpawnEnemy" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
-			<action type="SpawnEnemy" id="animalWolf" value="2" phase="3"/>
-			<objective type="EntityKill" id="ZombieSpiritJuggernaut" value="1" phase="3"/>
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<action type="SpawnEnemy" id="ZombieSpiritJuggernaut" value="1" phase="5"/>
+			<action type="SpawnEnemy" id="animalWolf" value="2" phase="5"/>
+			<objective type="EntityKill" id="ZombieSpiritJuggernaut" value="1" phase="5"/>
 
 			<reward type="Item" id="questwrit_spirit_vengeance_name" value="1"/>
 			<reward type="Exp" value="500"/>
