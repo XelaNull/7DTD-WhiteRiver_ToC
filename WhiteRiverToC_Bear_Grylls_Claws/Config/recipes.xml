@@ -28,5 +28,20 @@
 				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
 			</effect_group>
 		</recipe>
+
+
+		<recipe name="tocClawsBearBait" count="1" craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodCanPears" count="3"/>
+			<ingredient name="foodHoney" count="5"/>
+		</recipe>
+
+
+		<recipe name="tocClawsZombieBearBait" count="1" craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRottingFlesh" count="10"/>
+			<ingredient name="resourceCropCoffeeBeans" count="4"/>
+			<ingredient name="foodCropPumpkin" count="1"/>
+			<ingredient name="drinkYuccaJuiceSmoothie" count="3"/>
+		</recipe>
 	</append>
 </config>

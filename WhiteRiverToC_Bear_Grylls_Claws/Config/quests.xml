@@ -1,5 +1,6 @@
 <config>
 	<append xpath="/quests">
+
 		<quest id="+Initiate Quest For Bear Grylls Iron Knuckles">
 			<property name="name_key" value="initiatequest_toc_claws_name"/>
 			<property name="subtitle_key" value="initiatequest_toc_claws_subtitle"/>
@@ -13,34 +14,28 @@
 			<property name="response_key" value="initiatequestdialog_toc_claws"/>
 			<property name="group_name_key" value="initiatequest_toc_claws_group"/>
 			<property name="shareable" value="false"/>
-			<property name="reward_choices_count" value="1"/>
-			<property name="quest_type" value="special"/>
 
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
 			<objective type="FetchKeep" id="resourceForgedIron" value="100" phase="1"/>
+			
+			<action type="ShowMessageWindow">
+				<property name="message" value="initiatequest_toc_claws_message"/>
+				<property name="title" value="initiatequest_toc_claws_title"/>
+				<property name="delay" value="3"/>
+				<property name="phase" value="2"/>
+			</action>
+			<objective type="FetchKeep" id="meleeWpnKnucklesT1IronKnuckles" value="1" phase="2"/>
+			<objective type="Craft" id="tocClawsBearBait" value="1" phase="2"/>
 
-			<objective type="RandomGotoNPC" phase="2">
-				<property name="completion_distance" value="20"/>
-				<property name="distance" value="100-500"/>
-				<property name="nav_object" value="quest"/>
-				<property name="biome_filter_type" value="SameBiome"/>
-			</objective>
-			
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="rally"/>
-			</objective>
-			
-			<action type="SpawnEnemy" id="animalBear" value="1" phase="4"/>
-			<objective type="EntityKill" id="animalBear" value="1" phase="4"/>
-			<requirement type="Quests.Requirements.Holding" id="meleeWpnKnucklesT1IronKnuckles" phase="4"/>
-			
-			<reward type="Item" id="initiateschemitem_toc_claws_name" value="1"/>
+			<objective type="EntityKill" id="animalBear" value="1" phase="3"/>
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnKnucklesT1IronKnuckles" phase="3"/>
+
+			<reward type="Item" id="initiateschemitem_toc_claws_name" value="1" />
 			<reward type="Item" id="questitem_toc_declaration_name" value="1"/>
 			<reward type="Item" id="questitem_initiate_completion_ticket" value="1"/>
-			<reward type="Item" id="modMeleeClubBurningShaft" ischosen="true" count="1"/>
-			<reward type="Item" id="casinoCoin" value="560"/>
+			<reward type="Item" id="tocBearClaws" value="5"/>
+			<reward type="Item" id="modMeleeClubBurningShaft" value="1"/>
+			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="Exp" value="1000"/>
 		</quest>
 		<quest id="+Quest For Bear Grylls Steel Knuckles">
@@ -56,27 +51,70 @@
 			<property name="response_key" value="questdialog_toc_claws"/>
 			<property name="group_name_key" value="quest_toc_claws_group"/>
 			<property name="shareable" value="false"/>
-			<property name="reward_choices_count" value="1"/>
+			<property name="reward_choices_count" value="2"/>
+
 			<objective type="FetchKeep" id="resourcePaper" value="1" phase="1"/>
 			<objective type="FetchKeep" id="resourceForgedSteel" value="100" phase="1"/>
-			<objective type="RandomGotoNPC" value="500-1000" phase="2">
-				<property name="completion_distance" value="50"/>
-				<property name="nav_object" value="quest"/>
-			</objective>
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="rally"/>
-			</objective>
-			<action type="SpawnEnemy" id="animalZombieBear" value="1" phase="4"/>
+			
+			<action type="ShowMessageWindow">
+				<property name="message" value="initiatequest_toc_claws_message"/>
+				<property name="title" value="initiatequest_toc_claws_title"/>
+				<property name="delay" value="3"/>
+				<property name="phase" value="2"/>
+			</action>
+			<objective type="FetchKeep" id="meleeWpnKnucklesT3SteelKnuckles" value="1" phase="2"/>
+			<objective type="Craft" id="tocClawsZombieBearBait" value="1" phase="2"/>
+
+			<action type="GameEvent" event="tocBearBlitz" delay="3" phase="3" />
+
 			<objective type="EntityKill" id="animalZombieBear" value="1" phase="4"/>
 			<requirement type="Quests.Requirements.Holding" id="meleeWpnKnucklesT3SteelKnuckles" phase="4"/>
+
 			<reward type="Item" id="schemitem_toc_claws_name" value="1"/>
-			<reward type="Item" id="modMeleeClubBurningShaft" ischosen="true" count="1"/>
 			<reward type="LootItem" id="groupQuestcasinoCoinT1" value="1"/>
 			<reward type="Item" id="questitem_toc_citizencard_name" value="1"/>
-			<reward type="Item" id="questitem_citizen_completion_ticket" value="1"/>			
+			<reward type="Item" id="questitem_citizen_completion_ticket" value="1"/>	
+			<reward type="Item" id="modMeleeClubBurningShaft" count="1"/>
+			<reward type="Item" id="tocZombieBearClaws" value="5"/>
 			<reward type="Exp" value="2000"/>
+		</quest>
+
+
+
+
+		<quest id="+Bear Grylls Bear Bait">
+			<property name="name_key" value="quest_toc_claws_bearbait_name"/>
+			<property name="subtitle_key" value="quest_toc_claws_bearbait_subtitle"/>
+			<property name="description_key" value="quest_toc_claws_bearbait_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
+			<property name="offer_key" value="quest_toc_claws_bearbait_offer"/>
+			<property name="statement_key" value="quest_toc_claws_bearbait_statement"/>
+			<property name="response_key" value="questdialog_toc_claws_bearbait"/>
+			<property name="group_name_key" value="initiatequest_toc_claws_group"/>
+			<property name="shareable" value="false"/>
+			
+			<action type="SpawnEnemy" id="animalBear" value="1" phase="1"/>
+			<reward type="Exp" value="100"/>
+		</quest>
+		<quest id="+Bear Grylls Zombie Bear Bait">
+			<property name="name_key" value="quest_toc_claws_zombiebearbait_name"/>
+			<property name="subtitle_key" value="quest_toc_claws_zombiebearbait_subtitle"/>
+			<property name="description_key" value="quest_toc_claws_zombiebearbait_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="hard"/>
+			<property name="offer_key" value="quest_toc_claws_zombiebearbait_offer"/>
+			<property name="statement_key" value="quest_toc_claws_zombiebearbait_statement"/>
+			<property name="response_key" value="questdialog_toc_claws_zombiebearbait"/>
+			<property name="group_name_key" value="quest_toc_claws_group"/>
+			<property name="shareable" value="false"/>
+			
+			<action type="SpawnEnemy" id="animalZombieBear" value="1" phase="1"/>
+			<reward type="Exp" value="500"/>
 		</quest>
 	</append>
 </config>

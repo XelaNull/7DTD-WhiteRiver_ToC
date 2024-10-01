@@ -1,0 +1,20 @@
+<Config>
+<!--
+<crafting_skills complete_sound="ui_mag_read_set">
+    <crafting_skill name="craftingFood" max_level="100" parent="attCrafting" name_key="craftingFoodName" desc_key="craftingFoodDesc" long_desc_key="craftingFoodLongDesc" icon="ui_game_symbol_fork">
+        <display_entry icon="foodCornOnTheCob,foodCornBread,foodGrilledMeat,foodBoiledMeat,foodBaconAndEggs" name_key="foodT1-1,foodT1-2,foodT1-3,foodT1-4,foodT1-5" has_quality="false" unlock_level="2,4,6,8,10" >
+            <unlock_entry item="foodCornOnTheCob,foodBakedPotato" unlock_tier="1" />
+            <unlock_entry item="foodCornBread,drinkJarGoldenRodTea" unlock_tier="2" />
+            <unlock_entry item="foodGrilledMeat,drinkJarRedTea" unlock_tier="3" />
+            <unlock_entry item="foodBoiledMeat,drinkJarYuccaJuice" unlock_tier="4" />
+            <unlock_entry item="foodBaconAndEggs,drinkJarCoffee" unlock_tier="5" />
+        </display_entry>
+        <display_entry icon="foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato" name_key="foodT2-1,foodT2-2,foodT2-3,foodT2-4,foodT2-5" has_quality="false" unlock_level="11,14,18,22,26" >
+            <unlock_entry item="foodPumpkinBread,foodBlueberryPie" unlock_tier="1" />
+-->
+    <append xpath="progression/crafting_skills[@complete_sound='ui_mag_read_set']/crafting_skill[@name='craftingFood']/display_entry[@name_key='foodT1-1,foodT1-2,foodT1-3,foodT1-4,foodT1-5']/unlock_entry[@unlock_tier='1']/@item">,tocClawsBearBait</append>
+    <append xpath="progression/crafting_skills[@complete_sound='ui_mag_read_set']/crafting_skill[@name='craftingFood']/display_entry[@name_key='foodT2-1,foodT2-2,foodT2-3,foodT2-4,foodT2-5']/unlock_entry[@unlock_tier='1']/@item">,tocClawsZombieBearBait</append>
+    <append xpath="progression/crafting_skills[@complete_sound='ui_mag_read_set']/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@level='2,100']/@tags">,tocClawsBearBait</append>
+    <append xpath="progression/crafting_skills[@complete_sound='ui_mag_read_set']/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@level='11,100']/@tags">,tocClawsZombieBearBait</append>
+
+</Config>

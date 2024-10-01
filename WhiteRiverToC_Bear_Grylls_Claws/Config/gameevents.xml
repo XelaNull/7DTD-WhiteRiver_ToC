@@ -1,0 +1,71 @@
+<config>
+    <append xpath="/gameevents">
+        <action_sequence name="tocBearBlitz">
+            <property name="category" value="poi" />
+            
+            <action class="AddChatMessage">
+                <property name="phase" value="0" />
+                <property name="text" value="[[6441a5]Bear Blitz[-]] It seems your bear bait has attracted some unwanted attention." />
+            </action>
+
+            <loop class="For">
+                <property name="min_loop_count" value="2" />
+                <property name="max_loop_count" value="3" />
+                <property name="phase" value="1" />
+            
+                <action class="GetNearbyPoint">
+                    <property name="phase" value="0" />
+                    <property name="safe_spawn" value="false" />
+                </action>
+
+                <action class="SpawnEntity">
+                    <property name="phase" value="1" />
+                    <property name="entity_names" value="animalZombieBear" />
+                    <property name="spawn_count" value="1" />
+                    <property name="party_addition" value="1" />
+                    <property name="air_spawn" value="false" />
+                    <property name="add_to_group" value="boss" />
+                    <property name="spawn_type" value="Position" />
+                    <property name="add_buffs" value="twitch_explode" />
+                </action>
+
+                <action class="PlaySound">
+                    <property name="sound" value="twitch_bad_action" />
+                    <property name="phase" value="2" />
+                </action>
+
+                <action class="PlaySound">
+                    <property name="phase" value="2" />
+                    <property name="sound" value="twitch_burn_near" />
+                </action>
+                
+                <action class="RageZombies">
+                    <property name="phase" value="3" />
+                    <property name="time" value="60" />
+                    <property name="speed_percent" value="2" />
+                    <property name="target_group" value="minions" />
+                </action>
+
+                <action class="AddRandomBuff">
+                    <property name="buff_names" value="twitch_weapon_pistols,twitch_weapon_shotguns,twitch_weapon_rifles,twitch_weapon_bows,twitch_weapon_machinegunner" />
+                    <property name="phase" value="4" />
+                    <property name="target_group" value="minions" />
+                </action>
+
+
+                <action class="WaitForDead">
+                    <property name="target_group" value="boss,minions" />
+                    <property name="phase" value="5" />
+                </action>
+
+                <action class="Delay">
+                    <property name="phase" value="6" />
+                    <property name="time" value="1" />
+                </action>		
+            
+            </loop>
+            
+        </action_sequence>
+    </append>
+
+</config>

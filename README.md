@@ -126,6 +126,7 @@ Download the ZIP file and extract. Open the ONE folder and you will find MULTIPL
 
 ### ACKNOWLEDGEMENTS:
 
+- Rheyner :: For the idea of using crafted bait items to spawn the bears.
 - ALo, arkangel5736, JP :: For continuing to keep the torch lit and the modpack operational, for their many optimization contributions to every single modlet in the pack, and for by and large bringing the entire modpack up to 1.0 compatibility. My deepest gratitude on behalf of the community.
 - Wyldwitchyka :: For the addition of the Jason's machete quest
 - morggin :: For the name and lore behind BlackBart, for the Bambi Terminator Crossbow, and for the idea of an Elite level set of quests

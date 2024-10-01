@@ -214,5 +214,53 @@
 				<passive_effect name="StaminaLoss" operation="base_set" value="15.3" tags="secondary"/>
 			</effect_group>
 		</item>
+
+
+		<item name="tocBearClaws">
+			<property name="CustomIcon" value="meleeWpnBladeT0BoneKnife"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="DescriptionKey" value="tocBearClaws_description"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Material" value="Morganic"/>				
+		</item>
+		<item name="tocZombieBearClaws">
+			<property name="CustomIcon" value="meleeWpnBladeT0BoneKnife"/>
+			<property name="Extends" value="resourcePaper"/>
+			<property name="DescriptionKey" value="toZombieBearClaws_description"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Material" value="Morganic"/>				
+		</item>
+
+		<item name="tocClawsBearBait">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="foodVegetableStew"/>
+			<property name="CustomIconTint" value="a4ff84"/>
+			<property name="DescriptionKey" value="tocClawsBearBait_description"/>
+			<property name="Tags" value="food,foodSkill,fitness"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Material" value="Morganic"/>
+			<property name="UnlockedBy" value="craftingFood"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Bear Grylls Bear Bait"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+		</item>
+
+		<item name="tocClawsZombieBearBait">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="CustomIcon" value="foodHoboStew"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="DescriptionKey" value="tocClawsZombieBearBait_description"/>
+			<property name="Tags" value="food,foodSkill,fitness"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Material" value="Morganic"/>
+			<property name="UnlockedBy" value="craftingFood"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="+Bear Grylls Zombie Bear Bait"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+		</item>
 	</append>
 </config>
