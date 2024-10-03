@@ -48,7 +48,7 @@
 			<property name="LootDropProb" value="1"/>
 			<property name="HandItem" value="meleeHandSpiritJuggernaut"/>
 			<property name="RightHandJointName" value="LeftShoulder"/>
-			<property name="ExperienceGain" value="25000"/>
+			<property name="ExperienceGain" value="2500"/>
 			<property name="WalkType" value="2"/>
 			<property name="HasDeathAnim" value="false"/>
 			<property name="AttackTimeoutNight" value=".9"/>

@@ -168,9 +168,29 @@
 				<property name="phase" value="4"/>
 			</action>
 
-			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="5"/>
-			<action type="SpawnEnemy" id="animalMountainLion" value="2" phase="5"/>
-			<objective type="EntityKill" id="zombieToCWendigo" value="1" phase="5"/>
+			<reward type="Quest" id="Quest_For_Amelias_Lost_Plans_Post"/>
+		</quest>
+		<quest id="Quest_For_Amelias_Lost_Plans_Post">
+			<property name="name_key" value="quest_toc_amelia3_name"/>
+			<property name="subtitle_key" value="quest_toc_amelia3_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia3_description"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="4"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="statement_key" value="quest_toc_amelia3_statement"/>
+			<property name="response_key" value="questdialog_toc_amelia3"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="group_name_key" value="quest_toc_amelia_group"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+
+			<property name="completion_key" value="quest_clear_completion"/>
+
+			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="1"/>
+			<action type="SpawnEnemy" id="animalMountainLion" value="2" phase="1"/>
+			<objective type="EntityKill" id="zombieToCWendigo" value="1" phase="1"/>
 
 			<reward type="Quest" id="Reward_of_Amelia_Earharts_Schematics"/>
 			<reward type="Exp" value="500"/>
