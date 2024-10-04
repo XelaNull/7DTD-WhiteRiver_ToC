@@ -29,5 +29,31 @@
 			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
 			<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
 		</block>
+
+
+		<block name="questblock_toc_amelia_chest">
+			<property name="Extends" value="cntHardenedChestSecure"/>
+			<property name="LootList" value="WhiteRiverToCAmelia02"/>
+			<property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="DowngradeBlock" value="questblock_toc_amelia_chest_unlocked"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="questblock_toc_amelia_chest_unlocked">
+			<property name="Extends" value="cntHardenedChestInsecure" param1="ItemTypeIcon"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="LootList" value="WhiteRiverToCAmelia02"/>
+			<property name="CustomIcon" value="cntHardenedChestSecureT5"/>
+			<property name="CustomIconTint" value="0080FF"/>
+			<property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
 	</append>
 </config>

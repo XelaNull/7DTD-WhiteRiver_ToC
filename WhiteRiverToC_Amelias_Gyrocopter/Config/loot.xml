@@ -4,8 +4,16 @@
 			<item name="casinoCoin" count="1000,5000"/>
 			<item name="questitem_toc_amelia_journal_name"/>
 		</lootgroup>
+		<lootgroup name="ameliaChest" count="all">
+			<item name="casinoCoin" count="1000,5000"/>
+			<item name="questitem_toc_amelia_whistle"/>
+			<item name="questitem_toc_amelia_whistle_directions"/>
+		</lootgroup>
 		<lootcontainer id="375" name="WhiteRiverToCAmelia01" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 			<item group="ameliaCoffin" count="1"/>
+		</lootcontainer>
+		<lootcontainer id="376" name="WhiteRiverToCAmelia02" count="1" size="5,5" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="ameliaChest" count="1"/>
 		</lootcontainer>
 	</append>
 </config>

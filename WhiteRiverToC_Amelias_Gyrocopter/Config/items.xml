@@ -94,6 +94,26 @@
 			</effect_group>
 		</item>
 		<!-- END -->
+		<item name="questitem_toc_amelia_whistle">
+			<property name="DescriptionKey" value="questitem_toc_amelia_whistle_description"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="CustomIcon" value="ammoDartIron"/>
+			<property name="CustomIconTint" value="cc3300"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="Material" value="Morganic"/>
+			<property class="Action0">
+				<!--<property name="Class" value="Eat"/>-->
+				<property name="Consume" value="true"/>
+				<property name="QuestGiven" value="Quest_For_Amelias_Lost_Plans_Post"/>
+			</property>
+		</item>
+		<item name="questitem_toc_amelia_whistle_directions">
+			<property name="DescriptionKey" value="questitem_toc_amelia_whistle_directions_description"/>
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Extends" value="resourcePaper"/>
+		</item>
+
 		<item name="meleeHandWendigo">
 			<property name="Extends" value="meleeHandMaster"/>
 			<property name="CreativeMode" value="None"/>

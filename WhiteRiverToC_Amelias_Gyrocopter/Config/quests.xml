@@ -133,43 +133,27 @@
 			<property name="difficulty_tier" value="1" param1="difficulty"/>
 			<property name="statement_key" value="quest_toc_amelia3_statement"/>
 			<property name="response_key" value="questdialog_toc_amelia3"/>
-			<property name="login_rally_reset" value="true"/>
 			<property name="reward_choices_count" value="5"/>
 			<property name="group_name_key" value="quest_toc_amelia_group"/>
 			<property name="extra_tags" value="" param1="extra_tags"/>
-			<property name="shareable" value="true"/>
 
 			<property name="completion_key" value="quest_clear_completion"/>
 
-			<objective type="RandomPOIGoto">
+			<objective type="TreasureChest">
+				<property name="block" value="questblock_toc_amelia_chest_unlocked"/>
+				<property name="distance" value="200-800"/>
+				<property name="default_radius" value="10"/>
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="3" param1="poi_tier"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="10"/>
+				<!-- Perk/item can reduce this by 8. Change perk/item to a % based effect if a blocks_per_reduction less than 10 that is desired. -->
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
 			</objective>
 
-			<objective type="RallyPoint">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally"/>
-			</objective>
-
-			<objective type="ClearSleepers">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="sleeper_volume"/>
-			</objective>
-
-			<objective type="POIStayWithin">
-				<property name="phase" value="3"/>
-				<property name="radius" value="25"/>
-			</objective>
-
-			<action type="UnlockPOI" >
-				<property name="phase" value="4"/>
-			</action>
-
-			<reward type="Quest" id="Quest_For_Amelias_Lost_Plans_Post"/>
+			<objective type="FetchKeep" id="questitem_toc_amelia_whistle" value="1" phase="2"/>
 		</quest>
+
 		<quest id="Quest_For_Amelias_Lost_Plans_Post">
 			<property name="name_key" value="quest_toc_amelia3_name"/>
 			<property name="subtitle_key" value="quest_toc_amelia3_subtitle"/>
@@ -178,6 +162,7 @@
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="quest"/>
 			<property name="difficulty" value="4"/>
+			<property name="offer_key" value="quest_toc_amelia4_offer"/>
 			<property name="difficulty_tier" value="1" param1="difficulty"/>
 			<property name="statement_key" value="quest_toc_amelia3_statement"/>
 			<property name="response_key" value="questdialog_toc_amelia3"/>
