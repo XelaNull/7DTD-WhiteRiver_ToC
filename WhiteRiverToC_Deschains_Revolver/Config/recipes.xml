@@ -15,7 +15,7 @@
 			<ingredient name="item_toc_desc_book7_name" count="1"/>
 			<ingredient name="item_toc_desc_book8_name" count="1"/>
 		</recipe>
-		<recipe name="questwrit_toc_desch_name" count="1" craft_time="300" craft_exp_gain="10000">
+		<recipe name="questwrit_toc_desch_name" count="1" craft_time="300" craft_exp_gain="500">
 		<!-- Temporary changed by 7DAYSTODIE_JP -->
 			<!-- <ingredient name="secureDoorWooden" count="18"/> -->
 			<ingredient name="vaultDoor01" count="1"/>

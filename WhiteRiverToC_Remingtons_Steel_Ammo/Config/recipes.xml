@@ -3,7 +3,7 @@
 		<recipe name="elitequestitem_toc_remington_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_elitecard_name" count="1"/>
 		</recipe>
-		<recipe name="elitequestwrit_toc_remington_name" count="1" craft_time="300" craft_exp_gain="20000">
+		<recipe name="elitequestwrit_toc_remington_name" count="1" craft_time="300" craft_exp_gain="2000">
 			<ingredient name="ammo762mmBulletBall" count="1000"/>
 			<ingredient name="ammo44MagnumBulletBall" count="1000"/>
 			<ingredient name="ammo9mmBulletBall" count="1000"/>

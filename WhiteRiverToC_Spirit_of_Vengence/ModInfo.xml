@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Name value="WhiteRiverToC_Spirit_of_Vengence"/>
+	<Name value="WhiteRiverToC_Spirit_of_Vengeance"/>
 	<DisplayName value="White River Tools of Citizenship - Spirit of Vengeance"/>
 	<Description value="Help Johnny Blaze reclaim his soul by killing the embodiment of Mephistopholes."/>
 	<Author value="ShoudenKalferas, Royal Deluxe Vanilla+ Quests Modlet, 7DaystoDie.JP, PaLoALo, ArkAngel"/>
-	<Version value="1.1.1.1"/>
+	<Version value="1.1.1.3"/>
 	<Website value="https://github.com/XelaNull/7DTD-WhiteRiver_ToC"/>
 </xml>

@@ -4,7 +4,7 @@
 		<recipe name="vetquestitem_toc_rickdanger_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
-		<recipe name="vetquestwrit_toc_rickdanger_name" count="1" craft_time="90" craft_exp_gain="10000">
+		<recipe name="vetquestwrit_toc_rickdanger_name" count="1" craft_time="90" craft_exp_gain="1000">
 			<ingredient name="resourcePotassiumNitratePowder" count="2000"/>
 			<ingredient name="resourceOilShale" count="2000"/>
 			<ingredient name="meleeToolAxeT3ChainsawParts" count="25"/>
@@ -14,7 +14,7 @@
 		<recipe name="elitequestitem_toc_rickdanger_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_elitecard_name" count="1"/>
 		</recipe>
-		<recipe name="elitequestwrit_toc_rickdanger_name" count="1" craft_time="300" craft_exp_gain="20000">
+		<recipe name="elitequestwrit_toc_rickdanger_name" count="1" craft_time="300" craft_exp_gain="2000">
 			<ingredient name="vetitemreward_toc_rickdanger_name" count="2"/>
 			<ingredient name="meleeToolAxeT3ChainsawParts" count="35"/>
 			<ingredient name="meleeToolAllSteelParts" count="35"/>

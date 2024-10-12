@@ -15,57 +15,30 @@
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
 			<property name="shareable" value="false"/>
 			<reward type="Item" id="medicalVengeanceFirstAidKit" value="3"/>
-			<reward type="Quest" id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast"/>
+			<reward type="Item" id="questitem_elitecoin_vengeance" value="1"/>
+			<reward type="Item" id="questitem_spirit_seal_name" value="1"/>
 		</quest>
-		<quest id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast">
-			<property name="name_key" value="quest_spirit_vengeance_name"/>
-			<property name="subtitle_key" value="quest_spirit_vengeance_subtitle"/>
-			<property name="description_key" value="quest_spirit_vengeance_description"/>
+
+		<quest id="Elite_Quest_Crack_The_Seal">
+			<property name="name_key" value="quest_spirit_crack_name"/>
+			<property name="subtitle_key" value="quest_spirit_crack_subtitle"/>
+			<property name="description_key" value="quest_spirit_crack_description"/>
 			<property name="icon" value="ui_game_symbol_zombie"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="quest"/>
-			<property name="offer_key" value="quest_spirit_vengeance_offer"/>
+			<property name="offer_key" value="quest_spirit_crack_offer"/>
 			<property name="difficulty_tier" value="1" param1="difficulty"/>
 			<property name="difficulty" value="4"/>
-			<property name="statement_key" value="quest_spirit_vengeance_statement"/>
+			<property name="statement_key" value="quest_spirit_crack_statement"/>
 			<property name="response_key" value="quest_fetch_response"/>
-			<property name="login_rally_reset" value="true"/>
 			<property name="group_name_key" value="quest_spirit_vengeance_group"/>
-			<property name="reward_choices_count" value="5"/>
 			<property name="extra_tags" value="" param1="extra_tags"/>
 			<property name="shareable" value="true"/>
-			<property name="completion_key" value="quest_clear_completion"/>
-
-			<objective type="RandomPOIGoto">
-				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="4" param1="poi_tier"/>
-			</objective>
-
-			<objective type="RallyPoint">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally"/>
-			</objective>
-
-			<objective type="ClearSleepers">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="sleeper_volume"/>
-			</objective>
-
-			<objective type="POIStayWithin">
-				<property name="phase" value="3"/>
-				<property name="radius" value="25"/>
-			</objective>
-
-			<action type="UnlockPOI" >
-				<property name="phase" value="4"/>
-			</action>
-
-			<reward type="Quest" id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast_Post" value="1"/>
+			<reward type="Quest" id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast"/>
 		</quest>
-		<quest id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast_Post">
+
+
+		<quest id="Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast">
 			<property name="name_key" value="quest_spirit_vengeance_name"/>
 			<property name="subtitle_key" value="quest_spirit_vengeance_subtitle"/>
 			<property name="description_key" value="quest_spirit_vengeance_description"/>

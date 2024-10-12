@@ -4,7 +4,7 @@
 		<recipe name="questitem_toc_kuva_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_citizencard_name" count="1"/>
 		</recipe>
-		<recipe name="writitem_toc_kuva_name" count="1" craft_time="90" craft_exp_gain="10000">
+		<recipe name="writitem_toc_kuva_name" count="1" craft_time="90" craft_exp_gain="1000">
 			<ingredient name="resourceLeather" count="50"/>
 			<ingredient name="armorPrimitiveOutfit" count="2"/>
 			<ingredient name="modDyeRed" count="1"/>

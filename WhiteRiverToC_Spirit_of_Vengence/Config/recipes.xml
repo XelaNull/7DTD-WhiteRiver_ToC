@@ -3,5 +3,14 @@
 		<recipe name="questitem_spirit_vengeance_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_elitecard_name" count="1"/>
 		</recipe>
+
+
+		<recipe name="tocVengeanceSealofHell" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="resourceGoldNugget" count="10"/>
+			<ingredient name="resourceBone" count="30"/>
+			<ingredient name="foodRottingFlesh" count="20"/>
+			<ingredient name="modDyeRed" count="2"/>
+			<ingredient name="questitem_elitecoin_vengeance" count="1"/>
+		</recipe>
 	</append>
 </config>

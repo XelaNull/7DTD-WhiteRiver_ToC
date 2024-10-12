@@ -4,7 +4,7 @@
 		<recipe name="vetquestitem_toc_blackb_name" count="1" craft_time="1" craft_exp_gain="0">
 			<ingredient name="questitem_toc_veterancard_name" count="1"/>
 		</recipe>
-		<recipe name="vetquestwrit_toc_blackb_name" count="1" craft_time="120" craft_exp_gain="10000">
+		<recipe name="vetquestwrit_toc_blackb_name" count="1" craft_time="120" craft_exp_gain="1500">
 			<ingredient name="resourceScrapIron" count="600"/>
 			<ingredient name="meleeToolShovelT1IronShovel" count="1"/>
 			<ingredient name="meleeToolPickT1IronPickaxe" count="1"/>

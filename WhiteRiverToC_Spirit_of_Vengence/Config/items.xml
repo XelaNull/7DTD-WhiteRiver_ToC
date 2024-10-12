@@ -208,5 +208,41 @@
 				</triggered_effect>
 			</effect_group>
 		</item>
+
+
+
+		<item name="questitem_spirit_seal_name">
+			<!--<property name="DescriptionKey" value="questitem_spirit_seal_nameDesc"/>-->
+			<property name="Resource" value="resourcePaper"/>
+			<property name="CustomIconTint" value="ddccbe"/>
+			<property name="Extends" value="schematicMaster"/>
+			<property name="Unlocks" value="tocVengeanceSealofHell"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="tocVengeanceSealofHell" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+			</effect_group>
+		</item>
+
+		<item name="questitem_elitecoin_vengeance">
+			<property name="Extends" value="casinoCoin"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="DescriptionKey" value="questitem_elitecoin_vengeanceDesc"/>
+			<property name="CustomIconTint" value="5f40c4"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Tags" value="ToC_coin"/>
+		</item>
+		<item name="tocVengeanceSealofHell">
+			<property name="CustomIcon" value="sandbagPile02"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="tocVengeanceSealofHellDesc"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="Material" value="Morganic"/>
+			<property name="UnlockedBy" value="questitem_spirit_seal_name"/>
+			<property class="Action0">
+				<property name="Consume" value="true"/>
+				<property name="QuestGiven" value="Elite_Quest_Crack_The_Seal"/>
+			</property>
+		</item>
 	</append>
 </config>
