@@ -1,7 +1,7 @@
 <config>
 	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
 		<item_property_overrides name="item_toc_bunyanaxe_name">
-			<property name="FlameEffect" value="ItemModEffects/mod_fireaxe_flamePrefab"/>
+			<property name="FlameEffect" value="@:ItemModEffects/mod_fireaxe_flamePrefab.prefab"/>
 		</item_property_overrides>
 	</append>
 </config>
