@@ -212,10 +212,34 @@
 
 
 		<item name="questitem_spirit_seal_name">
-			<!--<property name="DescriptionKey" value="questitem_spirit_seal_nameDesc"/>-->
+			<property name="DescriptionKey" value="questitem_spirit_seal_nameDesc"/>
 			<property name="Resource" value="resourcePaper"/>
 			<property name="CustomIconTint" value="ddccbe"/>
-			<property name="Extends" value="schematicMaster"/>
+
+
+			<property name="ItemTypeIcon" value="book"/>
+			<property name="AltItemTypeIcon" value="book_read"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="21"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Weight" value="5"/>
+			<property name="ScrapTimeOverride" value="10.0"/>
+			<property name="Stacknumber" value="5"/> <!-- STK book -->
+			<property name="EconomicValue" value="800"/>
+			<property name="Group" value="Books,SchematicsOnly,TCReading"/>
+			<property name="SoundPickup" value="schematics_grab"/>
+			<property name="SoundPlace" value="schematics_place"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="UseAnimation" value="false"/>
+				<property name="Sound_start" value="read_mod"/>
+				<property name="Sound_in_head" value="true"/>
+			</property>
+
 			<property name="Unlocks" value="tocVengeanceSealofHell"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="tocVengeanceSealofHell" operation="set" value="1"/>
@@ -234,7 +258,7 @@
 		<item name="tocVengeanceSealofHell">
 			<property name="CustomIcon" value="sandbagPile02"/>
 			<property name="CustomIconTint" value="ff0000"/>
-			<property name="DescriptionKey" value="tocVengeanceSealofHellDesc"/>
+			<property name="DescriptionKey" value="tocVengeanceSealofHell_description"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Extends" value="challengeQuestMaster"/>
 			<property name="Material" value="Morganic"/>
