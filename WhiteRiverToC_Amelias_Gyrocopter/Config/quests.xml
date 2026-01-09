@@ -164,17 +164,12 @@
 				<property name="completion_distance" value="5"/>
 				<property name="nav_object" value="quest"/>
 			</objective>
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally"/>
-			</objective>
-			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="50" phase="3"/>
-			<objective type="BlockUpgrade" id="frameShapes" value="25" phase="4"/>
+			<objective type="BlockPlace" id="frameShapes:VariantHelper" value="50" phase="2"/>
+			<objective type="BlockUpgrade" id="frameShapes" value="25" phase="3"/>
 
-			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="5"/>
-			<action type="SpawnEnemy" id="animalMountainLion" value="2" phase="5"/>
-			<objective type="EntityKill" id="zombieToCWendigo" value="1" phase="5"/>
+			<action type="SpawnEnemy" id="zombieToCWendigo" value="1" phase="4"/>
+			<action type="SpawnEnemy" id="animalMountainLion" value="2" phase="4"/>
+			<objective type="EntityKill" id="zombieToCWendigo" value="1" phase="4"/>
 			<reward type="Quest" id="Reward_of_Amelia_Earharts_Schematics"/>
 			<reward type="Exp" value="500"/>
 		</quest>
