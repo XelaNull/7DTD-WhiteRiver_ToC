@@ -7,7 +7,7 @@
 			<property name="Material" value="MglassBulletproof"/>
 			<property name="Shape" value="New"/>
 			<property name="LightOpacity" value="2"/>
-			<property name="Model" value="cube_glass"/>
+			<property name="Model" value="@:Shapes/cube_glass.fbx"/>
 			<property name="Mesh" value="transparent"/>
 			<property name="Texture" value="285"/>
 			<!-- Transparent Texture -->
@@ -25,7 +25,7 @@
 		</block>
 		<block name="questblock_toc_glassNonFuzzyBulletproofCTRPlate">
 			<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-			<property name="Model" value="plate_centered"/>
+			<property name="Model" value="@:Shapes/plate_centered.fbx"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="SortOrder2" value="0160"/>
 			<!-- SortShape -->
@@ -47,7 +47,7 @@
 		</block>
 		<block name="questblock_toc_glassNonFuzzyBulletproofPlate">
 			<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-			<property name="Model" value="plate_glass"/>
+			<property name="Model" value="@:Shapes/plate_glass.fbx"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="ImposterExchange" value="imposterPlate" param1="170"/>
 			<!-- ShadowColour -->
@@ -64,17 +64,18 @@
 		</block>
 		<block name="questblock_toc_glassNonFuzzyBulletproofRamp">
 			<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-			<property name="Model" value="ramp_glass"/>
+			<property name="Model" value="@:Shapes/ramp_glass.fbx"/>
 			<property name="CustomIcon" value="glassBulletproofRamp"/>
 			<property name="ImposterExchange" value="imposterRamp" param1="170"/>
 			<!-- ShadowColour -->
 		</block>
 		<block name="questblock_toc_glassNonFuzzyBulletproofPlateCurved">
 			<property name="Extends" value="questblock_toc_glassNonFuzzyBulletproofMaster"/>
-			<property name="Model" value="plate_corner_round_1m"/>
+			<property name="Model" value="@:Shapes/plate_corner_round_1m.fbx"/>
 			<property name="CustomIcon" value="glassBulletproofPlateCurved"/>
 			<property name="ImposterExchange" value="imposterBlock" param1="170"/>
 			<!-- ShadowColour -->
 		</block>
 	</append>
+
 </config>
