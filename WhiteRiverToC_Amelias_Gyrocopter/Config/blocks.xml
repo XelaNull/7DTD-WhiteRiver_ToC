@@ -19,7 +19,7 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Texture" value="293"/>
 			<!-- <property name="Mesh" value="models"/> -->
-			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/coffinWildWestPrefab.prefab"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 			<property name="IsTerrainDecoration" value="true"/>
