@@ -1,5 +1,5 @@
 <config>
-	<append xpath="lootcontainers">
+	<append xpath="/lootcontainers">
 		<lootgroup name="ameliaCoffin" count="all">
 			<item name="casinoCoin" count="1000,5000"/>
 			<item name="questitem_toc_amelia_journal_name"/>
