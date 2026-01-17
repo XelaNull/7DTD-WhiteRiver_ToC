@@ -1,5 +1,5 @@
 <config>
-	<append xpath="lootcontainers">
+	<append xpath="/lootcontainers">
 		<lootgroup name="groupWhiteRiverTOCDeschain" loot_quality_template="questT3QualTemplate">
 			<item name="itemreward_toc_desch_name" count="1"/>
 		</lootgroup>

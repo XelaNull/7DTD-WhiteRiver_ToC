@@ -10,7 +10,7 @@
 			<property name="Texture" value="293"/>
 			<!-- Temporary changed by 7DAYSTODIE_JP -->
 			<!-- <property name="Mesh" value="models"/> -->
-			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/coffinWildWestPrefab.prefab" param1="main_mesh"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 			<property name="IsTerrainDecoration" value="true"/>
@@ -30,7 +30,7 @@
 			<property name="Texture" value="293"/>
 			<!-- Temporary changed by 7DAYSTODIE_JP -->
 			<!-- <property name="Mesh" value="models"/> -->
-			<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab" param1="main_mesh"/>
+			<property name="Model" value="@:Entities/OutdoorDecor/coffinWildWestPrefab.prefab" param1="main_mesh"/>
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 			<property name="IsTerrainDecoration" value="true"/>

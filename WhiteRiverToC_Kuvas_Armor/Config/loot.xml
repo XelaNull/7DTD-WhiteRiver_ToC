@@ -1,5 +1,5 @@
 <config>
-	<append xpath="lootcontainers">
+	<append xpath="/lootcontainers">
 		<lootgroup name="groupWhiteRiverTOCKuvaChest" loot_quality_template="questT1QualTemplate">
 			<item name="item_toc_kuvared_chest_name"/>
 		</lootgroup>

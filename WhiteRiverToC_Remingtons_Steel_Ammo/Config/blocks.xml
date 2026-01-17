@@ -16,7 +16,7 @@
 			<property name="Shape" value="ModelEntity"/>
 			<!-- <property name="Mesh" value="models"/> -->
 			<property name="Path" value="solid"/>
-			<property name="Model" value="Entities/Traps/AutoTurret/autoTurretSMGPrefab"/>
+			<property name="Model" value="@:Entities/Traps/AutoTurret/autoTurretSMGPrefab.prefab"/>
 			<property name="OnlySimpleRotations" value="true"/>
 			<!-- the targeting math will NOT work if it's not upright -->
 			<property name="AmmoItem" value="ammo762mmBulletFMJSteelRemington"/>

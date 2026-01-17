@@ -1,5 +1,5 @@
 <config>
-	<append xpath="lootcontainers">
+	<append xpath="/lootcontainers">
 		<lootgroup name="groupWhiteRiverTOCEverdeenArrows" loot_quality_template="questT3QualTemplate">
 			<item name="item_toc_earrows_name" count="50,150"/>
 		</lootgroup>
