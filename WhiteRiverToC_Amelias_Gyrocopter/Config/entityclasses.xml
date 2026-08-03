@@ -12,11 +12,13 @@
 			<property name="IgnoreTrigger" value="true"/>
 			<property name="LootListAlive" value="vehicleGyrocopter"/>
 			<property name="IsEnemyEntity" value="false"/>
-			<property name="Explosion.ParticleIndex" value="6"/>
-			<property name="Explosion.RadiusBlocks" value="3"/>
-			<property name="Explosion.RadiusEntities" value="3"/>
-			<property name="Explosion.BlockDamage" value="30"/>
-			<property name="Explosion.EntityDamage" value="30"/>
+			<property class="Explosion">
+				<property name="ParticleIndex" value="6"/>
+				<property name="RadiusBlocks" value="3"/>
+				<property name="RadiusEntities" value="3"/>
+				<property name="BlockDamage" value="30"/>
+				<property name="EntityDamage" value="30"/>
+			</property>
 			<property name="RotateToGround" value="true"/>
 			<property name="Faction" value="none"/>
 			<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
