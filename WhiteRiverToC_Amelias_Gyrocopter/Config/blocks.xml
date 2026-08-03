@@ -11,7 +11,7 @@
 	<append xpath="/blocks">
 		<block name="questblock_toc_amelia_coffin">
 			<!-- Temporary changed by 7DAYSTODIE_JP -->
-			<property name="Class" value="Loot"/>
+			<property name="Class" value="CompositeTileEntity"/>
 			<property name="CustomIcon" value="cntCoffinWildWestClosed"/>
 			<property name="Material" value="MwoodReinforced"/>
 			<property name="StabilitySupport" value="false"/>
@@ -23,7 +23,13 @@
 			<property name="HandleFace" value="Bottom"/>
 			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 			<property name="IsTerrainDecoration" value="true"/>
-			<property name="LootList" value="WhiteRiverToCAmelia01"/>
+			<property class="CompositeFeatures">
+				<property class="TEFeatureStorage">
+					<property name="LootList" value="WhiteRiverToCAmelia01" />
+			<!--		<property name="LootStageMod" value="0.05" />
+					<property name="LootStageBonus" value="6" /> -->
+				</property>
+			</property>
 			<property name="CreativeMode" value="None"/>
 			<drop event="Destroy" name="resourceWood" count="1,3"/>
 			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
