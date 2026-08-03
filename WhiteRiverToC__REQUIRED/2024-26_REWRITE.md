@@ -4,6 +4,7 @@
 - changed modinfo.xml versions to reflect semantic versioning where the first two digits reflect the current game version that the updates were tested against, i.e. "3.1" ,and the last two digits are the mod version. in almost all cases this became 3.1.1.1 which was an increase from previous versions of "1.0" for both game version and mod version.
 
 
+2024
 * Its been so long, I dont even remember the flow of all the quests
 * Share screenshot of other quests on the back-burner
 * Who is "7DaystoDie.JP"? Noted in the ModInfo.xmls of the Mods in the pack (what was the provenance of the source code they used to modify)
