@@ -49,7 +49,9 @@
 			<property name="UnlockedBy" value="item_toc_greekfire_schem_name"/>
 			<property class="Action1">
 				<property name="Gravity" value="-5"/>
-				<property name="DamageBonus.wood" value="2"/>
+				<property class="DamageBonus">
+					<property name="wood" value="2"/>
+				</property>
 			</property>
 			<effect_group name="ammoArrowGreekFire" tiered="false">
 				<!-- ammoArrowFlaming -->
