@@ -71,7 +71,9 @@
 				<property name="Sound_reload" value="Auger_Reload"/>
 				<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
 				<property name="SupportHarvesting" value="true"/>
-				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+				<property class="ToolCategory">
+					<property name="harvestingTools" value="1" param1="1"/><!-- damage vs entity corpses -->
+				</property>
 			</property>
 			<effect_group name="vetitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
@@ -169,7 +171,9 @@
 				<property name="Sound_reload" value="Auger_Reload"/>
 				<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
 				<property name="SupportHarvesting" value="true"/>
-				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+				<property class="ToolCategory">
+					<property name="harvestingTools" value="1" param1="1"/><!-- damage vs entity corpses -->
+				</property>
 			</property>
 			<effect_group name="eliteitemreward_toc_rickdanger_name">
 				<passive_effect name="EntityDamage" operation="base_set" value="4.2" tags="perkMiner69r"/>
