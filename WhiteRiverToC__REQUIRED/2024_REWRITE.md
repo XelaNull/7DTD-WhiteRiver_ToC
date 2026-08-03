@@ -1,3 +1,7 @@
+2026 - v3.1 changes
+- v3 changed any xml entry with a "." to a nested format. For example, DamageBonus.earth must be changed to a main property called DamageBonus and nested format for each of the individual damage types and values. This change is part of a move to TileCompositeEntity structure for all xml files. Class=Loot was changed to this format, and the lootlist itself becomes a nested structure. Explosion entries as well were a big part of this change as reflected in many of the updated files (namely entityclasses, items, and blocks). Lastly, Localization.txt got renamed to Localization.csv
+
+
 * Its been so long, I dont even remember the flow of all the quests
 * Share screenshot of other quests on the back-burner
 * Who is "7DaystoDie.JP"? Noted in the ModInfo.xmls of the Mods in the pack (what was the provenance of the source code they used to modify)
