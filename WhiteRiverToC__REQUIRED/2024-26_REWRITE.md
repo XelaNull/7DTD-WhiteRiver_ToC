@@ -1,5 +1,7 @@
 2026 - v3.1 changes
-- v3 changed any xml entry with a "." to a nested format. For example, DamageBonus.earth must be changed to a main property called DamageBonus and nested format for each of the individual damage types and values. This change is part of a move to TileCompositeEntity structure for all xml files. Class=Loot was changed to this format, and the lootlist itself becomes a nested structure. Explosion entries as well were a big part of this change as reflected in many of the updated files (namely entityclasses, items, and blocks). Lastly, Localization.txt got renamed to Localization.csv
+- v3 changed any xml entry with a "." to a nested format. For example, DamageBonus.earth must be changed to a main property called DamageBonus and nested format for each of the individual damage types and values. This change is part of a move to TileCompositeEntity structure for all xml files. Class=Loot was changed to this format, and the lootlist itself becomes a nested structure. Explosion entries as well were a big part of this change as reflected in many of the updated files (namely entityclasses, items, and blocks). 
+- Localization.txt got renamed to Localization.csv
+- changed modinfo.xml versions to reflect semantic versioning where the first two digits reflect the current game version that the updates were tested against, i.e. "3.1" ,and the last two digits are the mod version. in almost all cases this became 3.1.1.1 which was an increase from previous versions of "1.0" for both game version and mod version.
 
 
 * Its been so long, I dont even remember the flow of all the quests
