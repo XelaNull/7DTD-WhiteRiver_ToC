@@ -50,7 +50,9 @@
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Sphere" value=".1"/>
 				<property name="Damage_type" value="Bashing"/>
-					<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+				<property class="ToolCategory">
+					<property name="Butcher" value="0" param1="4.7"/>
+				</property>
 					<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
 					Also, param1 is the damage multiplier for corpse harvesting. -->
 				<property name="UseGrazingHits" value="true"/>
@@ -70,7 +72,9 @@
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Sphere" value=".1"/> <!-- limit to 0.15, else the sphere cast can overlap the target already -->
 				<property name="UsePowerAttackAnimation" value="true"/>
-				<property name="ToolCategory.Butcher" value="0" param1="4.7"/>
+				<property class="ToolCategory">
+					<property name="Butcher" value="0" param1="4.7"/>
+				</property>
 					<!-- This triggers the use of the special corpse harvesting animation if there is a matching harvest event.
 					Also, param1 is the damage multiplier for corpse harvesting. -->
 				<property name="UseGrazingHits" value="true"/>
@@ -162,7 +166,9 @@
 			<property name="SoundPickup" value="machete_grab"/>
 			<property name="SoundPlace" value="machete_place"/>
 			<property class="Action0">
-				<property name="ToolCategory.Butcher" value="5" param1="1.5"/>
+				<property class="ToolCategory">
+					<property name="Butcher" value="5" param1="1.5"/>
+				</property>
 				<property name="Sound_start" value="knuckles_steel_swinglight"/>
 				<property class="HitSounds">
 				<property name="Override0" value="organic" param1="metalstaborganic"/></property>
@@ -170,7 +176,9 @@
 				<property name="Override0" value="organic" param1="metalgrazeorganic"/></property>
 			</property>
 			<property class="Action1">
-				<property name="ToolCategory.Butcher" value="0" param1="1.5"/>
+				<property class="ToolCategory">
+					<property name="Butcher" value="0" param1="1.5"/>
+				</property>
 				<property name="Sound_start" value="knuckles_steel_swingheavy"/>
 				<property class="HitSounds">
 				<property name="Override0" value="organic" param1="metalstaborganic"/></property>
