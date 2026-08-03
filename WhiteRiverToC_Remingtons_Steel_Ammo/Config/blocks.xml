@@ -37,13 +37,15 @@
 			<property name="PitchRange" value="60"/>
 			<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
 			<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
-			<property name="DamageBonus.head" value="4"/>
-			<property name="DamageBonus.leg" value="10"/>
-			<property name="DamageBonus.glass" value="1"/>
-			<property name="DamageBonus.wood" value="2"/>
-			<property name="DamageBonus.earth" value="0.2"/>
-			<property name="DamageBonus.stone" value="0.2"/>
-			<property name="DamageBonus.metal" value="0.2"/>
+			<property class="DamageBonus">
+				<property name="head" value="4" />
+				<property name="leg" value="10" />
+				<property name="glass" value="1" />
+				<property name="wood" value="2" />
+				<property name="earth" value="0.2" />
+				<property name="stone" value="0.2" />
+				<property name="metal" value="0.2" />
+			</property>
 			<property name="TargetingSound" value="turret_retarget_lp"/>
 			<property name="OverheatSound" value="turret_overheat_lp"/>
 			<property name="WakeUpSound" value="turret_windup"/>
