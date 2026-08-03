@@ -107,7 +107,6 @@
 				<property name="FlyTime" value="1.6"/>
 				<property name="LifeTime" value="4"/>
 				<property name="CollisionRadius" value="0.75"/>
-				<property name="DamageBonus.earth" value="0"/>
 			</property>
 			<effect_group name="SpiritJuggernautProjectile" tiered="false">
 				<passive_effect name="ModSlots" operation="base_set" value="0"/>
