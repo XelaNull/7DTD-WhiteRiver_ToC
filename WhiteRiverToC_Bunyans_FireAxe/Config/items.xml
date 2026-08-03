@@ -52,8 +52,10 @@
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Sphere" value=".15"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-				<property name="ToolCategory.Butcher" value="0" param1="4"/>
+				<property class="ToolCategory">
+					<property name="harvestingTools" value="1" param1="1"/><!-- damage vs entity corpses -->
+					<property name="Butcher" value="0" param1="4"/>
+				</property>
 				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 				<property name="GrazeStart" value=".4"/>
 				<property name="GrazeEnd" value=".5"/>
@@ -65,8 +67,10 @@
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Sphere" value=".15"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
-				<property name="ToolCategory.Butcher" value="0" param1="4"/>
+				<property class="ToolCategory">
+					<property name="harvestingTools" value="1" param1="1"/><!-- damage vs entity corpses -->
+					<property name="Butcher" value="0" param1="4"/>
+				</property>
 				<property name="Sound_harvesting" value="open_animal" param1="organic"/>
 				<property name="UsePowerAttackAnimation" value="true"/>
 				<property name="GrazeStart" value=".4"/>
